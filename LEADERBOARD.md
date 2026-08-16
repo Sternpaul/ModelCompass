@@ -1,6 +1,6 @@
 # ModelCompass Leaderboard
 
-> Generated **2026-08-16T22:39:25Z** · 408 models · updated daily by GitHub Actions.
+> Generated **2026-08-16T22:46:19Z** · 408 models · updated daily by GitHub Actions.
 
 Each table ranks the best models for a task using real benchmark data (Artificial Analysis indices + aider polyglot coding). Scores are normalized 0–1 blends; `—` means the model has no benchmark for that column.
 
