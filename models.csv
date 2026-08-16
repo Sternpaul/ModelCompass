@@ -8,7 +8,7 @@ qwen/qwen3.8-2.4t-a95b,Qwen: Qwen3.8 2.4T A95B,qwen,2026-08-12,4,1048576,text->t
 bytedance-seed/seed-2.0-code,ByteDance Seed: Seed-2.0-Code,bytedance-seed,2026-08-12,4,262144,text+image+video->text,True,False,True,False,True,True,True,False,,0.5,3.0,,
 deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,deepseek,2026-08-12,4,1048576,text->text,False,False,False,False,True,True,True,True,,0.66,1.98,0.022,deepseek-ai/DeepSeek-V4-Pro-0813
 x-ai/grok-4.6,SpaceXAI: Grok 4.6,x-ai,2026-08-12,4,500000,text+image+file->text,True,False,False,False,True,True,True,False,,2.0,6.0,0.5,
-liquid/lfm-2.5-2.6b:free,LiquidAI: LFM2.5-2.6B (free),liquid,2026-08-11,4,128000,text->text,False,False,False,False,True,True,True,True,,0.0,0.0,,LiquidAI/LFM2.5-2.6B
+liquid/lfm-2.5-2.6b:free,LiquidAI: LFM2.5-2.6B (free),liquid,2026-08-11,5,128000,text->text,False,False,False,False,True,True,True,True,,0.0,0.0,,LiquidAI/LFM2.5-2.6B
 nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,nvidia,2026-08-11,5,1000000,text->text,False,False,False,False,True,True,True,True,,0.08,0.2,0.04,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 nvidia/nemotron-3.5-lightning:free,NVIDIA: Nemotron 3.5 Lightning (free),nvidia,2026-08-11,5,1000000,text->text,False,False,False,False,True,True,False,True,,0.0,0.0,,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 sakana/sakana-namazu,Sakana: Sakana Namazu,sakana,2026-08-11,5,262144,text+image+file->text,True,False,False,False,True,True,True,False,,0.95,4.0,0.15,
@@ -65,8 +65,8 @@ sakana/fugu-ultra,Sakana: Fugu Ultra,sakana,2026-06-24,53,1000000,text+image->te
 google/gemini-3.1-flash-image,Google: Nano Banana 2 (Gemini 3.1 Flash Image),google,2026-06-18,59,131072,text+image->text+image,True,False,False,True,True,False,True,False,,0.5,3.0,,
 google/gemini-3-pro-image,Google: Nano Banana Pro (Gemini 3 Pro Image),google,2026-06-18,59,131072,text+image->text+image,True,False,False,True,True,True,True,False,,2.0,12.0,0.2,
 cohere/north-mini-code:free,Cohere: North Mini Code (free),cohere,2026-06-17,59,256000,text->text,False,False,False,False,True,True,False,True,,0.0,0.0,,CohereLabs/North-Mini-Code-1.0
-z-ai/glm-5.2,Z.ai: GLM 5.2,z-ai,2026-06-16,60,1048576,text->text,False,False,False,False,True,True,True,True,,0.308,0.968,0.0572,zai-org/GLM-5.2
-z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),z-ai,2026-06-16,60,512000,text->text,False,False,False,False,True,True,True,True,,0.7,2.2,0.13,zai-org/GLM-5.2
+z-ai/glm-5.2,Z.ai: GLM 5.2,z-ai,2026-06-16,61,1048576,text->text,False,False,False,False,True,True,True,True,,0.308,0.968,0.0572,zai-org/GLM-5.2
+z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),z-ai,2026-06-16,61,512000,text->text,False,False,False,False,True,True,True,True,,0.7,2.2,0.13,zai-org/GLM-5.2
 openrouter/fusion,OpenRouter: Fusion,openrouter,2026-06-13,64,1000000,text->text,False,False,False,False,False,False,False,False,,-1000000.0,-1000000.0,,
 moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,moonshotai,2026-06-12,65,262144,text+image->text,True,False,False,False,True,True,True,True,,0.71,3.5,0.15,moonshotai/Kimi-K2.7-Code
 moonshotai/kimi-k2.7-code:batch,MoonshotAI: Kimi K2.7 Code (batch),moonshotai,2026-06-12,65,262144,text+image->text,True,False,False,False,True,True,True,True,,0.475,2.0,0.095,moonshotai/Kimi-K2.7-Code
@@ -136,7 +136,7 @@ google/gemma-4-31b-it:free,Google: Gemma 4 31B (free),google,2026-04-02,136,2621
 qwen/qwen3.6-plus,Qwen: Qwen3.6 Plus,qwen,2026-04-02,136,1000000,text+image+video->text,True,False,True,False,True,True,True,False,,0.325,1.95,,
 z-ai/glm-5v-turbo,Z.ai: GLM 5V Turbo,z-ai,2026-04-01,137,202752,text+image+video->text,True,False,True,False,True,True,True,False,,1.2,4.0,0.24,
 arcee-ai/trinity-large-thinking,Arcee AI: Trinity Large Thinking,arcee-ai,2026-04-01,137,262144,text->text,False,False,False,False,True,True,True,True,,0.22,0.85,0.06,arcee-ai/Trinity-Large-Thinking
-x-ai/grok-4.20-multi-agent,SpaceXAI: Grok 4.20 Multi-Agent,x-ai,2026-03-31,137,2000000,text+image+file->text,True,False,False,False,True,False,True,False,2025-09-01,1.25,2.5,0.2,
+x-ai/grok-4.20-multi-agent,SpaceXAI: Grok 4.20 Multi-Agent,x-ai,2026-03-31,138,2000000,text+image+file->text,True,False,False,False,True,False,True,False,2025-09-01,1.25,2.5,0.2,
 x-ai/grok-4.20,SpaceXAI: Grok 4.20,x-ai,2026-03-31,138,2000000,text+image+file->text,True,False,False,False,True,True,True,False,2025-09-01,1.25,2.5,0.2,
 google/lyria-3-pro-preview,Google: Lyria 3 Pro Preview,google,2026-03-30,138,1048576,text+image->text+audio,True,False,False,False,False,False,True,False,,0.0,0.0,,
 google/lyria-3-clip-preview,Google: Lyria 3 Clip Preview,google,2026-03-30,138,1048576,text+image->text+audio,True,False,False,False,False,False,True,False,,0.0,0.0,,

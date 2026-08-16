@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T17:44:03Z",
+    "generated_at": "2026-08-16T17:50:03Z",
     "source": "OpenRouter /api/v1/models",
     "source_url": "https://openrouter.ai/docs#models",
     "model_count": 407,
@@ -13,52 +13,52 @@
     "best_overall": [
       "x-ai/grok-4.20",
       "openai/gpt-5.6-luna-pro",
-      "openai/gpt-5.6-luna-pro:batch",
       "openai/gpt-5.6-luna",
-      "openai/gpt-5.6-luna:batch",
       "openai/gpt-5.6-terra-pro",
-      "openai/gpt-5.6-terra-pro:batch",
-      "openai/gpt-5.6-terra"
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5.6-sol-pro",
+      "openai/gpt-5.6-sol",
+      "google/gemini-3.5-flash"
     ],
     "best_reasoning": [
       "x-ai/grok-4.20",
       "openai/gpt-5.6-luna-pro",
-      "openai/gpt-5.6-luna-pro:batch",
       "openai/gpt-5.6-luna",
-      "openai/gpt-5.6-luna:batch",
       "openai/gpt-5.6-terra-pro",
-      "openai/gpt-5.6-terra-pro:batch",
-      "openai/gpt-5.6-terra"
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5.6-sol-pro",
+      "openai/gpt-5.6-sol",
+      "google/gemini-3.5-flash"
     ],
     "best_coding": [
       "x-ai/grok-4.20",
       "openai/gpt-5.6-luna-pro",
-      "openai/gpt-5.6-luna-pro:batch",
       "openai/gpt-5.6-luna",
-      "openai/gpt-5.6-luna:batch",
       "openai/gpt-5.6-terra-pro",
-      "openai/gpt-5.6-terra-pro:batch",
-      "openai/gpt-5.6-terra"
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5.6-sol-pro",
+      "openai/gpt-5.6-sol",
+      "google/gemini-3.5-flash"
     ],
     "best_vision": [
       "x-ai/grok-4.20",
       "openai/gpt-5.6-luna-pro",
-      "openai/gpt-5.6-luna-pro:batch",
       "openai/gpt-5.6-luna",
-      "openai/gpt-5.6-luna:batch",
       "openai/gpt-5.6-terra-pro",
-      "openai/gpt-5.6-terra-pro:batch",
-      "openai/gpt-5.6-terra"
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5.6-sol-pro",
+      "openai/gpt-5.6-sol",
+      "google/gemini-3.5-flash"
     ],
     "best_agents": [
       "x-ai/grok-4.20",
       "openai/gpt-5.6-luna-pro",
-      "openai/gpt-5.6-luna-pro:batch",
       "openai/gpt-5.6-luna",
-      "openai/gpt-5.6-luna:batch",
       "openai/gpt-5.6-terra-pro",
-      "openai/gpt-5.6-terra-pro:batch",
-      "openai/gpt-5.6-terra"
+      "openai/gpt-5.6-terra",
+      "openai/gpt-5.6-sol-pro",
+      "openai/gpt-5.6-sol",
+      "google/gemini-3.5-flash"
     ],
     "best_open_weight": [
       "qwen/qwen3.8-2.4t-a95b",
@@ -73,32 +73,31 @@
     "best_cheap": [
       "inclusionai/ling-3.0-flash",
       "nex-agi/nex-n2-mini",
-      "openai/gpt-5-nano:batch",
       "qwen/qwen3.7-flash",
       "upstage/solar-pro4",
       "openai/gpt-oss-120b",
       "openai/gpt-oss-20b",
-      "google/gemini-2.5-flash-lite:batch"
+      "nvidia/nemotron-3-nano-30b-a3b",
+      "openai/gpt-5-nano"
     ],
     "best_audio": [
       "google/gemini-3.5-flash",
-      "google/gemini-3.5-flash:batch",
       "google/gemini-3.7-flash",
-      "google/gemini-3.7-flash:batch",
       "meta/muse-spark-1.2",
       "google/gemini-3.6-flash",
-      "google/gemini-3.6-flash:batch",
-      "google/gemini-3.5-flash-lite"
+      "google/gemini-3.5-flash-lite",
+      "thinkingmachines/inkling",
+      "meta/muse-spark-1.1",
+      "google/gemini-3.1-flash-lite"
     ],
     "best_image_generation": [
       "google/gemini-3-pro-image",
       "google/gemini-3.1-flash-lite-image",
       "openai/gpt-5.4-image-2",
       "google/gemini-3.1-flash-image",
-      "google/gemini-3.1-flash-image-preview",
       "openai/gpt-5-image-mini",
       "openai/gpt-5-image",
-      "google/gemini-3-pro-image-preview"
+      "google/gemini-2.5-flash-image"
     ]
   },
   "leaderboards": {
@@ -2794,6 +2793,7 @@
   "models": [
     {
       "id": "qwen/qwen3.8-27b",
+      "family": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "provider": "qwen",
       "created_unix": 1786722910,
@@ -2825,6 +2825,7 @@
     },
     {
       "id": "dots-studio/dots-3-note-preview:free",
+      "family": "dots-studio/dots-3-note-preview",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "provider": "dots-studio",
       "created_unix": 1786680361,
@@ -2856,6 +2857,7 @@
     },
     {
       "id": "google/gemini-3.7-flash",
+      "family": "google/gemini-3.7-flash",
       "name": "Google: Gemini 3.7 Flash",
       "provider": "google",
       "created_unix": 1786640581,
@@ -2887,6 +2889,7 @@
     },
     {
       "id": "google/gemini-3.7-flash:batch",
+      "family": "google/gemini-3.7-flash",
       "name": "Google: Gemini 3.7 Flash (batch)",
       "provider": "google",
       "created_unix": 1786640581,
@@ -2918,6 +2921,7 @@
     },
     {
       "id": "bytedance-seed/seed-2-1-turbo",
+      "family": "bytedance-seed/seed-2-1-turbo",
       "name": "ByteDance Seed: Seed 2.1 Turbo",
       "provider": "bytedance-seed",
       "created_unix": 1786552176,
@@ -2949,6 +2953,7 @@
     },
     {
       "id": "qwen/qwen3.8-2.4t-a95b",
+      "family": "qwen/qwen3.8-2.4t-a95b",
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "provider": "qwen",
       "created_unix": 1786551702,
@@ -2980,6 +2985,7 @@
     },
     {
       "id": "bytedance-seed/seed-2.0-code",
+      "family": "bytedance-seed/seed-2.0-code",
       "name": "ByteDance Seed: Seed-2.0-Code",
       "provider": "bytedance-seed",
       "created_unix": 1786550701,
@@ -3011,6 +3017,7 @@
     },
     {
       "id": "deepseek/deepseek-v4-pro-0813",
+      "family": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "provider": "deepseek",
       "created_unix": 1786549364,
@@ -3042,6 +3049,7 @@
     },
     {
       "id": "x-ai/grok-4.6",
+      "family": "x-ai/grok-4.6",
       "name": "SpaceXAI: Grok 4.6",
       "provider": "x-ai",
       "created_unix": 1786548957,
@@ -3073,11 +3081,12 @@
     },
     {
       "id": "liquid/lfm-2.5-2.6b:free",
+      "family": "liquid/lfm-2.5-2.6b",
       "name": "LiquidAI: LFM2.5-2.6B (free)",
       "provider": "liquid",
       "created_unix": 1786470519,
       "created_date": "2026-08-11",
-      "age_days": 4,
+      "age_days": 5,
       "context": 128000,
       "modality": "text->text",
       "is_vision": false,
@@ -3100,10 +3109,11 @@
         "cache_read": null
       },
       "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "capability_score": 5.606
+      "capability_score": 5.601
     },
     {
       "id": "nvidia/nemotron-3.5-lightning",
+      "family": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "provider": "nvidia",
       "created_unix": 1786452751,
@@ -3135,6 +3145,7 @@
     },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
+      "family": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
       "provider": "nvidia",
       "created_unix": 1786452751,
@@ -3166,6 +3177,7 @@
     },
     {
       "id": "sakana/sakana-namazu",
+      "family": "sakana/sakana-namazu",
       "name": "Sakana: Sakana Namazu",
       "provider": "sakana",
       "created_unix": 1786410129,
@@ -3197,6 +3209,7 @@
     },
     {
       "id": "upstage/solar-pro4",
+      "family": "upstage/solar-pro4",
       "name": "Upstage: Solar Pro 4",
       "provider": "upstage",
       "created_unix": 1786371636,
@@ -3228,6 +3241,7 @@
     },
     {
       "id": "meta/muse-glimmer-30b",
+      "family": "meta/muse-glimmer-30b",
       "name": "Meta: Muse Glimmer 30B",
       "provider": "meta",
       "created_unix": 1786302394,
@@ -3259,6 +3273,7 @@
     },
     {
       "id": "meta/muse-spark-1.2",
+      "family": "meta/muse-spark-1.2",
       "name": "Meta: Muse Spark 1.2",
       "provider": "meta",
       "created_unix": 1785959287,
@@ -3290,6 +3305,7 @@
     },
     {
       "id": "qwen/qwen3.8-max",
+      "family": "qwen/qwen3.8-max",
       "name": "Qwen: Qwen3.8 Max",
       "provider": "qwen",
       "created_unix": 1785731612,
@@ -3321,6 +3337,7 @@
     },
     {
       "id": "~deepseek/deepseek-v4-flash-latest",
+      "family": "~deepseek/deepseek-v4-flash",
       "name": "DeepSeek V4 Flash Latest",
       "provider": "~deepseek",
       "created_unix": 1785606009,
@@ -3352,6 +3369,7 @@
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
+      "family": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "provider": "deepseek",
       "created_unix": 1785478908,
@@ -3383,6 +3401,7 @@
     },
     {
       "id": "thinkingmachines/inkling-small",
+      "family": "thinkingmachines/inkling-small",
       "name": "Thinking Machines: Inkling Small",
       "provider": "thinkingmachines",
       "created_unix": 1785443117,
@@ -3414,6 +3433,7 @@
     },
     {
       "id": "qwen/qwen3.7-flash",
+      "family": "qwen/qwen3.7-flash",
       "name": "Qwen: Qwen3.7 Flash",
       "provider": "qwen",
       "created_unix": 1785190561,
@@ -3445,6 +3465,7 @@
     },
     {
       "id": "anthropic/claude-opus-5-fast",
+      "family": "anthropic/claude-opus-5-fast",
       "name": "Claude Opus 5 (Fast)",
       "provider": "anthropic",
       "created_unix": 1784912546,
@@ -3476,6 +3497,7 @@
     },
     {
       "id": "anthropic/claude-opus-5",
+      "family": "anthropic/claude-opus-5",
       "name": "Claude Opus 5",
       "provider": "anthropic",
       "created_unix": 1784912544,
@@ -3507,6 +3529,7 @@
     },
     {
       "id": "anthropic/claude-opus-5:batch",
+      "family": "anthropic/claude-opus-5",
       "name": "Claude Opus 5 (batch)",
       "provider": "anthropic",
       "created_unix": 1784912544,
@@ -3538,6 +3561,7 @@
     },
     {
       "id": "inclusionai/ling-3.0-flash",
+      "family": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash",
       "provider": "inclusionai",
       "created_unix": 1784818580,
@@ -3569,6 +3593,7 @@
     },
     {
       "id": "poolside/laguna-s-2.1",
+      "family": "poolside/laguna-s-2.1",
       "name": "Poolside: Laguna S 2.1",
       "provider": "poolside",
       "created_unix": 1784652683,
@@ -3600,6 +3625,7 @@
     },
     {
       "id": "poolside/laguna-s-2.1:free",
+      "family": "poolside/laguna-s-2.1",
       "name": "Poolside: Laguna S 2.1 (free)",
       "provider": "poolside",
       "created_unix": 1784652683,
@@ -3631,6 +3657,7 @@
     },
     {
       "id": "google/gemini-3.6-flash",
+      "family": "google/gemini-3.6-flash",
       "name": "Google: Gemini 3.6 Flash",
       "provider": "google",
       "created_unix": 1784646733,
@@ -3662,6 +3689,7 @@
     },
     {
       "id": "google/gemini-3.6-flash:batch",
+      "family": "google/gemini-3.6-flash",
       "name": "Google: Gemini 3.6 Flash (batch)",
       "provider": "google",
       "created_unix": 1784646733,
@@ -3693,6 +3721,7 @@
     },
     {
       "id": "google/gemini-3.5-flash-lite",
+      "family": "google/gemini-3.5-flash-lite",
       "name": "Google: Gemini 3.5 Flash Lite",
       "provider": "google",
       "created_unix": 1784646726,
@@ -3724,6 +3753,7 @@
     },
     {
       "id": "google/gemini-3.5-flash-lite:batch",
+      "family": "google/gemini-3.5-flash-lite",
       "name": "Google: Gemini 3.5 Flash Lite (batch)",
       "provider": "google",
       "created_unix": 1784646726,
@@ -3755,6 +3785,7 @@
     },
     {
       "id": "meituan/longcat-2.0",
+      "family": "meituan/longcat-2.0",
       "name": "Meituan: LongCat 2.0",
       "provider": "meituan",
       "created_unix": 1784554658,
@@ -3786,6 +3817,7 @@
     },
     {
       "id": "thinkingmachines/inkling",
+      "family": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
       "provider": "thinkingmachines",
       "created_unix": 1784325956,
@@ -3817,6 +3849,7 @@
     },
     {
       "id": "thinkingmachines/inkling:batch",
+      "family": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling (batch)",
       "provider": "thinkingmachines",
       "created_unix": 1784325956,
@@ -3848,6 +3881,7 @@
     },
     {
       "id": "openrouter/auto-beta",
+      "family": "openrouter/auto",
       "name": "Auto Router (Beta)",
       "provider": "openrouter",
       "created_unix": 1784311165,
@@ -3879,6 +3913,7 @@
     },
     {
       "id": "moonshotai/kimi-k3",
+      "family": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "provider": "moonshotai",
       "created_unix": 1784215858,
@@ -3910,6 +3945,7 @@
     },
     {
       "id": "meta/muse-spark-1.1",
+      "family": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
       "provider": "meta",
       "created_unix": 1784215741,
@@ -3941,6 +3977,7 @@
     },
     {
       "id": "kwaipilot/kat-coder-air-v2.5",
+      "family": "kwaipilot/kat-coder-air-v2.5",
       "name": "Kwaipilot: KAT-Coder-Air V2.5",
       "provider": "kwaipilot",
       "created_unix": 1783714590,
@@ -3972,6 +4009,7 @@
     },
     {
       "id": "kwaipilot/kat-coder-pro-v2.5",
+      "family": "kwaipilot/kat-coder-pro-v2.5",
       "name": "Kwaipilot: KAT-Coder-Pro V2.5",
       "provider": "kwaipilot",
       "created_unix": 1783714589,
@@ -4003,6 +4041,7 @@
     },
     {
       "id": "openai/gpt-5.6-luna-pro",
+      "family": "openai/gpt-5.6-luna-pro",
       "name": "OpenAI: GPT-5.6 Luna Pro",
       "provider": "openai",
       "created_unix": 1783590867,
@@ -4034,6 +4073,7 @@
     },
     {
       "id": "openai/gpt-5.6-luna-pro:batch",
+      "family": "openai/gpt-5.6-luna-pro",
       "name": "OpenAI: GPT-5.6 Luna Pro (batch)",
       "provider": "openai",
       "created_unix": 1783590867,
@@ -4065,6 +4105,7 @@
     },
     {
       "id": "openai/gpt-5.6-luna",
+      "family": "openai/gpt-5.6-luna",
       "name": "OpenAI: GPT-5.6 Luna",
       "provider": "openai",
       "created_unix": 1783590864,
@@ -4096,6 +4137,7 @@
     },
     {
       "id": "openai/gpt-5.6-luna:batch",
+      "family": "openai/gpt-5.6-luna",
       "name": "OpenAI: GPT-5.6 Luna (batch)",
       "provider": "openai",
       "created_unix": 1783590864,
@@ -4127,6 +4169,7 @@
     },
     {
       "id": "openai/gpt-5.6-terra-pro",
+      "family": "openai/gpt-5.6-terra-pro",
       "name": "OpenAI: GPT-5.6 Terra Pro",
       "provider": "openai",
       "created_unix": 1783590861,
@@ -4158,6 +4201,7 @@
     },
     {
       "id": "openai/gpt-5.6-terra-pro:batch",
+      "family": "openai/gpt-5.6-terra-pro",
       "name": "OpenAI: GPT-5.6 Terra Pro (batch)",
       "provider": "openai",
       "created_unix": 1783590861,
@@ -4189,6 +4233,7 @@
     },
     {
       "id": "openai/gpt-5.6-terra",
+      "family": "openai/gpt-5.6-terra",
       "name": "OpenAI: GPT-5.6 Terra",
       "provider": "openai",
       "created_unix": 1783590857,
@@ -4220,6 +4265,7 @@
     },
     {
       "id": "openai/gpt-5.6-terra:batch",
+      "family": "openai/gpt-5.6-terra",
       "name": "OpenAI: GPT-5.6 Terra (batch)",
       "provider": "openai",
       "created_unix": 1783590857,
@@ -4251,6 +4297,7 @@
     },
     {
       "id": "openai/gpt-5.6-sol-pro",
+      "family": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
       "provider": "openai",
       "created_unix": 1783590854,
@@ -4282,6 +4329,7 @@
     },
     {
       "id": "openai/gpt-5.6-sol-pro:batch",
+      "family": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
       "provider": "openai",
       "created_unix": 1783590854,
@@ -4313,6 +4361,7 @@
     },
     {
       "id": "openai/gpt-5.6-sol",
+      "family": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "provider": "openai",
       "created_unix": 1783590850,
@@ -4344,6 +4393,7 @@
     },
     {
       "id": "openai/gpt-5.6-sol:batch",
+      "family": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol (batch)",
       "provider": "openai",
       "created_unix": 1783590850,
@@ -4375,6 +4425,7 @@
     },
     {
       "id": "x-ai/grok-4.5",
+      "family": "x-ai/grok-4.5",
       "name": "SpaceXAI: Grok 4.5",
       "provider": "x-ai",
       "created_unix": 1783523154,
@@ -4406,6 +4457,7 @@
     },
     {
       "id": "~x-ai/grok-latest",
+      "family": "~x-ai/grok",
       "name": "xAI: Grok Latest",
       "provider": "~x-ai",
       "created_unix": 1783519360,
@@ -4437,6 +4489,7 @@
     },
     {
       "id": "aion-labs/aion-3.0-mini",
+      "family": "aion-labs/aion-3.0-mini",
       "name": "AionLabs: Aion-3.0-Mini",
       "provider": "aion-labs",
       "created_unix": 1783443096,
@@ -4468,6 +4521,7 @@
     },
     {
       "id": "aion-labs/aion-3.0",
+      "family": "aion-labs/aion-3.0",
       "name": "AionLabs: Aion-3.0",
       "provider": "aion-labs",
       "created_unix": 1783443095,
@@ -4499,6 +4553,7 @@
     },
     {
       "id": "tencent/hy3",
+      "family": "tencent/hy3",
       "name": "Tencent: Hy3",
       "provider": "tencent",
       "created_unix": 1783344048,
@@ -4530,6 +4585,7 @@
     },
     {
       "id": "poolside/laguna-xs-2.1",
+      "family": "poolside/laguna-xs-2.1",
       "name": "Poolside: Laguna XS 2.1",
       "provider": "poolside",
       "created_unix": 1783002429,
@@ -4561,6 +4617,7 @@
     },
     {
       "id": "poolside/laguna-xs-2.1:free",
+      "family": "poolside/laguna-xs-2.1",
       "name": "Poolside: Laguna XS 2.1 (free)",
       "provider": "poolside",
       "created_unix": 1783002429,
@@ -4592,6 +4649,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-5",
+      "family": "anthropic/claude-sonnet-5",
       "name": "Anthropic: Claude Sonnet 5",
       "provider": "anthropic",
       "created_unix": 1782843083,
@@ -4623,6 +4681,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-5:batch",
+      "family": "anthropic/claude-sonnet-5",
       "name": "Anthropic: Claude Sonnet 5 (batch)",
       "provider": "anthropic",
       "created_unix": 1782843083,
@@ -4654,6 +4713,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-lite-image",
+      "family": "google/gemini-3.1-flash-lite-image",
       "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
       "provider": "google",
       "created_unix": 1782837225,
@@ -4685,6 +4745,7 @@
     },
     {
       "id": "nex-agi/nex-n2-mini",
+      "family": "nex-agi/nex-n2-mini",
       "name": "Nex AGI: Nex-N2-Mini",
       "provider": "nex-agi",
       "created_unix": 1782312964,
@@ -4716,6 +4777,7 @@
     },
     {
       "id": "sakana/fugu-ultra",
+      "family": "sakana/fugu-ultra",
       "name": "Sakana: Fugu Ultra",
       "provider": "sakana",
       "created_unix": 1782276303,
@@ -4747,6 +4809,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-image",
+      "family": "google/gemini-3.1-flash-image",
       "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
       "provider": "google",
       "created_unix": 1781754065,
@@ -4778,6 +4841,7 @@
     },
     {
       "id": "google/gemini-3-pro-image",
+      "family": "google/gemini-3-pro-image",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
       "provider": "google",
       "created_unix": 1781754054,
@@ -4809,6 +4873,7 @@
     },
     {
       "id": "cohere/north-mini-code:free",
+      "family": "cohere/north-mini-code",
       "name": "Cohere: North Mini Code (free)",
       "provider": "cohere",
       "created_unix": 1781723748,
@@ -4840,11 +4905,12 @@
     },
     {
       "id": "z-ai/glm-5.2",
+      "family": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "provider": "z-ai",
       "created_unix": 1781631930,
       "created_date": "2026-06-16",
-      "age_days": 60,
+      "age_days": 61,
       "context": 1048576,
       "modality": "text->text",
       "is_vision": false,
@@ -4867,15 +4933,16 @@
         "cache_read": 0.0572
       },
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-      "capability_score": 6.52
+      "capability_score": 6.514
     },
     {
       "id": "z-ai/glm-5.2:batch",
+      "family": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2 (batch)",
       "provider": "z-ai",
       "created_unix": 1781631930,
       "created_date": "2026-06-16",
-      "age_days": 60,
+      "age_days": 61,
       "context": 512000,
       "modality": "text->text",
       "is_vision": false,
@@ -4898,10 +4965,11 @@
         "cache_read": 0.13
       },
       "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-      "capability_score": 5.983
+      "capability_score": 5.978
     },
     {
       "id": "openrouter/fusion",
+      "family": "openrouter/fusion",
       "name": "OpenRouter: Fusion",
       "provider": "openrouter",
       "created_unix": 1781371647,
@@ -4933,6 +5001,7 @@
     },
     {
       "id": "moonshotai/kimi-k2.7-code",
+      "family": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "provider": "moonshotai",
       "created_unix": 1781266361,
@@ -4964,6 +5033,7 @@
     },
     {
       "id": "moonshotai/kimi-k2.7-code:batch",
+      "family": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code (batch)",
       "provider": "moonshotai",
       "created_unix": 1781266361,
@@ -4995,6 +5065,7 @@
     },
     {
       "id": "~anthropic/claude-fable-latest",
+      "family": "~anthropic/claude-fable",
       "name": "Anthropic: Claude Fable Latest",
       "provider": "~anthropic",
       "created_unix": 1781029944,
@@ -5026,6 +5097,7 @@
     },
     {
       "id": "anthropic/claude-fable-5",
+      "family": "anthropic/claude-fable-5",
       "name": "Anthropic: Claude Fable 5",
       "provider": "anthropic",
       "created_unix": 1781007515,
@@ -5057,6 +5129,7 @@
     },
     {
       "id": "anthropic/claude-fable-5:batch",
+      "family": "anthropic/claude-fable-5",
       "name": "Anthropic: Claude Fable 5 (batch)",
       "provider": "anthropic",
       "created_unix": 1781007515,
@@ -5088,6 +5161,7 @@
     },
     {
       "id": "nex-agi/nex-n2-pro",
+      "family": "nex-agi/nex-n2-pro",
       "name": "Nex AGI: Nex-N2-Pro",
       "provider": "nex-agi",
       "created_unix": 1780937140,
@@ -5119,6 +5193,7 @@
     },
     {
       "id": "nvidia/nemotron-3.5-content-safety:free",
+      "family": "nvidia/nemotron-3.5-content-safety",
       "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
       "provider": "nvidia",
       "created_unix": 1780581864,
@@ -5150,6 +5225,7 @@
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "family": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "provider": "nvidia",
       "created_unix": 1780551208,
@@ -5181,6 +5257,7 @@
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+      "family": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra (batch)",
       "provider": "nvidia",
       "created_unix": 1780551208,
@@ -5212,6 +5289,7 @@
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "family": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra (free)",
       "provider": "nvidia",
       "created_unix": 1780551208,
@@ -5243,6 +5321,7 @@
     },
     {
       "id": "qwen/qwen3.7-plus",
+      "family": "qwen/qwen3.7-plus",
       "name": "Qwen: Qwen3.7 Plus",
       "provider": "qwen",
       "created_unix": 1780491783,
@@ -5274,6 +5353,7 @@
     },
     {
       "id": "minimax/minimax-m3",
+      "family": "minimax/minimax-m3",
       "name": "MiniMax: MiniMax M3",
       "provider": "minimax",
       "created_unix": 1780245374,
@@ -5305,6 +5385,7 @@
     },
     {
       "id": "minimax/minimax-m3:batch",
+      "family": "minimax/minimax-m3",
       "name": "MiniMax: MiniMax M3 (batch)",
       "provider": "minimax",
       "created_unix": 1780245374,
@@ -5336,6 +5417,7 @@
     },
     {
       "id": "stepfun/step-3.7-flash",
+      "family": "stepfun/step-3.7-flash",
       "name": "StepFun: Step 3.7 Flash",
       "provider": "stepfun",
       "created_unix": 1779985069,
@@ -5367,6 +5449,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.8-fast",
+      "family": "anthropic/claude-opus-4.8-fast",
       "name": "Anthropic: Claude Opus 4.8 (Fast)",
       "provider": "anthropic",
       "created_unix": 1779913703,
@@ -5398,6 +5481,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.8",
+      "family": "anthropic/claude-opus-4.8",
       "name": "Anthropic: Claude Opus 4.8",
       "provider": "anthropic",
       "created_unix": 1779905091,
@@ -5429,6 +5513,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.8:batch",
+      "family": "anthropic/claude-opus-4.8",
       "name": "Anthropic: Claude Opus 4.8 (batch)",
       "provider": "anthropic",
       "created_unix": 1779905091,
@@ -5460,6 +5545,7 @@
     },
     {
       "id": "qwen/qwen3.7-max",
+      "family": "qwen/qwen3.7-max",
       "name": "Qwen: Qwen3.7 Max",
       "provider": "qwen",
       "created_unix": 1779376861,
@@ -5491,6 +5577,7 @@
     },
     {
       "id": "x-ai/grok-build-0.1",
+      "family": "x-ai/grok-build-0.1",
       "name": "SpaceXAI: Grok Build 0.1",
       "provider": "x-ai",
       "created_unix": 1779298123,
@@ -5522,6 +5609,7 @@
     },
     {
       "id": "google/gemini-3.5-flash",
+      "family": "google/gemini-3.5-flash",
       "name": "Google: Gemini 3.5 Flash",
       "provider": "google",
       "created_unix": 1779193800,
@@ -5553,6 +5641,7 @@
     },
     {
       "id": "google/gemini-3.5-flash:batch",
+      "family": "google/gemini-3.5-flash",
       "name": "Google: Gemini 3.5 Flash (batch)",
       "provider": "google",
       "created_unix": 1779193800,
@@ -5584,6 +5673,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.7-fast",
+      "family": "anthropic/claude-opus-4.7-fast",
       "name": "Anthropic: Claude Opus 4.7 (Fast)",
       "provider": "anthropic",
       "created_unix": 1778613011,
@@ -5615,6 +5705,7 @@
     },
     {
       "id": "perceptron/perceptron-mk1",
+      "family": "perceptron/perceptron-mk1",
       "name": "Perceptron: Perceptron Mk1",
       "provider": "perceptron",
       "created_unix": 1778597029,
@@ -5646,6 +5737,7 @@
     },
     {
       "id": "inclusionai/ring-2.6-1t",
+      "family": "inclusionai/ring-2.6-1t",
       "name": "inclusionAI: Ring-2.6-1T",
       "provider": "inclusionai",
       "created_unix": 1778247440,
@@ -5677,6 +5769,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-lite",
+      "family": "google/gemini-3.1-flash-lite",
       "name": "Google: Gemini 3.1 Flash Lite",
       "provider": "google",
       "created_unix": 1778168828,
@@ -5708,6 +5801,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-lite:batch",
+      "family": "google/gemini-3.1-flash-lite",
       "name": "Google: Gemini 3.1 Flash Lite (batch)",
       "provider": "google",
       "created_unix": 1778168828,
@@ -5739,6 +5833,7 @@
     },
     {
       "id": "openai/gpt-chat-latest",
+      "family": "openai/gpt-chat",
       "name": "OpenAI: GPT Chat Latest",
       "provider": "openai",
       "created_unix": 1778000212,
@@ -5770,6 +5865,7 @@
     },
     {
       "id": "x-ai/grok-4.3",
+      "family": "x-ai/grok-4.3",
       "name": "SpaceXAI: Grok 4.3",
       "provider": "x-ai",
       "created_unix": 1777591821,
@@ -5801,6 +5897,7 @@
     },
     {
       "id": "ibm-granite/granite-4.1-8b",
+      "family": "ibm-granite/granite-4.1-8b",
       "name": "IBM: Granite 4.1 8B",
       "provider": "ibm-granite",
       "created_unix": 1777577071,
@@ -5832,6 +5929,7 @@
     },
     {
       "id": "mistralai/mistral-medium-3-5",
+      "family": "mistralai/mistral-medium-3-5",
       "name": "Mistral: Mistral Medium 3.5",
       "provider": "mistralai",
       "created_unix": 1777570439,
@@ -5863,6 +5961,7 @@
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "family": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
       "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
       "provider": "nvidia",
       "created_unix": 1777393095,
@@ -5894,6 +5993,7 @@
     },
     {
       "id": "~anthropic/claude-haiku-latest",
+      "family": "~anthropic/claude-haiku",
       "name": "Anthropic Claude Haiku Latest",
       "provider": "~anthropic",
       "created_unix": 1777318492,
@@ -5925,6 +6025,7 @@
     },
     {
       "id": "~openai/gpt-mini-latest",
+      "family": "~openai/gpt-mini",
       "name": "OpenAI GPT Mini Latest",
       "provider": "~openai",
       "created_unix": 1777318471,
@@ -5956,6 +6057,7 @@
     },
     {
       "id": "~google/gemini-pro-latest",
+      "family": "~google/gemini-pro",
       "name": "Google Gemini Pro Latest",
       "provider": "~google",
       "created_unix": 1777318451,
@@ -5987,6 +6089,7 @@
     },
     {
       "id": "~moonshotai/kimi-latest",
+      "family": "~moonshotai/kimi",
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
       "created_unix": 1777318428,
@@ -6018,6 +6121,7 @@
     },
     {
       "id": "~google/gemini-flash-latest",
+      "family": "~google/gemini-flash",
       "name": "Google Gemini Flash Latest",
       "provider": "~google",
       "created_unix": 1777318398,
@@ -6049,6 +6153,7 @@
     },
     {
       "id": "~anthropic/claude-sonnet-latest",
+      "family": "~anthropic/claude-sonnet",
       "name": "Anthropic Claude Sonnet Latest",
       "provider": "~anthropic",
       "created_unix": 1777318368,
@@ -6080,6 +6185,7 @@
     },
     {
       "id": "~openai/gpt-latest",
+      "family": "~openai/gpt",
       "name": "OpenAI GPT Latest",
       "provider": "~openai",
       "created_unix": 1777318334,
@@ -6111,6 +6217,7 @@
     },
     {
       "id": "qwen/qwen3.5-plus-20260420",
+      "family": "qwen/qwen3.5-plus-20260420",
       "name": "Qwen: Qwen3.5 Plus 2026-04-20",
       "provider": "qwen",
       "created_unix": 1777261368,
@@ -6142,6 +6249,7 @@
     },
     {
       "id": "qwen/qwen3.6-flash",
+      "family": "qwen/qwen3.6-flash",
       "name": "Qwen: Qwen3.6 Flash",
       "provider": "qwen",
       "created_unix": 1777261362,
@@ -6173,6 +6281,7 @@
     },
     {
       "id": "qwen/qwen3.6-35b-a3b",
+      "family": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "provider": "qwen",
       "created_unix": 1777260255,
@@ -6204,6 +6313,7 @@
     },
     {
       "id": "qwen/qwen3.6-max-preview",
+      "family": "qwen/qwen3.6-max",
       "name": "Qwen: Qwen3.6 Max Preview",
       "provider": "qwen",
       "created_unix": 1777260242,
@@ -6235,6 +6345,7 @@
     },
     {
       "id": "qwen/qwen3.6-27b",
+      "family": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "provider": "qwen",
       "created_unix": 1777255064,
@@ -6266,6 +6377,7 @@
     },
     {
       "id": "openai/gpt-5.5-pro",
+      "family": "openai/gpt-5.5-pro",
       "name": "OpenAI: GPT-5.5 Pro",
       "provider": "openai",
       "created_unix": 1777051896,
@@ -6297,6 +6409,7 @@
     },
     {
       "id": "openai/gpt-5.5-pro:batch",
+      "family": "openai/gpt-5.5-pro",
       "name": "OpenAI: GPT-5.5 Pro (batch)",
       "provider": "openai",
       "created_unix": 1777051896,
@@ -6328,6 +6441,7 @@
     },
     {
       "id": "openai/gpt-5.5",
+      "family": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5",
       "provider": "openai",
       "created_unix": 1777051893,
@@ -6359,6 +6473,7 @@
     },
     {
       "id": "openai/gpt-5.5:batch",
+      "family": "openai/gpt-5.5",
       "name": "OpenAI: GPT-5.5 (batch)",
       "provider": "openai",
       "created_unix": 1777051893,
@@ -6390,6 +6505,7 @@
     },
     {
       "id": "deepseek/deepseek-v4-pro",
+      "family": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "provider": "deepseek",
       "created_unix": 1777000679,
@@ -6421,6 +6537,7 @@
     },
     {
       "id": "deepseek/deepseek-v4-flash",
+      "family": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "provider": "deepseek",
       "created_unix": 1777000666,
@@ -6452,6 +6569,7 @@
     },
     {
       "id": "inclusionai/ling-2.6-1t",
+      "family": "inclusionai/ling-2.6-1t",
       "name": "inclusionAI: Ling-2.6-1T",
       "provider": "inclusionai",
       "created_unix": 1776948238,
@@ -6483,6 +6601,7 @@
     },
     {
       "id": "tencent/hy3-preview",
+      "family": "tencent/hy3",
       "name": "Tencent: Hy3 preview",
       "provider": "tencent",
       "created_unix": 1776878150,
@@ -6514,6 +6633,7 @@
     },
     {
       "id": "xiaomi/mimo-v2.5-pro",
+      "family": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "provider": "xiaomi",
       "created_unix": 1776874273,
@@ -6545,6 +6665,7 @@
     },
     {
       "id": "xiaomi/mimo-v2.5",
+      "family": "xiaomi/mimo-v2.5",
       "name": "Xiaomi: MiMo-V2.5",
       "provider": "xiaomi",
       "created_unix": 1776874269,
@@ -6576,6 +6697,7 @@
     },
     {
       "id": "openai/gpt-5.4-image-2",
+      "family": "openai/gpt-5.4-image-2",
       "name": "OpenAI: GPT-5.4 Image 2",
       "provider": "openai",
       "created_unix": 1776797528,
@@ -6607,6 +6729,7 @@
     },
     {
       "id": "inclusionai/ling-2.6-flash",
+      "family": "inclusionai/ling-2.6-flash",
       "name": "inclusionAI: Ling-2.6-flash",
       "provider": "inclusionai",
       "created_unix": 1776795886,
@@ -6638,6 +6761,7 @@
     },
     {
       "id": "~anthropic/claude-opus-latest",
+      "family": "~anthropic/claude-opus",
       "name": "Anthropic: Claude Opus Latest",
       "provider": "~anthropic",
       "created_unix": 1776795361,
@@ -6669,6 +6793,7 @@
     },
     {
       "id": "openrouter/pareto-code",
+      "family": "openrouter/pareto-code",
       "name": "Pareto Code Router",
       "provider": "openrouter",
       "created_unix": 1776747900,
@@ -6700,6 +6825,7 @@
     },
     {
       "id": "moonshotai/kimi-k2.6",
+      "family": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "provider": "moonshotai",
       "created_unix": 1776699402,
@@ -6731,6 +6857,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.7",
+      "family": "anthropic/claude-opus-4.7",
       "name": "Anthropic: Claude Opus 4.7",
       "provider": "anthropic",
       "created_unix": 1776351100,
@@ -6762,6 +6889,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.7:batch",
+      "family": "anthropic/claude-opus-4.7",
       "name": "Anthropic: Claude Opus 4.7 (batch)",
       "provider": "anthropic",
       "created_unix": 1776351100,
@@ -6793,6 +6921,7 @@
     },
     {
       "id": "z-ai/glm-5.1",
+      "family": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "provider": "z-ai",
       "created_unix": 1775578025,
@@ -6824,6 +6953,7 @@
     },
     {
       "id": "google/gemma-4-26b-a4b-it",
+      "family": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "provider": "google",
       "created_unix": 1775227989,
@@ -6855,6 +6985,7 @@
     },
     {
       "id": "google/gemma-4-26b-a4b-it:free",
+      "family": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B  (free)",
       "provider": "google",
       "created_unix": 1775227989,
@@ -6886,6 +7017,7 @@
     },
     {
       "id": "google/gemma-4-31b-it",
+      "family": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "provider": "google",
       "created_unix": 1775148486,
@@ -6917,6 +7049,7 @@
     },
     {
       "id": "google/gemma-4-31b-it:free",
+      "family": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B (free)",
       "provider": "google",
       "created_unix": 1775148486,
@@ -6948,6 +7081,7 @@
     },
     {
       "id": "qwen/qwen3.6-plus",
+      "family": "qwen/qwen3.6-plus",
       "name": "Qwen: Qwen3.6 Plus",
       "provider": "qwen",
       "created_unix": 1775133557,
@@ -6979,6 +7113,7 @@
     },
     {
       "id": "z-ai/glm-5v-turbo",
+      "family": "z-ai/glm-5v-turbo",
       "name": "Z.ai: GLM 5V Turbo",
       "provider": "z-ai",
       "created_unix": 1775061458,
@@ -7010,6 +7145,7 @@
     },
     {
       "id": "arcee-ai/trinity-large-thinking",
+      "family": "arcee-ai/trinity-large-thinking",
       "name": "Arcee AI: Trinity Large Thinking",
       "provider": "arcee-ai",
       "created_unix": 1775058318,
@@ -7041,11 +7177,12 @@
     },
     {
       "id": "x-ai/grok-4.20-multi-agent",
+      "family": "x-ai/grok-4.20-multi-agent",
       "name": "SpaceXAI: Grok 4.20 Multi-Agent",
       "provider": "x-ai",
       "created_unix": 1774979158,
       "created_date": "2026-03-31",
-      "age_days": 137,
+      "age_days": 138,
       "context": 2000000,
       "modality": "text+image+file->text",
       "is_vision": true,
@@ -7068,10 +7205,11 @@
         "cache_read": 0.2
       },
       "description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information...",
-      "capability_score": 6.549
+      "capability_score": 6.544
     },
     {
       "id": "x-ai/grok-4.20",
+      "family": "x-ai/grok-4.20",
       "name": "SpaceXAI: Grok 4.20",
       "provider": "x-ai",
       "created_unix": 1774979019,
@@ -7103,6 +7241,7 @@
     },
     {
       "id": "google/lyria-3-pro-preview",
+      "family": "google/lyria-3-pro",
       "name": "Google: Lyria 3 Pro Preview",
       "provider": "google",
       "created_unix": 1774907286,
@@ -7134,6 +7273,7 @@
     },
     {
       "id": "google/lyria-3-clip-preview",
+      "family": "google/lyria-3-clip",
       "name": "Google: Lyria 3 Clip Preview",
       "provider": "google",
       "created_unix": 1774907255,
@@ -7165,6 +7305,7 @@
     },
     {
       "id": "kwaipilot/kat-coder-pro-v2",
+      "family": "kwaipilot/kat-coder-pro",
       "name": "Kwaipilot: KAT-Coder-Pro V2",
       "provider": "kwaipilot",
       "created_unix": 1774649310,
@@ -7196,6 +7337,7 @@
     },
     {
       "id": "rekaai/reka-edge",
+      "family": "rekaai/reka-edge",
       "name": "Reka Edge",
       "provider": "rekaai",
       "created_unix": 1774026965,
@@ -7227,6 +7369,7 @@
     },
     {
       "id": "minimax/minimax-m2.7",
+      "family": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "provider": "minimax",
       "created_unix": 1773836697,
@@ -7258,6 +7401,7 @@
     },
     {
       "id": "openai/gpt-5.4-nano",
+      "family": "openai/gpt-5.4-nano",
       "name": "OpenAI: GPT-5.4 Nano",
       "provider": "openai",
       "created_unix": 1773748187,
@@ -7289,6 +7433,7 @@
     },
     {
       "id": "openai/gpt-5.4-nano:batch",
+      "family": "openai/gpt-5.4-nano",
       "name": "OpenAI: GPT-5.4 Nano (batch)",
       "provider": "openai",
       "created_unix": 1773748187,
@@ -7320,6 +7465,7 @@
     },
     {
       "id": "openai/gpt-5.4-mini",
+      "family": "openai/gpt-5.4-mini",
       "name": "OpenAI: GPT-5.4 Mini",
       "provider": "openai",
       "created_unix": 1773748178,
@@ -7351,6 +7497,7 @@
     },
     {
       "id": "openai/gpt-5.4-mini:batch",
+      "family": "openai/gpt-5.4-mini",
       "name": "OpenAI: GPT-5.4 Mini (batch)",
       "provider": "openai",
       "created_unix": 1773748178,
@@ -7382,6 +7529,7 @@
     },
     {
       "id": "mistralai/mistral-small-2603",
+      "family": "mistralai/mistral-small-2603",
       "name": "Mistral: Mistral Small 4",
       "provider": "mistralai",
       "created_unix": 1773695685,
@@ -7413,6 +7561,7 @@
     },
     {
       "id": "z-ai/glm-5-turbo",
+      "family": "z-ai/glm-5-turbo",
       "name": "Z.ai: GLM 5 Turbo",
       "provider": "z-ai",
       "created_unix": 1773583573,
@@ -7444,6 +7593,7 @@
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b",
+      "family": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super",
       "provider": "nvidia",
       "created_unix": 1773245239,
@@ -7475,6 +7625,7 @@
     },
     {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "family": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super (free)",
       "provider": "nvidia",
       "created_unix": 1773245239,
@@ -7506,6 +7657,7 @@
     },
     {
       "id": "bytedance-seed/seed-2.0-lite",
+      "family": "bytedance-seed/seed-2.0-lite",
       "name": "ByteDance Seed: Seed-2.0-Lite",
       "provider": "bytedance-seed",
       "created_unix": 1773157231,
@@ -7537,6 +7689,7 @@
     },
     {
       "id": "qwen/qwen3.5-9b",
+      "family": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "provider": "qwen",
       "created_unix": 1773152396,
@@ -7568,6 +7721,7 @@
     },
     {
       "id": "openai/gpt-5.4-pro",
+      "family": "openai/gpt-5.4-pro",
       "name": "OpenAI: GPT-5.4 Pro",
       "provider": "openai",
       "created_unix": 1772734366,
@@ -7599,6 +7753,7 @@
     },
     {
       "id": "openai/gpt-5.4-pro:batch",
+      "family": "openai/gpt-5.4-pro",
       "name": "OpenAI: GPT-5.4 Pro (batch)",
       "provider": "openai",
       "created_unix": 1772734366,
@@ -7630,6 +7785,7 @@
     },
     {
       "id": "openai/gpt-5.4",
+      "family": "openai/gpt-5.4",
       "name": "OpenAI: GPT-5.4",
       "provider": "openai",
       "created_unix": 1772734352,
@@ -7661,6 +7817,7 @@
     },
     {
       "id": "openai/gpt-5.4:batch",
+      "family": "openai/gpt-5.4",
       "name": "OpenAI: GPT-5.4 (batch)",
       "provider": "openai",
       "created_unix": 1772734352,
@@ -7692,6 +7849,7 @@
     },
     {
       "id": "inception/mercury-2",
+      "family": "inception/mercury-2",
       "name": "Inception: Mercury 2",
       "provider": "inception",
       "created_unix": 1772636275,
@@ -7723,6 +7881,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-lite-preview",
+      "family": "google/gemini-3.1-flash-lite",
       "name": "Google: Gemini 3.1 Flash Lite Preview",
       "provider": "google",
       "created_unix": 1772512673,
@@ -7754,6 +7913,7 @@
     },
     {
       "id": "bytedance-seed/seed-2.0-mini",
+      "family": "bytedance-seed/seed-2.0-mini",
       "name": "ByteDance Seed: Seed-2.0-Mini",
       "provider": "bytedance-seed",
       "created_unix": 1772131107,
@@ -7785,6 +7945,7 @@
     },
     {
       "id": "google/gemini-3.1-flash-image-preview",
+      "family": "google/gemini-3.1-flash-image",
       "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
       "provider": "google",
       "created_unix": 1772119558,
@@ -7816,6 +7977,7 @@
     },
     {
       "id": "qwen/qwen3.5-35b-a3b",
+      "family": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "provider": "qwen",
       "created_unix": 1772053822,
@@ -7847,6 +8009,7 @@
     },
     {
       "id": "qwen/qwen3.5-27b",
+      "family": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "provider": "qwen",
       "created_unix": 1772053810,
@@ -7878,6 +8041,7 @@
     },
     {
       "id": "qwen/qwen3.5-122b-a10b",
+      "family": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "provider": "qwen",
       "created_unix": 1772053789,
@@ -7909,6 +8073,7 @@
     },
     {
       "id": "qwen/qwen3.5-flash-02-23",
+      "family": "qwen/qwen3.5-flash-02-23",
       "name": "Qwen: Qwen3.5-Flash",
       "provider": "qwen",
       "created_unix": 1772053776,
@@ -7940,6 +8105,7 @@
     },
     {
       "id": "google/gemini-3.1-pro-preview-customtools",
+      "family": "google/gemini-3.1-pro-preview-customtools",
       "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
       "provider": "google",
       "created_unix": 1772045923,
@@ -7971,6 +8137,7 @@
     },
     {
       "id": "openai/gpt-5.3-codex",
+      "family": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
       "provider": "openai",
       "created_unix": 1771959164,
@@ -8002,6 +8169,7 @@
     },
     {
       "id": "aion-labs/aion-2.0",
+      "family": "aion-labs/aion-2.0",
       "name": "AionLabs: Aion-2.0",
       "provider": "aion-labs",
       "created_unix": 1771881306,
@@ -8033,6 +8201,7 @@
     },
     {
       "id": "google/gemini-3.1-pro-preview",
+      "family": "google/gemini-3.1-pro",
       "name": "Google: Gemini 3.1 Pro Preview",
       "provider": "google",
       "created_unix": 1771509627,
@@ -8064,6 +8233,7 @@
     },
     {
       "id": "google/gemini-3.1-pro-preview:batch",
+      "family": "google/gemini-3.1-pro-preview",
       "name": "Google: Gemini 3.1 Pro Preview (batch)",
       "provider": "google",
       "created_unix": 1771509627,
@@ -8095,6 +8265,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4.6",
+      "family": "anthropic/claude-sonnet-4.6",
       "name": "Anthropic: Claude Sonnet 4.6",
       "provider": "anthropic",
       "created_unix": 1771342990,
@@ -8126,6 +8297,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4.6:batch",
+      "family": "anthropic/claude-sonnet-4.6",
       "name": "Anthropic: Claude Sonnet 4.6 (batch)",
       "provider": "anthropic",
       "created_unix": 1771342990,
@@ -8157,6 +8329,7 @@
     },
     {
       "id": "qwen/qwen3.5-plus-02-15",
+      "family": "qwen/qwen3.5-plus-02-15",
       "name": "Qwen: Qwen3.5 Plus 2026-02-15",
       "provider": "qwen",
       "created_unix": 1771229416,
@@ -8188,6 +8361,7 @@
     },
     {
       "id": "qwen/qwen3.5-397b-a17b",
+      "family": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "provider": "qwen",
       "created_unix": 1771223018,
@@ -8219,6 +8393,7 @@
     },
     {
       "id": "minimax/minimax-m2.5",
+      "family": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "provider": "minimax",
       "created_unix": 1770908502,
@@ -8250,6 +8425,7 @@
     },
     {
       "id": "z-ai/glm-5",
+      "family": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "provider": "z-ai",
       "created_unix": 1770829182,
@@ -8281,6 +8457,7 @@
     },
     {
       "id": "qwen/qwen3-max-thinking",
+      "family": "qwen/qwen3-max-thinking",
       "name": "Qwen: Qwen3 Max Thinking",
       "provider": "qwen",
       "created_unix": 1770671901,
@@ -8312,6 +8489,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.6",
+      "family": "anthropic/claude-opus-4.6",
       "name": "Anthropic: Claude Opus 4.6",
       "provider": "anthropic",
       "created_unix": 1770219050,
@@ -8343,6 +8521,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.6:batch",
+      "family": "anthropic/claude-opus-4.6",
       "name": "Anthropic: Claude Opus 4.6 (batch)",
       "provider": "anthropic",
       "created_unix": 1770219050,
@@ -8374,6 +8553,7 @@
     },
     {
       "id": "qwen/qwen3-coder-next",
+      "family": "qwen/qwen3-coder-next",
       "name": "Qwen: Qwen3 Coder Next",
       "provider": "qwen",
       "created_unix": 1770164101,
@@ -8405,6 +8585,7 @@
     },
     {
       "id": "openrouter/free",
+      "family": "openrouter/free",
       "name": "Free Models Router",
       "provider": "openrouter",
       "created_unix": 1769917427,
@@ -8436,6 +8617,7 @@
     },
     {
       "id": "stepfun/step-3.5-flash",
+      "family": "stepfun/step-3.5-flash",
       "name": "StepFun: Step 3.5 Flash",
       "provider": "stepfun",
       "created_unix": 1769728337,
@@ -8467,6 +8649,7 @@
     },
     {
       "id": "moonshotai/kimi-k2.5",
+      "family": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "provider": "moonshotai",
       "created_unix": 1769487076,
@@ -8498,6 +8681,7 @@
     },
     {
       "id": "upstage/solar-pro-3",
+      "family": "upstage/solar-pro-3",
       "name": "Upstage: Solar Pro 3",
       "provider": "upstage",
       "created_unix": 1769481200,
@@ -8529,6 +8713,7 @@
     },
     {
       "id": "minimax/minimax-m2-her",
+      "family": "minimax/minimax-m2-her",
       "name": "MiniMax: MiniMax M2-her",
       "provider": "minimax",
       "created_unix": 1769177239,
@@ -8560,6 +8745,7 @@
     },
     {
       "id": "writer/palmyra-x5",
+      "family": "writer/palmyra-x5",
       "name": "Writer: Palmyra X5",
       "provider": "writer",
       "created_unix": 1769003823,
@@ -8591,6 +8777,7 @@
     },
     {
       "id": "openai/gpt-audio",
+      "family": "openai/gpt-audio",
       "name": "OpenAI: GPT Audio",
       "provider": "openai",
       "created_unix": 1768862569,
@@ -8622,6 +8809,7 @@
     },
     {
       "id": "openai/gpt-audio-mini",
+      "family": "openai/gpt-audio-mini",
       "name": "OpenAI: GPT Audio Mini",
       "provider": "openai",
       "created_unix": 1768859419,
@@ -8653,6 +8841,7 @@
     },
     {
       "id": "z-ai/glm-4.7-flash",
+      "family": "z-ai/glm-4.7-flash",
       "name": "Z.ai: GLM 4.7 Flash",
       "provider": "z-ai",
       "created_unix": 1768833913,
@@ -8684,6 +8873,7 @@
     },
     {
       "id": "openai/gpt-5.2-codex",
+      "family": "openai/gpt-5.2-codex",
       "name": "OpenAI: GPT-5.2-Codex",
       "provider": "openai",
       "created_unix": 1768409315,
@@ -8715,6 +8905,7 @@
     },
     {
       "id": "bytedance-seed/seed-1.6-flash",
+      "family": "bytedance-seed/seed-1.6-flash",
       "name": "ByteDance Seed: Seed 1.6 Flash",
       "provider": "bytedance-seed",
       "created_unix": 1766505011,
@@ -8746,6 +8937,7 @@
     },
     {
       "id": "bytedance-seed/seed-1.6",
+      "family": "bytedance-seed/seed-1.6",
       "name": "ByteDance Seed: Seed 1.6",
       "provider": "bytedance-seed",
       "created_unix": 1766504997,
@@ -8777,6 +8969,7 @@
     },
     {
       "id": "minimax/minimax-m2.1",
+      "family": "minimax/minimax-m2.1",
       "name": "MiniMax: MiniMax M2.1",
       "provider": "minimax",
       "created_unix": 1766454997,
@@ -8808,6 +9001,7 @@
     },
     {
       "id": "z-ai/glm-4.7",
+      "family": "z-ai/glm-4.7",
       "name": "Z.ai: GLM 4.7",
       "provider": "z-ai",
       "created_unix": 1766378014,
@@ -8839,6 +9033,7 @@
     },
     {
       "id": "google/gemini-3-flash-preview",
+      "family": "google/gemini-3-flash",
       "name": "Google: Gemini 3 Flash Preview",
       "provider": "google",
       "created_unix": 1765987078,
@@ -8870,6 +9065,7 @@
     },
     {
       "id": "google/gemini-3-flash-preview:batch",
+      "family": "google/gemini-3-flash-preview",
       "name": "Google: Gemini 3 Flash Preview (batch)",
       "provider": "google",
       "created_unix": 1765987078,
@@ -8901,6 +9097,7 @@
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "family": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "provider": "nvidia",
       "created_unix": 1765731275,
@@ -8932,6 +9129,7 @@
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "family": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
       "provider": "nvidia",
       "created_unix": 1765731275,
@@ -8963,6 +9161,7 @@
     },
     {
       "id": "openai/gpt-5.2-chat",
+      "family": "openai/gpt-5.2-chat",
       "name": "OpenAI: GPT-5.2 Chat",
       "provider": "openai",
       "created_unix": 1765389783,
@@ -8994,6 +9193,7 @@
     },
     {
       "id": "openai/gpt-5.2-pro",
+      "family": "openai/gpt-5.2-pro",
       "name": "OpenAI: GPT-5.2 Pro",
       "provider": "openai",
       "created_unix": 1765389780,
@@ -9025,6 +9225,7 @@
     },
     {
       "id": "openai/gpt-5.2-pro:batch",
+      "family": "openai/gpt-5.2-pro",
       "name": "OpenAI: GPT-5.2 Pro (batch)",
       "provider": "openai",
       "created_unix": 1765389780,
@@ -9056,6 +9257,7 @@
     },
     {
       "id": "openai/gpt-5.2",
+      "family": "openai/gpt-5.2",
       "name": "OpenAI: GPT-5.2",
       "provider": "openai",
       "created_unix": 1765389775,
@@ -9087,6 +9289,7 @@
     },
     {
       "id": "openai/gpt-5.2:batch",
+      "family": "openai/gpt-5.2",
       "name": "OpenAI: GPT-5.2 (batch)",
       "provider": "openai",
       "created_unix": 1765389775,
@@ -9118,6 +9321,7 @@
     },
     {
       "id": "relace/relace-search",
+      "family": "relace/relace-search",
       "name": "Relace: Relace Search",
       "provider": "relace",
       "created_unix": 1765213560,
@@ -9149,6 +9353,7 @@
     },
     {
       "id": "z-ai/glm-4.6v",
+      "family": "z-ai/glm-4.6v",
       "name": "Z.ai: GLM 4.6V",
       "provider": "z-ai",
       "created_unix": 1765207462,
@@ -9180,6 +9385,7 @@
     },
     {
       "id": "openrouter/bodybuilder",
+      "family": "openrouter/bodybuilder",
       "name": "Body Builder (beta)",
       "provider": "openrouter",
       "created_unix": 1764903653,
@@ -9211,6 +9417,7 @@
     },
     {
       "id": "openai/gpt-5.1-codex-max",
+      "family": "openai/gpt-5.1-codex-max",
       "name": "OpenAI: GPT-5.1-Codex-Max",
       "provider": "openai",
       "created_unix": 1764878934,
@@ -9242,6 +9449,7 @@
     },
     {
       "id": "amazon/nova-2-lite-v1",
+      "family": "amazon/nova-2-lite",
       "name": "Amazon: Nova 2 Lite",
       "provider": "amazon",
       "created_unix": 1764696672,
@@ -9273,6 +9481,7 @@
     },
     {
       "id": "mistralai/ministral-14b-2512",
+      "family": "mistralai/ministral-14b-2512",
       "name": "Mistral: Ministral 3 14B 2512",
       "provider": "mistralai",
       "created_unix": 1764681735,
@@ -9304,6 +9513,7 @@
     },
     {
       "id": "mistralai/ministral-8b-2512",
+      "family": "mistralai/ministral-8b-2512",
       "name": "Mistral: Ministral 3 8B 2512",
       "provider": "mistralai",
       "created_unix": 1764681654,
@@ -9335,6 +9545,7 @@
     },
     {
       "id": "mistralai/ministral-3b-2512",
+      "family": "mistralai/ministral-3b-2512",
       "name": "Mistral: Ministral 3 3B 2512",
       "provider": "mistralai",
       "created_unix": 1764681560,
@@ -9366,6 +9577,7 @@
     },
     {
       "id": "mistralai/mistral-large-2512",
+      "family": "mistralai/mistral-large-2512",
       "name": "Mistral: Mistral Large 3 2512",
       "provider": "mistralai",
       "created_unix": 1764624472,
@@ -9397,6 +9609,7 @@
     },
     {
       "id": "deepseek/deepseek-v3.2",
+      "family": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "provider": "deepseek",
       "created_unix": 1764594642,
@@ -9428,6 +9641,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.5",
+      "family": "anthropic/claude-opus-4.5",
       "name": "Anthropic: Claude Opus 4.5",
       "provider": "anthropic",
       "created_unix": 1764010580,
@@ -9459,6 +9673,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.5:batch",
+      "family": "anthropic/claude-opus-4.5",
       "name": "Anthropic: Claude Opus 4.5 (batch)",
       "provider": "anthropic",
       "created_unix": 1764010580,
@@ -9490,6 +9705,7 @@
     },
     {
       "id": "allenai/olmo-3-32b-think",
+      "family": "allenai/olmo-3-32b-think",
       "name": "AllenAI: Olmo 3 32B Think",
       "provider": "allenai",
       "created_unix": 1763758276,
@@ -9521,6 +9737,7 @@
     },
     {
       "id": "google/gemini-3-pro-image-preview",
+      "family": "google/gemini-3-pro-image",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
       "provider": "google",
       "created_unix": 1763653797,
@@ -9552,6 +9769,7 @@
     },
     {
       "id": "deepcogito/cogito-v2.1-671b",
+      "family": "deepcogito/cogito-v2.1-671b",
       "name": "Deep Cogito: Cogito v2.1 671B",
       "provider": "deepcogito",
       "created_unix": 1763071233,
@@ -9583,6 +9801,7 @@
     },
     {
       "id": "openai/gpt-5.1",
+      "family": "openai/gpt-5.1",
       "name": "OpenAI: GPT-5.1",
       "provider": "openai",
       "created_unix": 1763060305,
@@ -9614,6 +9833,7 @@
     },
     {
       "id": "openai/gpt-5.1:batch",
+      "family": "openai/gpt-5.1",
       "name": "OpenAI: GPT-5.1 (batch)",
       "provider": "openai",
       "created_unix": 1763060305,
@@ -9645,6 +9865,7 @@
     },
     {
       "id": "openai/gpt-5.1-codex",
+      "family": "openai/gpt-5.1-codex",
       "name": "OpenAI: GPT-5.1-Codex",
       "provider": "openai",
       "created_unix": 1763060298,
@@ -9676,6 +9897,7 @@
     },
     {
       "id": "openai/gpt-5.1-codex-mini",
+      "family": "openai/gpt-5.1-codex-mini",
       "name": "OpenAI: GPT-5.1-Codex-Mini",
       "provider": "openai",
       "created_unix": 1763057820,
@@ -9707,6 +9929,7 @@
     },
     {
       "id": "moonshotai/kimi-k2-thinking",
+      "family": "moonshotai/kimi-k2-thinking",
       "name": "MoonshotAI: Kimi K2 Thinking",
       "provider": "moonshotai",
       "created_unix": 1762440622,
@@ -9738,6 +9961,7 @@
     },
     {
       "id": "amazon/nova-premier-v1",
+      "family": "amazon/nova-premier",
       "name": "Amazon: Nova Premier 1.0",
       "provider": "amazon",
       "created_unix": 1761950332,
@@ -9769,6 +9993,7 @@
     },
     {
       "id": "perplexity/sonar-pro-search",
+      "family": "perplexity/sonar-pro-search",
       "name": "Perplexity: Sonar Pro Search",
       "provider": "perplexity",
       "created_unix": 1761854366,
@@ -9800,6 +10025,7 @@
     },
     {
       "id": "mistralai/voxtral-small-24b-2507",
+      "family": "mistralai/voxtral-small-24b-2507",
       "name": "Mistral: Voxtral Small 24B 2507",
       "provider": "mistralai",
       "created_unix": 1761835144,
@@ -9831,6 +10057,7 @@
     },
     {
       "id": "openai/gpt-oss-safeguard-20b",
+      "family": "openai/gpt-oss-safeguard-20b",
       "name": "OpenAI: gpt-oss-safeguard-20b",
       "provider": "openai",
       "created_unix": 1761752836,
@@ -9862,6 +10089,7 @@
     },
     {
       "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+      "family": "nvidia/nemotron-nano-12b-v2-vl",
       "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
       "provider": "nvidia",
       "created_unix": 1761675565,
@@ -9893,6 +10121,7 @@
     },
     {
       "id": "minimax/minimax-m2",
+      "family": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "provider": "minimax",
       "created_unix": 1761252093,
@@ -9924,6 +10153,7 @@
     },
     {
       "id": "qwen/qwen3-vl-32b-instruct",
+      "family": "qwen/qwen3-vl-32b-instruct",
       "name": "Qwen: Qwen3 VL 32B Instruct",
       "provider": "qwen",
       "created_unix": 1761231332,
@@ -9955,6 +10185,7 @@
     },
     {
       "id": "ibm-granite/granite-4.0-h-micro",
+      "family": "ibm-granite/granite-4.0-h-micro",
       "name": "IBM: Granite 4.0 Micro",
       "provider": "ibm-granite",
       "created_unix": 1760927695,
@@ -9986,6 +10217,7 @@
     },
     {
       "id": "openai/gpt-5-image-mini",
+      "family": "openai/gpt-5-image-mini",
       "name": "OpenAI: GPT-5 Image Mini",
       "provider": "openai",
       "created_unix": 1760624583,
@@ -10017,6 +10249,7 @@
     },
     {
       "id": "anthropic/claude-haiku-4.5",
+      "family": "anthropic/claude-haiku-4.5",
       "name": "Anthropic: Claude Haiku 4.5",
       "provider": "anthropic",
       "created_unix": 1760547638,
@@ -10048,6 +10281,7 @@
     },
     {
       "id": "anthropic/claude-haiku-4.5:batch",
+      "family": "anthropic/claude-haiku-4.5",
       "name": "Anthropic: Claude Haiku 4.5 (batch)",
       "provider": "anthropic",
       "created_unix": 1760547638,
@@ -10079,6 +10313,7 @@
     },
     {
       "id": "qwen/qwen3-vl-8b-thinking",
+      "family": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "provider": "qwen",
       "created_unix": 1760463746,
@@ -10110,6 +10345,7 @@
     },
     {
       "id": "qwen/qwen3-vl-8b-instruct",
+      "family": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "provider": "qwen",
       "created_unix": 1760463308,
@@ -10141,6 +10377,7 @@
     },
     {
       "id": "openai/gpt-5-image",
+      "family": "openai/gpt-5-image",
       "name": "OpenAI: GPT-5 Image",
       "provider": "openai",
       "created_unix": 1760447986,
@@ -10172,6 +10409,7 @@
     },
     {
       "id": "google/gemini-2.5-flash-image",
+      "family": "google/gemini-2.5-flash-image",
       "name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
       "provider": "google",
       "created_unix": 1759870431,
@@ -10203,6 +10441,7 @@
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "family": "qwen/qwen3-vl-30b-a3b-thinking",
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "provider": "qwen",
       "created_unix": 1759794479,
@@ -10234,6 +10473,7 @@
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "family": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "provider": "qwen",
       "created_unix": 1759794476,
@@ -10265,6 +10505,7 @@
     },
     {
       "id": "openai/gpt-5-pro",
+      "family": "openai/gpt-5-pro",
       "name": "OpenAI: GPT-5 Pro",
       "provider": "openai",
       "created_unix": 1759776663,
@@ -10296,6 +10537,7 @@
     },
     {
       "id": "openai/gpt-5-pro:batch",
+      "family": "openai/gpt-5-pro",
       "name": "OpenAI: GPT-5 Pro (batch)",
       "provider": "openai",
       "created_unix": 1759776663,
@@ -10327,6 +10569,7 @@
     },
     {
       "id": "z-ai/glm-4.6",
+      "family": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "provider": "z-ai",
       "created_unix": 1759235576,
@@ -10358,6 +10601,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4.5",
+      "family": "anthropic/claude-sonnet-4.5",
       "name": "Anthropic: Claude Sonnet 4.5",
       "provider": "anthropic",
       "created_unix": 1759161676,
@@ -10389,6 +10633,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4.5:batch",
+      "family": "anthropic/claude-sonnet-4.5",
       "name": "Anthropic: Claude Sonnet 4.5 (batch)",
       "provider": "anthropic",
       "created_unix": 1759161676,
@@ -10420,6 +10665,7 @@
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
+      "family": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "provider": "deepseek",
       "created_unix": 1759150481,
@@ -10451,6 +10697,7 @@
     },
     {
       "id": "thedrummer/cydonia-24b-v4.1",
+      "family": "thedrummer/cydonia-24b-v4.1",
       "name": "TheDrummer: Cydonia 24B V4.1",
       "provider": "thedrummer",
       "created_unix": 1758931878,
@@ -10482,6 +10729,7 @@
     },
     {
       "id": "relace/relace-apply-3",
+      "family": "relace/relace-apply-3",
       "name": "Relace: Relace Apply 3",
       "provider": "relace",
       "created_unix": 1758891572,
@@ -10513,6 +10761,7 @@
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "family": "qwen/qwen3-vl-235b-a22b-thinking",
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
       "provider": "qwen",
       "created_unix": 1758668690,
@@ -10544,6 +10793,7 @@
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "family": "qwen/qwen3-vl-235b-a22b-instruct",
       "name": "Qwen: Qwen3 VL 235B A22B Instruct",
       "provider": "qwen",
       "created_unix": 1758668687,
@@ -10575,6 +10825,7 @@
     },
     {
       "id": "qwen/qwen3-max",
+      "family": "qwen/qwen3-max",
       "name": "Qwen: Qwen3 Max",
       "provider": "qwen",
       "created_unix": 1758662808,
@@ -10606,6 +10857,7 @@
     },
     {
       "id": "qwen/qwen3-coder-plus",
+      "family": "qwen/qwen3-coder-plus",
       "name": "Qwen: Qwen3 Coder Plus",
       "provider": "qwen",
       "created_unix": 1758662707,
@@ -10637,6 +10889,7 @@
     },
     {
       "id": "openai/gpt-5-codex:batch",
+      "family": "openai/gpt-5-codex",
       "name": "OpenAI: GPT-5 Codex (batch)",
       "provider": "openai",
       "created_unix": 1758643403,
@@ -10668,6 +10921,7 @@
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
+      "family": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "provider": "deepseek",
       "created_unix": 1758548275,
@@ -10699,6 +10953,7 @@
     },
     {
       "id": "qwen/qwen3-coder-flash",
+      "family": "qwen/qwen3-coder-flash",
       "name": "Qwen: Qwen3 Coder Flash",
       "provider": "qwen",
       "created_unix": 1758115536,
@@ -10730,6 +10985,7 @@
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "family": "qwen/qwen3-next-80b-a3b-thinking",
       "name": "Qwen: Qwen3 Next 80B A3B Thinking",
       "provider": "qwen",
       "created_unix": 1757612284,
@@ -10761,6 +11017,7 @@
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "family": "qwen/qwen3-next-80b-a3b-instruct",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "provider": "qwen",
       "created_unix": 1757612213,
@@ -10792,6 +11049,7 @@
     },
     {
       "id": "qwen/qwen-plus-2025-07-28",
+      "family": "qwen/qwen-plus-2025-07-28",
       "name": "Qwen: Qwen Plus 0728",
       "provider": "qwen",
       "created_unix": 1757347599,
@@ -10823,6 +11081,7 @@
     },
     {
       "id": "qwen/qwen-plus-2025-07-28:thinking",
+      "family": "qwen/qwen-plus-2025-07-28",
       "name": "Qwen: Qwen Plus 0728 (thinking)",
       "provider": "qwen",
       "created_unix": 1757347599,
@@ -10854,6 +11113,7 @@
     },
     {
       "id": "nvidia/nemotron-nano-9b-v2:free",
+      "family": "nvidia/nemotron-nano-9b-v2",
       "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
       "provider": "nvidia",
       "created_unix": 1757106807,
@@ -10885,6 +11145,7 @@
     },
     {
       "id": "moonshotai/kimi-k2-0905",
+      "family": "moonshotai/kimi-k2-0905",
       "name": "MoonshotAI: Kimi K2 0905",
       "provider": "moonshotai",
       "created_unix": 1757021147,
@@ -10916,6 +11177,7 @@
     },
     {
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
+      "family": "qwen/qwen3-30b-a3b-thinking-2507",
       "name": "Qwen: Qwen3 30B A3B Thinking 2507",
       "provider": "qwen",
       "created_unix": 1756399192,
@@ -10947,6 +11209,7 @@
     },
     {
       "id": "nousresearch/hermes-4-70b",
+      "family": "nousresearch/hermes-4-70b",
       "name": "Nous: Hermes 4 70B",
       "provider": "nousresearch",
       "created_unix": 1756236182,
@@ -10978,6 +11241,7 @@
     },
     {
       "id": "nousresearch/hermes-4-405b",
+      "family": "nousresearch/hermes-4-405b",
       "name": "Nous: Hermes 4 405B",
       "provider": "nousresearch",
       "created_unix": 1756235463,
@@ -11009,6 +11273,7 @@
     },
     {
       "id": "deepseek/deepseek-chat-v3.1",
+      "family": "deepseek/deepseek-chat-v3.1",
       "name": "DeepSeek: DeepSeek V3.1",
       "provider": "deepseek",
       "created_unix": 1755779628,
@@ -11040,6 +11305,7 @@
     },
     {
       "id": "mistralai/mistral-medium-3.1",
+      "family": "mistralai/mistral-medium-3.1",
       "name": "Mistral: Mistral Medium 3.1",
       "provider": "mistralai",
       "created_unix": 1755095639,
@@ -11071,6 +11337,7 @@
     },
     {
       "id": "z-ai/glm-4.5v",
+      "family": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "provider": "z-ai",
       "created_unix": 1754922288,
@@ -11102,6 +11369,7 @@
     },
     {
       "id": "ai21/jamba-large-1.7",
+      "family": "ai21/jamba-large-1.7",
       "name": "AI21: Jamba Large 1.7",
       "provider": "ai21",
       "created_unix": 1754669020,
@@ -11133,6 +11401,7 @@
     },
     {
       "id": "openai/gpt-5",
+      "family": "openai/gpt-5",
       "name": "OpenAI: GPT-5",
       "provider": "openai",
       "created_unix": 1754587413,
@@ -11164,6 +11433,7 @@
     },
     {
       "id": "openai/gpt-5:batch",
+      "family": "openai/gpt-5",
       "name": "OpenAI: GPT-5 (batch)",
       "provider": "openai",
       "created_unix": 1754587413,
@@ -11195,6 +11465,7 @@
     },
     {
       "id": "openai/gpt-5-mini",
+      "family": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini",
       "provider": "openai",
       "created_unix": 1754587407,
@@ -11226,6 +11497,7 @@
     },
     {
       "id": "openai/gpt-5-mini:batch",
+      "family": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini (batch)",
       "provider": "openai",
       "created_unix": 1754587407,
@@ -11257,6 +11529,7 @@
     },
     {
       "id": "openai/gpt-5-nano",
+      "family": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "provider": "openai",
       "created_unix": 1754587402,
@@ -11288,6 +11561,7 @@
     },
     {
       "id": "openai/gpt-5-nano:batch",
+      "family": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano (batch)",
       "provider": "openai",
       "created_unix": 1754587402,
@@ -11319,6 +11593,7 @@
     },
     {
       "id": "openai/gpt-oss-120b",
+      "family": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "provider": "openai",
       "created_unix": 1754414231,
@@ -11350,6 +11625,7 @@
     },
     {
       "id": "openai/gpt-oss-20b",
+      "family": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "provider": "openai",
       "created_unix": 1754414229,
@@ -11381,6 +11657,7 @@
     },
     {
       "id": "openai/gpt-oss-20b:free",
+      "family": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b (free)",
       "provider": "openai",
       "created_unix": 1754414229,
@@ -11412,6 +11689,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.1",
+      "family": "anthropic/claude-opus-4.1",
       "name": "Anthropic: Claude Opus 4.1",
       "provider": "anthropic",
       "created_unix": 1754411591,
@@ -11443,6 +11721,7 @@
     },
     {
       "id": "anthropic/claude-opus-4.1:batch",
+      "family": "anthropic/claude-opus-4.1",
       "name": "Anthropic: Claude Opus 4.1 (batch)",
       "provider": "anthropic",
       "created_unix": 1754411591,
@@ -11474,6 +11753,7 @@
     },
     {
       "id": "mistralai/codestral-2508",
+      "family": "mistralai/codestral-2508",
       "name": "Mistral: Codestral 2508",
       "provider": "mistralai",
       "created_unix": 1754079630,
@@ -11505,6 +11785,7 @@
     },
     {
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "family": "qwen/qwen3-coder-30b-a3b-instruct",
       "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
       "provider": "qwen",
       "created_unix": 1753972379,
@@ -11536,6 +11817,7 @@
     },
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "family": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "provider": "qwen",
       "created_unix": 1753806965,
@@ -11567,6 +11849,7 @@
     },
     {
       "id": "z-ai/glm-4.5",
+      "family": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "provider": "z-ai",
       "created_unix": 1753471347,
@@ -11598,6 +11881,7 @@
     },
     {
       "id": "z-ai/glm-4.5-air",
+      "family": "z-ai/glm-4.5-air",
       "name": "Z.ai: GLM 4.5 Air",
       "provider": "z-ai",
       "created_unix": 1753471258,
@@ -11629,6 +11913,7 @@
     },
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "family": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "provider": "qwen",
       "created_unix": 1753449557,
@@ -11660,6 +11945,7 @@
     },
     {
       "id": "qwen/qwen3-coder",
+      "family": "qwen/qwen3-coder",
       "name": "Qwen: Qwen3 Coder 480B A35B",
       "provider": "qwen",
       "created_unix": 1753230546,
@@ -11691,6 +11977,7 @@
     },
     {
       "id": "bytedance/ui-tars-1.5-7b",
+      "family": "bytedance/ui-tars-1.5-7b",
       "name": "ByteDance: UI-TARS 7B ",
       "provider": "bytedance",
       "created_unix": 1753205056,
@@ -11722,6 +12009,7 @@
     },
     {
       "id": "google/gemini-2.5-flash-lite",
+      "family": "google/gemini-2.5-flash-lite",
       "name": "Google: Gemini 2.5 Flash Lite",
       "provider": "google",
       "created_unix": 1753200276,
@@ -11753,6 +12041,7 @@
     },
     {
       "id": "google/gemini-2.5-flash-lite:batch",
+      "family": "google/gemini-2.5-flash-lite",
       "name": "Google: Gemini 2.5 Flash Lite (batch)",
       "provider": "google",
       "created_unix": 1753200276,
@@ -11784,6 +12073,7 @@
     },
     {
       "id": "qwen/qwen3-235b-a22b-2507",
+      "family": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "provider": "qwen",
       "created_unix": 1753119555,
@@ -11815,6 +12105,7 @@
     },
     {
       "id": "moonshotai/kimi-k2",
+      "family": "moonshotai/kimi-k2",
       "name": "MoonshotAI: Kimi K2 0711",
       "provider": "moonshotai",
       "created_unix": 1752263252,
@@ -11846,6 +12137,7 @@
     },
     {
       "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "family": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
       "name": "Venice: Uncensored",
       "provider": "cognitivecomputations",
       "created_unix": 1752094966,
@@ -11877,6 +12169,7 @@
     },
     {
       "id": "tencent/hunyuan-a13b-instruct",
+      "family": "tencent/hunyuan-a13b-instruct",
       "name": "Tencent: Hunyuan A13B Instruct",
       "provider": "tencent",
       "created_unix": 1751987664,
@@ -11908,6 +12201,7 @@
     },
     {
       "id": "morph/morph-v3-large",
+      "family": "morph/morph-v3-large",
       "name": "Morph: Morph V3 Large",
       "provider": "morph",
       "created_unix": 1751910858,
@@ -11939,6 +12233,7 @@
     },
     {
       "id": "morph/morph-v3-fast",
+      "family": "morph/morph-v3-fast",
       "name": "Morph: Morph V3 Fast",
       "provider": "morph",
       "created_unix": 1751910002,
@@ -11970,6 +12265,7 @@
     },
     {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
+      "family": "baidu/ernie-4.5-vl-424b-a47b",
       "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
       "provider": "baidu",
       "created_unix": 1751300903,
@@ -12001,6 +12297,7 @@
     },
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "family": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "provider": "mistralai",
       "created_unix": 1750443016,
@@ -12032,6 +12329,7 @@
     },
     {
       "id": "minimax/minimax-m1",
+      "family": "minimax/minimax-m1",
       "name": "MiniMax: MiniMax M1",
       "provider": "minimax",
       "created_unix": 1750200414,
@@ -12063,6 +12361,7 @@
     },
     {
       "id": "google/gemini-2.5-flash",
+      "family": "google/gemini-2.5-flash",
       "name": "Google: Gemini 2.5 Flash",
       "provider": "google",
       "created_unix": 1750172488,
@@ -12094,6 +12393,7 @@
     },
     {
       "id": "google/gemini-2.5-flash:batch",
+      "family": "google/gemini-2.5-flash",
       "name": "Google: Gemini 2.5 Flash (batch)",
       "provider": "google",
       "created_unix": 1750172488,
@@ -12125,6 +12425,7 @@
     },
     {
       "id": "google/gemini-2.5-pro",
+      "family": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "provider": "google",
       "created_unix": 1750169544,
@@ -12156,6 +12457,7 @@
     },
     {
       "id": "google/gemini-2.5-pro:batch",
+      "family": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro (batch)",
       "provider": "google",
       "created_unix": 1750169544,
@@ -12187,6 +12489,7 @@
     },
     {
       "id": "openai/o3-pro",
+      "family": "openai/o3-pro",
       "name": "OpenAI: o3 Pro",
       "provider": "openai",
       "created_unix": 1749598352,
@@ -12218,6 +12521,7 @@
     },
     {
       "id": "openai/o3-pro:batch",
+      "family": "openai/o3-pro",
       "name": "OpenAI: o3 Pro (batch)",
       "provider": "openai",
       "created_unix": 1749598352,
@@ -12249,6 +12553,7 @@
     },
     {
       "id": "google/gemini-2.5-pro-preview",
+      "family": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro Preview 06-05",
       "provider": "google",
       "created_unix": 1749137257,
@@ -12280,6 +12585,7 @@
     },
     {
       "id": "deepseek/deepseek-r1-0528",
+      "family": "deepseek/deepseek-r1-0528",
       "name": "DeepSeek: R1 0528",
       "provider": "deepseek",
       "created_unix": 1748455170,
@@ -12311,6 +12617,7 @@
     },
     {
       "id": "anthropic/claude-opus-4",
+      "family": "anthropic/claude-opus-4",
       "name": "Anthropic: Claude Opus 4",
       "provider": "anthropic",
       "created_unix": 1747931245,
@@ -12342,6 +12649,7 @@
     },
     {
       "id": "anthropic/claude-sonnet-4",
+      "family": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
       "provider": "anthropic",
       "created_unix": 1747930371,
@@ -12373,6 +12681,7 @@
     },
     {
       "id": "google/gemma-3n-e4b-it",
+      "family": "google/gemma-3n-e4b-it",
       "name": "Google: Gemma 3n 4B",
       "provider": "google",
       "created_unix": 1747776824,
@@ -12404,6 +12713,7 @@
     },
     {
       "id": "mistralai/mistral-medium-3",
+      "family": "mistralai/mistral-medium-3",
       "name": "Mistral: Mistral Medium 3",
       "provider": "mistralai",
       "created_unix": 1746627341,
@@ -12435,6 +12745,7 @@
     },
     {
       "id": "google/gemini-2.5-pro-preview-05-06",
+      "family": "google/gemini-2.5-pro-preview-05-06",
       "name": "Google: Gemini 2.5 Pro Preview 05-06",
       "provider": "google",
       "created_unix": 1746578513,
@@ -12466,6 +12777,7 @@
     },
     {
       "id": "arcee-ai/virtuoso-large",
+      "family": "arcee-ai/virtuoso-large",
       "name": "Arcee AI: Virtuoso Large",
       "provider": "arcee-ai",
       "created_unix": 1746478885,
@@ -12497,6 +12809,7 @@
     },
     {
       "id": "meta-llama/llama-guard-4-12b",
+      "family": "meta-llama/llama-guard-4-12b",
       "name": "Meta: Llama Guard 4 12B",
       "provider": "meta-llama",
       "created_unix": 1745975193,
@@ -12528,6 +12841,7 @@
     },
     {
       "id": "qwen/qwen3-30b-a3b",
+      "family": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "provider": "qwen",
       "created_unix": 1745878604,
@@ -12559,6 +12873,7 @@
     },
     {
       "id": "qwen/qwen3-8b",
+      "family": "qwen/qwen3-8b",
       "name": "Qwen: Qwen3 8B",
       "provider": "qwen",
       "created_unix": 1745876632,
@@ -12590,6 +12905,7 @@
     },
     {
       "id": "qwen/qwen3-14b",
+      "family": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "provider": "qwen",
       "created_unix": 1745876478,
@@ -12621,6 +12937,7 @@
     },
     {
       "id": "qwen/qwen3-32b",
+      "family": "qwen/qwen3-32b",
       "name": "Qwen: Qwen3 32B",
       "provider": "qwen",
       "created_unix": 1745875945,
@@ -12652,6 +12969,7 @@
     },
     {
       "id": "qwen/qwen3-235b-a22b",
+      "family": "qwen/qwen3-235b-a22b",
       "name": "Qwen: Qwen3 235B A22B",
       "provider": "qwen",
       "created_unix": 1745875757,
@@ -12683,6 +13001,7 @@
     },
     {
       "id": "openai/o4-mini-high",
+      "family": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High",
       "provider": "openai",
       "created_unix": 1744824212,
@@ -12714,6 +13033,7 @@
     },
     {
       "id": "openai/o4-mini-high:batch",
+      "family": "openai/o4-mini-high",
       "name": "OpenAI: o4 Mini High (batch)",
       "provider": "openai",
       "created_unix": 1744824212,
@@ -12745,6 +13065,7 @@
     },
     {
       "id": "openai/o3",
+      "family": "openai/o3",
       "name": "OpenAI: o3",
       "provider": "openai",
       "created_unix": 1744823457,
@@ -12776,6 +13097,7 @@
     },
     {
       "id": "openai/o3:batch",
+      "family": "openai/o3",
       "name": "OpenAI: o3 (batch)",
       "provider": "openai",
       "created_unix": 1744823457,
@@ -12807,6 +13129,7 @@
     },
     {
       "id": "openai/o4-mini",
+      "family": "openai/o4-mini",
       "name": "OpenAI: o4 Mini",
       "provider": "openai",
       "created_unix": 1744820942,
@@ -12838,6 +13161,7 @@
     },
     {
       "id": "openai/o4-mini:batch",
+      "family": "openai/o4-mini",
       "name": "OpenAI: o4 Mini (batch)",
       "provider": "openai",
       "created_unix": 1744820942,
@@ -12869,6 +13193,7 @@
     },
     {
       "id": "openai/gpt-4.1",
+      "family": "openai/gpt-4.1",
       "name": "OpenAI: GPT-4.1",
       "provider": "openai",
       "created_unix": 1744651385,
@@ -12900,6 +13225,7 @@
     },
     {
       "id": "openai/gpt-4.1:batch",
+      "family": "openai/gpt-4.1",
       "name": "OpenAI: GPT-4.1 (batch)",
       "provider": "openai",
       "created_unix": 1744651385,
@@ -12931,6 +13257,7 @@
     },
     {
       "id": "openai/gpt-4.1-mini",
+      "family": "openai/gpt-4.1-mini",
       "name": "OpenAI: GPT-4.1 Mini",
       "provider": "openai",
       "created_unix": 1744651381,
@@ -12962,6 +13289,7 @@
     },
     {
       "id": "openai/gpt-4.1-mini:batch",
+      "family": "openai/gpt-4.1-mini",
       "name": "OpenAI: GPT-4.1 Mini (batch)",
       "provider": "openai",
       "created_unix": 1744651381,
@@ -12993,6 +13321,7 @@
     },
     {
       "id": "openai/gpt-4.1-nano",
+      "family": "openai/gpt-4.1-nano",
       "name": "OpenAI: GPT-4.1 Nano",
       "provider": "openai",
       "created_unix": 1744651369,
@@ -13024,6 +13353,7 @@
     },
     {
       "id": "openai/gpt-4.1-nano:batch",
+      "family": "openai/gpt-4.1-nano",
       "name": "OpenAI: GPT-4.1 Nano (batch)",
       "provider": "openai",
       "created_unix": 1744651369,
@@ -13055,6 +13385,7 @@
     },
     {
       "id": "meta-llama/llama-4-maverick",
+      "family": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "provider": "meta-llama",
       "created_unix": 1743881822,
@@ -13086,6 +13417,7 @@
     },
     {
       "id": "meta-llama/llama-4-scout",
+      "family": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "provider": "meta-llama",
       "created_unix": 1743881519,
@@ -13117,6 +13449,7 @@
     },
     {
       "id": "deepseek/deepseek-chat-v3-0324",
+      "family": "deepseek/deepseek-chat-v3-0324",
       "name": "DeepSeek: DeepSeek V3 0324",
       "provider": "deepseek",
       "created_unix": 1742824755,
@@ -13148,6 +13481,7 @@
     },
     {
       "id": "openai/o1-pro",
+      "family": "openai/o1-pro",
       "name": "OpenAI: o1-pro",
       "provider": "openai",
       "created_unix": 1742423211,
@@ -13179,6 +13513,7 @@
     },
     {
       "id": "openai/o1-pro:batch",
+      "family": "openai/o1-pro",
       "name": "OpenAI: o1-pro (batch)",
       "provider": "openai",
       "created_unix": 1742423211,
@@ -13210,6 +13545,7 @@
     },
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "family": "mistralai/mistral-small-3.1-24b-instruct",
       "name": "Mistral: Mistral Small 3.1 24B",
       "provider": "mistralai",
       "created_unix": 1742238937,
@@ -13241,6 +13577,7 @@
     },
     {
       "id": "google/gemma-3-4b-it",
+      "family": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
       "provider": "google",
       "created_unix": 1741905510,
@@ -13272,6 +13609,7 @@
     },
     {
       "id": "google/gemma-3-12b-it",
+      "family": "google/gemma-3-12b-it",
       "name": "Google: Gemma 3 12B",
       "provider": "google",
       "created_unix": 1741902625,
@@ -13303,6 +13641,7 @@
     },
     {
       "id": "cohere/command-a",
+      "family": "cohere/command-a",
       "name": "Cohere: Command A",
       "provider": "cohere",
       "created_unix": 1741894342,
@@ -13334,6 +13673,7 @@
     },
     {
       "id": "rekaai/reka-flash-3",
+      "family": "rekaai/reka-flash-3",
       "name": "Reka Flash 3",
       "provider": "rekaai",
       "created_unix": 1741812813,
@@ -13365,6 +13705,7 @@
     },
     {
       "id": "google/gemma-3-27b-it",
+      "family": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "provider": "google",
       "created_unix": 1741756359,
@@ -13396,6 +13737,7 @@
     },
     {
       "id": "thedrummer/skyfall-36b-v2",
+      "family": "thedrummer/skyfall-36b",
       "name": "TheDrummer: Skyfall 36B V2",
       "provider": "thedrummer",
       "created_unix": 1741636566,
@@ -13427,6 +13769,7 @@
     },
     {
       "id": "perplexity/sonar-reasoning-pro",
+      "family": "perplexity/sonar-reasoning-pro",
       "name": "Perplexity: Sonar Reasoning Pro",
       "provider": "perplexity",
       "created_unix": 1741313308,
@@ -13458,6 +13801,7 @@
     },
     {
       "id": "perplexity/sonar-pro",
+      "family": "perplexity/sonar-pro",
       "name": "Perplexity: Sonar Pro",
       "provider": "perplexity",
       "created_unix": 1741312423,
@@ -13489,6 +13833,7 @@
     },
     {
       "id": "perplexity/sonar-deep-research",
+      "family": "perplexity/sonar-deep-research",
       "name": "Perplexity: Sonar Deep Research",
       "provider": "perplexity",
       "created_unix": 1741311246,
@@ -13520,6 +13865,7 @@
     },
     {
       "id": "mistralai/mistral-saba",
+      "family": "mistralai/mistral-saba",
       "name": "Mistral: Saba",
       "provider": "mistralai",
       "created_unix": 1739803239,
@@ -13551,6 +13897,7 @@
     },
     {
       "id": "openai/o3-mini-high",
+      "family": "openai/o3-mini-high",
       "name": "OpenAI: o3 Mini High",
       "provider": "openai",
       "created_unix": 1739372611,
@@ -13582,6 +13929,7 @@
     },
     {
       "id": "openai/o3-mini-high:batch",
+      "family": "openai/o3-mini-high",
       "name": "OpenAI: o3 Mini High (batch)",
       "provider": "openai",
       "created_unix": 1739372611,
@@ -13613,6 +13961,7 @@
     },
     {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
+      "family": "aion-labs/aion-rp-llama-3.1-8b",
       "name": "AionLabs: Aion-RP 1.0 (8B)",
       "provider": "aion-labs",
       "created_unix": 1738696718,
@@ -13644,6 +13993,7 @@
     },
     {
       "id": "qwen/qwen2.5-vl-72b-instruct",
+      "family": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
       "provider": "qwen",
       "created_unix": 1738410311,
@@ -13675,6 +14025,7 @@
     },
     {
       "id": "qwen/qwen-plus",
+      "family": "qwen/qwen-plus",
       "name": "Qwen: Qwen-Plus",
       "provider": "qwen",
       "created_unix": 1738409840,
@@ -13706,6 +14057,7 @@
     },
     {
       "id": "openai/o3-mini",
+      "family": "openai/o3-mini",
       "name": "OpenAI: o3 Mini",
       "provider": "openai",
       "created_unix": 1738351721,
@@ -13737,6 +14089,7 @@
     },
     {
       "id": "openai/o3-mini:batch",
+      "family": "openai/o3-mini",
       "name": "OpenAI: o3 Mini (batch)",
       "provider": "openai",
       "created_unix": 1738351721,
@@ -13768,6 +14121,7 @@
     },
     {
       "id": "mistralai/mistral-small-24b-instruct-2501",
+      "family": "mistralai/mistral-small-24b-instruct-2501",
       "name": "Mistral: Mistral Small 3",
       "provider": "mistralai",
       "created_unix": 1738255409,
@@ -13799,6 +14153,7 @@
     },
     {
       "id": "perplexity/sonar",
+      "family": "perplexity/sonar",
       "name": "Perplexity: Sonar",
       "provider": "perplexity",
       "created_unix": 1738013808,
@@ -13830,6 +14185,7 @@
     },
     {
       "id": "deepseek/deepseek-r1-distill-llama-70b",
+      "family": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
       "provider": "deepseek",
       "created_unix": 1737663169,
@@ -13861,6 +14217,7 @@
     },
     {
       "id": "deepseek/deepseek-r1",
+      "family": "deepseek/deepseek-r1",
       "name": "DeepSeek: R1",
       "provider": "deepseek",
       "created_unix": 1737381095,
@@ -13892,6 +14249,7 @@
     },
     {
       "id": "minimax/minimax-01",
+      "family": "minimax/minimax-01",
       "name": "MiniMax: MiniMax-01",
       "provider": "minimax",
       "created_unix": 1736915462,
@@ -13923,6 +14281,7 @@
     },
     {
       "id": "microsoft/phi-4",
+      "family": "microsoft/phi-4",
       "name": "Microsoft: Phi 4",
       "provider": "microsoft",
       "created_unix": 1736489872,
@@ -13954,6 +14313,7 @@
     },
     {
       "id": "deepseek/deepseek-chat",
+      "family": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "provider": "deepseek",
       "created_unix": 1735241320,
@@ -13985,6 +14345,7 @@
     },
     {
       "id": "sao10k/l3.3-euryale-70b",
+      "family": "sao10k/l3.3-euryale-70b",
       "name": "Sao10K: Llama 3.3 Euryale 70B",
       "provider": "sao10k",
       "created_unix": 1734535928,
@@ -14016,6 +14377,7 @@
     },
     {
       "id": "openai/o1",
+      "family": "openai/o1",
       "name": "OpenAI: o1",
       "provider": "openai",
       "created_unix": 1734459999,
@@ -14047,6 +14409,7 @@
     },
     {
       "id": "openai/o1:batch",
+      "family": "openai/o1",
       "name": "OpenAI: o1 (batch)",
       "provider": "openai",
       "created_unix": 1734459999,
@@ -14078,6 +14441,7 @@
     },
     {
       "id": "cohere/command-r7b-12-2024",
+      "family": "cohere/command-r7b-12-2024",
       "name": "Cohere: Command R7B (12-2024)",
       "provider": "cohere",
       "created_unix": 1734158152,
@@ -14109,6 +14473,7 @@
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
+      "family": "meta-llama/llama-3.3-70b-instruct",
       "name": "Meta: Llama 3.3 70B Instruct",
       "provider": "meta-llama",
       "created_unix": 1733506137,
@@ -14140,6 +14505,7 @@
     },
     {
       "id": "amazon/nova-lite-v1",
+      "family": "amazon/nova-lite",
       "name": "Amazon: Nova Lite 1.0",
       "provider": "amazon",
       "created_unix": 1733437363,
@@ -14171,6 +14537,7 @@
     },
     {
       "id": "amazon/nova-micro-v1",
+      "family": "amazon/nova-micro",
       "name": "Amazon: Nova Micro 1.0",
       "provider": "amazon",
       "created_unix": 1733437237,
@@ -14202,6 +14569,7 @@
     },
     {
       "id": "amazon/nova-pro-v1",
+      "family": "amazon/nova-pro",
       "name": "Amazon: Nova Pro 1.0",
       "provider": "amazon",
       "created_unix": 1733436303,
@@ -14233,6 +14601,7 @@
     },
     {
       "id": "openai/gpt-4o-2024-11-20",
+      "family": "openai/gpt-4o-2024-11-20",
       "name": "OpenAI: GPT-4o (2024-11-20)",
       "provider": "openai",
       "created_unix": 1732127594,
@@ -14264,6 +14633,7 @@
     },
     {
       "id": "mistralai/mistral-large-2407",
+      "family": "mistralai/mistral-large-2407",
       "name": "Mistral Large 2407",
       "provider": "mistralai",
       "created_unix": 1731978415,
@@ -14295,6 +14665,7 @@
     },
     {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "family": "qwen/qwen-2.5-coder-32b-instruct",
       "name": "Qwen2.5 Coder 32B Instruct",
       "provider": "qwen",
       "created_unix": 1731368400,
@@ -14326,6 +14697,7 @@
     },
     {
       "id": "thedrummer/unslopnemo-12b",
+      "family": "thedrummer/unslopnemo-12b",
       "name": "TheDrummer: UnslopNemo 12B",
       "provider": "thedrummer",
       "created_unix": 1731103448,
@@ -14357,6 +14729,7 @@
     },
     {
       "id": "anthracite-org/magnum-v4-72b",
+      "family": "anthracite-org/magnum-v4-72b",
       "name": "Magnum v4 72B",
       "provider": "anthracite-org",
       "created_unix": 1729555200,
@@ -14388,6 +14761,7 @@
     },
     {
       "id": "qwen/qwen-2.5-7b-instruct",
+      "family": "qwen/qwen-2.5-7b-instruct",
       "name": "Qwen: Qwen2.5 7B Instruct",
       "provider": "qwen",
       "created_unix": 1729036800,
@@ -14419,6 +14793,7 @@
     },
     {
       "id": "thedrummer/rocinante-12b",
+      "family": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
       "provider": "thedrummer",
       "created_unix": 1727654400,
@@ -14450,6 +14825,7 @@
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
+      "family": "meta-llama/llama-3.2-1b-instruct",
       "name": "Meta: Llama 3.2 1B Instruct",
       "provider": "meta-llama",
       "created_unix": 1727222400,
@@ -14481,6 +14857,7 @@
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
+      "family": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct",
       "provider": "meta-llama",
       "created_unix": 1727222400,
@@ -14512,6 +14889,7 @@
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
+      "family": "qwen/qwen-2.5-72b-instruct",
       "name": "Qwen2.5 72B Instruct",
       "provider": "qwen",
       "created_unix": 1726704000,
@@ -14543,6 +14921,7 @@
     },
     {
       "id": "cohere/command-r-08-2024",
+      "family": "cohere/command-r-08-2024",
       "name": "Cohere: Command R (08-2024)",
       "provider": "cohere",
       "created_unix": 1724976000,
@@ -14574,6 +14953,7 @@
     },
     {
       "id": "cohere/command-r-plus-08-2024",
+      "family": "cohere/command-r-plus-08-2024",
       "name": "Cohere: Command R+ (08-2024)",
       "provider": "cohere",
       "created_unix": 1724976000,
@@ -14605,6 +14985,7 @@
     },
     {
       "id": "sao10k/l3.1-euryale-70b",
+      "family": "sao10k/l3.1-euryale-70b",
       "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
       "provider": "sao10k",
       "created_unix": 1724803200,
@@ -14636,6 +15017,7 @@
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-70b",
+      "family": "nousresearch/hermes-3-llama-3.1-70b",
       "name": "Nous: Hermes 3 70B Instruct",
       "provider": "nousresearch",
       "created_unix": 1723939200,
@@ -14667,6 +15049,7 @@
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
+      "family": "nousresearch/hermes-3-llama-3.1-405b",
       "name": "Nous: Hermes 3 405B Instruct",
       "provider": "nousresearch",
       "created_unix": 1723766400,
@@ -14698,6 +15081,7 @@
     },
     {
       "id": "sao10k/l3-lunaris-8b",
+      "family": "sao10k/l3-lunaris-8b",
       "name": "Sao10K: Llama 3 8B Lunaris",
       "provider": "sao10k",
       "created_unix": 1723507200,
@@ -14729,6 +15113,7 @@
     },
     {
       "id": "openai/gpt-4o-2024-08-06",
+      "family": "openai/gpt-4o-2024-08-06",
       "name": "OpenAI: GPT-4o (2024-08-06)",
       "provider": "openai",
       "created_unix": 1722902400,
@@ -14760,6 +15145,7 @@
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
+      "family": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "provider": "meta-llama",
       "created_unix": 1721692800,
@@ -14791,6 +15177,7 @@
     },
     {
       "id": "meta-llama/llama-3.1-8b-instruct",
+      "family": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
       "provider": "meta-llama",
       "created_unix": 1721692800,
@@ -14822,6 +15209,7 @@
     },
     {
       "id": "mistralai/mistral-nemo",
+      "family": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "provider": "mistralai",
       "created_unix": 1721347200,
@@ -14853,6 +15241,7 @@
     },
     {
       "id": "openai/gpt-4o-mini",
+      "family": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
       "provider": "openai",
       "created_unix": 1721260800,
@@ -14884,6 +15273,7 @@
     },
     {
       "id": "openai/gpt-4o-mini-2024-07-18",
+      "family": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini (2024-07-18)",
       "provider": "openai",
       "created_unix": 1721260800,
@@ -14915,6 +15305,7 @@
     },
     {
       "id": "openai/gpt-4o-mini:batch",
+      "family": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini (batch)",
       "provider": "openai",
       "created_unix": 1721260800,
@@ -14946,6 +15337,7 @@
     },
     {
       "id": "google/gemma-2-27b-it",
+      "family": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
       "provider": "google",
       "created_unix": 1720828800,
@@ -14977,6 +15369,7 @@
     },
     {
       "id": "openai/gpt-4o",
+      "family": "openai/gpt-4o",
       "name": "OpenAI: GPT-4o",
       "provider": "openai",
       "created_unix": 1715558400,
@@ -15008,6 +15401,7 @@
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
+      "family": "openai/gpt-4o-2024-05-13",
       "name": "OpenAI: GPT-4o (2024-05-13)",
       "provider": "openai",
       "created_unix": 1715558400,
@@ -15039,6 +15433,7 @@
     },
     {
       "id": "openai/gpt-4o:batch",
+      "family": "openai/gpt-4o",
       "name": "OpenAI: GPT-4o (batch)",
       "provider": "openai",
       "created_unix": 1715558400,
@@ -15070,6 +15465,7 @@
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
+      "family": "mistralai/mixtral-8x22b-instruct",
       "name": "Mistral: Mixtral 8x22B Instruct",
       "provider": "mistralai",
       "created_unix": 1713312000,
@@ -15101,6 +15497,7 @@
     },
     {
       "id": "microsoft/wizardlm-2-8x22b",
+      "family": "microsoft/wizardlm-2-8x22b",
       "name": "WizardLM-2 8x22B",
       "provider": "microsoft",
       "created_unix": 1713225600,
@@ -15132,6 +15529,7 @@
     },
     {
       "id": "openai/gpt-4-turbo",
+      "family": "openai/gpt-4-turbo",
       "name": "OpenAI: GPT-4 Turbo",
       "provider": "openai",
       "created_unix": 1712620800,
@@ -15163,6 +15561,7 @@
     },
     {
       "id": "openai/gpt-4-turbo:batch",
+      "family": "openai/gpt-4-turbo",
       "name": "OpenAI: GPT-4 Turbo (batch)",
       "provider": "openai",
       "created_unix": 1712620800,
@@ -15194,6 +15593,7 @@
     },
     {
       "id": "anthropic/claude-3-haiku",
+      "family": "anthropic/claude-3-haiku",
       "name": "Anthropic: Claude 3 Haiku",
       "provider": "anthropic",
       "created_unix": 1710288000,
@@ -15225,6 +15625,7 @@
     },
     {
       "id": "mistralai/mistral-large",
+      "family": "mistralai/mistral-large",
       "name": "Mistral Large",
       "provider": "mistralai",
       "created_unix": 1708905600,
@@ -15256,6 +15657,7 @@
     },
     {
       "id": "openai/gpt-3.5-turbo-0613",
+      "family": "openai/gpt-3.5-turbo-0613",
       "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
       "provider": "openai",
       "created_unix": 1706140800,
@@ -15287,6 +15689,7 @@
     },
     {
       "id": "openai/gpt-4-turbo-preview",
+      "family": "openai/gpt-4-turbo",
       "name": "OpenAI: GPT-4 Turbo Preview",
       "provider": "openai",
       "created_unix": 1706140800,
@@ -15318,6 +15721,7 @@
     },
     {
       "id": "openrouter/auto",
+      "family": "openrouter/auto",
       "name": "Auto Router",
       "provider": "openrouter",
       "created_unix": 1699401600,
@@ -15349,6 +15753,7 @@
     },
     {
       "id": "openai/gpt-3.5-turbo-instruct",
+      "family": "openai/gpt-3.5-turbo-instruct",
       "name": "OpenAI: GPT-3.5 Turbo Instruct",
       "provider": "openai",
       "created_unix": 1695859200,
@@ -15380,6 +15785,7 @@
     },
     {
       "id": "openai/gpt-3.5-turbo-16k",
+      "family": "openai/gpt-3.5-turbo-16k",
       "name": "OpenAI: GPT-3.5 Turbo 16k",
       "provider": "openai",
       "created_unix": 1693180800,
@@ -15411,6 +15817,7 @@
     },
     {
       "id": "mancer/weaver",
+      "family": "mancer/weaver",
       "name": "Mancer: Weaver (alpha)",
       "provider": "mancer",
       "created_unix": 1690934400,
@@ -15442,6 +15849,7 @@
     },
     {
       "id": "undi95/remm-slerp-l2-13b",
+      "family": "undi95/remm-slerp-l2-13b",
       "name": "ReMM SLERP 13B",
       "provider": "undi95",
       "created_unix": 1689984000,
@@ -15473,6 +15881,7 @@
     },
     {
       "id": "gryphe/mythomax-l2-13b",
+      "family": "gryphe/mythomax-l2-13b",
       "name": "MythoMax 13B",
       "provider": "gryphe",
       "created_unix": 1688256000,
@@ -15504,6 +15913,7 @@
     },
     {
       "id": "openai/gpt-3.5-turbo",
+      "family": "openai/gpt-3.5-turbo",
       "name": "OpenAI: GPT-3.5 Turbo",
       "provider": "openai",
       "created_unix": 1685232000,
@@ -15535,6 +15945,7 @@
     },
     {
       "id": "openai/gpt-3.5-turbo:batch",
+      "family": "openai/gpt-3.5-turbo",
       "name": "OpenAI: GPT-3.5 Turbo (batch)",
       "provider": "openai",
       "created_unix": 1685232000,
@@ -15566,6 +15977,7 @@
     },
     {
       "id": "openai/gpt-4",
+      "family": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
       "provider": "openai",
       "created_unix": 1685232000,

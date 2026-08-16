@@ -1,6 +1,6 @@
 # Model Leaderboard (machine-readable)
 
-_Generated 2026-08-16T17:44:03Z from OpenRouter /api/v1/models (407 models). Updated daily._
+_Generated 2026-08-16T17:50:03Z from OpenRouter /api/v1/models (407 models). Updated daily._
 
 ## Recommended shortlists (heuristic — see disclaimer)
 
@@ -8,41 +8,41 @@ _Generated 2026-08-16T17:44:03Z from OpenRouter /api/v1/models (407 models). Upd
 
 - `x-ai/grok-4.20`
 - `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna-pro:batch`
 - `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-luna:batch`
+- `openai/gpt-5.6-terra-pro`
+- `openai/gpt-5.6-terra`
 
 ### best_reasoning
 
 - `x-ai/grok-4.20`
 - `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna-pro:batch`
 - `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-luna:batch`
+- `openai/gpt-5.6-terra-pro`
+- `openai/gpt-5.6-terra`
 
 ### best_coding
 
 - `x-ai/grok-4.20`
 - `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna-pro:batch`
 - `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-luna:batch`
+- `openai/gpt-5.6-terra-pro`
+- `openai/gpt-5.6-terra`
 
 ### best_vision
 
 - `x-ai/grok-4.20`
 - `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna-pro:batch`
 - `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-luna:batch`
+- `openai/gpt-5.6-terra-pro`
+- `openai/gpt-5.6-terra`
 
 ### best_agents
 
 - `x-ai/grok-4.20`
 - `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna-pro:batch`
 - `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-luna:batch`
+- `openai/gpt-5.6-terra-pro`
+- `openai/gpt-5.6-terra`
 
 ### best_open_weight
 
@@ -56,17 +56,17 @@ _Generated 2026-08-16T17:44:03Z from OpenRouter /api/v1/models (407 models). Upd
 
 - `inclusionai/ling-3.0-flash`
 - `nex-agi/nex-n2-mini`
-- `openai/gpt-5-nano:batch`
 - `qwen/qwen3.7-flash`
 - `upstage/solar-pro4`
+- `openai/gpt-oss-120b`
 
 ### best_audio
 
 - `google/gemini-3.5-flash`
-- `google/gemini-3.5-flash:batch`
 - `google/gemini-3.7-flash`
-- `google/gemini-3.7-flash:batch`
 - `meta/muse-spark-1.2`
+- `google/gemini-3.6-flash`
+- `google/gemini-3.5-flash-lite`
 
 ### best_image_generation
 
@@ -74,7 +74,7 @@ _Generated 2026-08-16T17:44:03Z from OpenRouter /api/v1/models (407 models). Upd
 - `google/gemini-3.1-flash-lite-image`
 - `openai/gpt-5.4-image-2`
 - `google/gemini-3.1-flash-image`
-- `google/gemini-3.1-flash-image-preview`
+- `openai/gpt-5-image-mini`
 
 ## Leaderboards (factual / sortable)
 

@@ -18,9 +18,38 @@ ingestion is a documented future extension point.
 import json
 import sys
 import os
+import re
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
+
+
+# Variant suffixes that denote derived/equivalent offerings of the same model
+# family (batch pricing, free tier, preview, latest alias, versioned snapshot...).
+# Used to collapse families in shortlists so e.g. gpt-5.6-luna-pro and
+# gpt-5.6-luna-pro:batch don't both appear.
+VARIANT_SUFFIX = re.compile(
+    r"(:batch|:nitro|:floor|:online|:offline|:cached|:extended|:free"
+    r"|:thinking|:rlhf|-preview|-latest|-exp|-alpha|-beta"
+    r"|-202\d{6}|-v\d+)$"
+)
+
+
+def family_id(mid):
+    """Strip variant suffixes to get the canonical model-family id."""
+    if "/" in mid:
+        p, r = mid.split("/", 1)
+    else:
+        p, r = "", mid
+    r = VARIANT_SUFFIX.sub("", r)
+    return f"{p}/{r}" if p else r
+
+
+def variant_quality(mid):
+    """1 = canonical base model, 0 = a derived variant (batch/free/preview...).
+    Higher is better so canonical wins when sorted in descending order."""
+    return 1 if family_id(mid) == mid else 0
+
 
 OR_API = "https://openrouter.ai/api/v1/models"
 OUTDIR = "."
@@ -105,6 +134,7 @@ def main():
 
         rec = {
             "id": mid,
+            "family": family_id(mid),
             "name": m.get("name"),
             "provider": provider,
             "created_unix": m.get("created"),
@@ -200,8 +230,25 @@ def main():
     # ---- heuristic recommended shortlists ----
     def recommend(filter_fn, sort_key, top=8):
         seq = [m for m in real if filter_fn(m)]
-        seq.sort(key=sort_key, reverse=True)
-        return [m["id"] for m in seq[:top]]
+
+        def keyf(m):
+            sk = sort_key(m)
+            sk = sk if isinstance(sk, tuple) else (sk,)
+            # tiebreak: canonical base model ranks above its variants
+            return (variant_quality(m["id"]),) + sk
+
+        seq.sort(key=keyf, reverse=True)
+        seen, out = set(), []
+        for m in seq:
+            fam = family_id(m["id"])
+            if fam in seen:
+                continue
+            seen.add(fam)
+            out.append(m["id"])
+            if len(out) >= top:
+                break
+        return out
+
 
     recommended = {
         "best_overall": recommend(
