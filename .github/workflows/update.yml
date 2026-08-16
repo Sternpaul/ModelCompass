@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin master || true
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "chore: daily ModelCompass update $(date -u +%Y-%m-%d) [skip ci]"
