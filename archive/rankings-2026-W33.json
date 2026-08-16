@@ -1,1753 +1,19 @@
 {
   "week": "2026-W33",
-  "generated_at": "2026-08-16T18:40:40Z",
+  "generated_at": "2026-08-16T18:42:42Z",
   "model_count": 407,
   "recommended": {
     "best_overall": [
       {
-        "id": "x-ai/grok-4.20",
-        "name": "SpaceXAI: Grok 4.20",
-        "provider": "x-ai",
-        "task_score": null,
-        "context": 2000000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 2.5,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna",
-        "name": "OpenAI: GPT-5.6 Luna",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra-pro",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol-pro",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.5-flash",
-        "name": "Google: Gemini 3.5 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.5,
-          "completion": 9.0,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.7-flash",
-        "name": "Google: Gemini 3.7 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.375,
-          "completion": 1.875,
-          "cache_read": 0.0375
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "provider": "qwen",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_coding": [
-      {
-        "id": "google/gemini-2.5-pro",
-        "name": "Google: Gemini 2.5 Pro",
-        "provider": "google",
-        "task_score": 0.462,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 46.2
-        }
-      },
-      {
-        "id": "openai/o3-pro",
-        "name": "OpenAI: o3 Pro",
-        "provider": "openai",
-        "task_score": 0.436,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 20.0,
-          "completion": 80.0,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.6
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": 0.431,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "x-ai/grok-4.6",
-        "name": "SpaceXAI: Grok 4.6",
-        "provider": "x-ai",
-        "task_score": 0.409,
-        "context": 500000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 40.9
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v3.2",
-        "name": "DeepSeek: DeepSeek V3.2",
-        "provider": "deepseek",
-        "task_score": 0.387,
-        "context": 163840,
-        "price_per_million": {
-          "prompt": 0.269,
-          "completion": 0.4,
-          "cache_read": 0.1345
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 38.7
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-4",
-        "name": "Anthropic: Claude Opus 4",
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
         "provider": "anthropic",
-        "task_score": 0.373,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 15.0,
-          "completion": 75.0,
-          "cache_read": 1.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 37.3
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
-        "provider": "openai",
-        "task_score": 0.348,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 34.8
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1-0528",
-        "name": "DeepSeek: R1 0528",
-        "provider": "deepseek",
-        "task_score": 0.344,
-        "context": 163840,
-        "price_per_million": {
-          "prompt": 0.5,
-          "completion": 2.15,
-          "cache_read": 0.35
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 34.4
-        }
-      },
-      {
-        "id": "qwen/qwen3-235b-a22b",
-        "name": "Qwen: Qwen3 235B A22B",
-        "provider": "qwen",
-        "task_score": 0.289,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.455,
-          "completion": 1.82,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 28.9
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1",
-        "name": "DeepSeek: R1",
-        "provider": "deepseek",
-        "task_score": 0.271,
-        "context": 64000,
-        "price_per_million": {
-          "prompt": 0.7,
-          "completion": 2.5,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 27.1
-        }
-      }
-    ],
-    "best_reasoning": [
-      {
-        "id": "x-ai/grok-4.20",
-        "name": "SpaceXAI: Grok 4.20",
-        "provider": "x-ai",
-        "task_score": null,
-        "context": 2000000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 2.5,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna",
-        "name": "OpenAI: GPT-5.6 Luna",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra-pro",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol-pro",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.5-flash",
-        "name": "Google: Gemini 3.5 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.5,
-          "completion": 9.0,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.7-flash",
-        "name": "Google: Gemini 3.7 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.375,
-          "completion": 1.875,
-          "cache_read": 0.0375
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "provider": "qwen",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_math": [
-      {
-        "id": "x-ai/grok-4.20",
-        "name": "SpaceXAI: Grok 4.20",
-        "provider": "x-ai",
-        "task_score": null,
-        "context": 2000000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 2.5,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna",
-        "name": "OpenAI: GPT-5.6 Luna",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra-pro",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol-pro",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.5-flash",
-        "name": "Google: Gemini 3.5 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.5,
-          "completion": 9.0,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.7-flash",
-        "name": "Google: Gemini 3.7 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.375,
-          "completion": 1.875,
-          "cache_read": 0.0375
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "provider": "qwen",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_agents": [
-      {
-        "id": "x-ai/grok-4.20",
-        "name": "SpaceXAI: Grok 4.20",
-        "provider": "x-ai",
-        "task_score": null,
-        "context": 2000000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 2.5,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna",
-        "name": "OpenAI: GPT-5.6 Luna",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra-pro",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol-pro",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.5-flash",
-        "name": "Google: Gemini 3.5 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.5,
-          "completion": 9.0,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.7-flash",
-        "name": "Google: Gemini 3.7 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.375,
-          "completion": 1.875,
-          "cache_read": 0.0375
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "provider": "qwen",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_open_weight": [
-      {
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "provider": "qwen",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 6.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro-0813",
-        "name": "DeepSeek: DeepSeek V4 Pro 0813",
-        "provider": "deepseek",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.66,
-          "completion": 1.98,
-          "cache_read": 0.022
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "nvidia/nemotron-3.5-lightning",
-        "name": "NVIDIA: Nemotron 3.5 Lightning",
-        "provider": "nvidia",
-        "task_score": null,
+        "task_score": 0.7055,
         "context": 1000000,
         "price_per_million": {
-          "prompt": 0.08,
-          "completion": 0.2,
-          "cache_read": 0.04
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 5.8
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash-0731",
-        "name": "DeepSeek: DeepSeek V4 Flash 0731",
-        "provider": "deepseek",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.14,
-          "completion": 0.28,
-          "cache_read": 0.028
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "thinkingmachines/inkling",
-        "name": "Thinking Machines: Inkling",
-        "provider": "thinkingmachines",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.95,
-          "completion": 4.05,
-          "cache_read": 0.16
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -1756,14 +22,14 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": true,
+        "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 63.1,
+          "aa_coding_index": 78,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.932,
+          "hle": 0.549,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1771,15 +37,15 @@
         }
       },
       {
-        "id": "moonshotai/kimi-k3",
-        "name": "MoonshotAI: Kimi K3",
-        "provider": "moonshotai",
-        "task_score": null,
-        "context": 1048576,
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "provider": "anthropic",
+        "task_score": 0.693,
+        "context": 1000000,
         "price_per_million": {
-          "prompt": 3.0,
-          "completion": 15.0,
-          "cache_read": 0.3
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
         },
         "capability_flags": [
           "reasoning",
@@ -1788,14 +54,14 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": true,
+        "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 62.1,
+          "aa_coding_index": 76.5,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.926,
+          "hle": 0.555,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1803,47 +69,15 @@
         }
       },
       {
-        "id": "z-ai/glm-5.2",
-        "name": "Z.ai: GLM 5.2",
-        "provider": "z-ai",
-        "task_score": null,
-        "context": 1048576,
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "provider": "anthropic",
+        "task_score": 0.634,
+        "context": 1000000,
         "price_per_million": {
-          "prompt": 0.308,
-          "completion": 0.968,
-          "cache_read": 0.0572
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": null,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
+          "prompt": 2.0,
+          "completion": 10.0,
+          "cache_read": 0.2
         },
         "capability_flags": [
           "reasoning",
@@ -1852,57 +86,25 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": true,
+        "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 55.3,
+          "aa_coding_index": 71.5,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.911,
+          "hle": 0.413,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "thinkingmachines/inkling-small",
-        "name": "Thinking Machines: Inkling Small",
-        "provider": "thinkingmachines",
-        "task_score": null,
-        "context": 524288,
-        "price_per_million": {
-          "prompt": 0.45,
-          "completion": 1.2,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
+          "aider_polyglot_pass_rate_1": 22.2
         }
       },
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "provider": "deepseek",
-        "task_score": null,
+        "task_score": 0.61,
         "context": 1048576,
         "price_per_million": {
           "prompt": 1.168,
@@ -1918,12 +120,523 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": null,
+          "aa_intelligence_index": 53.2,
+          "aa_coding_index": 68.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.41,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.6045,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.06146,
+          "completion": 0.12292,
+          "cache_read": 0.012292
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 51.8,
+          "aa_coding_index": 69.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.908,
+          "hle": 0.386,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5-fast",
+        "name": "Claude Opus 5 (Fast)",
+        "provider": "anthropic",
+        "task_score": 0.597,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 52.5,
+          "aa_coding_index": 66.9,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.889,
+          "hle": 0.434,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3",
+        "name": "OpenAI: o3",
+        "provider": "openai",
+        "task_score": 0.597,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 88.3,
+          "gpqa": 0.827,
+          "hle": 0.201,
+          "livecodebench": 0.808,
+          "aime": 0.903333333333333,
+          "mmlu_pro": 0.853,
+          "aider_polyglot_pass_rate_1": 34.8
+        }
+      },
+      {
+        "id": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "provider": "openai",
+        "task_score": 0.584,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.275
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 26.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.784,
+          "hle": 0.165,
+          "livecodebench": 0.859,
+          "aime": 0.94,
+          "mmlu_pro": 0.832,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.558,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 35.3,
+          "aa_coding_index": 37.8,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.3,
+          "gpqa": 0.854,
+          "hle": 0.285,
+          "livecodebench": 0.846,
+          "aime": 0.956666666666667,
+          "mmlu_pro": 0.871,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "provider": "minimax",
+        "task_score": 0.536,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.255,
+          "completion": 1.02,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 28.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 78.3,
+          "gpqa": 0.777,
+          "hle": 0.137,
+          "livecodebench": 0.826,
+          "aime": null,
+          "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_coding": [
+      {
+        "id": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "provider": "openai",
+        "task_score": 0.859,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.275
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 26.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.784,
+          "hle": 0.165,
+          "livecodebench": 0.859,
+          "aime": 0.94,
+          "mmlu_pro": 0.832,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "provider": "minimax",
+        "task_score": 0.826,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.255,
+          "completion": 1.02,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 28.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 78.3,
+          "gpqa": 0.777,
+          "hle": 0.137,
+          "livecodebench": 0.826,
+          "aime": null,
+          "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-nano",
+        "name": "OpenAI: GPT-5 Nano",
+        "provider": "openai",
+        "task_score": 0.789,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.05,
+          "completion": 0.4,
+          "cache_read": 0.005
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 20.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 83.7,
+          "gpqa": 0.676,
+          "hle": 0.095,
+          "livecodebench": 0.789,
+          "aime": null,
+          "mmlu_pro": 0.78,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.78,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 63.1,
+          "aa_coding_index": 78,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.932,
+          "hle": 0.549,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "provider": "anthropic",
+        "task_score": 0.765,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 62.1,
+          "aa_coding_index": 76.5,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.926,
+          "hle": 0.555,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "nvidia/nemotron-nano-9b-v2:free",
+        "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+        "provider": "nvidia",
+        "task_score": 0.724,
+        "context": 128000,
+        "price_per_million": {
+          "prompt": 0.0,
+          "completion": 0.0,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 8.7,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 69.7,
+          "gpqa": 0.57,
+          "hle": 0.049,
+          "livecodebench": 0.724,
+          "aime": null,
+          "mmlu_pro": 0.742,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3-mini",
+        "name": "OpenAI: o3 Mini",
+        "provider": "openai",
+        "task_score": 0.717,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.55
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 19.2,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.748,
+          "hle": 0.079,
+          "livecodebench": 0.717,
+          "aime": 0.77,
+          "mmlu_pro": 0.791,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.691,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.06146,
+          "completion": 0.12292,
+          "cache_read": 0.012292
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 51.8,
+          "aa_coding_index": 69.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.908,
+          "hle": 0.386,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "provider": "deepseek",
+        "task_score": 0.688,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.168,
+          "completion": 2.336,
+          "cache_read": 0.09855
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 53.2,
+          "aa_coding_index": 68.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.41,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5-fast",
+        "name": "Claude Opus 5 (Fast)",
+        "provider": "anthropic",
+        "task_score": 0.669,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 52.5,
+          "aa_coding_index": 66.9,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.889,
+          "hle": 0.434,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1931,16 +644,80 @@
         }
       }
     ],
-    "best_vision": [
+    "best_reasoning": [
       {
-        "id": "x-ai/grok-4.20",
-        "name": "SpaceXAI: Grok 4.20",
-        "provider": "x-ai",
-        "task_score": null,
-        "context": 2000000,
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.704,
+        "context": 1000000,
         "price_per_million": {
-          "prompt": 1.25,
-          "completion": 2.5,
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 63.1,
+          "aa_coding_index": 78,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.932,
+          "hle": 0.549,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "provider": "anthropic",
+        "task_score": 0.7007,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 62.1,
+          "aa_coding_index": 76.5,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.926,
+          "hle": 0.555,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "provider": "anthropic",
+        "task_score": 0.6257,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 10.0,
           "cache_read": 0.2
         },
         "capability_flags": [
@@ -1952,220 +729,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 55.3,
+          "aa_coding_index": 71.5,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.911,
+          "hle": 0.413,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
+          "aider_polyglot_pass_rate_1": 22.2
         }
       },
       {
-        "id": "openai/gpt-5.6-luna-pro",
-        "name": "OpenAI: GPT-5.6 Luna Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.1
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-luna",
-        "name": "OpenAI: GPT-5.6 Luna",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.1,
-          "completion": 0.6,
-          "cache_read": 0.01
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra-pro",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-terra",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 1.0,
-          "completion": 6.0,
-          "cache_read": 0.1
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol-pro",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": null,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.5-flash",
-        "name": "Google: Gemini 3.5 Flash",
-        "provider": "google",
-        "task_score": null,
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "provider": "deepseek",
+        "task_score": 0.6233,
         "context": 1048576,
         "price_per_million": {
-          "prompt": 1.5,
-          "completion": 9.0,
-          "cache_read": 0.15
+          "prompt": 1.168,
+          "completion": 2.336,
+          "cache_read": 0.09855
         },
         "capability_flags": [
           "reasoning",
@@ -2173,15 +758,15 @@
           "json",
           "caching"
         ],
-        "is_vision": true,
-        "open_weight": false,
+        "is_vision": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 53.2,
+          "aa_coding_index": 68.8,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.928,
+          "hle": 0.41,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2189,15 +774,15 @@
         }
       },
       {
-        "id": "google/gemini-3.7-flash",
-        "name": "Google: Gemini 3.7 Flash",
-        "provider": "google",
-        "task_score": null,
-        "context": 1048576,
+        "id": "anthropic/claude-opus-5-fast",
+        "name": "Claude Opus 5 (Fast)",
+        "provider": "anthropic",
+        "task_score": 0.616,
+        "context": 1000000,
         "price_per_million": {
-          "prompt": 0.375,
-          "completion": 1.875,
-          "cache_read": 0.0375
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
         },
         "capability_flags": [
           "reasoning",
@@ -2208,12 +793,12 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 52.5,
+          "aa_coding_index": 66.9,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.889,
+          "hle": 0.434,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2221,15 +806,15 @@
         }
       },
       {
-        "id": "meta/muse-spark-1.2",
-        "name": "Meta: Muse Spark 1.2",
-        "provider": "meta",
-        "task_score": null,
-        "context": 1048576,
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.6122,
+        "context": 400000,
         "price_per_million": {
           "prompt": 1.25,
-          "completion": 4.25,
-          "cache_read": 0.15
+          "completion": 10.0,
+          "cache_read": 0.125
         },
         "capability_flags": [
           "reasoning",
@@ -2240,25 +825,919 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
+          "aa_intelligence_index": 35.3,
+          "aa_coding_index": 37.8,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.3,
+          "gpqa": 0.854,
+          "hle": 0.285,
+          "livecodebench": 0.846,
+          "aime": 0.956666666666667,
+          "mmlu_pro": 0.871,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.604,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.06146,
+          "completion": 0.12292,
+          "cache_read": 0.012292
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 51.8,
+          "aa_coding_index": 69.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.908,
+          "hle": 0.386,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "provider": "minimax",
+        "task_score": 0.591,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 45.4,
+          "aa_coding_index": 58.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.929,
+          "hle": 0.39,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3-pro",
+        "name": "OpenAI: o3 Pro",
+        "provider": "openai",
+        "task_score": 0.589,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 20.0,
+          "completion": 80.0,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 33.3,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.845,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 43.6
+        }
+      },
+      {
+        "id": "openai/o3",
+        "name": "OpenAI: o3",
+        "provider": "openai",
+        "task_score": 0.5606,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 88.3,
+          "gpqa": 0.827,
+          "hle": 0.201,
+          "livecodebench": 0.808,
+          "aime": 0.903333333333333,
+          "mmlu_pro": 0.853,
+          "aider_polyglot_pass_rate_1": 34.8
+        }
+      }
+    ],
+    "best_math": [
+      {
+        "id": "perplexity/sonar-reasoning-pro",
+        "name": "Perplexity: Sonar Reasoning Pro",
+        "provider": "perplexity",
+        "task_score": 0.8737,
+        "context": 128000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 18,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
           "gpqa": null,
           "hle": null,
           "livecodebench": null,
-          "aime": null,
+          "aime": 0.79,
           "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.8307,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 35.3,
+          "aa_coding_index": 37.8,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.3,
+          "gpqa": 0.854,
+          "hle": 0.285,
+          "livecodebench": 0.846,
+          "aime": 0.956666666666667,
+          "mmlu_pro": 0.871,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "provider": "openai",
+        "task_score": 0.8252,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.275
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 26.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.784,
+          "hle": 0.165,
+          "livecodebench": 0.859,
+          "aime": 0.94,
+          "mmlu_pro": 0.832,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3",
+        "name": "OpenAI: o3",
+        "provider": "openai",
+        "task_score": 0.7971,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 88.3,
+          "gpqa": 0.827,
+          "hle": 0.201,
+          "livecodebench": 0.808,
+          "aime": 0.903333333333333,
+          "mmlu_pro": 0.853,
+          "aider_polyglot_pass_rate_1": 34.8
+        }
+      },
+      {
+        "id": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
+        "provider": "openai",
+        "task_score": 0.7476,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.55
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 15.7,
+          "aa_coding_index": 16.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.773,
+          "hle": 0.12,
+          "livecodebench": 0.734,
+          "aime": 0.86,
+          "mmlu_pro": 0.802,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3-mini",
+        "name": "OpenAI: o3 Mini",
+        "provider": "openai",
+        "task_score": 0.7141,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.55
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 19.2,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.748,
+          "hle": 0.079,
+          "livecodebench": 0.717,
+          "aime": 0.77,
+          "mmlu_pro": 0.791,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o1",
+        "name": "OpenAI: o1",
+        "provider": "openai",
+        "task_score": 0.6838,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 15.0,
+          "completion": 60.0,
+          "cache_read": 7.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 23.9,
+          "aa_coding_index": 39.7,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.747,
+          "hle": 0.07,
+          "livecodebench": 0.679,
+          "aime": 0.723333333333333,
+          "mmlu_pro": 0.841,
+          "aider_polyglot_pass_rate_1": 5.8
+        }
+      },
+      {
+        "id": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "provider": "deepseek",
+        "task_score": 0.6716,
+        "context": 64000,
+        "price_per_million": {
+          "prompt": 0.7,
+          "completion": 2.5,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 18.6,
+          "aa_coding_index": 24.6,
+          "aa_agentic_index": null,
+          "aa_math_index": 68,
+          "gpqa": 0.708,
+          "hle": 0.085,
+          "livecodebench": 0.617,
+          "aime": 0.683333333333333,
+          "mmlu_pro": 0.844,
+          "aider_polyglot_pass_rate_1": 27.1
+        }
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": 0.6615,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 24.1,
+          "aa_coding_index": 30.4,
+          "aa_agentic_index": null,
+          "aa_math_index": 93.4,
+          "gpqa": 0.782,
+          "hle": 0.196,
+          "livecodebench": 0.878,
+          "aime": null,
+          "mmlu_pro": 0.808,
+          "aider_polyglot_pass_rate_1": 13.8
+        }
+      },
+      {
+        "id": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "provider": "openai",
+        "task_score": 0.6495,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 2.0,
+          "cache_read": 0.025
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 25.8,
+          "aa_coding_index": 15.6,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.828,
+          "hle": 0.215,
+          "livecodebench": 0.838,
+          "aime": null,
+          "mmlu_pro": 0.837,
           "aider_polyglot_pass_rate_1": null
         }
       }
     ],
-    "best_cheap": [
+    "best_agents": [
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "provider": "minimax",
+        "task_score": 0.8286,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 45.4,
+          "aa_coding_index": 58.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.929,
+          "hle": 0.39,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "provider": "openai",
+        "task_score": 0.7544,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 2.0,
+          "cache_read": 0.025
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 25.8,
+          "aa_coding_index": 15.6,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.828,
+          "hle": 0.215,
+          "livecodebench": 0.838,
+          "aime": null,
+          "mmlu_pro": 0.837,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.7306,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 35.3,
+          "aa_coding_index": 37.8,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.3,
+          "gpqa": 0.854,
+          "hle": 0.285,
+          "livecodebench": 0.846,
+          "aime": 0.956666666666667,
+          "mmlu_pro": 0.871,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "provider": "minimax",
+        "task_score": 0.7231,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.255,
+          "completion": 1.02,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 28.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 78.3,
+          "gpqa": 0.777,
+          "hle": 0.137,
+          "livecodebench": 0.826,
+          "aime": null,
+          "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3",
+        "name": "OpenAI: o3",
+        "provider": "openai",
+        "task_score": 0.7143,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 88.3,
+          "gpqa": 0.827,
+          "hle": 0.201,
+          "livecodebench": 0.808,
+          "aime": 0.903333333333333,
+          "mmlu_pro": 0.853,
+          "aider_polyglot_pass_rate_1": 34.8
+        }
+      },
+      {
+        "id": "upstage/solar-pro-3",
+        "name": "Upstage: Solar Pro 3",
+        "provider": "upstage",
+        "task_score": 0.712,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.15,
+          "completion": 0.6,
+          "cache_read": 0.015
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 14.5,
+          "aa_coding_index": 16.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.724,
+          "hle": 0.103,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o1",
+        "name": "OpenAI: o1",
+        "provider": "openai",
+        "task_score": 0.7034,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 15.0,
+          "completion": 60.0,
+          "cache_read": 7.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 23.9,
+          "aa_coding_index": 39.7,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.747,
+          "hle": 0.07,
+          "livecodebench": 0.679,
+          "aime": 0.723333333333333,
+          "mmlu_pro": 0.841,
+          "aider_polyglot_pass_rate_1": 5.8
+        }
+      },
+      {
+        "id": "inception/mercury-2",
+        "name": "Inception: Mercury 2",
+        "provider": "inception",
+        "task_score": 0.698,
+        "context": 128000,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 0.75,
+          "cache_read": 0.025
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 21.9,
+          "aa_coding_index": 31.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.77,
+          "hle": 0.171,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": 0.6898,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 24.1,
+          "aa_coding_index": 30.4,
+          "aa_agentic_index": null,
+          "aa_math_index": 93.4,
+          "gpqa": 0.782,
+          "hle": 0.196,
+          "livecodebench": 0.878,
+          "aime": null,
+          "mmlu_pro": 0.808,
+          "aider_polyglot_pass_rate_1": 13.8
+        }
+      },
+      {
+        "id": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "provider": "openai",
+        "task_score": 0.6871,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.275
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 26.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.784,
+          "hle": 0.165,
+          "livecodebench": 0.859,
+          "aime": 0.94,
+          "mmlu_pro": 0.832,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_open_weight": [
+      {
+        "id": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "provider": "deepseek",
+        "task_score": 0.61,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.168,
+          "completion": 2.336,
+          "cache_read": 0.09855
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 53.2,
+          "aa_coding_index": 68.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.41,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.6045,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.06146,
+          "completion": 0.12292,
+          "cache_read": 0.012292
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 51.8,
+          "aa_coding_index": 69.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.908,
+          "hle": 0.386,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "provider": "minimax",
+        "task_score": 0.52,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 45.4,
+          "aa_coding_index": 58.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.929,
+          "hle": 0.39,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "provider": "tencent",
+        "task_score": 0.505,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.132,
+          "completion": 0.528,
+          "cache_read": 0.033
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 42.2,
+          "aa_coding_index": 58.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.897,
+          "hle": 0.335,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
       {
         "id": "inclusionai/ling-3.0-flash",
         "name": "Ling-3.0-flash",
         "provider": "inclusionai",
-        "task_score": null,
+        "task_score": 0.442,
         "context": 262144,
         "price_per_million": {
           "prompt": 0.021,
@@ -2273,12 +1752,522 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 37.8,
+          "aa_coding_index": 50.6,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.855,
+          "hle": 0.237,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "provider": "minimax",
+        "task_score": 0.289,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.255,
+          "completion": 1.02,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 28.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 78.3,
+          "gpqa": 0.777,
+          "hle": 0.137,
+          "livecodebench": 0.826,
+          "aime": null,
+          "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": 0.2725,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 24.1,
+          "aa_coding_index": 30.4,
+          "aa_agentic_index": null,
+          "aa_math_index": 93.4,
+          "gpqa": 0.782,
+          "hle": 0.196,
+          "livecodebench": 0.878,
+          "aime": null,
+          "mmlu_pro": 0.808,
+          "aider_polyglot_pass_rate_1": 13.8
+        }
+      },
+      {
+        "id": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "provider": "deepseek",
+        "task_score": 0.216,
+        "context": 64000,
+        "price_per_million": {
+          "prompt": 0.7,
+          "completion": 2.5,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 18.6,
+          "aa_coding_index": 24.6,
+          "aa_agentic_index": null,
+          "aa_math_index": 68,
+          "gpqa": 0.708,
+          "hle": 0.085,
+          "livecodebench": 0.617,
+          "aime": 0.683333333333333,
+          "mmlu_pro": 0.844,
+          "aider_polyglot_pass_rate_1": 27.1
+        }
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "provider": "openai",
+        "task_score": 0.1795,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.13,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 15.2,
+          "aa_coding_index": 20.7,
+          "aa_agentic_index": null,
+          "aa_math_index": 89.3,
+          "gpqa": 0.688,
+          "hle": 0.11,
+          "livecodebench": 0.777,
+          "aime": null,
+          "mmlu_pro": 0.748,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-r1-distill-llama-70b",
+        "name": "DeepSeek: R1 Distill Llama 70B",
+        "provider": "deepseek",
+        "task_score": 0.098,
+        "context": 8192,
+        "price_per_million": {
+          "prompt": 0.8,
+          "completion": 0.8,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 9.8,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 53.7,
+          "gpqa": 0.402,
+          "hle": 0.051,
+          "livecodebench": 0.266,
+          "aime": 0.67,
+          "mmlu_pro": 0.795,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_vision": [
+      {
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.7055,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 63.1,
+          "aa_coding_index": 78,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.932,
+          "hle": 0.549,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "provider": "anthropic",
+        "task_score": 0.693,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 62.1,
+          "aa_coding_index": 76.5,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.926,
+          "hle": 0.555,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "provider": "anthropic",
+        "task_score": 0.634,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 10.0,
+          "cache_read": 0.2
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 55.3,
+          "aa_coding_index": 71.5,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.911,
+          "hle": 0.413,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 22.2
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5-fast",
+        "name": "Claude Opus 5 (Fast)",
+        "provider": "anthropic",
+        "task_score": 0.597,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 10.0,
+          "completion": 50.0,
+          "cache_read": 1.0
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 52.5,
+          "aa_coding_index": 66.9,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.889,
+          "hle": 0.434,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3",
+        "name": "OpenAI: o3",
+        "provider": "openai",
+        "task_score": 0.597,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 8.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 88.3,
+          "gpqa": 0.827,
+          "hle": 0.201,
+          "livecodebench": 0.808,
+          "aime": 0.903333333333333,
+          "mmlu_pro": 0.853,
+          "aider_polyglot_pass_rate_1": 34.8
+        }
+      },
+      {
+        "id": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "provider": "openai",
+        "task_score": 0.584,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.275
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 26.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.784,
+          "hle": 0.165,
+          "livecodebench": 0.859,
+          "aime": 0.94,
+          "mmlu_pro": 0.832,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.558,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 35.3,
+          "aa_coding_index": 37.8,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.3,
+          "gpqa": 0.854,
+          "hle": 0.285,
+          "livecodebench": 0.846,
+          "aime": 0.956666666666667,
+          "mmlu_pro": 0.871,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "provider": "minimax",
+        "task_score": 0.52,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 45.4,
+          "aa_coding_index": 58.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.929,
+          "hle": 0.39,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-nano",
+        "name": "OpenAI: GPT-5 Nano",
+        "provider": "openai",
+        "task_score": 0.519,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.05,
+          "completion": 0.4,
+          "cache_read": 0.005
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 20.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 83.7,
+          "gpqa": 0.676,
+          "hle": 0.095,
+          "livecodebench": 0.789,
+          "aime": null,
+          "mmlu_pro": 0.78,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "provider": "openai",
+        "task_score": 0.4403,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 2.0,
+          "cache_read": 0.025
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 25.8,
+          "aa_coding_index": 15.6,
+          "aa_agentic_index": null,
+          "aa_math_index": 90.7,
+          "gpqa": 0.828,
+          "hle": 0.215,
+          "livecodebench": 0.838,
+          "aime": null,
+          "mmlu_pro": 0.837,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_cheap": [
+      {
+        "id": "inclusionai/ling-3.0-flash",
+        "name": "Ling-3.0-flash",
+        "provider": "inclusionai",
+        "task_score": 0.442,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.021,
+          "completion": 0.063,
+          "cache_read": 0.0042
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 37.8,
+          "aa_coding_index": 50.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.855,
+          "hle": 0.237,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2350,10 +2339,42 @@
         }
       },
       {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": 0.493,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 24.1,
+          "aa_coding_index": 30.4,
+          "aa_agentic_index": null,
+          "aa_math_index": 93.4,
+          "gpqa": 0.782,
+          "hle": 0.196,
+          "livecodebench": 0.878,
+          "aime": null,
+          "mmlu_pro": 0.808,
+          "aider_polyglot_pass_rate_1": 13.8
+        }
+      },
+      {
         "id": "upstage/solar-pro4",
         "name": "Upstage: Solar Pro 4",
         "provider": "upstage",
-        "task_score": null,
+        "task_score": 0.4715,
         "context": 524288,
         "price_per_million": {
           "prompt": 0.03,
@@ -2369,15 +2390,47 @@
         "is_vision": false,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 41.6,
+          "aa_coding_index": 52.7,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.891,
+          "hle": 0.292,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "provider": "openai",
+        "task_score": 0.4173,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.13,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 15.2,
+          "aa_coding_index": 20.7,
+          "aa_agentic_index": null,
+          "aa_math_index": 89.3,
+          "gpqa": 0.688,
+          "hle": 0.11,
+          "livecodebench": 0.777,
+          "aime": null,
+          "mmlu_pro": 0.748,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -2414,74 +2467,10 @@
         }
       },
       {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": null,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 13.8
-        }
-      },
-      {
-        "id": "openai/gpt-oss-20b",
-        "name": "OpenAI: gpt-oss-20b",
-        "provider": "openai",
-        "task_score": null,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.13,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": null,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
         "id": "nvidia/nemotron-3-nano-30b-a3b",
         "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
         "provider": "nvidia",
-        "task_score": null,
+        "task_score": 0.1025,
         "context": 262144,
         "price_per_million": {
           "prompt": 0.05,
@@ -2497,15 +2486,15 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": null,
+          "aa_intelligence_index": 7.2,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
+          "aa_math_index": 13.3,
+          "gpqa": 0.399,
+          "hle": 0.046,
+          "livecodebench": 0.36,
           "aime": null,
-          "mmlu_pro": null,
+          "mmlu_pro": 0.579,
           "aider_polyglot_pass_rate_1": null
         }
       },
