@@ -1,6 +1,6 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-16T17:57:14Z from OpenRouter /api/v1/models (407 models). Updated daily._
+_Generated 2026-08-16T18:10:01Z from OpenRouter /api/v1/models (407 models). Updated daily._
 
 ## Recommended shortlists (heuristic — see disclaimer)
 

@@ -33,7 +33,7 @@ google/gemini-3.5-flash-lite:batch,Google: Gemini 3.5 Flash Lite (batch),google,
 meituan/longcat-2.0,Meituan: LongCat 2.0,meituan,2026-07-20,27,1048756,text->text,False,False,False,False,True,True,False,True,,0.3,1.2,0.006,meituan-longcat/LongCat-2.0
 thinkingmachines/inkling,Thinking Machines: Inkling,thinkingmachines,2026-07-17,29,1048576,text+image+audio->text,True,True,False,False,True,True,True,True,,0.95,4.05,0.16,thinkingmachines/Inkling
 thinkingmachines/inkling:batch,Thinking Machines: Inkling (batch),thinkingmachines,2026-07-17,29,524288,text+image+audio->text,True,True,False,False,True,True,False,True,,0.5,2.025,0.085,thinkingmachines/Inkling
-openrouter/auto-beta,Auto Router (Beta),openrouter,2026-07-17,29,2000000,text+image+file+audio+video->text+image,True,True,True,True,True,True,True,False,,-1000000.0,-1000000.0,,
+openrouter/auto-beta,Auto Router (Beta),openrouter,2026-07-17,30,2000000,text+image+file+audio+video->text+image,True,True,True,True,True,True,True,False,,-1000000.0,-1000000.0,,
 moonshotai/kimi-k3,MoonshotAI: Kimi K3,moonshotai,2026-07-16,31,1048576,text+image+video->text,True,False,True,False,True,True,True,True,,3.0,15.0,0.3,moonshotai/Kimi-K3
 meta/muse-spark-1.1,Meta: Muse Spark 1.1,meta,2026-07-16,31,1048576,text+image+file+audio+video->text,True,True,True,False,True,True,True,False,,1.25,4.25,0.15,
 kwaipilot/kat-coder-air-v2.5,Kwaipilot: KAT-Coder-Air V2.5,kwaipilot,2026-07-10,36,256000,text->text,False,False,False,False,False,True,True,False,,0.15,0.6,0.03,
@@ -83,8 +83,8 @@ minimax/minimax-m3,MiniMax: MiniMax M3,minimax,2026-05-31,77,1048576,text+image+
 minimax/minimax-m3:batch,MiniMax: MiniMax M3 (batch),minimax,2026-05-31,77,524288,text+image+video->text,True,False,True,False,True,True,True,True,,0.15,0.6,0.03,MiniMaxAI/Minimax-M3
 stepfun/step-3.7-flash,StepFun: Step 3.7 Flash,stepfun,2026-05-28,80,262144,text+image+video->text,True,False,True,False,True,True,True,True,,0.2,1.15,0.04,stepfun-ai/Step-3.7-Flash
 anthropic/claude-opus-4.8-fast,Anthropic: Claude Opus 4.8 (Fast),anthropic,2026-05-27,80,1000000,text+image+file->text,True,False,False,False,True,True,True,False,,10.0,50.0,1.0,
-anthropic/claude-opus-4.8,Anthropic: Claude Opus 4.8,anthropic,2026-05-27,80,1000000,text+image+file->text,True,False,False,False,True,True,True,False,,5.0,25.0,0.5,
-anthropic/claude-opus-4.8:batch,Anthropic: Claude Opus 4.8 (batch),anthropic,2026-05-27,80,1000000,text+image+file->text,True,False,False,False,True,True,True,False,,2.5,12.5,0.25,
+anthropic/claude-opus-4.8,Anthropic: Claude Opus 4.8,anthropic,2026-05-27,81,1000000,text+image+file->text,True,False,False,False,True,True,True,False,,5.0,25.0,0.5,
+anthropic/claude-opus-4.8:batch,Anthropic: Claude Opus 4.8 (batch),anthropic,2026-05-27,81,1000000,text+image+file->text,True,False,False,False,True,True,True,False,,2.5,12.5,0.25,
 qwen/qwen3.7-max,Qwen: Qwen3.7 Max,qwen,2026-05-21,87,1000000,text->text,False,False,False,False,True,True,True,False,,1.475,4.425,0.295,
 x-ai/grok-build-0.1,SpaceXAI: Grok Build 0.1,x-ai,2026-05-20,88,256000,text+image+file->text,True,False,False,False,True,True,True,False,,1.0,2.0,0.2,
 google/gemini-3.5-flash,Google: Gemini 3.5 Flash,google,2026-05-19,89,1048576,text+image+file+audio+video->text,True,True,True,False,True,True,True,False,2025-01-01,1.5,9.0,0.15,
@@ -108,7 +108,7 @@ nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,NVIDIA: Nemotron 3 Nano Omni 
 ~openai/gpt-latest,OpenAI GPT Latest,~openai,2026-04-27,110,1050000,text+image+file->text,True,False,False,False,True,True,True,False,2026-02-16,5.0,30.0,0.5,
 qwen/qwen3.5-plus-20260420,Qwen: Qwen3.5 Plus 2026-04-20,qwen,2026-04-27,111,1000000,text+image+video->text,True,False,True,False,True,True,True,False,,0.3,1.8,,
 qwen/qwen3.6-flash,Qwen: Qwen3.6 Flash,qwen,2026-04-27,111,1000000,text+image+video->text,True,False,True,False,True,True,True,False,,0.1875,1.125,,
-qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,qwen,2026-04-27,111,262144,text+image+video->text,True,False,True,False,True,True,True,True,,0.15,1.0,0.05,Qwen/Qwen3.6-35B-A3B
+qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,qwen,2026-04-27,111,262144,text+image+video->text,True,False,True,False,True,True,True,True,,0.14,1.0,0.05,Qwen/Qwen3.6-35B-A3B
 qwen/qwen3.6-max-preview,Qwen: Qwen3.6 Max Preview,qwen,2026-04-27,111,262144,text->text,False,False,False,False,True,True,True,False,,1.027,6.162,,
 qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,qwen,2026-04-27,111,262144,text+image+video->text,True,False,True,False,True,True,True,True,,0.3,2.0,0.03,Qwen/Qwen3.6-27B
 openai/gpt-5.5-pro,OpenAI: GPT-5.5 Pro,openai,2026-04-24,114,1050000,text+image+file->text,True,False,False,False,True,True,True,False,2025-12-01,30.0,180.0,,
@@ -198,11 +198,11 @@ google/gemini-3-flash-preview,Google: Gemini 3 Flash Preview,google,2025-12-17,2
 google/gemini-3-flash-preview:batch,Google: Gemini 3 Flash Preview (batch),google,2025-12-17,242,1048576,text+image+file+audio+video->text,True,True,True,False,True,True,True,False,,0.25,1.5,,
 nvidia/nemotron-3-nano-30b-a3b,NVIDIA: Nemotron 3 Nano 30B A3B,nvidia,2025-12-14,245,262144,text->text,False,False,False,False,True,True,True,True,,0.05,0.2,0.025,nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 nvidia/nemotron-3-nano-30b-a3b:free,NVIDIA: Nemotron 3 Nano 30B A3B (free),nvidia,2025-12-14,245,256000,text->text,False,False,False,False,True,True,False,True,,0.0,0.0,,nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
-openai/gpt-5.2-chat,OpenAI: GPT-5.2 Chat,openai,2025-12-10,248,128000,text+image+file->text,True,False,False,False,False,True,True,False,,1.75,14.0,0.175,
-openai/gpt-5.2-pro,OpenAI: GPT-5.2 Pro,openai,2025-12-10,248,400000,text+image+file->text,True,False,False,False,True,True,True,False,,21.0,168.0,,
-openai/gpt-5.2-pro:batch,OpenAI: GPT-5.2 Pro (batch),openai,2025-12-10,248,400000,text+image+file->text,True,False,False,False,True,True,True,False,,10.5,84.0,,
-openai/gpt-5.2,OpenAI: GPT-5.2,openai,2025-12-10,248,400000,text+image+file->text,True,False,False,False,True,True,True,False,,1.75,14.0,0.175,
-openai/gpt-5.2:batch,OpenAI: GPT-5.2 (batch),openai,2025-12-10,248,400000,text+image+file->text,True,False,False,False,True,True,True,False,,0.875,7.0,0.0875,
+openai/gpt-5.2-chat,OpenAI: GPT-5.2 Chat,openai,2025-12-10,249,128000,text+image+file->text,True,False,False,False,False,True,True,False,,1.75,14.0,0.175,
+openai/gpt-5.2-pro,OpenAI: GPT-5.2 Pro,openai,2025-12-10,249,400000,text+image+file->text,True,False,False,False,True,True,True,False,,21.0,168.0,,
+openai/gpt-5.2-pro:batch,OpenAI: GPT-5.2 Pro (batch),openai,2025-12-10,249,400000,text+image+file->text,True,False,False,False,True,True,True,False,,10.5,84.0,,
+openai/gpt-5.2,OpenAI: GPT-5.2,openai,2025-12-10,249,400000,text+image+file->text,True,False,False,False,True,True,True,False,,1.75,14.0,0.175,
+openai/gpt-5.2:batch,OpenAI: GPT-5.2 (batch),openai,2025-12-10,249,400000,text+image+file->text,True,False,False,False,True,True,True,False,,0.875,7.0,0.0875,
 relace/relace-search,Relace: Relace Search,relace,2025-12-08,251,256000,text->text,False,False,False,False,False,True,True,False,,1.0,3.0,,
 z-ai/glm-4.6v,Z.ai: GLM 4.6V,z-ai,2025-12-08,251,131072,text+image+video->text,True,False,True,False,True,True,True,True,,0.3,0.9,0.055,zai-org/GLM-4.6V
 openrouter/bodybuilder,Body Builder (beta),openrouter,2025-12-05,254,128000,text->text,False,False,False,False,False,False,False,False,,-1000000.0,-1000000.0,,
@@ -305,7 +305,7 @@ google/gemini-2.5-pro:batch,Google: Gemini 2.5 Pro (batch),google,2025-06-17,425
 openai/o3-pro,OpenAI: o3 Pro,openai,2025-06-10,431,200000,text+image+file->text,True,False,False,False,True,True,True,False,2024-06-30,20.0,80.0,,
 openai/o3-pro:batch,OpenAI: o3 Pro (batch),openai,2025-06-10,431,200000,text+image+file->text,True,False,False,False,True,True,True,False,2024-06-30,10.0,40.0,,
 google/gemini-2.5-pro-preview,Google: Gemini 2.5 Pro Preview 06-05,google,2025-06-05,437,1048576,text+image+file+audio->text,True,True,False,False,True,True,True,False,2025-01-31,1.25,10.0,0.125,
-deepseek/deepseek-r1-0528,DeepSeek: R1 0528,deepseek,2025-05-28,444,163840,text->text,False,False,False,False,True,True,True,True,2025-03-31,0.5,2.15,0.35,deepseek-ai/DeepSeek-R1-0528
+deepseek/deepseek-r1-0528,DeepSeek: R1 0528,deepseek,2025-05-28,445,163840,text->text,False,False,False,False,True,True,True,True,2025-03-31,0.5,2.15,0.35,deepseek-ai/DeepSeek-R1-0528
 anthropic/claude-opus-4,Anthropic: Claude Opus 4,anthropic,2025-05-22,451,200000,text+image+file->text,True,False,False,False,True,True,False,False,2025-01-31,15.0,75.0,1.5,
 anthropic/claude-sonnet-4,Anthropic: Claude Sonnet 4,anthropic,2025-05-22,451,1000000,text+image+file->text,True,False,False,False,True,True,False,False,2025-01-31,3.0,15.0,0.3,
 google/gemma-3n-e4b-it,Google: Gemma 3n 4B,google,2025-05-20,452,32768,text->text,False,False,False,False,False,False,True,True,2024-08-31,0.06,0.12,,google/gemma-3n-E4B-it
@@ -349,7 +349,7 @@ mistralai/mistral-saba,Mistral: Saba,mistralai,2025-02-17,545,32768,text+file->t
 openai/o3-mini-high,OpenAI: o3 Mini High,openai,2025-02-12,550,200000,text+file->text,False,False,False,False,True,True,True,False,2023-10-31,1.1,4.4,0.55,
 openai/o3-mini-high:batch,OpenAI: o3 Mini High (batch),openai,2025-02-12,550,200000,text+file->text,False,False,False,False,True,True,True,False,2023-10-31,0.55,2.2,0.275,
 aion-labs/aion-rp-llama-3.1-8b,AionLabs: Aion-RP 1.0 (8B),aion-labs,2025-02-04,557,32768,text->text,False,False,False,False,False,False,False,False,2023-12-31,0.8,1.6,,
-qwen/qwen2.5-vl-72b-instruct,Qwen: Qwen2.5 VL 72B Instruct,qwen,2025-02-01,561,128000,text+image->text,True,False,False,False,False,False,True,True,2024-06-30,0.25,0.75,,Qwen/Qwen2.5-VL-72B-Instruct
+qwen/qwen2.5-vl-72b-instruct,Qwen: Qwen2.5 VL 72B Instruct,qwen,2025-02-01,561,128000,text+image->text,True,False,False,False,False,False,True,True,2024-06-30,0.8,1.0,0.4,Qwen/Qwen2.5-VL-72B-Instruct
 qwen/qwen-plus,Qwen: Qwen-Plus,qwen,2025-02-01,561,1000000,text->text,False,False,False,False,False,True,True,False,2025-03-31,0.26,0.78,0.052,
 openai/o3-mini,OpenAI: o3 Mini,openai,2025-01-31,561,200000,text+file->text,False,False,False,False,True,True,True,False,2023-10-31,1.1,4.4,0.55,
 openai/o3-mini:batch,OpenAI: o3 Mini (batch),openai,2025-01-31,561,200000,text+file->text,False,False,False,False,True,True,True,False,2023-10-31,0.55,2.2,0.275,
