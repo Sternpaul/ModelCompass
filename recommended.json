@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T21:44:18Z",
+    "generated_at": "2026-08-16T21:45:41Z",
     "model_count": 407,
     "synthetic_excluded": 6,
     "update_cadence": "daily (GitHub Actions)",
@@ -11,7 +11,7 @@
       "aider_polyglot": "ok (54 models)"
     },
     "coverage": {
-      "with_aa_benchmarks": 92,
+      "with_aa_benchmarks": 150,
       "with_aider_coding": 36
     },
     "disclaimer": "Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.",
@@ -49,6 +49,38 @@
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "x-ai/grok-4.6",
+        "name": "SpaceXAI: Grok 4.6",
+        "provider": "x-ai",
+        "task_score": 0.6885,
+        "context": 500000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 60.9,
+          "aa_coding_index": 76.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.949,
+          "hle": 0.429,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 40.9
         }
       },
       {
@@ -244,47 +276,15 @@
         }
       },
       {
-        "id": "meta/muse-spark-1.2",
-        "name": "Meta: Muse Spark 1.2",
-        "provider": "meta",
-        "task_score": 0.645,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 4.25,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 56.8,
-          "aa_coding_index": 72.2,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.904,
-          "hle": 0.455,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-4.7",
-        "name": "Anthropic: Claude Opus 4.7",
-        "provider": "anthropic",
-        "task_score": 0.643,
+        "id": "qwen/qwen3.8-max",
+        "name": "Qwen: Qwen3.8 Max",
+        "provider": "qwen",
+        "task_score": 0.6495,
         "context": 1000000,
         "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
         },
         "capability_flags": [
           "reasoning",
@@ -295,28 +295,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 55,
-          "aa_coding_index": 73.6,
+          "aa_intelligence_index": 58.1,
+          "aa_coding_index": 71.8,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.914,
-          "hle": 0.423,
+          "gpqa": 0.927,
+          "hle": 0.43,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
+          "aider_polyglot_pass_rate_1": 9.3
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.6315,
-        "context": 400000,
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": 0.648,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
         },
         "capability_flags": [
           "reasoning",
@@ -324,18 +324,18 @@
           "json",
           "caching"
         ],
-        "is_vision": true,
-        "open_weight": false,
+        "is_vision": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 34.6,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 57.7,
+          "aa_coding_index": 71.9,
           "aa_agentic_index": null,
-          "aa_math_index": 91.7,
-          "gpqa": 0.842,
-          "hle": 0.254,
-          "livecodebench": 0.703,
-          "aime": 0.916666666666667,
-          "mmlu_pro": 0.867,
+          "aa_math_index": null,
+          "gpqa": 0.935,
+          "hle": 0.424,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -370,38 +370,6 @@
           "livecodebench": 0.894,
           "aime": null,
           "mmlu_pro": 0.859,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.859,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -629,6 +597,37 @@
         }
       },
       {
+        "id": "qwen/qwen3-max",
+        "name": "Qwen: Qwen3 Max",
+        "provider": "qwen",
+        "task_score": 0.767,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.78,
+          "completion": 3.9,
+          "cache_read": 0.156
+        },
+        "capability_flags": [
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 24.5,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 80.7,
+          "gpqa": 0.764,
+          "hle": 0.119,
+          "livecodebench": 0.767,
+          "aime": null,
+          "mmlu_pro": 0.841,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "anthropic/claude-fable-5",
         "name": "Anthropic: Claude Fable 5",
         "provider": "anthropic",
@@ -692,6 +691,38 @@
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "x-ai/grok-4.6",
+        "name": "SpaceXAI: Grok 4.6",
+        "provider": "x-ai",
+        "task_score": 0.6623,
+        "context": 500000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 60.9,
+          "aa_coding_index": 76.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.949,
+          "hle": 0.429,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 40.9
         }
       },
       {
@@ -791,6 +822,70 @@
         }
       },
       {
+        "id": "qwen/qwen3.8-max",
+        "name": "Qwen: Qwen3.8 Max",
+        "provider": "qwen",
+        "task_score": 0.646,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 58.1,
+          "aa_coding_index": 71.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.927,
+          "hle": 0.43,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 9.3
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": 0.6453,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 57.7,
+          "aa_coding_index": 71.9,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.935,
+          "hle": 0.424,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "meta/muse-spark-1.2",
         "name": "Meta: Muse Spark 1.2",
         "provider": "meta",
@@ -823,6 +918,38 @@
         }
       },
       {
+        "id": "x-ai/grok-4.5",
+        "name": "SpaceXAI: Grok 4.5",
+        "provider": "x-ai",
+        "task_score": 0.6387,
+        "context": 500000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.3
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 55.8,
+          "aa_coding_index": 72.4,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.931,
+          "hle": 0.427,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "meta/muse-spark-1.1",
         "name": "Meta: Muse Spark 1.1",
         "provider": "meta",
@@ -848,134 +975,6 @@
           "aa_math_index": null,
           "gpqa": 0.898,
           "hle": 0.462,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.4",
-        "name": "OpenAI: GPT-5.4",
-        "provider": "openai",
-        "task_score": 0.6293,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 2.5,
-          "completion": 15.0,
-          "cache_read": 0.25
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 53.1,
-          "aa_coding_index": 71.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.92,
-          "hle": 0.437,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "google/gemini-3.1-pro-preview",
-        "name": "Google: Gemini 3.1 Pro Preview",
-        "provider": "google",
-        "task_score": 0.6293,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 12.0,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 47.7,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.941,
-          "hle": 0.47,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-4.7",
-        "name": "Anthropic: Claude Opus 4.7",
-        "provider": "anthropic",
-        "task_score": 0.629,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 55,
-          "aa_coding_index": 73.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.914,
-          "hle": 0.423,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.6233,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1014,8 +1013,8 @@
         }
       },
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
+        "id": "openai/o4-mini-high",
+        "name": "OpenAI: o4 Mini High",
         "provider": "openai",
         "task_score": 0.8252,
         "context": 200000,
@@ -1042,7 +1041,7 @@
           "livecodebench": 0.859,
           "aime": 0.94,
           "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null
+          "aider_polyglot_pass_rate_1": 19.6
         }
       },
       {
@@ -1142,15 +1141,15 @@
         }
       },
       {
-        "id": "openai/o3-mini-high",
-        "name": "OpenAI: o3 Mini High",
-        "provider": "openai",
-        "task_score": 0.7476,
-        "context": 200000,
+        "id": "z-ai/glm-4.5",
+        "name": "Z.ai: GLM 4.5",
+        "provider": "z-ai",
+        "task_score": 0.7342,
+        "context": 131072,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
+          "prompt": 0.6,
+          "completion": 2.2,
+          "cache_read": 0.11
         },
         "capability_flags": [
           "reasoning",
@@ -1159,17 +1158,17 @@
           "caching"
         ],
         "is_vision": false,
-        "open_weight": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 15.7,
-          "aa_coding_index": 16.3,
+          "aa_intelligence_index": 19.7,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.773,
-          "hle": 0.12,
-          "livecodebench": 0.734,
-          "aime": 0.86,
-          "mmlu_pro": 0.802,
+          "aa_math_index": 73.7,
+          "gpqa": 0.782,
+          "hle": 0.13,
+          "livecodebench": 0.738,
+          "aime": 0.873333333333333,
+          "mmlu_pro": 0.835,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -1206,8 +1205,8 @@
         }
       },
       {
-        "id": "openai/o3-mini",
-        "name": "OpenAI: o3 Mini",
+        "id": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
         "provider": "openai",
         "task_score": 0.7141,
         "context": 200000,
@@ -1234,6 +1233,38 @@
           "livecodebench": 0.717,
           "aime": 0.77,
           "mmlu_pro": 0.791,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "z-ai/glm-4.7",
+        "name": "Z.ai: GLM 4.7",
+        "provider": "z-ai",
+        "task_score": 0.7005,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.4,
+          "completion": 1.75,
+          "cache_read": 0.08
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 34.5,
+          "aa_coding_index": 45.3,
+          "aa_agentic_index": null,
+          "aa_math_index": 95,
+          "gpqa": 0.859,
+          "hle": 0.274,
+          "livecodebench": 0.894,
+          "aime": null,
+          "mmlu_pro": 0.856,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -1266,38 +1297,6 @@
           "livecodebench": 0.84,
           "aime": null,
           "mmlu_pro": 0.865,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.1",
-        "name": "OpenAI: GPT-5.1",
-        "provider": "openai",
-        "task_score": 0.6865,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 37.5,
-          "aa_coding_index": 49.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 94,
-          "gpqa": 0.873,
-          "hle": 0.285,
-          "livecodebench": 0.868,
-          "aime": null,
-          "mmlu_pro": 0.87,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -1336,6 +1335,70 @@
         }
       },
       {
+        "id": "x-ai/grok-4.3",
+        "name": "SpaceXAI: Grok 4.3",
+        "provider": "x-ai",
+        "task_score": 0.8129,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 2.5,
+          "cache_read": 0.2
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 37.9,
+          "aa_coding_index": 42.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.901,
+          "hle": 0.372,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 22.2
+        }
+      },
+      {
+        "id": "qwen/qwen3.7-max",
+        "name": "Qwen: Qwen3.7 Max",
+        "provider": "qwen",
+        "task_score": 0.8054,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 1.475,
+          "completion": 4.425,
+          "cache_read": 0.295
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 46.7,
+          "aa_coding_index": 66,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.923,
+          "hle": 0.405,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "xiaomi/mimo-v2.5-pro",
         "name": "Xiaomi: MiMo-V2.5-Pro",
         "provider": "xiaomi",
@@ -1361,6 +1424,69 @@
           "aa_math_index": null,
           "gpqa": 0.866,
           "hle": 0.357,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.5-397b-a17b",
+        "name": "Qwen: Qwen3.5 397B A17B",
+        "provider": "qwen",
+        "task_score": 0.7878,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.39,
+          "completion": 2.34,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 34.3,
+          "aa_coding_index": 48.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.893,
+          "hle": 0.29,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.7-plus",
+        "name": "Qwen: Qwen3.7 Plus",
+        "provider": "qwen",
+        "task_score": 0.7796,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 0.32,
+          "completion": 1.28,
+          "cache_read": 0.064
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 39.4,
+          "aa_coding_index": 55.9,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.9,
+          "hle": 0.356,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1494,49 +1620,19 @@
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
-      },
+      }
+    ],
+    "best_open_weight": [
       {
-        "id": "openai/gpt-5.4-nano",
-        "name": "OpenAI: GPT-5.4 Nano",
-        "provider": "openai",
-        "task_score": 0.7592,
-        "context": 400000,
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": 0.648,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 0.2,
-          "completion": 1.25,
-          "cache_read": 0.02
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 39.7,
-          "aa_coding_index": 56.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.817,
-          "hle": 0.283,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "minimax/minimax-m2.7",
-        "name": "MiniMax: MiniMax M2.7",
-        "provider": "minimax",
-        "task_score": 0.7571,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
         },
         "capability_flags": [
           "reasoning",
@@ -1547,84 +1643,18 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 38.9,
-          "aa_coding_index": 52.6,
+          "aa_intelligence_index": 57.7,
+          "aa_coding_index": 71.9,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.874,
-          "hle": 0.296,
+          "gpqa": 0.935,
+          "hle": 0.424,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
-      {
-        "id": "openai/gpt-5.3-codex",
-        "name": "OpenAI: GPT-5.3-Codex",
-        "provider": "openai",
-        "task_score": 0.7537,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.75,
-          "completion": 14.0,
-          "cache_read": 0.175
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 45.5,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.915,
-          "hle": 0.425,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5-codex:batch",
-        "name": "OpenAI: GPT-5 Codex (batch)",
-        "provider": "openai",
-        "task_score": 0.7415,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 0.625,
-          "completion": 5.0,
-          "cache_read": 0.0625
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 37,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 98.7,
-          "gpqa": 0.837,
-          "hle": 0.278,
-          "livecodebench": 0.84,
-          "aime": null,
-          "mmlu_pro": 0.865,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_open_weight": [
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
@@ -1651,6 +1681,38 @@
           "aa_math_index": null,
           "gpqa": 0.928,
           "hle": 0.41,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "provider": "moonshotai",
+        "task_score": 0.6015,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 3.0,
+          "completion": 15.0,
+          "cache_read": 0.3
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 48.3,
+          "aa_coding_index": 72,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.842,
+          "hle": 0.25,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1690,6 +1752,38 @@
         }
       },
       {
+        "id": "moonshotai/kimi-k2.7-code",
+        "name": "MoonshotAI: Kimi K2.7 Code",
+        "provider": "moonshotai",
+        "task_score": 0.519,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.71,
+          "completion": 3.5,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 43,
+          "aa_coding_index": 60.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.896,
+          "hle": 0.35,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 20.4
+        }
+      },
+      {
         "id": "xiaomi/mimo-v2.5-pro",
         "name": "Xiaomi: MiMo-V2.5-Pro",
         "provider": "xiaomi",
@@ -1722,15 +1816,46 @@
         }
       },
       {
-        "id": "minimax/minimax-m2.7",
-        "name": "MiniMax: MiniMax M2.7",
-        "provider": "minimax",
-        "task_score": 0.4575,
+        "id": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "provider": "nex-agi",
+        "task_score": 0.504,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 1.0,
+          "cache_read": 0.025
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 41.7,
+          "aa_coding_index": 59.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.892,
+          "hle": 0.337,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "z-ai/glm-5.1",
+        "name": "Z.ai: GLM 5.1",
+        "provider": "z-ai",
+        "task_score": 0.484,
         "context": 204800,
         "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
+          "prompt": 0.966,
+          "completion": 3.036,
+          "cache_read": 0.1794
         },
         "capability_flags": [
           "reasoning",
@@ -1741,12 +1866,12 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 38.9,
-          "aa_coding_index": 52.6,
+          "aa_intelligence_index": 41,
+          "aa_coding_index": 55.8,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.874,
-          "hle": 0.296,
+          "gpqa": 0.868,
+          "hle": 0.301,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1754,46 +1879,15 @@
         }
       },
       {
-        "id": "inclusionai/ling-3.0-flash",
-        "name": "Ling-3.0-flash",
-        "provider": "inclusionai",
-        "task_score": 0.442,
-        "context": 262144,
+        "id": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "provider": "thinkingmachines",
+        "task_score": 0.472,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 0.021,
-          "completion": 0.063,
-          "cache_read": 0.0042
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 37.8,
-          "aa_coding_index": 50.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.855,
-          "hle": 0.237,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "stepfun/step-3.7-flash",
-        "name": "StepFun: Step 3.7 Flash",
-        "provider": "stepfun",
-        "task_score": 0.3525,
-        "context": 262144,
-        "price_per_million": {
-          "prompt": 0.2,
-          "completion": 1.15,
-          "cache_read": 0.04
+          "prompt": 0.95,
+          "completion": 4.05,
+          "cache_read": 0.16
         },
         "capability_flags": [
           "reasoning",
@@ -1804,12 +1898,12 @@
         "is_vision": true,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 30.9,
-          "aa_coding_index": 39.6,
+          "aa_intelligence_index": 42.3,
+          "aa_coding_index": 52.1,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.809,
-          "hle": 0.214,
+          "gpqa": 0.872,
+          "hle": 0.319,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1817,78 +1911,15 @@
         }
       },
       {
-        "id": "minimax/minimax-m2.5",
-        "name": "MiniMax: MiniMax M2.5",
-        "provider": "minimax",
-        "task_score": 0.345,
-        "context": 204800,
+        "id": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "provider": "thinkingmachines",
+        "task_score": 0.4705,
+        "context": 524288,
         "price_per_million": {
-          "prompt": 0.22,
-          "completion": 0.9,
-          "cache_read": 0.05
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 34.5,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.848,
-          "hle": 0.205,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "tencent/hy3-preview",
-        "name": "Tencent: Hy3 preview",
-        "provider": "tencent",
-        "task_score": 0.344,
-        "context": 262144,
-        "price_per_million": {
-          "prompt": 0.18,
-          "completion": 0.6,
-          "cache_read": 0.06
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 34.4,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.867,
-          "hle": 0.278,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "minimax/minimax-m2.1",
-        "name": "MiniMax: MiniMax M2.1",
-        "provider": "minimax",
-        "task_score": 0.321,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.3,
+          "prompt": 0.45,
           "completion": 1.2,
-          "cache_read": 0.03
+          "cache_read": 0.1
         },
         "capability_flags": [
           "reasoning",
@@ -1896,47 +1927,15 @@
           "json",
           "caching"
         ],
-        "is_vision": false,
+        "is_vision": true,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 32.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 82.7,
-          "gpqa": 0.83,
-          "hle": 0.232,
-          "livecodebench": 0.81,
-          "aime": null,
-          "mmlu_pro": 0.875,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.293,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 29.3,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 41.2,
+          "aa_coding_index": 52.9,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.716,
-          "hle": 0.078,
+          "gpqa": 0.895,
+          "hle": 0.333,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1975,6 +1974,38 @@
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "x-ai/grok-4.6",
+        "name": "SpaceXAI: Grok 4.6",
+        "provider": "x-ai",
+        "task_score": 0.6885,
+        "context": 500000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 60.9,
+          "aa_coding_index": 76.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.949,
+          "hle": 0.429,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 40.9
         }
       },
       {
@@ -2170,6 +2201,38 @@
         }
       },
       {
+        "id": "qwen/qwen3.8-max",
+        "name": "Qwen: Qwen3.8 Max",
+        "provider": "qwen",
+        "task_score": 0.6495,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 58.1,
+          "aa_coding_index": 71.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.927,
+          "hle": 0.43,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 9.3
+        }
+      },
+      {
         "id": "meta/muse-spark-1.2",
         "name": "Meta: Muse Spark 1.2",
         "provider": "meta",
@@ -2198,70 +2261,6 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-4.7",
-        "name": "Anthropic: Claude Opus 4.7",
-        "provider": "anthropic",
-        "task_score": 0.643,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 55,
-          "aa_coding_index": 73.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.914,
-          "hle": 0.423,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.6315,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 34.6,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 91.7,
-          "gpqa": 0.842,
-          "hle": 0.254,
-          "livecodebench": 0.703,
-          "aime": 0.916666666666667,
-          "mmlu_pro": 0.867,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -2555,30 +2554,31 @@
         }
       },
       {
-        "id": "poolside/laguna-xs-2.1",
-        "name": "Poolside: Laguna XS 2.1",
-        "provider": "poolside",
-        "task_score": null,
-        "context": 262144,
+        "id": "z-ai/glm-4.7-flash",
+        "name": "Z.ai: GLM 4.7 Flash",
+        "provider": "z-ai",
+        "task_score": 0.156,
+        "context": 202752,
         "price_per_million": {
           "prompt": 0.06,
-          "completion": 0.12,
-          "cache_read": 0.03
+          "completion": 0.4,
+          "cache_read": 0.01
         },
         "capability_flags": [
           "reasoning",
           "tools",
+          "json",
           "caching"
         ],
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": null,
+          "aa_intelligence_index": 15.6,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": null,
-          "hle": null,
+          "gpqa": 0.452,
+          "hle": 0.05,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
