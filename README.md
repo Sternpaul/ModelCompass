@@ -50,7 +50,8 @@ Full formula in `meta.methodology`.
 | `models.json` | Full catalog: every model with raw benchmarks, pricing, metadata, per-task scores |
 | `recommended.json` | Just the per-task shortlists with their benchmark evidence (small, fast to load) |
 | `models.csv` | Flat spreadsheet / grep-friendly view |
-| `INDEX.md` | Human-readable summary (regenerated each run) |
+| `LEADERBOARD.md` | **Human-readable leaderboard** — comparison tables per task, best for viewing directly on GitHub |
+| `INDEX.md` | Machine-oriented summary (regenerated each run) |
 | `rankings/` | Curated **famous rankings** — top models per famous benchmark (see below) |
 | `archive/` | Immutable **weekly snapshots** of `recommended.json`, one file per ISO week |
 
@@ -73,6 +74,12 @@ benchmarks and, for each, the current top models drawn from live data:
 Every Monday at 04:00 UTC, `archive.yml` writes `archive/rankings-YYYY-Www.json`
 — a point-in-time copy of `recommended.json`. Diff any two weeks to see how the
 leaderboard moved. See `archive/README.md`.
+
+## For humans
+
+Open **`LEADERBOARD.md`** for a clean, GitHub-rendered table of the best models
+per task (score, price, context, and the benchmark evidence behind each rank).
+It's the same data as `recommended.json`, just formatted for reading.
 
 ## For agents
 
