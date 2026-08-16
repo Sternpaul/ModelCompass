@@ -40,3 +40,12 @@ future extension point (the `models` array is the natural place to add a
 `benchmarks` object per model).
 
 `cap_score` formula is documented in `models.json > meta.methodology`.
+
+## Variant handling
+
+OpenRouter lists many *derived* variants of the same model (`:batch` pricing,
+`:free` tier, `-preview`, `-latest`, versioned snapshots). For the **shortlists**
+(`recommended.*`) these are collapsed by model **family**: only the canonical
+base model is listed (variants are scored slightly lower so the base wins the
+tie). The full raw catalog in `models.json["models"]` keeps every variant
+untouched — useful for exact pricing/availability lookups.
