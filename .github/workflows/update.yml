@@ -1,0 +1,35 @@
+name: Update Model Leaderboard
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # daily at 04:00 UTC
+  workflow_dispatch:       # manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate leaderboard
+        run: python3 generate.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add models.json models.csv recommended.json INDEX.md
+            git commit -m "chore: daily model leaderboard update $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no changes"
+          fi
