@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add archive/ rankings/
+          git add -A
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "archive: weekly rankings $(date -u +%Y-W%V)"
             git pull --rebase

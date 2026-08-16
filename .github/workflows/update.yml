@@ -32,7 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain)" ]; then
-            git add models.json models.csv recommended.json INDEX.md
+            git add -A
             git commit -m "chore: daily ModelCompass update $(date -u +%Y-%m-%d)"
             git pull --rebase
             git push
