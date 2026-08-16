@@ -267,15 +267,19 @@ def base_slug(s):
 
 
 def merge(or_models, aa, aider):
-    # index OpenRouter by normalized id AND by normalized base-slug
+    # index OpenRouter by normalized id, base-slug, slug-only, and normalized name
     or_by_id = {}
     or_by_base = {}
+    or_by_slug_only = {}
     or_by_norm = {}
     for m in or_models:
         mid = m["id"].lower()
         or_by_id[mid] = m
         base = base_slug(mid.replace(".", "-"))
         or_by_base.setdefault(base, []).append(m)
+        # slug-only key (provider stripped) so AA creator-slug mismatches (x-ai vs x.ai) still match
+        slug_only = base.split("/", 1)[-1]
+        or_by_slug_only.setdefault(slug_only, []).append(m)
         or_by_norm.setdefault(norm(m["name"]), []).append(m)
 
     aa_used, aider_used = set(), set()
@@ -284,14 +288,21 @@ def merge(or_models, aa, aider):
     for key, a in (aa or {}).items():
         creator = a.get("creator_slug", "")
         slug = a.get("slug", "")
+        # 0) slug-only match (provider-agnostic; tolerant of creator-slug format)
+        target = None
+        so = base_slug(slug.replace(".", "-")).split("/", 1)[-1]
+        if not target and so in or_by_slug_only:
+            cands = or_by_slug_only[so]
+            pref = [c for c in cands if base_slug(c["id"].replace(".", "-")) == base_slug(f"{creator}/{slug}".replace(".", "-"))]
+            target = (pref or cands)[0]
         # 1) exact normalized key
-        target = or_by_id.get(aa_match_key(creator, slug))
+        if not target:
+            target = or_by_id.get(aa_match_key(creator, slug))
         # 2) base-slug match (handles reasoning-effort suffixes)
         if not target:
             b = base_slug(aa_match_key(creator, slug))
             cands = or_by_base.get(b)
             if cands:
-                # prefer the canonical (non-alias) variant, then any
                 pref = [c for c in cands if base_slug(c["id"].replace(".", "-")) == b]
                 target = (pref or cands)[0]
         # 3) fuzzy name match
