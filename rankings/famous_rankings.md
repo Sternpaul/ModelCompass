@@ -1,6 +1,6 @@
 # Famous Rankings (ModelCompass)
 
-_Generated 2026-08-16T21:46:53Z. Top models per famous benchmark, pulled from live benchmark data._
+_Generated 2026-08-16T22:05:53Z. Top models per famous benchmark, pulled from live benchmark data._
 
 ## Artificial Analysis Intelligence Index
 
