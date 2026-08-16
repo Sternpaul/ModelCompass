@@ -1,51 +1,86 @@
 # ModelCompass (agent-readable)
 
-A daily-updated, machine-readable catalog of AI models, intended to be loaded
-by an agent **instead of** re-searching the web when its training cutoff is
-stale. Say *"give me the best coding model"* and the agent reads
-`recommended.json` / `models.json` instantly.
+A daily-updated, machine-readable catalog of AI models with **real benchmark
+scores**, built so an agent can answer *"what's the best coding model?"* or
+*"compare these two for my project"* **instantly** — instead of web-searching
+with a stale knowledge cutoff.
 
-## Data source
+## How it works
 
-Live **OpenRouter** `/api/v1/models` catalog (currently ~400+ models). Updated
-daily via GitHub Actions (see `.github/workflows/update.yml`).
+A GitHub Action (`.github/workflows/update.yml`) runs daily at **04:00 UTC**
+(+ manual `workflow_dispatch`) and regenerates the dataset from live sources:
+
+| Source | Auth | What it contributes |
+|--------|------|---------------------|
+| **OpenRouter** `/api/v1/models` | none | 400+ models: pricing, context window, modalities (vision/audio/image), capability flags (reasoning, tools, JSON, caching), knowledge cutoff, recency |
+| **Artificial Analysis API v2** | `ARTIFICIAL_ANALYSIS_KEY` | Intelligence / Coding / Agentic / Math / Multilingual / Openness indices + raw benchmarks (GPQA, HLE, MMLU-Pro, AIME, LiveCodeBench, Terminal-Bench, IFBench, SciCode…) + speed |
+| **aider polyglot** (raw GitHub YAML) | none | Real coding benchmark: 225 Exercism exercises across 6 languages → pass rates |
+| **HF Open LLM Leaderboard** results | none | Academic benchmarks for open-weight models (best-effort; see caveat) |
+
+All sources are fetched defensively — a failure in one never breaks the others.
+`meta.sources` in the output reports exactly what succeeded.
+
+Sources are merged into unified model records by **provider + slug**, then fuzzy
+name match. Models present in one source but not another simply carry `null`
+for that source's benchmarks (no zero-filling). Variant families (`:batch`,
+`:free`, `-preview`, …) are collapsed so shortlists show the canonical base
+model only.
+
+## Scoring (transparent, real benchmarks)
+
+Each task score is a documented **weighted mean of real benchmark values**:
+all normalized to 0–1 (AA indices ÷100; GPQA/HLE/LiveCodeBench/AIME already
+0–1; aider `pass_rate_1` ÷100; HF academic averaged). Missing benchmarks
+contribute `null`, not zero. Full formula in `meta.methodology`.
+
+| Task | Benchmarks used |
+|------|-----------------|
+| `best_overall` | AA intelligence + coding + agentic + math + multilingual |
+| `best_coding` | AA coding index, LiveCodeBench, aider polyglot |
+| `best_reasoning` | AA intelligence, GPQA, AIME, HLE |
+| `best_math` | AA math, AIME, Math-500, SciCode |
+| `best_agents` | AA agentic, Terminal-Bench, IFBench |
+| `best_open_weight` | AA indices + HF academic (open-weight only) |
+| `best_vision` | overall score, filtered to vision-capable |
+| `best_cheap` | price ascending, capability as tiebreak |
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `models.json` | Full catalog: metadata + categorical leaderboards + heuristics |
-| `recommended.json` | Just the per-task shortlists (small, fast to load) |
-| `models.csv` | Flat spreadsheet/grep-friendly view |
-| `INDEX.md` | Human-readable summary |
+| `models.json` | Full catalog: every model with raw benchmarks, pricing, metadata, per-task scores, categorical leaderboards |
+| `recommended.json` | Just the per-task shortlists with their benchmark evidence (small, fast to load) |
+| `models.csv` | Flat spreadsheet / grep-friendly view |
+| `INDEX.md` | Human-readable summary (regenerated each run) |
 
 ## For agents
 
-Load **`recommended.json`** (tiny) for "best X" answers. For comparisons or
-custom scoring, load **`models.json`** and filter on fields like `price_per_million`,
-`context`, `is_vision`, `supports_reasoning`, `knowledge_cutoff`, `age_days`.
+- **"best X"** → load `recommended.json`, read `recommended["best_coding"][0]`.
+  Each entry includes `task_score` and the contributing `benchmarks`, so the
+  agent can explain *why*.
+- **"compare A vs B"** → load both from `models.json["models"]`, return a
+  side-by-side of `benchmarks`, `price_per_million`, `context`, capability flags.
 
-Example: "compare openai/gpt-5.2 vs anthropic/claude-opus-4.5 for agents" →
-look both up in `models.json["models"]` and compare `context`, `price_per_million`,
-`supports_tools`, `supports_reasoning`, `knowledge_cutoff`.
+Example: *"compare openai/gpt-5.2 vs anthropic/claude-opus-4.5 for agents"* →
+look both up, compare `benchmarks.aa_agentic_index`, `terminal_bench`,
+`price_per_million`, `context`, `supports_tools`.
 
-## Honest scope
+## Setup
 
-OpenRouter exposes rich **metadata** (pricing, context, modalities, supported
-params, knowledge cutoff, recency) but **not benchmark scores**. Therefore the
-`recommended` lists are transparent **metadata-derived heuristics** (capability
-flags + recency + price class), clearly labeled as such — they are a sane
-default for a stale agent, not a benchmark verdict. Benchmark ingestion is a
-future extension point (the `models` array is the natural place to add a
-`benchmarks` object per model).
+1. Create a free key at https://artificialanalysis.ai/login → API key.
+2. Add it as a **repo secret** named `ARTIFICIAL_ANALYSIS_KEY`.
+   (Free tier: 100 requests/day — one request fetches all models, well within limits.)
+3. The Action runs automatically; trigger manually with `gh workflow run update.yml`.
 
-`cap_score` formula is documented in `models.json > meta.methodology`.
+No SSH keys, no tokens in URLs. The daily job uses GitHub's built-in
+`GITHUB_TOKEN`.
 
-## Variant handling
+## Honest caveats
 
-OpenRouter lists many *derived* variants of the same model (`:batch` pricing,
-`:free` tier, `-preview`, `-latest`, versioned snapshots). For the **shortlists**
-(`recommended.*`) these are collapsed by model **family**: only the canonical
-base model is listed (variants are scored slightly lower so the base wins the
-tie). The full raw catalog in `models.json["models"]` keeps every variant
-untouched — useful for exact pricing/availability lookups.
+- **HF Open LLM Leaderboard** is stale (last updated March 2025) and currently
+  matches **0** current open-weight ids. The integration is correct; the source
+  is outdated. Swap in a fresher open-weight dataset later if desired.
+- Benchmarks are point-in-time; the daily job keeps them current.
+- Rankings are transparent blends of real metrics — verify high-stakes choices
+  against primary sources. They are a sane default for a stale agent, not a
+  single authoritative verdict.
