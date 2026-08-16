@@ -15,7 +15,6 @@ A GitHub Action (`.github/workflows/update.yml`) runs daily at **04:00 UTC**
 | **OpenRouter** `/api/v1/models` | none | 400+ models: pricing, context window, modalities (vision/audio/image), capability flags (reasoning, tools, JSON, caching), knowledge cutoff, recency |
 | **Artificial Analysis API v2** | `ARTIFICIAL_ANALYSIS_KEY` | Intelligence / Coding / Agentic / Math / Multilingual / Openness indices + raw benchmarks (GPQA, HLE, MMLU-Pro, AIME, LiveCodeBench, Terminal-Bench, IFBench, SciCode…) + speed |
 | **aider polyglot** (raw GitHub YAML) | none | Real coding benchmark: 225 Exercism exercises across 6 languages → pass rates |
-| **HF Open LLM Leaderboard** results | none | Academic benchmarks for open-weight models (best-effort; see caveat) |
 
 All sources are fetched defensively — a failure in one never breaks the others.
 `meta.sources` in the output reports exactly what succeeded.
@@ -30,8 +29,8 @@ model only.
 
 Each task score is a documented **weighted mean of real benchmark values**:
 all normalized to 0–1 (AA indices ÷100; GPQA/HLE/LiveCodeBench/AIME already
-0–1; aider `pass_rate_1` ÷100; HF academic averaged). Missing benchmarks
-contribute `null`, not zero. Full formula in `meta.methodology`.
+0–1; aider `pass_rate_1` ÷100). Missing benchmarks contribute `null`, not zero.
+Full formula in `meta.methodology`.
 
 | Task | Benchmarks used |
 |------|-----------------|
@@ -40,7 +39,7 @@ contribute `null`, not zero. Full formula in `meta.methodology`.
 | `best_reasoning` | AA intelligence, GPQA, AIME, HLE |
 | `best_math` | AA math, AIME, Math-500, SciCode |
 | `best_agents` | AA agentic, Terminal-Bench, IFBench |
-| `best_open_weight` | AA indices + HF academic (open-weight only) |
+| `best_open_weight` | AA intelligence + openness + coding indices (open-weight only) |
 | `best_vision` | overall score, filtered to vision-capable |
 | `best_cheap` | price ascending, capability as tiebreak |
 
@@ -48,10 +47,32 @@ contribute `null`, not zero. Full formula in `meta.methodology`.
 
 | File | Purpose |
 |------|---------|
-| `models.json` | Full catalog: every model with raw benchmarks, pricing, metadata, per-task scores, categorical leaderboards |
+| `models.json` | Full catalog: every model with raw benchmarks, pricing, metadata, per-task scores |
 | `recommended.json` | Just the per-task shortlists with their benchmark evidence (small, fast to load) |
 | `models.csv` | Flat spreadsheet / grep-friendly view |
 | `INDEX.md` | Human-readable summary (regenerated each run) |
+| `rankings/` | Curated **famous rankings** — top models per famous benchmark (see below) |
+| `archive/` | Immutable **weekly snapshots** of `recommended.json`, one file per ISO week |
+
+### `rankings/` — famous rankings
+
+`rankings/famous_rankings.md` (and `.json`) list the most famous model
+benchmarks and, for each, the current top models drawn from live data:
+
+- Artificial Analysis Intelligence Index
+- Coding (aider polyglot + LiveCodeBench)
+- Math (AIME / MMLU-Pro / SciCode)
+- Reasoning (GPQA / HLE)
+- Agentic (Terminal-Bench / AA agentic)
+- Vision
+- Best value (low cost)
+- Open-weight
+
+### `archive/` — weekly history
+
+Every Monday at 04:00 UTC, `archive.yml` writes `archive/rankings-YYYY-Www.json`
+— a point-in-time copy of `recommended.json`. Diff any two weeks to see how the
+leaderboard moved. See `archive/README.md`.
 
 ## For agents
 
@@ -70,16 +91,13 @@ look both up, compare `benchmarks.aa_agentic_index`, `terminal_bench`,
 1. Create a free key at https://artificialanalysis.ai/login → API key.
 2. Add it as a **repo secret** named `ARTIFICIAL_ANALYSIS_KEY`.
    (Free tier: 100 requests/day — one request fetches all models, well within limits.)
-3. The Action runs automatically; trigger manually with `gh workflow run update.yml`.
+3. The Actions run automatically. Trigger manually with
+   `gh workflow run update.yml` (daily) or `gh workflow run archive.yml` (weekly).
 
-No SSH keys, no tokens in URLs. The daily job uses GitHub's built-in
-`GITHUB_TOKEN`.
+No SSH keys, no tokens in URLs. The jobs use GitHub's built-in `GITHUB_TOKEN`.
 
 ## Honest caveats
 
-- **HF Open LLM Leaderboard** is stale (last updated March 2025) and currently
-  matches **0** current open-weight ids. The integration is correct; the source
-  is outdated. Swap in a fresher open-weight dataset later if desired.
 - Benchmarks are point-in-time; the daily job keeps them current.
 - Rankings are transparent blends of real metrics — verify high-stakes choices
   against primary sources. They are a sane default for a stale agent, not a

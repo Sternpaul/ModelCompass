@@ -1,101 +1,33 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T18:27:36Z",
+    "generated_at": "2026-08-16T18:40:40Z",
     "model_count": 407,
     "synthetic_excluded": 6,
     "update_cadence": "daily (GitHub Actions)",
     "secret_env": "ARTIFICIAL_ANALYSIS_KEY",
     "sources": {
       "openrouter": "ok (413 raw)",
-      "artificial_analysis": "ok (608 models)",
-      "aider_polyglot": "ok (54 models)",
-      "hf_openllm": "ok (0 matched)"
+      "artificial_analysis": "no API key",
+      "aider_polyglot": "ok (54 models)"
     },
     "coverage": {
-      "with_aa_benchmarks": 44,
-      "with_aider_coding": 36,
-      "with_hf_openllm": 0
+      "with_aa_benchmarks": 0,
+      "with_aider_coding": 36
     },
-    "disclaimer": "Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding, HF OpenLLM academic). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.",
-    "methodology": "Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100; HF academic averaged). Sources merged by provider+slug then name fuzzy-match. Variant families collapsed to canonical base model in shortlists."
+    "disclaimer": "Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.",
+    "methodology": "Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged by provider+slug then name fuzzy-match. Variant families collapsed to canonical base model in shortlists."
   },
   "recommended": {
     "best_overall": [
       {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.7055,
-        "context": 1000000,
+        "id": "x-ai/grok-4.20",
+        "name": "SpaceXAI: Grok 4.20",
+        "provider": "x-ai",
+        "task_score": null,
+        "context": 2000000,
         "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-fable-5",
-        "name": "Anthropic: Claude Fable 5",
-        "provider": "anthropic",
-        "task_score": 0.693,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 62.1,
-          "aa_coding_index": 76.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.926,
-          "hle": 0.555,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "provider": "anthropic",
-        "task_score": 0.634,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 10.0,
+          "prompt": 1.25,
+          "completion": 2.5,
           "cache_read": 0.2
         },
         "capability_flags": [
@@ -107,95 +39,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.61,
-        "context": 1048576,
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.6045,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.597,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
         },
         "capability_flags": [
           "reasoning",
@@ -206,28 +71,123 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": 43.1
         }
       },
       {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
         "provider": "openai",
-        "task_score": 0.597,
-        "context": 200000,
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra-pro",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol-pro",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -239,29 +199,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8,
-          "hf_openllm_n": 0
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
         "provider": "openai",
-        "task_score": 0.584,
-        "context": 200000,
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -272,29 +231,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 26.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.558,
-        "context": 400000,
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
         },
         "capability_flags": [
           "reasoning",
@@ -305,554 +263,90 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.536,
-        "context": 204800,
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
         },
         "capability_flags": [
           "reasoning",
           "tools",
-          "json"
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
         ],
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 28.9,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       }
     ],
     "best_coding": [
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.859,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.826,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 28.9,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-5-nano",
-        "name": "OpenAI: GPT-5 Nano",
-        "provider": "openai",
-        "task_score": 0.789,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 0.05,
-          "completion": 0.4,
-          "cache_read": 0.005
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 20.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 83.7,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
-          "aime": null,
-          "mmlu_pro": 0.78,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.78,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-fable-5",
-        "name": "Anthropic: Claude Fable 5",
-        "provider": "anthropic",
-        "task_score": 0.765,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 62.1,
-          "aa_coding_index": 76.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.926,
-          "hle": 0.555,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "nvidia/nemotron-nano-9b-v2:free",
-        "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-        "provider": "nvidia",
-        "task_score": 0.724,
-        "context": 128000,
-        "price_per_million": {
-          "prompt": 0.0,
-          "completion": 0.0,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 8.7,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 69.7,
-          "gpqa": 0.57,
-          "hle": 0.049,
-          "livecodebench": 0.724,
-          "aime": null,
-          "mmlu_pro": 0.742,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o3-mini",
-        "name": "OpenAI: o3 Mini",
-        "provider": "openai",
-        "task_score": 0.717,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 19.2,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "aime": 0.77,
-          "mmlu_pro": 0.791,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.691,
+        "id": "google/gemini-2.5-pro",
+        "name": "Google: Gemini 2.5 Pro",
+        "provider": "google",
+        "task_score": 0.462,
         "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.688,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.669,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      }
-    ],
-    "best_reasoning": [
-      {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.704,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-fable-5",
-        "name": "Anthropic: Claude Fable 5",
-        "provider": "anthropic",
-        "task_score": 0.7007,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 62.1,
-          "aa_coding_index": 76.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.926,
-          "hle": 0.555,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "provider": "anthropic",
-        "task_score": 0.6257,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 10.0,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.6233,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.616,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.6122,
-        "context": 400000,
         "price_per_million": {
           "prompt": 1.25,
           "completion": 10.0,
@@ -867,90 +361,23 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.604,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": 0.591,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": 46.2
         }
       },
       {
         "id": "openai/o3-pro",
         "name": "OpenAI: o3 Pro",
         "provider": "openai",
-        "task_score": 0.589,
+        "task_score": 0.436,
         "context": 200000,
         "price_per_million": {
           "prompt": 20.0,
@@ -965,94 +392,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 33.3,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.845,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.6,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
-        "provider": "openai",
-        "task_score": 0.5606,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8,
-          "hf_openllm_n": 0
-        }
-      }
-    ],
-    "best_math": [
-      {
-        "id": "perplexity/sonar-reasoning-pro",
-        "name": "Perplexity: Sonar Reasoning Pro",
-        "provider": "perplexity",
-        "task_score": 0.8737,
-        "context": 128000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 18,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
           "gpqa": null,
           "hle": null,
           "livecodebench": null,
-          "aime": 0.79,
+          "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": 43.6
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
         "provider": "openai",
-        "task_score": 0.8307,
-        "context": 400000,
+        "task_score": 0.431,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
         },
         "capability_flags": [
           "reasoning",
@@ -1063,57 +424,118 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.8252,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 26.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 43.1
+        }
+      },
+      {
+        "id": "x-ai/grok-4.6",
+        "name": "SpaceXAI: Grok 4.6",
+        "provider": "x-ai",
+        "task_score": 0.409,
+        "context": 500000,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 40.9
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v3.2",
+        "name": "DeepSeek: DeepSeek V3.2",
+        "provider": "deepseek",
+        "task_score": 0.387,
+        "context": 163840,
+        "price_per_million": {
+          "prompt": 0.269,
+          "completion": 0.4,
+          "cache_read": 0.1345
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 38.7
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-4",
+        "name": "Anthropic: Claude Opus 4",
+        "provider": "anthropic",
+        "task_score": 0.373,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 15.0,
+          "completion": 75.0,
+          "cache_read": 1.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 37.3
         }
       },
       {
         "id": "openai/o3",
         "name": "OpenAI: o3",
         "provider": "openai",
-        "task_score": 0.7971,
+        "task_score": 0.348,
         "context": 200000,
         "price_per_million": {
           "prompt": 2.0,
@@ -1129,29 +551,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8,
-          "hf_openllm_n": 0
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 34.8
         }
       },
       {
-        "id": "openai/o3-mini-high",
-        "name": "OpenAI: o3 Mini High",
-        "provider": "openai",
-        "task_score": 0.7476,
-        "context": 200000,
+        "id": "deepseek/deepseek-r1-0528",
+        "name": "DeepSeek: R1 0528",
+        "provider": "deepseek",
+        "task_score": 0.344,
+        "context": 163840,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
+          "prompt": 0.5,
+          "completion": 2.15,
+          "cache_read": 0.35
         },
         "capability_flags": [
           "reasoning",
@@ -1160,92 +581,56 @@
           "caching"
         ],
         "is_vision": false,
-        "open_weight": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 15.7,
-          "aa_coding_index": 16.3,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.773,
-          "hle": 0.12,
-          "livecodebench": 0.734,
-          "aime": 0.86,
-          "mmlu_pro": 0.802,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o3-mini",
-        "name": "OpenAI: o3 Mini",
-        "provider": "openai",
-        "task_score": 0.7141,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 19.2,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "aime": 0.77,
-          "mmlu_pro": 0.791,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 34.4
         }
       },
       {
-        "id": "openai/o1",
-        "name": "OpenAI: o1",
-        "provider": "openai",
-        "task_score": 0.6838,
-        "context": 200000,
+        "id": "qwen/qwen3-235b-a22b",
+        "name": "Qwen: Qwen3 235B A22B",
+        "provider": "qwen",
+        "task_score": 0.289,
+        "context": 131072,
         "price_per_million": {
-          "prompt": 15.0,
-          "completion": 60.0,
-          "cache_read": 7.5
+          "prompt": 0.455,
+          "completion": 1.82,
+          "cache_read": null
         },
         "capability_flags": [
           "reasoning",
           "tools",
-          "json",
-          "caching"
+          "json"
         ],
-        "is_vision": true,
-        "open_weight": false,
+        "is_vision": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 23.9,
-          "aa_coding_index": 39.7,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.747,
-          "hle": 0.07,
-          "livecodebench": 0.679,
-          "aime": 0.723333333333333,
-          "mmlu_pro": 0.841,
-          "aider_polyglot_pass_rate_1": 5.8,
-          "hf_openllm_n": 0
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 28.9
         }
       },
       {
         "id": "deepseek/deepseek-r1",
         "name": "DeepSeek: R1",
         "provider": "deepseek",
-        "task_score": 0.6716,
+        "task_score": 0.271,
         "context": 64000,
         "price_per_million": {
           "prompt": 0.7,
@@ -1260,62 +645,30 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 18.6,
-          "aa_coding_index": 24.6,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 68,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "aime": 0.683333333333333,
-          "mmlu_pro": 0.844,
-          "aider_polyglot_pass_rate_1": 27.1,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.6615,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 27.1
         }
-      },
+      }
+    ],
+    "best_reasoning": [
       {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
-        "provider": "openai",
-        "task_score": 0.6495,
-        "context": 400000,
+        "id": "x-ai/grok-4.20",
+        "name": "SpaceXAI: Grok 4.20",
+        "provider": "x-ai",
+        "task_score": null,
+        "context": 2000000,
         "price_per_million": {
-          "prompt": 0.25,
-          "completion": 2.0,
-          "cache_read": 0.025
+          "prompt": 1.25,
+          "completion": 2.5,
+          "cache_read": 0.2
         },
         "capability_flags": [
           "reasoning",
@@ -1326,26 +679,1181 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.837,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 43.1
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra-pro",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol-pro",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_math": [
+      {
+        "id": "x-ai/grok-4.20",
+        "name": "SpaceXAI: Grok 4.20",
+        "provider": "x-ai",
+        "task_score": null,
+        "context": 2000000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 2.5,
+          "cache_read": 0.2
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 43.1
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra-pro",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol-pro",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       }
     ],
     "best_agents": [
       {
+        "id": "x-ai/grok-4.20",
+        "name": "SpaceXAI: Grok 4.20",
+        "provider": "x-ai",
+        "task_score": null,
+        "context": 2000000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 2.5,
+          "cache_read": 0.2
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 43.1
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra-pro",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol-pro",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_open_weight": [
+      {
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "provider": "qwen",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 2.0,
+          "completion": 6.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-pro-0813",
+        "name": "DeepSeek: DeepSeek V4 Pro 0813",
+        "provider": "deepseek",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.66,
+          "completion": 1.98,
+          "cache_read": 0.022
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "nvidia/nemotron-3.5-lightning",
+        "name": "NVIDIA: Nemotron 3.5 Lightning",
+        "provider": "nvidia",
+        "task_score": null,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 0.08,
+          "completion": 0.2,
+          "cache_read": 0.04
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 5.8
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash-0731",
+        "name": "DeepSeek: DeepSeek V4 Flash 0731",
+        "provider": "deepseek",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.14,
+          "completion": 0.28,
+          "cache_read": 0.028
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "provider": "thinkingmachines",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.95,
+          "completion": 4.05,
+          "cache_read": 0.16
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "provider": "moonshotai",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 3.0,
+          "completion": 15.0,
+          "cache_read": 0.3
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "provider": "z-ai",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.308,
+          "completion": 0.968,
+          "cache_read": 0.0572
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
         "provider": "minimax",
-        "task_score": 0.8286,
+        "task_score": null,
         "context": 1048576,
         "price_per_million": {
           "prompt": 0.3,
@@ -1361,29 +1869,28 @@
         "is_vision": true,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
-        "provider": "openai",
-        "task_score": 0.7544,
-        "context": 400000,
+        "id": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "provider": "thinkingmachines",
+        "task_score": null,
+        "context": 524288,
         "price_per_million": {
-          "prompt": 0.25,
-          "completion": 2.0,
-          "cache_read": 0.025
+          "prompt": 0.45,
+          "completion": 1.2,
+          "cache_read": 0.1
         },
         "capability_flags": [
           "reasoning",
@@ -1392,291 +1899,25 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
-          "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
-          "aime": null,
-          "mmlu_pro": 0.837,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.7306,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.7231,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 28.9,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
-        "provider": "openai",
-        "task_score": 0.7143,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "upstage/solar-pro-3",
-        "name": "Upstage: Solar Pro 3",
-        "provider": "upstage",
-        "task_score": 0.712,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.15,
-          "completion": 0.6,
-          "cache_read": 0.015
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 14.5,
-          "aa_coding_index": 16.2,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.724,
-          "hle": 0.103,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
-      {
-        "id": "openai/o1",
-        "name": "OpenAI: o1",
-        "provider": "openai",
-        "task_score": 0.7034,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 15.0,
-          "completion": 60.0,
-          "cache_read": 7.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 23.9,
-          "aa_coding_index": 39.7,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.747,
-          "hle": 0.07,
-          "livecodebench": 0.679,
-          "aime": 0.723333333333333,
-          "mmlu_pro": 0.841,
-          "aider_polyglot_pass_rate_1": 5.8,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "inception/mercury-2",
-        "name": "Inception: Mercury 2",
-        "provider": "inception",
-        "task_score": 0.698,
-        "context": 128000,
-        "price_per_million": {
-          "prompt": 0.25,
-          "completion": 0.75,
-          "cache_read": 0.025
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 21.9,
-          "aa_coding_index": 31.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.77,
-          "hle": 0.171,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.6898,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.6871,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      }
-    ],
-    "best_open_weight": [
       {
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "provider": "deepseek",
-        "task_score": 0.532,
+        "task_score": null,
         "context": 1048576,
         "price_per_million": {
           "prompt": 1.168,
@@ -1692,387 +1933,29 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.518,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": 0.454,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "tencent/hy3",
-        "name": "Tencent: Hy3",
-        "provider": "tencent",
-        "task_score": 0.422,
-        "context": 262144,
-        "price_per_million": {
-          "prompt": 0.132,
-          "completion": 0.528,
-          "cache_read": 0.033
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 42.2,
-          "aa_coding_index": 58.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.897,
-          "hle": 0.335,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "inclusionai/ling-3.0-flash",
-        "name": "Ling-3.0-flash",
-        "provider": "inclusionai",
-        "task_score": 0.378,
-        "context": 262144,
-        "price_per_million": {
-          "prompt": 0.021,
-          "completion": 0.063,
-          "cache_read": 0.0042
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 37.8,
-          "aa_coding_index": 50.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.855,
-          "hle": 0.237,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.289,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 28.9,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.241,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1",
-        "name": "DeepSeek: R1",
-        "provider": "deepseek",
-        "task_score": 0.186,
-        "context": 64000,
-        "price_per_million": {
-          "prompt": 0.7,
-          "completion": 2.5,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 18.6,
-          "aa_coding_index": 24.6,
-          "aa_agentic_index": null,
-          "aa_math_index": 68,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "aime": 0.683333333333333,
-          "mmlu_pro": 0.844,
-          "aider_polyglot_pass_rate_1": 27.1,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-20b",
-        "name": "OpenAI: gpt-oss-20b",
-        "provider": "openai",
-        "task_score": 0.152,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.13,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 15.2,
-          "aa_coding_index": 20.7,
-          "aa_agentic_index": null,
-          "aa_math_index": 89.3,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
-          "aime": null,
-          "mmlu_pro": 0.748,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1-distill-llama-70b",
-        "name": "DeepSeek: R1 Distill Llama 70B",
-        "provider": "deepseek",
-        "task_score": 0.098,
-        "context": 8192,
-        "price_per_million": {
-          "prompt": 0.8,
-          "completion": 0.8,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 9.8,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 53.7,
-          "gpqa": 0.402,
-          "hle": 0.051,
-          "livecodebench": 0.266,
-          "aime": 0.67,
-          "mmlu_pro": 0.795,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       }
     ],
     "best_vision": [
       {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.7055,
-        "context": 1000000,
+        "id": "x-ai/grok-4.20",
+        "name": "SpaceXAI: Grok 4.20",
+        "provider": "x-ai",
+        "task_score": null,
+        "context": 2000000,
         "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-fable-5",
-        "name": "Anthropic: Claude Fable 5",
-        "provider": "anthropic",
-        "task_score": 0.693,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 62.1,
-          "aa_coding_index": 76.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.926,
-          "hle": 0.555,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "provider": "anthropic",
-        "task_score": 0.634,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 10.0,
+          "prompt": 1.25,
+          "completion": 2.5,
           "cache_read": 0.2
         },
         "capability_flags": [
@@ -2084,29 +1967,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.597,
-        "context": 1000000,
+        "id": "openai/gpt-5.6-luna-pro",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
         },
         "capability_flags": [
           "reasoning",
@@ -2117,28 +1999,123 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": 43.1
         }
       },
       {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
+        "id": "openai/gpt-5.6-luna",
+        "name": "OpenAI: GPT-5.6 Luna",
         "provider": "openai",
-        "task_score": 0.597,
-        "context": 200000,
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
+          "prompt": 0.1,
+          "completion": 0.6,
+          "cache_read": 0.01
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra-pro",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-terra",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 1.0,
+          "completion": 6.0,
+          "cache_read": 0.1
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol-pro",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "provider": "openai",
+        "task_score": null,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -2150,128 +2127,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.584,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.558,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": 0.52,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5-nano",
-        "name": "OpenAI: GPT-5 Nano",
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
         "provider": "openai",
-        "task_score": 0.519,
-        "context": 400000,
+        "task_score": null,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 0.05,
-          "completion": 0.4,
-          "cache_read": 0.005
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -2282,29 +2159,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 20.1,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 83.7,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.78,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
-        "provider": "openai",
-        "task_score": 0.4403,
-        "context": 400000,
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 0.25,
-          "completion": 2.0,
-          "cache_read": 0.025
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
         },
         "capability_flags": [
           "reasoning",
@@ -2315,17 +2191,80 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.837,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "meta/muse-spark-1.2",
+        "name": "Meta: Muse Spark 1.2",
+        "provider": "meta",
+        "task_score": null,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 4.25,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       }
     ],
@@ -2334,7 +2273,7 @@
         "id": "inclusionai/ling-3.0-flash",
         "name": "Ling-3.0-flash",
         "provider": "inclusionai",
-        "task_score": 0.442,
+        "task_score": null,
         "context": 262144,
         "price_per_million": {
           "prompt": 0.021,
@@ -2349,17 +2288,16 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 37.8,
-          "aa_coding_index": 50.6,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.855,
-          "hle": 0.237,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2391,8 +2329,7 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2424,48 +2361,14 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.493,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
         "id": "upstage/solar-pro4",
         "name": "Upstage: Solar Pro 4",
         "provider": "upstage",
-        "task_score": 0.4715,
+        "task_score": null,
         "context": 524288,
         "price_per_million": {
           "prompt": 0.03,
@@ -2481,50 +2384,16 @@
         "is_vision": false,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 41.6,
-          "aa_coding_index": 52.7,
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.891,
-          "hle": 0.292,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
-        }
-      },
-      {
-        "id": "openai/gpt-oss-20b",
-        "name": "OpenAI: gpt-oss-20b",
-        "provider": "openai",
-        "task_score": 0.4173,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.13,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 15.2,
-          "aa_coding_index": 20.7,
-          "aa_agentic_index": null,
-          "aa_math_index": 89.3,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
-          "aime": null,
-          "mmlu_pro": 0.748,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2556,15 +2425,78 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": null,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": 13.8
+        }
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "provider": "openai",
+        "task_score": null,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.13,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": null,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
         "id": "nvidia/nemotron-3-nano-30b-a3b",
         "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
         "provider": "nvidia",
-        "task_score": 0.1025,
+        "task_score": null,
         "context": 262144,
         "price_per_million": {
           "prompt": 0.05,
@@ -2580,17 +2512,16 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 7.2,
+          "aa_intelligence_index": null,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 13.3,
-          "gpqa": 0.399,
-          "hle": 0.046,
-          "livecodebench": 0.36,
+          "aa_math_index": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.579,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2622,8 +2553,7 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2654,8 +2584,7 @@
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null,
-          "hf_openllm_n": 0
+          "aider_polyglot_pass_rate_1": null
         }
       }
     ]
@@ -3238,40 +3167,16 @@
         "completion": 0.12,
         "cache_read": 0.006
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 41.6,
-          "artificial_analysis_coding_index": 52.7,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.891,
-          "hle": 0.292,
-          "livecodebench": null,
-          "scicode": 0.436,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.706666666666667,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.573033707865168,
-          "tau2": null,
-          "tau_banking": 0.232989690721649
-        },
-        "aa_speed": {
-          "median_tps": 66.247,
-          "ttft_s": 1.185
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.47150000000000003,
-        "coding": 0.527,
-        "reasoning": 0.533,
-        "math": 0.436,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.41600000000000004
+        "open_weight": null
       },
-      "_task": 0.47150000000000003,
+      "_task": null,
       "_fallback": 0.52425,
       "capability_score": 6.291
     },
@@ -3598,40 +3503,16 @@
         "completion": 50.0,
         "cache_read": 1.0
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 52.5,
-          "artificial_analysis_coding_index": 66.9,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "scicode": 0.48,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.77,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.764044943820225,
-          "tau2": null,
-          "tau_banking": 0.303092783505155
-        },
-        "aa_speed": {
-          "median_tps": 47.202,
-          "ttft_s": 2.4
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.597,
-        "coding": 0.669,
-        "reasoning": 0.616,
-        "math": 0.48,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.525
+        "open_weight": null
       },
-      "_task": 0.597,
+      "_task": null,
       "_fallback": 0.5561666666666667,
       "capability_score": 6.674
     },
@@ -3663,40 +3544,16 @@
         "completion": 25.0,
         "cache_read": 0.5
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 63.1,
-          "artificial_analysis_coding_index": 78,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "scicode": 0.557,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.756666666666667,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.891385767790262,
-          "tau2": null,
-          "tau_banking": 0.420618556701031
-        },
-        "aa_speed": {
-          "median_tps": 48.858,
-          "ttft_s": 29.772
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.7055,
-        "coding": 0.78,
-        "reasoning": 0.7040000000000001,
-        "math": 0.557,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.631
+        "open_weight": null
       },
-      "_task": 0.7055,
+      "_task": null,
       "_fallback": 0.5561666666666667,
       "capability_score": 6.674
     },
@@ -3769,40 +3626,16 @@
         "completion": 0.063,
         "cache_read": 0.0042
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 37.8,
-          "artificial_analysis_coding_index": 50.6,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.855,
-          "hle": 0.237,
-          "livecodebench": null,
-          "scicode": 0.411,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.67,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.554307116104869,
-          "tau2": null,
-          "tau_banking": 0.272164948453608
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.44199999999999995,
-        "coding": 0.506,
-        "reasoning": 0.48999999999999994,
-        "math": 0.411,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.37799999999999995
+        "open_weight": null
       },
-      "_task": 0.44199999999999995,
+      "_task": null,
       "_fallback": 0.45258333333333334,
       "capability_score": 5.431
     },
@@ -5078,40 +4911,16 @@
         "completion": 0.528,
         "cache_read": 0.033
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 42.2,
-          "artificial_analysis_coding_index": 58.8,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.897,
-          "hle": 0.335,
-          "livecodebench": null,
-          "scicode": 0.476,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.746666666666667,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.644194756554307,
-          "tau2": null,
-          "tau_banking": 0.228865979381443
-        },
-        "aa_speed": {
-          "median_tps": 72.98,
-          "ttft_s": 1.794
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.505,
-        "coding": 0.588,
-        "reasoning": 0.5513333333333333,
-        "math": 0.476,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.42200000000000004
+        "open_weight": null
       },
-      "_task": 0.505,
+      "_task": null,
       "_fallback": 0.48641666666666666,
       "capability_score": 5.837
     },
@@ -5226,29 +5035,6 @@
         "cache_read": 0.2
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 55.3,
-          "artificial_analysis_coding_index": 71.5,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
-          "livecodebench": null,
-          "scicode": 0.536,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.77,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.805243445692884,
-          "tau2": null,
-          "tau_banking": 0.37319587628866
-        },
-        "aa_speed": {
-          "median_tps": 78.95,
-          "ttft_s": 119.674
-        },
         "aider_polyglot": {
           "pass_rate_1": 22.2,
           "pass_rate_2": 51.6,
@@ -5258,14 +5044,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.6339999999999999,
-        "coding": 0.46849999999999997,
-        "reasoning": 0.6256666666666667,
-        "math": 0.536,
+        "overall": null,
+        "coding": 0.222,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.5529999999999999
+        "open_weight": null
       },
-      "_task": 0.6339999999999999,
+      "_task": null,
       "_fallback": 0.5451666666666667,
       "capability_score": 6.542
     },
@@ -5813,8 +5599,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.5360833333333334,
-      "capability_score": 6.433
+      "_fallback": 0.5355833333333333,
+      "capability_score": 6.427
     },
     {
       "id": "anthropic/claude-fable-5",
@@ -5844,40 +5630,16 @@
         "completion": 50.0,
         "cache_read": 1.0
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 62.1,
-          "artificial_analysis_coding_index": 76.5,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.926,
-          "hle": 0.555,
-          "livecodebench": null,
-          "scicode": 0.602,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.63469387755102,
-          "lcr": 0.766666666666667,
-          "terminalbench_hard": 0.628787878787879,
-          "terminalbench_v2_1": 0.846441947565543,
-          "tau2": 0.985380116959064,
-          "tau_banking": 0.381443298969072
-        },
-        "aa_speed": {
-          "median_tps": 64.172,
-          "ttft_s": 60.379
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.6930000000000001,
-        "coding": 0.765,
-        "reasoning": 0.7006666666666668,
-        "math": 0.602,
-        "agents": 0.63469387755102,
-        "open_weight": 0.621
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.6930000000000001,
+      "_task": null,
       "_fallback": 0.5355833333333333,
       "capability_score": 6.427
     },
@@ -6196,40 +5958,16 @@
         "completion": 1.2,
         "cache_read": 0.06
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 45.4,
-          "artificial_analysis_coding_index": 58.6,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
-          "livecodebench": null,
-          "scicode": 0.454,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.828571428571429,
-          "lcr": 0.803333333333333,
-          "terminalbench_hard": 0.424242424242424,
-          "terminalbench_v2_1": 0.651685393258427,
-          "tau2": 0.888888888888889,
-          "tau_banking": 0.152577319587629
-        },
-        "aa_speed": {
-          "median_tps": 95.071,
-          "ttft_s": 1.194
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.52,
-        "coding": 0.586,
-        "reasoning": 0.5910000000000001,
-        "math": 0.454,
-        "agents": 0.828571428571429,
-        "open_weight": 0.45399999999999996
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.52,
+      "_task": null,
       "_fallback": 0.5355833333333333,
       "capability_score": 6.427
     },
@@ -7704,40 +7442,16 @@
         "completion": 2.336,
         "cache_read": 0.09855
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 53.2,
-          "artificial_analysis_coding_index": 68.8,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "scicode": 0.492,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.753333333333333,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.786516853932584,
-          "tau2": null,
-          "tau_banking": 0.395876288659794
-        },
-        "aa_speed": {
-          "median_tps": 74.945,
-          "ttft_s": 1.196
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.61,
-        "coding": 0.688,
-        "reasoning": 0.6233333333333333,
-        "math": 0.492,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.532
+        "open_weight": null
       },
-      "_task": 0.532,
+      "_task": null,
       "_fallback": 0.5186666666666667,
       "capability_score": 6.224
     },
@@ -7769,40 +7483,16 @@
         "completion": 0.12292,
         "cache_read": 0.012292
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 51.8,
-          "artificial_analysis_coding_index": 69.1,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "scicode": 0.499,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.743333333333333,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.786516853932584,
-          "tau2": null,
-          "tau_banking": 0.393814432989691
-        },
-        "aa_speed": {
-          "median_tps": 108.657,
-          "ttft_s": 0.875
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.6045,
-        "coding": 0.691,
-        "reasoning": 0.6040000000000001,
-        "math": 0.499,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.518
+        "open_weight": null
       },
-      "_task": 0.6045,
+      "_task": null,
       "_fallback": 0.5186666666666667,
       "capability_score": 6.224
     },
@@ -7875,40 +7565,16 @@
         "completion": 0.6,
         "cache_read": 0.06
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 34.4,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.867,
-          "hle": 0.278,
-          "livecodebench": null,
-          "scicode": 0.412,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.631292517006803,
-          "lcr": 0.603333333333333,
-          "terminalbench_hard": 0.340909090909091,
-          "terminalbench_v2_1": null,
-          "tau2": 0.926900584795322,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.344,
+        "overall": null,
         "coding": null,
-        "reasoning": 0.4963333333333333,
-        "math": 0.412,
-        "agents": 0.631292517006803,
-        "open_weight": 0.344
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.344,
+      "_task": null,
       "_fallback": 0.4105833333333333,
       "capability_score": 4.927
     },
@@ -9496,40 +9162,16 @@
         "completion": 0.75,
         "cache_read": 0.025
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 21.9,
-          "artificial_analysis_coding_index": 31.1,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.77,
-          "hle": 0.171,
-          "livecodebench": null,
-          "scicode": 0.387,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.697959183673469,
-          "lcr": 0.406666666666667,
-          "terminalbench_hard": 0.265151515151515,
-          "terminalbench_v2_1": 0.273408239700375,
-          "tau2": 0.707602339181287,
-          "tau_banking": 0.0948453608247423
-        },
-        "aa_speed": {
-          "median_tps": 834.924,
-          "ttft_s": 3.1
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.265,
-        "coding": 0.311,
-        "reasoning": 0.38666666666666666,
-        "math": 0.387,
-        "agents": 0.697959183673469,
-        "open_weight": 0.21899999999999997
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.265,
+      "_task": null,
       "_fallback": 0.4186666666666667,
       "capability_score": 5.024
     },
@@ -9612,8 +9254,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.40258333333333335,
-      "capability_score": 4.831
+      "_fallback": 0.40208333333333335,
+      "capability_score": 4.825
     },
     {
       "id": "google/gemini-3.1-flash-image-preview",
@@ -10584,40 +10226,16 @@
         "completion": 0.6,
         "cache_read": 0.015
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 14.5,
-          "artificial_analysis_coding_index": 16.2,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.724,
-          "hle": 0.103,
-          "livecodebench": null,
-          "scicode": 0.247,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.712018140589569,
-          "lcr": 0.31,
-          "terminalbench_hard": 0.0757575757575758,
-          "terminalbench_v2_1": 0.119850187265918,
-          "tau2": 0.862573099415205,
-          "tau_banking": 0.0865979381443299
-        },
-        "aa_speed": {
-          "median_tps": 154.682,
-          "ttft_s": 1.157
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.1535,
-        "coding": 0.162,
-        "reasoning": 0.324,
-        "math": 0.247,
-        "agents": 0.712018140589569,
-        "open_weight": 0.145
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.1535,
+      "_task": null,
       "_fallback": 0.4025,
       "capability_score": 4.83
     },
@@ -11141,40 +10759,16 @@
         "completion": 0.2,
         "cache_read": 0.025
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 7.2,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 13.3,
-          "mmlu_pro": 0.579,
-          "gpqa": 0.399,
-          "hle": 0.046,
-          "livecodebench": 0.36,
-          "scicode": 0.23,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.133333333333333,
-          "ifbench": 0.374829931972789,
-          "lcr": 0.0866666666666667,
-          "terminalbench_hard": 0.121212121212121,
-          "terminalbench_v2_1": null,
-          "tau2": 0.254385964912281,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 201.071,
-          "ttft_s": 0.361
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.10250000000000001,
-        "coding": 0.36,
-        "reasoning": 0.17233333333333334,
-        "math": 0.1815,
-        "agents": 0.374829931972789,
-        "open_weight": 0.07200000000000001
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.10250000000000001,
+      "_task": null,
       "_fallback": 0.3933333333333333,
       "capability_score": 4.72
     },
@@ -12491,40 +12085,16 @@
         "completion": 1.02,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 28.9,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 78.3,
-          "mmlu_pro": 0.82,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "scicode": 0.361,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.783333333333333,
-          "ifbench": 0.72312925170068,
-          "lcr": 0.65,
-          "terminalbench_hard": 0.257575757575758,
-          "terminalbench_v2_1": null,
-          "tau2": 0.868421052631579,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.5359999999999999,
-        "coding": 0.826,
-        "reasoning": 0.401,
-        "math": 0.572,
-        "agents": 0.72312925170068,
-        "open_weight": 0.289
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.5359999999999999,
+      "_task": null,
       "_fallback": 0.34025,
       "capability_score": 4.083
     },
@@ -13794,40 +13364,16 @@
         "completion": 0.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 8.7,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 69.7,
-          "mmlu_pro": 0.742,
-          "gpqa": 0.57,
-          "hle": 0.049,
-          "livecodebench": 0.724,
-          "scicode": 0.22,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.696666666666667,
-          "ifbench": 0.276190476190476,
-          "lcr": 0.23,
-          "terminalbench_hard": 0.0151515151515152,
-          "terminalbench_v2_1": null,
-          "tau2": 0.219298245614035,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 184.516,
-          "ttft_s": 3.059
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.392,
-        "coding": 0.724,
-        "reasoning": 0.2353333333333333,
-        "math": 0.4585,
-        "agents": 0.276190476190476,
-        "open_weight": 0.087
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.087,
+      "_task": null,
       "_fallback": 0.35358333333333336,
       "capability_score": 4.243
     },
@@ -14195,40 +13741,16 @@
         "completion": 10.0,
         "cache_read": 0.125
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 35.3,
-          "artificial_analysis_coding_index": 37.8,
-          "artificial_analysis_math_index": 94.3,
-          "mmlu_pro": 0.871,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "scicode": 0.429,
-          "math_500": 0.994,
-          "aime": 0.956666666666667,
-          "aime_25": 0.943333333333333,
-          "ifbench": 0.730612244897959,
-          "lcr": 0.763333333333333,
-          "terminalbench_hard": 0.325757575757576,
-          "terminalbench_v2_1": 0.352059925093633,
-          "tau2": 0.847953216374269,
-          "tau_banking": 0.220618556701031
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.5579999999999999,
-        "coding": 0.612,
-        "reasoning": 0.6121666666666667,
-        "math": 0.8306666666666668,
-        "agents": 0.730612244897959,
-        "open_weight": 0.353
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.5579999999999999,
+      "_task": null,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -14301,40 +13823,16 @@
         "completion": 2.0,
         "cache_read": 0.025
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 25.8,
-          "artificial_analysis_coding_index": 15.6,
-          "artificial_analysis_math_index": 90.7,
-          "mmlu_pro": 0.837,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
-          "scicode": 0.392,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.906666666666667,
-          "ifbench": 0.754421768707483,
-          "lcr": 0.71,
-          "terminalbench_hard": 0.333333333333333,
-          "terminalbench_v2_1": 0.0374531835205993,
-          "tau2": 0.684210526315789,
-          "tau_banking": 0.154639175257732
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.4403333333333334,
-        "coding": 0.497,
-        "reasoning": 0.43366666666666664,
-        "math": 0.6495,
-        "agents": 0.754421768707483,
-        "open_weight": 0.258
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.4403333333333334,
+      "_task": null,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -14407,40 +13905,16 @@
         "completion": 0.4,
         "cache_read": 0.005
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 20.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 83.7,
-          "mmlu_pro": 0.78,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
-          "scicode": 0.366,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.836666666666667,
-          "ifbench": 0.675510204081633,
-          "lcr": 0.436666666666667,
-          "terminalbench_hard": 0.121212121212121,
-          "terminalbench_v2_1": null,
-          "tau2": 0.365497076023392,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.519,
-        "coding": 0.789,
-        "reasoning": 0.324,
-        "math": 0.6015,
-        "agents": 0.675510204081633,
-        "open_weight": 0.201
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.519,
+      "_task": null,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -14514,29 +13988,6 @@
         "cache_read": 0.03
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 24.1,
-          "artificial_analysis_coding_index": 30.4,
-          "artificial_analysis_math_index": 93.4,
-          "mmlu_pro": 0.808,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "scicode": 0.389,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.934416666666667,
-          "ifbench": 0.689795918367347,
-          "lcr": 0.51,
-          "terminalbench_hard": 0.234848484848485,
-          "terminalbench_v2_1": 0.262172284644195,
-          "tau2": 0.657894736842105,
-          "tau_banking": 0.127835051546392
-        },
-        "aa_speed": {
-          "median_tps": 177.561,
-          "ttft_s": 0.5
-        },
         "aider_polyglot": {
           "pass_rate_1": 13.8,
           "pass_rate_2": 41.8,
@@ -14546,14 +13997,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.49300000000000005,
-        "coding": 0.43999999999999995,
-        "reasoning": 0.4063333333333334,
-        "math": 0.6615,
-        "agents": 0.689795918367347,
-        "open_weight": 0.24100000000000002
+        "overall": null,
+        "coding": 0.138,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.49300000000000005,
+      "_task": null,
       "_fallback": 0.36925,
       "capability_score": 4.431
     },
@@ -14585,40 +14036,16 @@
         "completion": 0.13,
         "cache_read": 0.03
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 15.2,
-          "artificial_analysis_coding_index": 20.7,
-          "artificial_analysis_math_index": 89.3,
-          "mmlu_pro": 0.748,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
-          "scicode": 0.344,
-          "math_500": null,
-          "aime": null,
-          "aime_25": 0.893333333333333,
-          "ifbench": 0.651020408163265,
-          "lcr": 0.333333333333333,
-          "terminalbench_hard": 0.106060606060606,
-          "terminalbench_v2_1": 0.138576779026217,
-          "tau2": 0.60233918128655,
-          "tau_banking": 0.0701030927835052
-        },
-        "aa_speed": {
-          "median_tps": 151.403,
-          "ttft_s": 0.579
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.41733333333333333,
-        "coding": 0.492,
-        "reasoning": 0.31666666666666665,
-        "math": 0.6185,
-        "agents": 0.651020408163265,
-        "open_weight": 0.152
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.41733333333333333,
+      "_task": null,
       "_fallback": 0.36925,
       "capability_score": 4.431
     },
@@ -15733,29 +15160,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 33.3,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.845,
-          "hle": null,
-          "livecodebench": null,
-          "scicode": null,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        },
         "aider_polyglot": {
           "pass_rate_1": 43.6,
           "pass_rate_2": 84.9,
@@ -15765,14 +15169,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.33299999999999996,
+        "overall": null,
         "coding": 0.436,
-        "reasoning": 0.589,
+        "reasoning": null,
         "math": null,
         "agents": null,
-        "open_weight": 0.33299999999999996
+        "open_weight": null
       },
-      "_task": 0.33299999999999996,
+      "_task": null,
       "_fallback": 0.35000000000000003,
       "capability_score": 4.2
     },
@@ -16558,29 +15962,6 @@
         "cache_read": 0.5
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 31.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 88.3,
-          "mmlu_pro": 0.853,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "scicode": 0.41,
-          "math_500": 0.992,
-          "aime": 0.903333333333333,
-          "aime_25": 0.883333333333333,
-          "ifbench": 0.714285714285714,
-          "lcr": 0.733333333333333,
-          "terminalbench_hard": 0.371212121212121,
-          "terminalbench_v2_1": null,
-          "tau2": 0.807017543859649,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 130.832,
-          "ttft_s": 6.554
-        },
         "aider_polyglot": {
           "pass_rate_1": 34.8,
           "pass_rate_2": 78.2,
@@ -16590,14 +15971,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.597,
-        "coding": 0.5780000000000001,
-        "reasoning": 0.5605833333333332,
-        "math": 0.7970833333333333,
-        "agents": 0.714285714285714,
-        "open_weight": 0.311
+        "overall": null,
+        "coding": 0.348,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.597,
+      "_task": null,
       "_fallback": 0.375,
       "capability_score": 4.5
     },
@@ -16670,40 +16051,16 @@
         "completion": 4.4,
         "cache_read": 0.275
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 26.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 90.7,
-          "mmlu_pro": 0.832,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "scicode": 0.465,
-          "math_500": 0.988666666666667,
-          "aime": 0.94,
-          "aime_25": 0.906666666666667,
-          "ifbench": 0.687074829931973,
-          "lcr": 0.6,
-          "terminalbench_hard": 0.151515151515152,
-          "terminalbench_v2_1": null,
-          "tau2": 0.555555555555556,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.5840000000000001,
-        "coding": 0.859,
-        "reasoning": 0.5375,
-        "math": 0.8251666666666667,
-        "agents": 0.687074829931973,
-        "open_weight": 0.261
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.5840000000000001,
+      "_task": null,
       "_fallback": 0.375,
       "capability_score": 4.5
     },
@@ -17162,29 +16519,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 19.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "scicode": null,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        },
         "aider_polyglot": {
           "pass_rate_1": 23.7,
           "pass_rate_2": 61.7,
@@ -17194,14 +16528,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.191,
+        "overall": null,
         "coding": 0.237,
-        "reasoning": 0.191,
+        "reasoning": null,
         "math": null,
         "agents": null,
-        "open_weight": 0.191
+        "open_weight": null
       },
-      "_task": 0.191,
+      "_task": null,
       "_fallback": 0.26666666666666666,
       "capability_score": 3.2
     },
@@ -17398,29 +16732,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 7.5,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 13,
-          "mmlu_pro": 0.712,
-          "gpqa": 0.527,
-          "hle": 0.04,
-          "livecodebench": 0.287,
-          "scicode": 0.281,
-          "math_500": 0.818666666666667,
-          "aime": 0.0966666666666667,
-          "aime_25": 0.13,
-          "ifbench": 0.364625850340136,
-          "lcr": 0.2,
-          "terminalbench_hard": 0.00757575757575758,
-          "terminalbench_v2_1": null,
-          "tau2": 0.152046783625731,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 59.468,
-          "ttft_s": 0.32
-        },
         "aider_polyglot": {
           "pass_rate_1": 2.2,
           "pass_rate_2": 12.0,
@@ -17430,14 +16741,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.10250000000000001,
-        "coding": 0.1545,
-        "reasoning": 0.18466666666666667,
-        "math": 0.33158333333333345,
-        "agents": 0.364625850340136,
-        "open_weight": 0.075
+        "overall": null,
+        "coding": 0.022000000000000002,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.075,
+      "_task": null,
       "_fallback": 0.10466666666666667,
       "capability_score": 1.256
     },
@@ -17469,40 +16780,16 @@
         "completion": 0.2,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 3.7,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 33.7,
-          "mmlu_pro": 0.669,
-          "gpqa": 0.529,
-          "hle": 0.044,
-          "livecodebench": 0.435,
-          "scicode": 0.267,
-          "math_500": 0.892666666666667,
-          "aime": 0.51,
-          "aime_25": 0.336666666666667,
-          "ifbench": 0.304081632653061,
-          "lcr": 0,
-          "terminalbench_hard": 0,
-          "terminalbench_v2_1": null,
-          "tau2": 0,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 94.396,
-          "ttft_s": 13.269
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.187,
-        "coding": 0.435,
-        "reasoning": 0.28,
-        "math": 0.5016666666666667,
-        "agents": 0.304081632653061,
-        "open_weight": 0.037000000000000005
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.187,
+      "_task": null,
       "_fallback": 0.2555,
       "capability_score": 3.066
     },
@@ -17624,40 +16911,16 @@
         "completion": 8.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 18,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": null,
-          "hle": null,
-          "livecodebench": null,
-          "scicode": null,
-          "math_500": 0.957333333333333,
-          "aime": 0.79,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.18,
+        "overall": null,
         "coding": null,
-        "reasoning": 0.485,
-        "math": 0.8736666666666666,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.18
+        "open_weight": null
       },
-      "_task": 0.18,
+      "_task": null,
       "_fallback": 0.17733333333333334,
       "capability_score": 2.128
     },
@@ -17689,40 +16952,16 @@
         "completion": 15.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 9.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.755,
-          "gpqa": 0.578,
-          "hle": 0.066,
-          "livecodebench": 0.275,
-          "scicode": 0.226,
-          "math_500": 0.744666666666667,
-          "aime": 0.29,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.091,
-        "coding": 0.275,
-        "reasoning": 0.25625,
-        "math": 0.42022222222222233,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.091
+        "open_weight": null
       },
-      "_task": 0.091,
+      "_task": null,
       "_fallback": 0.016666666666666666,
       "capability_score": 0.2
     },
@@ -17795,38 +17034,14 @@
         "completion": 0.6,
         "cache_read": 0.02
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 6.2,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.611,
-          "gpqa": 0.424,
-          "hle": 0.043,
-          "livecodebench": null,
-          "scicode": 0.241,
-          "math_500": 0.676666666666667,
-          "aime": 0.13,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.062,
+        "overall": null,
         "coding": null,
-        "reasoning": 0.16475,
-        "math": 0.3492222222222223,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.062
+        "open_weight": null
       },
       "_task": null,
       "_fallback": 0.19441666666666668,
@@ -17860,40 +17075,16 @@
         "completion": 4.4,
         "cache_read": 0.55
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 15.7,
-          "artificial_analysis_coding_index": 16.3,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.802,
-          "gpqa": 0.773,
-          "hle": 0.12,
-          "livecodebench": 0.734,
-          "scicode": 0.398,
-          "math_500": 0.984666666666667,
-          "aime": 0.86,
-          "aime_25": null,
-          "ifbench": 0.671428571428571,
-          "lcr": 0.42,
-          "terminalbench_hard": 0.0606060606060606,
-          "terminalbench_v2_1": 0.0449438202247191,
-          "tau2": 0.312865497076023,
-          "tau_banking": 0.0515463917525773
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.16,
-        "coding": 0.4485,
-        "reasoning": 0.47750000000000004,
-        "math": 0.7475555555555556,
-        "agents": 0.671428571428571,
-        "open_weight": 0.157
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.671428571428571,
+      "_task": null,
       "_fallback": 0.375,
       "capability_score": 4.5
     },
@@ -18089,38 +17280,14 @@
         "completion": 4.4,
         "cache_read": 0.55
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 19.2,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.791,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "scicode": 0.399,
-          "math_500": 0.973333333333333,
-          "aime": 0.77,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": 0.0681818181818182,
-          "terminalbench_v2_1": null,
-          "tau2": 0.286549707602339,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.192,
-        "coding": 0.717,
-        "reasoning": 0.44725,
-        "math": 0.714111111111111,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.192
+        "open_weight": null
       },
       "_task": null,
       "_fallback": 0.375,
@@ -18236,40 +17403,16 @@
         "completion": 1.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 9.4,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.689,
-          "gpqa": 0.471,
-          "hle": 0.049,
-          "livecodebench": 0.295,
-          "scicode": 0.229,
-          "math_500": 0.816666666666667,
-          "aime": 0.486666666666667,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.094,
-        "coding": 0.295,
-        "reasoning": 0.2751666666666667,
-        "math": 0.5107777777777781,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.094
+        "open_weight": null
       },
-      "_task": 0.094,
+      "_task": null,
       "_fallback": 0.010583333333333333,
       "capability_score": 0.127
     },
@@ -18301,40 +17444,16 @@
         "completion": 0.8,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 9.8,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 53.7,
-          "mmlu_pro": 0.795,
-          "gpqa": 0.402,
-          "hle": 0.051,
-          "livecodebench": 0.266,
-          "scicode": 0.313,
-          "math_500": 0.934666666666667,
-          "aime": 0.67,
-          "aime_25": 0.536666666666667,
-          "ifbench": 0.275510204081633,
-          "lcr": 0.0933333333333333,
-          "terminalbench_hard": 0.0151515151515152,
-          "terminalbench_v2_1": null,
-          "tau2": 0.219298245614035,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.3175,
-        "coding": 0.266,
-        "reasoning": 0.30524999999999997,
-        "math": 0.6136666666666668,
-        "agents": 0.275510204081633,
-        "open_weight": 0.098
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.098,
+      "_task": null,
       "_fallback": 0.209,
       "capability_score": 2.508
     },
@@ -18367,29 +17486,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 18.6,
-          "artificial_analysis_coding_index": 24.6,
-          "artificial_analysis_math_index": 68,
-          "mmlu_pro": 0.844,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "scicode": 0.357,
-          "math_500": 0.966,
-          "aime": 0.683333333333333,
-          "aime_25": 0.68,
-          "ifbench": 0.389795918367347,
-          "lcr": 0.56,
-          "terminalbench_hard": 0.0606060606060606,
-          "terminalbench_v2_1": 0.191011235955056,
-          "tau2": 0.114035087719298,
-          "tau_banking": 0.0639175257731959
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        },
         "aider_polyglot": {
           "pass_rate_1": 27.1,
           "pass_rate_2": 64.0,
@@ -18399,14 +17495,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.3706666666666667,
-        "coding": 0.37799999999999995,
-        "reasoning": 0.41558333333333325,
-        "math": 0.6715833333333332,
-        "agents": 0.389795918367347,
-        "open_weight": 0.18600000000000003
+        "overall": null,
+        "coding": 0.271,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.18600000000000003,
+      "_task": null,
       "_fallback": 0.33866666666666667,
       "capability_score": 4.064
     },
@@ -18611,29 +17707,6 @@
         "cache_read": 7.5
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 23.9,
-          "artificial_analysis_coding_index": 39.7,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.841,
-          "gpqa": 0.747,
-          "hle": 0.07,
-          "livecodebench": 0.679,
-          "scicode": 0.358,
-          "math_500": 0.97,
-          "aime": 0.723333333333333,
-          "aime_25": null,
-          "ifbench": 0.703401360544218,
-          "lcr": 0.633333333333333,
-          "terminalbench_hard": 0.128787878787879,
-          "terminalbench_v2_1": null,
-          "tau2": 0.625730994152047,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        },
         "aider_polyglot": {
           "pass_rate_1": 5.8,
           "pass_rate_2": 32.9,
@@ -18643,14 +17716,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.318,
-        "coding": 0.37800000000000006,
-        "reasoning": 0.44483333333333325,
-        "math": 0.6837777777777777,
-        "agents": 0.703401360544218,
-        "open_weight": 0.239
+        "overall": null,
+        "coding": 0.057999999999999996,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.318,
+      "_task": null,
       "_fallback": 0.375,
       "capability_score": 4.5
     },
@@ -19600,40 +18673,16 @@
         "completion": 10.0,
         "cache_read": 1.25
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 9.4,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.521,
-          "hle": 0.023,
-          "livecodebench": 0.317,
-          "scicode": 0.331,
-          "math_500": 0.794666666666667,
-          "aime": 0.116666666666667,
-          "aime_25": null,
-          "ifbench": 0.359863945578231,
-          "lcr": 0.393333333333333,
-          "terminalbench_hard": 0.0833333333333333,
-          "terminalbench_v2_1": null,
-          "tau2": 0.289473684210526,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.094,
-        "coding": 0.317,
-        "reasoning": 0.18866666666666676,
-        "math": 0.4141111111111113,
-        "agents": 0.359863945578231,
-        "open_weight": 0.094
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.094,
+      "_task": null,
       "_fallback": 0.20233333333333334,
       "capability_score": 2.428
     },
@@ -19788,40 +18837,16 @@
         "completion": 0.6,
         "cache_read": 0.075
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 6.7,
-          "artificial_analysis_coding_index": 11.4,
-          "artificial_analysis_math_index": 14.7,
-          "mmlu_pro": 0.648,
-          "gpqa": 0.426,
-          "hle": 0.042,
-          "livecodebench": 0.234,
-          "scicode": 0.229,
-          "math_500": 0.788666666666667,
-          "aime": 0.116666666666667,
-          "aime_25": 0.146666666666667,
-          "ifbench": 0.30952380952381,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.0561797752808989,
-          "tau2": null,
-          "tau_banking": 0.0288659793814433
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.10933333333333332,
-        "coding": 0.17400000000000002,
-        "reasoning": 0.16291666666666677,
-        "math": 0.3203333333333335,
-        "agents": 0.30952380952381,
-        "open_weight": 0.067
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.10933333333333332,
+      "_task": null,
       "_fallback": 0.20233333333333334,
       "capability_score": 2.428
     },
@@ -19976,40 +19001,16 @@
         "completion": 10.0,
         "cache_read": 1.25
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 11.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 6,
-          "mmlu_pro": 0.748,
-          "gpqa": 0.543,
-          "hle": 0.024,
-          "livecodebench": 0.309,
-          "scicode": 0.333,
-          "math_500": 0.759333333333333,
-          "aime": 0.15,
-          "aime_25": 0.06,
-          "ifbench": 0.342857142857143,
-          "lcr": 0,
-          "terminalbench_hard": 0.0833333333333333,
-          "terminalbench_v2_1": null,
-          "tau2": 0.251461988304094,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.08549999999999999,
-        "coding": 0.309,
-        "reasoning": 0.20700000000000002,
-        "math": 0.3255833333333332,
-        "agents": 0.342857142857143,
-        "open_weight": 0.111
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.08549999999999999,
+      "_task": null,
       "_fallback": 0.20233333333333334,
       "capability_score": 2.428
     },
@@ -20041,40 +19042,16 @@
         "completion": 15.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 8.4,
-          "artificial_analysis_coding_index": 24.2,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.74,
-          "gpqa": 0.526,
-          "hle": 0.018,
-          "livecodebench": 0.334,
-          "scicode": 0.309,
-          "math_500": 0.791333333333333,
-          "aime": 0.11,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.163,
-        "coding": 0.28800000000000003,
-        "reasoning": 0.1845,
-        "math": 0.40344444444444433,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.084
+        "open_weight": null
       },
-      "_task": 0.163,
+      "_task": null,
       "_fallback": 0.17733333333333334,
       "capability_score": 2.128
     },
@@ -20229,40 +19206,16 @@
         "completion": 30.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 7.7,
-          "artificial_analysis_coding_index": 21.5,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.694,
-          "gpqa": null,
-          "hle": 0.031,
-          "livecodebench": 0.291,
-          "scicode": 0.319,
-          "math_500": 0.736666666666667,
-          "aime": 0.15,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.146,
-        "coding": 0.253,
-        "reasoning": 0.08600000000000001,
-        "math": 0.401888888888889,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.077
+        "open_weight": null
       },
-      "_task": 0.146,
+      "_task": null,
       "_fallback": 0.17733333333333334,
       "capability_score": 2.128
     },
@@ -20335,40 +19288,16 @@
         "completion": 1.25,
         "cache_read": 0.03
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 3.5,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.374,
-          "hle": 0.041,
-          "livecodebench": 0.154,
-          "scicode": 0.186,
-          "math_500": 0.394,
-          "aime": 0.01,
-          "aime_25": null,
-          "ifbench": 0.361224489795918,
-          "lcr": 0.25,
-          "terminalbench_hard": 0.00757575757575758,
-          "terminalbench_v2_1": null,
-          "tau2": 0.210526315789474,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.035,
-        "coding": 0.154,
-        "reasoning": 0.115,
-        "math": 0.19666666666666668,
-        "agents": 0.361224489795918,
-        "open_weight": 0.035
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.035,
+      "_task": null,
       "_fallback": 0.16666666666666666,
       "capability_score": 2.0
     },
@@ -20400,38 +19329,14 @@
         "completion": 6.0,
         "cache_read": 0.2
       },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 4.1,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.515,
-          "gpqa": 0.351,
-          "hle": 0.035,
-          "livecodebench": 0.178,
-          "scicode": 0.208,
-          "math_500": 0.526666666666667,
-          "aime": 0,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        }
-      },
+      "benchmarks": {},
       "task_scores": {
-        "overall": 0.040999999999999995,
-        "coding": 0.178,
-        "reasoning": 0.10674999999999998,
-        "math": 0.24488888888888896,
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.040999999999999995
+        "open_weight": null
       },
       "_task": null,
       "_fallback": 0.20233333333333334,
@@ -20874,29 +19779,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 6.8,
-          "artificial_analysis_coding_index": 13.1,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.562,
-          "gpqa": 0.349,
-          "hle": null,
-          "livecodebench": null,
-          "scicode": null,
-          "math_500": 0.568,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": 0.331972789115646,
-          "lcr": null,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": null,
-          "tau2": null,
-          "tau_banking": null
-        },
-        "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
-        },
         "aider_polyglot": {
           "pass_rate_1": 22.3,
           "pass_rate_2": 44.9,
@@ -20906,14 +19788,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.0995,
-        "coding": 0.177,
-        "reasoning": 0.2085,
-        "math": 0.568,
-        "agents": 0.331972789115646,
-        "open_weight": 0.068
+        "overall": null,
+        "coding": 0.223,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
       },
-      "_task": 0.331972789115646,
+      "_task": null,
       "_fallback": 0.16733333333333333,
       "capability_score": 2.008
     }

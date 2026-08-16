@@ -1,0 +1,40 @@
+name: ModelCompass weekly archive
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"   # every Monday 04:00 UTC
+  workflow_dispatch:       # manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pyyaml
+        run: pip install pyyaml
+
+      - name: Generate + archive weekly snapshot
+        env:
+          ARTIFICIAL_ANALYSIS_KEY: ${{ secrets.ARTIFICIAL_ANALYSIS_KEY }}
+        run: python3 generate.py --archive
+
+      - name: Commit archive if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add archive/ rankings/
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "archive: weekly rankings $(date -u +%Y-W%V)"
+            git push
+          else
+            echo "no changes"
+          fi

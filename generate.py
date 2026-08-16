@@ -4,7 +4,9 @@ ModelCompass generator.
 
 Fetches multiple live sources, merges them into one unified catalog, scores
 models per task from REAL benchmark data, and emits machine-readable outputs
-(models.json, recommended.json, models.csv, INDEX.md).
+(models.json, recommended.json, models.csv, INDEX.md), a curated
+rankings/ folder of famous benchmarks, and (with --archive) a weekly snapshot
+under archive/.
 
 Sources
 -------
@@ -18,8 +20,6 @@ Sources
                                                  LiveCodeBench, Terminal-Bench,
                                                  IFBench, SciCode, ...) + speed.
 3. aider polyglot YAML (raw GitHub) (no key) -> real coding pass rates.
-4. HF Open LLM Leaderboard results  (no key) -> academic benchmarks for
-                                                 open-weight models (best-effort).
 
 All sources are fetched defensively: a failure in one never breaks the others.
 The final `meta.sources` lists which succeeded.
@@ -34,6 +34,7 @@ import os
 import re
 import sys
 import csv
+import argparse
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
@@ -47,7 +48,6 @@ OR_API = "https://openrouter.ai/api/v1/models"
 AA_API = "https://artificialanalysis.ai/api/v2/data/llms/models"
 AIDER_YAML = ("https://raw.githubusercontent.com/Aider-AI/aider/main/"
               "aider/website/_data/polyglot_leaderboard.yml")
-HF_DATASET_API = "https://huggingface.co/api/datasets/open-llm-leaderboard/results"
 OUTDIR = "."
 
 # Variant suffixes that denote derived/equivalent offerings of the same family.
@@ -168,13 +168,6 @@ def fetch_openrouter():
 def fetch_artificial_analysis(api_key):
     if not api_key:
         return None, "no API key"
-    try:
-        data = fetch_json(AA_API, headers={
-            "x-api-key": "x",  # placeholder, overwritten below
-        }, timeout=60)
-    except Exception:
-        data = None
-    # do the real call with the key
     req = urllib.request.Request(
         AA_API,
         headers={
@@ -215,7 +208,7 @@ def fetch_artificial_analysis(api_key):
 
 
 # ---------------------------------------------------------------------------
-# Source 3: aider polyglot coding benchmark
+# Source 3: aider polyglot coding benchmark (raw GitHub YAML, no key)
 # ---------------------------------------------------------------------------
 def fetch_aider():
     if yaml is None:
@@ -245,66 +238,15 @@ def fetch_aider():
 
 
 # ---------------------------------------------------------------------------
-# Source 4: HF Open LLM Leaderboard results (open-weight academic benchmarks)
+# Merge OpenRouter with benchmark sources
 # ---------------------------------------------------------------------------
-def fetch_hf_openllm(or_openweight_ids):
-    """Fetch per-model result JSON only for open-weight models present in OR.
-    Bounds the request count to the matched set."""
-    try:
-        meta = fetch_json(HF_DATASET_API, timeout=30)
-    except Exception as e:  # noqa
-        return {}, str(e)
-    siblings = meta.get("siblings", [])
-    # map: normalized hf model id -> latest result rfilename
-    latest = {}
-    for s in siblings:
-        rf = s.get("rfilename", "")
-        m = re.match(r"^(.*?)/results_.*\.json$", rf)
-        if not m:
-            continue
-        hid = m.group(1).lower()
-        if hid not in latest or rf > latest[hid]:
-            latest[hid] = rf
-    # candidate ids we care about: OR open-weight models, normalized
-    targets = {norm(i): i for i in or_openweight_ids}
-    out = {}
-    for hid, rf in latest.items():
-        # match against OR open-weight ids
-        match_or_id = None
-        for tn, oid in targets.items():
-            if tn and (hid in tn or tn in hid):
-                match_or_id = oid
-                break
-        if not match_or_id:
-            continue
-        url = f"https://huggingface.co/datasets/open-llm-leaderboard/results/resolve/main/{rf}"
-        try:
-            rec = fetch_json(url, timeout=20)
-        except Exception:
-            continue
-        results = rec.get("results", {}) or {}
-        flat = {}
-        for bname, bval in results.items():
-            if isinstance(bval, dict):
-                for sub, sv in bval.items():
-                    flat[f"{bname}:{sub}"] = num(sv)
-            else:
-                flat[bname] = num(bval)
-        if flat:
-            out[match_or_id] = flat
-    return out, f"ok ({len(out)} matched)"
-
-
-# ---------------------------------------------------------------------------
-# Merge
-# ---------------------------------------------------------------------------
-def merge(or_models, aa, aider, hf):
+def merge(or_models, aa, aider):
     or_by_id = {m["id"].lower(): m for m in or_models}
     or_by_norm = {}
     for m in or_models:
         or_by_norm.setdefault(norm(m["name"]), []).append(m)
 
-    aa_used, aider_used, hf_used = set(), set(), set()
+    aa_used, aider_used = set(), set()
 
     # attach AA
     for key, a in (aa or {}).items():
@@ -320,7 +262,6 @@ def merge(or_models, aa, aider, hf):
                 "median_tps": a.get("median_tps"),
                 "ttft_s": a.get("ttft"),
             }
-            # prefer OR pricing; fall back to AA
             if target["price_per_million"]["prompt"] is None and a["pricing"]["prompt"] is not None:
                 target["price_per_million"] = {
                     "prompt": round(a["pricing"]["prompt"], 6),
@@ -358,18 +299,11 @@ def merge(or_models, aa, aider, hf):
             }
             aider_used.add(best["id"])
 
-    # attach HF
-    for oid, flat in (hf or {}).items():
-        t = or_by_id.get(oid.lower())
-        if t:
-            t["benchmarks"]["hf_openllm"] = flat
-            hf_used.add(t["id"])
-
-    return aa_used, aider_used, hf_used
+    return aa_used, aider_used
 
 
 # ---------------------------------------------------------------------------
-# Scoring
+# Scoring (transparent, real benchmarks)
 # ---------------------------------------------------------------------------
 def aa_evals(rec):
     return rec.get("benchmarks", {}).get("aa", {}) or {}
@@ -428,16 +362,11 @@ def s_agents(r):
 
 def s_open_weight(r):
     e = aa_evals(r)
-    hf = r.get("benchmarks", {}).get("hf_openllm", {})
-    vals = [
+    return avg_non_null([
         scale(e.get("artificial_analysis_intelligence_index"), 100),
         scale(e.get("artificial_analysis_openness_index"), 100),
-    ]
-    # average the HF academic benchmarks (normalized 0-1 assumed)
-    hf_vals = [v for v in hf.values() if v is not None]
-    if hf_vals:
-        vals.append(sum(hf_vals) / len(hf_vals))
-    return avg_non_null(vals)
+        scale(e.get("artificial_analysis_coding_index"), 100),
+    ])
 
 
 def capability_score(r):
@@ -478,12 +407,10 @@ def recommend(real, task_key, top=10):
     for m in seq:
         ts = score_fn(m)
         m["_task"] = ts
-        # fallback rank for null scores
         m["_fallback"] = capability_score(m) / 12.0
     if use_bench:
         seq.sort(key=lambda m: ((m["_task"] is not None), m["_task"] or 0, m["_fallback"]), reverse=True)
     else:
-        # best_cheap: price ascending, then score
         seq.sort(key=lambda m: (m["price_per_million"]["prompt"] or 1e9, -(m["_task"] or 0)))
     seen, out = set(), []
     for m in seq:
@@ -500,7 +427,7 @@ def recommend(real, task_key, top=10):
 def slim(m, task_key):
     b = m.get("benchmarks", {})
     e = b.get("aa", {})
-    rec = {
+    return {
         "id": m["id"],
         "name": m.get("name"),
         "provider": m.get("provider"),
@@ -522,13 +449,85 @@ def slim(m, task_key):
             "aime": e.get("aime"),
             "mmlu_pro": e.get("mmlu_pro"),
             "aider_polyglot_pass_rate_1": (b.get("aider_polyglot") or {}).get("pass_rate_1"),
-            "hf_openllm_n": len(b.get("hf_openllm", {}) or {}),
         },
     }
-    return rec
 
 
-def main():
+# ---------------------------------------------------------------------------
+# Curated famous rankings (data-backed)
+# ---------------------------------------------------------------------------
+FAMOUS_RANKINGS = [
+    ("Artificial Analysis Intelligence Index", "best_overall",
+     "Composite of reasoning, knowledge, math, coding & agentic. The headline "
+     "'smartest model' ranking."),
+    ("Coding (aider polyglot + LiveCodeBench)", "best_coding",
+     "Real code generation: 225 Exercism exercises across 6 languages + LiveCodeBench."),
+    ("Math (AIME / MMLU-Pro / SciCode)", "best_math",
+     "Quantitative & competition math ability."),
+    ("Reasoning (GPQA / HLE)", "best_reasoning",
+     "Graduate-level science & 'Humanity's Last Exam' reasoning."),
+    ("Agentic (Terminal-Bench / AA agentic)", "best_agents",
+     "Tool use, terminal/bash, multi-step agentic tasks."),
+    ("Vision (multimodal)", "best_vision",
+     "Image understanding for multimodal models."),
+    ("Best value (low cost)", "best_cheap",
+     "Cheapest capable reasoning models."),
+    ("Open-weight", "best_open_weight",
+     "Best models with openly-licensed weights."),
+]
+
+
+def write_rankings(recommended, meta):
+    os.makedirs("rankings", exist_ok=True)
+    lines = ["# Famous Rankings (ModelCompass)\n",
+             f"_Generated {meta['generated_at']}. Top models per famous benchmark, "
+             "pulled from live benchmark data._\n"]
+    data = {"generated_at": meta["generated_at"], "rankings": {}}
+    for title, task, desc in FAMOUS_RANKINGS:
+        rows = recommended.get(task, [])[:10]
+        lines.append(f"## {title}\n")
+        lines.append(f"_{desc}_\n")
+        lines.append("")
+        data["rankings"][task] = {
+            "title": title,
+            "description": desc,
+            "models": [{"id": r["id"], "name": r.get("name"),
+                        "task_score": r.get("task_score")} for r in rows],
+        }
+        if not rows:
+            lines.append("_No benchmarked models yet._\n")
+            continue
+        for i, r in enumerate(rows, 1):
+            sc = r.get("task_score")
+            sc = f" — score {sc}" if sc is not None else ""
+            lines.append(f"{i}. `{r['id']}`{sc}")
+        lines.append("")
+    with open("rankings/famous_rankings.md", "w") as f:
+        f.write("\n".join(lines))
+    with open("rankings/famous_rankings.json", "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def write_archive(recommended, meta):
+    os.makedirs("archive", exist_ok=True)
+    iso = datetime.now(tz=timezone.utc).isocalendar()
+    week = f"{iso[0]}-W{iso[1]:02d}"
+    fname = f"archive/rankings-{week}.json"
+    snapshot = {
+        "week": week,
+        "generated_at": meta["generated_at"],
+        "model_count": meta["model_count"],
+        "recommended": recommended,
+    }
+    with open(fname, "w") as f:
+        json.dump(snapshot, f, indent=2, ensure_ascii=False)
+    return fname
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+def main(archive=False):
     now = datetime.now(tz=timezone.utc)
     log("== ModelCompass generate ==")
     aa_key = os.environ.get("ARTIFICIAL_ANALYSIS_KEY")
@@ -542,19 +541,13 @@ def main():
     aider, aider_note = fetch_aider()
     log(f"aider polyglot: {aider_note}")
 
-    or_open_ids = [m["id"] for m in real if m.get("open_weight")]
-    hf, hf_note = fetch_hf_openllm(or_open_ids)
-    log(f"HF OpenLLM: {hf_note}")
-
-    aa_used, aider_used, hf_used = merge(or_models, aa, aider, hf)
-    log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}, HF on {len(hf_used)}")
+    aa_used, aider_used = merge(or_models, aa, aider)
+    log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}")
 
     recommended = {}
     for task in TASKS:
-        top = recommend(real, task)
-        recommended[task] = [slim(m, task) for m in top]
+        recommended[task] = [slim(m, task) for m in recommend(real, task)]
 
-    # attach task_scores + capability to each record for models.json
     for m in or_models:
         m["task_scores"] = {
             "overall": s_overall(m),
@@ -576,25 +569,23 @@ def main():
             "openrouter": f"ok ({len(or_models)} raw)",
             "artificial_analysis": aa_note,
             "aider_polyglot": aider_note,
-            "hf_openllm": hf_note,
         },
         "coverage": {
             "with_aa_benchmarks": len(aa_used),
             "with_aider_coding": len(aider_used),
-            "with_hf_openllm": len(hf_used),
         },
         "disclaimer": (
             "Recommended lists are transparent weighted blends of REAL benchmark "
             "values (Artificial Analysis indices + raw benchmarks, aider polyglot "
-            "coding, HF OpenLLM academic). Models missing a benchmark contribute "
-            "null (not zero). Verify high-stakes choices against primary sources."
+            "coding). Models missing a benchmark contribute null (not zero). "
+            "Verify high-stakes choices against primary sources."
         ),
         "methodology": (
             "Each task score = weighted mean of available normalized 0-1 benchmarks "
             "(AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already "
-            "0-1; aider pass_rate /100; HF academic averaged). Sources merged by "
-            "provider+slug then name fuzzy-match. Variant families collapsed to "
-            "canonical base model in shortlists."
+            "0-1; aider pass_rate /100). Sources merged by provider+slug then name "
+            "fuzzy-match. Variant families collapsed to canonical base model in "
+            "shortlists."
         ),
     }
 
@@ -611,7 +602,7 @@ def main():
             "supports_reasoning", "supports_tools", "supports_json", "open_weight",
             "knowledge_cutoff", "price_prompt_per_million", "price_completion_per_million",
             "aa_intelligence_index", "aa_coding_index", "aa_agentic_index", "aa_math_index",
-            "gpqa", "hle", "livecodebench", "aider_pass_rate_1", "hf_openllm_n",
+            "gpqa", "hle", "livecodebench", "aider_pass_rate_1",
             "task_overall", "task_coding", "task_reasoning"]
     with open(os.path.join(OUTDIR, "models.csv"), "w", newline="") as f:
         w = csv.writer(f)
@@ -619,7 +610,6 @@ def main():
         for m in or_models:
             e = m.get("benchmarks", {}).get("aa", {}) or {}
             ap = m.get("benchmarks", {}).get("aider_polyglot", {}) or {}
-            hf_n = len(m.get("benchmarks", {}).get("hf_openllm", {}) or {})
             ts = m.get("task_scores", {})
             w.writerow([
                 m["id"], m.get("name"), m.get("provider"), m.get("source"),
@@ -632,14 +622,19 @@ def main():
                 e.get("artificial_analysis_agentic_index"),
                 e.get("artificial_analysis_math_index"),
                 e.get("gpqa"), e.get("hle"), e.get("livecodebench"),
-                ap.get("pass_rate_1"), hf_n,
+                ap.get("pass_rate_1"),
                 round(ts.get("overall"), 4) if ts.get("overall") is not None else None,
                 round(ts.get("coding"), 4) if ts.get("coding") is not None else None,
                 round(ts.get("reasoning"), 4) if ts.get("reasoning") is not None else None,
             ])
 
     write_index_md(meta, recommended)
-    log("wrote models.json, recommended.json, models.csv, INDEX.md")
+    write_rankings(recommended, meta)
+    if archive:
+        fn = write_archive(recommended, meta)
+        log(f"wrote weekly archive {fn}")
+
+    log("wrote models.json, recommended.json, models.csv, INDEX.md, rankings/")
 
 
 def write_index_md(meta, recommended):
@@ -670,4 +665,8 @@ def write_index_md(meta, recommended):
 
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--archive", action="store_true",
+                    help="also write a weekly snapshot under archive/")
+    args = ap.parse_args()
+    main(archive=args.archive)
