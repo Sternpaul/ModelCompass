@@ -67,6 +67,7 @@ google/gemini-3-pro-image,Google: Nano Banana Pro (Gemini 3 Pro Image),google,op
 cohere/north-mini-code:free,Cohere: North Mini Code (free),cohere,openrouter,256000,text->text,False,True,True,False,True,,0.0,0.0,20.2,36.5,,,0.757,0.111,,,0.2835,0.365,0.3567
 z-ai/glm-5.2,Z.ai: GLM 5.2,z-ai,openrouter,1048576,text->text,False,True,True,True,True,,0.308,0.968,34.8,46.5,,,0.686,0.098,,,0.4065,0.465,0.3773
 z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),z-ai,openrouter,512000,text->text,False,True,True,True,True,,0.7,2.2,,,,,,,,,,,
+z-ai/glm-5.2:free,Z.ai: GLM 5.2 (free),z-ai,openrouter,128000,text->text,False,True,False,False,True,,0.0,0.0,,,,,,,,,,,
 openrouter/fusion,OpenRouter: Fusion,openrouter,openrouter,1000000,text->text,False,False,False,False,False,,-1000000.0,-1000000.0,,,,,,,,,,,
 moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,moonshotai,openrouter,262144,text+image->text,True,True,True,True,True,,0.71,3.5,43,60.8,,,0.896,0.35,,20.4,0.519,0.406,0.5587
 moonshotai/kimi-k2.7-code:batch,MoonshotAI: Kimi K2.7 Code (batch),moonshotai,openrouter,262144,text+image->text,True,True,True,True,True,,0.475,2.0,,,,,,,,,,,
@@ -116,7 +117,7 @@ openai/gpt-5.5-pro:batch,OpenAI: GPT-5.5 Pro (batch),openai,openrouter,1050000,t
 openai/gpt-5.5,OpenAI: GPT-5.5,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,5.0,30.0,44.5,60.9,,,0.91,0.327,,,0.527,0.609,0.5607
 openai/gpt-5.5:batch,OpenAI: GPT-5.5 (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,2.5,15.0,,,,,,,,,,,
 deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,1.168,2.336,53.2,68.8,,,0.928,0.41,,,0.61,0.688,0.6233
-deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.06146,0.12292,29.3,,,,0.716,0.078,,,0.293,,0.3623
+deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.06006,0.12012,29.3,,,,0.716,0.078,,,0.293,,0.3623
 inclusionai/ling-2.6-1t,inclusionAI: Ling-2.6-1T,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.075,0.625,26.6,,,,0.752,0.087,,,0.266,,0.3683
 tencent/hy3-preview,Tencent: Hy3 preview,tencent,openrouter,262144,text->text,False,True,True,False,True,,0.18,0.6,34.4,,,,0.867,0.278,,,0.344,,0.4963
 xiaomi/mimo-v2.5-pro,Xiaomi: MiMo-V2.5-Pro,xiaomi,openrouter,1050000,text->text,False,True,True,True,True,,0.435,0.87,42.9,60.2,,,0.866,0.357,,,0.5155,0.602,0.5507
@@ -129,7 +130,7 @@ moonshotai/kimi-k2.6,MoonshotAI: Kimi K2.6,moonshotai,openrouter,262144,text+ima
 anthropic/claude-opus-4.7,Anthropic: Claude Opus 4.7,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,55,73.6,,,0.914,0.423,,,0.643,0.736,0.629
 anthropic/claude-opus-4.7:batch,Anthropic: Claude Opus 4.7 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 z-ai/glm-5.1,Z.ai: GLM 5.1,z-ai,openrouter,204800,text->text,False,True,True,True,True,,0.966,3.036,41,55.8,,,0.868,0.301,,,0.484,0.558,0.5263
-google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.12,0.4,,,,,,,,,,,
+google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.07,0.34,,,,,,,,,,,
 google/gemma-4-26b-a4b-it:free,Google: Gemma 4 26B A4B  (free),google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.0,0.0,,,,,,,,,,,
 google/gemma-4-31b-it,Google: Gemma 4 31B,google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.1,0.34,,,,,,,,,,,
 google/gemma-4-31b-it:free,Google: Gemma 4 31B (free),google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.0,0.0,,,,,,,,,,,

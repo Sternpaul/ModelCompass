@@ -1,10 +1,10 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-16T22:05:53Z — 407 models. Daily GitHub Action._
+_Generated 2026-08-16T22:39:25Z — 408 models. Daily GitHub Action._
 
 ## Sources
 
-- **openrouter**: ok (413 raw)
+- **openrouter**: ok (414 raw)
 - **artificial_analysis**: ok (608 models)
 - **aider_polyglot**: ok (54 models)
 
