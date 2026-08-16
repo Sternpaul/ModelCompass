@@ -630,11 +630,90 @@ def main(archive=False):
 
     write_index_md(meta, recommended)
     write_rankings(recommended, meta)
+    write_leaderboard(recommended, meta)
     if archive:
         fn = write_archive(recommended, meta)
         log(f"wrote weekly archive {fn}")
 
     log("wrote models.json, recommended.json, models.csv, INDEX.md, rankings/")
+
+
+def write_leaderboard(recommended, meta):
+    """Human-readable Markdown leaderboard with comparison tables (GitHub UI)."""
+    os.makedirs(OUTDIR, exist_ok=True)
+    L = []
+    L.append("# ModelCompass Leaderboard\n")
+    L.append(f"> Generated **{meta['generated_at']}** · {meta['model_count']} models · "
+             f"updated daily by GitHub Actions.\n")
+    L.append("Each table ranks the best models for a task using real benchmark "
+             "data (Artificial Analysis indices + aider polyglot coding). "
+             "Scores are normalized 0–1 blends; `—` means the model has no "
+             "benchmark for that column.\n")
+
+    # sources / coverage summary
+    L.append("**Sources:** " + " · ".join(f"{k} ({v})" for k, v in meta["sources"].items()) + "\n")
+    L.append(f"**Benchmark coverage:** {meta['coverage'].get('with_aa_benchmarks')} models with "
+             f"Artificial Analysis scores, {meta['coverage'].get('with_aider_coding')} with aider coding.\n")
+
+    headers = {
+        "best_overall": "🏆 Best Overall",
+        "best_coding": "💻 Best Coding",
+        "best_reasoning": "🧠 Best Reasoning",
+        "best_math": "📐 Best Math",
+        "best_agents": "🤖 Best Agentic",
+        "best_vision": "👁️ Best Vision",
+        "best_open_weight": "🔓 Best Open-Weight",
+        "best_cheap": "💰 Best Value (low cost)",
+    }
+
+    for task, title in headers.items():
+        rows = recommended.get(task, [])[:10]
+        L.append(f"## {title}\n")
+        if not rows:
+            L.append("_No benchmarked models yet._\n")
+            continue
+        L.append("| # | Model | Score | $/1M in | $/1M out | Context | Reasoning | Vision | Key benchmarks |")
+        L.append("|---|-------|------:|--------:|---------:|--------:|:--------:|:------:|----------------|")
+        for i, r in enumerate(rows, 1):
+            b = r.get("benchmarks", {})
+            pm = r.get("price_per_million", {}) or {}
+            price_in = pm.get("prompt")
+            price_out = pm.get("completion")
+            ctx = r.get("context") or 0
+            ctx_s = f"{ctx/1000:.0f}k" if ctx < 1_000_000 else f"{ctx/1_000_000:.1f}M"
+            ev = []
+            if b.get("aa_intelligence_index") is not None:
+                ev.append(f"AA-IQ {b['aa_intelligence_index']}")
+            if b.get("aa_coding_index") is not None:
+                ev.append(f"AA-Code {b['aa_coding_index']}")
+            if b.get("livecodebench") is not None:
+                ev.append(f"LCB {b['livecodebench']:.2f}")
+            if b.get("aider_polyglot_pass_rate_1") is not None:
+                ev.append(f"aider {b['aider_polyglot_pass_rate_1']:.0f}%")
+            if b.get("gpqa") is not None:
+                ev.append(f"GPQA {b['gpqa']:.2f}")
+            if b.get("hle") is not None:
+                ev.append(f"HLE {b['hle']:.2f}")
+            if b.get("aime") is not None:
+                ev.append(f"AIME {b['aime']:.2f}")
+            L.append(
+                f"| {i} | `{r['id']}` | "
+                f"{r.get('task_score') if r.get('task_score') is not None else '—'} | "
+                f"{price_in if price_in is not None else '—'} | "
+                f"{price_out if price_out is not None else '—'} | "
+                f"{ctx_s} | "
+                f"{'✅' if r.get('capability_flags') and 'reasoning' in r['capability_flags'] else '—'} | "
+                f"{'✅' if r.get('is_vision') else '—'} | "
+                f"{' · '.join(ev) if ev else '—'} |"
+            )
+        L.append("")
+
+    L.append("---\n")
+    L.append(f"_{meta['disclaimer']}_\n")
+    L.append(f"_{meta['methodology']}_\n")
+
+    with open(os.path.join(OUTDIR, "LEADERBOARD.md"), "w") as f:
+        f.write("\n".join(L))
 
 
 def write_index_md(meta, recommended):
