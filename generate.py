@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Model Leaderboard generator.
+ModelCompass generator.
 
 Fetches the live OpenRouter model catalog and produces a machine-readable,
 agent-friendly dataset: models.json (full catalog), models.csv (flat),
@@ -69,7 +69,7 @@ def log(*a):
 
 
 def fetch_models():
-    req = urllib.request.Request(OR_API, headers={"User-Agent": "model-leaderboard/1.0"})
+    req = urllib.request.Request(OR_API, headers={"User-Agent": "modelcompass/1.0"})
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.loads(r.read().decode("utf-8"))["data"]
 
@@ -372,7 +372,7 @@ def write_index_md(out):
     rec = out["recommended"]
     lb = out["leaderboards"]
     lines = []
-    lines.append("# Model Leaderboard (machine-readable)\n")
+    lines.append("# ModelCompass (machine-readable)\n")
     lines.append(f"_Generated {meta['generated_at']} from {meta['source']} "
                  f"({meta['model_count']} models). Updated daily._\n")
     lines.append("## Recommended shortlists (heuristic — see disclaimer)\n")

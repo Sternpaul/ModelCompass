@@ -1,4 +1,4 @@
-# Model Leaderboard (agent-readable)
+# ModelCompass (agent-readable)
 
 A daily-updated, machine-readable catalog of AI models, intended to be loaded
 by an agent **instead of** re-searching the web when its training cutoff is

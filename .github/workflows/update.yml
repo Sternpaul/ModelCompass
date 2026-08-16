@@ -1,4 +1,4 @@
-name: Update Model Leaderboard
+name: ModelCompass daily update
 
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain)" ]; then
             git add models.json models.csv recommended.json INDEX.md
-            git commit -m "chore: daily model leaderboard update $(date -u +%Y-%m-%d)"
+            git commit -m "chore: daily ModelCompass update $(date -u +%Y-%m-%d)"
             git push
           else
             echo "no changes"
