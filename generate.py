@@ -541,6 +541,17 @@ def main(archive=False):
     aider, aider_note = fetch_aider()
     log(f"aider polyglot: {aider_note}")
 
+    # DEBUG: dump AA keys + sample match probes
+    if aa:
+        log(f"AA key sample (first 10): {list(aa.keys())[:10]}")
+        or_ids_lower = {m["id"].lower() for m in or_models}
+        or_norm = {norm(m["name"]) for m in or_models}
+        hits = sum(1 for k in aa if k in or_ids_lower or norm(aa[k].get("name","")) in or_norm)
+        log(f"AA total={len(aa)} matched_to_OR={hits}")
+        for probe in ["gpt-5.6-sol","gpt-5.6-luna","grok-4.6","gemini-3.7-flash","deepseek-v4-pro-0813","claude-opus-5"]:
+            found = [k for k in aa if probe in k]
+            log(f"  probe '{probe}': aa_keys={found[:3]}")
+
     aa_used, aider_used = merge(or_models, aa, aider)
     log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}")
 
