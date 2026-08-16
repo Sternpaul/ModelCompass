@@ -599,6 +599,15 @@ def main(archive=False):
     aa_used, aider_used = merge(or_models, aa, aider)
     log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}")
 
+    # TEMP DEBUG: reveal how AA names the providers we still miss
+    if aa:
+        miss_prov = {"x-ai", "moonshotai", "z-ai", "kimi"}
+        or_miss = [m["id"] for m in real if m["provider"] in miss_prov and (m.get("benchmarks", {}).get("aa") is None)]
+        log(f"OR models missing AA among {miss_prov}: {or_miss[:12]}")
+        for token in ["grok", "kimi", "glm", "moonshot"]:
+            hits = [(k, aa[k].get("name")) for k in aa if token in k.lower() or token in str(aa[k].get("name", "")).lower()]
+            log(f"  AA entries containing '{token}': {hits[:5]}")
+
     recommended = {}
     for task in TASKS:
         recommended[task] = [slim(m, task) for m in recommend(real, task)]
