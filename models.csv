@@ -1,7 +1,7 @@
 id,name,provider,source,context,modality,is_vision,supports_reasoning,supports_tools,supports_json,open_weight,knowledge_cutoff,price_prompt_per_million,price_completion_per_million,aa_intelligence_index,aa_coding_index,aa_agentic_index,aa_math_index,gpqa,hle,livecodebench,aider_pass_rate_1,task_overall,task_coding,task_reasoning
 qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.45,3.2,,,,,,,,,,,
 dots-studio/dots-3-note-preview:free,Dots Studio: Dots3-Note Preview (free),dots-studio,openrouter,512000,text+image->text,True,True,True,True,False,,0.0,0.0,,,,,,,,,,,
-google/gemini-3.7-flash,Google: Gemini 3.7 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.375,1.875,,,,,,,,,,,
+google/gemini-3.7-flash,Google: Gemini 3.7 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.375,1.875,56,76.1,,,0.945,0.479,,,0.6605,0.761,0.6613
 google/gemini-3.7-flash:batch,Google: Gemini 3.7 Flash (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.1875,0.9375,,,,,,,,,,,
 bytedance-seed/seed-2-1-turbo,ByteDance Seed: Seed 2.1 Turbo,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.5,2.5,,,,,,,,,,,
 qwen/qwen3.8-2.4t-a95b,Qwen: Qwen3.8 2.4T A95B,qwen,openrouter,1048576,text->text,False,True,True,True,True,,2.0,6.0,,,,,,,,,,,
@@ -9,62 +9,62 @@ bytedance-seed/seed-2.0-code,ByteDance Seed: Seed-2.0-Code,bytedance-seed,openro
 deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.66,1.98,,,,,,,,,,,
 x-ai/grok-4.6,SpaceXAI: Grok 4.6,x-ai,openrouter,500000,text+image+file->text,True,True,True,True,False,,2.0,6.0,,,,,,,,40.9,,0.409,
 liquid/lfm-2.5-2.6b:free,LiquidAI: LFM2.5-2.6B (free),liquid,openrouter,128000,text->text,False,True,True,True,True,,0.0,0.0,,,,,,,,,,,
-nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,nvidia,openrouter,1000000,text->text,False,True,True,True,True,,0.08,0.2,,,,,,,,5.8,,0.058,
+nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,nvidia,openrouter,1000000,text->text,False,True,True,True,True,,0.08,0.2,23.6,26.8,,,0.743,0.106,,5.8,0.252,0.163,0.3617
 nvidia/nemotron-3.5-lightning:free,NVIDIA: Nemotron 3.5 Lightning (free),nvidia,openrouter,1000000,text->text,False,True,True,False,True,,0.0,0.0,,,,,,,,,,,
 sakana/sakana-namazu,Sakana: Sakana Namazu,sakana,openrouter,262144,text+image+file->text,True,True,True,True,False,,0.95,4.0,,,,,,,,,,,
 upstage/solar-pro4,Upstage: Solar Pro 4,upstage,openrouter,524288,text->text,False,True,True,True,False,,0.03,0.12,41.6,52.7,,,0.891,0.292,,,0.4715,0.527,0.533
 meta/muse-glimmer-30b,Meta: Muse Glimmer 30B,meta,openrouter,131072,text+image->text,True,True,True,True,True,,0.35,1.5,,,,,,,,,,,
-meta/muse-spark-1.2,Meta: Muse Spark 1.2,meta,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.25,4.25,,,,,,,,,,,
+meta/muse-spark-1.2,Meta: Muse Spark 1.2,meta,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.25,4.25,56.8,72.2,,,0.904,0.455,,,0.645,0.722,0.6423
 qwen/qwen3.8-max,Qwen: Qwen3.8 Max,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,2.0,6.0,,,,,,,,9.3,,0.093,
 ~deepseek/deepseek-v4-flash-latest,DeepSeek V4 Flash Latest,~deepseek,openrouter,1048576,text->text,False,True,True,True,False,,0.0603,0.1206,,,,,,,,,,,
 deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.14,0.28,,,,,,,,,,,
 thinkingmachines/inkling-small,Thinking Machines: Inkling Small,thinkingmachines,openrouter,524288,text+image+audio->text,True,True,True,True,True,,0.45,1.2,,,,,,,,,,,
 qwen/qwen3.7-flash,Qwen: Qwen3.7 Flash,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,0.03,0.13,,,,,,,,,,,
-anthropic/claude-opus-5-fast,Claude Opus 5 (Fast),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,10.0,50.0,52.5,66.9,,,0.889,0.434,,,0.597,0.669,0.616
-anthropic/claude-opus-5,Claude Opus 5,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,63.1,78,,,0.932,0.549,,,0.7055,0.78,0.704
+anthropic/claude-opus-5-fast,Claude Opus 5 (Fast),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,10.0,50.0,,,,,,,,,,,
+anthropic/claude-opus-5,Claude Opus 5,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,52.5,66.9,,,0.889,0.434,,,0.597,0.669,0.616
 anthropic/claude-opus-5:batch,Claude Opus 5 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 inclusionai/ling-3.0-flash,Ling-3.0-flash,inclusionai,openrouter,262144,text->text,False,True,True,False,True,,0.021,0.063,37.8,50.6,,,0.855,0.237,,,0.442,0.506,0.49
 poolside/laguna-s-2.1,Poolside: Laguna S 2.1,poolside,openrouter,1048576,text->text,False,True,True,False,True,,0.09,0.18,,,,,,,,,,,
 poolside/laguna-s-2.1:free,Poolside: Laguna S 2.1 (free),poolside,openrouter,262144,text->text,False,True,True,False,True,,0.0,0.0,,,,,,,,,,,
-google/gemini-3.6-flash,Google: Gemini 3.6 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.75,3.75,,,,,,,,,,,
+google/gemini-3.6-flash,Google: Gemini 3.6 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.75,3.75,51.6,69.2,,,0.928,0.408,,,0.604,0.692,0.6173
 google/gemini-3.6-flash:batch,Google: Gemini 3.6 Flash (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.375,1.875,,,,,,,,,,,
-google/gemini-3.5-flash-lite,Google: Gemini 3.5 Flash Lite,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.3,2.5,,,,,,,,,,,
+google/gemini-3.5-flash-lite,Google: Gemini 3.5 Flash Lite,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.3,2.5,37.4,49.3,,,0.838,0.188,,,0.4335,0.493,0.4667
 google/gemini-3.5-flash-lite:batch,Google: Gemini 3.5 Flash Lite (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.15,1.25,,,,,,,,,,,
 meituan/longcat-2.0,Meituan: LongCat 2.0,meituan,openrouter,1048756,text->text,False,True,True,False,True,,0.3,1.2,,,,,,,,,,,
 thinkingmachines/inkling,Thinking Machines: Inkling,thinkingmachines,openrouter,1048576,text+image+audio->text,True,True,True,True,True,,0.95,4.05,,,,,,,,,,,
 thinkingmachines/inkling:batch,Thinking Machines: Inkling (batch),thinkingmachines,openrouter,524288,text+image+audio->text,True,True,True,False,True,,0.5,2.025,,,,,,,,,,,
 openrouter/auto-beta,Auto Router (Beta),openrouter,openrouter,2000000,text+image+file+audio+video->text+image,True,True,True,True,False,,-1000000.0,-1000000.0,,,,,,,,,,,
 moonshotai/kimi-k3,MoonshotAI: Kimi K3,moonshotai,openrouter,1048576,text+image+video->text,True,True,True,True,True,,3.0,15.0,,,,,,,,,,,
-meta/muse-spark-1.1,Meta: Muse Spark 1.1,meta,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.25,4.25,,,,,,,,,,,
+meta/muse-spark-1.1,Meta: Muse Spark 1.1,meta,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.25,4.25,53.2,71.3,,,0.898,0.462,,,0.6225,0.713,0.6307
 kwaipilot/kat-coder-air-v2.5,Kwaipilot: KAT-Coder-Air V2.5,kwaipilot,openrouter,256000,text->text,False,False,True,True,False,,0.15,0.6,,,,,,,,,,,
 kwaipilot/kat-coder-pro-v2.5,Kwaipilot: KAT-Coder-Pro V2.5,kwaipilot,openrouter,256000,text->text,False,False,True,True,False,,0.74,2.96,,,,,,,,,,,
 openai/gpt-5.6-luna-pro,OpenAI: GPT-5.6 Luna Pro,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,0.1,0.6,,,,,,,,43.1,,0.431,
 openai/gpt-5.6-luna-pro:batch,OpenAI: GPT-5.6 Luna Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,0.1,0.6,,,,,,,,,,,
-openai/gpt-5.6-luna,OpenAI: GPT-5.6 Luna,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,0.1,0.6,,,,,,,,,,,
+openai/gpt-5.6-luna,OpenAI: GPT-5.6 Luna,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,0.1,0.6,47,63.3,,,0.892,0.334,,,0.5515,0.633,0.5653
 openai/gpt-5.6-luna:batch,OpenAI: GPT-5.6 Luna (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,0.1,0.6,,,,,,,,,,,
 openai/gpt-5.6-terra-pro,OpenAI: GPT-5.6 Terra Pro,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,1.0,6.0,,,,,,,,,,,
 openai/gpt-5.6-terra-pro:batch,OpenAI: GPT-5.6 Terra Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,1.0,6.0,,,,,,,,,,,
-openai/gpt-5.6-terra,OpenAI: GPT-5.6 Terra,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,1.0,6.0,,,,,,,,,,,
+openai/gpt-5.6-terra,OpenAI: GPT-5.6 Terra,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,1.0,6.0,52.8,70.6,,,0.908,0.419,,,0.617,0.706,0.6183
 openai/gpt-5.6-terra:batch,OpenAI: GPT-5.6 Terra (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,1.0,6.0,,,,,,,,,,,
 openai/gpt-5.6-sol-pro,OpenAI: GPT-5.6 Sol Pro,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,5.0,30.0,,,,,,,,,,,
 openai/gpt-5.6-sol-pro:batch,OpenAI: GPT-5.6 Sol Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,2.5,15.0,,,,,,,,,,,
-openai/gpt-5.6-sol,OpenAI: GPT-5.6 Sol,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,5.0,30.0,,,,,,,,,,,
+openai/gpt-5.6-sol,OpenAI: GPT-5.6 Sol,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,5.0,30.0,57.3,77.2,,,0.928,0.46,,,0.6725,0.772,0.6537
 openai/gpt-5.6-sol:batch,OpenAI: GPT-5.6 Sol (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2026-02-16,2.5,15.0,,,,,,,,,,,
 x-ai/grok-4.5,SpaceXAI: Grok 4.5,x-ai,openrouter,500000,text+image+file->text,True,True,True,True,False,,2.0,6.0,,,,,,,,,,,
 ~x-ai/grok-latest,xAI: Grok Latest,~x-ai,openrouter,500000,text+image+file->text,True,True,True,True,False,,2.0,6.0,,,,,,,,,,,
 aion-labs/aion-3.0-mini,AionLabs: Aion-3.0-Mini,aion-labs,openrouter,131072,text->text,False,True,True,True,False,,0.7,1.4,,,,,,,,17.3,,0.173,
 aion-labs/aion-3.0,AionLabs: Aion-3.0,aion-labs,openrouter,131072,text->text,False,True,True,True,False,,3.0,6.0,,,,,,,,,,,
-tencent/hy3,Tencent: Hy3,tencent,openrouter,262144,text->text,False,True,True,True,True,,0.132,0.528,42.2,58.8,,,0.897,0.335,,,0.505,0.588,0.5513
+tencent/hy3,Tencent: Hy3,tencent,openrouter,262144,text->text,False,True,True,True,True,,0.132,0.528,26.6,,,,0.732,0.07,,,0.266,,0.356
 poolside/laguna-xs-2.1,Poolside: Laguna XS 2.1,poolside,openrouter,262144,text->text,False,True,True,False,True,,0.06,0.12,,,,,,,,,,,
 poolside/laguna-xs-2.1:free,Poolside: Laguna XS 2.1 (free),poolside,openrouter,262144,text->text,False,True,True,False,True,,0.0,0.0,,,,,,,,,,,
-anthropic/claude-sonnet-5,Anthropic: Claude Sonnet 5,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.0,10.0,55.3,71.5,,,0.911,0.413,,22.2,0.634,0.4685,0.6257
+anthropic/claude-sonnet-5,Anthropic: Claude Sonnet 5,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.0,10.0,,,,,,,,22.2,,0.222,
 anthropic/claude-sonnet-5:batch,Anthropic: Claude Sonnet 5 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,1.0,5.0,,,,,,,,,,,
 google/gemini-3.1-flash-lite-image,Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image),google,openrouter,65536,text+image->text+image,True,True,False,True,False,2025-01-01,0.25,1.5,,,,,,,,11.6,,0.116,
 nex-agi/nex-n2-mini,Nex AGI: Nex-N2-Mini,nex-agi,openrouter,262144,text+image->text,True,True,True,True,True,,0.025,0.1,,,,,,,,,,,
 sakana/fugu-ultra,Sakana: Fugu Ultra,sakana,openrouter,1000000,text+image->text,True,True,True,True,False,,5.0,30.0,,,,,,,,,,,
 google/gemini-3.1-flash-image,Google: Nano Banana 2 (Gemini 3.1 Flash Image),google,openrouter,131072,text+image->text+image,True,True,False,True,False,,0.5,3.0,,,,,,,,,,,
 google/gemini-3-pro-image,Google: Nano Banana Pro (Gemini 3 Pro Image),google,openrouter,131072,text+image->text+image,True,True,True,True,False,,2.0,12.0,,,,,,,,,,,
-cohere/north-mini-code:free,Cohere: North Mini Code (free),cohere,openrouter,256000,text->text,False,True,True,False,True,,0.0,0.0,,,,,,,,,,,
+cohere/north-mini-code:free,Cohere: North Mini Code (free),cohere,openrouter,256000,text->text,False,True,True,False,True,,0.0,0.0,20.2,36.5,,,0.757,0.111,,,0.2835,0.365,0.3567
 z-ai/glm-5.2,Z.ai: GLM 5.2,z-ai,openrouter,1048576,text->text,False,True,True,True,True,,0.308,0.968,,,,,,,,,,,
 z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),z-ai,openrouter,512000,text->text,False,True,True,True,True,,0.7,2.2,,,,,,,,,,,
 openrouter/fusion,OpenRouter: Fusion,openrouter,openrouter,1000000,text->text,False,False,False,False,False,,-1000000.0,-1000000.0,,,,,,,,,,,
@@ -81,17 +81,17 @@ nvidia/nemotron-3-ultra-550b-a55b:free,NVIDIA: Nemotron 3 Ultra (free),nvidia,op
 qwen/qwen3.7-plus,Qwen: Qwen3.7 Plus,qwen,openrouter,1000000,text+image->text,True,True,True,True,False,,0.32,1.28,,,,,,,,,,,
 minimax/minimax-m3,MiniMax: MiniMax M3,minimax,openrouter,1048576,text+image+video->text,True,True,True,True,True,,0.3,1.2,45.4,58.6,,,0.929,0.39,,,0.52,0.586,0.591
 minimax/minimax-m3:batch,MiniMax: MiniMax M3 (batch),minimax,openrouter,524288,text+image+video->text,True,True,True,True,True,,0.15,0.6,,,,,,,,,,,
-stepfun/step-3.7-flash,StepFun: Step 3.7 Flash,stepfun,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.2,1.15,,,,,,,,,,,
+stepfun/step-3.7-flash,StepFun: Step 3.7 Flash,stepfun,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.2,1.15,30.9,39.6,,,0.809,0.214,,,0.3525,0.396,0.444
 anthropic/claude-opus-4.8-fast,Anthropic: Claude Opus 4.8 (Fast),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,10.0,50.0,,,,,,,,,,,
-anthropic/claude-opus-4.8,Anthropic: Claude Opus 4.8,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,,,,,,,,,,,
+anthropic/claude-opus-4.8,Anthropic: Claude Opus 4.8,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,57.3,74.3,,,0.92,0.487,,,0.658,0.743,0.66
 anthropic/claude-opus-4.8:batch,Anthropic: Claude Opus 4.8 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 qwen/qwen3.7-max,Qwen: Qwen3.7 Max,qwen,openrouter,1000000,text->text,False,True,True,True,False,,1.475,4.425,,,,,,,,,,,
 x-ai/grok-build-0.1,SpaceXAI: Grok Build 0.1,x-ai,openrouter,256000,text+image+file->text,True,True,True,True,False,,1.0,2.0,,,,,,,,,,,
-google/gemini-3.5-flash,Google: Gemini 3.5 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-01,1.5,9.0,,,,,,,,,,,
+google/gemini-3.5-flash,Google: Gemini 3.5 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-01,1.5,9.0,52,70.1,,,0.922,0.427,,,0.6105,0.701,0.623
 google/gemini-3.5-flash:batch,Google: Gemini 3.5 Flash (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-01,0.75,4.5,,,,,,,,,,,
 anthropic/claude-opus-4.7-fast,Anthropic: Claude Opus 4.7 (Fast),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,30.0,150.0,,,,,,,,,,,
 perceptron/perceptron-mk1,Perceptron: Perceptron Mk1,perceptron,openrouter,32768,text+image+video->text,True,True,False,True,False,,0.15,1.5,,,,,,,,,,,
-inclusionai/ring-2.6-1t,inclusionAI: Ring-2.6-1T,inclusionai,openrouter,262144,text->text,False,True,True,True,False,,0.075,0.625,,,,,,,,,,,
+inclusionai/ring-2.6-1t,inclusionAI: Ring-2.6-1T,inclusionai,openrouter,262144,text->text,False,True,True,True,False,,0.075,0.625,31.7,42.8,,,0.857,0.216,,,0.3725,0.428,0.4633
 google/gemini-3.1-flash-lite,Google: Gemini 3.1 Flash Lite,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.25,1.5,,,,,,,,,,,
 google/gemini-3.1-flash-lite:batch,Google: Gemini 3.1 Flash Lite (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.125,0.75,,,,,,,,,,,
 openai/gpt-chat-latest,OpenAI: GPT Chat Latest,openai,openrouter,400000,text+image+file->text,True,False,True,True,False,,5.0,30.0,,,,,,,,,,,
@@ -113,20 +113,20 @@ qwen/qwen3.6-max-preview,Qwen: Qwen3.6 Max Preview,qwen,openrouter,262144,text->
 qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.3,2.0,,,,,,,,,,,
 openai/gpt-5.5-pro,OpenAI: GPT-5.5 Pro,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,30.0,180.0,,,,,,,,,,,
 openai/gpt-5.5-pro:batch,OpenAI: GPT-5.5 Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,15.0,90.0,,,,,,,,,,,
-openai/gpt-5.5,OpenAI: GPT-5.5,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,5.0,30.0,,,,,,,,,,,
+openai/gpt-5.5,OpenAI: GPT-5.5,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,5.0,30.0,44.5,60.9,,,0.91,0.327,,,0.527,0.609,0.5607
 openai/gpt-5.5:batch,OpenAI: GPT-5.5 (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,2.5,15.0,,,,,,,,,,,
 deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,1.168,2.336,53.2,68.8,,,0.928,0.41,,,0.61,0.688,0.6233
-deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.06146,0.12292,51.8,69.1,,,0.908,0.386,,,0.6045,0.691,0.604
-inclusionai/ling-2.6-1t,inclusionAI: Ling-2.6-1T,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.075,0.625,,,,,,,,,,,
+deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.06146,0.12292,29.3,,,,0.716,0.078,,,0.293,,0.3623
+inclusionai/ling-2.6-1t,inclusionAI: Ling-2.6-1T,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.075,0.625,26.6,,,,0.752,0.087,,,0.266,,0.3683
 tencent/hy3-preview,Tencent: Hy3 preview,tencent,openrouter,262144,text->text,False,True,True,False,True,,0.18,0.6,34.4,,,,0.867,0.278,,,0.344,,0.4963
-xiaomi/mimo-v2.5-pro,Xiaomi: MiMo-V2.5-Pro,xiaomi,openrouter,1050000,text->text,False,True,True,True,True,,0.435,0.87,,,,,,,,,,,
+xiaomi/mimo-v2.5-pro,Xiaomi: MiMo-V2.5-Pro,xiaomi,openrouter,1050000,text->text,False,True,True,True,True,,0.435,0.87,42.9,60.2,,,0.866,0.357,,,0.5155,0.602,0.5507
 xiaomi/mimo-v2.5,Xiaomi: MiMo-V2.5,xiaomi,openrouter,1050000,text+image+audio+video->text,True,True,True,True,True,,0.14,0.28,,,,,,,,,,,
 openai/gpt-5.4-image-2,OpenAI: GPT-5.4 Image 2,openai,openrouter,272000,text+image+file->text+image,True,True,False,True,False,,8.0,15.0,,,,,,,,,,,
-inclusionai/ling-2.6-flash,inclusionAI: Ling-2.6-flash,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.01,0.03,,,,,,,,,,,
+inclusionai/ling-2.6-flash,inclusionAI: Ling-2.6-flash,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.01,0.03,14.2,25.3,,,0.593,0.063,,,0.1975,0.253,0.266
 ~anthropic/claude-opus-latest,Anthropic: Claude Opus Latest,~anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,,,,,,,,,,,
 openrouter/pareto-code,Pareto Code Router,openrouter,openrouter,2000000,text->text,False,False,False,False,False,,-1000000.0,-1000000.0,,,,,,,,,,,
 moonshotai/kimi-k2.6,MoonshotAI: Kimi K2.6,moonshotai,openrouter,262144,text+image->text,True,True,True,True,True,,0.5415,2.28,,,,,,,,,,,
-anthropic/claude-opus-4.7,Anthropic: Claude Opus 4.7,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,,,,,,,,,,,
+anthropic/claude-opus-4.7,Anthropic: Claude Opus 4.7,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,55,73.6,,,0.914,0.423,,,0.643,0.736,0.629
 anthropic/claude-opus-4.7:batch,Anthropic: Claude Opus 4.7 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 z-ai/glm-5.1,Z.ai: GLM 5.1,z-ai,openrouter,204800,text->text,False,True,True,True,True,,0.966,3.036,,,,,,,,,,,
 google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,google,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.12,0.4,,,,,,,,,,,
@@ -142,10 +142,10 @@ google/lyria-3-pro-preview,Google: Lyria 3 Pro Preview,google,openrouter,1048576
 google/lyria-3-clip-preview,Google: Lyria 3 Clip Preview,google,openrouter,1048576,text+image->text+audio,True,False,False,True,False,,0.0,0.0,,,,,,,,,,,
 kwaipilot/kat-coder-pro-v2,Kwaipilot: KAT-Coder-Pro V2,kwaipilot,openrouter,262144,text->text,False,False,True,True,False,,0.3,1.2,,,,,,,,,,,
 rekaai/reka-edge,Reka Edge,rekaai,openrouter,16384,text+image+video->text,True,False,True,True,True,,0.1,0.1,,,,,,,,,,,
-minimax/minimax-m2.7,MiniMax: MiniMax M2.7,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.3,1.2,,,,,,,,,,,
-openai/gpt-5.4-nano,OpenAI: GPT-5.4 Nano,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.2,1.25,,,,,,,,,,,
+minimax/minimax-m2.7,MiniMax: MiniMax M2.7,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.3,1.2,38.9,52.6,,,0.874,0.296,,,0.4575,0.526,0.5197
+openai/gpt-5.4-nano,OpenAI: GPT-5.4 Nano,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.2,1.25,39.7,56.1,,,0.817,0.283,,,0.479,0.561,0.499
 openai/gpt-5.4-nano:batch,OpenAI: GPT-5.4 Nano (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.1,0.625,,,,,,,,,,,
-openai/gpt-5.4-mini,OpenAI: GPT-5.4 Mini,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.75,4.5,,,,,,,,,,,
+openai/gpt-5.4-mini,OpenAI: GPT-5.4 Mini,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.75,4.5,16.8,,,,0.606,0.059,,,0.168,,0.2777
 openai/gpt-5.4-mini:batch,OpenAI: GPT-5.4 Mini (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2025-08-31,0.375,2.25,,,,,,,,,,,
 mistralai/mistral-small-2603,Mistral: Mistral Small 4,mistralai,openrouter,262144,text+image->text,True,True,True,True,True,,0.15,0.6,,,,,,,,,,,
 z-ai/glm-5-turbo,Z.ai: GLM 5 Turbo,z-ai,openrouter,202752,text->text,False,True,True,True,False,,1.2,4.0,,,,,,,,,,,
@@ -155,10 +155,10 @@ bytedance-seed/seed-2.0-lite,ByteDance Seed: Seed-2.0-Lite,bytedance-seed,openro
 qwen/qwen3.5-9b,Qwen: Qwen3.5-9B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.1,0.15,,,,,,,,,,,
 openai/gpt-5.4-pro,OpenAI: GPT-5.4 Pro,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,,30.0,180.0,,,,,,,,,,,
 openai/gpt-5.4-pro:batch,OpenAI: GPT-5.4 Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,,15.0,90.0,,,,,,,,,,,
-openai/gpt-5.4,OpenAI: GPT-5.4,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,,2.5,15.0,,,,,,,,,,,
+openai/gpt-5.4,OpenAI: GPT-5.4,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,,2.5,15.0,53.1,71.1,,,0.92,0.437,,,0.621,0.711,0.6293
 openai/gpt-5.4:batch,OpenAI: GPT-5.4 (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,,1.25,7.5,,,,,,,,,,,
 inception/mercury-2,Inception: Mercury 2,inception,openrouter,128000,text->text,False,True,True,True,False,,0.25,0.75,21.9,31.1,,,0.77,0.171,,,0.265,0.311,0.3867
-google/gemini-3.1-flash-lite-preview,Google: Gemini 3.1 Flash Lite Preview,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.25,1.5,,,,,,,,,,,
+google/gemini-3.1-flash-lite-preview,Google: Gemini 3.1 Flash Lite Preview,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.25,1.5,25.6,34.7,,,0.822,0.172,,,0.3015,0.347,0.4167
 bytedance-seed/seed-2.0-mini,ByteDance Seed: Seed-2.0-Mini,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.1,0.4,,,,,,,,,,,
 google/gemini-3.1-flash-image-preview,Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview),google,openrouter,65536,text+image->text+image,True,True,False,True,False,,0.5,3.0,,,,,,,,,,,
 qwen/qwen3.5-35b-a3b,Qwen: Qwen3.5-35B-A3B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.225,1.8,,,,,,,,,,,
@@ -166,22 +166,22 @@ qwen/qwen3.5-27b,Qwen: Qwen3.5-27B,qwen,openrouter,262144,text+image+video->text
 qwen/qwen3.5-122b-a10b,Qwen: Qwen3.5-122B-A10B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.29,2.4,,,,,,,,,,,
 qwen/qwen3.5-flash-02-23,Qwen: Qwen3.5-Flash,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,0.065,0.26,,,,,,,,,,,
 google/gemini-3.1-pro-preview-customtools,Google: Gemini 3.1 Pro Preview Custom Tools,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,2.0,12.0,,,,,,,,,,,
-openai/gpt-5.3-codex,OpenAI: GPT-5.3-Codex,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.75,14.0,,,,,,,,,,,
+openai/gpt-5.3-codex,OpenAI: GPT-5.3-Codex,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.75,14.0,45.5,,,,0.915,0.425,,,0.455,,0.5983
 aion-labs/aion-2.0,AionLabs: Aion-2.0,aion-labs,openrouter,131072,text->text,False,True,True,True,False,,0.8,1.6,,,,,,,,,,,
-google/gemini-3.1-pro-preview,Google: Gemini 3.1 Pro Preview,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,2.0,12.0,,,,,,,,,,,
+google/gemini-3.1-pro-preview,Google: Gemini 3.1 Pro Preview,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,2.0,12.0,47.7,68.8,,,0.941,0.47,,,0.5825,0.688,0.6293
 google/gemini-3.1-pro-preview:batch,Google: Gemini 3.1 Pro Preview (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.0,6.0,,,,,,,,,,,
-anthropic/claude-sonnet-4.6,Anthropic: Claude Sonnet 4.6,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,3.0,15.0,,,,,,,,,,,
+anthropic/claude-sonnet-4.6,Anthropic: Claude Sonnet 4.6,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,3.0,15.0,36.8,,,,0.799,0.133,,,0.368,,0.4333
 anthropic/claude-sonnet-4.6:batch,Anthropic: Claude Sonnet 4.6 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,1.5,7.5,,,,,,,,,,,
 qwen/qwen3.5-plus-02-15,Qwen: Qwen3.5 Plus 2026-02-15,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,0.26,1.56,,,,,,,,,,,
 qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,qwen,openrouter,262144,text+image+video->text,True,True,True,True,True,,0.39,2.34,,,,,,,,,,,
-minimax/minimax-m2.5,MiniMax: MiniMax M2.5,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.22,0.9,,,,,,,,,,,
+minimax/minimax-m2.5,MiniMax: MiniMax M2.5,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.22,0.9,34.5,,,,0.848,0.205,,,0.345,,0.466
 z-ai/glm-5,Z.ai: GLM 5,z-ai,openrouter,204800,text->text,False,True,True,True,True,,0.6,1.92,,,,,,,,,,,
 qwen/qwen3-max-thinking,Qwen: Qwen3 Max Thinking,qwen,openrouter,262144,text->text,False,True,True,True,False,,0.78,3.9,,,,,,,,,,,
-anthropic/claude-opus-4.6,Anthropic: Claude Opus 4.6,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,,,,,,,,,,,
+anthropic/claude-opus-4.6,Anthropic: Claude Opus 4.6,anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,5.0,25.0,38.8,,,,0.84,0.191,,,0.388,,0.473
 anthropic/claude-opus-4.6:batch,Anthropic: Claude Opus 4.6 (batch),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 qwen/qwen3-coder-next,Qwen: Qwen3 Coder Next,qwen,openrouter,262144,text->text,False,False,True,True,True,,0.12,0.8,,,,,,,,,,,
 openrouter/free,Free Models Router,openrouter,openrouter,200000,text+image->text,True,True,True,True,False,,0.0,0.0,,,,,,,,,,,
-stepfun/step-3.5-flash,StepFun: Step 3.5 Flash,stepfun,openrouter,262144,text->text,False,True,True,False,True,,0.1,0.3,,,,,,,,,,,
+stepfun/step-3.5-flash,StepFun: Step 3.5 Flash,stepfun,openrouter,262144,text->text,False,True,True,False,True,,0.1,0.3,26.5,,,,0.826,0.245,,,0.265,,0.4453
 moonshotai/kimi-k2.5,MoonshotAI: Kimi K2.5,moonshotai,openrouter,262144,text+image->text,True,True,True,True,True,,0.57,2.85,,,,,,,,,,,
 upstage/solar-pro-3,Upstage: Solar Pro 3,upstage,openrouter,131072,text->text,False,True,True,True,False,,0.15,0.6,14.5,16.2,,,0.724,0.103,,,0.1535,0.162,0.324
 minimax/minimax-m2-her,MiniMax: MiniMax M2-her,minimax,openrouter,65536,text->text,False,False,False,False,False,,0.3,1.2,,,,,,,,,,,
@@ -189,10 +189,10 @@ writer/palmyra-x5,Writer: Palmyra X5,writer,openrouter,1040000,text->text,False,
 openai/gpt-audio,OpenAI: GPT Audio,openai,openrouter,128000,text+audio->text+audio,False,False,True,True,False,,2.5,10.0,,,,,,,,,,,
 openai/gpt-audio-mini,OpenAI: GPT Audio Mini,openai,openrouter,128000,text+audio->text+audio,False,False,True,True,False,,0.6,2.4,,,,,,,,,,,
 z-ai/glm-4.7-flash,Z.ai: GLM 4.7 Flash,z-ai,openrouter,202752,text->text,False,True,True,True,True,,0.06,0.4,,,,,,,,,,,
-openai/gpt-5.2-codex,OpenAI: GPT-5.2-Codex,openai,openrouter,400000,text+image->text,True,True,True,True,False,,1.75,14.0,,,,,,,,,,,
+openai/gpt-5.2-codex,OpenAI: GPT-5.2-Codex,openai,openrouter,400000,text+image->text,True,True,True,True,False,,1.75,14.0,41.2,,,,0.899,0.357,,,0.412,,0.556
 bytedance-seed/seed-1.6-flash,ByteDance Seed: Seed 1.6 Flash,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.075,0.3,,,,,,,,,,,
 bytedance-seed/seed-1.6,ByteDance Seed: Seed 1.6,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.25,2.0,,,,,,,,,,,
-minimax/minimax-m2.1,MiniMax: MiniMax M2.1,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.3,1.2,,,,,,,,,,,
+minimax/minimax-m2.1,MiniMax: MiniMax M2.1,minimax,openrouter,204800,text->text,False,True,True,True,True,,0.3,1.2,32.1,,,82.7,0.83,0.232,0.81,,0.574,0.81,0.461
 z-ai/glm-4.7,Z.ai: GLM 4.7,z-ai,openrouter,204800,text->text,False,True,True,True,True,,0.4,1.75,,,,,,,,,,,
 google/gemini-3-flash-preview,Google: Gemini 3 Flash Preview,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.5,3.0,,,,,,,,,,,
 google/gemini-3-flash-preview:batch,Google: Gemini 3 Flash Preview (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,0.25,1.5,,,,,,,,,,,
@@ -201,27 +201,27 @@ nvidia/nemotron-3-nano-30b-a3b:free,NVIDIA: Nemotron 3 Nano 30B A3B (free),nvidi
 openai/gpt-5.2-chat,OpenAI: GPT-5.2 Chat,openai,openrouter,128000,text+image+file->text,True,False,True,True,False,,1.75,14.0,,,,,,,,,,,
 openai/gpt-5.2-pro,OpenAI: GPT-5.2 Pro,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,21.0,168.0,,,,,,,,,,,
 openai/gpt-5.2-pro:batch,OpenAI: GPT-5.2 Pro (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,10.5,84.0,,,,,,,,,,,
-openai/gpt-5.2,OpenAI: GPT-5.2,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.75,14.0,,,,,,,,,,,
+openai/gpt-5.2,OpenAI: GPT-5.2,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.75,14.0,38.9,,,96.7,0.864,0.267,0.894,,0.678,0.894,0.5067
 openai/gpt-5.2:batch,OpenAI: GPT-5.2 (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,0.875,7.0,,,,,,,,,,,
 relace/relace-search,Relace: Relace Search,relace,openrouter,256000,text->text,False,False,True,True,False,,1.0,3.0,,,,,,,,,,,
 z-ai/glm-4.6v,Z.ai: GLM 4.6V,z-ai,openrouter,131072,text+image+video->text,True,True,True,True,True,,0.3,0.9,,,,,,,,,,,
 openrouter/bodybuilder,Body Builder (beta),openrouter,openrouter,128000,text->text,False,False,False,False,False,,-1000000.0,-1000000.0,,,,,,,,,,,
-openai/gpt-5.1-codex-max,OpenAI: GPT-5.1-Codex-Max,openai,openrouter,400000,text+image->text,True,True,True,True,False,,1.25,10.0,,,,,,,,,,,
+openai/gpt-5.1-codex-max,OpenAI: GPT-5.1-Codex-Max,openai,openrouter,400000,text+image->text,True,True,True,True,False,,1.25,10.0,35.6,,,95.7,0.86,0.257,0.849,,0.6565,0.849,0.491
 amazon/nova-2-lite-v1,Amazon: Nova 2 Lite,amazon,openrouter,1000000,text+image+file+video->text,True,True,True,False,False,,0.3,2.5,,,,,,,,,,,
 mistralai/ministral-14b-2512,Mistral: Ministral 3 14B 2512,mistralai,openrouter,262144,text+image->text,True,False,True,True,True,,0.2,0.2,,,,,,,,,,,
 mistralai/ministral-8b-2512,Mistral: Ministral 3 8B 2512,mistralai,openrouter,262144,text+image->text,True,False,True,True,True,,0.15,0.15,,,,,,,,,,,
 mistralai/ministral-3b-2512,Mistral: Ministral 3 3B 2512,mistralai,openrouter,131072,text+image->text,True,False,True,True,True,,0.1,0.1,,,,,,,,,,,
 mistralai/mistral-large-2512,Mistral: Mistral Large 3 2512,mistralai,openrouter,262144,text+image+file->text,True,False,True,True,False,,0.5,1.5,,,,,,,,,,,
-deepseek/deepseek-v3.2,DeepSeek: DeepSeek V3.2,deepseek,openrouter,163840,text->text,False,True,True,True,True,,0.269,0.4,,,,,,,,38.7,,0.387,
-anthropic/claude-opus-4.5,Anthropic: Claude Opus 4.5,anthropic,openrouter,200000,text+image+file->text,True,True,True,True,False,,5.0,25.0,,,,,,,,,,,
+deepseek/deepseek-v3.2,DeepSeek: DeepSeek V3.2,deepseek,openrouter,163840,text->text,False,True,True,True,True,,0.269,0.4,25.1,,,59,0.751,0.112,0.593,38.7,0.4205,0.49,0.3713
+anthropic/claude-opus-4.5,Anthropic: Claude Opus 4.5,anthropic,openrouter,200000,text+image+file->text,True,True,True,True,False,,5.0,25.0,35.6,,,62.7,0.81,0.132,0.738,,0.4915,0.738,0.4327
 anthropic/claude-opus-4.5:batch,Anthropic: Claude Opus 4.5 (batch),anthropic,openrouter,200000,text+image+file->text,True,True,True,True,False,,2.5,12.5,,,,,,,,,,,
 allenai/olmo-3-32b-think,AllenAI: Olmo 3 32B Think,allenai,openrouter,65536,text->text,False,True,False,True,True,,0.15,0.5,,,,,,,,8.0,,0.08,
 google/gemini-3-pro-image-preview,Google: Nano Banana Pro (Gemini 3 Pro Image Preview),google,openrouter,65536,text+image->text+image,True,True,False,True,False,,2.0,12.0,,,,,,,,,,,
 deepcogito/cogito-v2.1-671b,Deep Cogito: Cogito v2.1 671B,deepcogito,openrouter,128000,text->text,False,True,False,True,False,,1.25,1.25,,,,,,,,,,,
-openai/gpt-5.1,OpenAI: GPT-5.1,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.25,10.0,,,,,,,,,,,
+openai/gpt-5.1,OpenAI: GPT-5.1,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,1.25,10.0,37.5,49.4,,94,0.873,0.285,0.868,,0.603,0.681,0.511
 openai/gpt-5.1:batch,OpenAI: GPT-5.1 (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,,0.625,5.0,,,,,,,,,,,
 openai/gpt-5.1-codex,OpenAI: GPT-5.1-Codex,openai,openrouter,400000,text+image->text,True,True,True,True,False,,1.25,10.0,,,,,,,,,,,
-openai/gpt-5.1-codex-mini,OpenAI: GPT-5.1-Codex-Mini,openai,openrouter,400000,text+image->text,True,True,True,True,False,,0.25,2.0,,,,,,,,,,,
+openai/gpt-5.1-codex-mini,OpenAI: GPT-5.1-Codex-Mini,openai,openrouter,400000,text+image->text,True,True,True,True,False,,0.25,2.0,31.3,,,91.7,0.813,0.185,0.836,,0.615,0.836,0.437
 moonshotai/kimi-k2-thinking,MoonshotAI: Kimi K2 Thinking,moonshotai,openrouter,262144,text->text,False,True,True,True,True,,0.6,2.5,,,,,,,,,,,
 amazon/nova-premier-v1,Amazon: Nova Premier 1.0,amazon,openrouter,1000000,text+image->text,True,False,True,False,False,,2.5,12.5,,,,,,,,,,,
 perplexity/sonar-pro-search,Perplexity: Sonar Pro Search,perplexity,openrouter,200000,text+image->text,True,True,False,True,False,,3.0,15.0,,,,,,,,,,,
@@ -252,8 +252,8 @@ qwen/qwen3-vl-235b-a22b-thinking,Qwen: Qwen3 VL 235B A22B Thinking,qwen,openrout
 qwen/qwen3-vl-235b-a22b-instruct,Qwen: Qwen3 VL 235B A22B Instruct,qwen,openrouter,262144,text+image->text,True,False,True,True,True,2025-03-31,0.26,1.04,,,,,,,,,,,
 qwen/qwen3-max,Qwen: Qwen3 Max,qwen,openrouter,262144,text->text,False,False,True,True,False,2025-06-30,0.78,3.9,,,,,,,,,,,
 qwen/qwen3-coder-plus,Qwen: Qwen3 Coder Plus,qwen,openrouter,1000000,text->text,False,False,True,True,False,2025-06-30,0.65,3.25,,,,,,,,,,,
-openai/gpt-5-codex:batch,OpenAI: GPT-5 Codex (batch),openai,openrouter,400000,text+image->text,True,True,True,True,False,2024-09-30,0.625,5.0,,,,,,,,,,,
-deepseek/deepseek-v3.1-terminus,DeepSeek: DeepSeek V3.1 Terminus,deepseek,openrouter,163840,text->text,False,True,True,True,True,2025-03-31,0.27,0.95,,,,,,,,,,,
+openai/gpt-5-codex:batch,OpenAI: GPT-5 Codex (batch),openai,openrouter,400000,text+image->text,True,True,True,True,False,2024-09-30,0.625,5.0,37,,,98.7,0.837,0.278,0.84,,0.6785,0.84,0.495
+deepseek/deepseek-v3.1-terminus,DeepSeek: DeepSeek V3.1 Terminus,deepseek,openrouter,163840,text->text,False,True,True,True,True,2025-03-31,0.27,0.95,21.7,,,53.7,0.751,0.087,0.529,,0.377,0.529,0.3517
 qwen/qwen3-coder-flash,Qwen: Qwen3 Coder Flash,qwen,openrouter,1000000,text->text,False,False,True,True,False,2025-06-30,0.195,0.975,,,,,,,,,,,
 qwen/qwen3-next-80b-a3b-thinking,Qwen: Qwen3 Next 80B A3B Thinking,qwen,openrouter,262144,text->text,False,True,True,True,True,2025-09-30,0.15,1.2,,,,,,,,,,,
 qwen/qwen3-next-80b-a3b-instruct,Qwen: Qwen3 Next 80B A3B Instruct,qwen,openrouter,262144,text->text,False,False,True,True,True,2025-09-30,0.1,1.1,,,,,,,,,,,
@@ -268,14 +268,14 @@ deepseek/deepseek-chat-v3.1,DeepSeek: DeepSeek V3.1,deepseek,openrouter,163840,t
 mistralai/mistral-medium-3.1,Mistral: Mistral Medium 3.1,mistralai,openrouter,131072,text+image+file->text,True,False,True,True,False,2025-06-30,0.4,2.0,,,,,,,,,,,
 z-ai/glm-4.5v,Z.ai: GLM 4.5V,z-ai,openrouter,65536,text+image->text,True,True,True,True,True,2024-12-31,0.6,1.8,,,,,,,,,,,
 ai21/jamba-large-1.7,AI21: Jamba Large 1.7,ai21,openrouter,256000,text->text,False,False,True,True,True,2024-08-31,2.0,8.0,,,,,,,,,,,
-openai/gpt-5,OpenAI: GPT-5,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-09-30,1.25,10.0,35.3,37.8,,94.3,0.854,0.285,0.846,,0.558,0.612,0.6122
+openai/gpt-5,OpenAI: GPT-5,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-09-30,1.25,10.0,34.6,,,91.7,0.842,0.254,0.703,,0.6315,0.703,0.5897
 openai/gpt-5:batch,OpenAI: GPT-5 (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-09-30,0.625,5.0,,,,,,,,,,,
-openai/gpt-5-mini,OpenAI: GPT-5 Mini,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-05-31,0.25,2.0,25.8,15.6,,90.7,0.828,0.215,0.838,,0.4403,0.497,0.4337
+openai/gpt-5-mini,OpenAI: GPT-5 Mini,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-05-31,0.25,2.0,31.6,,,85,0.803,0.159,0.692,,0.583,0.692,0.426
 openai/gpt-5-mini:batch,OpenAI: GPT-5 Mini (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-05-31,0.125,1.0,,,,,,,,,,,
 openai/gpt-5-nano,OpenAI: GPT-5 Nano,openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-05-31,0.05,0.4,20.1,,,83.7,0.676,0.095,0.789,,0.519,0.789,0.324
 openai/gpt-5-nano:batch,OpenAI: GPT-5 Nano (batch),openai,openrouter,400000,text+image+file->text,True,True,True,True,False,2024-05-31,0.025,0.2,,,,,,,,,,,
-openai/gpt-oss-120b,OpenAI: gpt-oss-120b,openai,openrouter,131072,text->text,False,True,True,True,True,2024-06-30,0.03,0.17,24.1,30.4,,93.4,0.782,0.196,0.878,13.8,0.493,0.44,0.4063
-openai/gpt-oss-20b,OpenAI: gpt-oss-20b,openai,openrouter,131072,text->text,False,True,True,True,True,2024-06-30,0.03,0.13,15.2,20.7,,89.3,0.688,0.11,0.777,,0.4173,0.492,0.3167
+openai/gpt-oss-120b,OpenAI: gpt-oss-120b,openai,openrouter,131072,text->text,False,True,True,True,True,2024-06-30,0.03,0.17,14.9,21.2,,66.7,0.672,0.059,0.707,13.8,0.3427,0.3523,0.2933
+openai/gpt-oss-20b,OpenAI: gpt-oss-20b,openai,openrouter,131072,text->text,False,True,True,True,True,2024-06-30,0.03,0.13,14.4,,,62.3,0.611,0.053,0.652,,0.3835,0.652,0.2693
 openai/gpt-oss-20b:free,OpenAI: gpt-oss-20b (free),openai,openrouter,131072,text->text,False,True,True,True,True,2024-06-30,0.0,0.0,,,,,,,,,,,
 anthropic/claude-opus-4.1,Anthropic: Claude Opus 4.1,anthropic,openrouter,200000,text+image+file->text,True,True,True,False,False,2025-01-31,15.0,75.0,,,,,,,,,,,
 anthropic/claude-opus-4.1:batch,Anthropic: Claude Opus 4.1 (batch),anthropic,openrouter,200000,text+image+file->text,True,True,True,True,False,2025-01-31,7.5,37.5,,,,,,,,,,,
@@ -287,7 +287,7 @@ z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,z-ai,openrouter,131072,text->text,False,True,
 qwen/qwen3-235b-a22b-thinking-2507,Qwen: Qwen3 235B A22B Thinking 2507,qwen,openrouter,262144,text->text,False,True,True,True,True,2025-06-30,0.23,2.3,,,,,,,,,,,
 qwen/qwen3-coder,Qwen: Qwen3 Coder 480B A35B,qwen,openrouter,262144,text->text,False,False,True,True,True,2025-06-30,0.3,1.0,,,,,,,,,,,
 bytedance/ui-tars-1.5-7b,ByteDance: UI-TARS 7B ,bytedance,openrouter,128000,text+image->text,True,False,False,True,True,2025-01-31,0.1,0.2,,,,,,,,,,,
-google/gemini-2.5-flash-lite,Google: Gemini 2.5 Flash Lite,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.1,0.4,,,,,,,,,,,
+google/gemini-2.5-flash-lite,Google: Gemini 2.5 Flash Lite,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.1,0.4,6.7,,,35.3,0.474,0.037,0.4,,0.21,0.4,0.2695
 google/gemini-2.5-flash-lite:batch,Google: Gemini 2.5 Flash Lite (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.05,0.2,,,,,,,,,,,
 qwen/qwen3-235b-a22b-2507,Qwen: Qwen3 235B A22B Instruct 2507,qwen,openrouter,262144,text->text,False,False,True,True,True,2025-06-30,0.09,0.55,,,,,,,,,,,
 moonshotai/kimi-k2,MoonshotAI: Kimi K2 0711,moonshotai,openrouter,131072,text->text,False,False,True,False,True,2024-12-31,0.57,2.3,,,,,,,,,,,
@@ -298,9 +298,9 @@ morph/morph-v3-fast,Morph: Morph V3 Fast,morph,openrouter,81920,text->text,False
 baidu/ernie-4.5-vl-424b-a47b,Baidu: ERNIE 4.5 VL 424B A47B ,baidu,openrouter,123000,text+image->text,True,True,False,False,True,2025-03-31,0.42,1.25,,,,,,,,,,,
 mistralai/mistral-small-3.2-24b-instruct,Mistral: Mistral Small 3.2 24B,mistralai,openrouter,256000,text+image->text,True,False,True,True,True,2023-10-31,0.09375,0.25,,,,,,,,,,,
 minimax/minimax-m1,MiniMax: MiniMax M1,minimax,openrouter,1000000,text->text,False,True,True,False,False,2024-06-30,0.55,2.2,,,,,,,,,,,
-google/gemini-2.5-flash,Google: Gemini 2.5 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.3,2.5,,,,,,,,26.2,,0.262,
+google/gemini-2.5-flash,Google: Gemini 2.5 Flash,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.3,2.5,14.2,,,60.3,0.683,0.047,0.495,26.2,0.3725,0.3785,0.343
 google/gemini-2.5-flash:batch,Google: Gemini 2.5 Flash (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.15,1.25,,,,,,,,,,,
-google/gemini-2.5-pro,Google: Gemini 2.5 Pro,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,1.25,10.0,,,,,,,,46.2,,0.462,
+google/gemini-2.5-pro,Google: Gemini 2.5 Pro,google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,1.25,10.0,25.9,33.3,,87.7,0.844,0.225,0.801,46.2,0.4897,0.532,0.5537
 google/gemini-2.5-pro:batch,Google: Gemini 2.5 Pro (batch),google,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,2025-01-31,0.625,5.0,,,,,,,,,,,
 openai/o3-pro,OpenAI: o3 Pro,openai,openrouter,200000,text+image+file->text,True,True,True,True,False,2024-06-30,20.0,80.0,33.3,,,,0.845,,,43.6,0.333,0.436,0.589
 openai/o3-pro:batch,OpenAI: o3 Pro (batch),openai,openrouter,200000,text+image+file->text,True,True,True,True,False,2024-06-30,10.0,40.0,,,,,,,,,,,
@@ -324,11 +324,11 @@ openai/o3,OpenAI: o3,openai,openrouter,200000,text+image+file->text,True,True,Tr
 openai/o3:batch,OpenAI: o3 (batch),openai,openrouter,200000,text+image+file->text,True,True,True,True,False,2024-06-30,1.0,4.0,,,,,,,,,,,
 openai/o4-mini,OpenAI: o4 Mini,openai,openrouter,200000,text+image+file->text,True,True,True,True,False,2024-06-30,1.1,4.4,26.1,,,90.7,0.784,0.165,0.859,,0.584,0.859,0.5375
 openai/o4-mini:batch,OpenAI: o4 Mini (batch),openai,openrouter,200000,text+image+file->text,True,True,True,True,False,2024-06-30,0.55,2.2,,,,,,,,,,,
-openai/gpt-4.1,OpenAI: GPT-4.1,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,2.0,8.0,,,,,,,,3.1,,0.031,
+openai/gpt-4.1,OpenAI: GPT-4.1,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,2.0,8.0,19.6,,,34.7,0.666,0.042,0.457,3.1,0.2715,0.244,0.3352
 openai/gpt-4.1:batch,OpenAI: GPT-4.1 (batch),openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,1.0,4.0,,,,,,,,,,,
-openai/gpt-4.1-mini,OpenAI: GPT-4.1 Mini,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.4,1.6,,,,,,,,,,,
+openai/gpt-4.1-mini,OpenAI: GPT-4.1 Mini,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.4,1.6,14.8,20.2,,46.3,0.664,0.05,0.483,,0.271,0.3425,0.323
 openai/gpt-4.1-mini:batch,OpenAI: GPT-4.1 Mini (batch),openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.2,0.8,,,,,,,,,,,
-openai/gpt-4.1-nano,OpenAI: GPT-4.1 Nano,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.1,0.4,,,,,,,,,,,
+openai/gpt-4.1-nano,OpenAI: GPT-4.1 Nano,openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.1,0.4,9.6,11.1,,24,0.512,0.038,0.326,,0.149,0.2185,0.2207
 openai/gpt-4.1-nano:batch,OpenAI: GPT-4.1 Nano (batch),openai,openrouter,1047576,text+image+file->text,True,False,True,True,False,2024-06-30,0.05,0.2,,,,,,,,,,,
 meta-llama/llama-4-maverick,Meta: Llama 4 Maverick,meta-llama,openrouter,1048576,text+image->text,True,False,True,True,True,2024-08-31,0.2,0.8,,,,,,,,4.4,,0.044,
 meta-llama/llama-4-scout,Meta: Llama 4 Scout,meta-llama,openrouter,1310720,text+image->text,True,False,True,True,True,2024-08-31,0.1,0.3,,,,,,,,,,,

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T21:40:53Z",
+    "generated_at": "2026-08-16T21:44:18Z",
     "model_count": 407,
     "synthetic_excluded": 6,
     "update_cadence": "daily (GitHub Actions)",
@@ -11,46 +11,14 @@
       "aider_polyglot": "ok (54 models)"
     },
     "coverage": {
-      "with_aa_benchmarks": 44,
+      "with_aa_benchmarks": 92,
       "with_aider_coding": 36
     },
     "disclaimer": "Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.",
-    "methodology": "Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged by provider+slug then name fuzzy-match. Variant families collapsed to canonical base model in shortlists."
+    "methodology": "Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged via normalized provider+slug (AA dots->hyphens, reasoning-effort suffixes tolerated), then fuzzy name match. Only routing aliases (:batch/:free/:thinking) collapse in shortlists; identity tags (-latest, -0813, -v2) stay distinct."
   },
   "recommended": {
     "best_overall": [
-      {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.7055,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
       {
         "id": "anthropic/claude-fable-5",
         "name": "Anthropic: Claude Fable 5",
@@ -84,142 +52,78 @@
         }
       },
       {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "provider": "anthropic",
-        "task_score": 0.634,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 10.0,
-          "cache_read": 0.2
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.61,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.6045,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.597,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
+        "id": "openai/gpt-5-codex:batch",
+        "name": "OpenAI: GPT-5 Codex (batch)",
         "provider": "openai",
-        "task_score": 0.597,
-        "context": 200000,
+        "task_score": 0.6785,
+        "context": 400000,
         "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
+          "prompt": 0.625,
+          "completion": 5.0,
+          "cache_read": 0.0625
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 37,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 98.7,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
+          "aime": null,
+          "mmlu_pro": 0.865,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.2",
+        "name": "OpenAI: GPT-5.2",
+        "provider": "openai",
+        "task_score": 0.678,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 96.7,
+          "gpqa": 0.864,
+          "hle": 0.267,
+          "livecodebench": 0.894,
+          "aime": null,
+          "mmlu_pro": 0.859,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": 0.6725,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -231,28 +135,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 77.2,
           "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.46,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.584,
-        "context": 200000,
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": 0.6605,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
         },
         "capability_flags": [
           "reasoning",
@@ -263,23 +167,55 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 56,
+          "aa_coding_index": 76.1,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
+          "aa_math_index": null,
+          "gpqa": 0.945,
+          "hle": 0.479,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
+        "id": "anthropic/claude-opus-4.8",
+        "name": "Anthropic: Claude Opus 4.8",
+        "provider": "anthropic",
+        "task_score": 0.658,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 74.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.92,
+          "hle": 0.487,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.1-codex-max",
+        "name": "OpenAI: GPT-5.1-Codex-Max",
         "provider": "openai",
-        "task_score": 0.558,
+        "task_score": 0.6565,
         "context": 400000,
         "price_per_million": {
           "prompt": 1.25,
@@ -295,51 +231,148 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
+          "aa_intelligence_index": 35.6,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
+          "aa_math_index": 95.7,
+          "gpqa": 0.86,
+          "hle": 0.257,
+          "livecodebench": 0.849,
+          "aime": null,
+          "mmlu_pro": 0.86,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.536,
-        "context": 204800,
+        "id": "meta/muse-spark-1.2",
+        "name": "Meta: Muse Spark 1.2",
+        "provider": "meta",
+        "task_score": 0.645,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
+          "prompt": 1.25,
+          "completion": 4.25,
+          "cache_read": 0.15
         },
         "capability_flags": [
           "reasoning",
           "tools",
-          "json"
+          "json",
+          "caching"
         ],
-        "is_vision": false,
-        "open_weight": true,
+        "is_vision": true,
+        "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 28.9,
+          "aa_intelligence_index": 56.8,
+          "aa_coding_index": 72.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.904,
+          "hle": 0.455,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-4.7",
+        "name": "Anthropic: Claude Opus 4.7",
+        "provider": "anthropic",
+        "task_score": 0.643,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 55,
+          "aa_coding_index": 73.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.914,
+          "hle": 0.423,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.6315,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 34.6,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "aime": null,
-          "mmlu_pro": 0.82,
+          "aa_math_index": 91.7,
+          "gpqa": 0.842,
+          "hle": 0.254,
+          "livecodebench": 0.703,
+          "aime": 0.916666666666667,
+          "mmlu_pro": 0.867,
           "aider_polyglot_pass_rate_1": null
         }
       }
     ],
     "best_coding": [
+      {
+        "id": "openai/gpt-5.2",
+        "name": "OpenAI: GPT-5.2",
+        "provider": "openai",
+        "task_score": 0.894,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 96.7,
+          "gpqa": 0.864,
+          "hle": 0.267,
+          "livecodebench": 0.894,
+          "aime": null,
+          "mmlu_pro": 0.859,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
       {
         "id": "openai/o4-mini",
         "name": "OpenAI: o4 Mini",
@@ -373,6 +406,102 @@
         }
       },
       {
+        "id": "openai/gpt-5.1-codex-max",
+        "name": "OpenAI: GPT-5.1-Codex-Max",
+        "provider": "openai",
+        "task_score": 0.849,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 35.6,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 95.7,
+          "gpqa": 0.86,
+          "hle": 0.257,
+          "livecodebench": 0.849,
+          "aime": null,
+          "mmlu_pro": 0.86,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-codex:batch",
+        "name": "OpenAI: GPT-5 Codex (batch)",
+        "provider": "openai",
+        "task_score": 0.84,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.625,
+          "completion": 5.0,
+          "cache_read": 0.0625
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 37,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 98.7,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
+          "aime": null,
+          "mmlu_pro": 0.865,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.1-codex-mini",
+        "name": "OpenAI: GPT-5.1-Codex-Mini",
+        "provider": "openai",
+        "task_score": 0.836,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.25,
+          "completion": 2.0,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.3,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 91.7,
+          "gpqa": 0.813,
+          "hle": 0.185,
+          "livecodebench": 0.836,
+          "aime": null,
+          "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "minimax/minimax-m2",
         "name": "MiniMax: MiniMax M2",
         "provider": "minimax",
@@ -400,6 +529,38 @@
           "livecodebench": 0.826,
           "aime": null,
           "mmlu_pro": 0.82,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2.1",
+        "name": "MiniMax: MiniMax M2.1",
+        "provider": "minimax",
+        "task_score": 0.81,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 32.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 82.7,
+          "gpqa": 0.83,
+          "hle": 0.232,
+          "livecodebench": 0.81,
+          "aime": null,
+          "mmlu_pro": 0.875,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -436,14 +597,14 @@
         }
       },
       {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.78,
-        "context": 1000000,
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": 0.772,
+        "context": 1050000,
         "price_per_million": {
           "prompt": 5.0,
-          "completion": 25.0,
+          "completion": 30.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -455,12 +616,12 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 77.2,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
+          "gpqa": 0.928,
+          "hle": 0.46,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -498,200 +659,9 @@
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
-      },
-      {
-        "id": "nvidia/nemotron-nano-9b-v2:free",
-        "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-        "provider": "nvidia",
-        "task_score": 0.724,
-        "context": 128000,
-        "price_per_million": {
-          "prompt": 0.0,
-          "completion": 0.0,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 8.7,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 69.7,
-          "gpqa": 0.57,
-          "hle": 0.049,
-          "livecodebench": 0.724,
-          "aime": null,
-          "mmlu_pro": 0.742,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o3-mini",
-        "name": "OpenAI: o3 Mini",
-        "provider": "openai",
-        "task_score": 0.717,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 19.2,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "aime": 0.77,
-          "mmlu_pro": 0.791,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.691,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro 0423",
-        "provider": "deepseek",
-        "task_score": 0.688,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 68.8,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.41,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.669,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
       }
     ],
     "best_reasoning": [
-      {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.704,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
       {
         "id": "anthropic/claude-fable-5",
         "name": "Anthropic: Claude Fable 5",
@@ -725,14 +695,206 @@
         }
       },
       {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": 0.6613,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 56,
+          "aa_coding_index": 76.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.945,
+          "hle": 0.479,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-4.8",
+        "name": "Anthropic: Claude Opus 4.8",
         "provider": "anthropic",
-        "task_score": 0.6257,
+        "task_score": 0.66,
         "context": 1000000,
         "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 74.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.92,
+          "hle": 0.487,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": 0.6537,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 77.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.46,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "meta/muse-spark-1.2",
+        "name": "Meta: Muse Spark 1.2",
+        "provider": "meta",
+        "task_score": 0.6423,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 4.25,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 56.8,
+          "aa_coding_index": 72.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.904,
+          "hle": 0.455,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "meta/muse-spark-1.1",
+        "name": "Meta: Muse Spark 1.1",
+        "provider": "meta",
+        "task_score": 0.6307,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 4.25,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 53.2,
+          "aa_coding_index": 71.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.898,
+          "hle": 0.462,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.4",
+        "name": "OpenAI: GPT-5.4",
+        "provider": "openai",
+        "task_score": 0.6293,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 2.5,
+          "completion": 15.0,
+          "cache_read": 0.25
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 53.1,
+          "aa_coding_index": 71.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.92,
+          "hle": 0.437,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.1-pro-preview",
+        "name": "Google: Gemini 3.1 Pro Preview",
+        "provider": "google",
+        "task_score": 0.6293,
+        "context": 1048576,
+        "price_per_million": {
           "prompt": 2.0,
-          "completion": 10.0,
+          "completion": 12.0,
           "cache_read": 0.2
         },
         "capability_flags": [
@@ -744,16 +906,48 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
+          "aa_intelligence_index": 47.7,
+          "aa_coding_index": 68.8,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
+          "gpqa": 0.941,
+          "hle": 0.47,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-4.7",
+        "name": "Anthropic: Claude Opus 4.7",
+        "provider": "anthropic",
+        "task_score": 0.629,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 55,
+          "aa_coding_index": 73.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.914,
+          "hle": 0.423,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -787,197 +981,6 @@
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.616,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.6122,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.604,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": 0.591,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o3-pro",
-        "name": "OpenAI: o3 Pro",
-        "provider": "openai",
-        "task_score": 0.589,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 20.0,
-          "completion": 80.0,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 33.3,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.845,
-          "hle": null,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 43.6
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
-        "provider": "openai",
-        "task_score": 0.5606,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8
-        }
       }
     ],
     "best_math": [
@@ -1007,38 +1010,6 @@
           "livecodebench": null,
           "aime": 0.79,
           "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.8307,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -1075,6 +1046,38 @@
         }
       },
       {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.809,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 34.6,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 91.7,
+          "gpqa": 0.842,
+          "hle": 0.254,
+          "livecodebench": 0.703,
+          "aime": 0.916666666666667,
+          "mmlu_pro": 0.867,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "openai/o3",
         "name": "OpenAI: o3",
         "provider": "openai",
@@ -1107,6 +1110,38 @@
         }
       },
       {
+        "id": "google/gemini-2.5-pro",
+        "name": "Google: Gemini 2.5 Pro",
+        "provider": "google",
+        "task_score": 0.7897,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 25.9,
+          "aa_coding_index": 33.3,
+          "aa_agentic_index": null,
+          "aa_math_index": 87.7,
+          "gpqa": 0.844,
+          "hle": 0.225,
+          "livecodebench": 0.801,
+          "aime": 0.886666666666667,
+          "mmlu_pro": 0.862,
+          "aider_polyglot_pass_rate_1": 46.2
+        }
+      },
+      {
         "id": "openai/o3-mini-high",
         "name": "OpenAI: o3 Mini High",
         "provider": "openai",
@@ -1135,6 +1170,38 @@
           "livecodebench": 0.734,
           "aime": 0.86,
           "mmlu_pro": 0.802,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.2",
+        "name": "OpenAI: GPT-5.2",
+        "provider": "openai",
+        "task_score": 0.7145,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 96.7,
+          "gpqa": 0.864,
+          "hle": 0.267,
+          "livecodebench": 0.894,
+          "aime": null,
+          "mmlu_pro": 0.859,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -1171,110 +1238,15 @@
         }
       },
       {
-        "id": "openai/o1",
-        "name": "OpenAI: o1",
+        "id": "openai/gpt-5-codex:batch",
+        "name": "OpenAI: GPT-5 Codex (batch)",
         "provider": "openai",
-        "task_score": 0.6838,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 15.0,
-          "completion": 60.0,
-          "cache_read": 7.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 23.9,
-          "aa_coding_index": 39.7,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.747,
-          "hle": 0.07,
-          "livecodebench": 0.679,
-          "aime": 0.723333333333333,
-          "mmlu_pro": 0.841,
-          "aider_polyglot_pass_rate_1": 5.8
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1",
-        "name": "DeepSeek: R1",
-        "provider": "deepseek",
-        "task_score": 0.6716,
-        "context": 64000,
-        "price_per_million": {
-          "prompt": 0.7,
-          "completion": 2.5,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 18.6,
-          "aa_coding_index": 24.6,
-          "aa_agentic_index": null,
-          "aa_math_index": 68,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "aime": 0.683333333333333,
-          "mmlu_pro": 0.844,
-          "aider_polyglot_pass_rate_1": 27.1
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.6615,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8
-        }
-      },
-      {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
-        "provider": "openai",
-        "task_score": 0.6495,
+        "task_score": 0.698,
         "context": 400000,
         "price_per_million": {
-          "prompt": 0.25,
-          "completion": 2.0,
-          "cache_read": 0.025
+          "prompt": 0.625,
+          "completion": 5.0,
+          "cache_read": 0.0625
         },
         "capability_flags": [
           "reasoning",
@@ -1285,15 +1257,47 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
+          "aa_intelligence_index": 37,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
+          "aa_math_index": 98.7,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
           "aime": null,
-          "mmlu_pro": 0.837,
+          "mmlu_pro": 0.865,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.1",
+        "name": "OpenAI: GPT-5.1",
+        "provider": "openai",
+        "task_score": 0.6865,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 37.5,
+          "aa_coding_index": 49.4,
+          "aa_agentic_index": null,
+          "aa_math_index": 94,
+          "gpqa": 0.873,
+          "hle": 0.285,
+          "livecodebench": 0.868,
+          "aime": null,
+          "mmlu_pro": 0.87,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -1332,14 +1336,78 @@
         }
       },
       {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
+        "id": "xiaomi/mimo-v2.5-pro",
+        "name": "Xiaomi: MiMo-V2.5-Pro",
+        "provider": "xiaomi",
+        "task_score": 0.7986,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 0.435,
+          "completion": 0.87,
+          "cache_read": 0.0036
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 42.9,
+          "aa_coding_index": 60.2,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.866,
+          "hle": 0.357,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.2-codex",
+        "name": "OpenAI: GPT-5.2-Codex",
         "provider": "openai",
-        "task_score": 0.7544,
+        "task_score": 0.7762,
         "context": 400000,
         "price_per_million": {
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 41.2,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.899,
+          "hle": 0.357,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite-preview",
+        "name": "Google: Gemini 3.1 Flash Lite Preview",
+        "provider": "google",
+        "task_score": 0.7721,
+        "context": 1048576,
+        "price_per_million": {
           "prompt": 0.25,
-          "completion": 2.0,
+          "completion": 1.5,
           "cache_read": 0.025
         },
         "capability_flags": [
@@ -1351,91 +1419,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
+          "aa_intelligence_index": 25.6,
+          "aa_coding_index": 34.7,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
+          "aa_math_index": null,
+          "gpqa": 0.822,
+          "hle": 0.172,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.837,
+          "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.7306,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
-          "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.7231,
-        "context": 204800,
-        "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 28.9,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
-        "provider": "openai",
-        "task_score": 0.7143,
-        "context": 200000,
+        "id": "google/gemini-3.1-pro-preview",
+        "name": "Google: Gemini 3.1 Pro Preview",
+        "provider": "google",
+        "task_score": 0.7714,
+        "context": 1048576,
         "price_per_million": {
           "prompt": 2.0,
-          "completion": 8.0,
-          "cache_read": 0.5
+          "completion": 12.0,
+          "cache_read": 0.2
         },
         "capability_flags": [
           "reasoning",
@@ -1446,44 +1451,12 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8
-        }
-      },
-      {
-        "id": "upstage/solar-pro-3",
-        "name": "Upstage: Solar Pro 3",
-        "provider": "upstage",
-        "task_score": 0.712,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.15,
-          "completion": 0.6,
-          "cache_read": 0.015
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 14.5,
-          "aa_coding_index": 16.2,
+          "aa_intelligence_index": 47.7,
+          "aa_coding_index": 68.8,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.724,
-          "hle": 0.103,
+          "gpqa": 0.941,
+          "hle": 0.47,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1491,15 +1464,15 @@
         }
       },
       {
-        "id": "openai/o1",
-        "name": "OpenAI: o1",
-        "provider": "openai",
-        "task_score": 0.7034,
-        "context": 200000,
+        "id": "google/gemini-3.5-flash",
+        "name": "Google: Gemini 3.5 Flash",
+        "provider": "google",
+        "task_score": 0.7633,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 15.0,
-          "completion": 60.0,
-          "cache_read": 7.5
+          "prompt": 1.5,
+          "completion": 9.0,
+          "cache_read": 0.15
         },
         "capability_flags": [
           "reasoning",
@@ -1510,44 +1483,12 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 23.9,
-          "aa_coding_index": 39.7,
+          "aa_intelligence_index": 52,
+          "aa_coding_index": 70.1,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.747,
-          "hle": 0.07,
-          "livecodebench": 0.679,
-          "aime": 0.723333333333333,
-          "mmlu_pro": 0.841,
-          "aider_polyglot_pass_rate_1": 5.8
-        }
-      },
-      {
-        "id": "inception/mercury-2",
-        "name": "Inception: Mercury 2",
-        "provider": "inception",
-        "task_score": 0.698,
-        "context": 128000,
-        "price_per_million": {
-          "prompt": 0.25,
-          "completion": 0.75,
-          "cache_read": 0.025
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 21.9,
-          "aa_coding_index": 31.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.77,
-          "hle": 0.171,
+          "gpqa": 0.922,
+          "hle": 0.427,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1555,15 +1496,47 @@
         }
       },
       {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
+        "id": "openai/gpt-5.4-nano",
+        "name": "OpenAI: GPT-5.4 Nano",
         "provider": "openai",
-        "task_score": 0.6898,
-        "context": 131072,
+        "task_score": 0.7592,
+        "context": 400000,
         "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
+          "prompt": 0.2,
+          "completion": 1.25,
+          "cache_read": 0.02
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 39.7,
+          "aa_coding_index": 56.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.817,
+          "hle": 0.283,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2.7",
+        "name": "MiniMax: MiniMax M2.7",
+        "provider": "minimax",
+        "task_score": 0.7571,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
         },
         "capability_flags": [
           "reasoning",
@@ -1574,28 +1547,28 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": 52.6,
           "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
+          "aa_math_index": null,
+          "gpqa": 0.874,
+          "hle": 0.296,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
+        "id": "openai/gpt-5.3-codex",
+        "name": "OpenAI: GPT-5.3-Codex",
         "provider": "openai",
-        "task_score": 0.6871,
-        "context": 200000,
+        "task_score": 0.7537,
+        "context": 400000,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
         },
         "capability_flags": [
           "reasoning",
@@ -1606,15 +1579,47 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 26.1,
+          "aa_intelligence_index": 45.5,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
+          "aa_math_index": null,
+          "gpqa": 0.915,
+          "hle": 0.425,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5-codex:batch",
+        "name": "OpenAI: GPT-5 Codex (batch)",
+        "provider": "openai",
+        "task_score": 0.7415,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 0.625,
+          "completion": 5.0,
+          "cache_read": 0.0625
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 37,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 98.7,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
+          "aime": null,
+          "mmlu_pro": 0.865,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -1653,38 +1658,6 @@
         }
       },
       {
-        "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash 0423",
-        "provider": "deepseek",
-        "task_score": 0.6045,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 0.06146,
-          "completion": 0.12292,
-          "cache_read": 0.012292
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 51.8,
-          "aa_coding_index": 69.1,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
         "provider": "minimax",
@@ -1717,15 +1690,15 @@
         }
       },
       {
-        "id": "tencent/hy3",
-        "name": "Tencent: Hy3",
-        "provider": "tencent",
-        "task_score": 0.505,
-        "context": 262144,
+        "id": "xiaomi/mimo-v2.5-pro",
+        "name": "Xiaomi: MiMo-V2.5-Pro",
+        "provider": "xiaomi",
+        "task_score": 0.5155,
+        "context": 1050000,
         "price_per_million": {
-          "prompt": 0.132,
-          "completion": 0.528,
-          "cache_read": 0.033
+          "prompt": 0.435,
+          "completion": 0.87,
+          "cache_read": 0.0036
         },
         "capability_flags": [
           "reasoning",
@@ -1736,12 +1709,44 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 42.2,
-          "aa_coding_index": 58.8,
+          "aa_intelligence_index": 42.9,
+          "aa_coding_index": 60.2,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.897,
-          "hle": 0.335,
+          "gpqa": 0.866,
+          "hle": 0.357,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2.7",
+        "name": "MiniMax: MiniMax M2.7",
+        "provider": "minimax",
+        "task_score": 0.4575,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": 52.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.874,
+          "hle": 0.296,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1780,172 +1785,15 @@
         }
       },
       {
-        "id": "minimax/minimax-m2",
-        "name": "MiniMax: MiniMax M2",
-        "provider": "minimax",
-        "task_score": 0.289,
-        "context": 204800,
+        "id": "stepfun/step-3.7-flash",
+        "name": "StepFun: Step 3.7 Flash",
+        "provider": "stepfun",
+        "task_score": 0.3525,
+        "context": 262144,
         "price_per_million": {
-          "prompt": 0.255,
-          "completion": 1.02,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 28.9,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 78.3,
-          "gpqa": 0.777,
-          "hle": 0.137,
-          "livecodebench": 0.826,
-          "aime": null,
-          "mmlu_pro": 0.82,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.2725,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1",
-        "name": "DeepSeek: R1",
-        "provider": "deepseek",
-        "task_score": 0.216,
-        "context": 64000,
-        "price_per_million": {
-          "prompt": 0.7,
-          "completion": 2.5,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 18.6,
-          "aa_coding_index": 24.6,
-          "aa_agentic_index": null,
-          "aa_math_index": 68,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "aime": 0.683333333333333,
-          "mmlu_pro": 0.844,
-          "aider_polyglot_pass_rate_1": 27.1
-        }
-      },
-      {
-        "id": "openai/gpt-oss-20b",
-        "name": "OpenAI: gpt-oss-20b",
-        "provider": "openai",
-        "task_score": 0.1795,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.13,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 15.2,
-          "aa_coding_index": 20.7,
-          "aa_agentic_index": null,
-          "aa_math_index": 89.3,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
-          "aime": null,
-          "mmlu_pro": 0.748,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "deepseek/deepseek-r1-distill-llama-70b",
-        "name": "DeepSeek: R1 Distill Llama 70B",
-        "provider": "deepseek",
-        "task_score": 0.098,
-        "context": 8192,
-        "price_per_million": {
-          "prompt": 0.8,
-          "completion": 0.8,
-          "cache_read": null
-        },
-        "capability_flags": [
-          "reasoning"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 9.8,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 53.7,
-          "gpqa": 0.402,
-          "hle": 0.051,
-          "livecodebench": 0.266,
-          "aime": 0.67,
-          "mmlu_pro": 0.795,
-          "aider_polyglot_pass_rate_1": null
-        }
-      }
-    ],
-    "best_vision": [
-      {
-        "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
-        "provider": "anthropic",
-        "task_score": 0.7055,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 25.0,
-          "cache_read": 0.5
+          "prompt": 0.2,
+          "completion": 1.15,
+          "cache_read": 0.04
         },
         "capability_flags": [
           "reasoning",
@@ -1954,20 +1802,149 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": false,
+        "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 63.1,
-          "aa_coding_index": 78,
+          "aa_intelligence_index": 30.9,
+          "aa_coding_index": 39.6,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
+          "gpqa": 0.809,
+          "hle": 0.214,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
+      {
+        "id": "minimax/minimax-m2.5",
+        "name": "MiniMax: MiniMax M2.5",
+        "provider": "minimax",
+        "task_score": 0.345,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.22,
+          "completion": 0.9,
+          "cache_read": 0.05
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 34.5,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.848,
+          "hle": 0.205,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "tencent/hy3-preview",
+        "name": "Tencent: Hy3 preview",
+        "provider": "tencent",
+        "task_score": 0.344,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.18,
+          "completion": 0.6,
+          "cache_read": 0.06
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 34.4,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.867,
+          "hle": 0.278,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "minimax/minimax-m2.1",
+        "name": "MiniMax: MiniMax M2.1",
+        "provider": "minimax",
+        "task_score": 0.321,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.3,
+          "completion": 1.2,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 32.1,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 82.7,
+          "gpqa": 0.83,
+          "hle": 0.232,
+          "livecodebench": 0.81,
+          "aime": null,
+          "mmlu_pro": 0.875,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.293,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.06146,
+          "completion": 0.12292,
+          "cache_read": 0.012292
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 29.3,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.716,
+          "hle": 0.078,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      }
+    ],
+    "best_vision": [
       {
         "id": "anthropic/claude-fable-5",
         "name": "Anthropic: Claude Fable 5",
@@ -2001,15 +1978,15 @@
         }
       },
       {
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "provider": "anthropic",
-        "task_score": 0.634,
-        "context": 1000000,
+        "id": "openai/gpt-5-codex:batch",
+        "name": "OpenAI: GPT-5 Codex (batch)",
+        "provider": "openai",
+        "task_score": 0.6785,
+        "context": 400000,
         "price_per_million": {
-          "prompt": 2.0,
-          "completion": 10.0,
-          "cache_read": 0.2
+          "prompt": 0.625,
+          "completion": 5.0,
+          "cache_read": 0.0625
         },
         "capability_flags": [
           "reasoning",
@@ -2020,59 +1997,59 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 55.3,
-          "aa_coding_index": 71.5,
+          "aa_intelligence_index": 37,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
-          "livecodebench": null,
+          "aa_math_index": 98.7,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
           "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": 22.2
-        }
-      },
-      {
-        "id": "anthropic/claude-opus-5-fast",
-        "name": "Claude Opus 5 (Fast)",
-        "provider": "anthropic",
-        "task_score": 0.597,
-        "context": 1000000,
-        "price_per_million": {
-          "prompt": 10.0,
-          "completion": 50.0,
-          "cache_read": 1.0
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 52.5,
-          "aa_coding_index": 66.9,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
+          "mmlu_pro": 0.865,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/o3",
-        "name": "OpenAI: o3",
+        "id": "openai/gpt-5.2",
+        "name": "OpenAI: GPT-5.2",
         "provider": "openai",
-        "task_score": 0.597,
-        "context": 200000,
+        "task_score": 0.678,
+        "context": 400000,
         "price_per_million": {
-          "prompt": 2.0,
-          "completion": 8.0,
+          "prompt": 1.75,
+          "completion": 14.0,
+          "cache_read": 0.175
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 38.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 96.7,
+          "gpqa": 0.864,
+          "hle": 0.267,
+          "livecodebench": 0.894,
+          "aime": null,
+          "mmlu_pro": 0.859,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.6-sol",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "provider": "openai",
+        "task_score": 0.6725,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -2084,28 +2061,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 31.1,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 77.2,
           "aa_agentic_index": null,
-          "aa_math_index": 88.3,
-          "gpqa": 0.827,
-          "hle": 0.201,
-          "livecodebench": 0.808,
-          "aime": 0.903333333333333,
-          "mmlu_pro": 0.853,
-          "aider_polyglot_pass_rate_1": 34.8
+          "aa_math_index": null,
+          "gpqa": 0.928,
+          "hle": 0.46,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/o4-mini",
-        "name": "OpenAI: o4 Mini",
-        "provider": "openai",
-        "task_score": 0.584,
-        "context": 200000,
+        "id": "google/gemini-3.7-flash",
+        "name": "Google: Gemini 3.7 Flash",
+        "provider": "google",
+        "task_score": 0.6605,
+        "context": 1048576,
         "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.275
+          "prompt": 0.375,
+          "completion": 1.875,
+          "cache_read": 0.0375
         },
         "capability_flags": [
           "reasoning",
@@ -2116,23 +2093,55 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 26.1,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 56,
+          "aa_coding_index": 76.1,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.784,
-          "hle": 0.165,
-          "livecodebench": 0.859,
-          "aime": 0.94,
-          "mmlu_pro": 0.832,
+          "aa_math_index": null,
+          "gpqa": 0.945,
+          "hle": 0.479,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
+        "id": "anthropic/claude-opus-4.8",
+        "name": "Anthropic: Claude Opus 4.8",
+        "provider": "anthropic",
+        "task_score": 0.658,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 57.3,
+          "aa_coding_index": 74.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.92,
+          "hle": 0.487,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-5.1-codex-max",
+        "name": "OpenAI: GPT-5.1-Codex-Max",
         "provider": "openai",
-        "task_score": 0.558,
+        "task_score": 0.6565,
         "context": 400000,
         "price_per_million": {
           "prompt": 1.25,
@@ -2148,28 +2157,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 35.3,
-          "aa_coding_index": 37.8,
+          "aa_intelligence_index": 35.6,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 94.3,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "aime": 0.956666666666667,
-          "mmlu_pro": 0.871,
+          "aa_math_index": 95.7,
+          "gpqa": 0.86,
+          "hle": 0.257,
+          "livecodebench": 0.849,
+          "aime": null,
+          "mmlu_pro": 0.86,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "minimax/minimax-m3",
-        "name": "MiniMax: MiniMax M3",
-        "provider": "minimax",
-        "task_score": 0.52,
+        "id": "meta/muse-spark-1.2",
+        "name": "Meta: Muse Spark 1.2",
+        "provider": "meta",
+        "task_score": 0.645,
         "context": 1048576,
         "price_per_million": {
-          "prompt": 0.3,
-          "completion": 1.2,
-          "cache_read": 0.06
+          "prompt": 1.25,
+          "completion": 4.25,
+          "cache_read": 0.15
         },
         "capability_flags": [
           "reasoning",
@@ -2178,14 +2187,14 @@
           "caching"
         ],
         "is_vision": true,
-        "open_weight": true,
+        "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 45.4,
-          "aa_coding_index": 58.6,
+          "aa_intelligence_index": 56.8,
+          "aa_coding_index": 72.2,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.929,
-          "hle": 0.39,
+          "gpqa": 0.904,
+          "hle": 0.455,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2193,15 +2202,15 @@
         }
       },
       {
-        "id": "openai/gpt-5-nano",
-        "name": "OpenAI: GPT-5 Nano",
-        "provider": "openai",
-        "task_score": 0.519,
-        "context": 400000,
+        "id": "anthropic/claude-opus-4.7",
+        "name": "Anthropic: Claude Opus 4.7",
+        "provider": "anthropic",
+        "task_score": 0.643,
+        "context": 1000000,
         "price_per_million": {
-          "prompt": 0.05,
-          "completion": 0.4,
-          "cache_read": 0.005
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -2212,28 +2221,28 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 20.1,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 55,
+          "aa_coding_index": 73.6,
           "aa_agentic_index": null,
-          "aa_math_index": 83.7,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
+          "aa_math_index": null,
+          "gpqa": 0.914,
+          "hle": 0.423,
+          "livecodebench": null,
           "aime": null,
-          "mmlu_pro": 0.78,
+          "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
       },
       {
-        "id": "openai/gpt-5-mini",
-        "name": "OpenAI: GPT-5 Mini",
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
         "provider": "openai",
-        "task_score": 0.4403,
+        "task_score": 0.6315,
         "context": 400000,
         "price_per_million": {
-          "prompt": 0.25,
-          "completion": 2.0,
-          "cache_read": 0.025
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
         },
         "capability_flags": [
           "reasoning",
@@ -2244,15 +2253,15 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 25.8,
-          "aa_coding_index": 15.6,
+          "aa_intelligence_index": 34.6,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 90.7,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
-          "aime": null,
-          "mmlu_pro": 0.837,
+          "aa_math_index": 91.7,
+          "gpqa": 0.842,
+          "hle": 0.254,
+          "livecodebench": 0.703,
+          "aime": 0.916666666666667,
+          "mmlu_pro": 0.867,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -2354,38 +2363,6 @@
         }
       },
       {
-        "id": "openai/gpt-oss-120b",
-        "name": "OpenAI: gpt-oss-120b",
-        "provider": "openai",
-        "task_score": 0.493,
-        "context": 131072,
-        "price_per_million": {
-          "prompt": 0.03,
-          "completion": 0.17,
-          "cache_read": 0.03
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 24.1,
-          "aa_coding_index": 30.4,
-          "aa_agentic_index": null,
-          "aa_math_index": 93.4,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "aime": null,
-          "mmlu_pro": 0.808,
-          "aider_polyglot_pass_rate_1": 13.8
-        }
-      },
-      {
         "id": "upstage/solar-pro4",
         "name": "Upstage: Solar Pro 4",
         "provider": "upstage",
@@ -2421,7 +2398,7 @@
         "id": "openai/gpt-oss-20b",
         "name": "OpenAI: gpt-oss-20b",
         "provider": "openai",
-        "task_score": 0.4173,
+        "task_score": 0.3835,
         "context": 131072,
         "price_per_million": {
           "prompt": 0.03,
@@ -2437,16 +2414,48 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 15.2,
-          "aa_coding_index": 20.7,
+          "aa_intelligence_index": 14.4,
+          "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 89.3,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
+          "aa_math_index": 62.3,
+          "gpqa": 0.611,
+          "hle": 0.053,
+          "livecodebench": 0.652,
           "aime": null,
-          "mmlu_pro": 0.748,
+          "mmlu_pro": 0.718,
           "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "provider": "openai",
+        "task_score": 0.3427,
+        "context": 131072,
+        "price_per_million": {
+          "prompt": 0.03,
+          "completion": 0.17,
+          "cache_read": 0.03
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 14.9,
+          "aa_coding_index": 21.2,
+          "aa_agentic_index": null,
+          "aa_math_index": 66.7,
+          "gpqa": 0.672,
+          "hle": 0.059,
+          "livecodebench": 0.707,
+          "aime": null,
+          "mmlu_pro": 0.775,
+          "aider_polyglot_pass_rate_1": 13.8
         }
       },
       {
@@ -2689,16 +2698,40 @@
         "completion": 1.875,
         "cache_read": 0.0375
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 56,
+          "artificial_analysis_coding_index": 76.1,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.945,
+          "hle": 0.479,
+          "livecodebench": null,
+          "scicode": 0.568,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.8,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.857677902621723,
+          "tau2": null,
+          "tau_banking": 0.327835051546392
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6605,
+        "coding": 0.7609999999999999,
+        "reasoning": 0.6613333333333333,
+        "math": 0.568,
+        "agents": null,
+        "open_weight": 0.6605
+      },
+      "_task": 0.6605,
       "_fallback": 0.5693333333333334,
       "capability_score": 6.832
     },
@@ -3026,6 +3059,29 @@
         "cache_read": 0.04
       },
       "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 23.6,
+          "artificial_analysis_coding_index": 26.8,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.743,
+          "hle": 0.106,
+          "livecodebench": null,
+          "scicode": 0.316,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.553333333333333,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.243445692883895,
+          "tau2": null,
+          "tau_banking": 0.088659793814433
+        },
+        "aa_speed": {
+          "median_tps": 293.071,
+          "ttft_s": 0.782
+        },
         "aider_polyglot": {
           "pass_rate_1": 5.8,
           "pass_rate_2": 12.9,
@@ -3035,14 +3091,14 @@
         }
       },
       "task_scores": {
-        "overall": null,
-        "coding": 0.057999999999999996,
-        "reasoning": null,
-        "math": null,
+        "overall": 0.252,
+        "coding": 0.163,
+        "reasoning": 0.36166666666666664,
+        "math": 0.316,
         "agents": null,
-        "open_weight": null
+        "open_weight": 0.252
       },
-      "_task": null,
+      "_task": 0.252,
       "_fallback": 0.5644166666666667,
       "capability_score": 6.773
     },
@@ -3262,16 +3318,40 @@
         "completion": 4.25,
         "cache_read": 0.15
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 56.8,
+          "artificial_analysis_coding_index": 72.2,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.904,
+          "hle": 0.455,
+          "livecodebench": null,
+          "scicode": 0.564,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.833333333333333,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.801498127340824,
+          "tau2": null,
+          "tau_banking": 0.348453608247423
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.645,
+        "coding": 0.722,
+        "reasoning": 0.6423333333333333,
+        "math": 0.564,
+        "agents": null,
+        "open_weight": 0.645
+      },
+      "_task": 0.645,
       "_fallback": 0.5656666666666667,
       "capability_score": 6.788
     },
@@ -3328,7 +3408,7 @@
       "id": "~deepseek/deepseek-v4-flash-latest",
       "name": "DeepSeek V4 Flash Latest",
       "provider": "~deepseek",
-      "family": "~deepseek/deepseek-v4-flash",
+      "family": "~deepseek/deepseek-v4-flash-latest",
       "source": "openrouter",
       "created_unix": 1785606009,
       "context": 1048576,
@@ -3516,6 +3596,47 @@
         "completion": 50.0,
         "cache_read": 1.0
       },
+      "benchmarks": {},
+      "task_scores": {
+        "overall": null,
+        "coding": null,
+        "reasoning": null,
+        "math": null,
+        "agents": null,
+        "open_weight": null
+      },
+      "_task": null,
+      "_fallback": 0.5561666666666667,
+      "capability_score": 6.674
+    },
+    {
+      "id": "anthropic/claude-opus-5",
+      "name": "Claude Opus 5",
+      "provider": "anthropic",
+      "family": "anthropic/claude-opus-5",
+      "source": "openrouter",
+      "created_unix": 1784912544,
+      "context": 1000000,
+      "modality": "text+image+file->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 5.0,
+        "completion": 25.0,
+        "cache_read": 0.5
+      },
       "benchmarks": {
         "aa": {
           "artificial_analysis_intelligence_index": 52.5,
@@ -3550,71 +3671,6 @@
         "open_weight": 0.597
       },
       "_task": 0.597,
-      "_fallback": 0.5561666666666667,
-      "capability_score": 6.674
-    },
-    {
-      "id": "anthropic/claude-opus-5",
-      "name": "Claude Opus 5",
-      "provider": "anthropic",
-      "family": "anthropic/claude-opus-5",
-      "source": "openrouter",
-      "created_unix": 1784912544,
-      "context": 1000000,
-      "modality": "text+image+file->text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": true,
-      "supports_caching": true,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 5.0,
-        "completion": 25.0,
-        "cache_read": 0.5
-      },
-      "benchmarks": {
-        "aa": {
-          "artificial_analysis_intelligence_index": 63.1,
-          "artificial_analysis_coding_index": 78,
-          "artificial_analysis_math_index": null,
-          "mmlu_pro": null,
-          "gpqa": 0.932,
-          "hle": 0.549,
-          "livecodebench": null,
-          "scicode": 0.557,
-          "math_500": null,
-          "aime": null,
-          "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.756666666666667,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.891385767790262,
-          "tau2": null,
-          "tau_banking": 0.420618556701031
-        },
-        "aa_speed": {
-          "median_tps": 50.447,
-          "ttft_s": 31.923
-        }
-      },
-      "task_scores": {
-        "overall": 0.7055,
-        "coding": 0.78,
-        "reasoning": 0.7040000000000001,
-        "math": 0.557,
-        "agents": null,
-        "open_weight": 0.7055
-      },
-      "_task": 0.7055,
       "_fallback": 0.5561666666666667,
       "capability_score": 6.674
     },
@@ -3834,16 +3890,40 @@
         "completion": 3.75,
         "cache_read": 0.075
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 51.6,
+          "artificial_analysis_coding_index": 69.2,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.928,
+          "hle": 0.408,
+          "livecodebench": null,
+          "scicode": 0.527,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.79,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.775280898876405,
+          "tau2": null,
+          "tau_banking": 0.298969072164948
+        },
+        "aa_speed": {
+          "median_tps": 211.424,
+          "ttft_s": 12.532
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6040000000000001,
+        "coding": 0.6920000000000001,
+        "reasoning": 0.6173333333333333,
+        "math": 0.527,
+        "agents": null,
+        "open_weight": 0.6040000000000001
+      },
+      "_task": 0.6040000000000001,
       "_fallback": 0.5588333333333334,
       "capability_score": 6.706
     },
@@ -3916,16 +3996,40 @@
         "completion": 2.5,
         "cache_read": 0.03
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 37.4,
+          "artificial_analysis_coding_index": 49.3,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.838,
+          "hle": 0.188,
+          "livecodebench": null,
+          "scicode": 0.409,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.746666666666667,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.535580524344569,
+          "tau2": null,
+          "tau_banking": 0.175257731958763
+        },
+        "aa_speed": {
+          "median_tps": 343.73,
+          "ttft_s": 7.329
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.4335,
+        "coding": 0.493,
+        "reasoning": 0.4666666666666666,
+        "math": 0.409,
+        "agents": null,
+        "open_weight": 0.4335
+      },
+      "_task": 0.4335,
       "_fallback": 0.5588333333333334,
       "capability_score": 6.706
     },
@@ -4097,7 +4201,7 @@
       "id": "openrouter/auto-beta",
       "name": "Auto Router (Beta)",
       "provider": "openrouter",
-      "family": "openrouter/auto",
+      "family": "openrouter/auto-beta",
       "source": "openrouter",
       "created_unix": 1784311165,
       "context": 2000000,
@@ -4201,16 +4305,40 @@
         "completion": 4.25,
         "cache_read": 0.15
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 53.2,
+          "artificial_analysis_coding_index": 71.3,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.898,
+          "hle": 0.462,
+          "livecodebench": null,
+          "scicode": 0.582,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.813333333333333,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.779026217228464,
+          "tau2": null,
+          "tau_banking": 0.317525773195876
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6225,
+        "coding": 0.713,
+        "reasoning": 0.6306666666666667,
+        "math": 0.582,
+        "agents": null,
+        "open_weight": 0.6225
+      },
+      "_task": 0.6225,
       "_fallback": 0.5565833333333333,
       "capability_score": 6.679
     },
@@ -4414,16 +4542,40 @@
         "completion": 0.6,
         "cache_read": 0.01
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 47,
+          "artificial_analysis_coding_index": 63.3,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.892,
+          "hle": 0.334,
+          "livecodebench": null,
+          "scicode": 0.507,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": 0.74,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.696629213483146,
+          "tau2": null,
+          "tau_banking": 0.251546391752577
+        },
+        "aa_speed": {
+          "median_tps": 165.495,
+          "ttft_s": 8.011
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.5515,
+        "coding": 0.633,
+        "reasoning": 0.5653333333333334,
+        "math": 0.507,
+        "agents": null,
+        "open_weight": 0.5515
+      },
+      "_task": 0.5515,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -4578,16 +4730,40 @@
         "completion": 6.0,
         "cache_read": 0.1
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 52.8,
+          "artificial_analysis_coding_index": 70.6,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.908,
+          "hle": 0.419,
+          "livecodebench": null,
+          "scicode": 0.516,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.662585034013605,
+          "lcr": 0.75,
+          "terminalbench_hard": 0.628787878787879,
+          "terminalbench_v2_1": 0.801498127340824,
+          "tau2": 0.804093567251462,
+          "tau_banking": 0.296907216494845
+        },
+        "aa_speed": {
+          "median_tps": 111.402,
+          "ttft_s": 8.799
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.617,
+        "coding": 0.706,
+        "reasoning": 0.6183333333333333,
+        "math": 0.516,
+        "agents": 0.662585034013605,
+        "open_weight": 0.617
+      },
+      "_task": 0.617,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -4742,16 +4918,40 @@
         "completion": 30.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 57.3,
+          "artificial_analysis_coding_index": 77.2,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.928,
+          "hle": 0.46,
+          "livecodebench": null,
+          "scicode": 0.569,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.691836734693878,
+          "lcr": 0.753333333333333,
+          "terminalbench_hard": 0.621212121212121,
+          "terminalbench_v2_1": 0.872659176029963,
+          "tau2": 0.833333333333333,
+          "tau_banking": 0.36701030927835
+        },
+        "aa_speed": {
+          "median_tps": 63.506,
+          "ttft_s": 9.608
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6725,
+        "coding": 0.772,
+        "reasoning": 0.6536666666666666,
+        "math": 0.569,
+        "agents": 0.691836734693878,
+        "open_weight": 0.6725
+      },
+      "_task": 0.6725,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -4841,7 +5041,7 @@
       "id": "~x-ai/grok-latest",
       "name": "xAI: Grok Latest",
       "provider": "~x-ai",
-      "family": "~x-ai/grok",
+      "family": "~x-ai/grok-latest",
       "source": "openrouter",
       "created_unix": 1783519360,
       "context": 500000,
@@ -4998,38 +5198,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 42.2,
-          "artificial_analysis_coding_index": 58.8,
+          "artificial_analysis_intelligence_index": 26.6,
+          "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.897,
-          "hle": 0.335,
+          "gpqa": 0.732,
+          "hle": 0.07,
           "livecodebench": null,
-          "scicode": 0.476,
+          "scicode": 0.394,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.746666666666667,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.644194756554307,
-          "tau2": null,
-          "tau_banking": 0.228865979381443
+          "ifbench": 0.479591836734694,
+          "lcr": 0.386666666666667,
+          "terminalbench_hard": 0.318181818181818,
+          "terminalbench_v2_1": null,
+          "tau2": 0.675438596491228,
+          "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 72.98,
-          "ttft_s": 1.791
+          "median_tps": 0.0,
+          "ttft_s": 0.0
         }
       },
       "task_scores": {
-        "overall": 0.505,
-        "coding": 0.588,
-        "reasoning": 0.5513333333333333,
-        "math": 0.476,
-        "agents": null,
-        "open_weight": 0.505
+        "overall": 0.266,
+        "coding": null,
+        "reasoning": 0.35600000000000004,
+        "math": 0.394,
+        "agents": 0.479591836734694,
+        "open_weight": 0.266
       },
-      "_task": 0.505,
+      "_task": 0.266,
       "_fallback": 0.48641666666666666,
       "capability_score": 5.837
     },
@@ -5145,27 +5345,27 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 55.3,
-          "artificial_analysis_coding_index": 71.5,
+          "artificial_analysis_intelligence_index": null,
+          "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.911,
-          "hle": 0.413,
+          "gpqa": null,
+          "hle": null,
           "livecodebench": null,
-          "scicode": 0.536,
+          "scicode": null,
           "math_500": null,
           "aime": null,
           "aime_25": null,
           "ifbench": null,
-          "lcr": 0.77,
+          "lcr": null,
           "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.805243445692884,
+          "terminalbench_v2_1": null,
           "tau2": null,
-          "tau_banking": 0.37319587628866
+          "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 79.985,
-          "ttft_s": 132.838
+          "median_tps": 59.697,
+          "ttft_s": 1.694
         },
         "aider_polyglot": {
           "pass_rate_1": 22.2,
@@ -5176,14 +5376,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.6339999999999999,
-        "coding": 0.46849999999999997,
-        "reasoning": 0.6256666666666667,
-        "math": 0.536,
+        "overall": null,
+        "coding": 0.222,
+        "reasoning": null,
+        "math": null,
         "agents": null,
-        "open_weight": 0.6339999999999999
+        "open_weight": null
       },
-      "_task": 0.6339999999999999,
+      "_task": null,
       "_fallback": 0.5451666666666667,
       "capability_score": 6.542
     },
@@ -5469,16 +5669,40 @@
         "completion": 0.0,
         "cache_read": null
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 20.2,
+          "artificial_analysis_coding_index": 36.5,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.757,
+          "hle": 0.111,
+          "livecodebench": null,
+          "scicode": 0.382,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.575510204081633,
+          "lcr": 0.36,
+          "terminalbench_hard": 0.310606060606061,
+          "terminalbench_v2_1": 0.355805243445693,
+          "tau2": 0.374269005847953,
+          "tau_banking": 0.0639175257731959
+        },
+        "aa_speed": {
+          "median_tps": 26.915,
+          "ttft_s": 0.314
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.2835,
+        "coding": 0.365,
+        "reasoning": 0.3566666666666667,
+        "math": 0.382,
+        "agents": 0.575510204081633,
+        "open_weight": 0.2835
+      },
+      "_task": 0.2835,
       "_fallback": 0.4105833333333333,
       "capability_score": 4.927
     },
@@ -5697,7 +5921,7 @@
       "id": "~anthropic/claude-fable-latest",
       "name": "Anthropic: Claude Fable Latest",
       "provider": "~anthropic",
-      "family": "~anthropic/claude-fable",
+      "family": "~anthropic/claude-fable-latest",
       "source": "openrouter",
       "created_unix": 1781029944,
       "context": 1000000,
@@ -6220,16 +6444,40 @@
         "completion": 1.15,
         "cache_read": 0.04
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 30.9,
+          "artificial_analysis_coding_index": 39.6,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.809,
+          "hle": 0.214,
+          "livecodebench": null,
+          "scicode": 0.4,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.672789115646258,
+          "lcr": 0.696666666666667,
+          "terminalbench_hard": 0.356060606060606,
+          "terminalbench_v2_1": 0.393258426966292,
+          "tau2": 0.985380116959064,
+          "tau_banking": 0.119587628865979
+        },
+        "aa_speed": {
+          "median_tps": 128.384,
+          "ttft_s": 1.667
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.35250000000000004,
+        "coding": 0.396,
+        "reasoning": 0.444,
+        "math": 0.4,
+        "agents": 0.672789115646258,
+        "open_weight": 0.35250000000000004
+      },
+      "_task": 0.35250000000000004,
       "_fallback": 0.4686666666666666,
       "capability_score": 5.624
     },
@@ -6302,16 +6550,40 @@
         "completion": 25.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 57.3,
+          "artificial_analysis_coding_index": 74.3,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.92,
+          "hle": 0.487,
+          "livecodebench": null,
+          "scicode": 0.535,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.622448979591837,
+          "lcr": 0.73,
+          "terminalbench_hard": 0.583333333333333,
+          "terminalbench_v2_1": 0.846441947565543,
+          "tau2": 0.944444444444445,
+          "tau_banking": 0.342268041237113
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6579999999999999,
+        "coding": 0.743,
+        "reasoning": 0.66,
+        "math": 0.535,
+        "agents": 0.622448979591837,
+        "open_weight": 0.6579999999999999
+      },
+      "_task": 0.6579999999999999,
       "_fallback": 0.5296666666666666,
       "capability_score": 6.356
     },
@@ -6466,16 +6738,40 @@
         "completion": 9.0,
         "cache_read": 0.15
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 52,
+          "artificial_analysis_coding_index": 70.1,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.922,
+          "hle": 0.427,
+          "livecodebench": null,
+          "scicode": 0.531,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.763265306122449,
+          "lcr": 0.81,
+          "terminalbench_hard": 0.409090909090909,
+          "terminalbench_v2_1": 0.786516853932584,
+          "tau2": 0.953216374269006,
+          "tau_banking": 0.321649484536082
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6105,
+        "coding": 0.701,
+        "reasoning": 0.6230000000000001,
+        "math": 0.531,
+        "agents": 0.763265306122449,
+        "open_weight": 0.6105
+      },
+      "_task": 0.6105,
       "_fallback": 0.57175,
       "capability_score": 6.861
     },
@@ -6630,16 +6926,40 @@
         "completion": 0.625,
         "cache_read": 0.015
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 31.7,
+          "artificial_analysis_coding_index": 42.8,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.857,
+          "hle": 0.216,
+          "livecodebench": null,
+          "scicode": 0.424,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.445578231292517,
+          "lcr": 0.673333333333333,
+          "terminalbench_hard": 0.287878787878788,
+          "terminalbench_v2_1": 0.430711610486891,
+          "tau2": 0.923976608187135,
+          "tau_banking": 0.179381443298969
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.3725,
+        "coding": 0.428,
+        "reasoning": 0.4633333333333333,
+        "math": 0.424,
+        "agents": 0.445578231292517,
+        "open_weight": 0.3725
+      },
+      "_task": 0.3725,
       "_fallback": 0.4595,
       "capability_score": 5.514
     },
@@ -6729,7 +7049,7 @@
       "id": "openai/gpt-chat-latest",
       "name": "OpenAI: GPT Chat Latest",
       "provider": "openai",
-      "family": "openai/gpt-chat",
+      "family": "openai/gpt-chat-latest",
       "source": "openrouter",
       "created_unix": 1778000212,
       "context": 400000,
@@ -6942,7 +7262,7 @@
       "id": "~anthropic/claude-haiku-latest",
       "name": "Anthropic Claude Haiku Latest",
       "provider": "~anthropic",
-      "family": "~anthropic/claude-haiku",
+      "family": "~anthropic/claude-haiku-latest",
       "source": "openrouter",
       "created_unix": 1777318492,
       "context": 200000,
@@ -6983,7 +7303,7 @@
       "id": "~openai/gpt-mini-latest",
       "name": "OpenAI GPT Mini Latest",
       "provider": "~openai",
-      "family": "~openai/gpt-mini",
+      "family": "~openai/gpt-mini-latest",
       "source": "openrouter",
       "created_unix": 1777318471,
       "context": 400000,
@@ -7024,7 +7344,7 @@
       "id": "~google/gemini-pro-latest",
       "name": "Google Gemini Pro Latest",
       "provider": "~google",
-      "family": "~google/gemini-pro",
+      "family": "~google/gemini-pro-latest",
       "source": "openrouter",
       "created_unix": 1777318451,
       "context": 1048576,
@@ -7065,7 +7385,7 @@
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
       "provider": "~moonshotai",
-      "family": "~moonshotai/kimi",
+      "family": "~moonshotai/kimi-latest",
       "source": "openrouter",
       "created_unix": 1777318428,
       "context": 1048576,
@@ -7106,7 +7426,7 @@
       "id": "~google/gemini-flash-latest",
       "name": "Google Gemini Flash Latest",
       "provider": "~google",
-      "family": "~google/gemini-flash",
+      "family": "~google/gemini-flash-latest",
       "source": "openrouter",
       "created_unix": 1777318398,
       "context": 1048576,
@@ -7147,7 +7467,7 @@
       "id": "~anthropic/claude-sonnet-latest",
       "name": "Anthropic Claude Sonnet Latest",
       "provider": "~anthropic",
-      "family": "~anthropic/claude-sonnet",
+      "family": "~anthropic/claude-sonnet-latest",
       "source": "openrouter",
       "created_unix": 1777318368,
       "context": 1000000,
@@ -7188,7 +7508,7 @@
       "id": "~openai/gpt-latest",
       "name": "OpenAI GPT Latest",
       "provider": "~openai",
-      "family": "~openai/gpt",
+      "family": "~openai/gpt-latest",
       "source": "openrouter",
       "created_unix": 1777318334,
       "context": 1050000,
@@ -7352,7 +7672,7 @@
       "id": "qwen/qwen3.6-max-preview",
       "name": "Qwen: Qwen3.6 Max Preview",
       "provider": "qwen",
-      "family": "qwen/qwen3.6-max",
+      "family": "qwen/qwen3.6-max-preview",
       "source": "openrouter",
       "created_unix": 1777260242,
       "context": 262144,
@@ -7458,7 +7778,31 @@
         "completion": 180.0,
         "cache_read": null
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": null,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "scicode": null,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": null,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": null,
+          "tau2": null,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
+      },
       "task_scores": {
         "overall": null,
         "coding": null,
@@ -7540,16 +7884,40 @@
         "completion": 30.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 44.5,
+          "artificial_analysis_coding_index": 60.9,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.91,
+          "hle": 0.327,
+          "livecodebench": null,
+          "scicode": 0.516,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.643537414965986,
+          "lcr": 0.776666666666667,
+          "terminalbench_hard": 0.522727272727273,
+          "terminalbench_v2_1": 0.655430711610487,
+          "tau2": 0.839181286549708,
+          "tau_banking": 0.249484536082474
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.527,
+        "coding": 0.609,
+        "reasoning": 0.5606666666666666,
+        "math": 0.516,
+        "agents": 0.643537414965986,
+        "open_weight": 0.527
+      },
+      "_task": 0.527,
       "_fallback": 0.5604166666666667,
       "capability_score": 6.725
     },
@@ -7689,38 +8057,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 51.8,
-          "artificial_analysis_coding_index": 69.1,
+          "artificial_analysis_intelligence_index": 29.3,
+          "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.908,
-          "hle": 0.386,
+          "gpqa": 0.716,
+          "hle": 0.078,
           "livecodebench": null,
-          "scicode": 0.499,
+          "scicode": 0.373,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": null,
-          "lcr": 0.743333333333333,
-          "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.786516853932584,
-          "tau2": null,
-          "tau_banking": 0.393814432989691
+          "ifbench": 0.472108843537415,
+          "lcr": 0.373333333333333,
+          "terminalbench_hard": 0.340909090909091,
+          "terminalbench_v2_1": null,
+          "tau2": 0.944444444444445,
+          "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 115.123,
-          "ttft_s": 0.834
+          "median_tps": 0.0,
+          "ttft_s": 0.0
         }
       },
       "task_scores": {
-        "overall": 0.6045,
-        "coding": 0.691,
-        "reasoning": 0.6040000000000001,
-        "math": 0.499,
-        "agents": null,
-        "open_weight": 0.6045
+        "overall": 0.293,
+        "coding": null,
+        "reasoning": 0.36233333333333334,
+        "math": 0.373,
+        "agents": 0.472108843537415,
+        "open_weight": 0.293
       },
-      "_task": 0.6045,
+      "_task": 0.293,
       "_fallback": 0.5186666666666667,
       "capability_score": 6.224
     },
@@ -7752,16 +8120,40 @@
         "completion": 0.625,
         "cache_read": 0.015
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 26.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.752,
+          "hle": 0.087,
+          "livecodebench": null,
+          "scicode": 0.37,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.568707482993197,
+          "lcr": 0.38,
+          "terminalbench_hard": 0.310606060606061,
+          "terminalbench_v2_1": null,
+          "tau2": 0.89766081871345,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.266,
+        "coding": null,
+        "reasoning": 0.36833333333333335,
+        "math": 0.37,
+        "agents": 0.568707482993197,
+        "open_weight": 0.266
+      },
+      "_task": 0.568707482993197,
       "_fallback": 0.286,
       "capability_score": 3.432
     },
@@ -7769,7 +8161,7 @@
       "id": "tencent/hy3-preview",
       "name": "Tencent: Hy3 preview",
       "provider": "tencent",
-      "family": "tencent/hy3",
+      "family": "tencent/hy3-preview",
       "source": "openrouter",
       "created_unix": 1776878150,
       "context": 262144,
@@ -7858,16 +8250,40 @@
         "completion": 0.87,
         "cache_read": 0.0036
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 42.9,
+          "artificial_analysis_coding_index": 60.2,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.866,
+          "hle": 0.357,
+          "livecodebench": null,
+          "scicode": 0.502,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.798639455782313,
+          "lcr": 0.776666666666667,
+          "terminalbench_hard": 0.431818181818182,
+          "terminalbench_v2_1": 0.651685393258427,
+          "tau2": 0.941520467836257,
+          "tau_banking": 0.0989690721649484
+        },
+        "aa_speed": {
+          "median_tps": 53.295,
+          "ttft_s": 2.39
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.5155,
+        "coding": 0.602,
+        "reasoning": 0.5506666666666666,
+        "math": 0.502,
+        "agents": 0.798639455782313,
+        "open_weight": 0.5155
+      },
+      "_task": 0.5155,
       "_fallback": 0.5178333333333334,
       "capability_score": 6.214
     },
@@ -7981,16 +8397,40 @@
         "completion": 0.03,
         "cache_read": 0.002
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 14.2,
+          "artificial_analysis_coding_index": 25.3,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.593,
+          "hle": 0.063,
+          "livecodebench": null,
+          "scicode": 0.271,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.574149659863946,
+          "lcr": 0.28,
+          "terminalbench_hard": 0.212121212121212,
+          "terminalbench_v2_1": 0.243445692883895,
+          "tau2": 0.859649122807018,
+          "tau_banking": 0.0288659793814433
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.1975,
+        "coding": 0.253,
+        "reasoning": 0.266,
+        "math": 0.271,
+        "agents": 0.574149659863946,
+        "open_weight": 0.1975
+      },
+      "_task": 0.574149659863946,
       "_fallback": 0.2850833333333333,
       "capability_score": 3.421
     },
@@ -7998,7 +8438,7 @@
       "id": "~anthropic/claude-opus-latest",
       "name": "Anthropic: Claude Opus Latest",
       "provider": "~anthropic",
-      "family": "~anthropic/claude-opus",
+      "family": "~anthropic/claude-opus-latest",
       "source": "openrouter",
       "created_unix": 1776795361,
       "context": 1000000,
@@ -8143,16 +8583,40 @@
         "completion": 25.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 55,
+          "artificial_analysis_coding_index": 73.6,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.914,
+          "hle": 0.423,
+          "livecodebench": null,
+          "scicode": 0.545,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.586394557823129,
+          "lcr": 0.753333333333333,
+          "terminalbench_hard": 0.515151515151515,
+          "terminalbench_v2_1": 0.831460674157303,
+          "tau2": 0.885964912280702,
+          "tau_banking": 0.34639175257732
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.643,
+        "coding": 0.736,
+        "reasoning": 0.629,
+        "math": 0.545,
+        "agents": 0.586394557823129,
+        "open_weight": 0.643
+      },
+      "_task": 0.643,
       "_fallback": 0.511,
       "capability_score": 6.132
     },
@@ -8611,7 +9075,7 @@
       "id": "google/lyria-3-pro-preview",
       "name": "Google: Lyria 3 Pro Preview",
       "provider": "google",
-      "family": "google/lyria-3-pro",
+      "family": "google/lyria-3-pro-preview",
       "source": "openrouter",
       "created_unix": 1774907286,
       "context": 1048576,
@@ -8652,7 +9116,7 @@
       "id": "google/lyria-3-clip-preview",
       "name": "Google: Lyria 3 Clip Preview",
       "provider": "google",
-      "family": "google/lyria-3-clip",
+      "family": "google/lyria-3-clip-preview",
       "source": "openrouter",
       "created_unix": 1774907255,
       "context": 1048576,
@@ -8693,7 +9157,7 @@
       "id": "kwaipilot/kat-coder-pro-v2",
       "name": "Kwaipilot: KAT-Coder-Pro V2",
       "provider": "kwaipilot",
-      "family": "kwaipilot/kat-coder-pro",
+      "family": "kwaipilot/kat-coder-pro-v2",
       "source": "openrouter",
       "created_unix": 1774649310,
       "context": 262144,
@@ -8799,16 +9263,40 @@
         "completion": 1.2,
         "cache_read": 0.06
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 38.9,
+          "artificial_analysis_coding_index": 52.6,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.874,
+          "hle": 0.296,
+          "livecodebench": null,
+          "scicode": 0.47,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.757142857142857,
+          "lcr": 0.753333333333333,
+          "terminalbench_hard": 0.393939393939394,
+          "terminalbench_v2_1": 0.554307116104869,
+          "tau2": 0.847953216374269,
+          "tau_banking": 0.0989690721649484
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.4575,
+        "coding": 0.526,
+        "reasoning": 0.5196666666666666,
+        "math": 0.47,
+        "agents": 0.757142857142857,
+        "open_weight": 0.4575
+      },
+      "_task": 0.4575,
       "_fallback": 0.4314166666666666,
       "capability_score": 5.177
     },
@@ -8840,16 +9328,40 @@
         "completion": 1.25,
         "cache_read": 0.02
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 39.7,
+          "artificial_analysis_coding_index": 56.1,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.817,
+          "hle": 0.283,
+          "livecodebench": null,
+          "scicode": 0.469,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.759183673469388,
+          "lcr": 0.72,
+          "terminalbench_hard": 0.424242424242424,
+          "terminalbench_v2_1": 0.606741573033708,
+          "tau2": 0.760233918128655,
+          "tau_banking": 0.274226804123711
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.47900000000000004,
+        "coding": 0.561,
+        "reasoning": 0.49899999999999994,
+        "math": 0.469,
+        "agents": 0.759183673469388,
+        "open_weight": 0.47900000000000004
+      },
+      "_task": 0.47900000000000004,
       "_fallback": 0.48891666666666667,
       "capability_score": 5.867
     },
@@ -8922,16 +9434,40 @@
         "completion": 4.5,
         "cache_read": 0.075
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 16.8,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.606,
+          "hle": 0.059,
+          "livecodebench": null,
+          "scicode": 0.396,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.38843537414966,
+          "lcr": 0.346666666666667,
+          "terminalbench_hard": 0.181818181818182,
+          "terminalbench_v2_1": null,
+          "tau2": 0.233918128654971,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.168,
+        "coding": null,
+        "reasoning": 0.2776666666666667,
+        "math": 0.396,
+        "agents": 0.38843537414966,
+        "open_weight": 0.168
+      },
+      "_task": 0.168,
       "_fallback": 0.48891666666666667,
       "capability_score": 5.867
     },
@@ -9250,7 +9786,31 @@
         "completion": 180.0,
         "cache_read": null
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": null,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "scicode": null,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": null,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": null,
+          "tau2": null,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
+      },
       "task_scores": {
         "overall": null,
         "coding": null,
@@ -9332,16 +9892,40 @@
         "completion": 15.0,
         "cache_read": 0.25
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 53.1,
+          "artificial_analysis_coding_index": 71.1,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.92,
+          "hle": 0.437,
+          "livecodebench": null,
+          "scicode": 0.566,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.739455782312925,
+          "lcr": 0.776666666666667,
+          "terminalbench_hard": 0.575757575757576,
+          "terminalbench_v2_1": 0.782771535580524,
+          "tau2": 0.871345029239766,
+          "tau_banking": 0.395876288659794
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.621,
+        "coding": 0.711,
+        "reasoning": 0.6293333333333334,
+        "math": 0.566,
+        "agents": 0.739455782312925,
+        "open_weight": 0.621
+      },
+      "_task": 0.621,
       "_fallback": 0.4959166666666666,
       "capability_score": 5.951
     },
@@ -9455,7 +10039,7 @@
       "id": "google/gemini-3.1-flash-lite-preview",
       "name": "Google: Gemini 3.1 Flash Lite Preview",
       "provider": "google",
-      "family": "google/gemini-3.1-flash-lite",
+      "family": "google/gemini-3.1-flash-lite-preview",
       "source": "openrouter",
       "created_unix": 1772512673,
       "context": 1048576,
@@ -9479,16 +10063,40 @@
         "completion": 1.5,
         "cache_read": 0.025
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 25.6,
+          "artificial_analysis_coding_index": 34.7,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.822,
+          "hle": 0.172,
+          "livecodebench": null,
+          "scicode": 0.419,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.772108843537415,
+          "lcr": 0.713333333333333,
+          "terminalbench_hard": 0.242424242424242,
+          "terminalbench_v2_1": 0.310861423220974,
+          "tau2": 0.312865497076023,
+          "tau_banking": 0.0969072164948454
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.3015,
+        "coding": 0.34700000000000003,
+        "reasoning": 0.4166666666666666,
+        "math": 0.419,
+        "agents": 0.772108843537415,
+        "open_weight": 0.3015
+      },
+      "_task": 0.3015,
       "_fallback": 0.49491666666666667,
       "capability_score": 5.939
     },
@@ -9537,7 +10145,7 @@
       "id": "google/gemini-3.1-flash-image-preview",
       "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
       "provider": "google",
-      "family": "google/gemini-3.1-flash-image",
+      "family": "google/gemini-3.1-flash-image-preview",
       "source": "openrouter",
       "created_unix": 1772119558,
       "context": 65536,
@@ -9807,16 +10415,40 @@
         "completion": 14.0,
         "cache_read": 0.175
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 45.5,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.915,
+          "hle": 0.425,
+          "livecodebench": null,
+          "scicode": 0.532,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.753741496598639,
+          "lcr": 0.783333333333333,
+          "terminalbench_hard": 0.53030303030303,
+          "terminalbench_v2_1": null,
+          "tau2": 0.859649122807018,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 130.448,
+          "ttft_s": 36.332
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.455,
+        "coding": null,
+        "reasoning": 0.5983333333333334,
+        "math": 0.532,
+        "agents": 0.753741496598639,
+        "open_weight": 0.455
+      },
+      "_task": 0.455,
       "_fallback": 0.43766666666666665,
       "capability_score": 5.252
     },
@@ -9865,7 +10497,7 @@
       "id": "google/gemini-3.1-pro-preview",
       "name": "Google: Gemini 3.1 Pro Preview",
       "provider": "google",
-      "family": "google/gemini-3.1-pro",
+      "family": "google/gemini-3.1-pro-preview",
       "source": "openrouter",
       "created_unix": 1771509627,
       "context": 1048576,
@@ -9889,16 +10521,40 @@
         "completion": 12.0,
         "cache_read": 0.2
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 47.7,
+          "artificial_analysis_coding_index": 68.8,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.941,
+          "hle": 0.47,
+          "livecodebench": null,
+          "scicode": 0.589,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.771428571428571,
+          "lcr": 0.79,
+          "terminalbench_hard": 0.537878787878788,
+          "terminalbench_v2_1": 0.737827715355805,
+          "tau2": 0.956140350877193,
+          "tau_banking": 0.214432989690722
+        },
+        "aa_speed": {
+          "median_tps": 132.629,
+          "ttft_s": 33.951
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.5825,
+        "coding": 0.688,
+        "reasoning": 0.6293333333333333,
+        "math": 0.589,
+        "agents": 0.771428571428571,
+        "open_weight": 0.5825
+      },
+      "_task": 0.5825,
       "_fallback": 0.48941666666666667,
       "capability_score": 5.873
     },
@@ -9971,16 +10627,40 @@
         "completion": 15.0,
         "cache_read": 0.3
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 36.8,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.799,
+          "hle": 0.133,
+          "livecodebench": null,
+          "scicode": 0.469,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.41156462585034,
+          "lcr": 0.623333333333333,
+          "terminalbench_hard": 0.462121212121212,
+          "terminalbench_v2_1": null,
+          "tau2": 0.795321637426901,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.368,
+        "coding": null,
+        "reasoning": 0.43333333333333335,
+        "math": 0.469,
+        "agents": 0.41156462585034,
+        "open_weight": 0.368
+      },
+      "_task": 0.368,
       "_fallback": 0.4845,
       "capability_score": 5.814
     },
@@ -10135,16 +10815,40 @@
         "completion": 0.9,
         "cache_read": 0.05
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 34.5,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.848,
+          "hle": 0.205,
+          "livecodebench": null,
+          "scicode": 0.426,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.716326530612245,
+          "lcr": 0.72,
+          "terminalbench_hard": 0.348484848484849,
+          "terminalbench_v2_1": null,
+          "tau2": 0.953216374269006,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.345,
+        "coding": null,
+        "reasoning": 0.466,
+        "math": 0.426,
+        "agents": 0.716326530612245,
+        "open_weight": 0.345
+      },
+      "_task": 0.345,
       "_fallback": 0.41591666666666666,
       "capability_score": 4.991
     },
@@ -10258,16 +10962,40 @@
         "completion": 25.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 38.8,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.84,
+          "hle": 0.191,
+          "livecodebench": null,
+          "scicode": 0.457,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.446258503401361,
+          "lcr": 0.623333333333333,
+          "terminalbench_hard": 0.484848484848485,
+          "terminalbench_v2_1": null,
+          "tau2": 0.847953216374269,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.38799999999999996,
+        "coding": null,
+        "reasoning": 0.47300000000000003,
+        "math": 0.457,
+        "agents": 0.446258503401361,
+        "open_weight": 0.38799999999999996
+      },
+      "_task": 0.38799999999999996,
       "_fallback": 0.4785,
       "capability_score": 5.742
     },
@@ -10420,16 +11148,40 @@
         "completion": 0.3,
         "cache_read": null
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 26.5,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.826,
+          "hle": 0.245,
+          "livecodebench": null,
+          "scicode": 0.385,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.66530612244898,
+          "lcr": 0.603333333333333,
+          "terminalbench_hard": 0.325757575757576,
+          "terminalbench_v2_1": null,
+          "tau2": 0.874269005847953,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.265,
+        "coding": null,
+        "reasoning": 0.4453333333333333,
+        "math": 0.385,
+        "agents": 0.66530612244898,
+        "open_weight": 0.265
+      },
+      "_task": 0.265,
       "_fallback": 0.3480833333333333,
       "capability_score": 4.177
     },
@@ -10772,16 +11524,40 @@
         "completion": 14.0,
         "cache_read": 0.175
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 41.2,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": 0.899,
+          "hle": 0.357,
+          "livecodebench": null,
+          "scicode": 0.546,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": 0.776190476190476,
+          "lcr": 0.793333333333333,
+          "terminalbench_hard": 0.371212121212121,
+          "terminalbench_v2_1": null,
+          "tau2": 0.921052631578947,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.41200000000000003,
+        "coding": null,
+        "reasoning": 0.5559999999999999,
+        "math": 0.546,
+        "agents": 0.776190476190476,
+        "open_weight": 0.41200000000000003
+      },
+      "_task": 0.41200000000000003,
       "_fallback": 0.41891666666666666,
       "capability_score": 5.027
     },
@@ -10895,16 +11671,40 @@
         "completion": 1.2,
         "cache_read": 0.03
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 32.1,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 82.7,
+          "mmlu_pro": 0.875,
+          "gpqa": 0.83,
+          "hle": 0.232,
+          "livecodebench": 0.81,
+          "scicode": 0.407,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.826666666666667,
+          "ifbench": 0.698639455782313,
+          "lcr": 0.663333333333333,
+          "terminalbench_hard": 0.287878787878788,
+          "terminalbench_v2_1": null,
+          "tau2": 0.853801169590643,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.5740000000000001,
+        "coding": 0.81,
+        "reasoning": 0.461,
+        "math": 0.617,
+        "agents": 0.698639455782313,
+        "open_weight": 0.321
+      },
+      "_task": 0.5740000000000001,
       "_fallback": 0.39266666666666666,
       "capability_score": 4.712
     },
@@ -10953,7 +11753,7 @@
       "id": "google/gemini-3-flash-preview",
       "name": "Google: Gemini 3 Flash Preview",
       "provider": "google",
-      "family": "google/gemini-3-flash",
+      "family": "google/gemini-3-flash-preview",
       "source": "openrouter",
       "created_unix": 1765987078,
       "context": 1048576,
@@ -11288,16 +12088,40 @@
         "completion": 14.0,
         "cache_read": 0.175
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 38.9,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 96.7,
+          "mmlu_pro": 0.859,
+          "gpqa": 0.864,
+          "hle": 0.267,
+          "livecodebench": 0.894,
+          "scicode": 0.462,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.966666666666667,
+          "ifbench": 0.652380952380953,
+          "lcr": 0.69,
+          "terminalbench_hard": 0.431818181818182,
+          "terminalbench_v2_1": null,
+          "tau2": 0.742690058479532,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.678,
+        "coding": 0.894,
+        "reasoning": 0.5066666666666667,
+        "math": 0.7145,
+        "agents": 0.652380952380953,
+        "open_weight": 0.389
+      },
+      "_task": 0.678,
       "_fallback": 0.403,
       "capability_score": 4.836
     },
@@ -11491,16 +12315,40 @@
         "completion": 10.0,
         "cache_read": 0.125
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 35.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 95.7,
+          "mmlu_pro": 0.86,
+          "gpqa": 0.86,
+          "hle": 0.257,
+          "livecodebench": 0.849,
+          "scicode": 0.402,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.956666666666667,
+          "ifbench": 0.7,
+          "lcr": 0.69,
+          "terminalbench_hard": 0.348484848484849,
+          "terminalbench_v2_1": null,
+          "tau2": 0.830409356725146,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6565000000000001,
+        "coding": 0.849,
+        "reasoning": 0.49099999999999994,
+        "math": 0.6795,
+        "agents": 0.7,
+        "open_weight": 0.35600000000000004
+      },
+      "_task": 0.6565000000000001,
       "_fallback": 0.40025,
       "capability_score": 4.803
     },
@@ -11508,7 +12356,7 @@
       "id": "amazon/nova-2-lite-v1",
       "name": "Amazon: Nova 2 Lite",
       "provider": "amazon",
-      "family": "amazon/nova-2-lite",
+      "family": "amazon/nova-2-lite-v1",
       "source": "openrouter",
       "created_unix": 1764696672,
       "context": 1000000,
@@ -11738,6 +12586,29 @@
         "cache_read": 0.1345
       },
       "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 25.1,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 59,
+          "mmlu_pro": 0.837,
+          "gpqa": 0.751,
+          "hle": 0.112,
+          "livecodebench": 0.593,
+          "scicode": 0.387,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.59,
+          "ifbench": 0.490476190476191,
+          "lcr": 0.426666666666667,
+          "terminalbench_hard": 0.325757575757576,
+          "terminalbench_v2_1": null,
+          "tau2": 0.789473684210526,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        },
         "aider_polyglot": {
           "pass_rate_1": 38.7,
           "pass_rate_2": 70.2,
@@ -11747,14 +12618,14 @@
         }
       },
       "task_scores": {
-        "overall": null,
-        "coding": 0.387,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+        "overall": 0.4205,
+        "coding": 0.49,
+        "reasoning": 0.37133333333333335,
+        "math": 0.4885,
+        "agents": 0.490476190476191,
+        "open_weight": 0.251
       },
-      "_task": null,
+      "_task": 0.4205,
       "_fallback": 0.37916666666666665,
       "capability_score": 4.55
     },
@@ -11786,16 +12657,40 @@
         "completion": 25.0,
         "cache_read": 0.5
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 35.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 62.7,
+          "mmlu_pro": 0.889,
+          "gpqa": 0.81,
+          "hle": 0.132,
+          "livecodebench": 0.738,
+          "scicode": 0.47,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.626666666666667,
+          "ifbench": 0.429931972789116,
+          "lcr": 0.673333333333333,
+          "terminalbench_hard": 0.409090909090909,
+          "terminalbench_v2_1": null,
+          "tau2": 0.862573099415205,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.49150000000000005,
+        "coding": 0.738,
+        "reasoning": 0.4326666666666667,
+        "math": 0.5485,
+        "agents": 0.429931972789116,
+        "open_weight": 0.35600000000000004
+      },
+      "_task": 0.49150000000000005,
       "_fallback": 0.379,
       "capability_score": 4.548
     },
@@ -11893,7 +12788,7 @@
       "id": "google/gemini-3-pro-image-preview",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
       "provider": "google",
-      "family": "google/gemini-3-pro-image",
+      "family": "google/gemini-3-pro-image-preview",
       "source": "openrouter",
       "created_unix": 1763653797,
       "context": 65536,
@@ -11999,16 +12894,40 @@
         "completion": 10.0,
         "cache_read": 0.125
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 37.5,
+          "artificial_analysis_coding_index": 49.4,
+          "artificial_analysis_math_index": 94,
+          "mmlu_pro": 0.87,
+          "gpqa": 0.873,
+          "hle": 0.285,
+          "livecodebench": 0.868,
+          "scicode": 0.433,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.94,
+          "ifbench": 0.728571428571429,
+          "lcr": 0.766666666666667,
+          "terminalbench_hard": 0.454545454545455,
+          "terminalbench_v2_1": 0.524344569288389,
+          "tau2": 0.818713450292398,
+          "tau_banking": 0.158762886597938
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.603,
+        "coding": 0.681,
+        "reasoning": 0.511,
+        "math": 0.6865,
+        "agents": 0.728571428571429,
+        "open_weight": 0.4345
+      },
+      "_task": 0.603,
       "_fallback": 0.39066666666666666,
       "capability_score": 4.688
     },
@@ -12122,16 +13041,40 @@
         "completion": 2.0,
         "cache_read": 0.03
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 31.3,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 91.7,
+          "mmlu_pro": 0.82,
+          "gpqa": 0.813,
+          "hle": 0.185,
+          "livecodebench": 0.836,
+          "scicode": 0.426,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.916666666666667,
+          "ifbench": 0.67891156462585,
+          "lcr": 0.65,
+          "terminalbench_hard": 0.333333333333333,
+          "terminalbench_v2_1": null,
+          "tau2": 0.628654970760234,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.615,
+        "coding": 0.836,
+        "reasoning": 0.437,
+        "math": 0.6715,
+        "agents": 0.67891156462585,
+        "open_weight": 0.313
+      },
+      "_task": 0.615,
       "_fallback": 0.39066666666666666,
       "capability_score": 4.688
     },
@@ -12180,7 +13123,7 @@
       "id": "amazon/nova-premier-v1",
       "name": "Amazon: Nova Premier 1.0",
       "provider": "amazon",
-      "family": "amazon/nova-premier",
+      "family": "amazon/nova-premier-v1",
       "source": "openrouter",
       "created_unix": 1761950332,
       "context": 1000000,
@@ -13114,7 +14057,7 @@
       "id": "deepseek/deepseek-v3.2-exp",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "provider": "deepseek",
-      "family": "deepseek/deepseek-v3.2",
+      "family": "deepseek/deepseek-v3.2-exp",
       "source": "openrouter",
       "created_unix": 1759150481,
       "context": 163840,
@@ -13425,16 +14368,40 @@
         "completion": 5.0,
         "cache_read": 0.0625
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 37,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 98.7,
+          "mmlu_pro": 0.865,
+          "gpqa": 0.837,
+          "hle": 0.278,
+          "livecodebench": 0.84,
+          "scicode": 0.409,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.986666666666667,
+          "ifbench": 0.741496598639456,
+          "lcr": 0.71,
+          "terminalbench_hard": 0.378787878787879,
+          "terminalbench_v2_1": null,
+          "tau2": 0.868421052631579,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.6785,
+        "coding": 0.84,
+        "reasoning": 0.49499999999999994,
+        "math": 0.698,
+        "agents": 0.741496598639456,
+        "open_weight": 0.37
+      },
+      "_task": 0.6785,
       "_fallback": 0.40900000000000003,
       "capability_score": 4.908
     },
@@ -13466,16 +14433,40 @@
         "completion": 0.95,
         "cache_read": 0.13
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 21.7,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 53.7,
+          "mmlu_pro": 0.836,
+          "gpqa": 0.751,
+          "hle": 0.087,
+          "livecodebench": 0.529,
+          "scicode": 0.321,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.536666666666667,
+          "ifbench": 0.412244897959184,
+          "lcr": 0.45,
+          "terminalbench_hard": 0.318181818181818,
+          "terminalbench_v2_1": null,
+          "tau2": 0.371345029239766,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.377,
+        "coding": 0.529,
+        "reasoning": 0.3516666666666666,
+        "math": 0.42900000000000005,
+        "agents": 0.412244897959184,
+        "open_weight": 0.217
+      },
+      "_task": 0.377,
       "_fallback": 0.38891666666666663,
       "capability_score": 4.667
     },
@@ -14115,23 +15106,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 35.3,
-          "artificial_analysis_coding_index": 37.8,
-          "artificial_analysis_math_index": 94.3,
-          "mmlu_pro": 0.871,
-          "gpqa": 0.854,
-          "hle": 0.285,
-          "livecodebench": 0.846,
-          "scicode": 0.429,
-          "math_500": 0.994,
-          "aime": 0.956666666666667,
-          "aime_25": 0.943333333333333,
-          "ifbench": 0.730612244897959,
+          "artificial_analysis_intelligence_index": 34.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 91.7,
+          "mmlu_pro": 0.867,
+          "gpqa": 0.842,
+          "hle": 0.254,
+          "livecodebench": 0.703,
+          "scicode": 0.411,
+          "math_500": 0.991333333333333,
+          "aime": 0.916666666666667,
+          "aime_25": 0.916666666666667,
+          "ifbench": 0.706122448979592,
           "lcr": 0.763333333333333,
-          "terminalbench_hard": 0.325757575757576,
-          "terminalbench_v2_1": 0.352059925093633,
-          "tau2": 0.847953216374269,
-          "tau_banking": 0.220618556701031
+          "terminalbench_hard": 0.378787878787879,
+          "terminalbench_v2_1": null,
+          "tau2": 0.865497076023392,
+          "tau_banking": null
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -14139,14 +15130,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.5579999999999999,
-        "coding": 0.612,
-        "reasoning": 0.6121666666666667,
-        "math": 0.8306666666666668,
-        "agents": 0.730612244897959,
-        "open_weight": 0.36549999999999994
+        "overall": 0.6315000000000001,
+        "coding": 0.703,
+        "reasoning": 0.5896666666666667,
+        "math": 0.809,
+        "agents": 0.706122448979592,
+        "open_weight": 0.34600000000000003
       },
-      "_task": 0.5579999999999999,
+      "_task": 0.6315000000000001,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -14221,23 +15212,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 25.8,
-          "artificial_analysis_coding_index": 15.6,
-          "artificial_analysis_math_index": 90.7,
-          "mmlu_pro": 0.837,
-          "gpqa": 0.828,
-          "hle": 0.215,
-          "livecodebench": 0.838,
-          "scicode": 0.392,
+          "artificial_analysis_intelligence_index": 31.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 85,
+          "mmlu_pro": 0.828,
+          "gpqa": 0.803,
+          "hle": 0.159,
+          "livecodebench": 0.692,
+          "scicode": 0.41,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.906666666666667,
-          "ifbench": 0.754421768707483,
-          "lcr": 0.71,
-          "terminalbench_hard": 0.333333333333333,
-          "terminalbench_v2_1": 0.0374531835205993,
-          "tau2": 0.684210526315789,
-          "tau_banking": 0.154639175257732
+          "aime_25": 0.85,
+          "ifbench": 0.71156462585034,
+          "lcr": 0.696666666666667,
+          "terminalbench_hard": 0.287878787878788,
+          "terminalbench_v2_1": null,
+          "tau2": 0.710526315789474,
+          "tau_banking": null
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -14245,14 +15236,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.4403333333333334,
-        "coding": 0.497,
-        "reasoning": 0.43366666666666664,
-        "math": 0.6495,
-        "agents": 0.754421768707483,
-        "open_weight": 0.20700000000000002
+        "overall": 0.583,
+        "coding": 0.692,
+        "reasoning": 0.426,
+        "math": 0.63,
+        "agents": 0.71156462585034,
+        "open_weight": 0.316
       },
-      "_task": 0.4403333333333334,
+      "_task": 0.583,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -14433,27 +15424,27 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 24.1,
-          "artificial_analysis_coding_index": 30.4,
-          "artificial_analysis_math_index": 93.4,
-          "mmlu_pro": 0.808,
-          "gpqa": 0.782,
-          "hle": 0.196,
-          "livecodebench": 0.878,
-          "scicode": 0.389,
+          "artificial_analysis_intelligence_index": 14.9,
+          "artificial_analysis_coding_index": 21.2,
+          "artificial_analysis_math_index": 66.7,
+          "mmlu_pro": 0.775,
+          "gpqa": 0.672,
+          "hle": 0.059,
+          "livecodebench": 0.707,
+          "scicode": 0.36,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.934416666666667,
-          "ifbench": 0.689795918367347,
-          "lcr": 0.51,
-          "terminalbench_hard": 0.234848484848485,
-          "terminalbench_v2_1": 0.262172284644195,
-          "tau2": 0.657894736842105,
-          "tau_banking": 0.127835051546392
+          "aime_25": 0.666666666666667,
+          "ifbench": 0.582993197278912,
+          "lcr": 0.46,
+          "terminalbench_hard": 0.053030303030303,
+          "terminalbench_v2_1": 0.138576779026217,
+          "tau2": 0.450292397660819,
+          "tau_banking": 0.0288659793814433
         },
         "aa_speed": {
-          "median_tps": 178.041,
-          "ttft_s": 0.498
+          "median_tps": 236.997,
+          "ttft_s": 0.553
         },
         "aider_polyglot": {
           "pass_rate_1": 13.8,
@@ -14464,14 +15455,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.49300000000000005,
-        "coding": 0.43999999999999995,
-        "reasoning": 0.4063333333333334,
-        "math": 0.6615,
-        "agents": 0.689795918367347,
-        "open_weight": 0.2725
+        "overall": 0.3426666666666667,
+        "coding": 0.35233333333333333,
+        "reasoning": 0.2933333333333334,
+        "math": 0.5135000000000001,
+        "agents": 0.582993197278912,
+        "open_weight": 0.1805
       },
-      "_task": 0.49300000000000005,
+      "_task": 0.3426666666666667,
       "_fallback": 0.36925,
       "capability_score": 4.431
     },
@@ -14505,38 +15496,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 15.2,
-          "artificial_analysis_coding_index": 20.7,
-          "artificial_analysis_math_index": 89.3,
-          "mmlu_pro": 0.748,
-          "gpqa": 0.688,
-          "hle": 0.11,
-          "livecodebench": 0.777,
-          "scicode": 0.344,
+          "artificial_analysis_intelligence_index": 14.4,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 62.3,
+          "mmlu_pro": 0.718,
+          "gpqa": 0.611,
+          "hle": 0.053,
+          "livecodebench": 0.652,
+          "scicode": 0.34,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.893333333333333,
-          "ifbench": 0.651020408163265,
-          "lcr": 0.333333333333333,
-          "terminalbench_hard": 0.106060606060606,
-          "terminalbench_v2_1": 0.138576779026217,
-          "tau2": 0.60233918128655,
-          "tau_banking": 0.0701030927835052
+          "aime_25": 0.623333333333333,
+          "ifbench": 0.578231292517007,
+          "lcr": 0.306666666666667,
+          "terminalbench_hard": 0.0454545454545455,
+          "terminalbench_v2_1": null,
+          "tau2": 0.502923976608187,
+          "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 157.1,
-          "ttft_s": 0.572
+          "median_tps": 191.749,
+          "ttft_s": 0.786
         }
       },
       "task_scores": {
-        "overall": 0.41733333333333333,
-        "coding": 0.492,
-        "reasoning": 0.31666666666666665,
-        "math": 0.6185,
-        "agents": 0.651020408163265,
-        "open_weight": 0.1795
+        "overall": 0.3835,
+        "coding": 0.652,
+        "reasoning": 0.26933333333333337,
+        "math": 0.48150000000000004,
+        "agents": 0.578231292517007,
+        "open_weight": 0.14400000000000002
       },
-      "_task": 0.41733333333333333,
+      "_task": 0.3835,
       "_fallback": 0.36925,
       "capability_score": 4.431
     },
@@ -15019,16 +16010,40 @@
         "completion": 0.4,
         "cache_read": 0.01
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 6.7,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 35.3,
+          "mmlu_pro": 0.724,
+          "gpqa": 0.474,
+          "hle": 0.037,
+          "livecodebench": 0.4,
+          "scicode": 0.177,
+          "math_500": 0.926,
+          "aime": 0.5,
+          "aime_25": 0.353333333333333,
+          "ifbench": 0.314965986394558,
+          "lcr": 0.32,
+          "terminalbench_hard": 0.0227272727272727,
+          "terminalbench_v2_1": null,
+          "tau2": 0.190058479532164,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.21,
+        "coding": 0.4,
+        "reasoning": 0.26949999999999996,
+        "math": 0.489,
+        "agents": 0.314965986394558,
+        "open_weight": 0.067
+      },
+      "_task": 0.21,
       "_fallback": 0.44575000000000004,
       "capability_score": 5.349
     },
@@ -15471,6 +16486,29 @@
         "cache_read": 0.03
       },
       "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 14.2,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 60.3,
+          "mmlu_pro": 0.809,
+          "gpqa": 0.683,
+          "hle": 0.047,
+          "livecodebench": 0.495,
+          "scicode": 0.291,
+          "math_500": 0.932,
+          "aime": 0.5,
+          "aime_25": 0.603333333333333,
+          "ifbench": 0.389795918367347,
+          "lcr": 0.48,
+          "terminalbench_hard": 0.121212121212121,
+          "terminalbench_v2_1": null,
+          "tau2": 0.149122807017544,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        },
         "aider_polyglot": {
           "pass_rate_1": 26.2,
           "pass_rate_2": 55.1,
@@ -15480,14 +16518,14 @@
         }
       },
       "task_scores": {
-        "overall": null,
-        "coding": 0.262,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+        "overall": 0.3725,
+        "coding": 0.3785,
+        "reasoning": 0.343,
+        "math": 0.5815,
+        "agents": 0.389795918367347,
+        "open_weight": 0.142
       },
-      "_task": null,
+      "_task": 0.3725,
       "_fallback": 0.44575000000000004,
       "capability_score": 5.349
     },
@@ -15561,6 +16599,29 @@
         "cache_read": 0.125
       },
       "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 25.9,
+          "artificial_analysis_coding_index": 33.3,
+          "artificial_analysis_math_index": 87.7,
+          "mmlu_pro": 0.862,
+          "gpqa": 0.844,
+          "hle": 0.225,
+          "livecodebench": 0.801,
+          "scicode": 0.428,
+          "math_500": 0.967333333333333,
+          "aime": 0.886666666666667,
+          "aime_25": 0.876666666666667,
+          "ifbench": 0.487074829931973,
+          "lcr": 0.66,
+          "terminalbench_hard": 0.265151515151515,
+          "terminalbench_v2_1": 0.284644194756554,
+          "tau2": 0.54093567251462,
+          "tau_banking": 0.0969072164948454
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        },
         "aider_polyglot": {
           "pass_rate_1": 46.2,
           "pass_rate_2": 83.1,
@@ -15570,14 +16631,14 @@
         }
       },
       "task_scores": {
-        "overall": null,
-        "coding": 0.462,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+        "overall": 0.48966666666666664,
+        "coding": 0.5319999999999999,
+        "reasoning": 0.5536666666666668,
+        "math": 0.78975,
+        "agents": 0.487074829931973,
+        "open_weight": 0.296
       },
-      "_task": null,
+      "_task": 0.48966666666666664,
       "_fallback": 0.44575000000000004,
       "capability_score": 5.349
     },
@@ -15739,7 +16800,7 @@
       "id": "google/gemini-2.5-pro-preview",
       "name": "Google: Gemini 2.5 Pro Preview 06-05",
       "provider": "google",
-      "family": "google/gemini-2.5-pro",
+      "family": "google/gemini-2.5-pro-preview",
       "source": "openrouter",
       "created_unix": 1749137257,
       "context": 1048576,
@@ -16695,6 +17756,29 @@
         "cache_read": 0.5
       },
       "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 19.6,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 34.7,
+          "mmlu_pro": 0.806,
+          "gpqa": 0.666,
+          "hle": 0.042,
+          "livecodebench": 0.457,
+          "scicode": 0.381,
+          "math_500": 0.912666666666667,
+          "aime": 0.436666666666667,
+          "aime_25": 0.346666666666667,
+          "ifbench": 0.429931972789116,
+          "lcr": 0.643333333333333,
+          "terminalbench_hard": 0.136363636363636,
+          "terminalbench_v2_1": null,
+          "tau2": 0.470760233918129,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        },
         "aider_polyglot": {
           "pass_rate_1": 3.1,
           "pass_rate_2": 8.9,
@@ -16704,14 +17788,14 @@
         }
       },
       "task_scores": {
-        "overall": null,
-        "coding": 0.031,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+        "overall": 0.2715,
+        "coding": 0.244,
+        "reasoning": 0.3351666666666668,
+        "math": 0.5193333333333334,
+        "agents": 0.429931972789116,
+        "open_weight": 0.196
       },
-      "_task": null,
+      "_task": 0.2715,
       "_fallback": 0.27899999999999997,
       "capability_score": 3.348
     },
@@ -16784,16 +17868,40 @@
         "completion": 1.6,
         "cache_read": 0.1
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 14.8,
+          "artificial_analysis_coding_index": 20.2,
+          "artificial_analysis_math_index": 46.3,
+          "mmlu_pro": 0.781,
+          "gpqa": 0.664,
+          "hle": 0.05,
+          "livecodebench": 0.483,
+          "scicode": 0.404,
+          "math_500": 0.925333333333333,
+          "aime": 0.43,
+          "aime_25": 0.463333333333333,
+          "ifbench": 0.382993197278912,
+          "lcr": 0.453333333333333,
+          "terminalbench_hard": 0.0757575757575758,
+          "terminalbench_v2_1": 0.101123595505618,
+          "tau2": 0.529239766081871,
+          "tau_banking": 0.0536082474226804
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.27099999999999996,
+        "coding": 0.34249999999999997,
+        "reasoning": 0.323,
+        "math": 0.5555833333333332,
+        "agents": 0.382993197278912,
+        "open_weight": 0.175
+      },
+      "_task": 0.27099999999999996,
       "_fallback": 0.27899999999999997,
       "capability_score": 3.348
     },
@@ -16866,16 +17974,40 @@
         "completion": 0.4,
         "cache_read": 0.025
       },
-      "benchmarks": {},
-      "task_scores": {
-        "overall": null,
-        "coding": null,
-        "reasoning": null,
-        "math": null,
-        "agents": null,
-        "open_weight": null
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": 9.6,
+          "artificial_analysis_coding_index": 11.1,
+          "artificial_analysis_math_index": 24,
+          "mmlu_pro": 0.657,
+          "gpqa": 0.512,
+          "hle": 0.038,
+          "livecodebench": 0.326,
+          "scicode": 0.259,
+          "math_500": 0.848,
+          "aime": 0.236666666666667,
+          "aime_25": 0.24,
+          "ifbench": 0.320408163265306,
+          "lcr": 0.193333333333333,
+          "terminalbench_hard": 0.0378787878787879,
+          "terminalbench_v2_1": 0.0374531835205993,
+          "tau2": 0.172514619883041,
+          "tau_banking": 0.0350515463917526
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
       },
-      "_task": null,
+      "task_scores": {
+        "overall": 0.149,
+        "coding": 0.2185,
+        "reasoning": 0.22066666666666676,
+        "math": 0.3959166666666667,
+        "agents": 0.320408163265306,
+        "open_weight": 0.10350000000000001
+      },
+      "_task": 0.149,
       "_fallback": 0.27899999999999997,
       "capability_score": 3.348
     },
@@ -17477,7 +18609,7 @@
       "id": "thedrummer/skyfall-36b-v2",
       "name": "TheDrummer: Skyfall 36B V2",
       "provider": "thedrummer",
-      "family": "thedrummer/skyfall-36b",
+      "family": "thedrummer/skyfall-36b-v2",
       "source": "openrouter",
       "created_unix": 1741636566,
       "context": 32768,
@@ -18699,7 +19831,7 @@
       "id": "amazon/nova-lite-v1",
       "name": "Amazon: Nova Lite 1.0",
       "provider": "amazon",
-      "family": "amazon/nova-lite",
+      "family": "amazon/nova-lite-v1",
       "source": "openrouter",
       "created_unix": 1733437363,
       "context": 300000,
@@ -18740,7 +19872,7 @@
       "id": "amazon/nova-micro-v1",
       "name": "Amazon: Nova Micro 1.0",
       "provider": "amazon",
-      "family": "amazon/nova-micro",
+      "family": "amazon/nova-micro-v1",
       "source": "openrouter",
       "created_unix": 1733437237,
       "context": 128000,
@@ -18781,7 +19913,7 @@
       "id": "amazon/nova-pro-v1",
       "name": "Amazon: Nova Pro 1.0",
       "provider": "amazon",
-      "family": "amazon/nova-pro",
+      "family": "amazon/nova-pro-v1",
       "source": "openrouter",
       "created_unix": 1733436303,
       "context": 300000,
@@ -20383,7 +21515,31 @@
         "completion": 2.0,
         "cache_read": null
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "aa": {
+          "artificial_analysis_intelligence_index": null,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": null,
+          "mmlu_pro": null,
+          "gpqa": null,
+          "hle": null,
+          "livecodebench": null,
+          "scicode": null,
+          "math_500": null,
+          "aime": null,
+          "aime_25": null,
+          "ifbench": null,
+          "lcr": null,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": null,
+          "tau2": null,
+          "tau_banking": null
+        },
+        "aa_speed": {
+          "median_tps": 0.0,
+          "ttft_s": 0.0
+        }
+      },
       "task_scores": {
         "overall": null,
         "coding": null,
@@ -20400,7 +21556,7 @@
       "id": "openai/gpt-4-turbo-preview",
       "name": "OpenAI: GPT-4 Turbo Preview",
       "provider": "openai",
-      "family": "openai/gpt-4-turbo",
+      "family": "openai/gpt-4-turbo-preview",
       "source": "openrouter",
       "created_unix": 1706140800,
       "context": 128000,

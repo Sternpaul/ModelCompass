@@ -1,59 +1,59 @@
 {
-  "generated_at": "2026-08-16T21:40:53Z",
+  "generated_at": "2026-08-16T21:44:18Z",
   "rankings": {
     "best_overall": {
       "title": "Artificial Analysis Intelligence Index",
       "description": "Composite of reasoning, knowledge, math, coding & agentic. The headline 'smartest model' ranking.",
       "models": [
         {
-          "id": "anthropic/claude-opus-5",
-          "name": "Claude Opus 5",
-          "task_score": 0.7055
-        },
-        {
           "id": "anthropic/claude-fable-5",
           "name": "Anthropic: Claude Fable 5",
           "task_score": 0.693
         },
         {
-          "id": "anthropic/claude-sonnet-5",
-          "name": "Anthropic: Claude Sonnet 5",
-          "task_score": 0.634
+          "id": "openai/gpt-5-codex:batch",
+          "name": "OpenAI: GPT-5 Codex (batch)",
+          "task_score": 0.6785
         },
         {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "task_score": 0.61
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI: GPT-5.2",
+          "task_score": 0.678
         },
         {
-          "id": "deepseek/deepseek-v4-flash",
-          "name": "DeepSeek: DeepSeek V4 Flash 0423",
-          "task_score": 0.6045
+          "id": "openai/gpt-5.6-sol",
+          "name": "OpenAI: GPT-5.6 Sol",
+          "task_score": 0.6725
         },
         {
-          "id": "anthropic/claude-opus-5-fast",
-          "name": "Claude Opus 5 (Fast)",
-          "task_score": 0.597
+          "id": "google/gemini-3.7-flash",
+          "name": "Google: Gemini 3.7 Flash",
+          "task_score": 0.6605
         },
         {
-          "id": "openai/o3",
-          "name": "OpenAI: o3",
-          "task_score": 0.597
+          "id": "anthropic/claude-opus-4.8",
+          "name": "Anthropic: Claude Opus 4.8",
+          "task_score": 0.658
         },
         {
-          "id": "openai/o4-mini",
-          "name": "OpenAI: o4 Mini",
-          "task_score": 0.584
+          "id": "openai/gpt-5.1-codex-max",
+          "name": "OpenAI: GPT-5.1-Codex-Max",
+          "task_score": 0.6565
+        },
+        {
+          "id": "meta/muse-spark-1.2",
+          "name": "Meta: Muse Spark 1.2",
+          "task_score": 0.645
+        },
+        {
+          "id": "anthropic/claude-opus-4.7",
+          "name": "Anthropic: Claude Opus 4.7",
+          "task_score": 0.643
         },
         {
           "id": "openai/gpt-5",
           "name": "OpenAI: GPT-5",
-          "task_score": 0.558
-        },
-        {
-          "id": "minimax/minimax-m2",
-          "name": "MiniMax: MiniMax M2",
-          "task_score": 0.536
+          "task_score": 0.6315
         }
       ]
     },
@@ -62,9 +62,29 @@
       "description": "Real code generation: 225 Exercism exercises across 6 languages + LiveCodeBench.",
       "models": [
         {
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI: GPT-5.2",
+          "task_score": 0.894
+        },
+        {
           "id": "openai/o4-mini",
           "name": "OpenAI: o4 Mini",
           "task_score": 0.859
+        },
+        {
+          "id": "openai/gpt-5.1-codex-max",
+          "name": "OpenAI: GPT-5.1-Codex-Max",
+          "task_score": 0.849
+        },
+        {
+          "id": "openai/gpt-5-codex:batch",
+          "name": "OpenAI: GPT-5 Codex (batch)",
+          "task_score": 0.84
+        },
+        {
+          "id": "openai/gpt-5.1-codex-mini",
+          "name": "OpenAI: GPT-5.1-Codex-Mini",
+          "task_score": 0.836
         },
         {
           "id": "minimax/minimax-m2",
@@ -72,44 +92,24 @@
           "task_score": 0.826
         },
         {
+          "id": "minimax/minimax-m2.1",
+          "name": "MiniMax: MiniMax M2.1",
+          "task_score": 0.81
+        },
+        {
           "id": "openai/gpt-5-nano",
           "name": "OpenAI: GPT-5 Nano",
           "task_score": 0.789
         },
         {
-          "id": "anthropic/claude-opus-5",
-          "name": "Claude Opus 5",
-          "task_score": 0.78
+          "id": "openai/gpt-5.6-sol",
+          "name": "OpenAI: GPT-5.6 Sol",
+          "task_score": 0.772
         },
         {
           "id": "anthropic/claude-fable-5",
           "name": "Anthropic: Claude Fable 5",
           "task_score": 0.765
-        },
-        {
-          "id": "nvidia/nemotron-nano-9b-v2:free",
-          "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-          "task_score": 0.724
-        },
-        {
-          "id": "openai/o3-mini",
-          "name": "OpenAI: o3 Mini",
-          "task_score": 0.717
-        },
-        {
-          "id": "deepseek/deepseek-v4-flash",
-          "name": "DeepSeek: DeepSeek V4 Flash 0423",
-          "task_score": 0.691
-        },
-        {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "task_score": 0.688
-        },
-        {
-          "id": "anthropic/claude-opus-5-fast",
-          "name": "Claude Opus 5 (Fast)",
-          "task_score": 0.669
         }
       ]
     },
@@ -123,14 +123,14 @@
           "task_score": 0.8737
         },
         {
-          "id": "openai/gpt-5",
-          "name": "OpenAI: GPT-5",
-          "task_score": 0.8307
-        },
-        {
           "id": "openai/o4-mini",
           "name": "OpenAI: o4 Mini",
           "task_score": 0.8252
+        },
+        {
+          "id": "openai/gpt-5",
+          "name": "OpenAI: GPT-5",
+          "task_score": 0.809
         },
         {
           "id": "openai/o3",
@@ -138,9 +138,19 @@
           "task_score": 0.7971
         },
         {
+          "id": "google/gemini-2.5-pro",
+          "name": "Google: Gemini 2.5 Pro",
+          "task_score": 0.7897
+        },
+        {
           "id": "openai/o3-mini-high",
           "name": "OpenAI: o3 Mini High",
           "task_score": 0.7476
+        },
+        {
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI: GPT-5.2",
+          "task_score": 0.7145
         },
         {
           "id": "openai/o3-mini",
@@ -148,24 +158,14 @@
           "task_score": 0.7141
         },
         {
-          "id": "openai/o1",
-          "name": "OpenAI: o1",
-          "task_score": 0.6838
+          "id": "openai/gpt-5-codex:batch",
+          "name": "OpenAI: GPT-5 Codex (batch)",
+          "task_score": 0.698
         },
         {
-          "id": "deepseek/deepseek-r1",
-          "name": "DeepSeek: R1",
-          "task_score": 0.6716
-        },
-        {
-          "id": "openai/gpt-oss-120b",
-          "name": "OpenAI: gpt-oss-120b",
-          "task_score": 0.6615
-        },
-        {
-          "id": "openai/gpt-5-mini",
-          "name": "OpenAI: GPT-5 Mini",
-          "task_score": 0.6495
+          "id": "openai/gpt-5.1",
+          "name": "OpenAI: GPT-5.1",
+          "task_score": 0.6865
         }
       ]
     },
@@ -174,54 +174,54 @@
       "description": "Graduate-level science & 'Humanity's Last Exam' reasoning.",
       "models": [
         {
-          "id": "anthropic/claude-opus-5",
-          "name": "Claude Opus 5",
-          "task_score": 0.704
-        },
-        {
           "id": "anthropic/claude-fable-5",
           "name": "Anthropic: Claude Fable 5",
           "task_score": 0.7007
         },
         {
-          "id": "anthropic/claude-sonnet-5",
-          "name": "Anthropic: Claude Sonnet 5",
-          "task_score": 0.6257
+          "id": "google/gemini-3.7-flash",
+          "name": "Google: Gemini 3.7 Flash",
+          "task_score": 0.6613
+        },
+        {
+          "id": "anthropic/claude-opus-4.8",
+          "name": "Anthropic: Claude Opus 4.8",
+          "task_score": 0.66
+        },
+        {
+          "id": "openai/gpt-5.6-sol",
+          "name": "OpenAI: GPT-5.6 Sol",
+          "task_score": 0.6537
+        },
+        {
+          "id": "meta/muse-spark-1.2",
+          "name": "Meta: Muse Spark 1.2",
+          "task_score": 0.6423
+        },
+        {
+          "id": "meta/muse-spark-1.1",
+          "name": "Meta: Muse Spark 1.1",
+          "task_score": 0.6307
+        },
+        {
+          "id": "openai/gpt-5.4",
+          "name": "OpenAI: GPT-5.4",
+          "task_score": 0.6293
+        },
+        {
+          "id": "google/gemini-3.1-pro-preview",
+          "name": "Google: Gemini 3.1 Pro Preview",
+          "task_score": 0.6293
+        },
+        {
+          "id": "anthropic/claude-opus-4.7",
+          "name": "Anthropic: Claude Opus 4.7",
+          "task_score": 0.629
         },
         {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "task_score": 0.6233
-        },
-        {
-          "id": "anthropic/claude-opus-5-fast",
-          "name": "Claude Opus 5 (Fast)",
-          "task_score": 0.616
-        },
-        {
-          "id": "openai/gpt-5",
-          "name": "OpenAI: GPT-5",
-          "task_score": 0.6122
-        },
-        {
-          "id": "deepseek/deepseek-v4-flash",
-          "name": "DeepSeek: DeepSeek V4 Flash 0423",
-          "task_score": 0.604
-        },
-        {
-          "id": "minimax/minimax-m3",
-          "name": "MiniMax: MiniMax M3",
-          "task_score": 0.591
-        },
-        {
-          "id": "openai/o3-pro",
-          "name": "OpenAI: o3 Pro",
-          "task_score": 0.589
-        },
-        {
-          "id": "openai/o3",
-          "name": "OpenAI: o3",
-          "task_score": 0.5606
         }
       ]
     },
@@ -235,49 +235,49 @@
           "task_score": 0.8286
         },
         {
-          "id": "openai/gpt-5-mini",
-          "name": "OpenAI: GPT-5 Mini",
-          "task_score": 0.7544
+          "id": "xiaomi/mimo-v2.5-pro",
+          "name": "Xiaomi: MiMo-V2.5-Pro",
+          "task_score": 0.7986
         },
         {
-          "id": "openai/gpt-5",
-          "name": "OpenAI: GPT-5",
-          "task_score": 0.7306
+          "id": "openai/gpt-5.2-codex",
+          "name": "OpenAI: GPT-5.2-Codex",
+          "task_score": 0.7762
         },
         {
-          "id": "minimax/minimax-m2",
-          "name": "MiniMax: MiniMax M2",
-          "task_score": 0.7231
+          "id": "google/gemini-3.1-flash-lite-preview",
+          "name": "Google: Gemini 3.1 Flash Lite Preview",
+          "task_score": 0.7721
         },
         {
-          "id": "openai/o3",
-          "name": "OpenAI: o3",
-          "task_score": 0.7143
+          "id": "google/gemini-3.1-pro-preview",
+          "name": "Google: Gemini 3.1 Pro Preview",
+          "task_score": 0.7714
         },
         {
-          "id": "upstage/solar-pro-3",
-          "name": "Upstage: Solar Pro 3",
-          "task_score": 0.712
+          "id": "google/gemini-3.5-flash",
+          "name": "Google: Gemini 3.5 Flash",
+          "task_score": 0.7633
         },
         {
-          "id": "openai/o1",
-          "name": "OpenAI: o1",
-          "task_score": 0.7034
+          "id": "openai/gpt-5.4-nano",
+          "name": "OpenAI: GPT-5.4 Nano",
+          "task_score": 0.7592
         },
         {
-          "id": "inception/mercury-2",
-          "name": "Inception: Mercury 2",
-          "task_score": 0.698
+          "id": "minimax/minimax-m2.7",
+          "name": "MiniMax: MiniMax M2.7",
+          "task_score": 0.7571
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "OpenAI: gpt-oss-120b",
-          "task_score": 0.6898
+          "id": "openai/gpt-5.3-codex",
+          "name": "OpenAI: GPT-5.3-Codex",
+          "task_score": 0.7537
         },
         {
-          "id": "openai/o4-mini",
-          "name": "OpenAI: o4 Mini",
-          "task_score": 0.6871
+          "id": "openai/gpt-5-codex:batch",
+          "name": "OpenAI: GPT-5 Codex (batch)",
+          "task_score": 0.7415
         }
       ]
     },
@@ -286,54 +286,54 @@
       "description": "Image understanding for multimodal models.",
       "models": [
         {
-          "id": "anthropic/claude-opus-5",
-          "name": "Claude Opus 5",
-          "task_score": 0.7055
-        },
-        {
           "id": "anthropic/claude-fable-5",
           "name": "Anthropic: Claude Fable 5",
           "task_score": 0.693
         },
         {
-          "id": "anthropic/claude-sonnet-5",
-          "name": "Anthropic: Claude Sonnet 5",
-          "task_score": 0.634
+          "id": "openai/gpt-5-codex:batch",
+          "name": "OpenAI: GPT-5 Codex (batch)",
+          "task_score": 0.6785
         },
         {
-          "id": "anthropic/claude-opus-5-fast",
-          "name": "Claude Opus 5 (Fast)",
-          "task_score": 0.597
+          "id": "openai/gpt-5.2",
+          "name": "OpenAI: GPT-5.2",
+          "task_score": 0.678
         },
         {
-          "id": "openai/o3",
-          "name": "OpenAI: o3",
-          "task_score": 0.597
+          "id": "openai/gpt-5.6-sol",
+          "name": "OpenAI: GPT-5.6 Sol",
+          "task_score": 0.6725
         },
         {
-          "id": "openai/o4-mini",
-          "name": "OpenAI: o4 Mini",
-          "task_score": 0.584
+          "id": "google/gemini-3.7-flash",
+          "name": "Google: Gemini 3.7 Flash",
+          "task_score": 0.6605
+        },
+        {
+          "id": "anthropic/claude-opus-4.8",
+          "name": "Anthropic: Claude Opus 4.8",
+          "task_score": 0.658
+        },
+        {
+          "id": "openai/gpt-5.1-codex-max",
+          "name": "OpenAI: GPT-5.1-Codex-Max",
+          "task_score": 0.6565
+        },
+        {
+          "id": "meta/muse-spark-1.2",
+          "name": "Meta: Muse Spark 1.2",
+          "task_score": 0.645
+        },
+        {
+          "id": "anthropic/claude-opus-4.7",
+          "name": "Anthropic: Claude Opus 4.7",
+          "task_score": 0.643
         },
         {
           "id": "openai/gpt-5",
           "name": "OpenAI: GPT-5",
-          "task_score": 0.558
-        },
-        {
-          "id": "minimax/minimax-m3",
-          "name": "MiniMax: MiniMax M3",
-          "task_score": 0.52
-        },
-        {
-          "id": "openai/gpt-5-nano",
-          "name": "OpenAI: GPT-5 Nano",
-          "task_score": 0.519
-        },
-        {
-          "id": "openai/gpt-5-mini",
-          "name": "OpenAI: GPT-5 Mini",
-          "task_score": 0.4403
+          "task_score": 0.6315
         }
       ]
     },
@@ -357,11 +357,6 @@
           "task_score": null
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "OpenAI: gpt-oss-120b",
-          "task_score": 0.493
-        },
-        {
           "id": "upstage/solar-pro4",
           "name": "Upstage: Solar Pro 4",
           "task_score": 0.4715
@@ -369,7 +364,12 @@
         {
           "id": "openai/gpt-oss-20b",
           "name": "OpenAI: gpt-oss-20b",
-          "task_score": 0.4173
+          "task_score": 0.3835
+        },
+        {
+          "id": "openai/gpt-oss-120b",
+          "name": "OpenAI: gpt-oss-120b",
+          "task_score": 0.3427
         },
         {
           "id": "qwen/qwen3.7-flash",
@@ -403,19 +403,19 @@
           "task_score": 0.61
         },
         {
-          "id": "deepseek/deepseek-v4-flash",
-          "name": "DeepSeek: DeepSeek V4 Flash 0423",
-          "task_score": 0.6045
-        },
-        {
           "id": "minimax/minimax-m3",
           "name": "MiniMax: MiniMax M3",
           "task_score": 0.52
         },
         {
-          "id": "tencent/hy3",
-          "name": "Tencent: Hy3",
-          "task_score": 0.505
+          "id": "xiaomi/mimo-v2.5-pro",
+          "name": "Xiaomi: MiMo-V2.5-Pro",
+          "task_score": 0.5155
+        },
+        {
+          "id": "minimax/minimax-m2.7",
+          "name": "MiniMax: MiniMax M2.7",
+          "task_score": 0.4575
         },
         {
           "id": "inclusionai/ling-3.0-flash",
@@ -423,29 +423,29 @@
           "task_score": 0.442
         },
         {
-          "id": "minimax/minimax-m2",
-          "name": "MiniMax: MiniMax M2",
-          "task_score": 0.289
+          "id": "stepfun/step-3.7-flash",
+          "name": "StepFun: Step 3.7 Flash",
+          "task_score": 0.3525
         },
         {
-          "id": "openai/gpt-oss-120b",
-          "name": "OpenAI: gpt-oss-120b",
-          "task_score": 0.2725
+          "id": "minimax/minimax-m2.5",
+          "name": "MiniMax: MiniMax M2.5",
+          "task_score": 0.345
         },
         {
-          "id": "deepseek/deepseek-r1",
-          "name": "DeepSeek: R1",
-          "task_score": 0.216
+          "id": "tencent/hy3-preview",
+          "name": "Tencent: Hy3 preview",
+          "task_score": 0.344
         },
         {
-          "id": "openai/gpt-oss-20b",
-          "name": "OpenAI: gpt-oss-20b",
-          "task_score": 0.1795
+          "id": "minimax/minimax-m2.1",
+          "name": "MiniMax: MiniMax M2.1",
+          "task_score": 0.321
         },
         {
-          "id": "deepseek/deepseek-r1-distill-llama-70b",
-          "name": "DeepSeek: R1 Distill Llama 70B",
-          "task_score": 0.098
+          "id": "deepseek/deepseek-v4-flash",
+          "name": "DeepSeek: DeepSeek V4 Flash 0423",
+          "task_score": 0.293
         }
       ]
     }

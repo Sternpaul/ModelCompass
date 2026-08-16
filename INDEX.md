@@ -1,6 +1,6 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-16T21:40:53Z — 407 models. Daily GitHub Action._
+_Generated 2026-08-16T21:44:18Z — 407 models. Daily GitHub Action._
 
 ## Sources
 
@@ -10,96 +10,96 @@ _Generated 2026-08-16T21:40:53Z — 407 models. Daily GitHub Action._
 
 ## Coverage
 
-- with_aa_benchmarks: 44
+- with_aa_benchmarks: 92
 - with_aider_coding: 36
 
 ## Recommended shortlists (real benchmarks)
 
 ### best_overall
 
-- `anthropic/claude-opus-5` (score 0.7055)
 - `anthropic/claude-fable-5` (score 0.693)
-- `anthropic/claude-sonnet-5` (score 0.634)
-- `deepseek/deepseek-v4-pro` (score 0.61)
-- `deepseek/deepseek-v4-flash` (score 0.6045)
-- `anthropic/claude-opus-5-fast` (score 0.597)
-- `openai/o3` (score 0.597)
-- `openai/o4-mini` (score 0.584)
+- `openai/gpt-5-codex:batch` (score 0.6785)
+- `openai/gpt-5.2` (score 0.678)
+- `openai/gpt-5.6-sol` (score 0.6725)
+- `google/gemini-3.7-flash` (score 0.6605)
+- `anthropic/claude-opus-4.8` (score 0.658)
+- `openai/gpt-5.1-codex-max` (score 0.6565)
+- `meta/muse-spark-1.2` (score 0.645)
 
 ### best_coding
 
+- `openai/gpt-5.2` (score 0.894)
 - `openai/o4-mini` (score 0.859)
+- `openai/gpt-5.1-codex-max` (score 0.849)
+- `openai/gpt-5-codex:batch` (score 0.84)
+- `openai/gpt-5.1-codex-mini` (score 0.836)
 - `minimax/minimax-m2` (score 0.826)
+- `minimax/minimax-m2.1` (score 0.81)
 - `openai/gpt-5-nano` (score 0.789)
-- `anthropic/claude-opus-5` (score 0.78)
-- `anthropic/claude-fable-5` (score 0.765)
-- `nvidia/nemotron-nano-9b-v2:free` (score 0.724)
-- `openai/o3-mini` (score 0.717)
-- `deepseek/deepseek-v4-flash` (score 0.691)
 
 ### best_reasoning
 
-- `anthropic/claude-opus-5` (score 0.704)
 - `anthropic/claude-fable-5` (score 0.7007)
-- `anthropic/claude-sonnet-5` (score 0.6257)
-- `deepseek/deepseek-v4-pro` (score 0.6233)
-- `anthropic/claude-opus-5-fast` (score 0.616)
-- `openai/gpt-5` (score 0.6122)
-- `deepseek/deepseek-v4-flash` (score 0.604)
-- `minimax/minimax-m3` (score 0.591)
+- `google/gemini-3.7-flash` (score 0.6613)
+- `anthropic/claude-opus-4.8` (score 0.66)
+- `openai/gpt-5.6-sol` (score 0.6537)
+- `meta/muse-spark-1.2` (score 0.6423)
+- `meta/muse-spark-1.1` (score 0.6307)
+- `openai/gpt-5.4` (score 0.6293)
+- `google/gemini-3.1-pro-preview` (score 0.6293)
 
 ### best_math
 
 - `perplexity/sonar-reasoning-pro` (score 0.8737)
-- `openai/gpt-5` (score 0.8307)
 - `openai/o4-mini` (score 0.8252)
+- `openai/gpt-5` (score 0.809)
 - `openai/o3` (score 0.7971)
+- `google/gemini-2.5-pro` (score 0.7897)
 - `openai/o3-mini-high` (score 0.7476)
+- `openai/gpt-5.2` (score 0.7145)
 - `openai/o3-mini` (score 0.7141)
-- `openai/o1` (score 0.6838)
-- `deepseek/deepseek-r1` (score 0.6716)
 
 ### best_agents
 
 - `minimax/minimax-m3` (score 0.8286)
-- `openai/gpt-5-mini` (score 0.7544)
-- `openai/gpt-5` (score 0.7306)
-- `minimax/minimax-m2` (score 0.7231)
-- `openai/o3` (score 0.7143)
-- `upstage/solar-pro-3` (score 0.712)
-- `openai/o1` (score 0.7034)
-- `inception/mercury-2` (score 0.698)
+- `xiaomi/mimo-v2.5-pro` (score 0.7986)
+- `openai/gpt-5.2-codex` (score 0.7762)
+- `google/gemini-3.1-flash-lite-preview` (score 0.7721)
+- `google/gemini-3.1-pro-preview` (score 0.7714)
+- `google/gemini-3.5-flash` (score 0.7633)
+- `openai/gpt-5.4-nano` (score 0.7592)
+- `minimax/minimax-m2.7` (score 0.7571)
 
 ### best_open_weight
 
 - `deepseek/deepseek-v4-pro` (score 0.61)
-- `deepseek/deepseek-v4-flash` (score 0.6045)
 - `minimax/minimax-m3` (score 0.52)
-- `tencent/hy3` (score 0.505)
+- `xiaomi/mimo-v2.5-pro` (score 0.5155)
+- `minimax/minimax-m2.7` (score 0.4575)
 - `inclusionai/ling-3.0-flash` (score 0.442)
-- `minimax/minimax-m2` (score 0.289)
-- `openai/gpt-oss-120b` (score 0.2725)
-- `deepseek/deepseek-r1` (score 0.216)
+- `stepfun/step-3.7-flash` (score 0.3525)
+- `minimax/minimax-m2.5` (score 0.345)
+- `tencent/hy3-preview` (score 0.344)
 
 ### best_vision
 
-- `anthropic/claude-opus-5` (score 0.7055)
 - `anthropic/claude-fable-5` (score 0.693)
-- `anthropic/claude-sonnet-5` (score 0.634)
-- `anthropic/claude-opus-5-fast` (score 0.597)
-- `openai/o3` (score 0.597)
-- `openai/o4-mini` (score 0.584)
-- `openai/gpt-5` (score 0.558)
-- `minimax/minimax-m3` (score 0.52)
+- `openai/gpt-5-codex:batch` (score 0.6785)
+- `openai/gpt-5.2` (score 0.678)
+- `openai/gpt-5.6-sol` (score 0.6725)
+- `google/gemini-3.7-flash` (score 0.6605)
+- `anthropic/claude-opus-4.8` (score 0.658)
+- `openai/gpt-5.1-codex-max` (score 0.6565)
+- `meta/muse-spark-1.2` (score 0.645)
 
 ### best_cheap
 
 - `inclusionai/ling-3.0-flash` (score 0.442)
 - `nex-agi/nex-n2-mini`
 - `openai/gpt-5-nano:batch`
-- `openai/gpt-oss-120b` (score 0.493)
 - `upstage/solar-pro4` (score 0.4715)
-- `openai/gpt-oss-20b` (score 0.4173)
+- `openai/gpt-oss-20b` (score 0.3835)
+- `openai/gpt-oss-120b` (score 0.3427)
 - `qwen/qwen3.7-flash`
 - `nvidia/nemotron-3-nano-30b-a3b` (score 0.1025)
 
@@ -107,4 +107,4 @@ _Generated 2026-08-16T21:40:53Z — 407 models. Daily GitHub Action._
 Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.
 
 ## Methodology
-Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged by provider+slug then name fuzzy-match. Variant families collapsed to canonical base model in shortlists.
+Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged via normalized provider+slug (AA dots->hyphens, reasoning-effort suffixes tolerated), then fuzzy name match. Only routing aliases (:batch/:free/:thinking) collapse in shortlists; identity tags (-latest, -0813, -v2) stay distinct.
