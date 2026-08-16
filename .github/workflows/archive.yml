@@ -34,6 +34,7 @@ jobs:
           git add archive/ rankings/
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "archive: weekly rankings $(date -u +%Y-W%V)"
+            git pull --rebase
             git push
           else
             echo "no changes"

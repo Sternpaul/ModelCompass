@@ -34,6 +34,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add models.json models.csv recommended.json INDEX.md
             git commit -m "chore: daily ModelCompass update $(date -u +%Y-%m-%d)"
+            git pull --rebase
             git push
           else
             echo "no changes"
