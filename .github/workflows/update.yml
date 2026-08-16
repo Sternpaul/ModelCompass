@@ -19,7 +19,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Generate leaderboard
+      - name: Install pyyaml
+        run: pip install pyyaml
+
+      - name: Generate dataset
+        env:
+          ARTIFICIAL_ANALYSIS_KEY: ${{ secrets.ARTIFICIAL_ANALYSIS_KEY }}
         run: python3 generate.py
 
       - name: Commit & push if changed
