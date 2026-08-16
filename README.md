@@ -236,3 +236,4 @@ No SSH keys, no tokens in URLs. The jobs use GitHub's built-in `GITHUB_TOKEN`.
 - Rankings are transparent blends of real metrics — verify high-stakes choices
   against primary sources. They are a sane default for a stale agent, not a
   single authoritative verdict.
+
