@@ -1,107 +1,107 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-16T18:40:40Z — 407 models. Daily GitHub Action._
+_Generated 2026-08-16T18:40:56Z — 407 models. Daily GitHub Action._
 
 ## Sources
 
 - **openrouter**: ok (413 raw)
-- **artificial_analysis**: no API key
+- **artificial_analysis**: ok (608 models)
 - **aider_polyglot**: ok (54 models)
 
 ## Coverage
 
-- with_aa_benchmarks: 0
+- with_aa_benchmarks: 44
 - with_aider_coding: 36
 
 ## Recommended shortlists (real benchmarks)
 
 ### best_overall
 
-- `x-ai/grok-4.20`
-- `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-terra-pro`
-- `openai/gpt-5.6-terra`
-- `openai/gpt-5.6-sol-pro`
-- `openai/gpt-5.6-sol`
-- `google/gemini-3.5-flash`
+- `anthropic/claude-opus-5` (score 0.7055)
+- `anthropic/claude-fable-5` (score 0.693)
+- `anthropic/claude-sonnet-5` (score 0.634)
+- `deepseek/deepseek-v4-pro` (score 0.61)
+- `deepseek/deepseek-v4-flash` (score 0.6045)
+- `anthropic/claude-opus-5-fast` (score 0.597)
+- `openai/o3` (score 0.597)
+- `openai/o4-mini` (score 0.584)
 
 ### best_coding
 
-- `google/gemini-2.5-pro` (score 0.462)
-- `openai/o3-pro` (score 0.436)
-- `openai/gpt-5.6-luna-pro` (score 0.431)
-- `x-ai/grok-4.6` (score 0.409)
-- `deepseek/deepseek-v3.2` (score 0.387)
-- `anthropic/claude-opus-4` (score 0.373)
-- `openai/o3` (score 0.348)
-- `deepseek/deepseek-r1-0528` (score 0.344)
+- `openai/o4-mini` (score 0.859)
+- `minimax/minimax-m2` (score 0.826)
+- `openai/gpt-5-nano` (score 0.789)
+- `anthropic/claude-opus-5` (score 0.78)
+- `anthropic/claude-fable-5` (score 0.765)
+- `nvidia/nemotron-nano-9b-v2:free` (score 0.724)
+- `openai/o3-mini` (score 0.717)
+- `deepseek/deepseek-v4-flash` (score 0.691)
 
 ### best_reasoning
 
-- `x-ai/grok-4.20`
-- `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-terra-pro`
-- `openai/gpt-5.6-terra`
-- `openai/gpt-5.6-sol-pro`
-- `openai/gpt-5.6-sol`
-- `google/gemini-3.5-flash`
+- `anthropic/claude-opus-5` (score 0.704)
+- `anthropic/claude-fable-5` (score 0.7007)
+- `anthropic/claude-sonnet-5` (score 0.6257)
+- `deepseek/deepseek-v4-pro` (score 0.6233)
+- `anthropic/claude-opus-5-fast` (score 0.616)
+- `openai/gpt-5` (score 0.6122)
+- `deepseek/deepseek-v4-flash` (score 0.604)
+- `minimax/minimax-m3` (score 0.591)
 
 ### best_math
 
-- `x-ai/grok-4.20`
-- `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-terra-pro`
-- `openai/gpt-5.6-terra`
-- `openai/gpt-5.6-sol-pro`
-- `openai/gpt-5.6-sol`
-- `google/gemini-3.5-flash`
+- `perplexity/sonar-reasoning-pro` (score 0.8737)
+- `openai/gpt-5` (score 0.8307)
+- `openai/o4-mini` (score 0.8252)
+- `openai/o3` (score 0.7971)
+- `openai/o3-mini-high` (score 0.7476)
+- `openai/o3-mini` (score 0.7141)
+- `openai/o1` (score 0.6838)
+- `deepseek/deepseek-r1` (score 0.6716)
 
 ### best_agents
 
-- `x-ai/grok-4.20`
-- `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-terra-pro`
-- `openai/gpt-5.6-terra`
-- `openai/gpt-5.6-sol-pro`
-- `openai/gpt-5.6-sol`
-- `google/gemini-3.5-flash`
+- `minimax/minimax-m3` (score 0.8286)
+- `openai/gpt-5-mini` (score 0.7544)
+- `openai/gpt-5` (score 0.7306)
+- `minimax/minimax-m2` (score 0.7231)
+- `openai/o3` (score 0.7143)
+- `upstage/solar-pro-3` (score 0.712)
+- `openai/o1` (score 0.7034)
+- `inception/mercury-2` (score 0.698)
 
 ### best_open_weight
 
-- `qwen/qwen3.8-2.4t-a95b`
-- `deepseek/deepseek-v4-pro-0813`
-- `nvidia/nemotron-3.5-lightning`
-- `deepseek/deepseek-v4-flash-0731`
-- `thinkingmachines/inkling`
-- `moonshotai/kimi-k3`
-- `z-ai/glm-5.2`
-- `minimax/minimax-m3`
+- `deepseek/deepseek-v4-pro` (score 0.61)
+- `deepseek/deepseek-v4-flash` (score 0.6045)
+- `minimax/minimax-m3` (score 0.52)
+- `tencent/hy3` (score 0.505)
+- `inclusionai/ling-3.0-flash` (score 0.442)
+- `minimax/minimax-m2` (score 0.289)
+- `openai/gpt-oss-120b` (score 0.2725)
+- `deepseek/deepseek-r1` (score 0.216)
 
 ### best_vision
 
-- `x-ai/grok-4.20`
-- `openai/gpt-5.6-luna-pro`
-- `openai/gpt-5.6-luna`
-- `openai/gpt-5.6-terra-pro`
-- `openai/gpt-5.6-terra`
-- `openai/gpt-5.6-sol-pro`
-- `openai/gpt-5.6-sol`
-- `google/gemini-3.5-flash`
+- `anthropic/claude-opus-5` (score 0.7055)
+- `anthropic/claude-fable-5` (score 0.693)
+- `anthropic/claude-sonnet-5` (score 0.634)
+- `anthropic/claude-opus-5-fast` (score 0.597)
+- `openai/o3` (score 0.597)
+- `openai/o4-mini` (score 0.584)
+- `openai/gpt-5` (score 0.558)
+- `minimax/minimax-m3` (score 0.52)
 
 ### best_cheap
 
-- `inclusionai/ling-3.0-flash`
+- `inclusionai/ling-3.0-flash` (score 0.442)
 - `nex-agi/nex-n2-mini`
 - `openai/gpt-5-nano:batch`
-- `upstage/solar-pro4`
+- `openai/gpt-oss-120b` (score 0.493)
+- `upstage/solar-pro4` (score 0.4715)
+- `openai/gpt-oss-20b` (score 0.4173)
 - `qwen/qwen3.7-flash`
-- `openai/gpt-oss-120b`
-- `openai/gpt-oss-20b`
-- `nvidia/nemotron-3-nano-30b-a3b`
+- `nvidia/nemotron-3-nano-30b-a3b` (score 0.1025)
 
 ## Disclaimer
 Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.
