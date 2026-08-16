@@ -50,12 +50,11 @@ AIDER_YAML = ("https://raw.githubusercontent.com/Aider-AI/aider/main/"
               "aider/website/_data/polyglot_leaderboard.yml")
 OUTDIR = "."
 
-# Variant suffixes that denote derived/equivalent offerings of the same family.
-VARIANT_SUFFIX = re.compile(
-    r"(:batch|:nitro|:floor|:online|:offline|:cached|:extended|:free"
-    r"|:thinking|:rlhf|-preview|-latest|-exp|-alpha|-beta"
-    r"|-202\d{6}|-v\d+)$"
-)
+# Routing/availability aliases that denote the SAME model offered under a
+# different pricing/access path. These collapse to the base model.
+# NOTE: identity-bearing dash tags (-latest, -0813, -v2, -preview) are NOT
+# collapsed -- e.g. deepseek-v4-flash-0731 vs -latest are different snapshots.
+COLLAPSE_COLON = re.compile(r"(:batch|:free|:thinking|:nitro|:floor|:cached)$")
 
 
 def log(*a):
@@ -73,7 +72,7 @@ def family_id(mid):
         p, r = mid.split("/", 1)
     else:
         p, r = "", mid
-    r = VARIANT_SUFFIX.sub("", r)
+    r = COLLAPSE_COLON.sub("", r)
     return f"{p}/{r}" if p else r
 
 
@@ -240,17 +239,62 @@ def fetch_aider():
 # ---------------------------------------------------------------------------
 # Merge OpenRouter with benchmark sources
 # ---------------------------------------------------------------------------
+def aa_match_key(creator, slug):
+    """Build a normalized key for matching AA -> OpenRouter.
+
+    AA slugs use hyphens where OpenRouter uses dots (gpt-5.6 -> gpt-5-6) and
+    append reasoning-effort suffixes (gpt-5-6-luna-xhigh). Normalize both sides
+    so the canonical base model matches regardless of these suffixes.
+    """
+    s = f"{creator}/{slug}".lower()
+    s = s.replace(".", "-")
+    return s
+
+
+# reasoning-effort / alias suffixes that don't change the *base* model identity
+EFFORT_SUFFIX = re.compile(
+    r"-(xhigh|high|medium|low|non-reasoning|max|min|auto|balance|default|thinking)$"
+)
+ALIAS_COLON = re.compile(r"(:batch|:free|:thinking|:nitro|:floor|:cached)$")
+
+
+def base_slug(s):
+    """Strip reasoning-effort suffix and alias colons to get the base slug."""
+    s = s.lower()
+    s = ALIAS_COLON.sub("", s)
+    s = EFFORT_SUFFIX.sub("", s)
+    return s
+
+
 def merge(or_models, aa, aider):
-    or_by_id = {m["id"].lower(): m for m in or_models}
+    # index OpenRouter by normalized id AND by normalized base-slug
+    or_by_id = {}
+    or_by_base = {}
     or_by_norm = {}
     for m in or_models:
+        mid = m["id"].lower()
+        or_by_id[mid] = m
+        base = base_slug(mid.replace(".", "-"))
+        or_by_base.setdefault(base, []).append(m)
         or_by_norm.setdefault(norm(m["name"]), []).append(m)
 
     aa_used, aider_used = set(), set()
 
     # attach AA
     for key, a in (aa or {}).items():
-        target = or_by_id.get(key)
+        creator = a.get("creator_slug", "")
+        slug = a.get("slug", "")
+        # 1) exact normalized key
+        target = or_by_id.get(aa_match_key(creator, slug))
+        # 2) base-slug match (handles reasoning-effort suffixes)
+        if not target:
+            b = base_slug(aa_match_key(creator, slug))
+            cands = or_by_base.get(b)
+            if cands:
+                # prefer the canonical (non-alias) variant, then any
+                pref = [c for c in cands if base_slug(c["id"].replace(".", "-")) == b]
+                target = (pref or cands)[0]
+        # 3) fuzzy name match
         if not target:
             nn = norm(a.get("name", ""))
             if nn in or_by_norm:
@@ -541,17 +585,6 @@ def main(archive=False):
     aider, aider_note = fetch_aider()
     log(f"aider polyglot: {aider_note}")
 
-    # DEBUG: dump AA keys + sample match probes
-    if aa:
-        log(f"AA key sample (first 10): {list(aa.keys())[:10]}")
-        or_ids_lower = {m["id"].lower() for m in or_models}
-        or_norm = {norm(m["name"]) for m in or_models}
-        hits = sum(1 for k in aa if k in or_ids_lower or norm(aa[k].get("name","")) in or_norm)
-        log(f"AA total={len(aa)} matched_to_OR={hits}")
-        for probe in ["gpt-5.6-sol","gpt-5.6-luna","grok-4.6","gemini-3.7-flash","deepseek-v4-pro-0813","claude-opus-5"]:
-            found = [k for k in aa if probe in k]
-            log(f"  probe '{probe}': aa_keys={found[:3]}")
-
     aa_used, aider_used = merge(or_models, aa, aider)
     log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}")
 
@@ -594,9 +627,10 @@ def main(archive=False):
         "methodology": (
             "Each task score = weighted mean of available normalized 0-1 benchmarks "
             "(AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already "
-            "0-1; aider pass_rate /100). Sources merged by provider+slug then name "
-            "fuzzy-match. Variant families collapsed to canonical base model in "
-            "shortlists."
+            "0-1; aider pass_rate /100). Sources merged via normalized "
+            "provider+slug (AA dots->hyphens, reasoning-effort suffixes tolerated), "
+            "then fuzzy name match. Only routing aliases (:batch/:free/:thinking) "
+            "collapse in shortlists; identity tags (-latest, -0813, -v2) stay distinct."
         ),
     }
 
