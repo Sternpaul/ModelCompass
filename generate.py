@@ -3,9 +3,10 @@
 ModelCompass generator — pure per-benchmark rankings, no mixing.
 
 Sources (all fetched directly, no third-party snapshots):
- 1. OpenRouter /api/v1/models        -> catalog: pricing, context, modality, flags
- 2. Artificial Analysis API v2       -> 17 raw benchmarks + 3 composite indices
- 3. arena.ai (Jina Reader)           -> LMArena Elo (11 leaderboards)
+ 1. OpenRouter /api/v1/models        -> catalog: pricing, context, modality, flags (deduped with models.dev)
+ 1b. models.dev /api.json            -> catalog: broad universe of "what models exist" (6667 models)
+ 2. Artificial Analysis API v2       -> raw benchmark spine (~600 models, all written directly)
+ 3. arena.ai (Jina Reader)           -> LMArena Elo spine (11 leaderboards)
  4. BenchLM (MIT JSON)               -> 437 benchmarks across 388 models
 
 Each source writes its OWN file(s) under benchmarks/.  No scores are blended.
@@ -152,6 +153,69 @@ def fetch_openrouter():
         }
         out.append(rec)
     return out
+
+
+# ---------------------------------------------------------------------------
+# Source 1b: models.dev catalog (broad universe of "what models exist")
+# ---------------------------------------------------------------------------
+MODELS_DEV_URL = "https://models.dev/api.json"
+
+
+def fetch_modelsdev():
+    """Return (list_of_catalog_recs, note). Deduped against OpenRouter by
+    base slug so routers like kilo/openrouter/... don't create dup rows.
+
+    models.dev has NO benchmark scores — it is catalog-only (pricing, context,
+    modality, capability flags). It widens the universe so models that exist on
+    AA/Arena/BenchLM but not in OpenRouter still get a catalog entry.
+    """
+    try:
+        data = fetch_json(MODELS_DEV_URL, timeout=90)
+    except Exception as e:
+        return [], f"fetch error: {e}"
+
+    out = []
+    for prov, pdata in data.items():
+        for mid, mval in (pdata.get("models") or {}).items():
+            cost = (mval.get("cost") or {})
+            limit = (mval.get("limit") or {})
+            mods = (mval.get("modalities") or {})
+            in_mods = set(mods.get("input", []) or [])
+            out_mods = set(mods.get("output", []) or [])
+            p_in = scale(cost.get("input"), 1e-6)
+            p_out = scale(cost.get("output"), 1e-6)
+            rec = {
+                "id": mid,
+                "name": mval.get("name", mid),
+                "provider": mid.split("/")[0] if "/" in mid else prov,
+                "family": family_id(mid),
+                "source": "models.dev",
+                "created_unix": None,
+                "context": limit.get("context"),
+                "modality": "/".join(sorted(in_mods | out_mods)) if (in_mods | out_mods) else "",
+                "is_vision": "image" in in_mods,
+                "is_audio_input": "audio" in in_mods,
+                "is_video_input": "video" in in_mods,
+                "is_image_output": "image" in out_mods,
+                "is_audio_output": "audio" in out_mods,
+                "supports_reasoning": bool(mval.get("reasoning")),
+                "supports_tools": bool(mval.get("tool_call")),
+                "supports_json": False,
+                "supports_caching": False,
+                "knowledge_cutoff": mval.get("knowledge"),
+                "hugging_face_id": None,
+                "open_weight": bool(mval.get("open_weights")),
+                "synthetic": False,
+                "free": mid.endswith(":free"),
+                "price_per_million": {
+                    "prompt": round(p_in, 6) if p_in is not None else None,
+                    "completion": round(p_out, 6) if p_out is not None else None,
+                    "cache_read": None,
+                },
+                "benchmarks": {},
+            }
+            out.append(rec)
+    return out, f"ok ({len(out)} models from {len(data)} providers)"
 
 
 # ---------------------------------------------------------------------------
@@ -664,9 +728,9 @@ def base_slug(model_id):
     return model_id
 
 
-def merge(or_models, aa, arena, benchlm):
-    """Attach raw benchmark data to OpenRouter models.
-    Each source stays in its own namespace under benchmarks.<source>."""
+def merge(catalog, aa, arena, benchlm):
+    """Attach catalog enrichment to benchmark spines (no filtering).
+    Each benchmark stays in its own namespace under benchmarks/<source>/."""
     or_by_id = {}
     or_by_norm = {}
     or_by_slug_only = {}
@@ -823,20 +887,26 @@ def _write_benchmark_json(subdir, bname, meta_info, models_list):
     return path
 
 
-def write_aa_benchmarks(or_models):
+def write_aa_benchmarks(aa):
     """Write every Artificial Analysis benchmark into artificial-analysis/.
 
-    We emit one file per evaluation key that actually appears in the data
-    (17 fields), not a hard-coded subset - so newly added AA benchmarks show
-    up automatically. `fetched_at` is stamped on each file's meta.
+    AA is its OWN spine: we iterate the full AA response (every model AA
+    returns), NOT just OpenRouter-matched models. This recovers models like
+    meituan/longcat-2.0 that exist on AA but not in the OR catalog.
+
+    We emit one file per evaluation key that actually appears across the AA
+    catalog (17 fields), sorted by score (higher = better). `fetched_at` is
+    stamped on each file's meta.
     """
     subdir = "artificial-analysis"
+    if not aa:
+        return {}
     fetched_at = datetime.now(timezone.utc).isoformat()
 
-    # Discover which evaluation keys exist across the catalog
+    # Discover which evaluation keys exist across the full AA catalog
     seen = {}
-    for m in or_models:
-        evals = (m.get("benchmarks", {}).get("aa", {}) or {}).get("evaluations", {})
+    for key, a in aa.items():
+        evals = (a.get("evaluations") or {})
         for k in evals:
             seen.setdefault(k, 0)
             seen[k] += 1
@@ -844,14 +914,13 @@ def write_aa_benchmarks(or_models):
     written = {}
     for eval_key, n in sorted(seen.items()):
         models_list = []
-        for m in or_models:
-            evals = (m.get("benchmarks", {}).get("aa", {}) or {}).get("evaluations", {})
-            val = num(evals.get(eval_key))
+        for key, a in aa.items():
+            val = num((a.get("evaluations") or {}).get(eval_key))
             if val is not None:
                 models_list.append(
                     {
-                        "model": m["id"],
-                        "name": m.get("name"),
+                        "model": key,
+                        "name": a.get("name"),
                         "score": val,
                     }
                 )
@@ -1263,11 +1332,22 @@ def main():
 
     log("=== Fetching sources ===")
 
-    # 1. OpenRouter catalog
+    # 1. OpenRouter catalog (pricing, context, modalities, flags)
     or_models = fetch_openrouter()
     log(f"OpenRouter: {len(or_models)} models")
 
-    # 2. Artificial Analysis
+    # 1b. models.dev catalog (broadens universe: 6667 models, no scores)
+    md_models, md_note = fetch_modelsdev()
+    log(f"models.dev: {md_note}")
+    or_by_base = {base_slug(m["id"]): m for m in or_models}
+    for m in md_models:
+        base = base_slug(m["id"])
+        if base not in or_by_base:
+            or_models.append(m)
+            or_by_base[base] = m
+    log(f"Catalog (OR + models.dev deduped): {len(or_models)} unique base models")
+
+    # 2. Artificial Analysis (its own spine — ~600 models, all written)
     aa, aa_note = fetch_artificial_analysis(args.aa_key)
     log(f"Artificial Analysis: {aa_note}")
 
@@ -1290,7 +1370,7 @@ def main():
     benchlm, benchlm_note = fetch_benchlm()
     log(f"BenchLM: {benchlm_note}")
 
-    # Merge (cross-reference only, no blending)
+    # Merge: attach catalog enrichment to benchmark spines (no filtering)
     counts = merge(or_models, aa, arena_data, benchlm or [])
     log(f"Merged: {counts}")
 
@@ -1301,9 +1381,9 @@ def main():
     os.makedirs("benchmarks", exist_ok=True)
     WRITTEN.clear()
 
-    # Write per-benchmark files (into per-source subfolders)
+    # Write per-benchmark files (each benchmark is its own spine)
     log("=== Writing per-benchmark files ===")
-    write_aa_benchmarks(or_models)
+    write_aa_benchmarks(aa)
     write_arena_benchmarks(arena_data)
     write_benchlm_benchmarks(benchlm or [])
 
@@ -1316,6 +1396,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
             "openrouter": "ok",
+            "models.dev": md_note,
             "artificial_analysis": aa_note,
             "arena_ai": arena_note,
             "benchlm": benchlm_note,
