@@ -730,16 +730,21 @@ def base_slug(model_id):
 
 def merge(catalog, aa, arena, benchlm):
     """Attach catalog enrichment to benchmark spines (no filtering).
-    Each benchmark stays in its own namespace under benchmarks/<source>/."""
-    or_by_id = {}
-    or_by_norm = {}
-    or_by_slug_only = {}
-    for m in or_models:
+    Each benchmark stays in its own namespace under benchmarks/<source>/.
+
+    `catalog` = OR ∪ models.dev universe. We use it only to DECORATE
+    benchmark rows with pricing/context/flags where a match is found — never
+    to decide whether a benchmark row exists.
+    """
+    cat_by_id = {}
+    cat_by_norm = {}
+    cat_by_slug_only = {}
+    for m in catalog:
         mid = m["id"].lower()
-        or_by_id[mid] = m
-        or_by_norm.setdefault(norm(m["name"]), []).append(m)
+        cat_by_id[mid] = m
+        cat_by_norm.setdefault(norm(m["name"]), []).append(m)
         slug_only = mid.split("/", 1)[-1] if "/" in mid else mid
-        or_by_slug_only.setdefault(slug_only, []).append(m)
+        cat_by_slug_only.setdefault(slug_only, []).append(m)
 
     counts = {"aa": 0, "arena": 0, "benchlm": 0}
 
@@ -750,20 +755,20 @@ def merge(catalog, aa, arena, benchlm):
             slug = a.get("slug", "")
             target = None
             k = f"{creator}/{slug}".lower()
-            if k in or_by_id:
-                target = or_by_id[k]
+            if k in cat_by_id:
+                target = cat_by_id[k]
             else:
                 base = base_slug(k.replace(".", "-"))
-                if base in or_by_id:
-                    target = or_by_id[base]
+                if base in cat_by_id:
+                    target = cat_by_id[base]
                 else:
                     so = base.split("/", 1)[-1]
-                    if so in or_by_slug_only:
-                        target = or_by_slug_only[so][0]
+                    if so in cat_by_slug_only:
+                        target = cat_by_slug_only[so][0]
                     else:
                         nn = norm(a.get("name", ""))
-                        if nn in or_by_norm:
-                            target = or_by_norm[nn][0]
+                        if nn in cat_by_norm:
+                            target = cat_by_norm[nn][0]
             if target:
                 target["benchmarks"]["aa"] = a
                 counts["aa"] += 1
@@ -773,8 +778,8 @@ def merge(catalog, aa, arena, benchlm):
         for lb_slug, lb_data in arena.items():
             for model_info in lb_data.get("models", []):
                 nn = norm(model_info.get("model", ""))
-                if nn in or_by_norm:
-                    for m in or_by_norm[nn]:
+                if nn in cat_by_norm:
+                    for m in cat_by_norm[nn]:
                         m["benchmarks"].setdefault("arena", {})
                         m["benchmarks"]["arena"][lb_slug] = model_info
                         counts["arena"] += 1
@@ -786,19 +791,19 @@ def merge(catalog, aa, arena, benchlm):
             slug = bm.get("slug", "").lower()
             model_name = bm.get("model", "")
             target = None
-            if slug and slug in or_by_id:
-                target = or_by_id[slug]
+            if slug and slug in cat_by_id:
+                target = cat_by_id[slug]
             else:
-                if slug in or_by_slug_only:
-                    target = or_by_slug_only[slug][0]
+                if slug in cat_by_slug_only:
+                    target = cat_by_slug_only[slug][0]
                 elif slug:
                     base = base_slug(slug)
-                    if base in or_by_slug_only:
-                        target = or_by_slug_only[base][0]
+                    if base in cat_by_slug_only:
+                        target = cat_by_slug_only[base][0]
                 if target is None:
                     nn = norm(model_name)
-                    if nn in or_by_norm:
-                        target = or_by_norm[nn][0]
+                    if nn in cat_by_norm:
+                        target = cat_by_norm[nn][0]
             if target:
                 target["benchmarks"]["benchlm"] = bm
                 counts["benchlm"] += 1
