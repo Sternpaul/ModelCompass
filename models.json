@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T04:49:44Z",
+    "generated_at": "2026-08-17T07:29:37Z",
     "model_count": 408,
     "synthetic_excluded": 6,
     "update_cadence": "daily (GitHub Actions)",
@@ -1661,9 +1661,9 @@
         "task_score": 0.61,
         "context": 1048576,
         "price_per_million": {
-          "prompt": 0.66,
-          "completion": 1.98,
-          "cache_read": 0.022
+          "prompt": 1.32,
+          "completion": 3.96,
+          "cache_read": 0.044
         },
         "capability_flags": [
           "reasoning",
@@ -2866,7 +2866,7 @@
         },
         "aa_speed": {
           "median_tps": 46.51,
-          "ttft_s": 1.79
+          "ttft_s": 1.782
         }
       },
       "task_scores": {
@@ -2946,9 +2946,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.66,
-        "completion": 1.98,
-        "cache_read": 0.022
+        "prompt": 1.32,
+        "completion": 3.96,
+        "cache_read": 0.044
       },
       "benchmarks": {},
       "task_scores": {
@@ -3013,7 +3013,7 @@
         },
         "aa_speed": {
           "median_tps": 62.082,
-          "ttft_s": 38.243
+          "ttft_s": 37.485
         },
         "aider_polyglot": {
           "pass_rate_1": 40.9,
@@ -3279,8 +3279,8 @@
           "tau_banking": 0.232989690721649
         },
         "aa_speed": {
-          "median_tps": 69.016,
-          "ttft_s": 1.18
+          "median_tps": 68.624,
+          "ttft_s": 1.185
         }
       },
       "task_scores": {
@@ -3451,7 +3451,7 @@
         },
         "aa_speed": {
           "median_tps": 46.79,
-          "ttft_s": 1.806
+          "ttft_s": 1.793
         },
         "aider_polyglot": {
           "pass_rate_1": 9.3,
@@ -3480,7 +3480,7 @@
       "family": "~deepseek/deepseek-v4-flash-latest",
       "source": "openrouter",
       "created_unix": 1785606009,
-      "context": 1048576,
+      "context": 1310720,
       "modality": "text->text",
       "is_vision": false,
       "is_audio_input": false,
@@ -3511,8 +3511,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.5638333333333333,
-      "capability_score": 6.766
+      "_fallback": 0.58575,
+      "capability_score": 7.029
     },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
@@ -3521,7 +3521,7 @@
       "family": "deepseek/deepseek-v4-flash-0731",
       "source": "openrouter",
       "created_unix": 1785478908,
-      "context": 1048576,
+      "context": 1310720,
       "modality": "text->text",
       "is_vision": false,
       "is_audio_input": false,
@@ -3552,8 +3552,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.5634166666666667,
-      "capability_score": 6.761
+      "_fallback": 0.5848333333333333,
+      "capability_score": 7.018
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -3604,8 +3604,8 @@
           "tau_banking": 0.187628865979381
         },
         "aa_speed": {
-          "median_tps": 79.524,
-          "ttft_s": 1.524
+          "median_tps": 70.476,
+          "ttft_s": 1.58
         }
       },
       "task_scores": {
@@ -3751,8 +3751,8 @@
           "tau_banking": 0.385567010309278
         },
         "aa_speed": {
-          "median_tps": 48.681,
-          "ttft_s": 3.611
+          "median_tps": 48.147,
+          "ttft_s": 3.249
         }
       },
       "task_scores": {
@@ -4004,8 +4004,8 @@
           "tau_banking": 0.298969072164948
         },
         "aa_speed": {
-          "median_tps": 209.302,
-          "ttft_s": 13.582
+          "median_tps": 208.054,
+          "ttft_s": 12.513
         }
       },
       "task_scores": {
@@ -4110,8 +4110,8 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 343.73,
-          "ttft_s": 7.494
+          "median_tps": 351.16,
+          "ttft_s": 7.329
         }
       },
       "task_scores": {
@@ -4281,7 +4281,7 @@
           "tau_banking": 0.290721649484536
         },
         "aa_speed": {
-          "median_tps": 80.569,
+          "median_tps": 81.304,
           "ttft_s": 2.141
         }
       },
@@ -4728,7 +4728,7 @@
           "tau_banking": 0.28659793814433
         },
         "aa_speed": {
-          "median_tps": 171.158,
+          "median_tps": 170.161,
           "ttft_s": 20.205
         }
       },
@@ -4916,8 +4916,8 @@
           "tau_banking": 0.28659793814433
         },
         "aa_speed": {
-          "median_tps": 110.79,
-          "ttft_s": 2.253
+          "median_tps": 101.571,
+          "ttft_s": 2.022
         }
       },
       "task_scores": {
@@ -5104,8 +5104,8 @@
           "tau_banking": 0.290721649484536
         },
         "aa_speed": {
-          "median_tps": 60.194,
-          "ttft_s": 2.335
+          "median_tps": 59.39,
+          "ttft_s": 2.329
         }
       },
       "task_scores": {
@@ -5210,7 +5210,7 @@
           "tau_banking": 0.420618556701031
         },
         "aa_speed": {
-          "median_tps": 51.867,
+          "median_tps": 50.116,
           "ttft_s": 12.923
         }
       },
@@ -5553,7 +5553,7 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 61.647,
+          "median_tps": 60.926,
           "ttft_s": 1.279
         },
         "aider_polyglot": {
@@ -5879,8 +5879,8 @@
           "tau_banking": 0.0639175257731959
         },
         "aa_speed": {
-          "median_tps": 26.484,
-          "ttft_s": 0.315
+          "median_tps": 26.032,
+          "ttft_s": 0.314
         }
       },
       "task_scores": {
@@ -5944,8 +5944,8 @@
           "tau_banking": 0.167010309278351
         },
         "aa_speed": {
-          "median_tps": 122.052,
-          "ttft_s": 1.454
+          "median_tps": 121.062,
+          "ttft_s": 1.444
         }
       },
       "task_scores": {
@@ -6284,8 +6284,8 @@
           "tau_banking": 0.381443298969072
         },
         "aa_speed": {
-          "median_tps": 65.714,
-          "ttft_s": 58.41
+          "median_tps": 64.973,
+          "ttft_s": 52.949
         }
       },
       "task_scores": {
@@ -6390,8 +6390,8 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 141.623,
-          "ttft_s": 0.896
+          "median_tps": 142.419,
+          "ttft_s": 0.836
         }
       },
       "task_scores": {
@@ -6485,8 +6485,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.49266666666666664,
-      "capability_score": 5.912
+      "_fallback": 0.49225,
+      "capability_score": 5.907
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
@@ -6526,8 +6526,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.49266666666666664,
-      "capability_score": 5.912
+      "_fallback": 0.49225,
+      "capability_score": 5.907
     },
     {
       "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -6567,8 +6567,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.4666666666666666,
-      "capability_score": 5.6
+      "_fallback": 0.46625,
+      "capability_score": 5.595
     },
     {
       "id": "qwen/qwen3.7-plus",
@@ -6619,8 +6619,8 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 56.313,
-          "ttft_s": 1.47
+          "median_tps": 56.426,
+          "ttft_s": 1.439
         }
       },
       "task_scores": {
@@ -6684,8 +6684,8 @@
           "tau_banking": 0.152577319587629
         },
         "aa_speed": {
-          "median_tps": 104.334,
-          "ttft_s": 1.184
+          "median_tps": 97.268,
+          "ttft_s": 1.14
         }
       },
       "task_scores": {
@@ -7556,8 +7556,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 127.492,
-          "ttft_s": 0.438
+          "median_tps": 126.909,
+          "ttft_s": 0.436
         }
       },
       "task_scores": {
@@ -7622,7 +7622,7 @@
         },
         "aa_speed": {
           "median_tps": 143.33,
-          "ttft_s": 0.671
+          "ttft_s": 0.677
         }
       },
       "task_scores": {
@@ -8096,8 +8096,8 @@
           "tau_banking": 0.0927835051546392
         },
         "aa_speed": {
-          "median_tps": 141.358,
-          "ttft_s": 1.075
+          "median_tps": 139.862,
+          "ttft_s": 1.073
         }
       },
       "task_scores": {
@@ -8202,8 +8202,8 @@
           "tau_banking": 0.0927835051546392
         },
         "aa_speed": {
-          "median_tps": 56.994,
-          "ttft_s": 1.449
+          "median_tps": 56.813,
+          "ttft_s": 1.425
         }
       },
       "task_scores": {
@@ -8454,9 +8454,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.66,
-        "completion": 1.98,
-        "cache_read": 0.022
+        "prompt": 1.32,
+        "completion": 3.96,
+        "cache_read": 0.044
       },
       "benchmarks": {
         "aa": {
@@ -8479,7 +8479,7 @@
           "tau_banking": 0.395876288659794
         },
         "aa_speed": {
-          "median_tps": 78.478,
+          "median_tps": 77.139,
           "ttft_s": 1.2
         }
       },
@@ -8544,7 +8544,7 @@
           "tau_banking": 0.393814432989691
         },
         "aa_speed": {
-          "median_tps": 121.041,
+          "median_tps": 116.389,
           "ttft_s": 0.819
         }
       },
@@ -8740,7 +8740,7 @@
         },
         "aa_speed": {
           "median_tps": 53.6,
-          "ttft_s": 2.452
+          "ttft_s": 2.362
         }
       },
       "task_scores": {
@@ -8980,7 +8980,7 @@
         "agents": null,
         "open_weight": null
       },
-      "capability_score": 3.359
+      "capability_score": 3.353
     },
     {
       "id": "moonshotai/kimi-k2.6",
@@ -9561,8 +9561,8 @@
           "tau_banking": 0.0577319587628866
         },
         "aa_speed": {
-          "median_tps": 186.213,
-          "ttft_s": 0.719
+          "median_tps": 180.587,
+          "ttft_s": 0.773
         }
       },
       "task_scores": {
@@ -9815,7 +9815,7 @@
         },
         "aa_speed": {
           "median_tps": 110.038,
-          "ttft_s": 1.033
+          "ttft_s": 1.042
         }
       },
       "task_scores": {
@@ -10426,7 +10426,7 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 100.548,
+          "median_tps": 101.81,
           "ttft_s": 0.43
         }
       },
@@ -11045,7 +11045,7 @@
           "tau_banking": 0.103092783505155
         },
         "aa_speed": {
-          "median_tps": 154.578,
+          "median_tps": 150.892,
           "ttft_s": 1.002
         }
       },
@@ -11192,8 +11192,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 135.34,
-          "ttft_s": 36.332
+          "median_tps": 131.938,
+          "ttft_s": 35.317
         }
       },
       "task_scores": {
@@ -11298,7 +11298,7 @@
           "tau_banking": 0.214432989690722
         },
         "aa_speed": {
-          "median_tps": 136.005,
+          "median_tps": 132.629,
           "ttft_s": 33.951
         }
       },
@@ -11564,8 +11564,8 @@
         "open_weight": 0.4125
       },
       "_task": 0.4125,
-      "_fallback": 0.39749999999999996,
-      "capability_score": 4.77
+      "_fallback": 0.3970833333333333,
+      "capability_score": 4.765
     },
     {
       "id": "minimax/minimax-m2.5",
@@ -11917,7 +11917,7 @@
           "tau_banking": 0.0536082474226804
         },
         "aa_speed": {
-          "median_tps": 132.197,
+          "median_tps": 130.682,
           "ttft_s": 0.922
         }
       },
@@ -15740,8 +15740,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 185.629,
-          "ttft_s": 0.99
+          "median_tps": 185.282,
+          "ttft_s": 0.983
         }
       },
       "task_scores": {
@@ -15887,8 +15887,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 170.519,
-          "ttft_s": 1.43
+          "median_tps": 170.865,
+          "ttft_s": 1.279
         }
       },
       "task_scores": {
@@ -16678,7 +16678,7 @@
           "tau_banking": 0.0288659793814433
         },
         "aa_speed": {
-          "median_tps": 242.382,
+          "median_tps": 244.507,
           "ttft_s": 0.533
         },
         "aider_polyglot": {
@@ -16750,8 +16750,8 @@
           "tau_banking": 0.0701030927835052
         },
         "aa_speed": {
-          "median_tps": 168.164,
-          "ttft_s": 0.543
+          "median_tps": 166.87,
+          "ttft_s": 0.539
         }
       },
       "task_scores": {
@@ -18911,7 +18911,7 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 141.717,
+          "median_tps": 133.867,
           "ttft_s": 6.888
         },
         "aider_polyglot": {
@@ -19431,8 +19431,8 @@
           "tau_banking": 0.0371134020618557
         },
         "aa_speed": {
-          "median_tps": 117.218,
-          "ttft_s": 0.574
+          "median_tps": 119.904,
+          "ttft_s": 0.579
         },
         "aider_polyglot": {
           "pass_rate_1": 4.4,
@@ -19503,8 +19503,8 @@
           "tau_banking": 0.0329896907216495
         },
         "aa_speed": {
-          "median_tps": 135.604,
-          "ttft_s": 0.569
+          "median_tps": 136.135,
+          "ttft_s": 0.568
         }
       },
       "task_scores": {
@@ -19845,8 +19845,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 60.073,
-          "ttft_s": 0.315
+          "median_tps": 59.468,
+          "ttft_s": 0.32
         },
         "aider_polyglot": {
           "pass_rate_1": 2.2,
@@ -19918,7 +19918,7 @@
         },
         "aa_speed": {
           "median_tps": 94.534,
-          "ttft_s": 27.737
+          "ttft_s": 25.334
         }
       },
       "task_scores": {
@@ -20904,7 +20904,7 @@
         },
         "aa_speed": {
           "median_tps": 31.639,
-          "ttft_s": 1.129
+          "ttft_s": 1.048
         }
       },
       "task_scores": {

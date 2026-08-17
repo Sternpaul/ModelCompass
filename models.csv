@@ -6,7 +6,7 @@ google/gemini-3.7-flash:batch,Google: Gemini 3.7 Flash (batch),google,openrouter
 bytedance-seed/seed-2-1-turbo,ByteDance Seed: Seed 2.1 Turbo,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.5,2.5,,,,,,,,,,,
 qwen/qwen3.8-2.4t-a95b,Qwen: Qwen3.8 2.4T A95B,qwen,openrouter,1048576,text->text,False,True,True,True,True,,2.0,6.0,57.7,71.9,,,0.935,0.424,,,0.648,0.719,0.6453
 bytedance-seed/seed-2.0-code,ByteDance Seed: Seed-2.0-Code,bytedance-seed,openrouter,262144,text+image+video->text,True,True,True,True,False,,0.5,3.0,,,,,,,,,,,
-deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.66,1.98,,,,,,,,,,,
+deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,1.32,3.96,,,,,,,,,,,
 x-ai/grok-4.6,SpaceXAI: Grok 4.6,x-ai,openrouter,500000,text+image+file->text,True,True,True,True,False,,2.0,6.0,60.9,76.8,,,0.949,0.429,,40.9,0.6885,0.5885,0.6623
 liquid/lfm-2.5-2.6b:free,LiquidAI: LFM2.5-2.6B (free),liquid,openrouter,128000,text->text,False,True,True,True,True,,0.0,0.0,,,,,,,,,,,
 nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,nvidia,openrouter,1000000,text->text,False,True,True,True,True,,0.08,0.2,23.6,26.8,,,0.743,0.106,,5.8,0.252,0.163,0.3617
@@ -16,8 +16,8 @@ upstage/solar-pro4,Upstage: Solar Pro 4,upstage,openrouter,524288,text->text,Fal
 meta/muse-glimmer-30b,Meta: Muse Glimmer 30B,meta,openrouter,131072,text+image->text,True,True,True,True,True,,0.35,1.5,,,,,,,,,,,
 meta/muse-spark-1.2,Meta: Muse Spark 1.2,meta,openrouter,1048576,text+image+file+audio+video->text,True,True,True,True,False,,1.25,4.25,56.8,72.2,,,0.904,0.455,,,0.645,0.722,0.6423
 qwen/qwen3.8-max,Qwen: Qwen3.8 Max,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,2.0,6.0,58.1,71.8,,,0.927,0.43,,9.3,0.6495,0.4055,0.646
-~deepseek/deepseek-v4-flash-latest,DeepSeek V4 Flash Latest,~deepseek,openrouter,1048576,text->text,False,True,True,True,False,,0.0603,0.1206,,,,,,,,,,,
-deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.14,0.28,,,,,,,,,,,
+~deepseek/deepseek-v4-flash-latest,DeepSeek V4 Flash Latest,~deepseek,openrouter,1310720,text->text,False,True,True,True,False,,0.0603,0.1206,,,,,,,,,,,
+deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,deepseek,openrouter,1310720,text->text,False,True,True,True,True,,0.14,0.28,,,,,,,,,,,
 thinkingmachines/inkling-small,Thinking Machines: Inkling Small,thinkingmachines,openrouter,524288,text+image+audio->text,True,True,True,True,True,,0.45,1.2,41.2,52.9,,,0.895,0.333,,,0.4705,0.529,0.5467
 qwen/qwen3.7-flash,Qwen: Qwen3.7 Flash,qwen,openrouter,1000000,text+image+video->text,True,True,True,True,False,,0.03,0.13,,,,,,,,,,,
 anthropic/claude-opus-5-fast,Claude Opus 5 (Fast),anthropic,openrouter,1000000,text+image+file->text,True,True,True,True,False,,10.0,50.0,,,,,,,,,,,
@@ -116,7 +116,7 @@ openai/gpt-5.5-pro,OpenAI: GPT-5.5 Pro,openai,openrouter,1050000,text+image+file
 openai/gpt-5.5-pro:batch,OpenAI: GPT-5.5 Pro (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,15.0,90.0,,,,,,,,,,,
 openai/gpt-5.5,OpenAI: GPT-5.5,openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,5.0,30.0,54.7,71.6,,,0.932,0.45,,,0.6315,0.716,0.643
 openai/gpt-5.5:batch,OpenAI: GPT-5.5 (batch),openai,openrouter,1050000,text+image+file->text,True,True,True,True,False,2025-12-01,2.5,15.0,,,,,,,,,,,
-deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.66,1.98,53.2,68.8,,,0.928,0.41,,,0.61,0.688,0.6233
+deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,1.32,3.96,53.2,68.8,,,0.928,0.41,,,0.61,0.688,0.6233
 deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,deepseek,openrouter,1048576,text->text,False,True,True,True,True,,0.0826,0.1652,51.8,69.1,,,0.908,0.386,,,0.6045,0.691,0.604
 inclusionai/ling-2.6-1t,inclusionAI: Ling-2.6-1T,inclusionai,openrouter,262144,text->text,False,False,True,True,False,,0.075,0.625,26.6,,,,0.752,0.087,,,0.266,,0.3683
 tencent/hy3-preview,Tencent: Hy3 preview,tencent,openrouter,262144,text->text,False,True,True,False,True,,0.18,0.6,34.4,,,,0.867,0.278,,,0.344,,0.4963

@@ -1,6 +1,6 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-17T04:49:44Z — 408 models. Daily GitHub Action._
+_Generated 2026-08-17T07:29:37Z — 408 models. Daily GitHub Action._
 
 ## Sources
 
