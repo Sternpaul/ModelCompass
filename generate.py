@@ -807,19 +807,6 @@ SOURCE_META = {
             "consensus": ("Consensus Ranking", "Top-10 appearance count, tie-broken by Borda points."),
         },
     },
-    "nous_free": {
-        "title": "Nous Free Tier (models.dev / Nous Portal)",
-        "source_url": "https://models.dev/api.json",
-        "desc": "Models listed as free on the Nous Portal (models.dev catalogue, "
-                "tagged ':free'). Pricing 0.00 / 0.00 per 1M tokens. Sorted by "
-                "provider then model id. Note: the Nous Portal currently lists 6 "
-                "free models; 2 of them (meituan/longcat-2.0:free, "
-                "upstage/solar-pro4:free) are portal-only additions not yet in "
-                "the models.dev catalogue at scrape time.",
-        "benches": {
-            "nous_free": ("Free", "Listed free on the Nous Portal / models.dev."),
-        },
-    },
 }
 
 WRITTEN = {}  # subdir -> [bname, ...]
@@ -951,101 +938,7 @@ def write_benchlm_benchmarks(benchlm_items):
     return written
 
 
-# ---------------------------------------------------------------------------
-# Source 5: Nous free tier (models.dev catalogue)
-# ---------------------------------------------------------------------------
-MODELS_DEV_URL = "https://models.dev/api.json"
-NOTEBOOK_URL = "https://portal.nousresearch.com/info"
 
-def fetch_nous_free():
-    """Return a list of models tagged ':free' in the Nous models.dev catalogue.
-
-    This is the exact catalogue Hermes Agent itself resolves to — same endpoint.
-    Note: 2 of the 6 free models listed on the Nous Portal UI
-    (meituan/longcat-2.0:free, upstage/solar-pro4:free) are portal-only
-    additions not yet present in the catalogue at scrape time.
-    """
-    try:
-        req = urllib.request.Request(
-            MODELS_DEV_URL,
-            headers={"User-Agent": "modelcompass/1.0"},
-        )
-        with urllib.request.urlopen(req, timeout=90) as r:
-            data = json.loads(r.read().decode("utf-8"))
-    except Exception as e:
-        return [], f"fetch error: {e}"
-
-    free_models = []
-    seen = {}  # base_id -> model entry
-    for prov, pdata in data.items():
-        for mid, mval in (pdata.get("models") or {}).items():
-            if not mid.endswith(":free"):
-                continue
-            base = mid[:-5]  # strip the :free routing alias
-            if base not in seen:
-                cost = (mval.get("cost") or {})
-                seen[base] = {
-                    "id": base,
-                    "name": mval.get("name", base),
-                    "providers": [],
-                    "family": mval.get("family", ""),
-                    "source": "models.dev",
-                    "context": ((mval.get("limit") or {}).get("context")),
-                    "modality": ", ".join(
-                        (mval.get("modalities") or {}).get("input", ["text"])
-                    ),
-                    "cost_input": cost.get("input", 0.0),
-                    "cost_output": cost.get("output", 0.0),
-                    "open_weights": mval.get("open_weights"),
-                    "reasoning": mval.get("reasoning"),
-                    "tool_call": mval.get("tool_call"),
-                    "attachment": mval.get("attachment"),
-                    "release_date": mval.get("release_date"),
-                }
-            seen[base]["providers"].append(prov)
-
-    free_models = sorted(seen.values(), key=lambda x: x["id"])
-    return free_models, f"ok ({len(free_models)} unique free models from {len(data)} providers, fetched_at={datetime.now(timezone.utc).isoformat()[:10]})"
-
-
-def write_nous_free(free_models):
-    """Write the free-tier ranking as a single-file source."""
-    subdir = "nous_free"
-    bname = "nous_free"
-    if not free_models:
-        return {}
-    meta = {
-        "leaderboard": bname,
-        "source_url": NOTEBOOK_URL,
-        "catalogue_url": MODELS_DEV_URL,
-        "fetched_at": datetime.now(timezone.utc).isoformat(),
-        "model_count": len(free_models),
-        "note": (
-            "Models tagged ':free' in the Nous models.dev catalogue "
-            "(the same catalogue Hermes Agent resolves). Pricing 0.00 in and out per 1M tokens. "
-            "The Nous Portal UI lists 6 free models; 2 are portal-only additions not yet in the catalogue: "
-            "meituan/longcat-2.0:free, upstage/solar-pro4:free."
-        ),
-    }
-    models_list = [
-        {
-            "rank": i + 1,
-            "model": m["id"],
-            "name": m.get("name"),
-            "providers": m.get("providers", []),
-            "family": m.get("family", ""),
-            "cost_input": m.get("cost_input", 0.0),
-            "cost_output": m.get("cost_output", 0.0),
-        }
-        for i, m in enumerate(free_models)
-    ]
-    _write_benchmark_json(subdir, bname, meta, models_list)
-    return {bname: True}
-
-
-# ---------------------------------------------------------------------------
-# Output: models.json (catalog, no derived scores)
-# ---------------------------------------------------------------------------
 def write_models_json(or_models, meta, counts):
     out = {
         "meta": {
@@ -1397,10 +1290,6 @@ def main():
     benchlm, benchlm_note = fetch_benchlm()
     log(f"BenchLM: {benchlm_note}")
 
-    # 5. Nous free tier (models.dev catalogue)
-    nous_free, nous_free_list = fetch_nous_free()
-    log(f"Nous free tier: {nous_free_list}")
-
     # Merge (cross-reference only, no blending)
     counts = merge(or_models, aa, arena_data, benchlm or [])
     log(f"Merged: {counts}")
@@ -1417,7 +1306,6 @@ def main():
     write_aa_benchmarks(or_models)
     write_arena_benchmarks(arena_data)
     write_benchlm_benchmarks(benchlm or [])
-    write_nous_free(nous_free or [])
 
     # Write catalog
     arena_note = (
@@ -1431,7 +1319,6 @@ def main():
             "artificial_analysis": aa_note,
             "arena_ai": arena_note,
             "benchlm": benchlm_note,
-            "nous_free": nous_free_list,
         },
     }
     write_models_json(or_models, meta, counts)

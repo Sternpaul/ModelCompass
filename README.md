@@ -143,7 +143,7 @@ ModelCompass/
 - [Artificial Analysis](benchmarks/artificial-analysis/OVERVIEW.md)
 - [LMArena](benchmarks/arena/OVERVIEW.md)
 - [BenchLM](benchmarks/benchlm/OVERVIEW.md)
-- [Nous Free Tier](benchmarks/nous_free/OVERVIEW.md)
+- [Free Models](FREE_MODELS.md)
 - [Consensus (Borda)](benchmarks/consensus/OVERVIEW.md)
 - [All benchmarks index](benchmarks/README.md)
 
