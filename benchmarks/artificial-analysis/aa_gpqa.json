@@ -3,7 +3,7 @@
     "leaderboard": "aa_gpqa",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "gpqa",
-    "fetched_at": "2026-08-17T13:02:47.024584+00:00",
+    "fetched_at": "2026-08-17T13:27:00.210764+00:00",
     "model_count_with_data": 66
   },
   "models": [
@@ -11,6 +11,11 @@
       "model": "minimax/minimax-m3",
       "name": "MiniMax: MiniMax M3",
       "score": 0.929
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
+      "score": 0.928
     },
     {
       "model": "anthropic/claude-fable-5",
@@ -48,11 +53,6 @@
       "score": 0.891
     },
     {
-      "model": "deepseek/deepseek-v4-pro",
-      "name": "DeepSeek: DeepSeek V4 Pro 0423",
-      "score": 0.888
-    },
-    {
       "model": "thinkingmachines/inkling",
       "name": "Thinking Machines: Inkling",
       "score": 0.872
@@ -61,11 +61,6 @@
       "model": "tencent/hy3-preview",
       "name": "Tencent: Hy3 preview",
       "score": 0.867
-    },
-    {
-      "model": "qwen/qwen3-max",
-      "name": "Qwen: Qwen3 Max",
-      "score": 0.861
     },
     {
       "model": "inclusionai/ling-3.0-flash",
@@ -88,6 +83,21 @@
       "score": 0.842
     },
     {
+      "model": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "score": 0.842
+    },
+    {
+      "model": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "score": 0.838
+    },
+    {
+      "model": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "score": 0.828
+    },
+    {
       "model": "openai/o3",
       "name": "OpenAI: o3",
       "score": 0.827
@@ -98,29 +108,19 @@
       "score": 0.82
     },
     {
-      "model": "deepseek/deepseek-r1",
-      "name": "DeepSeek: R1",
-      "score": 0.813
-    },
-    {
       "model": "z-ai/glm-5v-turbo",
       "name": "Z.ai: GLM 5V Turbo",
       "score": 0.809
     },
     {
-      "model": "openai/gpt-5",
-      "name": "OpenAI: GPT-5",
-      "score": 0.808
-    },
-    {
-      "model": "openai/gpt-5-mini",
-      "name": "OpenAI: GPT-5 Mini",
-      "score": 0.803
-    },
-    {
       "model": "openai/o4-mini",
       "name": "OpenAI: o4 Mini",
       "score": 0.784
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "score": 0.782
     },
     {
       "model": "minimax/minimax-m2",
@@ -138,9 +138,14 @@
       "score": 0.77
     },
     {
-      "model": "moonshotai/kimi-k2",
-      "name": "MoonshotAI: Kimi K2 0711",
-      "score": 0.767
+      "model": "qwen/qwen3-max",
+      "name": "Qwen: Qwen3 Max",
+      "score": 0.764
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+      "score": 0.757
     },
     {
       "model": "mistralai/mistral-medium-3-5",
@@ -178,19 +183,14 @@
       "score": 0.712
     },
     {
+      "model": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "score": 0.708
+    },
+    {
       "model": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "score": 0.695
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "name": "OpenAI: gpt-oss-20b",
-      "score": 0.688
-    },
-    {
-      "model": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b",
-      "score": 0.672
     },
     {
       "model": "qwen/qwen3-vl-32b-instruct",
@@ -211,6 +211,11 @@
       "model": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "score": 0.659
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
+      "score": 0.611
     },
     {
       "model": "allenai/olmo-3-32b-think",
@@ -240,7 +245,7 @@
     {
       "model": "nvidia/nemotron-nano-9b-v2:free",
       "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-      "score": 0.557
+      "score": 0.57
     },
     {
       "model": "openai/gpt-4o",
@@ -296,11 +301,6 @@
       "model": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
       "score": 0.402
-    },
-    {
-      "model": "nvidia/nemotron-3-nano-30b-a3b",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-      "score": 0.399
     },
     {
       "model": "anthropic/claude-3-haiku",

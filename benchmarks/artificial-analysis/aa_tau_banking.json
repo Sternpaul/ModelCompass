@@ -3,7 +3,7 @@
     "leaderboard": "aa_tau_banking",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "tau_banking",
-    "fetched_at": "2026-08-17T13:02:47.024584+00:00",
+    "fetched_at": "2026-08-17T13:27:00.210764+00:00",
     "model_count_with_data": 66
   },
   "models": [
@@ -11,6 +11,11 @@
       "model": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "score": 0.416494845360825
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
+      "score": 0.395876288659794
     },
     {
       "model": "anthropic/claude-opus-5",
@@ -26,11 +31,6 @@
       "model": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "score": 0.309278350515464
-    },
-    {
-      "model": "deepseek/deepseek-v4-pro",
-      "name": "DeepSeek: DeepSeek V4 Pro 0423",
-      "score": 0.301030927835052
     },
     {
       "model": "thinkingmachines/inkling",
@@ -63,6 +63,11 @@
       "score": 0.175257731958763
     },
     {
+      "model": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "score": 0.154639175257732
+    },
+    {
       "model": "minimax/minimax-m3",
       "name": "MiniMax: MiniMax M3",
       "score": 0.152577319587629
@@ -71,6 +76,11 @@
       "model": "mistralai/mistral-medium-3-5",
       "name": "Mistral: Mistral Medium 3.5",
       "score": 0.150515463917526
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "score": 0.127835051546392
     },
     {
       "model": "inception/mercury-2",
@@ -83,9 +93,14 @@
       "score": 0.0865979381443299
     },
     {
-      "model": "openai/gpt-oss-20b",
-      "name": "OpenAI: gpt-oss-20b",
-      "score": 0.0701030927835052
+      "model": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "score": 0.0639175257731959
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+      "score": 0.0597938144329897
     },
     {
       "model": "qwen/qwen3-coder-next",
@@ -106,11 +121,6 @@
       "model": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "score": 0.0329896907216495
-    },
-    {
-      "model": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b",
-      "score": 0.0288659793814433
     },
     {
       "model": "openai/gpt-4o-mini",

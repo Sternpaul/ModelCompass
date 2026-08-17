@@ -3,19 +3,39 @@
     "leaderboard": "aa_aime_25",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "aime_25",
-    "fetched_at": "2026-08-17T13:02:47.024584+00:00",
+    "fetched_at": "2026-08-17T13:27:00.210764+00:00",
     "model_count_with_data": 66
   },
   "models": [
     {
-      "model": "openai/o4-mini",
-      "name": "OpenAI: o4 Mini",
+      "model": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "score": 0.946666666666667
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "score": 0.934416666666667
+    },
+    {
+      "model": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "score": 0.916666666666667
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+      "score": 0.91
+    },
+    {
+      "model": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
       "score": 0.906666666666667
     },
     {
-      "model": "openai/gpt-oss-20b",
-      "name": "OpenAI: gpt-oss-20b",
-      "score": 0.893333333333333
+      "model": "openai/o4-mini",
+      "name": "OpenAI: o4 Mini",
+      "score": 0.906666666666667
     },
     {
       "model": "openai/o3",
@@ -23,14 +43,9 @@
       "score": 0.883333333333333
     },
     {
-      "model": "openai/gpt-5-mini",
-      "name": "OpenAI: GPT-5 Mini",
-      "score": 0.85
-    },
-    {
-      "model": "openai/gpt-5",
-      "name": "OpenAI: GPT-5",
-      "score": 0.83
+      "model": "qwen/qwen3-max",
+      "name": "Qwen: Qwen3 Max",
+      "score": 0.806666666666667
     },
     {
       "model": "minimax/minimax-m2",
@@ -41,11 +56,6 @@
       "model": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "score": 0.783333333333333
-    },
-    {
-      "model": "deepseek/deepseek-r1",
-      "name": "DeepSeek: R1",
-      "score": 0.76
     },
     {
       "model": "allenai/olmo-3-32b-think",
@@ -63,14 +73,19 @@
       "score": 0.706666666666667
     },
     {
+      "model": "nvidia/nemotron-nano-9b-v2:free",
+      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "score": 0.696666666666667
+    },
+    {
       "model": "qwen/qwen3-vl-32b-instruct",
       "name": "Qwen: Qwen3 VL 32B Instruct",
       "score": 0.683333333333333
     },
     {
-      "model": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b",
-      "score": 0.666666666666667
+      "model": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "score": 0.68
     },
     {
       "model": "qwen/qwen3-next-80b-a3b-instruct",
@@ -83,14 +98,9 @@
       "score": 0.663333333333333
     },
     {
-      "model": "nvidia/nemotron-nano-9b-v2:free",
-      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "model": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
       "score": 0.623333333333333
-    },
-    {
-      "model": "moonshotai/kimi-k2",
-      "name": "MoonshotAI: Kimi K2 0711",
-      "score": 0.573333333333333
     },
     {
       "model": "deepseek/deepseek-r1-distill-llama-70b",
@@ -136,11 +146,6 @@
       "model": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "score": 0.14
-    },
-    {
-      "model": "nvidia/nemotron-3-nano-30b-a3b",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-      "score": 0.133333333333333
     },
     {
       "model": "cohere/command-a",

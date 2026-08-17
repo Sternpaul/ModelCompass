@@ -3,7 +3,7 @@
     "leaderboard": "aa_terminalbench_hard",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "terminalbench_hard",
-    "fetched_at": "2026-08-17T13:02:47.024584+00:00",
+    "fetched_at": "2026-08-17T13:27:00.210764+00:00",
     "model_count_with_data": 66
   },
   "models": [
@@ -11,11 +11,6 @@
       "model": "anthropic/claude-fable-5",
       "name": "Anthropic: Claude Fable 5",
       "score": 0.628787878787879
-    },
-    {
-      "model": "deepseek/deepseek-v4-pro",
-      "name": "DeepSeek: DeepSeek V4 Pro 0423",
-      "score": 0.462121212121212
     },
     {
       "model": "z-ai/glm-5",
@@ -26,6 +21,11 @@
       "model": "minimax/minimax-m3",
       "name": "MiniMax: MiniMax M3",
       "score": 0.424242424242424
+    },
+    {
+      "model": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "score": 0.378787878787879
     },
     {
       "model": "openai/o3",
@@ -53,23 +53,23 @@
       "score": 0.333333333333333
     },
     {
+      "model": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "score": 0.333333333333333
+    },
+    {
       "model": "z-ai/glm-5v-turbo",
       "name": "Z.ai: GLM 5V Turbo",
       "score": 0.325757575757576
     },
     {
-      "model": "openai/gpt-5-mini",
-      "name": "OpenAI: GPT-5 Mini",
-      "score": 0.287878787878788
+      "model": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "score": 0.310606060606061
     },
     {
       "model": "inception/mercury-2",
       "name": "Inception: Mercury 2",
-      "score": 0.265151515151515
-    },
-    {
-      "model": "openai/gpt-5",
-      "name": "OpenAI: GPT-5",
       "score": 0.265151515151515
     },
     {
@@ -78,14 +78,14 @@
       "score": 0.257575757575758
     },
     {
-      "model": "qwen/qwen3-max",
-      "name": "Qwen: Qwen3 Max",
-      "score": 0.242424242424242
+      "model": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "score": 0.234848484848485
     },
     {
-      "model": "moonshotai/kimi-k2",
-      "name": "MoonshotAI: Kimi K2 0711",
-      "score": 0.234848484848485
+      "model": "qwen/qwen3-max",
+      "name": "Qwen: Qwen3 Max",
+      "score": 0.204545454545455
     },
     {
       "model": "qwen/qwen3-coder-next",
@@ -98,11 +98,6 @@
       "score": 0.174242424242424
     },
     {
-      "model": "deepseek/deepseek-r1",
-      "name": "DeepSeek: R1",
-      "score": 0.159090909090909
-    },
-    {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
       "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
       "score": 0.151515151515152
@@ -113,19 +108,14 @@
       "score": 0.151515151515152
     },
     {
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+      "score": 0.136363636363636
+    },
+    {
       "model": "openai/o1",
       "name": "OpenAI: o1",
       "score": 0.128787878787879
-    },
-    {
-      "model": "nvidia/nemotron-3-nano-30b-a3b",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-      "score": 0.121212121212121
-    },
-    {
-      "model": "openai/gpt-oss-20b",
-      "name": "OpenAI: gpt-oss-20b",
-      "score": 0.106060606060606
     },
     {
       "model": "qwen/qwen3-vl-32b-instruct",
@@ -183,9 +173,14 @@
       "score": 0.0606060606060606
     },
     {
-      "model": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b",
-      "score": 0.053030303030303
+      "model": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "score": 0.0606060606060606
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
+      "score": 0.0454545454545455
     },
     {
       "model": "mistralai/mistral-medium-3",
@@ -208,6 +203,11 @@
       "score": 0.0151515151515152
     },
     {
+      "model": "nvidia/nemotron-nano-9b-v2:free",
+      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+      "score": 0.0151515151515152
+    },
+    {
       "model": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "score": 0.0151515151515152
@@ -216,11 +216,6 @@
       "model": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
       "score": 0.0151515151515152
-    },
-    {
-      "model": "nvidia/nemotron-nano-9b-v2:free",
-      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-      "score": 0.00757575757575758
     },
     {
       "model": "cohere/command-a",

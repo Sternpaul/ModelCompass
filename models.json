@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T13:02:47.050277+00:00",
+    "generated_at": "2026-08-17T13:27:00.237504+00:00",
     "model_count": 414,
     "sources": {
       "openrouter": "ok",
       "artificial_analysis": "ok (608 models)",
-      "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
+      "arena_ai": "ok (11 leaderboards; 0 live-discovered via scrape, 11 from curated fallback)",
       "benchlm": "ok (388 models)"
     },
     "coverage": {
@@ -628,8 +628,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 68.624,
-          "ttft": 1.185
+          "median_tps": 76.203,
+          "ttft": 1.18
         }
       }
     },
@@ -1132,7 +1132,7 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 70.476,
+          "median_tps": 63.915,
           "ttft": 1.58
         },
         "benchlm": {
@@ -1439,8 +1439,8 @@
             "completion": 25.0,
             "blended": 10.0
           },
-          "median_tps": 48.147,
-          "ttft": 3.249
+          "median_tps": 48.834,
+          "ttft": 4.894
         },
         "benchlm": {
           "slug": "claude-opus-5",
@@ -2139,8 +2139,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 81.304,
-          "ttft": 2.141
+          "median_tps": 82.097,
+          "ttft": 2.133
         },
         "benchlm": {
           "slug": "inkling",
@@ -2408,8 +2408,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 40.189,
-          "ttft": 2.197
+          "median_tps": 39.679,
+          "ttft": 2.259
         }
       }
     },
@@ -3041,8 +3041,8 @@
             "completion": 0.557,
             "blended": 0.241
           },
-          "median_tps": 72.897,
-          "ttft": 1.784
+          "median_tps": 74.793,
+          "ttft": 1.779
         },
         "benchlm": {
           "slug": "hy3",
@@ -3255,10 +3255,10 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "anthropic/claude-sonnet-5-low",
-          "name": "Claude Sonnet 5 (Adaptive Reasoning, Low Effort)",
+          "key": "anthropic/claude-sonnet-5-medium",
+          "name": "Claude Sonnet 5 (Adaptive Reasoning, Medium Effort)",
           "creator_slug": "anthropic",
-          "slug": "claude-sonnet-5-low",
+          "slug": "claude-sonnet-5-medium",
           "evaluations": {
             "artificial_analysis_intelligence_index": null,
             "artificial_analysis_coding_index": null,
@@ -3283,8 +3283,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 60.926,
-          "ttft": 1.279
+          "median_tps": 63.515,
+          "ttft": 1.767
         },
         "benchlm": {
           "slug": "claude-sonnet-5",
@@ -4020,8 +4020,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 64.973,
-          "ttft": 52.949
+          "median_tps": 65.714,
+          "ttft": 58.41
         }
       }
     },
@@ -4114,7 +4114,7 @@
             "blended": 1.0
           },
           "median_tps": 142.419,
-          "ttft": 0.836
+          "ttft": 0.907
         }
       }
     },
@@ -4326,8 +4326,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 97.268,
-          "ttft": 1.14
+          "median_tps": 95.071,
+          "ttft": 1.184
         },
         "benchlm": {
           "slug": "minimax-m3",
@@ -5055,8 +5055,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 143.33,
-          "ttft": 0.677
+          "median_tps": 145.695,
+          "ttft": 0.66
         }
       }
     },
@@ -5600,36 +5600,36 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "deepseek/deepseek-v4-pro-0424",
-          "name": "DeepSeek V4 Pro (Reasoning, Max Effort)",
+          "key": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",
           "creator_slug": "deepseek",
-          "slug": "deepseek-v4-pro-0424",
+          "slug": "deepseek-v4-pro",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 45.3,
-            "artificial_analysis_coding_index": 59.4,
+            "artificial_analysis_intelligence_index": 53.2,
+            "artificial_analysis_coding_index": 68.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
-            "gpqa": 0.888,
-            "hle": 0.375,
+            "gpqa": 0.928,
+            "hle": 0.41,
             "livecodebench": null,
-            "scicode": 0.5,
+            "scicode": 0.492,
             "math_500": null,
             "aime": null,
             "aime_25": null,
-            "ifbench": 0.764625850340136,
-            "lcr": 0.7,
-            "terminalbench_hard": 0.462121212121212,
-            "terminalbench_v2_1": 0.640449438202247,
-            "tau2": 0.961988304093567,
-            "tau_banking": 0.301030927835052
+            "ifbench": null,
+            "lcr": 0.753333333333333,
+            "terminalbench_hard": null,
+            "terminalbench_v2_1": 0.786516853932584,
+            "tau2": null,
+            "tau_banking": 0.395876288659794
           },
           "pricing": {
-            "prompt": 0.435,
-            "completion": 0.87,
-            "blended": 0.544
+            "prompt": 1.32,
+            "completion": 3.96,
+            "blended": 1.98
           },
-          "median_tps": 77.743,
-          "ttft": 1.228
+          "median_tps": 79.398,
+          "ttft": 1.2
         }
       }
     },
@@ -7643,7 +7643,7 @@
             "blended": 0.375
           },
           "median_tps": 992.309,
-          "ttft": 3.1
+          "ttft": 3.228
         },
         "benchlm": {
           "slug": "mercury-2",
@@ -8627,8 +8627,8 @@
             "completion": 1.2,
             "blended": 0.563
           },
-          "median_tps": 130.682,
-          "ttft": 0.922
+          "median_tps": 131.372,
+          "ttft": 0.816
         }
       }
     },
@@ -8781,7 +8781,7 @@
             "blended": 0.262
           },
           "median_tps": 157.883,
-          "ttft": 1.157
+          "ttft": 1.155
         }
       }
     },
@@ -9175,36 +9175,36 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "nvidia/nvidia-nemotron-3-nano-30b-a3b",
-          "name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+          "key": "nvidia/nvidia-nemotron-3-nano-30b-a3b-reasoning",
+          "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
           "creator_slug": "nvidia",
-          "slug": "nvidia-nemotron-3-nano-30b-a3b",
+          "slug": "nvidia-nemotron-3-nano-30b-a3b-reasoning",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 7.2,
-            "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 13.3,
-            "mmlu_pro": 0.579,
-            "gpqa": 0.399,
-            "hle": 0.046,
-            "livecodebench": 0.36,
-            "scicode": 0.23,
+            "artificial_analysis_intelligence_index": 14.5,
+            "artificial_analysis_coding_index": 14.4,
+            "artificial_analysis_math_index": 91,
+            "mmlu_pro": 0.794,
+            "gpqa": 0.757,
+            "hle": 0.114,
+            "livecodebench": 0.741,
+            "scicode": 0.296,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.133333333333333,
-            "ifbench": 0.374829931972789,
-            "lcr": 0.0866666666666667,
-            "terminalbench_hard": 0.121212121212121,
-            "terminalbench_v2_1": null,
-            "tau2": 0.254385964912281,
-            "tau_banking": null
+            "aime_25": 0.91,
+            "ifbench": 0.710884353741497,
+            "lcr": 0.373333333333333,
+            "terminalbench_hard": 0.136363636363636,
+            "terminalbench_v2_1": 0.0674157303370786,
+            "tau2": 0.409356725146199,
+            "tau_banking": 0.0597938144329897
           },
           "pricing": {
             "prompt": 0.05,
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 203.269,
-          "ttft": 0.374
+          "median_tps": 225.061,
+          "ttft": 1.246
         }
       }
     },
@@ -11026,33 +11026,33 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "alibaba/qwen3-max-thinking",
-          "name": "Qwen3 Max Thinking",
+          "key": "alibaba/qwen3-max",
+          "name": "Qwen3 Max",
           "creator_slug": "alibaba",
-          "slug": "qwen3-max-thinking",
+          "slug": "qwen3-max",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 32.5,
+            "artificial_analysis_intelligence_index": 24.5,
             "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": null,
-            "mmlu_pro": null,
-            "gpqa": 0.861,
-            "hle": 0.28,
-            "livecodebench": null,
-            "scicode": 0.431,
+            "artificial_analysis_math_index": 80.7,
+            "mmlu_pro": 0.841,
+            "gpqa": 0.764,
+            "hle": 0.119,
+            "livecodebench": 0.767,
+            "scicode": 0.383,
             "math_500": null,
             "aime": null,
-            "aime_25": null,
-            "ifbench": 0.707482993197279,
-            "lcr": 0.703333333333333,
-            "terminalbench_hard": 0.242424242424242,
+            "aime_25": 0.806666666666667,
+            "ifbench": 0.441496598639456,
+            "lcr": 0.483333333333333,
+            "terminalbench_hard": 0.204545454545455,
             "terminalbench_v2_1": null,
-            "tau2": 0.836257309941521,
+            "tau2": 0.742690058479532,
             "tau_banking": null
           },
           "pricing": {
-            "prompt": 0.0,
-            "completion": 0.0,
-            "blended": 0.0
+            "prompt": 1.2,
+            "completion": 6.0,
+            "blended": 2.4
           },
           "median_tps": 0.0,
           "ttft": 0.0
@@ -11251,7 +11251,7 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": true,
+      "supports_caching": false,
       "knowledge_cutoff": "2025-03-31",
       "hugging_face_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
       "open_weight": true,
@@ -11259,8 +11259,8 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.27,
-        "completion": 0.95,
-        "cache_read": 0.13
+        "completion": 1.0,
+        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -11383,7 +11383,7 @@
             "blended": 0.875
           },
           "median_tps": 185.282,
-          "ttft": 0.983
+          "ttft": 0.975
         }
       }
     },
@@ -11477,36 +11477,36 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "nvidia/nvidia-nemotron-nano-9b-v2",
-          "name": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
+          "key": "nvidia/nvidia-nemotron-nano-9b-v2-reasoning",
+          "name": "NVIDIA Nemotron Nano 9B V2 (Reasoning)",
           "creator_slug": "nvidia",
-          "slug": "nvidia-nemotron-nano-9b-v2",
+          "slug": "nvidia-nemotron-nano-9b-v2-reasoning",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 7.2,
+            "artificial_analysis_intelligence_index": 8.7,
             "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 62.3,
-            "mmlu_pro": 0.739,
-            "gpqa": 0.557,
-            "hle": 0.046,
-            "livecodebench": 0.701,
-            "scicode": 0.209,
+            "artificial_analysis_math_index": 69.7,
+            "mmlu_pro": 0.742,
+            "gpqa": 0.57,
+            "hle": 0.049,
+            "livecodebench": 0.724,
+            "scicode": 0.22,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.623333333333333,
-            "ifbench": 0.271428571428571,
-            "lcr": 0.26,
-            "terminalbench_hard": 0.00757575757575758,
+            "aime_25": 0.696666666666667,
+            "ifbench": 0.276190476190476,
+            "lcr": 0.23,
+            "terminalbench_hard": 0.0151515151515152,
             "terminalbench_v2_1": null,
-            "tau2": 0.233918128654971,
+            "tau2": 0.219298245614035,
             "tau_banking": null
           },
           "pricing": {
-            "prompt": 0.05,
-            "completion": 0.195,
-            "blended": 0.086
+            "prompt": 0.04,
+            "completion": 0.16,
+            "blended": 0.07
           },
-          "median_tps": 170.865,
-          "ttft": 1.279
+          "median_tps": 183.208,
+          "ttft": 2.034
         }
       }
     },
@@ -11780,27 +11780,27 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "openai/gpt-5-low",
-          "name": "GPT-5 (low)",
+          "key": "openai/gpt-5-medium",
+          "name": "GPT-5 (medium)",
           "creator_slug": "openai",
-          "slug": "gpt-5-low",
+          "slug": "gpt-5-medium",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 31.9,
+            "artificial_analysis_intelligence_index": 34.6,
             "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 83,
-            "mmlu_pro": 0.86,
-            "gpqa": 0.808,
-            "hle": 0.196,
-            "livecodebench": 0.763,
-            "scicode": 0.391,
-            "math_500": 0.987333333333333,
-            "aime": 0.83,
-            "aime_25": 0.83,
-            "ifbench": 0.665986394557823,
-            "lcr": 0.636666666666667,
-            "terminalbench_hard": 0.265151515151515,
+            "artificial_analysis_math_index": 91.7,
+            "mmlu_pro": 0.867,
+            "gpqa": 0.842,
+            "hle": 0.254,
+            "livecodebench": 0.703,
+            "scicode": 0.411,
+            "math_500": 0.991333333333333,
+            "aime": 0.916666666666667,
+            "aime_25": 0.916666666666667,
+            "ifbench": 0.706122448979592,
+            "lcr": 0.763333333333333,
+            "terminalbench_hard": 0.378787878787879,
             "terminalbench_v2_1": null,
-            "tau2": 0.842105263157895,
+            "tau2": 0.865497076023392,
             "tau_banking": null
           },
           "pricing": {
@@ -11995,28 +11995,28 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "openai/gpt-5-mini-medium",
-          "name": "GPT-5 mini (medium)",
+          "key": "openai/gpt-5-mini",
+          "name": "GPT-5 mini (high)",
           "creator_slug": "openai",
-          "slug": "gpt-5-mini-medium",
+          "slug": "gpt-5-mini",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 31.6,
-            "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 85,
-            "mmlu_pro": 0.828,
-            "gpqa": 0.803,
-            "hle": 0.159,
-            "livecodebench": 0.692,
-            "scicode": 0.41,
+            "artificial_analysis_intelligence_index": 25.8,
+            "artificial_analysis_coding_index": 15.6,
+            "artificial_analysis_math_index": 90.7,
+            "mmlu_pro": 0.837,
+            "gpqa": 0.828,
+            "hle": 0.215,
+            "livecodebench": 0.838,
+            "scicode": 0.392,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.85,
-            "ifbench": 0.71156462585034,
-            "lcr": 0.696666666666667,
-            "terminalbench_hard": 0.287878787878788,
-            "terminalbench_v2_1": null,
-            "tau2": 0.710526315789474,
-            "tau_banking": null
+            "aime_25": 0.906666666666667,
+            "ifbench": 0.754421768707483,
+            "lcr": 0.71,
+            "terminalbench_hard": 0.333333333333333,
+            "terminalbench_v2_1": 0.0374531835205993,
+            "tau2": 0.684210526315789,
+            "tau_banking": 0.154639175257732
           },
           "pricing": {
             "prompt": 0.25,
@@ -12386,36 +12386,36 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "openai/gpt-oss-120b-low",
-          "name": "gpt-oss-120b (low)",
+          "key": "openai/gpt-oss-120b",
+          "name": "gpt-oss-120b (high)",
           "creator_slug": "openai",
-          "slug": "gpt-oss-120b-low",
+          "slug": "gpt-oss-120b",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 14.9,
-            "artificial_analysis_coding_index": 21.2,
-            "artificial_analysis_math_index": 66.7,
-            "mmlu_pro": 0.775,
-            "gpqa": 0.672,
-            "hle": 0.059,
-            "livecodebench": 0.707,
-            "scicode": 0.36,
+            "artificial_analysis_intelligence_index": 24.1,
+            "artificial_analysis_coding_index": 30.4,
+            "artificial_analysis_math_index": 93.4,
+            "mmlu_pro": 0.808,
+            "gpqa": 0.782,
+            "hle": 0.196,
+            "livecodebench": 0.878,
+            "scicode": 0.389,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.666666666666667,
-            "ifbench": 0.582993197278912,
-            "lcr": 0.46,
-            "terminalbench_hard": 0.053030303030303,
-            "terminalbench_v2_1": 0.138576779026217,
-            "tau2": 0.450292397660819,
-            "tau_banking": 0.0288659793814433
+            "aime_25": 0.934416666666667,
+            "ifbench": 0.689795918367347,
+            "lcr": 0.51,
+            "terminalbench_hard": 0.234848484848485,
+            "terminalbench_v2_1": 0.262172284644195,
+            "tau2": 0.657894736842105,
+            "tau_banking": 0.127835051546392
           },
           "pricing": {
             "prompt": 0.15,
-            "completion": 0.595,
-            "blended": 0.261
+            "completion": 0.6,
+            "blended": 0.262
           },
-          "median_tps": 244.507,
-          "ttft": 0.533
+          "median_tps": 173.774,
+          "ttft": 0.498
         },
         "benchlm": {
           "slug": "gpt-oss-120b",
@@ -12587,36 +12587,36 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "openai/gpt-oss-20b",
-          "name": "gpt-oss-20b (high)",
+          "key": "openai/gpt-oss-20b-low",
+          "name": "gpt-oss-20b (low)",
           "creator_slug": "openai",
-          "slug": "gpt-oss-20b",
+          "slug": "gpt-oss-20b-low",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 15.2,
-            "artificial_analysis_coding_index": 20.7,
-            "artificial_analysis_math_index": 89.3,
-            "mmlu_pro": 0.748,
-            "gpqa": 0.688,
-            "hle": 0.11,
-            "livecodebench": 0.777,
-            "scicode": 0.344,
+            "artificial_analysis_intelligence_index": 14.4,
+            "artificial_analysis_coding_index": null,
+            "artificial_analysis_math_index": 62.3,
+            "mmlu_pro": 0.718,
+            "gpqa": 0.611,
+            "hle": 0.053,
+            "livecodebench": 0.652,
+            "scicode": 0.34,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.893333333333333,
-            "ifbench": 0.651020408163265,
-            "lcr": 0.333333333333333,
-            "terminalbench_hard": 0.106060606060606,
-            "terminalbench_v2_1": 0.138576779026217,
-            "tau2": 0.60233918128655,
-            "tau_banking": 0.0701030927835052
+            "aime_25": 0.623333333333333,
+            "ifbench": 0.578231292517007,
+            "lcr": 0.306666666666667,
+            "terminalbench_hard": 0.0454545454545455,
+            "terminalbench_v2_1": null,
+            "tau2": 0.502923976608187,
+            "tau_banking": null
           },
           "pricing": {
-            "prompt": 0.06,
-            "completion": 0.19,
-            "blended": 0.092
+            "prompt": 0.07,
+            "completion": 0.2,
+            "blended": 0.103
           },
-          "median_tps": 166.87,
-          "ttft": 0.539
+          "median_tps": 207.084,
+          "ttft": 0.712
         },
         "benchlm": {
           "slug": "gpt-oss-20b",
@@ -13227,27 +13227,27 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "kimi/kimi-k2-0905",
-          "name": "Kimi K2 0905",
+          "key": "kimi/kimi-k2-thinking",
+          "name": "Kimi K2 Thinking",
           "creator_slug": "kimi",
-          "slug": "kimi-k2-0905",
+          "slug": "kimi-k2-thinking",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 24,
+            "artificial_analysis_intelligence_index": 33.5,
             "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 57.3,
-            "mmlu_pro": 0.819,
-            "gpqa": 0.767,
-            "hle": 0.064,
-            "livecodebench": 0.61,
-            "scicode": 0.307,
+            "artificial_analysis_math_index": 94.7,
+            "mmlu_pro": 0.848,
+            "gpqa": 0.838,
+            "hle": 0.238,
+            "livecodebench": 0.853,
+            "scicode": 0.424,
             "math_500": null,
             "aime": null,
-            "aime_25": 0.573333333333333,
-            "ifbench": 0.417006802721088,
-            "lcr": 0.536666666666667,
-            "terminalbench_hard": 0.234848484848485,
+            "aime_25": 0.946666666666667,
+            "ifbench": 0.680952380952381,
+            "lcr": 0.703333333333333,
+            "terminalbench_hard": 0.310606060606061,
             "terminalbench_v2_1": null,
-            "tau2": 0.733918128654971,
+            "tau2": 0.929824561403509,
             "tau_banking": null
           },
           "pricing": {
@@ -14729,8 +14729,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 133.867,
-          "ttft": 6.888
+          "median_tps": 140.604,
+          "ttft": 7.284
         },
         "benchlm": {
           "slug": "o3",
@@ -15216,8 +15216,8 @@
             "completion": 0.85,
             "blended": 0.415
           },
-          "median_tps": 119.904,
-          "ttft": 0.579
+          "median_tps": 116.123,
+          "ttft": 0.564
         },
         "benchlm": {
           "slug": "llama-4-maverick",
@@ -15402,8 +15402,8 @@
             "completion": 0.66,
             "blended": 0.3
           },
-          "median_tps": 136.135,
-          "ttft": 0.568
+          "median_tps": 137.323,
+          "ttft": 0.564
         },
         "benchlm": {
           "slug": "llama-4-scout",
@@ -15902,7 +15902,7 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 59.468,
+          "median_tps": 61.396,
           "ttft": 0.32
         }
       }
@@ -15965,8 +15965,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 94.534,
-          "ttft": 25.334
+          "median_tps": 94.396,
+          "ttft": 2.564
         }
       }
     },
@@ -16827,33 +16827,33 @@
       },
       "benchmarks": {
         "aa": {
-          "key": "deepseek/deepseek-r1",
-          "name": "DeepSeek R1 0528 (May '25)",
+          "key": "deepseek/deepseek-r1-0120",
+          "name": "DeepSeek R1 (Jan '25)",
           "creator_slug": "deepseek",
-          "slug": "deepseek-r1",
+          "slug": "deepseek-r1-0120",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 20.4,
-            "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": 76,
-            "mmlu_pro": 0.849,
-            "gpqa": 0.813,
-            "hle": 0.158,
-            "livecodebench": 0.77,
-            "scicode": 0.403,
-            "math_500": 0.982666666666667,
-            "aime": 0.893333333333333,
-            "aime_25": 0.76,
-            "ifbench": 0.395918367346939,
-            "lcr": 0.566666666666667,
-            "terminalbench_hard": 0.159090909090909,
-            "terminalbench_v2_1": null,
-            "tau2": 0.365497076023392,
-            "tau_banking": null
+            "artificial_analysis_intelligence_index": 18.6,
+            "artificial_analysis_coding_index": 24.6,
+            "artificial_analysis_math_index": 68,
+            "mmlu_pro": 0.844,
+            "gpqa": 0.708,
+            "hle": 0.085,
+            "livecodebench": 0.617,
+            "scicode": 0.357,
+            "math_500": 0.966,
+            "aime": 0.683333333333333,
+            "aime_25": 0.68,
+            "ifbench": 0.389795918367347,
+            "lcr": 0.56,
+            "terminalbench_hard": 0.0606060606060606,
+            "terminalbench_v2_1": 0.191011235955056,
+            "tau2": 0.114035087719298,
+            "tau_banking": 0.0639175257731959
           },
           "pricing": {
-            "prompt": 1.35,
-            "completion": 4.2,
-            "blended": 2.063
+            "prompt": 1.675,
+            "completion": 4.7,
+            "blended": 2.431
           },
           "median_tps": 0.0,
           "ttft": 0.0
@@ -17070,7 +17070,7 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 31.639,
+          "median_tps": 32.76,
           "ttft": 1.048
         },
         "benchlm": {

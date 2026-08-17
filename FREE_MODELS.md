@@ -15,7 +15,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-31b-it:free | openrouter | — | — | 30 (document) |
 | gemma-4-31b-it:free | unorouter | — | — | 30 (document) |
 | qwen3.5-397b-a17b:free | unorouter | — | — | 42 (vision) |
-| deepseek-v4-pro:free | unorouter | **45.3** | **59.4** | 47 (code) |
+| deepseek-v4-pro:free | unorouter | **53.2** | **68.8** | 47 (code) |
 | google/gemma-4-26b-a4b-it:free | openrouter | — | — | 48 (vision) |
 | minimax-m2.7:free | unorouter | — | — | 64 (code) |
 | upstage/solar-pro4:free | nous | 41.6 | 52.7 | 75 (code) |
@@ -27,9 +27,9 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | 183 (text) |
 | nemotron-3-super-120b-a12b:free | kenari | — | — | 183 (text) |
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | — | — | 197 (text) |
-| openai/gpt-oss-20b:free | openrouter | 15.2 | 20.7 | 243 (text) |
-| nvidia/nemotron-3-nano-30b-a3b:free | openrouter | 7.2 | — | 244 (text) |
-| nvidia/nemotron-nano-9b-v2:free | openrouter | 7.2 | — | — |
+| openai/gpt-oss-20b:free | openrouter | 14.4 | — | 243 (text) |
+| nvidia/nemotron-3-nano-30b-a3b:free | openrouter | 14.5 | 14.4 | 244 (text) |
+| nvidia/nemotron-nano-9b-v2:free | openrouter | 8.7 | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
 | poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |
