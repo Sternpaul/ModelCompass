@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T10:38:19.905430+00:00",
+    "generated_at": "2026-08-17T11:19:34.332601+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -788,6 +788,17 @@
       }
     },
     {
+      "model": "cohere/north-mini-code",
+      "top_appearances": 1,
+      "borda_points": 10,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 1,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "Claude Fable 5 (High)",
       "top_appearances": 1,
       "borda_points": 9,
@@ -854,6 +865,17 @@
       }
     },
     {
+      "model": "deepseek-v4-flash",
+      "top_appearances": 1,
+      "borda_points": 9,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 2,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "Claude Opus 5 (Max)",
       "top_appearances": 1,
       "borda_points": 8,
@@ -872,6 +894,17 @@
         "benchlm_knowledge": {
           "rank": 3,
           "score": 93.4
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "top_appearances": 1,
+      "borda_points": 8,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 3,
+          "score": null
         }
       }
     },
@@ -916,6 +949,17 @@
         "benchlm_multilingual": {
           "rank": 4,
           "score": 69.7
+        }
+      }
+    },
+    {
+      "model": "dots-studio/dots-3-note-preview",
+      "top_appearances": 1,
+      "borda_points": 7,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 4,
+          "score": null
         }
       }
     },
@@ -1008,6 +1052,17 @@
       }
     },
     {
+      "model": "gemma-4-31b-it",
+      "top_appearances": 1,
+      "borda_points": 6,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 5,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "Claude Opus 4.8 (High)",
       "top_appearances": 1,
       "borda_points": 5,
@@ -1092,6 +1147,17 @@
         "benchlm_multilingual": {
           "rank": 6,
           "score": 48.7
+        }
+      }
+    },
+    {
+      "model": "glm-4-7-flash",
+      "top_appearances": 1,
+      "borda_points": 5,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 6,
+          "score": null
         }
       }
     },
@@ -1228,6 +1294,17 @@
       }
     },
     {
+      "model": "glm-4.5-flash",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 7,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "Claude Opus 4.7 (High)",
       "top_appearances": 1,
       "borda_points": 3,
@@ -1360,6 +1437,17 @@
       }
     },
     {
+      "model": "glm-5.2",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 8,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "GPT 5.5 (High)",
       "top_appearances": 1,
       "borda_points": 2,
@@ -1459,6 +1547,17 @@
       }
     },
     {
+      "model": "google/gemma-4-26b-a4b-it",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 9,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "Claude Opus 4.7",
       "top_appearances": 1,
       "borda_points": 1,
@@ -1532,6 +1631,17 @@
         "benchlm_multimodalGrounded": {
           "rank": 10,
           "score": 79.8
+        }
+      }
+    },
+    {
+      "model": "google/gemma-4-31b-it",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "nous_free": {
+          "rank": 10,
+          "score": null
         }
       }
     }
