@@ -232,76 +232,132 @@ def _parse_number_with_ci(s):
 def _parse_int(s):
     if not s:
         return None
-    s = s.strip().replace(",", "")
-    if not s or s == "-":
+    # keep only digits / commas (drops trailing labels like "votes")
+    digits = re.sub(r"[^0-9,]", "", s.strip())
+    digits = digits.replace(",", "")
+    if not digits:
         return None
     try:
-        return int(float(s))
+        return int(digits)
     except ValueError:
         return None
 
 
+def _is_sep_row(line):
+    """True for a markdown table separator row like |---|---:---|."""
+    s = line.strip()
+    if not s.startswith("|"):
+        return False
+    cells = [c.strip() for c in s.strip("|").split("|")]
+    return bool(cells) and all(re.fullmatch(r":?-+:?", c) for c in cells if c != "")
+
+
 def _parse_arena_general(content, slug):
-    """Parse general leaderboard table (text, code, vision, …)."""
+    """Parse a general arena.ai leaderboard (text, code, vision, …).
+
+    Change-proof against Arena's display format:
+      * Supports the current cell-per-line layout (each field on its own line,
+        tab/newline separated) AND legacy markdown `|` tables.
+      * Records are anchored on the VENDOR line (contains '·'), not on a column
+        header text, so renaming/reordering columns never hides the data.
+      * Score / CI / votes are located relative to the vendor line by position,
+        with `±` detection for CI, so inserted/renamed columns can't shift values.
+    """
     lines = content.split("\n")
+
+    # ---- Path A: current cell-per-line layout (each field on its own line) ----
+    models_a = _parse_arena_cell_layout(lines, slug)
+    if models_a:
+        return {
+            "meta": {
+                "leaderboard": slug,
+                "source_url": f"https://arena.ai/leaderboard/{slug}",
+                "fetched_at": datetime.now(timezone.utc).isoformat(),
+                "model_count": len(models_a),
+                "layout": "cell",
+            },
+            "models": models_a,
+        }, f"ok ({len(models_a)} models)"
+
+    # ---- Path B: legacy markdown `|` table layout ----
     models = []
+    header_cells = None
+    pending_header = None
     in_table = False
     for line in lines:
-        if "| Rank |" in line or "|---|" in line:
-            in_table = True
+        if line.startswith("|"):
+            if _is_sep_row(line):
+                # Header = the | row immediately before this separator.
+                header_cells = pending_header
+                in_table = True
+                pending_header = None
+                continue
+            pending_header = line
+            if not in_table or header_cells is None:
+                continue
+        else:
+            # Non-table line resets the pending header so later tables still parse.
+            pending_header = None
             continue
-        if in_table and line.startswith("|"):
-            cells = [c.strip() for c in line.strip("|").split("|")]
-            if len(cells) < 6:
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+        rank_m = re.match(r"\s*(\d+)", cells[0])
+        if not rank_m:
+            continue
+        rank = int(rank_m.group(1))
+
+        # Model cell = first cell that is a markdown link [name](http...)
+        model_idx = None
+        for i, c in enumerate(cells[1:], start=1):
+            if re.search(r"\[[^\]]+\]\(https?://", c):
+                model_idx = i
+                break
+        if model_idx is None:
+            continue
+        m = re.match(r"\[([^\]]+)\]", cells[model_idx])
+        model_name = m.group(1) if m else cells[model_idx]
+
+        vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", cells[model_idx])
+        vendor = vendor_match.group(1).strip() if vendor_match else None
+
+        lic_match = re.search(
+            r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
+            cells[model_idx], re.I,
+        )
+        license = "proprietary" if (
+            lic_match and "proprietary" in lic_match.group(1).lower()
+        ) else ("open" if lic_match else None)
+
+        # Score / CI / votes by role (not fixed offset)
+        tail = cells[model_idx + 1:]
+        score = None
+        ci = None
+        votes = None
+        for c in tail:
+            if score is None:
+                val = _parse_number(c)
+                if val is not None:
+                    score = val
+                    ci_m = re.search(r"±\s*[\d.]+", c)
+                    ci = _parse_number(ci_m.group(0)) if ci_m else None
+                    continue
+            if ci is None and "±" in c:
+                ci = _parse_number(c)
                 continue
-            rank_m = re.match(r"\s*(\d+)", cells[0])
-            if not rank_m:
-                continue
-            rank = int(rank_m.group(1))
-
-            # The model cell is the first cell containing a markdown link
-            # [name](url); arena tables often insert a rank-change badge
-            # column right after the rank, so we don't assume a fixed index.
-            model_cell = None
-            model_idx = None
-            for i, c in enumerate(cells[1:], start=1):
-                if re.search(r"\[[^\]]+\]\(https?://", c):
-                    model_cell = c
-                    model_idx = i
-                    break
-            if model_cell is None:
-                continue
-            assert model_idx is not None  # guaranteed by the loop above
-            m = re.match(r"\[([^\]]+)\]", model_cell)
-            model_name = m.group(1) if m else model_cell
-
-            vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", model_cell)
-            vendor = vendor_match.group(1).strip() if vendor_match else None
-
-            lic_match = re.search(
-                r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
-                model_cell, re.I,
-            )
-            license = "proprietary" if (
-                lic_match and "proprietary" in lic_match.group(1).lower()
-            ) else ("open" if lic_match else None)
-
-            # Score/CI/votes follow the model cell
-            score = _parse_number(cells[model_idx + 1]) if model_idx + 1 < len(cells) else None
-            ci = _parse_number(cells[model_idx + 2]) if model_idx + 2 < len(cells) else None
-            votes = _parse_int(cells[model_idx + 3]) if model_idx + 3 < len(cells) else None
-
-            models.append(
-                {
-                    "rank": rank,
-                    "model": model_name,
-                    "vendor": vendor,
-                    "license": license,
-                    "score": score,
-                    "ci": ci,
-                    "votes": votes,
-                }
-            )
+            if votes is None and re.search(r"votes", c, re.I):
+                votes = _parse_int(c)
+        models.append(
+            {
+                "rank": rank,
+                "model": model_name,
+                "vendor": vendor,
+                "license": license,
+                "score": score,
+                "ci": ci,
+                "votes": votes,
+            }
+        )
 
     return {
         "meta": {
@@ -309,73 +365,182 @@ def _parse_arena_general(content, slug):
             "source_url": f"https://arena.ai/leaderboard/{slug}",
             "fetched_at": datetime.now(timezone.utc).isoformat(),
             "model_count": len(models),
+            "layout": "table",
         },
         "models": models,
     }, f"ok ({len(models)} models)"
 
 
-def _parse_arena_agent(content, slug):
-    """Parse agent leaderboard with dimension scores."""
-    lines = content.split("\n")
+def _parse_arena_cell_layout(lines, slug):
+    """Parse the current Arena layout where each field is on its own line.
+
+    A record looks like:
+        <rank>
+        <previous rank>        (or blank)
+        <badge / extra int>    (optional)
+        <model slug>           (may contain spaces/parens, e.g. 'muse-spark-1.2 (xHigh)')
+        <Vendor> · <License>
+        <score>
+        ±<ci>
+        <votes>\\t<price>\\t<context>
+
+    We anchor on the vendor line (contains '·') and read the surrounding fields
+    by position, so renamed/reordered columns cannot hide the data.
+    """
     models = []
-    dimensions = []
-    in_table = False
-    for line in lines:
-        if "| Rank |" in line or "|---|" in line:
-            in_table = True
-            if "| Rank |" in line:
-                cells = [c.strip() for c in line.strip("|").split("|")]
-                # Extract dimension names (skip Rank, Model, Sessions, Price)
-                dimensions = [
-                    re.sub(r"\s*\([^)]*\)", "", c).strip()
-                    for c in cells
-                    if c and c not in ("Rank", "Model", "Sessions", "Price $/M", "Price $/M tokens")
-                ]
-                dimensions = [d for d in dimensions if d]
-            continue
-        if in_table and line.startswith("|"):
-            cells = [c.strip() for c in line.strip("|").split("|")]
-            if len(cells) < 4:
-                continue
-            rank_m = re.match(r"\s*(\d+)", cells[0])
-            if not rank_m:
-                continue
-            rank = int(rank_m.group(1))
-
-            model_cell = cells[1]
-            m = re.match(r"\[([^\]]+)\]", model_cell)
-            model_name = m.group(1) if m else model_cell
-
-            vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", model_cell)
+    n = len(lines)
+    i = 0
+    while i < n:
+        line = lines[i].strip()
+        # Vendor line marks a record; model slug is the line immediately above it.
+        if "·" in line and i > 0:
+            vendor_line = line
+            model = lines[i - 1].strip()
+            # Score = first numeric line after the vendor line
+            j = i + 1
+            while j < n and lines[j].strip() == "":
+                j += 1
+            score = _parse_number(lines[j]) if j < n else None
+            ci = None
+            if j + 1 < n and lines[j + 1].strip().startswith("±"):
+                ci = _parse_number(re.sub(r"^±\s*", "", lines[j + 1]))
+            # Combined votes/price/context line
+            k = j + 2
+            while k < n and lines[k].strip() == "":
+                k += 1
+            combined = lines[k].strip() if k < n else ""
+            votes = None
+            if combined:
+                # votes is the first integer token in the combined line
+                vm = re.search(r"(\d[\d,]*)", combined)
+                if vm:
+                    votes = _parse_int(vm.group(1))
+            # Rank = the FARTHEST-back pure-integer line in the window above the
+            # vendor line (record order is: rank, prev-rank, badge, model, vendor).
+            # Scan from farthest (back=6) toward the vendor so we take the first
+            # one in document order, which is the true rank.
+            rank = None
+            for back in range(6, 1, -1):
+                cand = lines[i - back].strip() if i - back >= 0 else ""
+                if re.fullmatch(r"\d+", cand):
+                    rank = int(cand)
+                    break
+            vendor_match = re.search(r"([^·]+?)\s*·", vendor_line)
             vendor = vendor_match.group(1).strip() if vendor_match else None
-
             lic_match = re.search(
                 r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
-                model_cell, re.I,
+                vendor_line, re.I,
             )
             license = "proprietary" if (
                 lic_match and "proprietary" in lic_match.group(1).lower()
             ) else ("open" if lic_match else None)
+            if model and score is not None:
+                models.append(
+                    {
+                        "rank": rank if rank is not None else len(models) + 1,
+                        "model": model,
+                        "vendor": vendor,
+                        "license": license,
+                        "score": score,
+                        "ci": ci,
+                        "votes": votes,
+                    }
+                )
+            i = k + 1
+            continue
+        i += 1
+    return models
 
-            scores = []
-            for i, dim in enumerate(dimensions):
-                cell_idx = 2 + i
-                if cell_idx < len(cells):
-                    score_val, ci_val = _parse_number_with_ci(cells[cell_idx])
-                    scores.append({"name": dim, "score": score_val, "ci": ci_val})
 
-            sessions = _parse_int(cells[-2]) if len(cells) >= 2 else None
+def _parse_arena_agent(content, slug):
+    """Parse the agent leaderboard (dimension scores per model).
 
-            models.append(
-                {
-                    "rank": rank,
-                    "model": model_name,
-                    "vendor": vendor,
-                    "license": license,
-                    "scores": scores,
-                    "sessions": sessions,
-                }
-            )
+    Layout-change-proof:
+      * Table detected by its separator row, not the header text.
+      * The model cell is the first markdown-link cell in the header; dimension
+        names are the cells between the model cell and the end (minus known
+        trailing columns like Sessions/Price), so renaming Rank/Model/Sessions
+        or inserting columns does not break dimension mapping.
+    """
+    lines = content.split("\n")
+    models = []
+    dimensions = []
+    model_col = 1
+    header_cells = None
+    pending_header = None
+    in_table = False
+    for line in lines:
+        if line.startswith("|"):
+            if _is_sep_row(line):
+                # Header = the | row immediately before this separator.
+                header_cells = pending_header
+                in_table = True
+                pending_header = None
+                if header_cells is not None:
+                    hc = [c.strip() for c in header_cells.strip("|").split("|")]
+                    for i, c in enumerate(hc):
+                        if re.search(r"\[[^\]]+\]\(https?://", c):
+                            model_col = i
+                            break
+                    trailing = {"Sessions", "Price $/M", "Price $/M tokens", "Price"}
+                    dims = []
+                    for c in hc[model_col + 1:]:
+                        name = re.sub(r"\s*\([^)]*\)", "", c).strip()
+                        if not name or name in trailing:
+                            continue
+                        dims.append(name)
+                    dimensions = dims
+                continue
+            pending_header = line
+            if not in_table or header_cells is None:
+                continue
+        else:
+            pending_header = None
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 3:
+            continue
+        rank_m = re.match(r"\s*(\d+)", cells[0])
+        if not rank_m:
+            continue
+        rank = int(rank_m.group(1))
+
+        model_cell = cells[model_col] if model_col < len(cells) else (cells[1] if len(cells) > 1 else "")
+        m = re.match(r"\[([^\]]+)\]", model_cell)
+        model_name = m.group(1) if m else model_cell
+
+        vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", model_cell)
+        vendor = vendor_match.group(1).strip() if vendor_match else None
+
+        lic_match = re.search(
+            r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
+            model_cell, re.I,
+        )
+        license = "proprietary" if (
+            lic_match and "proprietary" in lic_match.group(1).lower()
+        ) else ("open" if lic_match else None)
+
+        # Dimension scores are the cells immediately after the model cell.
+        scores = []
+        for i, dim in enumerate(dimensions):
+            cell_idx = model_col + 1 + i
+            if cell_idx < len(cells):
+                score_val, ci_val = _parse_number_with_ci(cells[cell_idx])
+                scores.append({"name": dim, "score": score_val, "ci": ci_val})
+
+        # Sessions = last numeric-ish cell before any trailing price column.
+        sessions = _parse_int(cells[-1]) if cells else None
+
+        models.append(
+            {
+                "rank": rank,
+                "model": model_name,
+                "vendor": vendor,
+                "license": license,
+                "scores": scores,
+                "sessions": sessions,
+            }
+        )
 
     return {
         "meta": {
@@ -384,6 +549,7 @@ def _parse_arena_agent(content, slug):
             "fetched_at": datetime.now(timezone.utc).isoformat(),
             "model_count": len(models),
             "dimensions": dimensions,
+            "layout": "table",
         },
         "models": models,
     }, f"ok ({len(models)} models)"
@@ -410,9 +576,13 @@ def fetch_arena_leaderboard(slug):
     if not content:
         return None, "empty content"
 
-    if slug == "agent":
-        return _parse_arena_agent(content, slug)
-    return _parse_arena_general(content, slug)
+    try:
+        if slug == "agent":
+            return _parse_arena_agent(content, slug)
+        return _parse_arena_general(content, slug)
+    except Exception as e:
+        # A layout change on this board must never crash the whole run.
+        return None, f"parse error (board layout changed?): {e}"
 
 
 # Known arena.ai leaderboards (fetched live from each page — not a third-party

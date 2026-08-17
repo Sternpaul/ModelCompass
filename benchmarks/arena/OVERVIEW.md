@@ -65,14 +65,36 @@ _Human-preference Elo._
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `gpt-image-2 (medium)` | 1463.000 |
+| 2 | `grok-imagine-image-2.0 (low)` | 1439.000 |
+| 3 | `muse-image` | 1405.000 |
+| 4 | `mai-image-2.5` | 1402.000 |
+| 5 | `seedream-5.0-pro` | 1393.000 |
+| 6 | `chatgpt-image-latest-high-fidelity (20251216)` | 1390.000 |
+| 7 | `grok-imagine-image-quality (20260519)` | 1390.000 |
+| 8 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1389.000 |
+| 9 | `gemini-3-pro-image-preview (nano-banana-pro)` | 1385.000 |
+| 10 | `reve-2.1` | 1374.000 |
 
 ## Image To Video Arena
 
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `minimax-h3` | 1489.000 |
+| 2 | `dreamina-seedance-2.0-720p` | 1479.000 |
+| 3 | `gemini-omni-flash` | 1462.000 |
+| 4 | `grok-imagine-video-1.5-720p` | 1460.000 |
+| 5 | `flux-3-video-20260811` | 1453.000 |
+| 6 | `happyhorse-1.0` | 1441.000 |
+| 7 | `wan2.7-i2v` | 1426.000 |
+| 8 | `grok-imagine-video-720p` | 1416.000 |
+| 9 | `veo-3.1-audio` | 1397.000 |
+| 10 | `veo-3.1-audio-1080p` | 1390.000 |
 
 ## Search Arena
 
@@ -97,28 +119,70 @@ _Human-preference Elo._
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `claude-fable-5` | 1506.000 |
+| 2 | `claude-opus-4-6-high` | 1505.000 |
+| 3 | `claude-opus-4-7-high` | 1502.000 |
+| 4 | `muse-spark-1.2 (xHigh)` | 1498.000 |
+| 5 | `claude-opus-4-6` | 1497.000 |
+| 6 | `claude-opus-4-7` | 1494.000 |
+| 7 | `claude-opus-5-high` | 1493.000 |
+| 8 | `qwen3.8-max` | 1491.000 |
+| 9 | `gemini-3.7-flash-high` | 1490.000 |
+| 10 | `claude-opus-5-max` | 1489.000 |
 
 ## Text To Image Arena
 
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `gpt-image-2 (medium)` | 1381.000 |
+| 2 | `mai-image-2.6-preview` | 1336.000 |
+| 3 | `grok-imagine-image-2.0 (low)` | 1316.000 |
+| 4 | `reve-2.1` | 1302.000 |
+| 5 | `muse-image` | 1282.000 |
+| 6 | `reve-2.0` | 1270.000 |
+| 7 | `seedream-5.0-pro` | 1258.000 |
+| 8 | `qwen-image-3.0-pro` | 1257.000 |
+| 9 | `mai-image-2.5` | 1256.000 |
+| 10 | `gemini-3.1-flash-lite-image (nano-banana-2-lite)` | 1251.000 |
 
 ## Text To Video Arena
 
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `gemini-omni-flash` | 1512.000 |
+| 2 | `flux-3-video` | 1496.000 |
+| 3 | `dreamina-seedance-2.0-720p` | 1478.000 |
+| 4 | `muse-video` | 1457.000 |
+| 5 | `minimax-h3` | 1453.000 |
+| 6 | `happyhorse-1.0` | 1428.000 |
+| 7 | `sora-2-pro` | 1366.000 |
+| 8 | `veo-3.1-audio` | 1364.000 |
+| 9 | `veo-3.1-audio-1080p` | 1363.000 |
+| 10 | `veo-3.1-fast-audio` | 1362.000 |
 
 ## Video Edit Arena
 
 _Human-preference Elo._
 
 
-_No models yet._
+| # | Model | Score |
+|---|-------|------:|
+| 1 | `minimax-h3` | 1390.000 |
+| 2 | `dreamina-seedance-2.0-720p` | 1358.000 |
+| 3 | `gemini-omni-flash` | 1358.000 |
+| 4 | `happyhorse-1.0` | 1307.000 |
+| 5 | `grok-imagine-video` | 1263.000 |
+| 6 | `kling-o3-pro` | 1255.000 |
+| 7 | `kling-o1-pro` | 1200.000 |
+| 8 | `runway-gen4-aleph` | 1183.000 |
 
 ## Vision Arena
 
