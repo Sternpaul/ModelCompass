@@ -140,49 +140,56 @@ A GitHub Action (`.github/workflows/update.yml`) runs daily at **04:00 UTC**
 | **OpenRouter** `/api/v1/models` | none | 400+ models: pricing, context window, modalities (vision/audio/image), capability flags (reasoning, tools, JSON, caching), knowledge cutoff, recency |
 | **Artificial Analysis API v2** | `ARTIFICIAL_ANALYSIS_KEY` | Intelligence / Coding / Agentic / Math / Multilingual / Openness indices + raw benchmarks (GPQA, HLE, MMLU-Pro, AIME, LiveCodeBench, Terminal-Bench, IFBench, SciCode…) + speed |
 | **aider polyglot** (raw GitHub YAML) | none | Real coding benchmark: 225 Exercism exercises across 6 languages → pass rates |
+| **Arena.ai** (Jina Reader scrape of `arena.ai/leaderboard/*`) | none | Human-preference Elo across 11 leaderboards: `agent`, `text`, `code`, `vision`, `document`, `search`, … |
+| **BenchLM** (`benchlm.ai/data/models.json`, MIT) | none | 388 models × 437 benchmarks, grouped into category scores (agentic, coding, math, reasoning, knowledge, multilingual, multimodal, instruction-following) |
+| **SWE-bench** (raw GitHub result JSON) | none | Real GitHub-issue resolution pass rates per model |
 
 All sources are fetched defensively — a failure in one never breaks the others.
 `meta.sources` in the output reports exactly what succeeded.
 
-Sources are merged into unified model records by **provider + slug** (AA
-slugs normalized: dots→hyphens, creator-slug mismatches tolerated), then fuzzy
-name match. Models present in one source but not another simply carry `null`
-for that source's benchmarks (no zero-filling). Only true routing aliases
+**No score mixing.** Each benchmark is kept in its own namespace and each
+ranking file is a *pure sort on one metric*. The `consensus/` overview is a
+**Borda-count / placement-agreement** view (how many top-10 lists a model
+appears in) — it never averages scores across unrelated benchmarks.
+
+Model names are preserved **verbatim** from each source (no normalization or
+renaming). Sources are cross-referenced to OpenRouter models by provider+slug
+(AA slugs normalized: dots→hyphens, creator-slug mismatches tolerated) and by
+slug-only / fuzzy name match so you can join them. Only true routing aliases
 (`:batch`, `:free`, `:thinking`) are collapsed; identity-bearing tags
-(`-latest`, `-0813`, `-v2`) stay distinct so e.g. `deepseek-v4-flash-0731`
-and `-latest` remain separate entries.
+(`-latest`, `-0813`, `-high`, `-v2`) stay distinct so e.g. `deepseek-v4-flash-0731`
+and `deepseek-v4-flash-latest` remain separate entries.
 
-## Scoring (transparent, real benchmarks)
+## Layout: per-benchmark, never blended
 
-Each task score is a documented **weighted mean of real benchmark values**:
-all normalized to 0–1 (AA indices ÷100; GPQA/HLE/LiveCodeBench/AIME already
-0–1; aider `pass_rate_1` ÷100). Missing benchmarks contribute `null`, not zero.
-Full formula in `meta.methodology`.
-
-| Task | Benchmarks used |
-|------|-----------------|
-| `best_overall` | AA intelligence + coding + agentic + math + multilingual |
-| `best_coding` | AA coding index, LiveCodeBench, aider polyglot |
-| `best_reasoning` | AA intelligence, GPQA, AIME, HLE |
-| `best_math` | AA math, AIME, Math-500, SciCode |
-| `best_agents` | AA agentic, Terminal-Bench, IFBench |
-| `best_open_weight` | AA intelligence + openness + coding indices (open-weight only) |
-| `best_vision` | overall score, filtered to vision-capable |
-| `best_cheap` | price ascending, capability as tiebreak |
+- `benchmarks/` — one JSON file per benchmark, each a pure ranking:
+  - `aa_*` — each Artificial Analysis index (intelligence, coding, agentic, math, multilingual, openness)
+  - `aider_coding` — aider polyglot pass rate
+  - `arena_*` — each Arena.ai leaderboard (agent, text, code, vision, document, search, …)
+  - `benchlm_*` — each BenchLM category score
+  - `swe_bench` — SWE-bench resolved pass rate
+- `consensus/` — `consensus.json` + `consensus.md`: Borda-count agreement across
+  the `benchmarks/` top-10 lists (placement frequency only, no score blending).
+- `models.json` — full OpenRouter catalog; `benchmarks.<source>` carries the raw
+  cross-referenced data for each model (null when a source lacks that model).
+- `recommended.json` — per-benchmark shortlists (top models from each file).
+- `LEADERBOARD.md` — human-readable: one pure table per benchmark.
+- `rankings/` — curated **famous rankings** — top models per famous benchmark.
+- `archive/` — immutable **weekly snapshots** of `recommended.json`.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `models.json` | Full catalog: every model with raw benchmarks, pricing, metadata, per-task scores |
-| `recommended.json` | Just the per-task shortlists with their benchmark evidence (small, fast to load) |
+| `models.json` | Full catalog: every model with raw per-source benchmarks, pricing, metadata |
+| `benchmarks/*.json` | One pure ranking per benchmark (no blending) |
+| `consensus/consensus.json` | Borda-count placement agreement across benchmarks |
+| `recommended.json` | Per-benchmark shortlists with their evidence (small, fast to load) |
 | `models.csv` | Flat spreadsheet / grep-friendly view |
-| `LEADERBOARD.md` | **Human-readable leaderboard** — comparison tables per task, best for viewing directly on GitHub |
+| `LEADERBOARD.md` | **Human-readable leaderboard** — one pure table per benchmark |
 | `INDEX.md` | Machine-oriented summary (regenerated each run) |
-| `rankings/` | Curated **famous rankings** — top models per famous benchmark (see below) |
+| `rankings/` | Curated **famous rankings** — top models per famous benchmark |
 | `archive/` | Immutable **weekly snapshots** of `recommended.json`, one file per ISO week |
-
-### `rankings/` — famous rankings
 
 `rankings/famous_rankings.md` (and `.json`) list the most famous model
 benchmarks and, for each, the current top models drawn from live data:
@@ -204,21 +211,26 @@ leaderboard moved. See `archive/README.md`.
 
 ## For humans
 
-Open **`LEADERBOARD.md`** for a clean, GitHub-rendered table of the best models
-per task (score, price, context, and the benchmark evidence behind each rank).
-It's the same data as `recommended.json`, just formatted for reading.
+Open **`LEADERBOARD.md`** for a clean, GitHub-rendered set of pure tables — one
+per benchmark (each a sort on a single metric). For a cross-benchmark overview
+that doesn't blend scores, read `consensus/consensus.md` (placement agreement).
 
 ## For agents
 
-- **"best X"** → load `recommended.json`, read `recommended["best_coding"][0]`.
-  Each entry includes `task_score` and the contributing `benchmarks`, so the
-  agent can explain *why*.
-- **"compare A vs B"** → load both from `models.json["models"]`, return a
+- **"best coding model"** → load `benchmarks/aider_coding.json` (and
+  `benchmarks/benchlm_coding.json`, `benchmarks/arena_code.json`); the top
+  entry of each is the leader for that specific metric. Report the metric, not a
+  blended score.
+- **"best overall / smartest"** → `consensus/consensus.json` ranks by how many
+  top-10 lists a model appears in (placement agreement), or `benchmarks/aa_intelligence.json`.
+- **"compare A vs B for X"** → load both from `models.json["models"]`, return a
   side-by-side of `benchmarks`, `price_per_million`, `context`, capability flags.
+- **"cheapest good model"** → filter `models.json` by `price_per_million`, then
+  check the relevant `benchmarks/*` file for quality.
 
 Example: *"compare openai/gpt-5.2 vs anthropic/claude-opus-4.5 for agents"* →
-look both up, compare `benchmarks.aa_agentic_index`, `terminal_bench`,
-`price_per_million`, `context`, `supports_tools`.
+look both up in `models.json`, compare `benchmarks.arena_agent` (if present),
+`benchmarks.aa_agentic`, `price_per_million`, `context`, `supports_tools`.
 
 ## Setup
 
@@ -233,7 +245,8 @@ No SSH keys, no tokens in URLs. The jobs use GitHub's built-in `GITHUB_TOKEN`.
 ## Honest caveats
 
 - Benchmarks are point-in-time; the daily job keeps them current.
-- Rankings are transparent blends of real metrics — verify high-stakes choices
-  against primary sources. They are a sane default for a stale agent, not a
+- Each ranking is a pure sort on one real metric — verify high-stakes choices
+  against primary sources. The `consensus/` view is placement agreement across
+  benchmarks, never an averaged "score". A sane default for a stale agent, not a
   single authoritative verdict.
 

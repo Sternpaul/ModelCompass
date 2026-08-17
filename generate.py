@@ -1,32 +1,20 @@
 #!/usr/bin/env python3
 """
-ModelCompass generator.
+ModelCompass generator — pure per-benchmark rankings, no mixing.
 
-Fetches multiple live sources, merges them into one unified catalog, scores
-models per task from REAL benchmark data, and emits machine-readable outputs
-(models.json, recommended.json, models.csv, INDEX.md), a curated
-rankings/ folder of famous benchmarks, and (with --archive) a weekly snapshot
-under archive/.
+Sources (all scraped directly, no third-party snapshots):
+ 1. OpenRouter /api/v1/models         -> catalog: pricing, context, modality, flags
+ 2. Artificial Analysis API v2        -> per-dimension indices (intelligence, coding,
+                                         agentic, math, multilingual, openness)
+ 3. arena.ai (Jina Reader)            -> LMArena ELO rankings (text, code, vision,
+                                         image-edit, search, agent, …)
+ 4. aider polyglot YAML (raw GitHub)  -> real coding pass rates
+ 5. BenchLM (MIT JSON)                -> 437 benchmarks across 388 models
+ 6. SWE-bench raw JSON (GitHub)       -> % resolved per model
 
-Sources
--------
-1. OpenRouter /api/v1/models        (no key)  -> catalog: pricing, context,
-                                                 modality, capability flags,
-                                                 knowledge cutoff, recency.
-2. Artificial Analysis API v2       (key)    -> intelligence/coding/agentic/
-                                                 math/multilingual/openness
-                                                 indices + raw benchmarks
-                                                 (GPQA, HLE, MMLU-Pro, AIME,
-                                                 LiveCodeBench, Terminal-Bench,
-                                                 IFBench, SciCode, ...) + speed.
-3. aider polyglot YAML (raw GitHub) (no key) -> real coding pass rates.
-
-All sources are fetched defensively: a failure in one never breaks the others.
-The final `meta.sources` lists which succeeded.
-
-Scoring is TRANSPARENT: each task score is a documented weighted blend of
-real benchmark values found on the record. Models missing a benchmark simply
-contribute null to that blend (not zero). See meta.methodology.
+Each source writes its OWN file(s) under benchmarks/.  No scores are blended.
+consensus/ contains a Borda-count placement-agreement summary only.
+models.json carries raw benchmark cross-references, no derived scores.
 """
 
 import json
@@ -44,27 +32,51 @@ try:
 except ImportError:
     yaml = None
 
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
 OR_API = "https://openrouter.ai/api/v1/models"
 AA_API = "https://artificialanalysis.ai/api/v2/data/llms/models"
-AIDER_YAML = ("https://raw.githubusercontent.com/Aider-AI/aider/main/"
-              "aider/website/_data/polyglot_leaderboard.yml")
+AIDER_YAML = (
+    "https://raw.githubusercontent.com/Aider-AI/aider/main/"
+    "aider/website/_data/polyglot_leaderboard.yml"
+)
+ARENA_BASE = "https://arena.ai/leaderboard/"
+JINA_BASE = "https://r.jina.ai/"
+BENCHLM_BASE = "https://benchlm.ai/data"
+SWEBENCH_INFO = (
+    "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/"
+    "master/data/info_for_leaderboard.json"
+)
 OUTDIR = "."
 
-# Routing/availability aliases that denote the SAME model offered under a
-# different pricing/access path. These collapse to the base model.
-# NOTE: identity-bearing dash tags (-latest, -0813, -v2, -preview) are NOT
-# collapsed -- e.g. deepseek-v4-flash-0731 vs -latest are different snapshots.
-COLLAPSE_COLON = re.compile(r"(:batch|:free|:thinking|:nitro|:floor|:cached)$")
+# Collapse only routing aliases; keep identity-bearing tags (e.g. -0813, -latest)
+COLLAPSE_COLON = re.compile(
+    r"(:batch|:free|:thinking|:nitro|:floor|:cached)$"
+)
 
 
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
 
 def fetch_json(url, headers=None, timeout=60):
-    req = urllib.request.Request(url, headers=headers or {"User-Agent": "modelcompass/1.0"})
+    req = urllib.request.Request(
+        url, headers=headers or {"User-Agent": "modelcompass/1.0"}
+    )
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
+
+
+def fetch_text(url, headers=None, timeout=60):
+    req = urllib.request.Request(
+        url, headers=headers or {"User-Agent": "modelcompass/1.0"}
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8")
 
 
 def family_id(mid):
@@ -74,10 +86,6 @@ def family_id(mid):
         p, r = "", mid
     r = COLLAPSE_COLON.sub("", r)
     return f"{p}/{r}" if p else r
-
-
-def variant_quality(mid):
-    return 1 if family_id(mid) == mid else 0
 
 
 def norm(s):
@@ -102,11 +110,6 @@ def scale(x, by=1.0):
     return None if v is None else v / by
 
 
-def avg_non_null(vals):
-    vals = [v for v in vals if v is not None]
-    return sum(vals) / len(vals) if vals else None
-
-
 # ---------------------------------------------------------------------------
 # Source 1: OpenRouter catalog
 # ---------------------------------------------------------------------------
@@ -120,9 +123,11 @@ def fetch_openrouter():
         out_mods = set(arch.get("output_modalities", []) or [])
         params = m.get("supported_parameters", []) or []
         provider = mid.split("/")[0] if "/" in mid else ""
-        ctx = max(m.get("context_length") or 0,
-                  (m.get("top_provider", {}) or {}).get("context_length") or 0)
-        p_in = scale(m.get("pricing", {}).get("prompt"), 1e-6)   # -> per 1M
+        ctx = max(
+            m.get("context_length") or 0,
+            (m.get("top_provider", {}) or {}).get("context_length") or 0,
+        )
+        p_in = scale(m.get("pricing", {}).get("prompt"), 1e-6)
         p_out = scale(m.get("pricing", {}).get("completion"), 1e-6)
         p_cache = scale(m.get("pricing", {}).get("input_cache_read"), 1e-6)
 
@@ -142,7 +147,8 @@ def fetch_openrouter():
             "is_audio_output": "audio" in out_mods,
             "supports_reasoning": "reasoning" in params,
             "supports_tools": "tools" in params,
-            "supports_json": ("structured_outputs" in params) or ("response_format" in params),
+            "supports_json": ("structured_outputs" in params)
+            or ("response_format" in params),
             "supports_caching": bool(p_cache and p_cache > 0),
             "knowledge_cutoff": m.get("knowledge_cutoff"),
             "hugging_face_id": m.get("hugging_face_id"),
@@ -155,32 +161,29 @@ def fetch_openrouter():
                 "cache_read": round(p_cache, 6) if p_cache is not None else None,
             },
             "benchmarks": {},
-            "task_scores": {},
         }
         out.append(rec)
     return out
 
 
 # ---------------------------------------------------------------------------
-# Source 2: Artificial Analysis (key required)
+# Source 2: Artificial Analysis
 # ---------------------------------------------------------------------------
 def fetch_artificial_analysis(api_key):
     if not api_key:
         return None, "no API key"
     req = urllib.request.Request(
         AA_API,
-        headers={
-            "User-Agent": "modelcompass/1.0",
-            "x-api-key": api_key,
-        },
+        headers={"User-Agent": "modelcompass/1.0", "x-api-key": api_key},
     )
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             payload = json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         return None, f"HTTP {e.code}: {e.reason}"
-    except Exception as e:  # noqa
+    except Exception as e:
         return None, str(e)
+
     models = payload.get("data", []) if isinstance(payload, dict) else []
     out = {}
     for m in models:
@@ -207,17 +210,20 @@ def fetch_artificial_analysis(api_key):
 
 
 # ---------------------------------------------------------------------------
-# Source 3: aider polyglot coding benchmark (raw GitHub YAML, no key)
+# Source 3: aider polyglot
 # ---------------------------------------------------------------------------
 def fetch_aider():
     if yaml is None:
         return {}, "pyyaml not installed"
     try:
-        req = urllib.request.Request(AIDER_YAML, headers={"User-Agent": "modelcompass/1.0"})
+        req = urllib.request.Request(
+            AIDER_YAML, headers={"User-Agent": "modelcompass/1.0"}
+        )
         with urllib.request.urlopen(req, timeout=60) as r:
             data = yaml.safe_load(r.read().decode("utf-8"))
-    except Exception as e:  # noqa
+    except Exception as e:
         return {}, str(e)
+
     out = {}
     for row in data or []:
         name = row.get("model")
@@ -227,7 +233,7 @@ def fetch_aider():
         out[base] = {
             "name": name,
             "base": base,
-            "pass_rate_1": scale(row.get("pass_rate_1")),       # 0-100 -> 0-1
+            "pass_rate_1": scale(row.get("pass_rate_1")),
             "pass_rate_2": scale(row.get("pass_rate_2")),
             "total_cost": row.get("total_cost"),
             "seconds_per_case": row.get("seconds_per_case"),
@@ -237,343 +243,914 @@ def fetch_aider():
 
 
 # ---------------------------------------------------------------------------
-# Merge OpenRouter with benchmark sources
+# Source 4: arena.ai (Jina Reader — same technique as community scrapers)
 # ---------------------------------------------------------------------------
-def aa_match_key(creator, slug):
-    """Build a normalized key for matching AA -> OpenRouter.
+def _parse_number(s):
+    if not s:
+        return None
+    s = s.strip()
+    m = re.match(r"([\d.]+)", s)
+    if not m:
+        return None
+    try:
+        return float(m.group(1))
+    except ValueError:
+        return None
 
-    AA slugs use hyphens where OpenRouter uses dots (gpt-5.6 -> gpt-5-6) and
-    append reasoning-effort suffixes (gpt-5-6-luna-xhigh). Normalize both sides
-    so the canonical base model matches regardless of these suffixes.
+
+def _parse_number_with_ci(s):
+    """'12.19%±1.45%' -> (12.19, 1.45) ; '12.19%' -> (12.19, None)."""
+    if not s:
+        return None, None
+    s = s.strip()
+    score = None
+    ci = None
+    m = re.match(r"([\d.]+)\s*%?", s)
+    if m:
+        score = float(m.group(1))
+    m_ci = re.search(r"±\s*([\d.]+)\s*%?", s)
+    if m_ci:
+        ci = float(m_ci.group(1))
+    return score, ci
+
+
+def _parse_int(s):
+    if not s:
+        return None
+    s = s.strip().replace(",", "")
+    if not s or s == "-":
+        return None
+    try:
+        return int(float(s))
+    except ValueError:
+        return None
+
+
+def _parse_arena_general(content, slug):
+    """Parse general leaderboard table (text, code, vision, …)."""
+    lines = content.split("\n")
+    models = []
+    in_table = False
+    for line in lines:
+        if "| Rank |" in line or "|---|" in line:
+            in_table = True
+            continue
+        if in_table and line.startswith("|"):
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            if len(cells) < 6:
+                continue
+            rank_m = re.match(r"\s*(\d+)", cells[0])
+            if not rank_m:
+                continue
+            rank = int(rank_m.group(1))
+
+            # The model cell is the first cell containing a markdown link
+            # [name](url); arena tables often insert a rank-change badge
+            # column right after the rank, so we don't assume a fixed index.
+            model_cell = None
+            model_idx = None
+            for i, c in enumerate(cells[1:], start=1):
+                if re.search(r"\[[^\]]+\]\(https?://", c):
+                    model_cell = c
+                    model_idx = i
+                    break
+            if model_cell is None:
+                continue
+            assert model_idx is not None  # guaranteed by the loop above
+            m = re.match(r"\[([^\]]+)\]", model_cell)
+            model_name = m.group(1) if m else model_cell
+
+            vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", model_cell)
+            vendor = vendor_match.group(1).strip() if vendor_match else None
+
+            lic_match = re.search(
+                r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
+                model_cell, re.I,
+            )
+            license = "proprietary" if (
+                lic_match and "proprietary" in lic_match.group(1).lower()
+            ) else ("open" if lic_match else None)
+
+            # Score/CI/votes follow the model cell
+            score = _parse_number(cells[model_idx + 1]) if model_idx + 1 < len(cells) else None
+            ci = _parse_number(cells[model_idx + 2]) if model_idx + 2 < len(cells) else None
+            votes = _parse_int(cells[model_idx + 3]) if model_idx + 3 < len(cells) else None
+
+            models.append(
+                {
+                    "rank": rank,
+                    "model": model_name,
+                    "vendor": vendor,
+                    "license": license,
+                    "score": score,
+                    "ci": ci,
+                    "votes": votes,
+                }
+            )
+
+    return {
+        "meta": {
+            "leaderboard": slug,
+            "source_url": f"https://arena.ai/leaderboard/{slug}",
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "model_count": len(models),
+        },
+        "models": models,
+    }, f"ok ({len(models)} models)"
+
+
+def _parse_arena_agent(content, slug):
+    """Parse agent leaderboard with dimension scores."""
+    lines = content.split("\n")
+    models = []
+    dimensions = []
+    in_table = False
+    for line in lines:
+        if "| Rank |" in line or "|---|" in line:
+            in_table = True
+            if "| Rank |" in line:
+                cells = [c.strip() for c in line.strip("|").split("|")]
+                # Extract dimension names (skip Rank, Model, Sessions, Price)
+                dimensions = [
+                    re.sub(r"\s*\([^)]*\)", "", c).strip()
+                    for c in cells
+                    if c and c not in ("Rank", "Model", "Sessions", "Price $/M", "Price $/M tokens")
+                ]
+                dimensions = [d for d in dimensions if d]
+            continue
+        if in_table and line.startswith("|"):
+            cells = [c.strip() for c in line.strip("|").split("|")]
+            if len(cells) < 4:
+                continue
+            rank_m = re.match(r"\s*(\d+)", cells[0])
+            if not rank_m:
+                continue
+            rank = int(rank_m.group(1))
+
+            model_cell = cells[1]
+            m = re.match(r"\[([^\]]+)\]", model_cell)
+            model_name = m.group(1) if m else model_cell
+
+            vendor_match = re.search(r"\]\([^)]*\)\s*([^·]+?)\s*·", model_cell)
+            vendor = vendor_match.group(1).strip() if vendor_match else None
+
+            lic_match = re.search(
+                r"·\s*(proprietary|open|Open Source|MIT|Apache|GPL|CC-|Community|Non-commercial)",
+                model_cell, re.I,
+            )
+            license = "proprietary" if (
+                lic_match and "proprietary" in lic_match.group(1).lower()
+            ) else ("open" if lic_match else None)
+
+            scores = []
+            for i, dim in enumerate(dimensions):
+                cell_idx = 2 + i
+                if cell_idx < len(cells):
+                    score_val, ci_val = _parse_number_with_ci(cells[cell_idx])
+                    scores.append({"name": dim, "score": score_val, "ci": ci_val})
+
+            sessions = _parse_int(cells[-2]) if len(cells) >= 2 else None
+
+            models.append(
+                {
+                    "rank": rank,
+                    "model": model_name,
+                    "vendor": vendor,
+                    "license": license,
+                    "scores": scores,
+                    "sessions": sessions,
+                }
+            )
+
+    return {
+        "meta": {
+            "leaderboard": slug,
+            "source_url": f"https://arena.ai/leaderboard/{slug}",
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "model_count": len(models),
+            "dimensions": dimensions,
+        },
+        "models": models,
+    }, f"ok ({len(models)} models)"
+
+
+def fetch_arena_leaderboard(slug):
+    """Fetch a single arena.ai leaderboard via Jina Reader."""
+    url = f"{JINA_BASE}{ARENA_BASE}{slug}"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "X-Return-Format": "markdown",
+            "User-Agent": "modelcompass/1.0",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            wrapper = json.loads(r.read().decode("utf-8"))
+    except Exception as e:
+        return None, f"fetch error: {e}"
+
+    content = wrapper.get("data", {}).get("content", "")
+    if not content:
+        return None, "empty content"
+
+    if slug == "agent":
+        return _parse_arena_agent(content, slug)
+    return _parse_arena_general(content, slug)
+
+
+def discover_arena_slugs():
+    """Discover all arena.ai leaderboard slugs from the overview page."""
+    try:
+        text = fetch_text(f"{JINA_BASE}{ARENA_BASE}")
+    except Exception as e:
+        log(f"Failed to discover arena slugs: {e}")
+        return []
+    slugs = re.findall(r"arena\.ai/leaderboard/([a-z][a-z0-9-]*)", text)
+    return sorted(set(slugs))
+
+
+# ---------------------------------------------------------------------------
+# Source 5: BenchLM (MIT licensed raw JSON)
+# ---------------------------------------------------------------------------
+def fetch_benchlm():
+    """Fetch BenchLM models.json — 388 models, 437 benchmarks."""
+    try:
+        data = fetch_json(f"{BENCHLM_BASE}/models.json", timeout=60)
+    except Exception as e:
+        return None, str(e)
+    items = data.get("items", []) if isinstance(data, dict) else []
+    return items, f"ok ({len(items)} models)"
+
+
+# ---------------------------------------------------------------------------
+# Source 6: SWE-bench raw result JSON
+# ---------------------------------------------------------------------------
+def fetch_swebench():
+    """Fetch per-model SWE-bench results from the public GitHub repo."""
+    try:
+        data = fetch_json(SWEBENCH_INFO, timeout=60)
+    except Exception as e:
+        return {}, str(e)
+    out = {}
+    for model_id, tasks in data.items():
+        resolved = sum(1 for t in tasks.values() if t.get("resolved"))
+        total = len(tasks)
+        out[model_id] = {
+            "model": model_id,
+            "resolved": resolved,
+            "total": total,
+            "pass_rate": resolved / total if total > 0 else None,
+            "total_cost": sum(t.get("cost", 0) for t in tasks.values()),
+        }
+    return out, f"ok ({len(out)} models)"
+
+
+# ---------------------------------------------------------------------------
+# Merge: cross-reference only, no score blending
+# ---------------------------------------------------------------------------
+def base_slug(model_id):
+    """Strip reasoning-effort / deviation suffixes (xhigh, high, max, xlow,
+    low, medium, batch, free, latest, thinking, -0824, -0813, -3107 …) so that
+    e.g. 'openai/gpt-5.6-sol-high' collapses to 'openai/gpt-5.6-sol'.
+    Composed prefixes like 'deepseek/deepseek-v4-pro-0813' have NO base and
+    return as-is on purpose."""
+    parts = model_id.rsplit("-", 1)
+    if len(parts) != 2:
+        return model_id
+    head, tail = parts
+    # suffix tokens that always mean 'a variant of the same model'
+    if re.fullmatch(r"(x?high|x?low|medium|batch|free|latest|thinking|"
+                    r"\d{3,4}|"
+                    r"[a-z]{1,4}\d{1,4})", tail):
+        return head
+    return model_id
+
+
+def merge(or_models, aa, aider, arena, benchlm, swe):
+    """Attach raw benchmark data to OpenRouter models.
+    Each source stays in its own namespace under benchmarks.<source>.
     """
-    s = f"{creator}/{slug}".lower()
-    s = s.replace(".", "-")
-    return s
-
-
-# reasoning-effort / alias suffixes that don't change the *base* model identity
-EFFORT_SUFFIX = re.compile(
-    r"-(xhigh|high|medium|low|non-reasoning|max|min|auto|balance|default|thinking)$"
-)
-ALIAS_COLON = re.compile(r"(:batch|:free|:thinking|:nitro|:floor|:cached)$")
-
-
-def base_slug(s):
-    """Strip reasoning-effort suffix and alias colons to get the base slug."""
-    s = s.lower()
-    s = ALIAS_COLON.sub("", s)
-    s = EFFORT_SUFFIX.sub("", s)
-    return s
-
-
-def merge(or_models, aa, aider):
-    # index OpenRouter by normalized id, base-slug, slug-only, and normalized name
     or_by_id = {}
-    or_by_base = {}
-    or_by_slug_only = {}
     or_by_norm = {}
+    or_by_slug_only = {}
     for m in or_models:
         mid = m["id"].lower()
         or_by_id[mid] = m
-        base = base_slug(mid.replace(".", "-"))
-        or_by_base.setdefault(base, []).append(m)
-        # slug-only key (provider stripped) so AA creator-slug mismatches (x-ai vs x.ai) still match
-        slug_only = base.split("/", 1)[-1]
-        or_by_slug_only.setdefault(slug_only, []).append(m)
         or_by_norm.setdefault(norm(m["name"]), []).append(m)
+        slug_only = mid.split("/", 1)[-1] if "/" in mid else mid
+        or_by_slug_only.setdefault(slug_only, []).append(m)
 
-    aa_used, aider_used = set(), set()
+    counts = {"aa": 0, "aider": 0, "arena": 0, "benchlm": 0, "swe": 0}
 
-    # attach AA
-    for key, a in (aa or {}).items():
-        creator = a.get("creator_slug", "")
-        slug = a.get("slug", "")
-        # 0) slug-only match (provider-agnostic; tolerant of creator-slug format)
-        target = None
-        so = base_slug(slug.replace(".", "-")).split("/", 1)[-1]
-        if not target and so in or_by_slug_only:
-            cands = or_by_slug_only[so]
-            pref = [c for c in cands if base_slug(c["id"].replace(".", "-")) == base_slug(f"{creator}/{slug}".replace(".", "-"))]
-            target = (pref or cands)[0]
-        # 1) exact normalized key
-        if not target:
-            target = or_by_id.get(aa_match_key(creator, slug))
-        # 2) base-slug match (handles reasoning-effort suffixes)
-        if not target:
-            b = base_slug(aa_match_key(creator, slug))
-            cands = or_by_base.get(b)
-            if cands:
-                pref = [c for c in cands if base_slug(c["id"].replace(".", "-")) == b]
-                target = (pref or cands)[0]
-        # 3) fuzzy name match
-        if not target:
-            nn = norm(a.get("name", ""))
-            if nn in or_by_norm:
-                target = or_by_norm[nn][0]
-        if target:
-            ev = a.get("evaluations", {})
-            target["benchmarks"]["aa"] = ev
-            target["benchmarks"]["aa_speed"] = {
-                "median_tps": a.get("median_tps"),
-                "ttft_s": a.get("ttft"),
-            }
-            if target["price_per_million"]["prompt"] is None and a["pricing"]["prompt"] is not None:
-                target["price_per_million"] = {
-                    "prompt": round(a["pricing"]["prompt"], 6),
-                    "completion": round(a["pricing"]["completion"], 6) if a["pricing"]["completion"] else None,
-                    "cache_read": None,
-                }
-            aa_used.add(target["id"])
-
-    # attach aider coding
-    for base, a in (aider or {}).items():
-        best, best_score = None, 0
-        for m in or_models:
-            om = norm(m["id"].split("/")[-1])
-            on = norm(m["name"])
-            sc = 0
-            if base and (base in om or om in base):
-                sc = 2
-            elif base and (base in on or on in base):
-                sc = 2
+    # Attach AA
+    if aa:
+        for key, a in aa.items():
+            creator = a.get("creator_slug", "")
+            slug = a.get("slug", "")
+            target = None
+            k = f"{creator}/{slug}".lower()
+            if k in or_by_id:
+                target = or_by_id[k]
             else:
-                bt = set(base.split())
-                ot = set(om.split()) | set(on.split())
-                if bt and ot:
-                    ov = len(bt & ot) / len(bt)
-                    sc = ov
-            if sc > best_score:
-                best, best_score = m, sc
-        if best and best_score >= 0.5:
-            best["benchmarks"]["aider_polyglot"] = {
-                "pass_rate_1": a["pass_rate_1"],
-                "pass_rate_2": a["pass_rate_2"],
-                "total_cost": a["total_cost"],
-                "seconds_per_case": a["seconds_per_case"],
-                "date": a["date"],
-            }
-            aider_used.add(best["id"])
+                base = base_slug(k.replace(".", "-"))
+                if base in or_by_id:
+                    target = or_by_id[base]
+                else:
+                    so = base.split("/", 1)[-1]
+                    if so in or_by_slug_only:
+                        target = or_by_slug_only[so][0]
+                    else:
+                        nn = norm(a.get("name", ""))
+                        if nn in or_by_norm:
+                            target = or_by_norm[nn][0]
+            if target:
+                target["benchmarks"]["aa"] = a
+                counts["aa"] += 1
 
-    return aa_used, aider_used
+    # Attach aider
+    if aider:
+        for base, a in aider.items():
+            if base in or_by_norm:
+                for m in or_by_norm[base]:
+                    m["benchmarks"]["aider"] = a
+                    counts["aider"] += 1
+                    break
 
+    # Attach arena
+    if arena:
+        for lb_slug, lb_data in arena.items():
+            for model_info in lb_data.get("models", []):
+                nn = norm(model_info.get("model", ""))
+                if nn in or_by_norm:
+                    for m in or_by_norm[nn]:
+                        m["benchmarks"].setdefault("arena", {})
+                        m["benchmarks"]["arena"][lb_slug] = model_info
+                        counts["arena"] += 1
+                        break
 
-# ---------------------------------------------------------------------------
-# Scoring (transparent, real benchmarks)
-# ---------------------------------------------------------------------------
-def aa_evals(rec):
-    return rec.get("benchmarks", {}).get("aa", {}) or {}
+    # Attach BenchLM
+    if benchlm:
+        for bm in benchlm:
+            slug = bm.get("slug", "").lower()
+            model_name = bm.get("model", "")
+            target = None
+            if slug and slug in or_by_id:
+                target = or_by_id[slug]
+            else:
+                if slug in or_by_slug_only:
+                    target = or_by_slug_only[slug][0]
+                elif slug:
+                    base = base_slug(slug)
+                    if base in or_by_slug_only:
+                        target = or_by_slug_only[base][0]
+                if target is None:
+                    nn = norm(model_name)
+                    if nn in or_by_norm:
+                        target = or_by_norm[nn][0]
+            if target:
+                target["benchmarks"]["benchlm"] = bm
+                counts["benchlm"] += 1
 
+    # Attach SWE-bench
+    if swe:
+        for model_id, swe_data in swe.items():
+            mid = model_id.lower()
+            if mid in or_by_id:
+                or_by_id[mid]["benchmarks"]["swe"] = swe_data
+                counts["swe"] += 1
+            else:
+                nn = norm(model_id)
+                if nn in or_by_norm:
+                    or_by_norm[nn][0]["benchmarks"]["swe"] = swe_data
+                    counts["swe"] += 1
 
-def s_overall(r):
-    e = aa_evals(r)
-    return avg_non_null([
-        scale(e.get("artificial_analysis_intelligence_index"), 100),
-        scale(e.get("artificial_analysis_coding_index"), 100),
-        scale(e.get("artificial_analysis_agentic_index"), 100),
-        scale(e.get("artificial_analysis_math_index"), 100),
-        scale(e.get("artificial_analysis_multilingual_index"), 100),
-    ])
-
-
-def s_coding(r):
-    e = aa_evals(r)
-    aider = r.get("benchmarks", {}).get("aider_polyglot", {})
-    aider_v = scale(aider.get("pass_rate_1"), 100)  # 0-100 -> 0-1
-    return avg_non_null([
-        scale(e.get("artificial_analysis_coding_index"), 100),
-        e.get("livecodebench"),
-        aider_v,
-    ])
-
-
-def s_reasoning(r):
-    e = aa_evals(r)
-    return avg_non_null([
-        scale(e.get("artificial_analysis_intelligence_index"), 100),
-        e.get("gpqa"),
-        e.get("aime"),
-        e.get("hle"),
-    ])
-
-
-def s_math(r):
-    e = aa_evals(r)
-    return avg_non_null([
-        scale(e.get("artificial_analysis_math_index"), 100),
-        e.get("aime"),
-        e.get("math_500"),
-        e.get("scicode"),
-    ])
-
-
-def s_agents(r):
-    e = aa_evals(r)
-    return avg_non_null([
-        scale(e.get("artificial_analysis_agentic_index"), 100),
-        e.get("terminal_bench"),
-        e.get("ifbench"),
-    ])
-
-
-def s_open_weight(r):
-    e = aa_evals(r)
-    return avg_non_null([
-        scale(e.get("artificial_analysis_intelligence_index"), 100),
-        scale(e.get("artificial_analysis_openness_index"), 100),
-        scale(e.get("artificial_analysis_coding_index"), 100),
-    ])
-
-
-def capability_score(r):
-    s = 0.0
-    if r.get("supports_reasoning"):
-        s += 2.0
-    if r.get("supports_tools"):
-        s += 1.0
-    if r.get("supports_json"):
-        s += 0.5
-    if r.get("supports_caching"):
-        s += 0.3
-    if r.get("context"):
-        s += min(r["context"] / 1_000_000.0, 2.0)
-    if r.get("created_unix"):
-        age = (datetime.now(tz=timezone.utc) - datetime.fromtimestamp(r["created_unix"], tz=timezone.utc)).days
-        s += max(0.0, 2.0 * (1 - age / 365.0))
-    if r.get("knowledge_cutoff"):
-        s += 0.5
-    return round(s, 3)
-
-
-TASKS = {
-    "best_overall": (s_overall, lambda r: True, True),
-    "best_coding": (s_coding, lambda r: r.get("benchmarks", {}).get("aider_polyglot") or aa_evals(r).get("artificial_analysis_coding_index") or aa_evals(r).get("livecodebench"), True),
-    "best_reasoning": (s_reasoning, lambda r: True, True),
-    "best_math": (s_math, lambda r: True, True),
-    "best_agents": (s_agents, lambda r: True, True),
-    "best_open_weight": (s_open_weight, lambda r: r.get("open_weight"), True),
-    "best_vision": (s_overall, lambda r: r.get("is_vision"), True),
-    "best_cheap": (s_overall, lambda r: (r.get("price_per_million", {}).get("prompt") or 1e9) <= 0.5 and r.get("supports_reasoning"), False),
-}
-
-
-def recommend(real, task_key, top=10):
-    score_fn, filter_fn, use_bench = TASKS[task_key]
-    seq = [m for m in real if filter_fn(m)]
-    for m in seq:
-        ts = score_fn(m)
-        m["_task"] = ts
-        m["_fallback"] = capability_score(m) / 12.0
-    if use_bench:
-        seq.sort(key=lambda m: ((m["_task"] is not None), m["_task"] or 0, m["_fallback"]), reverse=True)
-    else:
-        seq.sort(key=lambda m: (m["price_per_million"]["prompt"] or 1e9, -(m["_task"] or 0)))
-    seen, out = set(), []
-    for m in seq:
-        fam = family_id(m["id"])
-        if fam in seen:
-            continue
-        seen.add(fam)
-        out.append(m)
-        if len(out) >= top:
-            break
-    return out
-
-
-def slim(m, task_key):
-    b = m.get("benchmarks", {})
-    e = b.get("aa", {})
-    return {
-        "id": m["id"],
-        "name": m.get("name"),
-        "provider": m.get("provider"),
-        "task_score": round(m.get("_task"), 4) if m.get("_task") is not None else None,
-        "context": m.get("context"),
-        "price_per_million": m.get("price_per_million"),
-        "capability_flags": [f for f in ("reasoning", "tools", "json", "caching")
-                             if m.get("supports_" + f)],
-        "is_vision": m.get("is_vision"),
-        "open_weight": m.get("open_weight"),
-        "benchmarks": {
-            "aa_intelligence_index": e.get("artificial_analysis_intelligence_index"),
-            "aa_coding_index": e.get("artificial_analysis_coding_index"),
-            "aa_agentic_index": e.get("artificial_analysis_agentic_index"),
-            "aa_math_index": e.get("artificial_analysis_math_index"),
-            "gpqa": e.get("gpqa"),
-            "hle": e.get("hle"),
-            "livecodebench": e.get("livecodebench"),
-            "aime": e.get("aime"),
-            "mmlu_pro": e.get("mmlu_pro"),
-            "aider_polyglot_pass_rate_1": (b.get("aider_polyglot") or {}).get("pass_rate_1"),
-        },
-    }
+    return counts
 
 
 # ---------------------------------------------------------------------------
-# Curated famous rankings (data-backed)
+# Output: per-benchmark files
 # ---------------------------------------------------------------------------
-FAMOUS_RANKINGS = [
-    ("Artificial Analysis Intelligence Index", "best_overall",
-     "Composite of reasoning, knowledge, math, coding & agentic. The headline "
-     "'smartest model' ranking."),
-    ("Coding (aider polyglot + LiveCodeBench)", "best_coding",
-     "Real code generation: 225 Exercism exercises across 6 languages + LiveCodeBench."),
-    ("Math (AIME / MMLU-Pro / SciCode)", "best_math",
-     "Quantitative & competition math ability."),
-    ("Reasoning (GPQA / HLE)", "best_reasoning",
-     "Graduate-level science & 'Humanity's Last Exam' reasoning."),
-    ("Agentic (Terminal-Bench / AA agentic)", "best_agents",
-     "Tool use, terminal/bash, multi-step agentic tasks."),
-    ("Vision (multimodal)", "best_vision",
-     "Image understanding for multimodal models."),
-    ("Best value (low cost)", "best_cheap",
-     "Cheapest capable reasoning models."),
-    ("Open-weight", "best_open_weight",
-     "Best models with openly-licensed weights."),
-]
-
-
-def write_rankings(recommended, meta):
-    os.makedirs("rankings", exist_ok=True)
-    lines = ["# Famous Rankings (ModelCompass)\n",
-             f"_Generated {meta['generated_at']}. Top models per famous benchmark, "
-             "pulled from live benchmark data._\n"]
-    data = {"generated_at": meta["generated_at"], "rankings": {}}
-    for title, task, desc in FAMOUS_RANKINGS:
-        rows = recommended.get(task, [])[:10]
-        lines.append(f"## {title}\n")
-        lines.append(f"_{desc}_\n")
-        lines.append("")
-        data["rankings"][task] = {
-            "title": title,
-            "description": desc,
-            "models": [{"id": r["id"], "name": r.get("name"),
-                        "task_score": r.get("task_score")} for r in rows],
-        }
-        if not rows:
-            lines.append("_No benchmarked models yet._\n")
-            continue
-        for i, r in enumerate(rows, 1):
-            sc = r.get("task_score")
-            sc = f" — score {sc}" if sc is not None else ""
-            lines.append(f"{i}. `{r['id']}`{sc}")
-        lines.append("")
-    with open("rankings/famous_rankings.md", "w") as f:
-        f.write("\n".join(lines))
-    with open("rankings/famous_rankings.json", "w") as f:
+def _write_benchmark_json(bname, meta_info, models_list):
+    os.makedirs("benchmarks", exist_ok=True)
+    data = {"meta": meta_info, "models": models_list}
+    path = f"benchmarks/{bname}.json"
+    with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    return path
 
 
-def write_archive(recommended, meta):
-    os.makedirs("archive", exist_ok=True)
-    iso = datetime.now(tz=timezone.utc).isocalendar()
-    week = f"{iso[0]}-W{iso[1]:02d}"
-    fname = f"archive/rankings-{week}.json"
-    snapshot = {
-        "week": week,
-        "generated_at": meta["generated_at"],
-        "model_count": meta["model_count"],
-        "recommended": recommended,
+def write_aa_benchmarks(or_models):
+    """Write per-dimension AA benchmark files."""
+    AA_KEYS = {
+        "aa_intelligence": "artificial_analysis_intelligence_index",
+        "aa_coding": "artificial_analysis_coding_index",
+        "aa_agentic": "artificial_analysis_agentic_index",
+        "aa_math": "artificial_analysis_math_index",
+        "aa_multilingual": "artificial_analysis_multilingual_index",
+        "aa_openness": "artificial_analysis_openness_index",
     }
+    written = {}
+    for bname, eval_key in AA_KEYS.items():
+        models_list = []
+        for m in or_models:
+            bm = m.get("benchmarks", {}).get("aa", {})
+            evals = bm.get("evaluations", {})
+            val = num(evals.get(eval_key))
+            if val is not None:
+                models_list.append(
+                    {
+                        "model": m["id"],
+                        "name": m.get("name"),
+                        "score": val / 100.0,
+                        "raw_score": val,
+                    }
+                )
+        models_list.sort(key=lambda x: x["score"], reverse=True)
+        if models_list:
+            path = _write_benchmark_json(
+                bname,
+                {
+                    "leaderboard": bname,
+                    "source_url": "https://artificialanalysis.ai",
+                    "benchmark": eval_key,
+                },
+                models_list,
+            )
+            written[bname] = path
+    return written
+
+
+def write_aider_benchmark(aider):
+    """Write the aider polyglot leaderboard from the raw source (all models,
+    not just ones cross-referenced to OpenRouter)."""
+    models_list = []
+    for base, bm in aider.items():
+        if bm.get("pass_rate_1") is None:
+            continue
+        models_list.append(
+            {
+                "model": bm.get("name"),
+                "score": bm.get("pass_rate_1"),
+                "pass_rate_1": bm.get("pass_rate_1"),
+                "pass_rate_2": bm.get("pass_rate_2"),
+                "total_cost": bm.get("total_cost"),
+            }
+        )
+    models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
+    if models_list:
+        return _write_benchmark_json(
+            "aider_coding",
+            {
+                "leaderboard": "aider_coding",
+                "source_url": AIDER_YAML,
+                "benchmark": "aider polyglot pass_rate_1",
+            },
+            models_list,
+        )
+    return None
+
+
+def write_arena_benchmarks(arena_data):
+    written = {}
+    for slug, lb in arena_data.items():
+        path = f"benchmarks/arena_{slug}.json"
+        with open(path, "w") as f:
+            json.dump(lb, f, indent=2, ensure_ascii=False)
+        written[slug] = path
+    return written
+
+
+def write_benchlm_benchmarks(benchlm_items):
+    """Write BenchLM benchmarks grouped by category.
+
+    BenchLM's raw JSON stores per-category scores under
+    scores.displayCategoryScores and per-category ranks under
+    ranking.categoryRanks. We use displayCategoryScores for the
+    ranking value (None entries are skipped) and attach the category rank.
+    """
+    if not benchlm_items:
+        return {}
+    # Collect all categories from displayCategoryScores (the inner dict only)
+    categories = set()
+    for bm in benchlm_items:
+        scores = (bm.get("scores") or {}).get("displayCategoryScores") or {}
+        categories.update(scores.keys())
+
+    written = {}
+    for cat in sorted(categories):
+        models_list = []
+        for bm in benchlm_items:
+            scores = (bm.get("scores") or {}).get("displayCategoryScores") or {}
+            val = scores.get(cat)
+            if val is None:
+                continue
+            rank = ((bm.get("ranking") or {}).get("categoryRanks") or {}).get(cat)
+            models_list.append(
+                {
+                    "model": bm.get("slug", ""),
+                    "name": bm.get("model", ""),
+                    "creator": bm.get("creator", ""),
+                    "score": val,
+                    "category_rank": rank,
+                }
+            )
+        models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
+        if models_list:
+            bname = f"benchlm_{cat}"
+            path = _write_benchmark_json(
+                bname,
+                {
+                    "leaderboard": bname,
+                    "source_url": f"{BENCHLM_BASE}/models.json",
+                    "benchmark": f"BenchLM {cat}",
+                },
+                models_list,
+            )
+            written[bname] = path
+    return written
+
+
+def write_swebench_benchmark(swe_data):
+    models_list = []
+    for model_id, swe in swe_data.items():
+        models_list.append(
+            {
+                "model": model_id,
+                "score": swe.get("pass_rate"),
+                "resolved": swe.get("resolved"),
+                "total": swe.get("total"),
+            }
+        )
+    models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
+    if models_list:
+        return _write_benchmark_json(
+            "swe_bench",
+            {
+                "leaderboard": "swe_bench",
+                "source_url": SWEBENCH_INFO,
+                "benchmark": "SWE-bench % Resolved",
+            },
+            models_list,
+        )
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Output: models.json (catalog, no derived scores)
+# ---------------------------------------------------------------------------
+def write_models_json(or_models, meta, counts):
+    out = {
+        "meta": {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "model_count": len(or_models),
+            "sources": meta.get("sources", {}),
+            "coverage": counts,
+            "note": (
+                "Each model carries raw benchmark data under benchmarks.<source>. "
+                "No scores are blended across sources."
+            ),
+        },
+        "models": or_models,
+    }
+    path = os.path.join(OUTDIR, "models.json")
+    with open(path, "w") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+    return path
+
+
+# ---------------------------------------------------------------------------
+# Output: recommended.json (per-benchmark top-10, no mixing)
+# ---------------------------------------------------------------------------
+def write_recommended_json(benchmarks_dir):
+    rec = {
+        "meta": {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "description": (
+                "Per-benchmark shortlists. No score mixing. "
+                "Each list is a pure ranking from one source."
+            ),
+            "benchmarks": {},
+        },
+        "recommended": {},
+    }
+
+    for fname in sorted(os.listdir(benchmarks_dir)):
+        if not fname.endswith(".json"):
+            continue
+        bname = fname[:-5]
+        path = os.path.join(benchmarks_dir, fname)
+        try:
+            with open(path) as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        models = data.get("models", [])[:10]
+        rec["recommended"][bname] = models
+        rec["meta"]["benchmarks"][bname] = {
+            "source": data.get("meta", {}).get("source_url", "unknown"),
+            "model_count": len(data.get("models", [])),
+            "top_n": len(models),
+        }
+
+    path = os.path.join(OUTDIR, "recommended.json")
+    with open(path, "w") as f:
+        json.dump(rec, f, indent=2, ensure_ascii=False)
+    return path
+
+
+# ---------------------------------------------------------------------------
+# Output: LEADERBOARD.md (human-readable, per-benchmark tables)
+# ---------------------------------------------------------------------------
+def write_leaderboard_md(benchmarks_dir):
+    L = []
+    L.append("# ModelCompass Leaderboard\n")
+    L.append(
+        f"> Generated {datetime.now(timezone.utc).isoformat()} · "
+        "updated daily.\n"
+    )
+    L.append(
+        "Each table is a **pure ranking from one benchmark source**. "
+        "No scores are mixed.\n"
+    )
+
+    for fname in sorted(os.listdir(benchmarks_dir)):
+        if not fname.endswith(".json"):
+            continue
+        bname = fname[:-5]
+        path = os.path.join(benchmarks_dir, fname)
+        try:
+            with open(path) as f:
+                data = json.load(f)
+        except Exception:
+            continue
+
+        models = data.get("models", [])[:10]
+        meta = data.get("meta", {})
+        title = meta.get("leaderboard", bname)
+        source_url = meta.get("source_url", "")
+
+        L.append(f"## {title}\n")
+        if source_url:
+            L.append(f"_Source: [{source_url}]({source_url})_\n")
+        L.append("")
+
+        if not models:
+            L.append("_No models yet._\n")
+            continue
+
+        sample = models[0]
+        if "score" in sample and "scores" not in sample:
+            # Simple score table
+            L.append("| # | Model | Score | 95% CI | Votes |")
+            L.append("|---|-------|------:|-------:|------:|")
+            for i, m in enumerate(models, 1):
+                score = m.get("score", "—")
+                ci = m.get("ci", "—")
+                votes = m.get("votes", "—")
+                L.append(
+                    f"| {i} | `{m.get('model', '?')}` | {score} | ±{ci} | {votes} |"
+                )
+        elif "scores" in sample:
+            # Multi-dimension table (arena agent)
+            dims = meta.get("dimensions", [])
+            if dims:
+                header = (
+                    "| # | Model | "
+                    + " | ".join(dims)
+                    + " | Sessions |"
+                )
+                sep = (
+                    "|---|-------|"
+                    + "|".join(["------:" for _ in dims])
+                    + "|------:|"
+                )
+                L.append(header)
+                L.append(sep)
+                for i, m in enumerate(models, 1):
+                    scores = m.get("scores", [])
+                    score_strs = []
+                    for s in scores[: len(dims)]:
+                        val = s.get("score")
+                        ci_val = s.get("ci")
+                        if val is not None and ci_val is not None:
+                            score_strs.append(f"{val} ±{ci_val}")
+                        elif val is not None:
+                            score_strs.append(str(val))
+                        else:
+                            score_strs.append("—")
+                    L.append(
+                        f"| {i} | `{m.get('model', '?')}` | "
+                        + " | ".join(score_strs)
+                        + f" | {m.get('sessions', '—')} |"
+                    )
+        L.append("")
+
+    path = os.path.join(OUTDIR, "LEADERBOARD.md")
+    with open(path, "w") as f:
+        f.write("\n".join(L))
+    return path
+
+
+# ---------------------------------------------------------------------------
+# Output: consensus (Borda count, placement-based only)
+# ---------------------------------------------------------------------------
+def write_consensus(benchmarks_dir):
+    borda = {}
+    N = 10
+
+    for fname in sorted(os.listdir(benchmarks_dir)):
+        if not fname.endswith(".json"):
+            continue
+        path = os.path.join(benchmarks_dir, fname)
+        try:
+            with open(path) as f:
+                data = json.load(f)
+        except Exception:
+            continue
+
+        models = data.get("models", [])[:N]
+        bname = fname[:-5]
+        for i, m in enumerate(models):
+            model_id = m.get("model", "")
+            score = m.get("score")
+            if model_id not in borda:
+                borda[model_id] = {
+                    "model": model_id,
+                    "top_appearances": 0,
+                    "borda_points": 0,
+                    "benchmarks": {},
+                }
+            borda[model_id]["top_appearances"] += 1
+            borda[model_id]["borda_points"] += max(0, N - i)
+            borda[model_id]["benchmarks"][bname] = {
+                "rank": i + 1,
+                "score": score,
+            }
+
+    ranked = sorted(
+        borda.values(), key=lambda x: (-x["top_appearances"], -x["borda_points"])
+    )
+
+    out = {
+        "meta": {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "method": "borda_count",
+            "description": (
+                "Placement agreement across benchmarks. "
+                "No score mixing — counts how many top-10 lists each model appears in."
+            ),
+            "N": N,
+        },
+        "consensus": ranked,
+    }
+
+    os.makedirs("consensus", exist_ok=True)
+    path = "consensus/consensus.json"
+    with open(path, "w") as f:
+        json.dump(out, f, indent=2, ensure_ascii=False)
+    return path
+
+
+def write_consensus_md():
+    path = "consensus/consensus.json"
+    if not os.path.exists(path):
+        return None
+
+    with open(path) as f:
+        data = json.load(f)
+
+    L = []
+    L.append("# ModelCompass Consensus\n")
+    L.append(f"> Generated {data['meta']['generated_at']}\n")
+    L.append(
+        "Borda-count agreement: how many benchmarks each model appears "
+        "in the top 10. No score mixing — just placement frequency.\n"
+    )
+    L.append("")
+    L.append("| Rank | Model | Top-10 Appearances | Borda Points | Benchmarks |")
+    L.append("|------|-------|--------------------:|-------------:|------------|")
+
+    for i, entry in enumerate(data.get("consensus", [])[:20], 1):
+        bm_list = sorted(entry.get("benchmarks", {}).keys())
+        bm_display = ", ".join(bm_list[:5])
+        if len(bm_list) > 5:
+            bm_display += "…"
+        L.append(
+            f"| {i} | `{entry['model']}` | "
+            f"{entry['top_appearances']} | {entry['borda_points']} | {bm_display} |"
+        )
+
+    with open("consensus/consensus.md", "w") as f:
+        f.write("\n".join(L))
+    return "consensus/consensus.md"
+
+
+# ---------------------------------------------------------------------------
+# Output: rankings/famous_rankings.md (static curated view)
+# ---------------------------------------------------------------------------
+def write_rankings():
+    os.makedirs("rankings", exist_ok=True)
+    L = []
+    L.append("# ModelCompass Famous Rankings\n")
+    L.append(
+        "Curated view of the most important model rankings, "
+        "with current top models from live data.\n"
+    )
+
+    famous = [
+        (
+            "LMArena Text (ELO)",
+            "arena_text",
+            "Human preference ELO from millions of blind pairwise comparisons.",
+        ),
+        (
+            "LMArena Code (WebDev)",
+            "arena_code",
+            "Front-end web development and agentic coding.",
+        ),
+        (
+            "LMArena Vision",
+            "arena_vision",
+            "Image and multimodal understanding.",
+        ),
+        (
+            "LMArena Agent",
+            "arena_agent",
+            "Agentic task orchestration (Net Improvement, Confirmed Success, …).",
+        ),
+        (
+            "AA Intelligence Index",
+            "aa_intelligence",
+            "Composite intelligence from Artificial Analysis proprietary evals.",
+        ),
+        (
+            "AA Coding Index",
+            "aa_coding",
+            "Coding capability from Artificial Analysis.",
+        ),
+        (
+            "AA Agentic Index",
+            "aa_agentic",
+            "Agentic / tool-use capability from Artificial Analysis.",
+        ),
+        (
+            "aider polyglot coding",
+            "aider_coding",
+            "Real code generation: 225 Exercism tasks across 6 languages.",
+        ),
+        (
+            "SWE-bench Verified",
+            "swe_bench",
+            "Percentage of GitHub issues resolved with correct patches.",
+        ),
+    ]
+
+    for title, bname, desc in famous:
+        path = f"benchmarks/{bname}.json"
+        if not os.path.exists(path):
+            continue
+        with open(path) as f:
+            data = json.load(f)
+        models = data.get("models", [])[:10]
+        L.append(f"## {title}\n")
+        L.append(f"_{desc}_\n")
+        L.append("")
+        if not models:
+            L.append("_No models yet._\n")
+            continue
+        for i, m in enumerate(models, 1):
+            score = m.get("score")
+            score_str = f" — score {score:.3f}" if score is not None else ""
+            L.append(f"{i}. `{m.get('model', '?')}`{score_str}")
+        L.append("")
+
+    with open("rankings/famous_rankings.md", "w") as f:
+        f.write("\n".join(L))
+
+
+# ---------------------------------------------------------------------------
+# Output: archive (weekly snapshot)
+# ---------------------------------------------------------------------------
+def write_archive():
+    os.makedirs("archive", exist_ok=True)
+    iso = datetime.now(timezone.utc).isocalendar()
+    fname = f"archive/rankings-{iso[0]}-W{iso[1]:02d}.json"
+    snapshot = {
+        "week": f"{iso[0]}-W{iso[1]:02d}",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "benchmarks": {},
+        "consensus": {},
+    }
+    for fname_src in os.listdir("benchmarks"):
+        if fname_src.endswith(".json"):
+            with open(f"benchmarks/{fname_src}") as f:
+                snapshot["benchmarks"][fname_src[:-5]] = json.load(f)
+    if os.path.exists("consensus/consensus.json"):
+        with open("consensus/consensus.json") as f:
+            snapshot["consensus"] = json.load(f)
+
     with open(fname, "w") as f:
         json.dump(snapshot, f, indent=2, ensure_ascii=False)
     return fname
@@ -582,226 +1159,107 @@ def write_archive(recommended, meta):
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
-def main(archive=False):
-    now = datetime.now(tz=timezone.utc)
-    log("== ModelCompass generate ==")
-    aa_key = os.environ.get("ARTIFICIAL_ANALYSIS_KEY")
+def main():
+    parser = argparse.ArgumentParser(description="ModelCompass generator")
+    parser.add_argument(
+        "--archive", action="store_true", help="also write weekly archive snapshot"
+    )
+    parser.add_argument(
+        "--aa-key",
+        default=os.environ.get("ARTIFICIAL_ANALYSIS_KEY", ""),
+        help="Artificial Analysis API key",
+    )
+    args = parser.parse_args()
 
+    log("=== Fetching sources ===")
+
+    # 1. OpenRouter catalog
     or_models = fetch_openrouter()
     log(f"OpenRouter: {len(or_models)} models")
-    real = [m for m in or_models if not m["synthetic"]]
 
-    aa, aa_note = fetch_artificial_analysis(aa_key)
+    # 2. Artificial Analysis
+    aa, aa_note = fetch_artificial_analysis(args.aa_key)
     log(f"Artificial Analysis: {aa_note}")
+
+    # 3. aider polyglot
     aider, aider_note = fetch_aider()
     log(f"aider polyglot: {aider_note}")
 
-    aa_used, aider_used = merge(or_models, aa, aider)
-    log(f"merged -> AA on {len(aa_used)}, aider on {len(aider_used)}")
+    # 4. arena.ai — discover all leaderboards, then fetch each
+    arena_data = {}
+    slugs = discover_arena_slugs()
+    log(f"Arena.ai: discovered {len(slugs)} leaderboards")
+    for slug in slugs:
+        lb, note = fetch_arena_leaderboard(slug)
+        if lb:
+            arena_data[slug] = lb
+            log(f"  {slug}: {note} ({lb['meta']['model_count']} models)")
+        else:
+            log(f"  {slug}: {note}")
 
-    recommended = {}
-    for task in TASKS:
-        recommended[task] = [slim(m, task) for m in recommend(real, task)]
+    # 5. BenchLM
+    benchlm, benchlm_note = fetch_benchlm()
+    log(f"BenchLM: {benchlm_note}")
 
-    for m in or_models:
-        m["task_scores"] = {
-            "overall": s_overall(m),
-            "coding": s_coding(m),
-            "reasoning": s_reasoning(m),
-            "math": s_math(m),
-            "agents": s_agents(m),
-            "open_weight": s_open_weight(m),
-        }
-        m["capability_score"] = capability_score(m)
+    # 6. SWE-bench
+    swe, swe_note = fetch_swebench()
+    log(f"SWE-bench: {swe_note}")
 
+    # Merge (cross-reference only, no blending)
+    counts = merge(or_models, aa, aider, arena_data, benchlm or [], swe)
+    log(f"Merged: {counts}")
+
+    # Ensure output dirs
+    os.makedirs("benchmarks", exist_ok=True)
+    os.makedirs("consensus", exist_ok=True)
+
+    # Write per-benchmark files
+    log("=== Writing per-benchmark files ===")
+    write_aa_benchmarks(or_models)
+    write_aider_benchmark(aider)
+    write_arena_benchmarks(arena_data)
+    write_benchlm_benchmarks(benchlm or [])
+    write_swebench_benchmark(swe)
+
+    # Write catalog
     meta = {
-        "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "model_count": len(real),
-        "synthetic_excluded": len(or_models) - len(real),
-        "update_cadence": "daily (GitHub Actions)",
-        "secret_env": "ARTIFICIAL_ANALYSIS_KEY",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
-            "openrouter": f"ok ({len(or_models)} raw)",
+            "openrouter": "ok",
             "artificial_analysis": aa_note,
             "aider_polyglot": aider_note,
+            "arena_ai": f"ok ({len(arena_data)} leaderboards)",
+            "benchlm": benchlm_note,
+            "swe_bench": swe_note,
         },
-        "coverage": {
-            "with_aa_benchmarks": len(aa_used),
-            "with_aider_coding": len(aider_used),
-        },
-        "disclaimer": (
-            "Recommended lists are transparent weighted blends of REAL benchmark "
-            "values (Artificial Analysis indices + raw benchmarks, aider polyglot "
-            "coding). Models missing a benchmark contribute null (not zero). "
-            "Verify high-stakes choices against primary sources."
-        ),
-        "methodology": (
-            "Each task score = weighted mean of available normalized 0-1 benchmarks "
-            "(AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already "
-            "0-1; aider pass_rate /100). Sources merged via normalized "
-            "provider+slug (AA dots->hyphens, reasoning-effort suffixes tolerated), "
-            "then fuzzy name match. Only routing aliases (:batch/:free/:thinking) "
-            "collapse in shortlists; identity tags (-latest, -0813, -v2) stay distinct."
-        ),
     }
+    write_models_json(or_models, meta, counts)
+    log(f"wrote models.json ({len(or_models)} models)")
 
-    out = {"meta": meta, "recommended": recommended, "models": or_models}
+    # Write recommended.json (per-benchmark shortlists)
+    write_recommended_json("benchmarks")
+    log("wrote recommended.json")
 
-    os.makedirs(OUTDIR, exist_ok=True)
-    with open(os.path.join(OUTDIR, "models.json"), "w") as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
+    # Write consensus
+    write_consensus("benchmarks")
+    write_consensus_md()
+    log("wrote consensus/")
 
-    with open(os.path.join(OUTDIR, "recommended.json"), "w") as f:
-        json.dump({"meta": meta, "recommended": recommended}, f, indent=2, ensure_ascii=False)
+    # Write leaderboard
+    write_leaderboard_md("benchmarks")
+    log("wrote LEADERBOARD.md")
 
-    cols = ["id", "name", "provider", "source", "context", "modality", "is_vision",
-            "supports_reasoning", "supports_tools", "supports_json", "open_weight",
-            "knowledge_cutoff", "price_prompt_per_million", "price_completion_per_million",
-            "aa_intelligence_index", "aa_coding_index", "aa_agentic_index", "aa_math_index",
-            "gpqa", "hle", "livecodebench", "aider_pass_rate_1",
-            "task_overall", "task_coding", "task_reasoning"]
-    with open(os.path.join(OUTDIR, "models.csv"), "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(cols)
-        for m in or_models:
-            e = m.get("benchmarks", {}).get("aa", {}) or {}
-            ap = m.get("benchmarks", {}).get("aider_polyglot", {}) or {}
-            ts = m.get("task_scores", {})
-            w.writerow([
-                m["id"], m.get("name"), m.get("provider"), m.get("source"),
-                m.get("context"), m.get("modality"), m.get("is_vision"),
-                m.get("supports_reasoning"), m.get("supports_tools"), m.get("supports_json"),
-                m.get("open_weight"), m.get("knowledge_cutoff"),
-                m["price_per_million"]["prompt"], m["price_per_million"]["completion"],
-                e.get("artificial_analysis_intelligence_index"),
-                e.get("artificial_analysis_coding_index"),
-                e.get("artificial_analysis_agentic_index"),
-                e.get("artificial_analysis_math_index"),
-                e.get("gpqa"), e.get("hle"), e.get("livecodebench"),
-                ap.get("pass_rate_1"),
-                round(ts.get("overall"), 4) if ts.get("overall") is not None else None,
-                round(ts.get("coding"), 4) if ts.get("coding") is not None else None,
-                round(ts.get("reasoning"), 4) if ts.get("reasoning") is not None else None,
-            ])
+    # Write rankings
+    write_rankings()
+    log("wrote rankings/famous_rankings.md")
 
-    write_index_md(meta, recommended)
-    write_rankings(recommended, meta)
-    write_leaderboard(recommended, meta)
-    if archive:
-        fn = write_archive(recommended, meta)
-        log(f"wrote weekly archive {fn}")
+    # Archive
+    if args.archive:
+        write_archive()
+        log("wrote archive/")
 
-    log("wrote models.json, recommended.json, models.csv, INDEX.md, rankings/")
-
-
-def write_leaderboard(recommended, meta):
-    """Human-readable Markdown leaderboard with comparison tables (GitHub UI)."""
-    os.makedirs(OUTDIR, exist_ok=True)
-    L = []
-    L.append("# ModelCompass Leaderboard\n")
-    L.append(f"> Generated **{meta['generated_at']}** · {meta['model_count']} models · "
-             f"updated daily by GitHub Actions.\n")
-    L.append("Each table ranks the best models for a task using real benchmark "
-             "data (Artificial Analysis indices + aider polyglot coding). "
-             "Scores are normalized 0–1 blends; `—` means the model has no "
-             "benchmark for that column.\n")
-
-    # sources / coverage summary
-    L.append("**Sources:** " + " · ".join(f"{k} ({v})" for k, v in meta["sources"].items()) + "\n")
-    L.append(f"**Benchmark coverage:** {meta['coverage'].get('with_aa_benchmarks')} models with "
-             f"Artificial Analysis scores, {meta['coverage'].get('with_aider_coding')} with aider coding.\n")
-
-    headers = {
-        "best_overall": "🏆 Best Overall",
-        "best_coding": "💻 Best Coding",
-        "best_reasoning": "🧠 Best Reasoning",
-        "best_math": "📐 Best Math",
-        "best_agents": "🤖 Best Agentic",
-        "best_vision": "👁️ Best Vision",
-        "best_open_weight": "🔓 Best Open-Weight",
-        "best_cheap": "💰 Best Value (low cost)",
-    }
-
-    for task, title in headers.items():
-        rows = recommended.get(task, [])[:10]
-        L.append(f"## {title}\n")
-        if not rows:
-            L.append("_No benchmarked models yet._\n")
-            continue
-        L.append("| # | Model | Score | $/1M in | $/1M out | Context | Reasoning | Vision | Key benchmarks |")
-        L.append("|---|-------|------:|--------:|---------:|--------:|:--------:|:------:|----------------|")
-        for i, r in enumerate(rows, 1):
-            b = r.get("benchmarks", {})
-            pm = r.get("price_per_million", {}) or {}
-            price_in = pm.get("prompt")
-            price_out = pm.get("completion")
-            ctx = r.get("context") or 0
-            ctx_s = f"{ctx/1000:.0f}k" if ctx < 1_000_000 else f"{ctx/1_000_000:.1f}M"
-            ev = []
-            if b.get("aa_intelligence_index") is not None:
-                ev.append(f"AA-IQ {b['aa_intelligence_index']}")
-            if b.get("aa_coding_index") is not None:
-                ev.append(f"AA-Code {b['aa_coding_index']}")
-            if b.get("livecodebench") is not None:
-                ev.append(f"LCB {b['livecodebench']:.2f}")
-            if b.get("aider_polyglot_pass_rate_1") is not None:
-                ev.append(f"aider {b['aider_polyglot_pass_rate_1']:.0f}%")
-            if b.get("gpqa") is not None:
-                ev.append(f"GPQA {b['gpqa']:.2f}")
-            if b.get("hle") is not None:
-                ev.append(f"HLE {b['hle']:.2f}")
-            if b.get("aime") is not None:
-                ev.append(f"AIME {b['aime']:.2f}")
-            L.append(
-                f"| {i} | `{r['id']}` | "
-                f"{r.get('task_score') if r.get('task_score') is not None else '—'} | "
-                f"{price_in if price_in is not None else '—'} | "
-                f"{price_out if price_out is not None else '—'} | "
-                f"{ctx_s} | "
-                f"{'✅' if r.get('capability_flags') and 'reasoning' in r['capability_flags'] else '—'} | "
-                f"{'✅' if r.get('is_vision') else '—'} | "
-                f"{' · '.join(ev) if ev else '—'} |"
-            )
-        L.append("")
-
-    L.append("---\n")
-    L.append(f"_{meta['disclaimer']}_\n")
-    L.append(f"_{meta['methodology']}_\n")
-
-    with open(os.path.join(OUTDIR, "LEADERBOARD.md"), "w") as f:
-        f.write("\n".join(L))
-
-
-def write_index_md(meta, recommended):
-    lines = []
-    lines.append("# ModelCompass (machine-readable)\n")
-    lines.append(f"_Generated {meta['generated_at']} — {meta['model_count']} models. "
-                 f"Daily GitHub Action._\n")
-    lines.append("## Sources\n")
-    for k, v in meta["sources"].items():
-        lines.append(f"- **{k}**: {v}")
-    lines.append("")
-    lines.append("## Coverage\n")
-    for k, v in meta["coverage"].items():
-        lines.append(f"- {k}: {v}")
-    lines.append("")
-    lines.append("## Recommended shortlists (real benchmarks)\n")
-    for k, v in recommended.items():
-        lines.append(f"### {k}\n")
-        for item in v[:8]:
-            ts = item.get("task_score")
-            ts = f" (score {ts})" if ts is not None else ""
-            lines.append(f"- `{item['id']}`{ts}")
-        lines.append("")
-    lines.append("## Disclaimer\n" + meta["disclaimer"] + "\n")
-    lines.append("## Methodology\n" + meta["methodology"] + "\n")
-    with open(os.path.join(OUTDIR, "INDEX.md"), "w") as f:
-        f.write("\n".join(lines))
+    log("=== Done ===")
 
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--archive", action="store_true",
-                    help="also write a weekly snapshot under archive/")
-    args = ap.parse_args()
-    main(archive=args.archive)
+    main()
