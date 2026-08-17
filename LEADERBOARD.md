@@ -1,6 +1,6 @@
 # ModelCompass Leaderboard
 
-> Generated **2026-08-17T04:28:02Z** · 408 models · updated daily by GitHub Actions.
+> Generated **2026-08-17T04:49:44Z** · 408 models · updated daily by GitHub Actions.
 
 Each table ranks the best models for a task using real benchmark data (Artificial Analysis indices + aider polyglot coding). Scores are normalized 0–1 blends; `—` means the model has no benchmark for that column.
 
@@ -104,7 +104,7 @@ Each table ranks the best models for a task using real benchmark data (Artificia
 |---|-------|------:|--------:|---------:|--------:|:--------:|:------:|----------------|
 | 1 | `qwen/qwen3.8-2.4t-a95b` | 0.648 | 2.0 | 6.0 | 1.0M | ✅ | — | AA-IQ 57.7 · AA-Code 71.9 · GPQA 0.94 · HLE 0.42 |
 | 2 | `deepseek/deepseek-v4-pro` | 0.61 | 0.66 | 1.98 | 1.0M | ✅ | — | AA-IQ 53.2 · AA-Code 68.8 · GPQA 0.93 · HLE 0.41 |
-| 3 | `deepseek/deepseek-v4-flash` | 0.6045 | 0.08386 | 0.16772 | 1.0M | ✅ | — | AA-IQ 51.8 · AA-Code 69.1 · GPQA 0.91 · HLE 0.39 |
+| 3 | `deepseek/deepseek-v4-flash` | 0.6045 | 0.0826 | 0.1652 | 1.0M | ✅ | — | AA-IQ 51.8 · AA-Code 69.1 · GPQA 0.91 · HLE 0.39 |
 | 4 | `moonshotai/kimi-k3` | 0.6015 | 3.0 | 15.0 | 1.0M | ✅ | ✅ | AA-IQ 48.3 · AA-Code 72 · GPQA 0.84 · HLE 0.25 |
 | 5 | `minimax/minimax-m3` | 0.52 | 0.3 | 1.2 | 1.0M | ✅ | ✅ | AA-IQ 45.4 · AA-Code 58.6 · GPQA 0.93 · HLE 0.39 |
 | 6 | `moonshotai/kimi-k2.7-code` | 0.519 | 0.71 | 3.5 | 262k | ✅ | ✅ | AA-IQ 43 · AA-Code 60.8 · aider 20% · GPQA 0.90 · HLE 0.35 |
