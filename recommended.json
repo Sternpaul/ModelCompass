@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T11:19:34.323481+00:00",
+    "generated_at": "2026-08-17T11:21:40.230071+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -67,6 +67,108 @@
         "source": "https://arena.ai/leaderboard/vision",
         "subdir": "arena",
         "model_count": 145,
+        "top_n": 10
+      },
+      "aa_aime": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 27,
+        "top_n": 10
+      },
+      "aa_aime_25": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 29,
+        "top_n": 10
+      },
+      "aa_artificial_analysis_coding_index": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 26,
+        "top_n": 10
+      },
+      "aa_artificial_analysis_intelligence_index": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 65,
+        "top_n": 10
+      },
+      "aa_artificial_analysis_math_index": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 29,
+        "top_n": 10
+      },
+      "aa_gpqa": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 62,
+        "top_n": 10
+      },
+      "aa_hle": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 61,
+        "top_n": 10
+      },
+      "aa_ifbench": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 48,
+        "top_n": 10
+      },
+      "aa_lcr": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 53,
+        "top_n": 10
+      },
+      "aa_livecodebench": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 39,
+        "top_n": 10
+      },
+      "aa_math_500": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 28,
+        "top_n": 10
+      },
+      "aa_mmlu_pro": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 39,
+        "top_n": 10
+      },
+      "aa_scicode": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 61,
+        "top_n": 10
+      },
+      "aa_tau2": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 47,
+        "top_n": 10
+      },
+      "aa_tau_banking": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 22,
+        "top_n": 10
+      },
+      "aa_terminalbench_hard": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 46,
+        "top_n": 10
+      },
+      "aa_terminalbench_v2_1": {
+        "source": "https://artificialanalysis.ai",
+        "subdir": "artificial-analysis",
+        "model_count": 22,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -1418,6 +1520,890 @@
         "score": 1290.0,
         "ci": null,
         "votes": null
+      }
+    ],
+    "aa_aime": [
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.94
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.903333333333333
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 0.893333333333333
+      },
+      {
+        "model": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
+        "score": 0.86
+      },
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 0.83
+      },
+      {
+        "model": "perplexity/sonar-reasoning-pro",
+        "name": "Perplexity: Sonar Reasoning Pro",
+        "score": 0.79
+      },
+      {
+        "model": "openai/o3-mini",
+        "name": "OpenAI: o3 Mini",
+        "score": 0.77
+      },
+      {
+        "model": "qwen/qwen3-30b-a3b",
+        "name": "Qwen: Qwen3 30B A3B",
+        "score": 0.726666666666667
+      },
+      {
+        "model": "openai/o1",
+        "name": "OpenAI: o1",
+        "score": 0.723333333333333
+      },
+      {
+        "model": "deepseek/deepseek-r1-distill-llama-70b",
+        "name": "DeepSeek: R1 Distill Llama 70B",
+        "score": 0.67
+      }
+    ],
+    "aa_aime_25": [
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.906666666666667
+      },
+      {
+        "model": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "score": 0.893333333333333
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.883333333333333
+      },
+      {
+        "model": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "score": 0.85
+      },
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 0.83
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 0.783333333333333
+      },
+      {
+        "model": "openai/gpt-5-nano",
+        "name": "OpenAI: GPT-5 Nano",
+        "score": 0.783333333333333
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 0.76
+      },
+      {
+        "model": "allenai/olmo-3-32b-think",
+        "name": "AllenAI: Olmo 3 32B Think",
+        "score": 0.736666666666667
+      },
+      {
+        "model": "qwen/qwen3-vl-30b-a3b-instruct",
+        "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+        "score": 0.723333333333333
+      }
+    ],
+    "aa_artificial_analysis_coding_index": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 76.5
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 74.3
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 72.0
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 59.4
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 59.1
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 58.8
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 58.6
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 56.2
+      },
+      {
+        "model": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "score": 52.9
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 52.7
+      }
+    ],
+    "aa_artificial_analysis_intelligence_index": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 62.1
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 58.6
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 48.3
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 45.4
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 45.3
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 42.3
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 42.2
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 42.1
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 41.7
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 41.6
+      }
+    ],
+    "aa_artificial_analysis_math_index": [
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 90.7
+      },
+      {
+        "model": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "score": 89.3
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 88.3
+      },
+      {
+        "model": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "score": 85.0
+      },
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 83.0
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 78.3
+      },
+      {
+        "model": "openai/gpt-5-nano",
+        "name": "OpenAI: GPT-5 Nano",
+        "score": 78.3
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 76.0
+      },
+      {
+        "model": "allenai/olmo-3-32b-think",
+        "name": "AllenAI: Olmo 3 32B Think",
+        "score": 73.7
+      },
+      {
+        "model": "qwen/qwen3-vl-30b-a3b-instruct",
+        "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+        "score": 72.3
+      }
+    ],
+    "aa_gpqa": [
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.929
+      },
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.926
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.919
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.897
+      },
+      {
+        "model": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "score": 0.895
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.894
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 0.892
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 0.891
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.888
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 0.872
+      }
+    ],
+    "aa_hle": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.555
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.513
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.39
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.375
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.348
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 0.337
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.335
+      },
+      {
+        "model": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "score": 0.333
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 0.319
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.293
+      }
+    ],
+    "aa_ifbench": [
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.828571428571429
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.791836734693877
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.764625850340136
+      },
+      {
+        "model": "z-ai/glm-5-turbo",
+        "name": "Z.ai: GLM 5 Turbo",
+        "score": 0.731972789115646
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.72312925170068
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 0.72312925170068
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.714285714285714
+      },
+      {
+        "model": "upstage/solar-pro-3",
+        "name": "Upstage: Solar Pro 3",
+        "score": 0.712018140589569
+      },
+      {
+        "model": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "score": 0.71156462585034
+      },
+      {
+        "model": "qwen/qwen3-max",
+        "name": "Qwen: Qwen3 Max",
+        "score": 0.707482993197279
+      }
+    ],
+    "aa_lcr": [
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.803333333333333
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.786666666666667
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 0.77
+      },
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.766666666666667
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 0.763333333333333
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.746666666666667
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 0.733333333333333
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.733333333333333
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 0.706666666666667
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.706666666666667
+      }
+    ],
+    "aa_livecodebench": [
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.859
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 0.826
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.808
+      },
+      {
+        "model": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "score": 0.777
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 0.77
+      },
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 0.763
+      },
+      {
+        "model": "openai/gpt-5-nano",
+        "name": "OpenAI: GPT-5 Nano",
+        "score": 0.763
+      },
+      {
+        "model": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
+        "score": 0.734
+      },
+      {
+        "model": "openai/o3-mini",
+        "name": "OpenAI: o3 Mini",
+        "score": 0.717
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
+        "score": 0.707
+      }
+    ],
+    "aa_math_500": [
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.992
+      },
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.988666666666667
+      },
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 0.987333333333333
+      },
+      {
+        "model": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
+        "score": 0.984666666666667
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 0.982666666666667
+      },
+      {
+        "model": "qwen/qwen3-30b-a3b",
+        "name": "Qwen: Qwen3 30B A3B",
+        "score": 0.975333333333333
+      },
+      {
+        "model": "openai/o3-mini",
+        "name": "OpenAI: o3 Mini",
+        "score": 0.973333333333333
+      },
+      {
+        "model": "openai/o1",
+        "name": "OpenAI: o1",
+        "score": 0.97
+      },
+      {
+        "model": "perplexity/sonar-reasoning-pro",
+        "name": "Perplexity: Sonar Reasoning Pro",
+        "score": 0.957333333333333
+      },
+      {
+        "model": "deepseek/deepseek-r1-distill-llama-70b",
+        "name": "DeepSeek: R1 Distill Llama 70B",
+        "score": 0.934666666666667
+      }
+    ],
+    "aa_mmlu_pro": [
+      {
+        "model": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "score": 0.86
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.853
+      },
+      {
+        "model": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "score": 0.849
+      },
+      {
+        "model": "openai/o1",
+        "name": "OpenAI: o1",
+        "score": 0.841
+      },
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.832
+      },
+      {
+        "model": "openai/gpt-5-mini",
+        "name": "OpenAI: GPT-5 Mini",
+        "score": 0.828
+      },
+      {
+        "model": "qwen/qwen3-vl-235b-a22b-instruct",
+        "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+        "score": 0.823
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 0.82
+      },
+      {
+        "model": "qwen/qwen3-next-80b-a3b-instruct",
+        "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+        "score": 0.819
+      },
+      {
+        "model": "moonshotai/kimi-k2",
+        "name": "MoonshotAI: Kimi K2 0711",
+        "score": 0.819
+      }
+    ],
+    "aa_scicode": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.602
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 0.512
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.507
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.5
+      },
+      {
+        "model": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "score": 0.487
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.476
+      },
+      {
+        "model": "openai/o4-mini",
+        "name": "OpenAI: o4 Mini",
+        "score": 0.465
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.462
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 0.461
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.454
+      }
+    ],
+    "aa_tau2": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.985380116959064
+      },
+      {
+        "model": "z-ai/glm-5v-turbo",
+        "name": "Z.ai: GLM 5V Turbo",
+        "score": 0.985380116959064
+      },
+      {
+        "model": "z-ai/glm-5-turbo",
+        "name": "Z.ai: GLM 5 Turbo",
+        "score": 0.985380116959064
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.982456140350877
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.961988304093567
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.950292397660819
+      },
+      {
+        "model": "mistralai/mistral-medium-3-5",
+        "name": "Mistral: Mistral Medium 3.5",
+        "score": 0.941520467836257
+      },
+      {
+        "model": "tencent/hy3-preview",
+        "name": "Tencent: Hy3 preview",
+        "score": 0.926900584795322
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.888888888888889
+      },
+      {
+        "model": "minimax/minimax-m2",
+        "name": "MiniMax: MiniMax M2",
+        "score": 0.868421052631579
+      }
+    ],
+    "aa_tau_banking": [
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 0.416494845360825
+      },
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.385567010309278
+      },
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.381443298969072
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.309278350515464
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.301030927835052
+      },
+      {
+        "model": "thinkingmachines/inkling",
+        "name": "Thinking Machines: Inkling",
+        "score": 0.290721649484536
+      },
+      {
+        "model": "inclusionai/ling-3.0-flash",
+        "name": "Ling-3.0-flash",
+        "score": 0.272164948453608
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 0.232989690721649
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.228865979381443
+      },
+      {
+        "model": "thinkingmachines/inkling-small",
+        "name": "Thinking Machines: Inkling Small",
+        "score": 0.187628865979381
+      }
+    ],
+    "aa_terminalbench_hard": [
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.628787878787879
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.462121212121212
+      },
+      {
+        "model": "z-ai/glm-5",
+        "name": "Z.ai: GLM 5",
+        "score": 0.431818181818182
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.424242424242424
+      },
+      {
+        "model": "openai/o3",
+        "name": "OpenAI: o3",
+        "score": 0.371212121212121
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.356060606060606
+      },
+      {
+        "model": "tencent/hy3-preview",
+        "name": "Tencent: Hy3 preview",
+        "score": 0.340909090909091
+      },
+      {
+        "model": "mistralai/mistral-medium-3-5",
+        "name": "Mistral: Mistral Medium 3.5",
+        "score": 0.333333333333333
+      },
+      {
+        "model": "z-ai/glm-5-turbo",
+        "name": "Z.ai: GLM 5 Turbo",
+        "score": 0.333333333333333
+      },
+      {
+        "model": "z-ai/glm-5v-turbo",
+        "name": "Z.ai: GLM 5V Turbo",
+        "score": 0.325757575757576
+      }
+    ],
+    "aa_terminalbench_v2_1": [
+      {
+        "model": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "score": 0.861423220973783
+      },
+      {
+        "model": "anthropic/claude-fable-5",
+        "name": "Anthropic: Claude Fable 5",
+        "score": 0.846441947565543
+      },
+      {
+        "model": "moonshotai/kimi-k3",
+        "name": "MoonshotAI: Kimi K3",
+        "score": 0.823970037453184
+      },
+      {
+        "model": "nex-agi/nex-n2-pro",
+        "name": "Nex AGI: Nex-N2-Pro",
+        "score": 0.677902621722846
+      },
+      {
+        "model": "minimax/minimax-m3",
+        "name": "MiniMax: MiniMax M3",
+        "score": 0.651685393258427
+      },
+      {
+        "model": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "score": 0.644194756554307
+      },
+      {
+        "model": "deepseek/deepseek-v4-pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
+        "score": 0.640449438202247
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "score": 0.617977528089888
+      },
+      {
+        "model": "upstage/solar-pro4",
+        "name": "Upstage: Solar Pro 4",
+        "score": 0.573033707865168
+      },
+      {
+        "model": "inclusionai/ling-3.0-flash",
+        "name": "Ling-3.0-flash",
+        "score": 0.554307116104869
       }
     ],
     "benchlm_agentic": [
