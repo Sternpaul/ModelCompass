@@ -54,9 +54,3 @@ Aggregated category scores (0–100) across 437 benchmarks and 388 models (MIT-l
 - [Multilingual](./benchlm/benchlm_multilingual.json)
 - [Multimodal Grounded](./benchlm/benchlm_multimodalGrounded.json)
 - [Reasoning](./benchlm/benchlm_reasoning.json)
-
-## [Nous Free Tier (models.dev / Nous Portal)](./nous_free/OVERVIEW.md) — [https://models.dev/api.json](https://models.dev/api.json)
-
-Models listed as free on the Nous Portal (models.dev catalogue, tagged ':free'). Pricing 0.00 / 0.00 per 1M tokens. Sorted by provider then model id. Note: the Nous Portal currently lists 6 free models; 2 of them (meituan/longcat-2.0:free, upstage/solar-pro4:free) are portal-only additions not yet in the models.dev catalogue at scrape time.
-
-- [Free](./nous_free/nous_free.json)

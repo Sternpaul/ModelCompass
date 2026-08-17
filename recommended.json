@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T11:21:40.230071+00:00",
+    "generated_at": "2026-08-17T12:27:05.119622+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -217,12 +217,6 @@
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
         "model_count": 38,
-        "top_n": 10
-      },
-      "nous_free": {
-        "source": "https://portal.nousresearch.com/info",
-        "subdir": "nous_free",
-        "model_count": 35,
         "top_n": 10
       }
     }
@@ -2980,121 +2974,6 @@
         "creator": "OpenAI",
         "score": 83.2,
         "category_rank": null
-      }
-    ],
-    "nous_free": [
-      {
-        "rank": 1,
-        "model": "cohere/north-mini-code",
-        "name": "North Mini Code (free)",
-        "providers": [
-          "openrouter",
-          "kilo"
-        ],
-        "family": "north",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 2,
-        "model": "deepseek-v4-flash",
-        "name": "DeepSeek V4 Flash (Free)",
-        "providers": [
-          "kenari",
-          "unorouter"
-        ],
-        "family": "deepseek-flash",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 3,
-        "model": "deepseek-v4-pro",
-        "name": "DeepSeek V4 Pro",
-        "providers": [
-          "unorouter"
-        ],
-        "family": "deepseek-thinking",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 4,
-        "model": "dots-studio/dots-3-note-preview",
-        "name": "Dots3-Note Preview (free)",
-        "providers": [
-          "openrouter",
-          "kilo"
-        ],
-        "family": "",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 5,
-        "model": "gemma-4-31b-it",
-        "name": "Gemma 4 31B IT",
-        "providers": [
-          "unorouter"
-        ],
-        "family": "gemma",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 6,
-        "model": "glm-4-7-flash",
-        "name": "GLM-4.7-Flash (Free)",
-        "providers": [
-          "kenari"
-        ],
-        "family": "glm-flash",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 7,
-        "model": "glm-4.5-flash",
-        "name": "GLM-4.5-Flash",
-        "providers": [
-          "unorouter"
-        ],
-        "family": "glm-flash",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 8,
-        "model": "glm-5.2",
-        "name": "GLM-5.2",
-        "providers": [
-          "unorouter"
-        ],
-        "family": "glm",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 9,
-        "model": "google/gemma-4-26b-a4b-it",
-        "name": "Gemma 4 26B A4B  (free)",
-        "providers": [
-          "openrouter"
-        ],
-        "family": "gemma",
-        "cost_input": 0,
-        "cost_output": 0
-      },
-      {
-        "rank": 10,
-        "model": "google/gemma-4-31b-it",
-        "name": "Gemma 4 31B (free)",
-        "providers": [
-          "openrouter"
-        ],
-        "family": "gemma",
-        "cost_input": 0,
-        "cost_output": 0
       }
     ]
   }
