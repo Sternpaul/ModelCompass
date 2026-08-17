@@ -22,7 +22,7 @@ jobs:
       - name: Install pyyaml
         run: pip install pyyaml
 
-      - name: Generate + archive weekly snapshot
+      - name: Generate + archive monthly snapshot
         env:
           ARTIFICIAL_ANALYSIS_KEY: ${{ secrets.ARTIFICIAL_ANALYSIS_KEY }}
         run: python3 generate.py --archive
@@ -33,7 +33,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "archive: weekly rankings $(date -u +%Y-W%V)"
+            git commit -m "archive: monthly snapshot $(date -u +%Y-%m)"
             git pull --rebase
             git push
           else

@@ -460,15 +460,39 @@ def fetch_arena_leaderboard(slug):
     return _parse_arena_general(content, slug)
 
 
+# Known arena.ai leaderboards (fetched live from each page — not a third-party
+# snapshot). The overview page is a JS SPA and no longer exposes stable links,
+# so we enumerate the well-known boards here; the discover scrape is a fallback.
+ARENA_SLUGS = [
+    "agent",
+    "code",
+    "text",
+    "vision",
+    "document",
+    "search",
+    "image-edit",
+    "image-to-video",
+    "text-to-image",
+    "text-to-video",
+    "video-edit",
+]
+
+
 def discover_arena_slugs():
-    """Discover all arena.ai leaderboard slugs from the overview page."""
+    """Return the known arena.ai leaderboard slugs.
+
+    The overview page is a JS SPA that no longer exposes stable per-board
+    links, so we use a curated list and fetch each board live. (A scrape-based
+    fallback runs first in case arena.ai changes its URL scheme.)
+    """
+    slugs = set()
     try:
         text = fetch_text(f"{JINA_BASE}{ARENA_BASE}")
+        slugs.update(re.findall(r"arena\.ai/leaderboard/([a-z][a-z0-9-]*)", text))
     except Exception as e:
-        log(f"Failed to discover arena slugs: {e}")
-        return []
-    slugs = re.findall(r"arena\.ai/leaderboard/([a-z][a-z0-9-]*)", text)
-    return sorted(set(slugs))
+        log(f"Arena slug scrape failed ({e}); using curated list")
+    slugs.update(ARENA_SLUGS)
+    return sorted(slugs)
 
 
 # ---------------------------------------------------------------------------
@@ -632,17 +656,92 @@ def merge(or_models, aa, aider, arena, benchlm, swe):
 # ---------------------------------------------------------------------------
 # Output: per-benchmark files
 # ---------------------------------------------------------------------------
-def _write_benchmark_json(bname, meta_info, models_list):
-    os.makedirs("benchmarks", exist_ok=True)
+# ---------------------------------------------------------------------------
+# Source registry: where each benchmark lives + how to present it
+# ---------------------------------------------------------------------------
+SOURCE_META = {
+    "artificial-analysis": {
+        "title": "Artificial Analysis",
+        "source_url": "https://artificialanalysis.ai",
+        "desc": "Composite capability indices (0–100) from Artificial Analysis' "
+                "proprietary evaluations. Higher is better.",
+        "benches": {
+            "aa_intelligence": ("Intelligence Index", "Overall intelligence: reasoning + knowledge + coding."),
+            "aa_coding": ("Coding Index", "Code generation and editing capability."),
+            "aa_agentic": ("Agentic Index", "Tool-use and autonomous agent capability."),
+            "aa_math": ("Math Index", "Mathematical reasoning."),
+            "aa_multilingual": ("Multilingual Index", "Non-English language capability."),
+            "aa_openness": ("Openness Index", "Open-weight / transparency score."),
+        },
+    },
+    "arena": {
+        "title": "LMArena (arena.ai)",
+        "source_url": "https://arena.ai",
+        "desc": "Human-preference Elo from blind pairwise battles. "
+                "Higher Elo = more preferred by human voters.",
+        "benches": {},  # filled dynamically from discovered slugs
+    },
+    "aider": {
+        "title": "aider polyglot",
+        "source_url": AIDER_YAML,
+        "desc": "Real coding benchmark: 225 Exercism exercises across 6 languages. "
+                "Score = % solved (pass_rate_1).",
+        "benches": {
+            "aider_coding": ("Polyglot Coding", "% of tasks solved across all languages."),
+        },
+    },
+    "benchlm": {
+        "title": "BenchLM",
+        "source_url": f"{BENCHLM_BASE}/models.json",
+        "desc": "Aggregated category scores (0–100) across 437 benchmarks and 388 "
+                "models (MIT-licensed). Higher is better.",
+        "benches": {
+            "benchlm_agentic": ("Agentic", "Tool-use / agentic task category score."),
+            "benchlm_coding": ("Coding", "Code generation category score."),
+            "benchlm_math": ("Math", "Quantitative reasoning category score."),
+            "benchlm_reasoning": ("Reasoning", "Logical reasoning category score."),
+            "benchlm_knowledge": ("Knowledge", "Factual knowledge category score."),
+            "benchlm_multilingual": ("Multilingual", "Non-English capability category score."),
+            "benchlm_multimodalGrounded": ("Multimodal Grounded", "Vision+text grounded understanding."),
+            "benchlm_instructionFollowing": ("Instruction Following", "Following complex instructions."),
+        },
+    },
+    "swe-bench": {
+        "title": "SWE-bench",
+        "source_url": SWEBENCH_INFO,
+        "desc": "Real GitHub issues resolved with a correct patch. Score = % resolved.",
+        "benches": {
+            "swe_bench": ("SWE-bench Verified", "% of real-world GitHub issues resolved."),
+        },
+    },
+    "consensus": {
+        "title": "Consensus (Borda)",
+        "source_url": "",
+        "desc": "Placement agreement across all benchmarks. Counts how many top-10 "
+                "lists a model appears in — never an averaged score.",
+        "benches": {
+            "consensus": ("Consensus Ranking", "Top-10 appearance count, tie-broken by Borda points."),
+        },
+    },
+}
+
+WRITTEN = {}  # subdir -> [bname, ...]
+
+
+def _write_benchmark_json(subdir, bname, meta_info, models_list):
+    out_dir = os.path.join("benchmarks", subdir)
+    os.makedirs(out_dir, exist_ok=True)
     data = {"meta": meta_info, "models": models_list}
-    path = f"benchmarks/{bname}.json"
+    path = os.path.join(out_dir, f"{bname}.json")
     with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    WRITTEN.setdefault(subdir, []).append(bname)
     return path
 
 
 def write_aa_benchmarks(or_models):
-    """Write per-dimension AA benchmark files."""
+    """Write per-dimension AA benchmark files into artificial-analysis/."""
+    subdir = "artificial-analysis"
     AA_KEYS = {
         "aa_intelligence": "artificial_analysis_intelligence_index",
         "aa_coding": "artificial_analysis_coding_index",
@@ -669,8 +768,8 @@ def write_aa_benchmarks(or_models):
                 )
         models_list.sort(key=lambda x: x["score"], reverse=True)
         if models_list:
-            path = _write_benchmark_json(
-                bname,
+            _write_benchmark_json(
+                subdir, bname,
                 {
                     "leaderboard": bname,
                     "source_url": "https://artificialanalysis.ai",
@@ -678,13 +777,14 @@ def write_aa_benchmarks(or_models):
                 },
                 models_list,
             )
-            written[bname] = path
+            written[bname] = True
     return written
 
 
 def write_aider_benchmark(aider):
-    """Write the aider polyglot leaderboard from the raw source (all models,
-    not just ones cross-referenced to OpenRouter)."""
+    """Write the aider polyglot leaderboard into aider/ (all models, not just
+    ones cross-referenced to OpenRouter)."""
+    subdir = "aider"
     models_list = []
     for base, bm in aider.items():
         if bm.get("pass_rate_1") is None:
@@ -700,8 +800,8 @@ def write_aider_benchmark(aider):
         )
     models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
     if models_list:
-        return _write_benchmark_json(
-            "aider_coding",
+        _write_benchmark_json(
+            subdir, "aider_coding",
             {
                 "leaderboard": "aider_coding",
                 "source_url": AIDER_YAML,
@@ -713,23 +813,28 @@ def write_aider_benchmark(aider):
 
 
 def write_arena_benchmarks(arena_data):
-    written = {}
+    subdir = "arena"
     for slug, lb in arena_data.items():
-        path = f"benchmarks/arena_{slug}.json"
-        with open(path, "w") as f:
-            json.dump(lb, f, indent=2, ensure_ascii=False)
-        written[slug] = path
-    return written
+        _write_benchmark_json(
+            subdir, f"arena_{slug}", lb.get("meta", {}), lb.get("models", [])
+        )
+        # Register a human title for this leaderboard
+        SOURCE_META["arena"]["benches"].setdefault(
+            f"arena_{slug}",
+            (slug.replace("-", " ").title() + " Arena", "Human-preference Elo."),
+        )
+    return None
 
 
 def write_benchlm_benchmarks(benchlm_items):
-    """Write BenchLM benchmarks grouped by category.
+    """Write BenchLM benchmarks grouped by category into benchlm/.
 
     BenchLM's raw JSON stores per-category scores under
     scores.displayCategoryScores and per-category ranks under
     ranking.categoryRanks. We use displayCategoryScores for the
     ranking value (None entries are skipped) and attach the category rank.
     """
+    subdir = "benchlm"
     if not benchlm_items:
         return {}
     # Collect all categories from displayCategoryScores (the inner dict only)
@@ -759,8 +864,8 @@ def write_benchlm_benchmarks(benchlm_items):
         models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
         if models_list:
             bname = f"benchlm_{cat}"
-            path = _write_benchmark_json(
-                bname,
+            _write_benchmark_json(
+                subdir, bname,
                 {
                     "leaderboard": bname,
                     "source_url": f"{BENCHLM_BASE}/models.json",
@@ -768,11 +873,12 @@ def write_benchlm_benchmarks(benchlm_items):
                 },
                 models_list,
             )
-            written[bname] = path
+            written[bname] = True
     return written
 
 
 def write_swebench_benchmark(swe_data):
+    subdir = "swe-bench"
     models_list = []
     for model_id, swe in swe_data.items():
         models_list.append(
@@ -785,8 +891,8 @@ def write_swebench_benchmark(swe_data):
         )
     models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
     if models_list:
-        return _write_benchmark_json(
-            "swe_bench",
+        _write_benchmark_json(
+            subdir, "swe_bench",
             {
                 "leaderboard": "swe_bench",
                 "source_url": SWEBENCH_INFO,
@@ -822,8 +928,9 @@ def write_models_json(or_models, meta, counts):
 
 # ---------------------------------------------------------------------------
 # Output: recommended.json (per-benchmark top-10, no mixing)
+# Walks the new benchmarks/<source>/ subfolders.
 # ---------------------------------------------------------------------------
-def write_recommended_json(benchmarks_dir):
+def write_recommended_json():
     rec = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -836,23 +943,28 @@ def write_recommended_json(benchmarks_dir):
         "recommended": {},
     }
 
-    for fname in sorted(os.listdir(benchmarks_dir)):
-        if not fname.endswith(".json"):
+    for subdir in sorted(WRITTEN.keys()):
+        sdir = os.path.join("benchmarks", subdir)
+        if not os.path.isdir(sdir):
             continue
-        bname = fname[:-5]
-        path = os.path.join(benchmarks_dir, fname)
-        try:
-            with open(path) as f:
-                data = json.load(f)
-        except Exception:
-            continue
-        models = data.get("models", [])[:10]
-        rec["recommended"][bname] = models
-        rec["meta"]["benchmarks"][bname] = {
-            "source": data.get("meta", {}).get("source_url", "unknown"),
-            "model_count": len(data.get("models", [])),
-            "top_n": len(models),
-        }
+        for fname in sorted(os.listdir(sdir)):
+            if not fname.endswith(".json"):
+                continue
+            bname = fname[:-5]
+            path = os.path.join(sdir, fname)
+            try:
+                with open(path) as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+            models = data.get("models", [])[:10]
+            rec["recommended"][bname] = models
+            rec["meta"]["benchmarks"][bname] = {
+                "source": data.get("meta", {}).get("source_url", "unknown"),
+                "subdir": subdir,
+                "model_count": len(data.get("models", [])),
+                "top_n": len(models),
+            }
 
     path = os.path.join(OUTDIR, "recommended.json")
     with open(path, "w") as f:
@@ -861,133 +973,134 @@ def write_recommended_json(benchmarks_dir):
 
 
 # ---------------------------------------------------------------------------
-# Output: LEADERBOARD.md (human-readable, per-benchmark tables)
+# Output: per-source OVERVIEW.md + benchmarks/README.md index
 # ---------------------------------------------------------------------------
-def write_leaderboard_md(benchmarks_dir):
-    L = []
-    L.append("# ModelCompass Leaderboard\n")
+def _model_score_str(m):
+    """Render a model's score for an OVERVIEW row."""
+    if "scores" in m and m.get("scores"):
+        return ", ".join(
+            f"{s.get('name', '?')}: {s.get('score')}" for s in m["scores"]
+        )
+    score = m.get("score")
+    if score is None:
+        return "—"
+    if isinstance(score, float):
+        return f"{score:.3f}"
+    return str(score)
+
+
+def write_source_overview(subdir, meta):
+    """Write benchmarks/<subdir>/OVERVIEW.md with the top 10 of each bench."""
+    sdir = os.path.join("benchmarks", subdir)
+    if not os.path.isdir(sdir):
+        return None
+    benches = meta.get("benches", {})
+    L = [f"# {meta.get('title', subdir)}\n"]
+    src = meta.get("source_url", "")
+    if src:
+        L.append(f"> Source: [{src}]({src})\n")
+    L.append(f"{meta.get('desc', '')}\n")
     L.append(
-        f"> Generated {datetime.now(timezone.utc).isoformat()} · "
-        "updated daily.\n"
-    )
-    L.append(
-        "Each table is a **pure ranking from one benchmark source**. "
-        "No scores are mixed.\n"
+        "Each table is a **pure ranking on a single metric**. "
+        "No scores are mixed across benchmarks.\n"
     )
 
-    for fname in sorted(os.listdir(benchmarks_dir)):
-        if not fname.endswith(".json"):
+    for bname in sorted(WRITTEN.get(subdir, [])):
+        if bname not in benches:
             continue
-        bname = fname[:-5]
-        path = os.path.join(benchmarks_dir, fname)
+        title, explain = benches[bname]
+        path = os.path.join(sdir, f"{bname}.json")
         try:
             with open(path) as f:
                 data = json.load(f)
         except Exception:
             continue
-
         models = data.get("models", [])[:10]
-        meta = data.get("meta", {})
-        title = meta.get("leaderboard", bname)
-        source_url = meta.get("source_url", "")
-
         L.append(f"## {title}\n")
-        if source_url:
-            L.append(f"_Source: [{source_url}]({source_url})_\n")
+        L.append(f"_{explain}_\n")
         L.append("")
-
         if not models:
             L.append("_No models yet._\n")
             continue
-
-        sample = models[0]
-        if "score" in sample and "scores" not in sample:
-            # Simple score table
-            L.append("| # | Model | Score | 95% CI | Votes |")
-            L.append("|---|-------|------:|-------:|------:|")
-            for i, m in enumerate(models, 1):
-                score = m.get("score", "—")
-                ci = m.get("ci", "—")
-                votes = m.get("votes", "—")
-                L.append(
-                    f"| {i} | `{m.get('model', '?')}` | {score} | ±{ci} | {votes} |"
-                )
-        elif "scores" in sample:
-            # Multi-dimension table (arena agent)
-            dims = meta.get("dimensions", [])
-            if dims:
-                header = (
-                    "| # | Model | "
-                    + " | ".join(dims)
-                    + " | Sessions |"
-                )
-                sep = (
-                    "|---|-------|"
-                    + "|".join(["------:" for _ in dims])
-                    + "|------:|"
-                )
-                L.append(header)
-                L.append(sep)
-                for i, m in enumerate(models, 1):
-                    scores = m.get("scores", [])
-                    score_strs = []
-                    for s in scores[: len(dims)]:
-                        val = s.get("score")
-                        ci_val = s.get("ci")
-                        if val is not None and ci_val is not None:
-                            score_strs.append(f"{val} ±{ci_val}")
-                        elif val is not None:
-                            score_strs.append(str(val))
-                        else:
-                            score_strs.append("—")
-                    L.append(
-                        f"| {i} | `{m.get('model', '?')}` | "
-                        + " | ".join(score_strs)
-                        + f" | {m.get('sessions', '—')} |"
-                    )
+        L.append("| # | Model | Score |")
+        L.append("|---|-------|------:|")
+        for i, m in enumerate(models, 1):
+            L.append(f"| {i} | `{m.get('model', '?')}` | {_model_score_str(m)} |")
         L.append("")
 
-    path = os.path.join(OUTDIR, "LEADERBOARD.md")
-    with open(path, "w") as f:
+    out = os.path.join(sdir, "OVERVIEW.md")
+    with open(out, "w") as f:
         f.write("\n".join(L))
-    return path
+    return out
+
+
+def write_benchmarks_readme():
+    """Write benchmarks/README.md index linking to each subfolder OVERVIEW.md."""
+    L = ["# ModelCompass Benchmarks\n"]
+    L.append(
+        "Every benchmark lives in its own subfolder. Each subfolder contains "
+        "raw `*.json` ranking files plus an `OVERVIEW.md` with the top 10 of "
+        "each benchmark, explained.\n"
+    )
+    L.append("**No scores are mixed across benchmarks.**\n")
+    for subdir, meta in SOURCE_META.items():
+        if not WRITTEN.get(subdir):
+            continue
+        url = meta.get("source_url", "")
+        src_line = f" — [{url}]({url})" if url else ""
+        L.append(f"## [{meta.get('title', subdir)}](./{subdir}/OVERVIEW.md){src_line}\n")
+        L.append(f"{meta.get('desc', '')}\n")
+        for bname in sorted(WRITTEN.get(subdir, [])):
+            title, _ = meta.get("benches", {}).get(bname, (bname, ""))
+            L.append(f"- [{title}](./{subdir}/{bname}.json)")
+        L.append("")
+
+    out = os.path.join("benchmarks", "README.md")
+    with open(out, "w") as f:
+        f.write("\n".join(L))
+    return out
 
 
 # ---------------------------------------------------------------------------
-# Output: consensus (Borda count, placement-based only)
+# Output: consensus (Borda count, placement-based only) -> benchmarks/consensus/
 # ---------------------------------------------------------------------------
-def write_consensus(benchmarks_dir):
+def write_consensus():
+    subdir = "consensus"
     borda = {}
     N = 10
 
-    for fname in sorted(os.listdir(benchmarks_dir)):
-        if not fname.endswith(".json"):
+    # Walk every benchmark json across all source subfolders
+    for sdir in sorted(WRITTEN.keys()):
+        base = os.path.join("benchmarks", sdir)
+        if not os.path.isdir(base):
             continue
-        path = os.path.join(benchmarks_dir, fname)
-        try:
-            with open(path) as f:
-                data = json.load(f)
-        except Exception:
-            continue
-
-        models = data.get("models", [])[:N]
-        bname = fname[:-5]
-        for i, m in enumerate(models):
-            model_id = m.get("model", "")
-            score = m.get("score")
-            if model_id not in borda:
-                borda[model_id] = {
-                    "model": model_id,
-                    "top_appearances": 0,
-                    "borda_points": 0,
-                    "benchmarks": {},
+        for fname in sorted(os.listdir(base)):
+            if not fname.endswith(".json"):
+                continue
+            bname = fname[:-5]
+            path = os.path.join(base, fname)
+            try:
+                with open(path) as f:
+                    data = json.load(f)
+            except Exception:
+                continue
+            models = data.get("models", [])[:N]
+            for i, m in enumerate(models):
+                model_id = m.get("model", "")
+                score = m.get("score")
+                if model_id not in borda:
+                    borda[model_id] = {
+                        "model": model_id,
+                        "top_appearances": 0,
+                        "borda_points": 0,
+                        "benchmarks": {},
+                    }
+                borda[model_id]["top_appearances"] += 1
+                borda[model_id]["borda_points"] += max(0, N - i)
+                borda[model_id]["benchmarks"][bname] = {
+                    "rank": i + 1,
+                    "score": score,
                 }
-            borda[model_id]["top_appearances"] += 1
-            borda[model_id]["borda_points"] += max(0, N - i)
-            borda[model_id]["benchmarks"][bname] = {
-                "rank": i + 1,
-                "score": score,
-            }
 
     ranked = sorted(
         borda.values(), key=lambda x: (-x["top_appearances"], -x["borda_points"])
@@ -1006,32 +1119,34 @@ def write_consensus(benchmarks_dir):
         "consensus": ranked,
     }
 
-    os.makedirs("consensus", exist_ok=True)
-    path = "consensus/consensus.json"
-    with open(path, "w") as f:
+    _write_benchmark_json(subdir, "consensus", out.get("meta", {}), [])
+    # consensus.json carries the full ranked list
+    cdir = os.path.join("benchmarks", subdir)
+    os.makedirs(cdir, exist_ok=True)
+    with open(os.path.join(cdir, "consensus.json"), "w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
-    return path
+    WRITTEN.setdefault(subdir, []).append("consensus")
+    return os.path.join(cdir, "consensus.json")
 
 
-def write_consensus_md():
-    path = "consensus/consensus.json"
+def write_consensus_overview():
+    """Write benchmarks/consensus/OVERVIEW.md (top-20 of the Borda ranking)."""
+    subdir = "consensus"
+    cdir = os.path.join("benchmarks", subdir)
+    path = os.path.join(cdir, "consensus.json")
     if not os.path.exists(path):
         return None
-
     with open(path) as f:
         data = json.load(f)
 
-    L = []
-    L.append("# ModelCompass Consensus\n")
-    L.append(f"> Generated {data['meta']['generated_at']}\n")
+    L = ["# Consensus (Borda)\n"]
     L.append(
-        "Borda-count agreement: how many benchmarks each model appears "
-        "in the top 10. No score mixing — just placement frequency.\n"
+        "Placement agreement across all benchmarks. A model's rank here is "
+        "how many top-10 lists it appears in (Borda points as tiebreak) — "
+        "**never an averaged score**.\n"
     )
-    L.append("")
     L.append("| Rank | Model | Top-10 Appearances | Borda Points | Benchmarks |")
     L.append("|------|-------|--------------------:|-------------:|------------|")
-
     for i, entry in enumerate(data.get("consensus", [])[:20], 1):
         bm_list = sorted(entry.get("benchmarks", {}).keys())
         bm_display = ", ".join(bm_list[:5])
@@ -1041,119 +1156,61 @@ def write_consensus_md():
             f"| {i} | `{entry['model']}` | "
             f"{entry['top_appearances']} | {entry['borda_points']} | {bm_display} |"
         )
-
-    with open("consensus/consensus.md", "w") as f:
+    out = os.path.join(cdir, "OVERVIEW.md")
+    with open(out, "w") as f:
         f.write("\n".join(L))
-    return "consensus/consensus.md"
+    return out
 
 
 # ---------------------------------------------------------------------------
-# Output: rankings/famous_rankings.md (static curated view)
-# ---------------------------------------------------------------------------
-def write_rankings():
-    os.makedirs("rankings", exist_ok=True)
-    L = []
-    L.append("# ModelCompass Famous Rankings\n")
-    L.append(
-        "Curated view of the most important model rankings, "
-        "with current top models from live data.\n"
-    )
-
-    famous = [
-        (
-            "LMArena Text (ELO)",
-            "arena_text",
-            "Human preference ELO from millions of blind pairwise comparisons.",
-        ),
-        (
-            "LMArena Code (WebDev)",
-            "arena_code",
-            "Front-end web development and agentic coding.",
-        ),
-        (
-            "LMArena Vision",
-            "arena_vision",
-            "Image and multimodal understanding.",
-        ),
-        (
-            "LMArena Agent",
-            "arena_agent",
-            "Agentic task orchestration (Net Improvement, Confirmed Success, …).",
-        ),
-        (
-            "AA Intelligence Index",
-            "aa_intelligence",
-            "Composite intelligence from Artificial Analysis proprietary evals.",
-        ),
-        (
-            "AA Coding Index",
-            "aa_coding",
-            "Coding capability from Artificial Analysis.",
-        ),
-        (
-            "AA Agentic Index",
-            "aa_agentic",
-            "Agentic / tool-use capability from Artificial Analysis.",
-        ),
-        (
-            "aider polyglot coding",
-            "aider_coding",
-            "Real code generation: 225 Exercism tasks across 6 languages.",
-        ),
-        (
-            "SWE-bench Verified",
-            "swe_bench",
-            "Percentage of GitHub issues resolved with correct patches.",
-        ),
-    ]
-
-    for title, bname, desc in famous:
-        path = f"benchmarks/{bname}.json"
-        if not os.path.exists(path):
-            continue
-        with open(path) as f:
-            data = json.load(f)
-        models = data.get("models", [])[:10]
-        L.append(f"## {title}\n")
-        L.append(f"_{desc}_\n")
-        L.append("")
-        if not models:
-            L.append("_No models yet._\n")
-            continue
-        for i, m in enumerate(models, 1):
-            score = m.get("score")
-            score_str = f" — score {score:.3f}" if score is not None else ""
-            L.append(f"{i}. `{m.get('model', '?')}`{score_str}")
-        L.append("")
-
-    with open("rankings/famous_rankings.md", "w") as f:
-        f.write("\n".join(L))
-
-
-# ---------------------------------------------------------------------------
-# Output: archive (weekly snapshot)
+# Output: archive — mirrors benchmarks/ into archive/<YYYY-MM>/
 # ---------------------------------------------------------------------------
 def write_archive():
-    os.makedirs("archive", exist_ok=True)
-    iso = datetime.now(timezone.utc).isocalendar()
-    fname = f"archive/rankings-{iso[0]}-W{iso[1]:02d}.json"
-    snapshot = {
-        "week": f"{iso[0]}-W{iso[1]:02d}",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "benchmarks": {},
-        "consensus": {},
-    }
-    for fname_src in os.listdir("benchmarks"):
-        if fname_src.endswith(".json"):
-            with open(f"benchmarks/{fname_src}") as f:
-                snapshot["benchmarks"][fname_src[:-5]] = json.load(f)
-    if os.path.exists("consensus/consensus.json"):
-        with open("consensus/consensus.json") as f:
-            snapshot["consensus"] = json.load(f)
+    now = datetime.now(timezone.utc)
+    month = now.strftime("%Y-%m")
+    dest_root = os.path.join("archive", month)
+    os.makedirs(dest_root, exist_ok=True)
 
-    with open(fname, "w") as f:
-        json.dump(snapshot, f, indent=2, ensure_ascii=False)
-    return fname
+    # Mirror every benchmarks/<subdir>/*.json into archive/<YYYY-MM>/<subdir>/
+    copied = 0
+    for subdir in sorted(WRITTEN.keys()):
+        base = os.path.join("benchmarks", subdir)
+        if not os.path.isdir(base):
+            continue
+        for fname in sorted(os.listdir(base)):
+            if not fname.endswith(".json"):
+                continue
+            dest_dir = os.path.join(dest_root, subdir)
+            os.makedirs(dest_dir, exist_ok=True)
+            src = os.path.join(base, fname)
+            dst = os.path.join(dest_dir, fname)
+            with open(src) as f:
+                content = f.read()
+            with open(dst, "w") as f:
+                f.write(content)
+            copied += 1
+
+    # Archive also snapshots the catalog + recommended.json at top of the month
+    for top in ("models.json", "recommended.json"):
+        src = os.path.join(OUTDIR, top)
+        if os.path.exists(src):
+            with open(src) as f:
+                content = f.read()
+            with open(os.path.join(dest_root, top), "w") as f:
+                f.write(content)
+
+    # Month index README
+    idx = [f"# Archive — {month}\n"]
+    idx.append(
+        "Snapshot of the `benchmarks/` tree taken at the start of this month. "
+        "Same subfolder layout as `benchmarks/`.\n"
+    )
+    for subdir in sorted(WRITTEN.keys()):
+        idx.append(f"- [{subdir}/](./{subdir}/)")
+    with open(os.path.join(dest_root, "README.md"), "w") as f:
+        f.write("\n".join(idx))
+
+    return dest_root, copied
 
 
 # ---------------------------------------------------------------------------
@@ -1209,11 +1266,14 @@ def main():
     counts = merge(or_models, aa, aider, arena_data, benchlm or [], swe)
     log(f"Merged: {counts}")
 
-    # Ensure output dirs
+    # Ensure output dirs — benchmarks/ is rebuilt fresh each run
+    if os.path.isdir("benchmarks"):
+        import shutil
+        shutil.rmtree("benchmarks")
     os.makedirs("benchmarks", exist_ok=True)
-    os.makedirs("consensus", exist_ok=True)
+    WRITTEN.clear()
 
-    # Write per-benchmark files
+    # Write per-benchmark files (into per-source subfolders)
     log("=== Writing per-benchmark files ===")
     write_aa_benchmarks(or_models)
     write_aider_benchmark(aider)
@@ -1236,27 +1296,26 @@ def main():
     write_models_json(or_models, meta, counts)
     log(f"wrote models.json ({len(or_models)} models)")
 
+    # Per-source OVERVIEW.md + benchmarks/README.md index
+    for subdir, smeta in SOURCE_META.items():
+        if WRITTEN.get(subdir):
+            write_source_overview(subdir, smeta)
+    write_benchmarks_readme()
+    log("wrote benchmarks/<source>/OVERVIEW.md + benchmarks/README.md")
+
     # Write recommended.json (per-benchmark shortlists)
-    write_recommended_json("benchmarks")
+    write_recommended_json()
     log("wrote recommended.json")
 
-    # Write consensus
-    write_consensus("benchmarks")
-    write_consensus_md()
-    log("wrote consensus/")
-
-    # Write leaderboard
-    write_leaderboard_md("benchmarks")
-    log("wrote LEADERBOARD.md")
-
-    # Write rankings
-    write_rankings()
-    log("wrote rankings/famous_rankings.md")
+    # Write consensus (into benchmarks/consensus/) + its OVERVIEW.md
+    write_consensus()
+    write_consensus_overview()
+    log("wrote benchmarks/consensus/")
 
     # Archive
     if args.archive:
-        write_archive()
-        log("wrote archive/")
+        dest, copied = write_archive()
+        log(f"wrote {dest} ({copied} files)")
 
     log("=== Done ===")
 
