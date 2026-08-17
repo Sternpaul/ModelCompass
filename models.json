@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T22:47:32Z",
+    "generated_at": "2026-08-17T04:28:02Z",
     "model_count": 408,
     "synthetic_excluded": 6,
     "update_cadence": "daily (GitHub Actions)",
@@ -116,46 +116,14 @@
         }
       },
       {
-        "id": "openai/gpt-5.2",
-        "name": "OpenAI: GPT-5.2",
-        "provider": "openai",
-        "task_score": 0.678,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.75,
-          "completion": 14.0,
-          "cache_read": 0.175
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 38.9,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 96.7,
-          "gpqa": 0.864,
-          "hle": 0.267,
-          "livecodebench": 0.894,
-          "aime": null,
-          "mmlu_pro": 0.859,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": 0.6725,
-        "context": 1050000,
+        "id": "anthropic/claude-opus-4.5",
+        "name": "Anthropic: Claude Opus 4.5",
+        "provider": "anthropic",
+        "task_score": 0.666,
+        "context": 200000,
         "price_per_million": {
           "prompt": 5.0,
-          "completion": 30.0,
+          "completion": 25.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -167,12 +135,44 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 57.3,
-          "aa_coding_index": 77.2,
+          "aa_intelligence_index": 41.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 91.3,
+          "gpqa": 0.866,
+          "hle": 0.301,
+          "livecodebench": 0.871,
+          "aime": null,
+          "mmlu_pro": 0.895,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.6645,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 58.6,
+          "aa_coding_index": 74.3,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.46,
+          "gpqa": 0.919,
+          "hle": 0.513,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -342,15 +342,15 @@
     ],
     "best_coding": [
       {
-        "id": "openai/gpt-5.2",
-        "name": "OpenAI: GPT-5.2",
-        "provider": "openai",
-        "task_score": 0.894,
-        "context": 400000,
+        "id": "anthropic/claude-opus-4.5",
+        "name": "Anthropic: Claude Opus 4.5",
+        "provider": "anthropic",
+        "task_score": 0.871,
+        "context": 200000,
         "price_per_million": {
-          "prompt": 1.75,
-          "completion": 14.0,
-          "cache_read": 0.175
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -361,15 +361,47 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 38.9,
+          "aa_intelligence_index": 41.9,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 96.7,
-          "gpqa": 0.864,
-          "hle": 0.267,
-          "livecodebench": 0.894,
+          "aa_math_index": 91.3,
+          "gpqa": 0.866,
+          "hle": 0.301,
+          "livecodebench": 0.871,
           "aime": null,
-          "mmlu_pro": 0.859,
+          "mmlu_pro": 0.895,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "moonshotai/kimi-k2-thinking",
+        "name": "MoonshotAI: Kimi K2 Thinking",
+        "provider": "moonshotai",
+        "task_score": 0.853,
+        "context": 262144,
+        "price_per_million": {
+          "prompt": 0.6,
+          "completion": 2.5,
+          "cache_read": 0.15
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 33.5,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 94.7,
+          "gpqa": 0.838,
+          "hle": 0.238,
+          "livecodebench": 0.853,
+          "aime": null,
+          "mmlu_pro": 0.848,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -533,70 +565,6 @@
         }
       },
       {
-        "id": "openai/gpt-5-nano",
-        "name": "OpenAI: GPT-5 Nano",
-        "provider": "openai",
-        "task_score": 0.789,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 0.05,
-          "completion": 0.4,
-          "cache_read": 0.005
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 20.1,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 83.7,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
-          "aime": null,
-          "mmlu_pro": 0.78,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": 0.772,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 57.3,
-          "aa_coding_index": 77.2,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.46,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
         "id": "qwen/qwen3-max",
         "name": "Qwen: Qwen3 Max",
         "provider": "qwen",
@@ -658,6 +626,38 @@
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.763,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 83,
+          "gpqa": 0.808,
+          "hle": 0.196,
+          "livecodebench": 0.763,
+          "aime": 0.83,
+          "mmlu_pro": 0.86,
+          "aider_polyglot_pass_rate_1": null
+        }
       }
     ],
     "best_reasoning": [
@@ -687,6 +687,38 @@
           "aa_math_index": null,
           "gpqa": 0.926,
           "hle": 0.555,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.6727,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 58.6,
+          "aa_coding_index": 74.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.919,
+          "hle": 0.513,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -790,38 +822,6 @@
         }
       },
       {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": 0.6537,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 5.0,
-          "completion": 30.0,
-          "cache_read": 0.5
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 57.3,
-          "aa_coding_index": 77.2,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.46,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
         "id": "qwen/qwen3.8-max",
         "name": "Qwen: Qwen3.8 Max",
         "provider": "qwen",
@@ -886,6 +886,38 @@
         }
       },
       {
+        "id": "openai/gpt-5.5",
+        "name": "OpenAI: GPT-5.5",
+        "provider": "openai",
+        "task_score": 0.643,
+        "context": 1050000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 30.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 54.7,
+          "aa_coding_index": 71.6,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.932,
+          "hle": 0.45,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "meta/muse-spark-1.2",
         "name": "Meta: Muse Spark 1.2",
         "provider": "meta",
@@ -943,38 +975,6 @@
           "aa_math_index": null,
           "gpqa": 0.931,
           "hle": 0.427,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "meta/muse-spark-1.1",
-        "name": "Meta: Muse Spark 1.1",
-        "provider": "meta",
-        "task_score": 0.6307,
-        "context": 1048576,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 4.25,
-          "cache_read": 0.15
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 53.2,
-          "aa_coding_index": 71.3,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.898,
-          "hle": 0.462,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1045,38 +1045,6 @@
         }
       },
       {
-        "id": "openai/gpt-5",
-        "name": "OpenAI: GPT-5",
-        "provider": "openai",
-        "task_score": 0.809,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.25,
-          "completion": 10.0,
-          "cache_read": 0.125
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 34.6,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 91.7,
-          "gpqa": 0.842,
-          "hle": 0.254,
-          "livecodebench": 0.703,
-          "aime": 0.916666666666667,
-          "mmlu_pro": 0.867,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
         "id": "openai/o3",
         "name": "OpenAI: o3",
         "provider": "openai",
@@ -1141,6 +1109,101 @@
         }
       },
       {
+        "id": "deepseek/deepseek-r1",
+        "name": "DeepSeek: R1",
+        "provider": "deepseek",
+        "task_score": 0.7598,
+        "context": 64000,
+        "price_per_million": {
+          "prompt": 0.7,
+          "completion": 2.5,
+          "cache_read": null
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 20.4,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 76,
+          "gpqa": 0.813,
+          "hle": 0.158,
+          "livecodebench": 0.77,
+          "aime": 0.893333333333333,
+          "mmlu_pro": 0.849,
+          "aider_polyglot_pass_rate_1": 27.1
+        }
+      },
+      {
+        "id": "openai/gpt-5",
+        "name": "OpenAI: GPT-5",
+        "provider": "openai",
+        "task_score": 0.7596,
+        "context": 400000,
+        "price_per_million": {
+          "prompt": 1.25,
+          "completion": 10.0,
+          "cache_read": 0.125
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 31.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 83,
+          "gpqa": 0.808,
+          "hle": 0.196,
+          "livecodebench": 0.763,
+          "aime": 0.83,
+          "mmlu_pro": 0.86,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "openai/o3-mini-high",
+        "name": "OpenAI: o3 Mini High",
+        "provider": "openai",
+        "task_score": 0.7476,
+        "context": 200000,
+        "price_per_million": {
+          "prompt": 1.1,
+          "completion": 4.4,
+          "cache_read": 0.55
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 15.7,
+          "aa_coding_index": 16.3,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.773,
+          "hle": 0.12,
+          "livecodebench": 0.734,
+          "aime": 0.86,
+          "mmlu_pro": 0.802,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
         "id": "z-ai/glm-4.5",
         "name": "Z.ai: GLM 4.5",
         "provider": "z-ai",
@@ -1173,15 +1236,15 @@
         }
       },
       {
-        "id": "openai/gpt-5.2",
-        "name": "OpenAI: GPT-5.2",
-        "provider": "openai",
-        "task_score": 0.7145,
-        "context": 400000,
+        "id": "anthropic/claude-opus-4.5",
+        "name": "Anthropic: Claude Opus 4.5",
+        "provider": "anthropic",
+        "task_score": 0.704,
+        "context": 200000,
         "price_per_million": {
-          "prompt": 1.75,
-          "completion": 14.0,
-          "cache_read": 0.175
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
         },
         "capability_flags": [
           "reasoning",
@@ -1192,47 +1255,15 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 38.9,
+          "aa_intelligence_index": 41.9,
           "aa_coding_index": null,
           "aa_agentic_index": null,
-          "aa_math_index": 96.7,
-          "gpqa": 0.864,
-          "hle": 0.267,
-          "livecodebench": 0.894,
+          "aa_math_index": 91.3,
+          "gpqa": 0.866,
+          "hle": 0.301,
+          "livecodebench": 0.871,
           "aime": null,
-          "mmlu_pro": 0.859,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/o3-mini-high",
-        "name": "OpenAI: o3 Mini High",
-        "provider": "openai",
-        "task_score": 0.7141,
-        "context": 200000,
-        "price_per_million": {
-          "prompt": 1.1,
-          "completion": 4.4,
-          "cache_read": 0.55
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 19.2,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "aime": 0.77,
-          "mmlu_pro": 0.791,
+          "mmlu_pro": 0.895,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -1265,38 +1296,6 @@
           "livecodebench": 0.894,
           "aime": null,
           "mmlu_pro": 0.856,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5-codex:batch",
-        "name": "OpenAI: GPT-5 Codex (batch)",
-        "provider": "openai",
-        "task_score": 0.698,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 0.625,
-          "completion": 5.0,
-          "cache_read": 0.0625
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 37,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 98.7,
-          "gpqa": 0.837,
-          "hle": 0.278,
-          "livecodebench": 0.84,
-          "aime": null,
-          "mmlu_pro": 0.865,
           "aider_polyglot_pass_rate_1": null
         }
       }
@@ -1392,38 +1391,6 @@
           "aa_math_index": null,
           "gpqa": 0.923,
           "hle": 0.405,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "xiaomi/mimo-v2.5-pro",
-        "name": "Xiaomi: MiMo-V2.5-Pro",
-        "provider": "xiaomi",
-        "task_score": 0.7986,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.435,
-          "completion": 0.87,
-          "cache_read": 0.0036
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 42.9,
-          "aa_coding_index": 60.2,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.866,
-          "hle": 0.357,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1620,6 +1587,38 @@
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": null
         }
+      },
+      {
+        "id": "z-ai/glm-5.1",
+        "name": "Z.ai: GLM 5.1",
+        "provider": "z-ai",
+        "task_score": 0.7626,
+        "context": 204800,
+        "price_per_million": {
+          "prompt": 0.966,
+          "completion": 3.036,
+          "cache_read": 0.1794
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 41,
+          "aa_coding_index": 55.8,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.868,
+          "hle": 0.301,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
       }
     ],
     "best_open_weight": [
@@ -1662,9 +1661,9 @@
         "task_score": 0.61,
         "context": 1048576,
         "price_per_million": {
-          "prompt": 1.168,
-          "completion": 2.336,
-          "cache_read": 0.09855
+          "prompt": 0.66,
+          "completion": 1.98,
+          "cache_read": 0.022
         },
         "capability_flags": [
           "reasoning",
@@ -1681,6 +1680,38 @@
           "aa_math_index": null,
           "gpqa": 0.928,
           "hle": 0.41,
+          "livecodebench": null,
+          "aime": null,
+          "mmlu_pro": null,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "deepseek/deepseek-v4-flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
+        "provider": "deepseek",
+        "task_score": 0.6045,
+        "context": 1048576,
+        "price_per_million": {
+          "prompt": 0.08386,
+          "completion": 0.16772,
+          "cache_read": 0.016772
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": false,
+        "open_weight": true,
+        "benchmarks": {
+          "aa_intelligence_index": 51.8,
+          "aa_coding_index": 69.1,
+          "aa_agentic_index": null,
+          "aa_math_index": null,
+          "gpqa": 0.908,
+          "hle": 0.386,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -1781,38 +1812,6 @@
           "aime": null,
           "mmlu_pro": null,
           "aider_polyglot_pass_rate_1": 20.4
-        }
-      },
-      {
-        "id": "xiaomi/mimo-v2.5-pro",
-        "name": "Xiaomi: MiMo-V2.5-Pro",
-        "provider": "xiaomi",
-        "task_score": 0.5155,
-        "context": 1050000,
-        "price_per_million": {
-          "prompt": 0.435,
-          "completion": 0.87,
-          "cache_read": 0.0036
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": false,
-        "open_weight": true,
-        "benchmarks": {
-          "aa_intelligence_index": 42.9,
-          "aa_coding_index": 60.2,
-          "aa_agentic_index": null,
-          "aa_math_index": null,
-          "gpqa": 0.866,
-          "hle": 0.357,
-          "livecodebench": null,
-          "aime": null,
-          "mmlu_pro": null,
-          "aider_polyglot_pass_rate_1": null
         }
       },
       {
@@ -2041,46 +2040,14 @@
         }
       },
       {
-        "id": "openai/gpt-5.2",
-        "name": "OpenAI: GPT-5.2",
-        "provider": "openai",
-        "task_score": 0.678,
-        "context": 400000,
-        "price_per_million": {
-          "prompt": 1.75,
-          "completion": 14.0,
-          "cache_read": 0.175
-        },
-        "capability_flags": [
-          "reasoning",
-          "tools",
-          "json",
-          "caching"
-        ],
-        "is_vision": true,
-        "open_weight": false,
-        "benchmarks": {
-          "aa_intelligence_index": 38.9,
-          "aa_coding_index": null,
-          "aa_agentic_index": null,
-          "aa_math_index": 96.7,
-          "gpqa": 0.864,
-          "hle": 0.267,
-          "livecodebench": 0.894,
-          "aime": null,
-          "mmlu_pro": 0.859,
-          "aider_polyglot_pass_rate_1": null
-        }
-      },
-      {
-        "id": "openai/gpt-5.6-sol",
-        "name": "OpenAI: GPT-5.6 Sol",
-        "provider": "openai",
-        "task_score": 0.6725,
-        "context": 1050000,
+        "id": "anthropic/claude-opus-4.5",
+        "name": "Anthropic: Claude Opus 4.5",
+        "provider": "anthropic",
+        "task_score": 0.666,
+        "context": 200000,
         "price_per_million": {
           "prompt": 5.0,
-          "completion": 30.0,
+          "completion": 25.0,
           "cache_read": 0.5
         },
         "capability_flags": [
@@ -2092,12 +2059,44 @@
         "is_vision": true,
         "open_weight": false,
         "benchmarks": {
-          "aa_intelligence_index": 57.3,
-          "aa_coding_index": 77.2,
+          "aa_intelligence_index": 41.9,
+          "aa_coding_index": null,
+          "aa_agentic_index": null,
+          "aa_math_index": 91.3,
+          "gpqa": 0.866,
+          "hle": 0.301,
+          "livecodebench": 0.871,
+          "aime": null,
+          "mmlu_pro": 0.895,
+          "aider_polyglot_pass_rate_1": null
+        }
+      },
+      {
+        "id": "anthropic/claude-opus-5",
+        "name": "Claude Opus 5",
+        "provider": "anthropic",
+        "task_score": 0.6645,
+        "context": 1000000,
+        "price_per_million": {
+          "prompt": 5.0,
+          "completion": 25.0,
+          "cache_read": 0.5
+        },
+        "capability_flags": [
+          "reasoning",
+          "tools",
+          "json",
+          "caching"
+        ],
+        "is_vision": true,
+        "open_weight": false,
+        "benchmarks": {
+          "aa_intelligence_index": 58.6,
+          "aa_coding_index": 74.3,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.928,
-          "hle": 0.46,
+          "gpqa": 0.919,
+          "hle": 0.513,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2397,7 +2396,7 @@
         "id": "openai/gpt-oss-20b",
         "name": "OpenAI: gpt-oss-20b",
         "provider": "openai",
-        "task_score": 0.3835,
+        "task_score": 0.4173,
         "context": 131072,
         "price_per_million": {
           "prompt": 0.03,
@@ -2413,15 +2412,15 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 14.4,
-          "aa_coding_index": null,
+          "aa_intelligence_index": 15.2,
+          "aa_coding_index": 20.7,
           "aa_agentic_index": null,
-          "aa_math_index": 62.3,
-          "gpqa": 0.611,
-          "hle": 0.053,
-          "livecodebench": 0.652,
+          "aa_math_index": 89.3,
+          "gpqa": 0.688,
+          "hle": 0.11,
+          "livecodebench": 0.777,
           "aime": null,
-          "mmlu_pro": 0.718,
+          "mmlu_pro": 0.748,
           "aider_polyglot_pass_rate_1": null
         }
       },
@@ -2498,7 +2497,7 @@
         "price_per_million": {
           "prompt": 0.05,
           "completion": 0.2,
-          "cache_read": 0.025
+          "cache_read": 0.03
         },
         "capability_flags": [
           "reasoning",
@@ -2557,7 +2556,7 @@
         "id": "z-ai/glm-4.7-flash",
         "name": "Z.ai: GLM 4.7 Flash",
         "provider": "z-ai",
-        "task_score": 0.156,
+        "task_score": 0.233,
         "context": 202752,
         "price_per_million": {
           "prompt": 0.06,
@@ -2573,12 +2572,12 @@
         "is_vision": false,
         "open_weight": true,
         "benchmarks": {
-          "aa_intelligence_index": 15.6,
+          "aa_intelligence_index": 23.3,
           "aa_coding_index": null,
           "aa_agentic_index": null,
           "aa_math_index": null,
-          "gpqa": 0.452,
-          "hle": 0.05,
+          "gpqa": 0.581,
+          "hle": 0.076,
           "livecodebench": null,
           "aime": null,
           "mmlu_pro": null,
@@ -2667,8 +2666,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.5000833333333333,
-      "capability_score": 6.001
+      "_fallback": 0.4996666666666667,
+      "capability_score": 5.996
     },
     {
       "id": "google/gemini-3.7-flash",
@@ -2866,7 +2865,7 @@
           "tau_banking": 0.490721649484536
         },
         "aa_speed": {
-          "median_tps": 47.243,
+          "median_tps": 46.51,
           "ttft_s": 1.79
         }
       },
@@ -3013,8 +3012,8 @@
           "tau_banking": 0.507216494845361
         },
         "aa_speed": {
-          "median_tps": 61.457,
-          "ttft_s": 41.745
+          "median_tps": 62.082,
+          "ttft_s": 38.243
         },
         "aider_polyglot": {
           "pass_rate_1": 40.9,
@@ -3126,8 +3125,8 @@
           "tau_banking": 0.088659793814433
         },
         "aa_speed": {
-          "median_tps": 292.297,
-          "ttft_s": 0.774
+          "median_tps": 291.101,
+          "ttft_s": 0.768
         },
         "aider_polyglot": {
           "pass_rate_1": 5.8,
@@ -3228,8 +3227,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.5029166666666667,
-      "capability_score": 6.035
+      "_fallback": 0.5024166666666666,
+      "capability_score": 6.029
     },
     {
       "id": "upstage/solar-pro4",
@@ -3280,8 +3279,8 @@
           "tau_banking": 0.232989690721649
         },
         "aa_speed": {
-          "median_tps": 66.247,
-          "ttft_s": 1.185
+          "median_tps": 69.016,
+          "ttft_s": 1.18
         }
       },
       "task_scores": {
@@ -3451,8 +3450,8 @@
           "tau_banking": 0.51340206185567
         },
         "aa_speed": {
-          "median_tps": 47.597,
-          "ttft_s": 1.821
+          "median_tps": 46.79,
+          "ttft_s": 1.806
         },
         "aider_polyglot": {
           "pass_rate_1": 9.3,
@@ -3605,7 +3604,7 @@
           "tau_banking": 0.187628865979381
         },
         "aa_speed": {
-          "median_tps": 72.07,
+          "median_tps": 79.524,
           "ttft_s": 1.524
         }
       },
@@ -3733,38 +3732,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 52.5,
-          "artificial_analysis_coding_index": 66.9,
+          "artificial_analysis_intelligence_index": 58.6,
+          "artificial_analysis_coding_index": 74.3,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.889,
-          "hle": 0.434,
+          "gpqa": 0.919,
+          "hle": 0.513,
           "livecodebench": null,
-          "scicode": 0.48,
+          "scicode": 0.507,
           "math_500": null,
           "aime": null,
           "aime_25": null,
           "ifbench": null,
-          "lcr": 0.77,
+          "lcr": 0.786666666666667,
           "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.764044943820225,
+          "terminalbench_v2_1": 0.861423220973783,
           "tau2": null,
-          "tau_banking": 0.303092783505155
+          "tau_banking": 0.385567010309278
         },
         "aa_speed": {
-          "median_tps": 47.655,
-          "ttft_s": 2.4
+          "median_tps": 48.681,
+          "ttft_s": 3.611
         }
       },
       "task_scores": {
-        "overall": 0.597,
-        "coding": 0.669,
-        "reasoning": 0.616,
-        "math": 0.48,
+        "overall": 0.6645,
+        "coding": 0.743,
+        "reasoning": 0.6726666666666666,
+        "math": 0.507,
         "agents": null,
-        "open_weight": 0.597
+        "open_weight": 0.6645
       },
-      "_task": 0.597,
+      "_task": 0.6645,
       "_fallback": 0.5561666666666667,
       "capability_score": 6.674
     },
@@ -4005,8 +4004,8 @@
           "tau_banking": 0.298969072164948
         },
         "aa_speed": {
-          "median_tps": 211.424,
-          "ttft_s": 14.139
+          "median_tps": 209.302,
+          "ttft_s": 13.582
         }
       },
       "task_scores": {
@@ -4111,7 +4110,7 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 350.23,
+          "median_tps": 343.73,
           "ttft_s": 7.494
         }
       },
@@ -4217,8 +4216,8 @@
           "tau_banking": 0.131958762886598
         },
         "aa_speed": {
-          "median_tps": 38.808,
-          "ttft_s": 1.603
+          "median_tps": 39.472,
+          "ttft_s": 1.592
         }
       },
       "task_scores": {
@@ -4283,7 +4282,7 @@
         },
         "aa_speed": {
           "median_tps": 80.569,
-          "ttft_s": 2.155
+          "ttft_s": 2.141
         }
       },
       "task_scores": {
@@ -4427,8 +4426,8 @@
           "tau_banking": 0.416494845360825
         },
         "aa_speed": {
-          "median_tps": 39.679,
-          "ttft_s": 2.259
+          "median_tps": 40.189,
+          "ttft_s": 2.197
         }
       },
       "task_scores": {
@@ -4710,38 +4709,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 47,
-          "artificial_analysis_coding_index": 63.3,
+          "artificial_analysis_intelligence_index": 50.1,
+          "artificial_analysis_coding_index": 68.6,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.892,
-          "hle": 0.334,
+          "gpqa": 0.895,
+          "hle": 0.37,
           "livecodebench": null,
-          "scicode": 0.507,
+          "scicode": 0.5,
           "math_500": null,
           "aime": null,
           "aime_25": null,
           "ifbench": null,
-          "lcr": 0.74,
+          "lcr": 0.733333333333333,
           "terminalbench_hard": null,
-          "terminalbench_v2_1": 0.696629213483146,
+          "terminalbench_v2_1": 0.779026217228464,
           "tau2": null,
-          "tau_banking": 0.251546391752577
+          "tau_banking": 0.28659793814433
         },
         "aa_speed": {
-          "median_tps": 168.732,
-          "ttft_s": 8.011
+          "median_tps": 171.158,
+          "ttft_s": 20.205
         }
       },
       "task_scores": {
-        "overall": 0.5515,
-        "coding": 0.633,
-        "reasoning": 0.5653333333333334,
-        "math": 0.507,
+        "overall": 0.5934999999999999,
+        "coding": 0.6859999999999999,
+        "reasoning": 0.5886666666666667,
+        "math": 0.5,
         "agents": null,
-        "open_weight": 0.5515
+        "open_weight": 0.5934999999999999
       },
-      "_task": 0.5515,
+      "_task": 0.5934999999999999,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -4898,38 +4897,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 52.8,
-          "artificial_analysis_coding_index": 70.6,
+          "artificial_analysis_intelligence_index": 50.1,
+          "artificial_analysis_coding_index": 67.1,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.908,
-          "hle": 0.419,
+          "gpqa": 0.896,
+          "hle": 0.385,
           "livecodebench": null,
-          "scicode": 0.516,
+          "scicode": 0.501,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.662585034013605,
-          "lcr": 0.75,
-          "terminalbench_hard": 0.628787878787879,
-          "terminalbench_v2_1": 0.801498127340824,
-          "tau2": 0.804093567251462,
-          "tau_banking": 0.296907216494845
+          "ifbench": 0.64421768707483,
+          "lcr": 0.733333333333333,
+          "terminalbench_hard": 0.575757575757576,
+          "terminalbench_v2_1": 0.756554307116105,
+          "tau2": 0.783625730994152,
+          "tau_banking": 0.28659793814433
         },
         "aa_speed": {
-          "median_tps": 113.549,
-          "ttft_s": 9.115
+          "median_tps": 110.79,
+          "ttft_s": 2.253
         }
       },
       "task_scores": {
-        "overall": 0.617,
-        "coding": 0.706,
-        "reasoning": 0.6183333333333333,
-        "math": 0.516,
-        "agents": 0.662585034013605,
-        "open_weight": 0.617
+        "overall": 0.586,
+        "coding": 0.6709999999999999,
+        "reasoning": 0.594,
+        "math": 0.501,
+        "agents": 0.64421768707483,
+        "open_weight": 0.586
       },
-      "_task": 0.617,
+      "_task": 0.586,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -5086,38 +5085,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 57.3,
-          "artificial_analysis_coding_index": 77.2,
+          "artificial_analysis_intelligence_index": 50.7,
+          "artificial_analysis_coding_index": 69.7,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.928,
-          "hle": 0.46,
+          "gpqa": 0.898,
+          "hle": 0.394,
           "livecodebench": null,
-          "scicode": 0.569,
+          "scicode": 0.554,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.691836734693878,
-          "lcr": 0.753333333333333,
-          "terminalbench_hard": 0.621212121212121,
-          "terminalbench_v2_1": 0.872659176029963,
-          "tau2": 0.833333333333333,
-          "tau_banking": 0.36701030927835
+          "ifbench": 0.66530612244898,
+          "lcr": 0.73,
+          "terminalbench_hard": 0.606060606060606,
+          "terminalbench_v2_1": 0.767790262172285,
+          "tau2": 0.760233918128655,
+          "tau_banking": 0.290721649484536
         },
         "aa_speed": {
-          "median_tps": 65.605,
-          "ttft_s": 10.225
+          "median_tps": 60.194,
+          "ttft_s": 2.335
         }
       },
       "task_scores": {
-        "overall": 0.6725,
-        "coding": 0.772,
-        "reasoning": 0.6536666666666666,
-        "math": 0.569,
-        "agents": 0.691836734693878,
-        "open_weight": 0.6725
+        "overall": 0.6020000000000001,
+        "coding": 0.6970000000000001,
+        "reasoning": 0.5996666666666667,
+        "math": 0.554,
+        "agents": 0.66530612244898,
+        "open_weight": 0.6020000000000001
       },
-      "_task": 0.6725,
+      "_task": 0.6020000000000001,
       "_fallback": 0.5951666666666667,
       "capability_score": 7.142
     },
@@ -5211,8 +5210,8 @@
           "tau_banking": 0.420618556701031
         },
         "aa_speed": {
-          "median_tps": 50.116,
-          "ttft_s": 12.695
+          "median_tps": 51.867,
+          "ttft_s": 12.923
         }
       },
       "task_scores": {
@@ -5554,8 +5553,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 61.119,
-          "ttft_s": 1.74
+          "median_tps": 61.647,
+          "ttft_s": 1.279
         },
         "aider_polyglot": {
           "pass_rate_1": 22.2,
@@ -5787,8 +5786,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.359,
-      "capability_score": 4.308
+      "_fallback": 0.3585,
+      "capability_score": 4.302
     },
     {
       "id": "google/gemini-3-pro-image",
@@ -5828,8 +5827,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.4673333333333333,
-      "capability_score": 5.608
+      "_fallback": 0.4668333333333334,
+      "capability_score": 5.602
     },
     {
       "id": "cohere/north-mini-code:free",
@@ -5881,7 +5880,7 @@
         },
         "aa_speed": {
           "median_tps": 26.484,
-          "ttft_s": 0.314
+          "ttft_s": 0.315
         }
       },
       "task_scores": {
@@ -5920,9 +5919,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.308,
-        "completion": 0.968,
-        "cache_read": 0.0572
+        "prompt": 1.19,
+        "completion": 3.74,
+        "cache_read": 0.221
       },
       "benchmarks": {
         "aa": {
@@ -5945,8 +5944,8 @@
           "tau_banking": 0.167010309278351
         },
         "aa_speed": {
-          "median_tps": 117.728,
-          "ttft_s": 1.441
+          "median_tps": 122.052,
+          "ttft_s": 1.454
         }
       },
       "task_scores": {
@@ -6131,8 +6130,8 @@
           "tau_banking": 0.202061855670103
         },
         "aa_speed": {
-          "median_tps": 37.815,
-          "ttft_s": 1.172
+          "median_tps": 38.22,
+          "ttft_s": 1.19
         },
         "aider_polyglot": {
           "pass_rate_1": 20.4,
@@ -6286,7 +6285,7 @@
         },
         "aa_speed": {
           "median_tps": 65.714,
-          "ttft_s": 61.149
+          "ttft_s": 58.41
         }
       },
       "task_scores": {
@@ -6391,8 +6390,8 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 142.26,
-          "ttft_s": 0.82
+          "median_tps": 141.623,
+          "ttft_s": 0.896
         }
       },
       "task_scores": {
@@ -6620,8 +6619,8 @@
           "tau_banking": 0.175257731958763
         },
         "aa_speed": {
-          "median_tps": 56.418,
-          "ttft_s": 1.494
+          "median_tps": 56.313,
+          "ttft_s": 1.47
         }
       },
       "task_scores": {
@@ -6685,7 +6684,7 @@
           "tau_banking": 0.152577319587629
         },
         "aa_speed": {
-          "median_tps": 97.268,
+          "median_tps": 104.334,
           "ttft_s": 1.184
         }
       },
@@ -6791,8 +6790,8 @@
           "tau_banking": 0.119587628865979
         },
         "aa_speed": {
-          "median_tps": 126.68,
-          "ttft_s": 1.667
+          "median_tps": 124.803,
+          "ttft_s": 1.743
         }
       },
       "task_scores": {
@@ -7505,8 +7504,8 @@
         "open_weight": 0.4005
       },
       "_task": 0.4005,
-      "_fallback": 0.5178333333333334,
-      "capability_score": 6.214
+      "_fallback": 0.5173333333333333,
+      "capability_score": 6.208
     },
     {
       "id": "ibm-granite/granite-4.1-8b",
@@ -7557,8 +7556,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 126.861,
-          "ttft_s": 0.44
+          "median_tps": 127.492,
+          "ttft_s": 0.438
         }
       },
       "task_scores": {
@@ -7622,8 +7621,8 @@
           "tau_banking": 0.150515463917526
         },
         "aa_speed": {
-          "median_tps": 142.601,
-          "ttft_s": 0.687
+          "median_tps": 143.33,
+          "ttft_s": 0.671
         }
       },
       "task_scores": {
@@ -7826,8 +7825,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.8,
-        "completion": 14.0,
+        "prompt": 2.6,
+        "completion": 13.0,
         "cache_read": 0.29
       },
       "benchmarks": {},
@@ -8004,8 +8003,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.49100000000000005,
-      "capability_score": 5.892
+      "_fallback": 0.4905,
+      "capability_score": 5.886
     },
     {
       "id": "qwen/qwen3.6-flash",
@@ -8045,8 +8044,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.49100000000000005,
-      "capability_score": 5.892
+      "_fallback": 0.4905,
+      "capability_score": 5.886
     },
     {
       "id": "qwen/qwen3.6-35b-a3b",
@@ -8078,40 +8077,40 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 24.6,
-          "artificial_analysis_coding_index": 28.1,
+          "artificial_analysis_intelligence_index": 32.1,
+          "artificial_analysis_coding_index": 41.9,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.817,
-          "hle": 0.139,
+          "gpqa": 0.841,
+          "hle": 0.222,
           "livecodebench": null,
-          "scicode": 0.013,
+          "scicode": 0.358,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.361904761904762,
-          "lcr": 0.6,
-          "terminalbench_hard": 0.257575757575758,
-          "terminalbench_v2_1": 0.415730337078652,
-          "tau2": 0.850877192982456,
-          "tau_banking": 0.0536082474226804
+          "ifbench": 0.643537414965986,
+          "lcr": 0.666666666666667,
+          "terminalbench_hard": 0.348484848484849,
+          "terminalbench_v2_1": 0.449438202247191,
+          "tau2": 0.953216374269006,
+          "tau_banking": 0.0927835051546392
         },
         "aa_speed": {
-          "median_tps": 139.408,
-          "ttft_s": 1.077
+          "median_tps": 141.358,
+          "ttft_s": 1.075
         }
       },
       "task_scores": {
-        "overall": 0.2635,
-        "coding": 0.281,
-        "reasoning": 0.40066666666666667,
-        "math": 0.013,
-        "agents": 0.361904761904762,
-        "open_weight": 0.2635
+        "overall": 0.37,
+        "coding": 0.419,
+        "reasoning": 0.4613333333333333,
+        "math": 0.358,
+        "agents": 0.643537414965986,
+        "open_weight": 0.37
       },
-      "_task": 0.2635,
-      "_fallback": 0.45449999999999996,
-      "capability_score": 5.454
+      "_task": 0.37,
+      "_fallback": 0.454,
+      "capability_score": 5.448
     },
     {
       "id": "qwen/qwen3.6-max-preview",
@@ -8151,8 +8150,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.4295,
-      "capability_score": 5.154
+      "_fallback": 0.429,
+      "capability_score": 5.148
     },
     {
       "id": "qwen/qwen3.6-27b",
@@ -8171,16 +8170,16 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": true,
+      "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": "Qwen/Qwen3.6-27B",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.3,
-        "completion": 2.0,
-        "cache_read": 0.03
+        "prompt": 0.289,
+        "completion": 2.4,
+        "cache_read": null
       },
       "benchmarks": {
         "aa": {
@@ -8204,7 +8203,7 @@
         },
         "aa_speed": {
           "median_tps": 56.994,
-          "ttft_s": 1.465
+          "ttft_s": 1.449
         }
       },
       "task_scores": {
@@ -8216,8 +8215,8 @@
         "open_weight": 0.3895
       },
       "_task": 0.3895,
-      "_fallback": 0.45449999999999996,
-      "capability_score": 5.454
+      "_fallback": 0.429,
+      "capability_score": 5.148
     },
     {
       "id": "openai/gpt-5.5-pro",
@@ -8355,23 +8354,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 44.5,
-          "artificial_analysis_coding_index": 60.9,
+          "artificial_analysis_intelligence_index": 54.7,
+          "artificial_analysis_coding_index": 71.6,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.91,
-          "hle": 0.327,
+          "gpqa": 0.932,
+          "hle": 0.45,
           "livecodebench": null,
-          "scicode": 0.516,
+          "scicode": 0.559,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.643537414965986,
-          "lcr": 0.776666666666667,
-          "terminalbench_hard": 0.522727272727273,
-          "terminalbench_v2_1": 0.655430711610487,
-          "tau2": 0.839181286549708,
-          "tau_banking": 0.249484536082474
+          "ifbench": 0.716326530612245,
+          "lcr": 0.79,
+          "terminalbench_hard": 0.598484848484849,
+          "terminalbench_v2_1": 0.794007490636704,
+          "tau2": 0.929824561403509,
+          "tau_banking": 0.36701030927835
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -8379,14 +8378,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.527,
-        "coding": 0.609,
-        "reasoning": 0.5606666666666666,
-        "math": 0.516,
-        "agents": 0.643537414965986,
-        "open_weight": 0.527
+        "overall": 0.6315,
+        "coding": 0.716,
+        "reasoning": 0.643,
+        "math": 0.559,
+        "agents": 0.716326530612245,
+        "open_weight": 0.6315
       },
-      "_task": 0.527,
+      "_task": 0.6315,
       "_fallback": 0.5604166666666667,
       "capability_score": 6.725
     },
@@ -8455,9 +8454,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.168,
-        "completion": 2.336,
-        "cache_read": 0.09855
+        "prompt": 0.66,
+        "completion": 1.98,
+        "cache_read": 0.022
       },
       "benchmarks": {
         "aa": {
@@ -8480,7 +8479,7 @@
           "tau_banking": 0.395876288659794
         },
         "aa_speed": {
-          "median_tps": 77.741,
+          "median_tps": 78.478,
           "ttft_s": 1.2
         }
       },
@@ -8493,8 +8492,8 @@
         "open_weight": 0.61
       },
       "_task": 0.61,
-      "_fallback": 0.5186666666666667,
-      "capability_score": 6.224
+      "_fallback": 0.5181666666666667,
+      "capability_score": 6.218
     },
     {
       "id": "deepseek/deepseek-v4-flash",
@@ -8520,46 +8519,46 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.06006,
-        "completion": 0.12012,
-        "cache_read": 0.012012
+        "prompt": 0.08386,
+        "completion": 0.16772,
+        "cache_read": 0.016772
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 29.3,
-          "artificial_analysis_coding_index": null,
+          "artificial_analysis_intelligence_index": 51.8,
+          "artificial_analysis_coding_index": 69.1,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.716,
-          "hle": 0.078,
+          "gpqa": 0.908,
+          "hle": 0.386,
           "livecodebench": null,
-          "scicode": 0.373,
+          "scicode": 0.499,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.472108843537415,
-          "lcr": 0.373333333333333,
-          "terminalbench_hard": 0.340909090909091,
-          "terminalbench_v2_1": null,
-          "tau2": 0.944444444444445,
-          "tau_banking": null
+          "ifbench": null,
+          "lcr": 0.743333333333333,
+          "terminalbench_hard": null,
+          "terminalbench_v2_1": 0.786516853932584,
+          "tau2": null,
+          "tau_banking": 0.393814432989691
         },
         "aa_speed": {
-          "median_tps": 0.0,
-          "ttft_s": 0.0
+          "median_tps": 121.041,
+          "ttft_s": 0.819
         }
       },
       "task_scores": {
-        "overall": 0.293,
-        "coding": null,
-        "reasoning": 0.36233333333333334,
-        "math": 0.373,
-        "agents": 0.472108843537415,
-        "open_weight": 0.293
+        "overall": 0.6045,
+        "coding": 0.691,
+        "reasoning": 0.6040000000000001,
+        "math": 0.499,
+        "agents": null,
+        "open_weight": 0.6045
       },
-      "_task": 0.293,
-      "_fallback": 0.5186666666666667,
-      "capability_score": 6.224
+      "_task": 0.6045,
+      "_fallback": 0.5181666666666667,
+      "capability_score": 6.218
     },
     {
       "id": "inclusionai/ling-2.6-1t",
@@ -8721,38 +8720,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 42.9,
-          "artificial_analysis_coding_index": 60.2,
+          "artificial_analysis_intelligence_index": 28.4,
+          "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.866,
-          "hle": 0.357,
+          "gpqa": 0.762,
+          "hle": 0.148,
           "livecodebench": null,
-          "scicode": 0.502,
+          "scicode": 0.391,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.798639455782313,
-          "lcr": 0.776666666666667,
-          "terminalbench_hard": 0.431818181818182,
-          "terminalbench_v2_1": 0.651685393258427,
-          "tau2": 0.941520467836257,
-          "tau_banking": 0.0989690721649484
+          "ifbench": 0.427210884353741,
+          "lcr": 0.393333333333333,
+          "terminalbench_hard": 0.356060606060606,
+          "terminalbench_v2_1": null,
+          "tau2": 0.725146198830409,
+          "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 54.456,
-          "ttft_s": 2.39
+          "median_tps": 53.6,
+          "ttft_s": 2.452
         }
       },
       "task_scores": {
-        "overall": 0.5155,
-        "coding": 0.602,
-        "reasoning": 0.5506666666666666,
-        "math": 0.502,
-        "agents": 0.798639455782313,
-        "open_weight": 0.5155
+        "overall": 0.284,
+        "coding": null,
+        "reasoning": 0.39799999999999996,
+        "math": 0.391,
+        "agents": 0.427210884353741,
+        "open_weight": 0.284
       },
-      "_task": 0.5155,
+      "_task": 0.284,
       "_fallback": 0.5178333333333334,
       "capability_score": 6.214
     },
@@ -9007,9 +9006,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.5415,
-        "completion": 2.28,
-        "cache_read": 0.0912
+        "prompt": 0.95,
+        "completion": 4.0,
+        "cache_read": 0.16
       },
       "benchmarks": {
         "aa": {
@@ -9078,23 +9077,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 55,
-          "artificial_analysis_coding_index": 73.6,
+          "artificial_analysis_intelligence_index": 43.9,
+          "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.914,
-          "hle": 0.423,
+          "gpqa": 0.885,
+          "hle": 0.333,
           "livecodebench": null,
-          "scicode": 0.545,
+          "scicode": 0.501,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.586394557823129,
-          "lcr": 0.753333333333333,
-          "terminalbench_hard": 0.515151515151515,
-          "terminalbench_v2_1": 0.831460674157303,
-          "tau2": 0.885964912280702,
-          "tau_banking": 0.34639175257732
+          "ifbench": 0.436054421768707,
+          "lcr": 0.723333333333333,
+          "terminalbench_hard": 0.545454545454545,
+          "terminalbench_v2_1": null,
+          "tau2": 0.739766081871345,
+          "tau_banking": null
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -9102,14 +9101,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.643,
-        "coding": 0.736,
-        "reasoning": 0.629,
-        "math": 0.545,
-        "agents": 0.586394557823129,
-        "open_weight": 0.643
+        "overall": 0.439,
+        "coding": null,
+        "reasoning": 0.5523333333333333,
+        "math": 0.501,
+        "agents": 0.436054421768707,
+        "open_weight": 0.439
       },
-      "_task": 0.643,
+      "_task": 0.439,
       "_fallback": 0.511,
       "capability_score": 6.132
     },
@@ -9562,8 +9561,8 @@
           "tau_banking": 0.0577319587628866
         },
         "aa_speed": {
-          "median_tps": 186.734,
-          "ttft_s": 0.88
+          "median_tps": 186.213,
+          "ttft_s": 0.719
         }
       },
       "task_scores": {
@@ -9816,7 +9815,7 @@
         },
         "aa_speed": {
           "median_tps": 110.038,
-          "ttft_s": 1.042
+          "ttft_s": 1.033
         }
       },
       "task_scores": {
@@ -10073,23 +10072,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 16.8,
-          "artificial_analysis_coding_index": null,
+          "artificial_analysis_intelligence_index": 40.9,
+          "artificial_analysis_coding_index": 56.1,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.606,
-          "hle": 0.059,
+          "gpqa": 0.875,
+          "hle": 0.281,
           "livecodebench": null,
-          "scicode": 0.396,
+          "scicode": 0.499,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.38843537414966,
-          "lcr": 0.346666666666667,
-          "terminalbench_hard": 0.181818181818182,
-          "terminalbench_v2_1": null,
-          "tau2": 0.233918128654971,
-          "tau_banking": null
+          "ifbench": 0.73265306122449,
+          "lcr": 0.73,
+          "terminalbench_hard": 0.522727272727273,
+          "terminalbench_v2_1": 0.591760299625468,
+          "tau2": 0.833333333333333,
+          "tau_banking": 0.255670103092783
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -10097,14 +10096,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.168,
-        "coding": null,
-        "reasoning": 0.2776666666666667,
-        "math": 0.396,
-        "agents": 0.38843537414966,
-        "open_weight": 0.168
+        "overall": 0.485,
+        "coding": 0.561,
+        "reasoning": 0.5216666666666666,
+        "math": 0.499,
+        "agents": 0.73265306122449,
+        "open_weight": 0.485
       },
-      "_task": 0.168,
+      "_task": 0.485,
       "_fallback": 0.48891666666666667,
       "capability_score": 5.867
     },
@@ -10427,8 +10426,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 100.456,
-          "ttft_s": 0.422
+          "median_tps": 100.548,
+          "ttft_s": 0.43
         }
       },
       "task_scores": {
@@ -10704,8 +10703,8 @@
           "tau_banking": 0.0948453608247423
         },
         "aa_speed": {
-          "median_tps": 913.616,
-          "ttft_s": 3.082
+          "median_tps": 992.309,
+          "ttft_s": 3.1
         }
       },
       "task_scores": {
@@ -11027,38 +11026,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 32.8,
-          "artificial_analysis_coding_index": 45.7,
+          "artificial_analysis_intelligence_index": 28.2,
+          "artificial_analysis_coding_index": 43.3,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.857,
-          "hle": 0.252,
+          "gpqa": 0.827,
+          "hle": 0.159,
           "livecodebench": null,
-          "scicode": 0.42,
+          "scicode": 0.356,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.757142857142857,
-          "lcr": 0.703333333333333,
-          "terminalbench_hard": 0.310606060606061,
-          "terminalbench_v2_1": 0.47565543071161,
-          "tau2": 0.935672514619883,
-          "tau_banking": 0.152577319587629
+          "ifbench": 0.508163265306122,
+          "lcr": 0.616666666666667,
+          "terminalbench_hard": 0.295454545454545,
+          "terminalbench_v2_1": 0.471910112359551,
+          "tau2": 0.845029239766082,
+          "tau_banking": 0.103092783505155
         },
         "aa_speed": {
-          "median_tps": 134.099,
-          "ttft_s": 1.029
+          "median_tps": 154.578,
+          "ttft_s": 1.002
         }
       },
       "task_scores": {
-        "overall": 0.39249999999999996,
-        "coding": 0.457,
-        "reasoning": 0.47900000000000004,
-        "math": 0.42,
-        "agents": 0.757142857142857,
-        "open_weight": 0.39249999999999996
+        "overall": 0.3575,
+        "coding": 0.433,
+        "reasoning": 0.4226666666666667,
+        "math": 0.356,
+        "agents": 0.508163265306122,
+        "open_weight": 0.3575
       },
-      "_task": 0.39249999999999996,
+      "_task": 0.3575,
       "_fallback": 0.40166666666666667,
       "capability_score": 4.82
     },
@@ -11194,7 +11193,7 @@
         },
         "aa_speed": {
           "median_tps": 135.34,
-          "ttft_s": 37.197
+          "ttft_s": 36.332
         }
       },
       "task_scores": {
@@ -11552,8 +11551,8 @@
           "tau_banking": 0.134020618556701
         },
         "aa_speed": {
-          "median_tps": 94.613,
-          "ttft_s": 1.355
+          "median_tps": 96.22,
+          "ttft_s": 1.396
         }
       },
       "task_scores": {
@@ -11663,22 +11662,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 33.2,
+          "artificial_analysis_intelligence_index": 40.6,
           "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.666,
-          "hle": 0.076,
+          "gpqa": 0.82,
+          "hle": 0.293,
           "livecodebench": null,
-          "scicode": 0.383,
+          "scicode": 0.462,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.551700680272109,
-          "lcr": 0.433333333333333,
-          "terminalbench_hard": 0.393939393939394,
+          "ifbench": 0.72312925170068,
+          "lcr": 0.706666666666667,
+          "terminalbench_hard": 0.431818181818182,
           "terminalbench_v2_1": null,
-          "tau2": 0.973684210526316,
+          "tau2": 0.982456140350877,
           "tau_banking": null
         },
         "aa_speed": {
@@ -11687,14 +11686,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.332,
+        "overall": 0.406,
         "coding": null,
-        "reasoning": 0.35800000000000004,
-        "math": 0.383,
-        "agents": 0.551700680272109,
-        "open_weight": 0.332
+        "reasoning": 0.5063333333333333,
+        "math": 0.462,
+        "agents": 0.72312925170068,
+        "open_weight": 0.406
       },
-      "_task": 0.332,
+      "_task": 0.406,
       "_fallback": 0.4155,
       "capability_score": 4.986
     },
@@ -11919,7 +11918,7 @@
         },
         "aa_speed": {
           "median_tps": 132.197,
-          "ttft_s": 0.915
+          "ttft_s": 0.922
         }
       },
       "task_scores": {
@@ -11931,8 +11930,8 @@
         "open_weight": 0.28750000000000003
       },
       "_task": 0.28750000000000003,
-      "_fallback": 0.2504166666666667,
-      "capability_score": 3.005
+      "_fallback": 0.24991666666666668,
+      "capability_score": 2.999
     },
     {
       "id": "openrouter/free",
@@ -11971,7 +11970,7 @@
         "agents": null,
         "open_weight": null
       },
-      "capability_score": 4.626
+      "capability_score": 4.621
     },
     {
       "id": "stepfun/step-3.5-flash",
@@ -12035,8 +12034,8 @@
         "open_weight": 0.265
       },
       "_task": 0.265,
-      "_fallback": 0.3480833333333333,
-      "capability_score": 4.177
+      "_fallback": 0.3476666666666666,
+      "capability_score": 4.172
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -12068,23 +12067,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 30.1,
-          "artificial_analysis_coding_index": null,
+          "artificial_analysis_intelligence_index": 36,
+          "artificial_analysis_coding_index": 46.8,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.789,
-          "hle": 0.132,
+          "gpqa": 0.879,
+          "hle": 0.307,
           "livecodebench": null,
-          "scicode": 0.396,
+          "scicode": 0.49,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.436734693877551,
-          "lcr": 0.653333333333333,
-          "terminalbench_hard": 0.189393939393939,
-          "terminalbench_v2_1": null,
-          "tau2": 0.812865497076023,
-          "tau_banking": null
+          "ifbench": 0.702040816326531,
+          "lcr": 0.73,
+          "terminalbench_hard": 0.348484848484849,
+          "terminalbench_v2_1": 0.456928838951311,
+          "tau2": 0.95906432748538,
+          "tau_banking": 0.142268041237113
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -12092,16 +12091,16 @@
         }
       },
       "task_scores": {
-        "overall": 0.301,
-        "coding": null,
-        "reasoning": 0.4073333333333333,
-        "math": 0.396,
-        "agents": 0.436734693877551,
-        "open_weight": 0.301
+        "overall": 0.414,
+        "coding": 0.46799999999999997,
+        "reasoning": 0.5153333333333333,
+        "math": 0.49,
+        "agents": 0.702040816326531,
+        "open_weight": 0.414
       },
-      "_task": 0.301,
-      "_fallback": 0.4134166666666667,
-      "capability_score": 4.961
+      "_task": 0.414,
+      "_fallback": 0.41291666666666665,
+      "capability_score": 4.955
     },
     {
       "id": "upstage/solar-pro-3",
@@ -12152,7 +12151,7 @@
           "tau_banking": 0.0865979381443299
         },
         "aa_speed": {
-          "median_tps": 154.682,
+          "median_tps": 157.883,
           "ttft_s": 1.157
         }
       },
@@ -12165,8 +12164,8 @@
         "open_weight": 0.1535
       },
       "_task": 0.1535,
-      "_fallback": 0.4025,
-      "capability_score": 4.83
+      "_fallback": 0.40199999999999997,
+      "capability_score": 4.824
     },
     {
       "id": "minimax/minimax-m2-her",
@@ -12362,22 +12361,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 15.6,
+          "artificial_analysis_intelligence_index": 23.3,
           "artificial_analysis_coding_index": null,
           "artificial_analysis_math_index": null,
           "mmlu_pro": null,
-          "gpqa": 0.452,
-          "hle": 0.05,
+          "gpqa": 0.581,
+          "hle": 0.076,
           "livecodebench": null,
-          "scicode": 0.255,
+          "scicode": 0.337,
           "math_500": null,
           "aime": null,
           "aime_25": null,
-          "ifbench": 0.462585034013605,
-          "lcr": 0.183333333333333,
-          "terminalbench_hard": 0.0378787878787879,
+          "ifbench": 0.608163265306122,
+          "lcr": 0.406666666666667,
+          "terminalbench_hard": 0.21969696969697,
           "terminalbench_v2_1": null,
-          "tau2": 0.91812865497076,
+          "tau2": 0.988304093567251,
           "tau_banking": null
         },
         "aa_speed": {
@@ -12386,14 +12385,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.156,
+        "overall": 0.233,
         "coding": null,
-        "reasoning": 0.21933333333333335,
-        "math": 0.255,
-        "agents": 0.462585034013605,
-        "open_weight": 0.156
+        "reasoning": 0.29666666666666663,
+        "math": 0.337,
+        "agents": 0.608163265306122,
+        "open_weight": 0.233
       },
-      "_task": 0.156,
+      "_task": 0.233,
       "_fallback": 0.4048333333333333,
       "capability_score": 4.858
     },
@@ -12606,8 +12605,8 @@
         "open_weight": 0.321
       },
       "_task": 0.5740000000000001,
-      "_fallback": 0.39266666666666666,
-      "capability_score": 4.712
+      "_fallback": 0.3921666666666667,
+      "capability_score": 4.706
     },
     {
       "id": "z-ai/glm-4.7",
@@ -12782,7 +12781,7 @@
       "price_per_million": {
         "prompt": 0.05,
         "completion": 0.2,
-        "cache_read": 0.025
+        "cache_read": 0.03
       },
       "benchmarks": {
         "aa": {
@@ -12805,8 +12804,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 198.985,
-          "ttft_s": 0.373
+          "median_tps": 203.269,
+          "ttft_s": 0.374
         }
       },
       "task_scores": {
@@ -13015,23 +13014,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 38.9,
+          "artificial_analysis_intelligence_index": 26.5,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 96.7,
-          "mmlu_pro": 0.859,
-          "gpqa": 0.864,
-          "hle": 0.267,
-          "livecodebench": 0.894,
-          "scicode": 0.462,
+          "artificial_analysis_math_index": 51,
+          "mmlu_pro": 0.814,
+          "gpqa": 0.712,
+          "hle": 0.08,
+          "livecodebench": 0.669,
+          "scicode": 0.404,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.966666666666667,
-          "ifbench": 0.652380952380953,
-          "lcr": 0.69,
-          "terminalbench_hard": 0.431818181818182,
+          "aime_25": 0.51,
+          "ifbench": 0.474149659863946,
+          "lcr": 0.416666666666667,
+          "terminalbench_hard": 0.318181818181818,
           "terminalbench_v2_1": null,
-          "tau2": 0.742690058479532,
-          "tau_banking": null
+          "tau2": 0.464912280701754,
+          "tau_banking": 0.111340206185567
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -13039,14 +13038,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.678,
-        "coding": 0.894,
-        "reasoning": 0.5066666666666667,
-        "math": 0.7145,
-        "agents": 0.652380952380953,
-        "open_weight": 0.389
+        "overall": 0.3875,
+        "coding": 0.669,
+        "reasoning": 0.35233333333333333,
+        "math": 0.457,
+        "agents": 0.474149659863946,
+        "open_weight": 0.265
       },
-      "_task": 0.678,
+      "_task": 0.3875,
       "_fallback": 0.403,
       "capability_score": 4.836
     },
@@ -13234,7 +13233,7 @@
         "agents": null,
         "open_weight": null
       },
-      "capability_score": 0.736
+      "capability_score": 0.731
     },
     {
       "id": "openai/gpt-5.1-codex-max",
@@ -13608,22 +13607,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 35.6,
+          "artificial_analysis_intelligence_index": 41.9,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 62.7,
-          "mmlu_pro": 0.889,
-          "gpqa": 0.81,
-          "hle": 0.132,
-          "livecodebench": 0.738,
-          "scicode": 0.47,
+          "artificial_analysis_math_index": 91.3,
+          "mmlu_pro": 0.895,
+          "gpqa": 0.866,
+          "hle": 0.301,
+          "livecodebench": 0.871,
+          "scicode": 0.495,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.626666666666667,
-          "ifbench": 0.429931972789116,
-          "lcr": 0.673333333333333,
-          "terminalbench_hard": 0.409090909090909,
+          "aime_25": 0.913333333333333,
+          "ifbench": 0.579591836734694,
+          "lcr": 0.76,
+          "terminalbench_hard": 0.46969696969697,
           "terminalbench_v2_1": null,
-          "tau2": 0.862573099415205,
+          "tau2": 0.894736842105263,
           "tau_banking": null
         },
         "aa_speed": {
@@ -13632,14 +13631,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.49150000000000005,
-        "coding": 0.738,
-        "reasoning": 0.4326666666666667,
-        "math": 0.5485,
-        "agents": 0.429931972789116,
-        "open_weight": 0.35600000000000004
+        "overall": 0.6659999999999999,
+        "coding": 0.871,
+        "reasoning": 0.5286666666666666,
+        "math": 0.704,
+        "agents": 0.579591836734694,
+        "open_weight": 0.419
       },
-      "_task": 0.49150000000000005,
+      "_task": 0.6659999999999999,
       "_fallback": 0.379,
       "capability_score": 4.548
     },
@@ -13868,23 +13867,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 37.5,
-          "artificial_analysis_coding_index": 49.4,
-          "artificial_analysis_math_index": 94,
-          "mmlu_pro": 0.87,
-          "gpqa": 0.873,
-          "hle": 0.285,
-          "livecodebench": 0.868,
-          "scicode": 0.433,
+          "artificial_analysis_intelligence_index": 20.7,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 38,
+          "mmlu_pro": 0.801,
+          "gpqa": 0.643,
+          "hle": 0.053,
+          "livecodebench": 0.494,
+          "scicode": 0.365,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.94,
-          "ifbench": 0.728571428571429,
-          "lcr": 0.766666666666667,
-          "terminalbench_hard": 0.454545454545455,
-          "terminalbench_v2_1": 0.524344569288389,
-          "tau2": 0.818713450292398,
-          "tau_banking": 0.158762886597938
+          "aime_25": 0.38,
+          "ifbench": 0.431972789115646,
+          "lcr": 0.443333333333333,
+          "terminalbench_hard": 0.227272727272727,
+          "terminalbench_v2_1": null,
+          "tau2": 0.464912280701754,
+          "tau_banking": null
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -13892,14 +13891,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.603,
-        "coding": 0.681,
-        "reasoning": 0.511,
-        "math": 0.6865,
-        "agents": 0.728571428571429,
-        "open_weight": 0.4345
+        "overall": 0.2935,
+        "coding": 0.494,
+        "reasoning": 0.301,
+        "math": 0.3725,
+        "agents": 0.431972789115646,
+        "open_weight": 0.207
       },
-      "_task": 0.603,
+      "_task": 0.2935,
       "_fallback": 0.39066666666666666,
       "capability_score": 4.688
     },
@@ -14080,22 +14079,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 19.7,
+          "artificial_analysis_intelligence_index": 33.5,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 57,
-          "mmlu_pro": 0.824,
-          "gpqa": 0.766,
-          "hle": 0.074,
-          "livecodebench": 0.556,
-          "scicode": 0.345,
-          "math_500": 0.971333333333333,
-          "aime": 0.693333333333333,
-          "aime_25": 0.57,
-          "ifbench": 0.414965986394558,
-          "lcr": 0.53,
-          "terminalbench_hard": 0.159090909090909,
+          "artificial_analysis_math_index": 94.7,
+          "mmlu_pro": 0.848,
+          "gpqa": 0.838,
+          "hle": 0.238,
+          "livecodebench": 0.853,
+          "scicode": 0.424,
+          "math_500": null,
+          "aime": null,
+          "aime_25": 0.946666666666667,
+          "ifbench": 0.680952380952381,
+          "lcr": 0.703333333333333,
+          "terminalbench_hard": 0.310606060606061,
           "terminalbench_v2_1": null,
-          "tau2": 0.611111111111111,
+          "tau2": 0.929824561403509,
           "tau_banking": null
         },
         "aa_speed": {
@@ -14104,14 +14103,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.38349999999999995,
-        "coding": 0.556,
-        "reasoning": 0.43258333333333326,
-        "math": 0.6449166666666666,
-        "agents": 0.414965986394558,
-        "open_weight": 0.19699999999999998
+        "overall": 0.641,
+        "coding": 0.853,
+        "reasoning": 0.4703333333333333,
+        "math": 0.6855,
+        "agents": 0.680952380952381,
+        "open_weight": 0.335
       },
-      "_task": 0.19699999999999998,
+      "_task": 0.335,
       "_fallback": 0.3759166666666667,
       "capability_score": 4.511
     },
@@ -14488,8 +14487,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.08225,
-      "capability_score": 0.987
+      "_fallback": 0.08183333333333333,
+      "capability_score": 0.982
     },
     {
       "id": "openai/gpt-5-image-mini",
@@ -14848,8 +14847,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.3789166666666666,
-      "capability_score": 4.547
+      "_fallback": 0.3785,
+      "capability_score": 4.542
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -14913,8 +14912,8 @@
         "open_weight": 0.099
       },
       "_task": 0.411,
-      "_fallback": 0.21225000000000002,
-      "capability_score": 2.547
+      "_fallback": 0.21183333333333332,
+      "capability_score": 2.542
     },
     {
       "id": "openai/gpt-5-pro",
@@ -15224,8 +15223,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.13841666666666666,
-      "capability_score": 1.661
+      "_fallback": 0.13799999999999998,
+      "capability_score": 1.656
     },
     {
       "id": "relace/relace-apply-3",
@@ -15306,8 +15305,8 @@
         "open_weight": null
       },
       "_task": null,
-      "_fallback": 0.3620833333333333,
-      "capability_score": 4.345
+      "_fallback": 0.36158333333333337,
+      "capability_score": 4.339
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -15326,16 +15325,16 @@
       "supports_reasoning": false,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": "2025-03-31",
       "hugging_face_id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.26,
-        "completion": 1.04,
-        "cache_read": null
+        "prompt": 0.21,
+        "completion": 1.9,
+        "cache_read": 0.1
       },
       "benchmarks": {
         "aa": {
@@ -15371,8 +15370,8 @@
         "open_weight": 0.14400000000000002
       },
       "_task": 0.42550000000000004,
-      "_fallback": 0.20633333333333334,
-      "capability_score": 2.476
+      "_fallback": 0.23083333333333333,
+      "capability_score": 2.77
     },
     {
       "id": "qwen/qwen3-max",
@@ -15869,38 +15868,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 8.7,
+          "artificial_analysis_intelligence_index": 7.2,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 69.7,
-          "mmlu_pro": 0.742,
-          "gpqa": 0.57,
-          "hle": 0.049,
-          "livecodebench": 0.724,
-          "scicode": 0.22,
+          "artificial_analysis_math_index": 62.3,
+          "mmlu_pro": 0.739,
+          "gpqa": 0.557,
+          "hle": 0.046,
+          "livecodebench": 0.701,
+          "scicode": 0.209,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.696666666666667,
-          "ifbench": 0.276190476190476,
-          "lcr": 0.23,
-          "terminalbench_hard": 0.0151515151515152,
+          "aime_25": 0.623333333333333,
+          "ifbench": 0.271428571428571,
+          "lcr": 0.26,
+          "terminalbench_hard": 0.00757575757575758,
           "terminalbench_v2_1": null,
-          "tau2": 0.219298245614035,
+          "tau2": 0.233918128654971,
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 176.383,
-          "ttft_s": 3.719
+          "median_tps": 170.519,
+          "ttft_s": 1.43
         }
       },
       "task_scores": {
-        "overall": 0.392,
-        "coding": 0.724,
-        "reasoning": 0.2353333333333333,
-        "math": 0.4585,
-        "agents": 0.276190476190476,
-        "open_weight": 0.087
+        "overall": 0.34750000000000003,
+        "coding": 0.701,
+        "reasoning": 0.225,
+        "math": 0.416,
+        "agents": 0.271428571428571,
+        "open_weight": 0.07200000000000001
       },
-      "_task": 0.087,
+      "_task": 0.07200000000000001,
       "_fallback": 0.3531666666666667,
       "capability_score": 4.238
     },
@@ -16342,22 +16341,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 34.6,
+          "artificial_analysis_intelligence_index": 31.9,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 91.7,
-          "mmlu_pro": 0.867,
-          "gpqa": 0.842,
-          "hle": 0.254,
-          "livecodebench": 0.703,
-          "scicode": 0.411,
-          "math_500": 0.991333333333333,
-          "aime": 0.916666666666667,
-          "aime_25": 0.916666666666667,
-          "ifbench": 0.706122448979592,
-          "lcr": 0.763333333333333,
-          "terminalbench_hard": 0.378787878787879,
+          "artificial_analysis_math_index": 83,
+          "mmlu_pro": 0.86,
+          "gpqa": 0.808,
+          "hle": 0.196,
+          "livecodebench": 0.763,
+          "scicode": 0.391,
+          "math_500": 0.987333333333333,
+          "aime": 0.83,
+          "aime_25": 0.83,
+          "ifbench": 0.665986394557823,
+          "lcr": 0.636666666666667,
+          "terminalbench_hard": 0.265151515151515,
           "terminalbench_v2_1": null,
-          "tau2": 0.865497076023392,
+          "tau2": 0.842105263157895,
           "tau_banking": null
         },
         "aa_speed": {
@@ -16366,14 +16365,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.6315000000000001,
-        "coding": 0.703,
-        "reasoning": 0.5896666666666667,
-        "math": 0.809,
-        "agents": 0.706122448979592,
-        "open_weight": 0.34600000000000003
+        "overall": 0.5745,
+        "coding": 0.763,
+        "reasoning": 0.53825,
+        "math": 0.7595833333333333,
+        "agents": 0.665986394557823,
+        "open_weight": 0.319
       },
-      "_task": 0.6315000000000001,
+      "_task": 0.5745,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -16554,22 +16553,22 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 20.1,
+          "artificial_analysis_intelligence_index": 19.2,
           "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 83.7,
-          "mmlu_pro": 0.78,
-          "gpqa": 0.676,
-          "hle": 0.095,
-          "livecodebench": 0.789,
-          "scicode": 0.366,
+          "artificial_analysis_math_index": 78.3,
+          "mmlu_pro": 0.772,
+          "gpqa": 0.67,
+          "hle": 0.087,
+          "livecodebench": 0.763,
+          "scicode": 0.338,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.836666666666667,
-          "ifbench": 0.675510204081633,
-          "lcr": 0.436666666666667,
-          "terminalbench_hard": 0.121212121212121,
+          "aime_25": 0.783333333333333,
+          "ifbench": 0.659183673469388,
+          "lcr": 0.423333333333333,
+          "terminalbench_hard": 0.174242424242424,
           "terminalbench_v2_1": null,
-          "tau2": 0.365497076023392,
+          "tau2": 0.304093567251462,
           "tau_banking": null
         },
         "aa_speed": {
@@ -16578,14 +16577,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.519,
-        "coding": 0.789,
-        "reasoning": 0.324,
-        "math": 0.6015,
-        "agents": 0.675510204081633,
-        "open_weight": 0.201
+        "overall": 0.48749999999999993,
+        "coding": 0.763,
+        "reasoning": 0.31633333333333336,
+        "math": 0.5605,
+        "agents": 0.659183673469388,
+        "open_weight": 0.192
       },
-      "_task": 0.519,
+      "_task": 0.48749999999999993,
       "_fallback": 0.39166666666666666,
       "capability_score": 4.7
     },
@@ -16679,8 +16678,8 @@
           "tau_banking": 0.0288659793814433
         },
         "aa_speed": {
-          "median_tps": 238.457,
-          "ttft_s": 0.554
+          "median_tps": 242.382,
+          "ttft_s": 0.533
         },
         "aider_polyglot": {
           "pass_rate_1": 13.8,
@@ -16732,38 +16731,38 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 14.4,
-          "artificial_analysis_coding_index": null,
-          "artificial_analysis_math_index": 62.3,
-          "mmlu_pro": 0.718,
-          "gpqa": 0.611,
-          "hle": 0.053,
-          "livecodebench": 0.652,
-          "scicode": 0.34,
+          "artificial_analysis_intelligence_index": 15.2,
+          "artificial_analysis_coding_index": 20.7,
+          "artificial_analysis_math_index": 89.3,
+          "mmlu_pro": 0.748,
+          "gpqa": 0.688,
+          "hle": 0.11,
+          "livecodebench": 0.777,
+          "scicode": 0.344,
           "math_500": null,
           "aime": null,
-          "aime_25": 0.623333333333333,
-          "ifbench": 0.578231292517007,
-          "lcr": 0.306666666666667,
-          "terminalbench_hard": 0.0454545454545455,
-          "terminalbench_v2_1": null,
-          "tau2": 0.502923976608187,
-          "tau_banking": null
+          "aime_25": 0.893333333333333,
+          "ifbench": 0.651020408163265,
+          "lcr": 0.333333333333333,
+          "terminalbench_hard": 0.106060606060606,
+          "terminalbench_v2_1": 0.138576779026217,
+          "tau2": 0.60233918128655,
+          "tau_banking": 0.0701030927835052
         },
         "aa_speed": {
-          "median_tps": 203.264,
-          "ttft_s": 0.753
+          "median_tps": 168.164,
+          "ttft_s": 0.543
         }
       },
       "task_scores": {
-        "overall": 0.3835,
-        "coding": 0.652,
-        "reasoning": 0.26933333333333337,
-        "math": 0.48150000000000004,
-        "agents": 0.578231292517007,
-        "open_weight": 0.14400000000000002
+        "overall": 0.41733333333333333,
+        "coding": 0.492,
+        "reasoning": 0.31666666666666665,
+        "math": 0.6185,
+        "agents": 0.651020408163265,
+        "open_weight": 0.1795
       },
-      "_task": 0.3835,
+      "_task": 0.41733333333333333,
       "_fallback": 0.36925,
       "capability_score": 4.431
     },
@@ -19432,8 +19431,8 @@
           "tau_banking": 0.0371134020618557
         },
         "aa_speed": {
-          "median_tps": 116.092,
-          "ttft_s": 0.563
+          "median_tps": 117.218,
+          "ttft_s": 0.574
         },
         "aider_polyglot": {
           "pass_rate_1": 4.4,
@@ -19504,8 +19503,8 @@
           "tau_banking": 0.0329896907216495
         },
         "aa_speed": {
-          "median_tps": 134.11,
-          "ttft_s": 0.568
+          "median_tps": 135.604,
+          "ttft_s": 0.569
         }
       },
       "task_scores": {
@@ -19846,8 +19845,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 59.547,
-          "ttft_s": 0.345
+          "median_tps": 60.073,
+          "ttft_s": 0.315
         },
         "aider_polyglot": {
           "pass_rate_1": 2.2,
@@ -19918,8 +19917,8 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 94.396,
-          "ttft_s": 13.269
+          "median_tps": 94.534,
+          "ttft_s": 27.737
         }
       },
       "task_scores": {
@@ -20290,23 +20289,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 19.2,
-          "artificial_analysis_coding_index": null,
+          "artificial_analysis_intelligence_index": 15.7,
+          "artificial_analysis_coding_index": 16.3,
           "artificial_analysis_math_index": null,
-          "mmlu_pro": 0.791,
-          "gpqa": 0.748,
-          "hle": 0.079,
-          "livecodebench": 0.717,
-          "scicode": 0.399,
-          "math_500": 0.973333333333333,
-          "aime": 0.77,
+          "mmlu_pro": 0.802,
+          "gpqa": 0.773,
+          "hle": 0.12,
+          "livecodebench": 0.734,
+          "scicode": 0.398,
+          "math_500": 0.984666666666667,
+          "aime": 0.86,
           "aime_25": null,
-          "ifbench": null,
-          "lcr": null,
-          "terminalbench_hard": 0.0681818181818182,
-          "terminalbench_v2_1": null,
-          "tau2": 0.286549707602339,
-          "tau_banking": null
+          "ifbench": 0.671428571428571,
+          "lcr": 0.42,
+          "terminalbench_hard": 0.0606060606060606,
+          "terminalbench_v2_1": 0.0449438202247191,
+          "tau2": 0.312865497076023,
+          "tau_banking": 0.0515463917525773
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -20314,14 +20313,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.192,
-        "coding": 0.717,
-        "reasoning": 0.44725,
-        "math": 0.714111111111111,
-        "agents": null,
-        "open_weight": 0.192
+        "overall": 0.16,
+        "coding": 0.4485,
+        "reasoning": 0.47750000000000004,
+        "math": 0.7475555555555556,
+        "agents": 0.671428571428571,
+        "open_weight": 0.16
       },
-      "_task": null,
+      "_task": 0.671428571428571,
       "_fallback": 0.375,
       "capability_score": 4.5
     },
@@ -20772,23 +20771,23 @@
       },
       "benchmarks": {
         "aa": {
-          "artificial_analysis_intelligence_index": 18.6,
-          "artificial_analysis_coding_index": 24.6,
-          "artificial_analysis_math_index": 68,
-          "mmlu_pro": 0.844,
-          "gpqa": 0.708,
-          "hle": 0.085,
-          "livecodebench": 0.617,
-          "scicode": 0.357,
-          "math_500": 0.966,
-          "aime": 0.683333333333333,
-          "aime_25": 0.68,
-          "ifbench": 0.389795918367347,
-          "lcr": 0.56,
-          "terminalbench_hard": 0.0606060606060606,
-          "terminalbench_v2_1": 0.191011235955056,
-          "tau2": 0.114035087719298,
-          "tau_banking": 0.0639175257731959
+          "artificial_analysis_intelligence_index": 20.4,
+          "artificial_analysis_coding_index": null,
+          "artificial_analysis_math_index": 76,
+          "mmlu_pro": 0.849,
+          "gpqa": 0.813,
+          "hle": 0.158,
+          "livecodebench": 0.77,
+          "scicode": 0.403,
+          "math_500": 0.982666666666667,
+          "aime": 0.893333333333333,
+          "aime_25": 0.76,
+          "ifbench": 0.395918367346939,
+          "lcr": 0.566666666666667,
+          "terminalbench_hard": 0.159090909090909,
+          "terminalbench_v2_1": null,
+          "tau2": 0.365497076023392,
+          "tau_banking": null
         },
         "aa_speed": {
           "median_tps": 0.0,
@@ -20803,14 +20802,14 @@
         }
       },
       "task_scores": {
-        "overall": 0.3706666666666667,
-        "coding": 0.37799999999999995,
-        "reasoning": 0.41558333333333325,
-        "math": 0.6715833333333332,
-        "agents": 0.389795918367347,
-        "open_weight": 0.21600000000000003
+        "overall": 0.482,
+        "coding": 0.5205,
+        "reasoning": 0.5170833333333332,
+        "math": 0.75975,
+        "agents": 0.395918367346939,
+        "open_weight": 0.204
       },
-      "_task": 0.21600000000000003,
+      "_task": 0.204,
       "_fallback": 0.33866666666666667,
       "capability_score": 4.064
     },
@@ -20904,7 +20903,7 @@
           "tau_banking": null
         },
         "aa_speed": {
-          "median_tps": 31.158,
+          "median_tps": 31.639,
           "ttft_s": 1.129
         }
       },

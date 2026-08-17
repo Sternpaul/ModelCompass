@@ -1,22 +1,7 @@
 {
-  "meta": {
-    "generated_at": "2026-08-17T04:28:02Z",
-    "model_count": 408,
-    "synthetic_excluded": 6,
-    "update_cadence": "daily (GitHub Actions)",
-    "secret_env": "ARTIFICIAL_ANALYSIS_KEY",
-    "sources": {
-      "openrouter": "ok (414 raw)",
-      "artificial_analysis": "ok (608 models)",
-      "aider_polyglot": "ok (54 models)"
-    },
-    "coverage": {
-      "with_aa_benchmarks": 150,
-      "with_aider_coding": 36
-    },
-    "disclaimer": "Recommended lists are transparent weighted blends of REAL benchmark values (Artificial Analysis indices + raw benchmarks, aider polyglot coding). Models missing a benchmark contribute null (not zero). Verify high-stakes choices against primary sources.",
-    "methodology": "Each task score = weighted mean of available normalized 0-1 benchmarks (AA indices /100; GPQA/HLE/LiveCodeBench/AIME/Math-500/SciCode already 0-1; aider pass_rate /100). Sources merged via normalized provider+slug (AA dots->hyphens, reasoning-effort suffixes tolerated), then fuzzy name match. Only routing aliases (:batch/:free/:thinking) collapse in shortlists; identity tags (-latest, -0813, -v2) stay distinct."
-  },
+  "week": "2026-W34",
+  "generated_at": "2026-08-17T04:28:02Z",
+  "model_count": 408,
   "recommended": {
     "best_overall": [
       {

@@ -1,6 +1,6 @@
 # ModelCompass (machine-readable)
 
-_Generated 2026-08-16T22:47:32Z — 408 models. Daily GitHub Action._
+_Generated 2026-08-17T04:28:02Z — 408 models. Daily GitHub Action._
 
 ## Sources
 
@@ -20,64 +20,64 @@ _Generated 2026-08-16T22:47:32Z — 408 models. Daily GitHub Action._
 - `anthropic/claude-fable-5` (score 0.693)
 - `x-ai/grok-4.6` (score 0.6885)
 - `openai/gpt-5-codex:batch` (score 0.6785)
-- `openai/gpt-5.2` (score 0.678)
-- `openai/gpt-5.6-sol` (score 0.6725)
+- `anthropic/claude-opus-4.5` (score 0.666)
+- `anthropic/claude-opus-5` (score 0.6645)
 - `google/gemini-3.7-flash` (score 0.6605)
 - `anthropic/claude-opus-4.8` (score 0.658)
 - `openai/gpt-5.1-codex-max` (score 0.6565)
 
 ### best_coding
 
-- `openai/gpt-5.2` (score 0.894)
+- `anthropic/claude-opus-4.5` (score 0.871)
+- `moonshotai/kimi-k2-thinking` (score 0.853)
 - `openai/gpt-5.1-codex-max` (score 0.849)
 - `openai/gpt-5-codex:batch` (score 0.84)
 - `openai/gpt-5.1-codex-mini` (score 0.836)
 - `minimax/minimax-m2` (score 0.826)
 - `minimax/minimax-m2.1` (score 0.81)
-- `openai/gpt-5-nano` (score 0.789)
-- `openai/gpt-5.6-sol` (score 0.772)
+- `qwen/qwen3-max` (score 0.767)
 
 ### best_reasoning
 
 - `anthropic/claude-fable-5` (score 0.7007)
+- `anthropic/claude-opus-5` (score 0.6727)
 - `x-ai/grok-4.6` (score 0.6623)
 - `google/gemini-3.7-flash` (score 0.6613)
 - `anthropic/claude-opus-4.8` (score 0.66)
-- `openai/gpt-5.6-sol` (score 0.6537)
 - `qwen/qwen3.8-max` (score 0.646)
 - `qwen/qwen3.8-2.4t-a95b` (score 0.6453)
-- `meta/muse-spark-1.2` (score 0.6423)
+- `openai/gpt-5.5` (score 0.643)
 
 ### best_math
 
 - `perplexity/sonar-reasoning-pro` (score 0.8737)
 - `openai/o4-mini-high` (score 0.8252)
-- `openai/gpt-5` (score 0.809)
 - `openai/o3` (score 0.7971)
 - `google/gemini-2.5-pro` (score 0.7897)
+- `deepseek/deepseek-r1` (score 0.7598)
+- `openai/gpt-5` (score 0.7596)
+- `openai/o3-mini-high` (score 0.7476)
 - `z-ai/glm-4.5` (score 0.7342)
-- `openai/gpt-5.2` (score 0.7145)
-- `openai/o3-mini-high` (score 0.7141)
 
 ### best_agents
 
 - `minimax/minimax-m3` (score 0.8286)
 - `x-ai/grok-4.3` (score 0.8129)
 - `qwen/qwen3.7-max` (score 0.8054)
-- `xiaomi/mimo-v2.5-pro` (score 0.7986)
 - `qwen/qwen3.5-397b-a17b` (score 0.7878)
 - `qwen/qwen3.7-plus` (score 0.7796)
 - `openai/gpt-5.2-codex` (score 0.7762)
 - `google/gemini-3.1-flash-lite-preview` (score 0.7721)
+- `google/gemini-3.1-pro-preview` (score 0.7714)
 
 ### best_open_weight
 
 - `qwen/qwen3.8-2.4t-a95b` (score 0.648)
 - `deepseek/deepseek-v4-pro` (score 0.61)
+- `deepseek/deepseek-v4-flash` (score 0.6045)
 - `moonshotai/kimi-k3` (score 0.6015)
 - `minimax/minimax-m3` (score 0.52)
 - `moonshotai/kimi-k2.7-code` (score 0.519)
-- `xiaomi/mimo-v2.5-pro` (score 0.5155)
 - `nex-agi/nex-n2-pro` (score 0.504)
 - `z-ai/glm-5.1` (score 0.484)
 
@@ -86,8 +86,8 @@ _Generated 2026-08-16T22:47:32Z — 408 models. Daily GitHub Action._
 - `anthropic/claude-fable-5` (score 0.693)
 - `x-ai/grok-4.6` (score 0.6885)
 - `openai/gpt-5-codex:batch` (score 0.6785)
-- `openai/gpt-5.2` (score 0.678)
-- `openai/gpt-5.6-sol` (score 0.6725)
+- `anthropic/claude-opus-4.5` (score 0.666)
+- `anthropic/claude-opus-5` (score 0.6645)
 - `google/gemini-3.7-flash` (score 0.6605)
 - `anthropic/claude-opus-4.8` (score 0.658)
 - `openai/gpt-5.1-codex-max` (score 0.6565)
@@ -98,7 +98,7 @@ _Generated 2026-08-16T22:47:32Z — 408 models. Daily GitHub Action._
 - `nex-agi/nex-n2-mini`
 - `openai/gpt-5-nano:batch`
 - `upstage/solar-pro4` (score 0.4715)
-- `openai/gpt-oss-20b` (score 0.3835)
+- `openai/gpt-oss-20b` (score 0.4173)
 - `openai/gpt-oss-120b` (score 0.3427)
 - `qwen/qwen3.7-flash`
 - `nvidia/nemotron-3-nano-30b-a3b` (score 0.1025)
