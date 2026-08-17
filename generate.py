@@ -434,20 +434,30 @@ ARENA_SLUGS = [
 
 
 def discover_arena_slugs():
-    """Return the known arena.ai leaderboard slugs.
+    """Return the set of arena.ai leaderboard slugs to fetch.
 
-    The overview page is a JS SPA that no longer exposes stable per-board
-    links, so we use a curated list and fetch each board live. (A scrape-based
-    fallback runs first in case arena.ai changes its URL scheme.)
+    Strategy (defense in depth, NOT purely hardcoded):
+      1. Scrape the live overview page via Jina Reader first. This auto-discovers
+         any NEW board arena.ai adds, so we pick up changes without code edits.
+      2. Union with a curated fallback list (ARENA_SLUGS) so that if the overview
+         page's format changes / the scrape returns nothing, we never silently
+         regress to zero boards.
     """
-    slugs = set()
+    scraped = set()
     try:
         text = fetch_text(f"{JINA_BASE}{ARENA_BASE}")
-        slugs.update(re.findall(r"arena\.ai/leaderboard/([a-z][a-z0-9-]*)", text))
+        scraped.update(re.findall(r"arena\.ai/leaderboard/([a-z][a-z0-9-]*)", text))
     except Exception as e:
-        log(f"Arena slug scrape failed ({e}); using curated list")
-    slugs.update(ARENA_SLUGS)
-    return sorted(slugs)
+        log(f"Arena slug scrape failed ({e}); using curated fallback")
+    if scraped:
+        log(f"Arena slug scrape found {len(scraped)} boards (live)")
+    else:
+        log("Arena slug scrape found 0 — using curated fallback list")
+    new_boards = sorted(scraped - set(ARENA_SLUGS))
+    if new_boards:
+        log(f"Arena: {len(new_boards)} new board(s) not in curated list: {new_boards}")
+    slugs = set(ARENA_SLUGS) | scraped
+    return sorted(slugs), sorted(scraped)
 
 
 # ---------------------------------------------------------------------------
@@ -1093,14 +1103,17 @@ def main():
     aa, aa_note = fetch_artificial_analysis(args.aa_key)
     log(f"Artificial Analysis: {aa_note}")
 
-    # 3. arena.ai — known leaderboards (fetched live), scrape-discovery fallback
+    # 3. arena.ai — scrape-discovered live, curated fallback if scrape fails
     arena_data = {}
-    slugs = discover_arena_slugs()
-    log(f"Arena.ai: discovered {len(slugs)} leaderboards")
+    slugs, scraped_slugs = discover_arena_slugs()
+    log(f"Arena.ai: {len(slugs)} leaderboards ({len(scraped_slugs)} live-discovered + curated fallback)")
+    live_boards = 0
     for slug in slugs:
         lb, note = fetch_arena_leaderboard(slug)
         if lb:
             arena_data[slug] = lb
+            if slug in scraped_slugs:
+                live_boards += 1
             log(f"  {slug}: {note} ({lb['meta']['model_count']} models)")
         else:
             log(f"  {slug}: {note}")
@@ -1127,12 +1140,16 @@ def main():
     write_benchlm_benchmarks(benchlm or [])
 
     # Write catalog
+    arena_note = (
+        f"ok ({len(arena_data)} leaderboards; "
+        f"{live_boards} live-discovered via scrape, {len(arena_data) - live_boards} from curated fallback)"
+    )
     meta = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
             "openrouter": "ok",
             "artificial_analysis": aa_note,
-            "arena_ai": f"ok ({len(arena_data)} leaderboards)",
+            "arena_ai": arena_note,
             "benchlm": benchlm_note,
         },
     }
