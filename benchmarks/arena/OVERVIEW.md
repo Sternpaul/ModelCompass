@@ -97,18 +97,7 @@ _Human-preference Elo._
 _Human-preference Elo._
 
 
-| # | Model | Score |
-|---|-------|------:|
-| 1 | `claude-fable-5` | 1506.000 |
-| 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-opus-4-7-high` | 1502.000 |
-| 4 | `muse-spark-1.2 (xHigh)` | 1498.000 |
-| 5 | `claude-opus-4-6` | 1497.000 |
-| 6 | `claude-opus-4-7` | 1494.000 |
-| 7 | `claude-opus-5-high` | 1493.000 |
-| 8 | `qwen3.8-max` | 1491.000 |
-| 9 | `gemini-3.7-flash-high` | 1490.000 |
-| 10 | `claude-opus-5-max` | 1489.000 |
+_No models yet._
 
 ## Text To Image Arena
 

@@ -1,21 +1,17 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T08:36:30.090257+00:00",
+    "generated_at": "2026-08-17T09:35:58.476993+00:00",
     "model_count": 414,
     "sources": {
       "openrouter": "ok",
       "artificial_analysis": "no API key",
-      "aider_polyglot": "ok (54 models)",
       "arena_ai": "ok (11 leaderboards)",
-      "benchlm": "ok (388 models)",
-      "swe_bench": "ok (4 models)"
+      "benchlm": "ok (388 models)"
     },
     "coverage": {
       "aa": 0,
-      "aider": 2,
-      "arena": 7,
-      "benchlm": 42,
-      "swe": 0
+      "arena": 2,
+      "benchlm": 42
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
   },
@@ -857,9 +853,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0603,
-        "completion": 0.1206,
-        "cache_read": 0.01206
+        "prompt": 0.078596,
+        "completion": 0.157192,
+        "cache_read": 0.015719
       },
       "benchmarks": {}
     },
@@ -12695,19 +12691,7 @@
         "completion": 2.15,
         "cache_read": 0.35
       },
-      "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 109,
-            "model": "deepseek-r1-0528",
-            "vendor": "DeepSeek",
-            "license": "open",
-            "score": 1422.0,
-            "ci": 18.0,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -15041,26 +15025,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aider": {
-          "name": "DeepSeek R1 (0528)",
-          "base": "deepseek r1",
-          "pass_rate_1": 34.4,
-          "pass_rate_2": 71.4,
-          "total_cost": 4.8016,
-          "seconds_per_case": 716.6,
-          "date": "2025-06-06"
-        },
-        "arena": {
-          "text": {
-            "rank": 142,
-            "model": "deepseek-r1",
-            "vendor": "DeepSeek",
-            "license": "open",
-            "score": 1398.0,
-            "ci": 18.0,
-            "votes": null
-          }
-        },
         "benchlm": {
           "slug": "deepseek-r1",
           "canonicalModelKey": "deepseek-r1",
@@ -15799,19 +15763,7 @@
         "completion": 6.0,
         "cache_read": 0.2
       },
-      "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 247,
-            "model": "mistral-large-2407",
-            "vendor": "Mistral",
-            "license": null,
-            "score": 1314.0,
-            "ci": 45.0,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
@@ -15842,26 +15794,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "aider": {
-          "name": "Qwen2.5-Coder-32B-Instruct",
-          "base": "qwen2 5 coder 32b instruct",
-          "pass_rate_1": 4.9,
-          "pass_rate_2": 16.4,
-          "total_cost": 0.0,
-          "seconds_per_case": 42.0,
-          "date": "2024-12-26"
-        },
-        "arena": {
-          "text": {
-            "rank": 285,
-            "model": "qwen2.5-coder-32b-instruct",
-            "vendor": "Alibaba",
-            "license": "open",
-            "score": 1270.0,
-            "ci": 5.0,
-            "votes": null
-          }
-        },
         "benchlm": {
           "slug": "qwen2-5-coder-32b-instruct",
           "canonicalModelKey": "qwen2-5-coder-32b-instruct",
@@ -16173,19 +16105,7 @@
         "completion": 0.4,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 262,
-            "model": "qwen2.5-72b-instruct",
-            "vendor": "Alibaba",
-            "license": null,
-            "score": 1303.0,
-            "ci": 39.0,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "cohere/command-r-08-2024",

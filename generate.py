@@ -2,15 +2,11 @@
 """
 ModelCompass generator — pure per-benchmark rankings, no mixing.
 
-Sources (all scraped directly, no third-party snapshots):
- 1. OpenRouter /api/v1/models         -> catalog: pricing, context, modality, flags
- 2. Artificial Analysis API v2        -> per-dimension indices (intelligence, coding,
-                                         agentic, math, multilingual, openness)
- 3. arena.ai (Jina Reader)            -> LMArena ELO rankings (text, code, vision,
-                                         image-edit, search, agent, …)
- 4. aider polyglot YAML (raw GitHub)  -> real coding pass rates
- 5. BenchLM (MIT JSON)                -> 437 benchmarks across 388 models
- 6. SWE-bench raw JSON (GitHub)       -> % resolved per model
+Sources (all fetched directly, no third-party snapshots):
+ 1. OpenRouter /api/v1/models        -> catalog: pricing, context, modality, flags
+ 2. Artificial Analysis API v2       -> 17 raw benchmarks + 3 composite indices
+ 3. arena.ai (Jina Reader)           -> LMArena Elo (11 leaderboards)
+ 4. BenchLM (MIT JSON)               -> 437 benchmarks across 388 models
 
 Each source writes its OWN file(s) under benchmarks/.  No scores are blended.
 consensus/ contains a Borda-count placement-agreement summary only.
@@ -37,17 +33,9 @@ except ImportError:
 # ---------------------------------------------------------------------------
 OR_API = "https://openrouter.ai/api/v1/models"
 AA_API = "https://artificialanalysis.ai/api/v2/data/llms/models"
-AIDER_YAML = (
-    "https://raw.githubusercontent.com/Aider-AI/aider/main/"
-    "aider/website/_data/polyglot_leaderboard.yml"
-)
 ARENA_BASE = "https://arena.ai/leaderboard/"
 JINA_BASE = "https://r.jina.ai/"
 BENCHLM_BASE = "https://benchlm.ai/data"
-SWEBENCH_INFO = (
-    "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/"
-    "master/data/info_for_leaderboard.json"
-)
 OUTDIR = "."
 
 # Collapse only routing aliases; keep identity-bearing tags (e.g. -0813, -latest)
@@ -205,39 +193,6 @@ def fetch_artificial_analysis(api_key):
             },
             "median_tps": num(m.get("median_output_tokens_per_second")),
             "ttft": num(m.get("median_time_to_first_token_seconds")),
-        }
-    return out, f"ok ({len(out)} models)"
-
-
-# ---------------------------------------------------------------------------
-# Source 3: aider polyglot
-# ---------------------------------------------------------------------------
-def fetch_aider():
-    if yaml is None:
-        return {}, "pyyaml not installed"
-    try:
-        req = urllib.request.Request(
-            AIDER_YAML, headers={"User-Agent": "modelcompass/1.0"}
-        )
-        with urllib.request.urlopen(req, timeout=60) as r:
-            data = yaml.safe_load(r.read().decode("utf-8"))
-    except Exception as e:
-        return {}, str(e)
-
-    out = {}
-    for row in data or []:
-        name = row.get("model")
-        if not name:
-            continue
-        base = norm(name)
-        out[base] = {
-            "name": name,
-            "base": base,
-            "pass_rate_1": scale(row.get("pass_rate_1")),
-            "pass_rate_2": scale(row.get("pass_rate_2")),
-            "total_cost": row.get("total_cost"),
-            "seconds_per_case": row.get("seconds_per_case"),
-            "date": str(row.get("date")) if row.get("date") is not None else None,
         }
     return out, f"ok ({len(out)} models)"
 
@@ -509,29 +464,6 @@ def fetch_benchlm():
 
 
 # ---------------------------------------------------------------------------
-# Source 6: SWE-bench raw result JSON
-# ---------------------------------------------------------------------------
-def fetch_swebench():
-    """Fetch per-model SWE-bench results from the public GitHub repo."""
-    try:
-        data = fetch_json(SWEBENCH_INFO, timeout=60)
-    except Exception as e:
-        return {}, str(e)
-    out = {}
-    for model_id, tasks in data.items():
-        resolved = sum(1 for t in tasks.values() if t.get("resolved"))
-        total = len(tasks)
-        out[model_id] = {
-            "model": model_id,
-            "resolved": resolved,
-            "total": total,
-            "pass_rate": resolved / total if total > 0 else None,
-            "total_cost": sum(t.get("cost", 0) for t in tasks.values()),
-        }
-    return out, f"ok ({len(out)} models)"
-
-
-# ---------------------------------------------------------------------------
 # Merge: cross-reference only, no score blending
 # ---------------------------------------------------------------------------
 def base_slug(model_id):
@@ -552,10 +484,9 @@ def base_slug(model_id):
     return model_id
 
 
-def merge(or_models, aa, aider, arena, benchlm, swe):
+def merge(or_models, aa, arena, benchlm):
     """Attach raw benchmark data to OpenRouter models.
-    Each source stays in its own namespace under benchmarks.<source>.
-    """
+    Each source stays in its own namespace under benchmarks.<source>."""
     or_by_id = {}
     or_by_norm = {}
     or_by_slug_only = {}
@@ -566,7 +497,7 @@ def merge(or_models, aa, aider, arena, benchlm, swe):
         slug_only = mid.split("/", 1)[-1] if "/" in mid else mid
         or_by_slug_only.setdefault(slug_only, []).append(m)
 
-    counts = {"aa": 0, "aider": 0, "arena": 0, "benchlm": 0, "swe": 0}
+    counts = {"aa": 0, "arena": 0, "benchlm": 0}
 
     # Attach AA
     if aa:
@@ -592,15 +523,6 @@ def merge(or_models, aa, aider, arena, benchlm, swe):
             if target:
                 target["benchmarks"]["aa"] = a
                 counts["aa"] += 1
-
-    # Attach aider
-    if aider:
-        for base, a in aider.items():
-            if base in or_by_norm:
-                for m in or_by_norm[base]:
-                    m["benchmarks"]["aider"] = a
-                    counts["aider"] += 1
-                    break
 
     # Attach arena
     if arena:
@@ -637,19 +559,6 @@ def merge(or_models, aa, aider, arena, benchlm, swe):
                 target["benchmarks"]["benchlm"] = bm
                 counts["benchlm"] += 1
 
-    # Attach SWE-bench
-    if swe:
-        for model_id, swe_data in swe.items():
-            mid = model_id.lower()
-            if mid in or_by_id:
-                or_by_id[mid]["benchmarks"]["swe"] = swe_data
-                counts["swe"] += 1
-            else:
-                nn = norm(model_id)
-                if nn in or_by_norm:
-                    or_by_norm[nn][0]["benchmarks"]["swe"] = swe_data
-                    counts["swe"] += 1
-
     return counts
 
 
@@ -663,15 +572,27 @@ SOURCE_META = {
     "artificial-analysis": {
         "title": "Artificial Analysis",
         "source_url": "https://artificialanalysis.ai",
-        "desc": "Composite capability indices (0–100) from Artificial Analysis' "
-                "proprietary evaluations. Higher is better.",
+        "desc": "Raw benchmark evaluations from Artificial Analysis' proprietary "
+                "suite (AA API v2). Each file is one benchmark — higher is better "
+                "unless noted. Values are the model's raw score on that benchmark.",
         "benches": {
-            "aa_intelligence": ("Intelligence Index", "Overall intelligence: reasoning + knowledge + coding."),
-            "aa_coding": ("Coding Index", "Code generation and editing capability."),
-            "aa_agentic": ("Agentic Index", "Tool-use and autonomous agent capability."),
-            "aa_math": ("Math Index", "Mathematical reasoning."),
-            "aa_multilingual": ("Multilingual Index", "Non-English language capability."),
-            "aa_openness": ("Openness Index", "Open-weight / transparency score."),
+            "aa_intelligence": ("Intelligence Index", "Composite intelligence index (0–100)."),
+            "aa_coding": ("Coding Index", "Composite coding capability index (0–100)."),
+            "aa_math": ("Math Index", "Composite math reasoning index (0–100)."),
+            "aa_aime": ("AIME", "American Invitational Mathematics Examination accuracy (%)."),
+            "aa_aime_25": ("AIME 2025", "AIME 2025 accuracy (%)."),
+            "aa_gpqa": ("GPQA", "Graduate-level Google-Proof Q&A diamond accuracy (%)."),
+            "aa_hle": ("HLE", "Humanity's Last Exam accuracy (%)."),
+            "aa_ifbench": ("IFBench", "Instruction-following benchmark score (%)."),
+            "aa_lcr": ("LCR", "Long-context reasoning score (%)."),
+            "aa_livecodebench": ("LiveCodeBench", "LiveCodeBench coding accuracy (%)."),
+            "aa_math_500": ("MATH-500", "MATH-500 competition-math accuracy (%)."),
+            "aa_mmlu_pro": ("MMLU-Pro", "MMLU-Pro knowledge accuracy (%)."),
+            "aa_scicode": ("SciCode", "SciCode scientific coding accuracy (%)."),
+            "aa_tau2": ("TAU2", "TAU-bench agent benchmark (%)."),
+            "aa_tau_banking": ("TAU-Banking", "TAU-bench banking domain agent score (%)."),
+            "aa_terminalbench_hard": ("Terminal-Bench Hard", "Terminal-Bench hard sys-admin tasks (%)."),
+            "aa_terminalbench_v2_1": ("Terminal-Bench v2.1", "Terminal-Bench v2.1 sys-admin tasks (%)."),
         },
     },
     "arena": {
@@ -680,15 +601,6 @@ SOURCE_META = {
         "desc": "Human-preference Elo from blind pairwise battles. "
                 "Higher Elo = more preferred by human voters.",
         "benches": {},  # filled dynamically from discovered slugs
-    },
-    "aider": {
-        "title": "aider polyglot",
-        "source_url": AIDER_YAML,
-        "desc": "Real coding benchmark: 225 Exercism exercises across 6 languages. "
-                "Score = % solved (pass_rate_1).",
-        "benches": {
-            "aider_coding": ("Polyglot Coding", "% of tasks solved across all languages."),
-        },
     },
     "benchlm": {
         "title": "BenchLM",
@@ -704,14 +616,6 @@ SOURCE_META = {
             "benchlm_multilingual": ("Multilingual", "Non-English capability category score."),
             "benchlm_multimodalGrounded": ("Multimodal Grounded", "Vision+text grounded understanding."),
             "benchlm_instructionFollowing": ("Instruction Following", "Following complex instructions."),
-        },
-    },
-    "swe-bench": {
-        "title": "SWE-bench",
-        "source_url": SWEBENCH_INFO,
-        "desc": "Real GitHub issues resolved with a correct patch. Score = % resolved.",
-        "benches": {
-            "swe_bench": ("SWE-bench Verified", "% of real-world GitHub issues resolved."),
         },
     },
     "consensus": {
@@ -740,76 +644,53 @@ def _write_benchmark_json(subdir, bname, meta_info, models_list):
 
 
 def write_aa_benchmarks(or_models):
-    """Write per-dimension AA benchmark files into artificial-analysis/."""
+    """Write every Artificial Analysis benchmark into artificial-analysis/.
+
+    We emit one file per evaluation key that actually appears in the data
+    (17 fields), not a hard-coded subset - so newly added AA benchmarks show
+    up automatically. `fetched_at` is stamped on each file's meta.
+    """
     subdir = "artificial-analysis"
-    AA_KEYS = {
-        "aa_intelligence": "artificial_analysis_intelligence_index",
-        "aa_coding": "artificial_analysis_coding_index",
-        "aa_agentic": "artificial_analysis_agentic_index",
-        "aa_math": "artificial_analysis_math_index",
-        "aa_multilingual": "artificial_analysis_multilingual_index",
-        "aa_openness": "artificial_analysis_openness_index",
-    }
+    fetched_at = datetime.now(timezone.utc).isoformat()
+
+    # Discover which evaluation keys exist across the catalog
+    seen = {}
+    for m in or_models:
+        evals = (m.get("benchmarks", {}).get("aa", {}) or {}).get("evaluations", {})
+        for k in evals:
+            seen.setdefault(k, 0)
+            seen[k] += 1
+
     written = {}
-    for bname, eval_key in AA_KEYS.items():
+    for eval_key, n in sorted(seen.items()):
         models_list = []
         for m in or_models:
-            bm = m.get("benchmarks", {}).get("aa", {})
-            evals = bm.get("evaluations", {})
+            evals = (m.get("benchmarks", {}).get("aa", {}) or {}).get("evaluations", {})
             val = num(evals.get(eval_key))
             if val is not None:
                 models_list.append(
                     {
                         "model": m["id"],
                         "name": m.get("name"),
-                        "score": val / 100.0,
-                        "raw_score": val,
+                        "score": val,
                     }
                 )
         models_list.sort(key=lambda x: x["score"], reverse=True)
         if models_list:
+            bname = f"aa_{eval_key}"
             _write_benchmark_json(
                 subdir, bname,
                 {
                     "leaderboard": bname,
                     "source_url": "https://artificialanalysis.ai",
                     "benchmark": eval_key,
+                    "fetched_at": fetched_at,
+                    "model_count_with_data": n,
                 },
                 models_list,
             )
             written[bname] = True
     return written
-
-
-def write_aider_benchmark(aider):
-    """Write the aider polyglot leaderboard into aider/ (all models, not just
-    ones cross-referenced to OpenRouter)."""
-    subdir = "aider"
-    models_list = []
-    for base, bm in aider.items():
-        if bm.get("pass_rate_1") is None:
-            continue
-        models_list.append(
-            {
-                "model": bm.get("name"),
-                "score": bm.get("pass_rate_1"),
-                "pass_rate_1": bm.get("pass_rate_1"),
-                "pass_rate_2": bm.get("pass_rate_2"),
-                "total_cost": bm.get("total_cost"),
-            }
-        )
-    models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
-    if models_list:
-        _write_benchmark_json(
-            subdir, "aider_coding",
-            {
-                "leaderboard": "aider_coding",
-                "source_url": AIDER_YAML,
-                "benchmark": "aider polyglot pass_rate_1",
-            },
-            models_list,
-        )
-    return None
 
 
 def write_arena_benchmarks(arena_data):
@@ -875,32 +756,6 @@ def write_benchlm_benchmarks(benchlm_items):
             )
             written[bname] = True
     return written
-
-
-def write_swebench_benchmark(swe_data):
-    subdir = "swe-bench"
-    models_list = []
-    for model_id, swe in swe_data.items():
-        models_list.append(
-            {
-                "model": model_id,
-                "score": swe.get("pass_rate"),
-                "resolved": swe.get("resolved"),
-                "total": swe.get("total"),
-            }
-        )
-    models_list.sort(key=lambda x: x.get("score") or 0, reverse=True)
-    if models_list:
-        _write_benchmark_json(
-            subdir, "swe_bench",
-            {
-                "leaderboard": "swe_bench",
-                "source_url": SWEBENCH_INFO,
-                "benchmark": "SWE-bench % Resolved",
-            },
-            models_list,
-        )
-    return None
 
 
 # ---------------------------------------------------------------------------
@@ -1163,15 +1018,16 @@ def write_consensus_overview():
 
 
 # ---------------------------------------------------------------------------
-# Output: archive — mirrors benchmarks/ into archive/<YYYY-MM>/
+# Output: archive — mirrors benchmarks/ into archive/<YYYY-MM>/<YYYY-MM-DD>/
 # ---------------------------------------------------------------------------
 def write_archive():
     now = datetime.now(timezone.utc)
     month = now.strftime("%Y-%m")
-    dest_root = os.path.join("archive", month)
+    day = now.strftime("%Y-%m-%d")
+    dest_root = os.path.join("archive", month, day)
     os.makedirs(dest_root, exist_ok=True)
 
-    # Mirror every benchmarks/<subdir>/*.json into archive/<YYYY-MM>/<subdir>/
+    # Mirror every benchmarks/<subdir>/*.json into archive/<YYYY-MM>/<YYYY-MM-DD>/<subdir>/
     copied = 0
     for subdir in sorted(WRITTEN.keys()):
         base = os.path.join("benchmarks", subdir)
@@ -1183,14 +1039,13 @@ def write_archive():
             dest_dir = os.path.join(dest_root, subdir)
             os.makedirs(dest_dir, exist_ok=True)
             src = os.path.join(base, fname)
-            dst = os.path.join(dest_dir, fname)
             with open(src) as f:
                 content = f.read()
-            with open(dst, "w") as f:
+            with open(os.path.join(dest_dir, fname), "w") as f:
                 f.write(content)
             copied += 1
 
-    # Archive also snapshots the catalog + recommended.json at top of the month
+    # Snapshot the catalog + recommended.json at top of this snapshot
     for top in ("models.json", "recommended.json"):
         src = os.path.join(OUTDIR, top)
         if os.path.exists(src):
@@ -1199,10 +1054,10 @@ def write_archive():
             with open(os.path.join(dest_root, top), "w") as f:
                 f.write(content)
 
-    # Month index README
-    idx = [f"# Archive — {month}\n"]
+    # Day index README
+    idx = [f"# Archive — {day}\n"]
     idx.append(
-        "Snapshot of the `benchmarks/` tree taken at the start of this month. "
+        "Snapshot of the `benchmarks/` tree taken on this date. "
         "Same subfolder layout as `benchmarks/`.\n"
     )
     for subdir in sorted(WRITTEN.keys()):
@@ -1238,11 +1093,7 @@ def main():
     aa, aa_note = fetch_artificial_analysis(args.aa_key)
     log(f"Artificial Analysis: {aa_note}")
 
-    # 3. aider polyglot
-    aider, aider_note = fetch_aider()
-    log(f"aider polyglot: {aider_note}")
-
-    # 4. arena.ai — discover all leaderboards, then fetch each
+    # 3. arena.ai — known leaderboards (fetched live), scrape-discovery fallback
     arena_data = {}
     slugs = discover_arena_slugs()
     log(f"Arena.ai: discovered {len(slugs)} leaderboards")
@@ -1254,16 +1105,12 @@ def main():
         else:
             log(f"  {slug}: {note}")
 
-    # 5. BenchLM
+    # 4. BenchLM
     benchlm, benchlm_note = fetch_benchlm()
     log(f"BenchLM: {benchlm_note}")
 
-    # 6. SWE-bench
-    swe, swe_note = fetch_swebench()
-    log(f"SWE-bench: {swe_note}")
-
     # Merge (cross-reference only, no blending)
-    counts = merge(or_models, aa, aider, arena_data, benchlm or [], swe)
+    counts = merge(or_models, aa, arena_data, benchlm or [])
     log(f"Merged: {counts}")
 
     # Ensure output dirs — benchmarks/ is rebuilt fresh each run
@@ -1276,10 +1123,8 @@ def main():
     # Write per-benchmark files (into per-source subfolders)
     log("=== Writing per-benchmark files ===")
     write_aa_benchmarks(or_models)
-    write_aider_benchmark(aider)
     write_arena_benchmarks(arena_data)
     write_benchlm_benchmarks(benchlm or [])
-    write_swebench_benchmark(swe)
 
     # Write catalog
     meta = {
@@ -1287,10 +1132,8 @@ def main():
         "sources": {
             "openrouter": "ok",
             "artificial_analysis": aa_note,
-            "aider_polyglot": aider_note,
             "arena_ai": f"ok ({len(arena_data)} leaderboards)",
             "benchlm": benchlm_note,
-            "swe_bench": swe_note,
         },
     }
     write_models_json(or_models, meta, counts)

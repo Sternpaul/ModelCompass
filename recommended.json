@@ -1,14 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T08:36:30.117371+00:00",
+    "generated_at": "2026-08-17T09:35:58.501014+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
-      "aider_coding": {
-        "source": "https://raw.githubusercontent.com/Aider-AI/aider/main/aider/website/_data/polyglot_leaderboard.yml",
-        "subdir": "aider",
-        "model_count": 54,
-        "top_n": 10
-      },
       "arena_agent": {
         "source": "https://arena.ai/leaderboard/agent",
         "subdir": "arena",
@@ -60,8 +54,8 @@
       "arena_text": {
         "source": "https://arena.ai/leaderboard/text",
         "subdir": "arena",
-        "model_count": 390,
-        "top_n": 10
+        "model_count": 0,
+        "top_n": 0
       },
       "arena_video-edit": {
         "source": "https://arena.ai/leaderboard/video-edit",
@@ -122,88 +116,10 @@
         "subdir": "benchlm",
         "model_count": 38,
         "top_n": 10
-      },
-      "swe_bench": {
-        "source": "https://raw.githubusercontent.com/SWE-bench/swe-bench.github.io/master/data/info_for_leaderboard.json",
-        "subdir": "swe-bench",
-        "model_count": 4,
-        "top_n": 4
       }
     }
   },
   "recommended": {
-    "aider_coding": [
-      {
-        "model": "gemini-2.5-pro-preview-06-05 (32k think)",
-        "score": 46.2,
-        "pass_rate_1": 46.2,
-        "pass_rate_2": 83.1,
-        "total_cost": 49.8822
-      },
-      {
-        "model": "o3-pro (high)",
-        "score": 43.6,
-        "pass_rate_1": 43.6,
-        "pass_rate_2": 84.9,
-        "total_cost": 146.3249
-      },
-      {
-        "model": "gpt-5 (low)",
-        "score": 43.1,
-        "pass_rate_1": 43.1,
-        "pass_rate_2": 81.3,
-        "total_cost": 10.3713
-      },
-      {
-        "model": "Gemini 2.5 Pro Preview 03-25",
-        "score": 40.9,
-        "pass_rate_1": 40.9,
-        "pass_rate_2": 72.9,
-        "total_cost": 0
-      },
-      {
-        "model": "o3",
-        "score": 40.9,
-        "pass_rate_1": 40.9,
-        "pass_rate_2": 76.9,
-        "total_cost": 13.7517
-      },
-      {
-        "model": "grok-4 (high)",
-        "score": 40.9,
-        "pass_rate_1": 40.9,
-        "pass_rate_2": 79.6,
-        "total_cost": 59.6182
-      },
-      {
-        "model": "DeepSeek-V3.2-Exp (Chat)",
-        "score": 38.7,
-        "pass_rate_1": 38.7,
-        "pass_rate_2": 70.2,
-        "total_cost": 0.8756
-      },
-      {
-        "model": "claude-opus-4-20250514 (32k thinking)",
-        "score": 37.3,
-        "pass_rate_1": 37.3,
-        "pass_rate_2": 72.0,
-        "total_cost": 65.7484
-      },
-      {
-        "model": "Gemini 2.5 Pro Preview 05-06",
-        "score": 36.4,
-        "pass_rate_1": 36.4,
-        "pass_rate_2": 76.9,
-        "total_cost": 37.4104
-      },
-      {
-        "model": "o3 (high) + gpt-4.1",
-        "score": 34.8,
-        "pass_rate_1": 34.8,
-        "pass_rate_2": 78.2,
-        "total_cost": 17.5518
-      }
-    ],
     "arena_agent": [
       {
         "rank": 1,
@@ -876,98 +792,7 @@
     ],
     "arena_text-to-image": [],
     "arena_text-to-video": [],
-    "arena_text": [
-      {
-        "rank": 1,
-        "model": "claude-fable-5",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1506.0,
-        "ci": 21.0,
-        "votes": null
-      },
-      {
-        "rank": 2,
-        "model": "claude-opus-4-6-high",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1505.0,
-        "ci": 72.0,
-        "votes": null
-      },
-      {
-        "rank": 3,
-        "model": "claude-opus-4-7-high",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1502.0,
-        "ci": 60.0,
-        "votes": null
-      },
-      {
-        "rank": 4,
-        "model": "muse-spark-1.2 (xHigh)",
-        "vendor": "Meta",
-        "license": "proprietary",
-        "score": 1498.0,
-        "ci": 3.0,
-        "votes": null
-      },
-      {
-        "rank": 5,
-        "model": "claude-opus-4-6",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1497.0,
-        "ci": 76.0,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "claude-opus-4-7",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1494.0,
-        "ci": 61.0,
-        "votes": null
-      },
-      {
-        "rank": 7,
-        "model": "claude-opus-5-high",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1493.0,
-        "ci": 20.0,
-        "votes": null
-      },
-      {
-        "rank": 8,
-        "model": "qwen3.8-max",
-        "vendor": "Alibaba",
-        "license": "proprietary",
-        "score": 1491.0,
-        "ci": 7.0,
-        "votes": null
-      },
-      {
-        "rank": 9,
-        "model": "gemini-3.7-flash-high",
-        "vendor": "Google",
-        "license": "proprietary",
-        "score": 1490.0,
-        "ci": 5.0,
-        "votes": null
-      },
-      {
-        "rank": 10,
-        "model": "claude-opus-5-max",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1489.0,
-        "ci": 9.0,
-        "votes": null
-      }
-    ],
+    "arena_text": [],
     "arena_video-edit": [],
     "arena_vision": [
       {
@@ -1635,32 +1460,6 @@
         "creator": "OpenAI",
         "score": 83.2,
         "category_rank": null
-      }
-    ],
-    "swe_bench": [
-      {
-        "model": "sonnet-4-5",
-        "score": 0.706,
-        "resolved": 353,
-        "total": 500
-      },
-      {
-        "model": "gpt-5",
-        "score": 0.65,
-        "resolved": 325,
-        "total": 500
-      },
-      {
-        "model": "sonnet-4",
-        "score": 0.648,
-        "resolved": 324,
-        "total": 500
-      },
-      {
-        "model": "gpt-5-mini",
-        "score": 0.598,
-        "resolved": 299,
-        "total": 500
       }
     ]
   }

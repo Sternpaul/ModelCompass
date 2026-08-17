@@ -34,7 +34,7 @@ top-10 lists they appear in (Borda placement agreement) — never an averaged
 
 | User asks | What to do |
 |-----------|-----------|
-| "best coding model" | Load `benchmarks/aider/aider_coding.json` (and `benchmarks/benchlm/benchlm_coding.json`, `benchmarks/arena/arena_code.json`); the #1 of each is the leader for that metric. Report the metric, not a blended score. |
+| "best coding model" | Load `benchmarks/benchlm/benchlm_coding.json` and `benchmarks/arena/arena_code.json`; the #1 of each is the leader for that metric. Report the metric, not a blended score. |
 | "best overall / smartest" | `benchmarks/consensus/consensus.json` ranks by top-10 appearance count, or `benchmarks/artificial-analysis/aa_intelligence.json`. |
 | "compare A vs B for X" | Load both from `models.json["models"]`; compare `benchmarks`, `price_per_million`, `context`, capability flags (e.g. `supports_tools`). |
 | "cheapest good model" | Filter `models.json` by `price_per_million`, then check the relevant `benchmarks/*` file for quality. |
@@ -120,15 +120,11 @@ ModelCompass/
 ├── recommended.json         # per-benchmark top-10 shortlists
 ├── benchmarks/              # one subfolder per source
 │   ├── README.md            # index linking to each subfolder's OVERVIEW.md
-│   ├── artificial-analysis/ # AA intelligence / coding / agentic / math / … (aa_*.json)
+│   ├── artificial-analysis/ # 17 AA raw benchmarks (aa_*.json)
 │   │   └── OVERVIEW.md
 │   ├── arena/               # LMArena leaderboards (arena_*.json)
 │   │   └── OVERVIEW.md
-│   ├── aider/               # aider polyglot coding
-│   │   └── OVERVIEW.md
 │   ├── benchlm/             # BenchLM category scores (benchlm_*.json)
-│   │   └── OVERVIEW.md
-│   ├── swe-bench/           # SWE-bench % resolved
 │   │   └── OVERVIEW.md
 │   └── consensus/           # Borda placement-agreement across all benchmarks
 │       ├── consensus.json
@@ -146,9 +142,7 @@ ModelCompass/
 
 - [Artificial Analysis](benchmarks/artificial-analysis/OVERVIEW.md)
 - [LMArena](benchmarks/arena/OVERVIEW.md)
-- [aider polyglot](benchmarks/aider/OVERVIEW.md)
 - [BenchLM](benchmarks/benchlm/OVERVIEW.md)
-- [SWE-bench](benchmarks/swe-bench/OVERVIEW.md)
 - [Consensus (Borda)](benchmarks/consensus/OVERVIEW.md)
 - [All benchmarks index](benchmarks/README.md)
 
@@ -160,11 +154,9 @@ A GitHub Action (`.github/workflows/update.yml`) runs daily at **04:00 UTC**
 | Source | Auth | What it contributes |
 |--------|------|---------------------|
 | **OpenRouter** `/api/v1/models` | none | 400+ models: pricing, context window, modalities (vision/audio/image), capability flags (reasoning, tools, JSON, caching), knowledge cutoff, recency |
-| **Artificial Analysis API v2** | `ARTIFICIAL_ANALYSIS_KEY` | Intelligence / Coding / Agentic / Math / Multilingual / Openness indices + raw benchmarks (GPQA, HLE, MMLU-Pro, AIME, LiveCodeBench, Terminal-Bench, IFBench, SciCode…) + speed |
-| **aider polyglot** (raw GitHub YAML) | none | Real coding benchmark: 225 Exercism exercises across 6 languages → pass rates |
-| **Arena.ai** (Jina Reader scrape of `arena.ai/leaderboard/*`) | none | Human-preference Elo across 11 leaderboards: `agent`, `text`, `code`, `vision`, `document`, `search`, … |
+| **Artificial Analysis API v2** | `ARTIFICIAL_ANALYSIS_KEY` | 17 raw benchmark evaluations (GPQA, HLE, MMLU-Pro, AIME, LiveCodeBench, Terminal-Bench, IFBench, SciCode, TAU2, TAU-Banking, LCR, MATH-500…) + 3 composite indices (intelligence / coding / math) + speed |
+| **Arena.ai** (Jina Reader scrape of `arena.ai/leaderboard/*`) | none | Human-preference Elo across 11 leaderboards: `agent`, `text`, `code`, `vision`, `document`, `search`, `image-edit`, `image-to-video`, `text-to-image`, `text-to-video`, `video-edit` |
 | **BenchLM** (`benchlm.ai/data/models.json`, MIT) | none | 388 models × 437 benchmarks, grouped into category scores (agentic, coding, math, reasoning, knowledge, multilingual, multimodal, instruction-following) |
-| **SWE-bench** (raw GitHub result JSON) | none | Real GitHub-issue resolution pass rates per model |
 
 All sources are fetched defensively — a failure in one never breaks the others.
 `models.json` → `meta.sources` reports exactly what succeeded.
