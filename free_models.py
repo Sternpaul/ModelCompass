@@ -75,7 +75,15 @@ def base_slug(mid):
 
 
 def slug_only(mid):
-    return mid.split("/", 1)[-1] if "/" in mid else mid
+    """Provider-stripped slug, with dots normalized to hyphens so that
+    'longcat-2.0' (Nous free) matches 'longcat-2-0' (AA) etc."""
+    s = mid.split("/", 1)[-1] if "/" in mid else mid
+    return s.replace(".", "-")
+
+
+def norm_slug(mid):
+    """Full join key: base_slug + slug_only normalization (dots->hyphens)."""
+    return slug_only(base_slug(mid))
 
 
 def fetch_nous_free():
@@ -144,11 +152,16 @@ def collect_modelsdev_free():
 
 
 def load_aa():
-    """Return {base_slug: {bench_key: score}} from the committed AA files."""
+    """Return (scores, slug_scores) from the committed AA files.
+    scores: {base_slug (provider-kept): {bench_key: score}}
+    slug_scores: {slug_only (provider-stripped): {bench_key: score}} for
+                 cross-provider joins (e.g. meituan/longcat-2.0 <-> longcat/longcat-2-0).
+    """
     scores = {}
+    slug_scores = {}
     aa_dir = os.path.join(ROOT, "benchmarks", "artificial-analysis")
     if not os.path.isdir(aa_dir):
-        return scores
+        return scores, slug_scores
     for bf in AA_BENCHES:
         path = os.path.join(aa_dir, f"{bf}.json")
         if not os.path.exists(path):
@@ -161,16 +174,23 @@ def load_aa():
             mid = it.get("model", "")
             score = it.get("score")
             if mid and score is not None:
+                # primary key: full base_slug (provider-kept)
                 scores.setdefault(base_slug(mid), {})[bf] = score
-    return scores
+                # secondary index: norm_slug (provider-stripped, dots->hyphens) for cross-provider join
+                slug_scores.setdefault(norm_slug(mid), {})[bf] = score
+    return scores, slug_scores
 
 
 def load_arena():
-    """Return {base_slug: [(slug, rank, score)]} from local Arena boards."""
+    """Return (scores, slug_scores) from local Arena boards.
+    scores: {base_slug (provider-kept): [(slug, rank, score)]}
+    slug_scores: {slug_only (provider-stripped): [(slug, rank, score)]}
+    """
     scores = {}
+    slug_scores = {}
     arena_dir = os.path.join(ROOT, "benchmarks", "arena")
     if not os.path.isdir(arena_dir):
-        return scores
+        return scores, slug_scores
     for fname in os.listdir(arena_dir):
         if not fname.endswith(".json") or "OVERVIEW" in fname:
             continue
@@ -185,7 +205,10 @@ def load_arena():
                 scores.setdefault(base_slug(mid), []).append(
                     (slug, m.get("rank"), m.get("score"))
                 )
-    return scores
+                slug_scores.setdefault(norm_slug(mid), []).append(
+                    (slug, m.get("rank"), m.get("score"))
+                )
+    return scores, slug_scores
 
 
 def main():
@@ -214,35 +237,21 @@ def main():
         merged[base]["free_on"].add("nous")
 
     # 5. Benchmark joins
-    aa = load_aa()
-    arena = load_arena()
+    aa, aa_slug = load_aa()
+    arena, arena_slug = load_arena()
 
     rows = []
     for base, e in merged.items():
         mid = e["id"]
-        # AA: exact base_slug first, then slug-only fuzzy
+        ns = norm_slug(mid)
+        # AA: exact base_slug (provider-kept), else norm_slug cross-provider join
         aa_entry = aa.get(base)
         if aa_entry is None:
-            so = slug_only(base)
-            # exact slug-only match
-            for k, v in aa.items():
-                if slug_only(k) == so:
-                    aa_entry = v
-                    break
-            # fuzzy substring only if no exact slug match
-            if aa_entry is None:
-                for k, v in aa.items():
-                    if so in k or k in so:
-                        aa_entry = v
-                        break
+            aa_entry = aa_slug.get(ns)
         # Arena: best (lowest) rank across boards
         arena_list = arena.get(base)
         if arena_list is None:
-            so = slug_only(base)
-            for k, v in arena.items():
-                if slug_only(k) == so or so in k or k in so:
-                    arena_list = v
-                    break
+            arena_list = arena_slug.get(ns)
         best_arena = None
         if arena_list:
             best = sorted(arena_list, key=lambda x: (x[1] if x[1] is not None else 9999))[0]
