@@ -13,16 +13,16 @@ _American Invitational Mathematics Examination accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `openai/o4-mini` | 0.940 |
-| 2 | `openai/gpt-5` | 0.917 |
-| 3 | `openai/o3` | 0.903 |
-| 4 | `openai/o3-mini-high` | 0.860 |
-| 5 | `perplexity/sonar-reasoning-pro` | 0.790 |
-| 6 | `openai/o3-mini` | 0.770 |
-| 7 | `qwen/qwen3-30b-a3b` | 0.727 |
-| 8 | `openai/o1` | 0.723 |
-| 9 | `deepseek/deepseek-r1` | 0.683 |
-| 10 | `deepseek/deepseek-r1-distill-llama-70b` | 0.670 |
+| 1 | `openai/gpt-5` | 0.957 |
+| 2 | `xai/grok-4` | 0.943 |
+| 3 | `openai/o4-mini` | 0.940 |
+| 4 | `alibaba/qwen3-235b-a22b-instruct-2507-reasoning` | 0.940 |
+| 5 | `xai/grok-3-mini-reasoning` | 0.933 |
+| 6 | `openai/gpt-5-medium` | 0.917 |
+| 7 | `alibaba/qwen3-30b-a3b-2507-reasoning` | 0.907 |
+| 8 | `openai/o3` | 0.903 |
+| 9 | `deepseek/deepseek-r1` | 0.893 |
+| 10 | `google/gemini-2-5-pro` | 0.887 |
 
 ## AIME 2025
 
@@ -31,16 +31,16 @@ _AIME 2025 accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `moonshotai/kimi-k2` | 0.947 |
-| 2 | `openai/gpt-oss-120b` | 0.934 |
-| 3 | `openai/gpt-5` | 0.917 |
-| 4 | `nvidia/nemotron-3-nano-30b-a3b` | 0.910 |
-| 5 | `openai/gpt-5-mini` | 0.907 |
-| 6 | `openai/o4-mini` | 0.907 |
-| 7 | `openai/o3` | 0.883 |
-| 8 | `qwen/qwen3-max` | 0.807 |
-| 9 | `minimax/minimax-m2` | 0.783 |
-| 10 | `openai/gpt-5-nano` | 0.783 |
+| 1 | `openai/gpt-5-2` | 0.990 |
+| 2 | `openai/gpt-5-codex` | 0.987 |
+| 3 | `google/gemini-3-flash-reasoning` | 0.970 |
+| 4 | `openai/gpt-5-2-medium` | 0.967 |
+| 5 | `deepseek/deepseek-v3-2-speciale` | 0.967 |
+| 6 | `xiaomi/mimo-v2-flash-reasoning` | 0.963 |
+| 7 | `openai/gpt-5-1-codex` | 0.957 |
+| 8 | `google/gemini-3-pro` | 0.957 |
+| 9 | `zai/glm-4-7` | 0.950 |
+| 10 | `kimi/kimi-k2-thinking` | 0.947 |
 
 ## GPQA
 
@@ -49,16 +49,16 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `minimax/minimax-m3` | 0.929 |
-| 2 | `deepseek/deepseek-v4-pro` | 0.928 |
-| 3 | `anthropic/claude-fable-5` | 0.926 |
-| 4 | `anthropic/claude-opus-5` | 0.919 |
-| 5 | `tencent/hy3` | 0.897 |
-| 6 | `thinkingmachines/inkling-small` | 0.895 |
-| 7 | `deepseek/deepseek-v4-flash` | 0.894 |
-| 8 | `nex-agi/nex-n2-pro` | 0.892 |
-| 9 | `upstage/solar-pro4` | 0.891 |
-| 10 | `thinkingmachines/inkling` | 0.872 |
+| 1 | `xai/grok-4-6` | 0.949 |
+| 2 | `google/gemini-3-7-flash` | 0.945 |
+| 3 | `openai/gpt-5-6-sol` | 0.941 |
+| 4 | `google/gemini-3-1-pro-preview` | 0.941 |
+| 5 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 6 | `anthropic/claude-opus-5-high` | 0.937 |
+| 7 | `kimi/kimi-k3` | 0.935 |
+| 8 | `alibaba/qwen3-8-2-4t-a95b` | 0.935 |
+| 9 | `openai/gpt-5-5` | 0.935 |
+| 10 | `anthropic/claude-opus-5` | 0.932 |
 
 ## HLE
 
@@ -68,15 +68,15 @@ _Humanity's Last Exam accuracy (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `anthropic/claude-fable-5` | 0.555 |
-| 2 | `anthropic/claude-opus-5` | 0.513 |
-| 3 | `deepseek/deepseek-v4-pro` | 0.410 |
-| 4 | `minimax/minimax-m3` | 0.390 |
-| 5 | `deepseek/deepseek-v4-flash` | 0.348 |
-| 6 | `nex-agi/nex-n2-pro` | 0.337 |
-| 7 | `tencent/hy3` | 0.335 |
-| 8 | `thinkingmachines/inkling-small` | 0.333 |
-| 9 | `thinkingmachines/inkling` | 0.319 |
-| 10 | `z-ai/glm-5` | 0.293 |
+| 2 | `anthropic/claude-opus-5` | 0.549 |
+| 3 | `anthropic/claude-opus-5-xhigh` | 0.544 |
+| 4 | `anthropic/claude-opus-5-high` | 0.528 |
+| 5 | `anthropic/claude-opus-5-medium` | 0.513 |
+| 6 | `openai/gpt-5-6-sol` | 0.495 |
+| 7 | `anthropic/claude-opus-4-8` | 0.487 |
+| 8 | `google/gemini-3-7-flash` | 0.479 |
+| 9 | `openai/gpt-5-6-sol-xhigh` | 0.473 |
+| 10 | `google/gemini-3-1-pro-preview` | 0.470 |
 
 ## IFBench
 
@@ -85,16 +85,16 @@ _Instruction-following benchmark score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `minimax/minimax-m3` | 0.829 |
-| 2 | `deepseek/deepseek-v4-flash` | 0.792 |
-| 3 | `openai/gpt-5-mini` | 0.754 |
-| 4 | `z-ai/glm-5-turbo` | 0.732 |
-| 5 | `z-ai/glm-5` | 0.723 |
-| 6 | `minimax/minimax-m2` | 0.723 |
-| 7 | `openai/o3` | 0.714 |
-| 8 | `upstage/solar-pro-3` | 0.712 |
-| 9 | `nvidia/nemotron-3-nano-30b-a3b` | 0.711 |
-| 10 | `openai/gpt-5` | 0.706 |
+| 1 | `xai/grok-4-3-medium` | 0.833 |
+| 2 | `xai/grok-4-20-0309` | 0.829 |
+| 3 | `minimax/minimax-m3` | 0.829 |
+| 4 | `nvidia/nvidia-nemotron-3-ultra-550b-a55b` | 0.814 |
+| 5 | `xai/grok-4-3` | 0.813 |
+| 6 | `xai/grok-4-20` | 0.812 |
+| 7 | `xai/grok-4-3-low` | 0.810 |
+| 8 | `alibaba/qwen3-7-max` | 0.805 |
+| 9 | `nvidia/nemotron-cascade-2-30b-a3b` | 0.804 |
+| 10 | `xiaomi/mimo-v2-5-pro` | 0.799 |
 
 ## LCR
 
@@ -103,16 +103,16 @@ _Long-context reasoning score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `minimax/minimax-m3` | 0.803 |
-| 2 | `anthropic/claude-opus-5` | 0.787 |
-| 3 | `moonshotai/kimi-k3` | 0.770 |
-| 4 | `anthropic/claude-fable-5` | 0.767 |
-| 5 | `nex-agi/nex-n2-pro` | 0.763 |
-| 6 | `openai/gpt-5` | 0.763 |
-| 7 | `deepseek/deepseek-v4-pro` | 0.753 |
-| 8 | `tencent/hy3` | 0.747 |
-| 9 | `thinkingmachines/inkling` | 0.733 |
-| 10 | `openai/o3` | 0.733 |
+| 1 | `meta/muse-spark-1-2` | 0.833 |
+| 2 | `kimi/kimi-k3` | 0.827 |
+| 3 | `meta/muse-spark-1-1` | 0.813 |
+| 4 | `google/gemini-3-7-flash-medium` | 0.810 |
+| 5 | `google/gemini-3-5-flash` | 0.810 |
+| 6 | `minimax/minimax-m3` | 0.803 |
+| 7 | `meta/muse-glimmer` | 0.800 |
+| 8 | `google/gemini-3-7-flash` | 0.800 |
+| 9 | `openai/gpt-5-6-terra` | 0.797 |
+| 10 | `google/gemini-3-5-flash-medium` | 0.797 |
 
 ## LiveCodeBench
 
@@ -121,16 +121,16 @@ _LiveCodeBench coding accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `openai/gpt-oss-120b` | 0.878 |
-| 2 | `openai/o4-mini` | 0.859 |
-| 3 | `moonshotai/kimi-k2` | 0.853 |
-| 4 | `openai/gpt-5-mini` | 0.838 |
-| 5 | `minimax/minimax-m2` | 0.826 |
-| 6 | `openai/o3` | 0.808 |
-| 7 | `qwen/qwen3-max` | 0.767 |
-| 8 | `openai/gpt-5-nano` | 0.763 |
-| 9 | `nvidia/nemotron-3-nano-30b-a3b` | 0.741 |
-| 10 | `openai/o3-mini-high` | 0.734 |
+| 1 | `google/gemini-3-pro` | 0.917 |
+| 2 | `google/gemini-3-flash-reasoning` | 0.908 |
+| 3 | `deepseek/deepseek-v3-2-speciale` | 0.896 |
+| 4 | `openai/gpt-5-2-medium` | 0.894 |
+| 5 | `zai/glm-4-7` | 0.894 |
+| 6 | `openai/gpt-5-2` | 0.889 |
+| 7 | `openai/gpt-oss-120b` | 0.878 |
+| 8 | `anthropic/claude-opus-4-5-thinking` | 0.871 |
+| 9 | `openai/gpt-5-1` | 0.868 |
+| 10 | `xiaomi/mimo-v2-flash-reasoning` | 0.868 |
 
 ## MATH-500
 
@@ -139,16 +139,16 @@ _MATH-500 competition-math accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `openai/o3` | 0.992 |
-| 2 | `openai/gpt-5` | 0.991 |
-| 3 | `openai/o4-mini` | 0.989 |
-| 4 | `openai/o3-mini-high` | 0.985 |
-| 5 | `qwen/qwen3-30b-a3b` | 0.975 |
-| 6 | `openai/o3-mini` | 0.973 |
-| 7 | `openai/o1` | 0.970 |
-| 8 | `deepseek/deepseek-r1` | 0.966 |
-| 9 | `perplexity/sonar-reasoning-pro` | 0.957 |
-| 10 | `deepseek/deepseek-r1-distill-llama-70b` | 0.935 |
+| 1 | `openai/gpt-5` | 0.994 |
+| 2 | `openai/o3` | 0.992 |
+| 3 | `xai/grok-3-mini-reasoning` | 0.992 |
+| 4 | `openai/gpt-5-medium` | 0.991 |
+| 5 | `anthropic/claude-4-sonnet-thinking` | 0.991 |
+| 6 | `xai/grok-4` | 0.990 |
+| 7 | `openai/o4-mini` | 0.989 |
+| 8 | `openai/gpt-5-low` | 0.987 |
+| 9 | `google/gemini-2-5-pro-05-06` | 0.986 |
+| 10 | `openai/o3-mini-high` | 0.985 |
 
 ## MMLU-Pro
 
@@ -157,16 +157,16 @@ _MMLU-Pro knowledge accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `openai/gpt-5` | 0.867 |
-| 2 | `openai/o3` | 0.853 |
-| 3 | `moonshotai/kimi-k2` | 0.848 |
-| 4 | `deepseek/deepseek-r1` | 0.844 |
-| 5 | `qwen/qwen3-max` | 0.841 |
-| 6 | `openai/o1` | 0.841 |
-| 7 | `openai/gpt-5-mini` | 0.837 |
-| 8 | `openai/o4-mini` | 0.832 |
-| 9 | `qwen/qwen3-vl-235b-a22b-instruct` | 0.823 |
-| 10 | `minimax/minimax-m2` | 0.820 |
+| 1 | `google/gemini-3-pro` | 0.898 |
+| 2 | `google/gemini-3-pro-low` | 0.895 |
+| 3 | `anthropic/claude-opus-4-5-thinking` | 0.895 |
+| 4 | `google/gemini-3-flash-reasoning` | 0.890 |
+| 5 | `anthropic/claude-opus-4-5` | 0.889 |
+| 6 | `google/gemini-3-flash` | 0.882 |
+| 7 | `anthropic/claude-4-1-opus-thinking` | 0.880 |
+| 8 | `anthropic/claude-4-5-sonnet-thinking` | 0.875 |
+| 9 | `minimax/minimax-m2-1` | 0.875 |
+| 10 | `openai/gpt-5-2` | 0.874 |
 
 ## SciCode
 
@@ -176,15 +176,15 @@ _SciCode scientific coding accuracy (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `anthropic/claude-fable-5` | 0.602 |
-| 2 | `moonshotai/kimi-k3` | 0.512 |
-| 3 | `anthropic/claude-opus-5` | 0.507 |
-| 4 | `deepseek/deepseek-v4-pro` | 0.492 |
-| 5 | `thinkingmachines/inkling-small` | 0.487 |
-| 6 | `tencent/hy3` | 0.476 |
-| 7 | `openai/o4-mini` | 0.465 |
-| 8 | `z-ai/glm-5` | 0.462 |
-| 9 | `thinkingmachines/inkling` | 0.461 |
-| 10 | `minimax/minimax-m3` | 0.454 |
+| 2 | `google/gemini-3-1-pro-preview` | 0.589 |
+| 3 | `kimi/kimi-k3` | 0.587 |
+| 4 | `meta/muse-spark-1-1` | 0.582 |
+| 5 | `google/gemini-3-7-flash-medium` | 0.579 |
+| 6 | `openai/gpt-5-6-sol-high` | 0.569 |
+| 7 | `google/gemini-3-7-flash` | 0.568 |
+| 8 | `openai/gpt-5-4` | 0.566 |
+| 9 | `openai/gpt-5-6-sol-medium` | 0.565 |
+| 10 | `meta/muse-spark-1-2` | 0.564 |
 
 ## TAU2
 
@@ -193,16 +193,16 @@ _TAU-bench agent benchmark (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-fable-5` | 0.985 |
-| 2 | `z-ai/glm-5v-turbo` | 0.985 |
-| 3 | `z-ai/glm-5-turbo` | 0.985 |
-| 4 | `z-ai/glm-5` | 0.982 |
-| 5 | `deepseek/deepseek-v4-flash` | 0.950 |
-| 6 | `mistralai/mistral-medium-3-5` | 0.942 |
-| 7 | `moonshotai/kimi-k2` | 0.930 |
-| 8 | `tencent/hy3-preview` | 0.927 |
-| 9 | `minimax/minimax-m3` | 0.889 |
-| 10 | `minimax/minimax-m2` | 0.868 |
+| 1 | `china-mobile/jt-35b-flash` | 0.991 |
+| 2 | `zai/glm-5-2` | 0.991 |
+| 3 | `zai/glm-4-7-flash` | 0.988 |
+| 4 | `anthropic/claude-fable-5` | 0.985 |
+| 5 | `stepfun/step-3-7-flash` | 0.985 |
+| 6 | `zai/glm-5v-turbo` | 0.985 |
+| 7 | `zai/glm-5-turbo` | 0.985 |
+| 8 | `zai/glm-5` | 0.982 |
+| 9 | `xai/grok-4-3` | 0.977 |
+| 10 | `zai/glm-5-1` | 0.977 |
 
 ## TAU-Banking
 
@@ -211,16 +211,16 @@ _TAU-bench banking domain agent score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `moonshotai/kimi-k3` | 0.416 |
-| 2 | `deepseek/deepseek-v4-pro` | 0.396 |
-| 3 | `anthropic/claude-opus-5` | 0.386 |
-| 4 | `anthropic/claude-fable-5` | 0.381 |
-| 5 | `deepseek/deepseek-v4-flash` | 0.309 |
-| 6 | `thinkingmachines/inkling` | 0.291 |
-| 7 | `inclusionai/ling-3.0-flash` | 0.272 |
-| 8 | `upstage/solar-pro4` | 0.233 |
-| 9 | `tencent/hy3` | 0.229 |
-| 10 | `thinkingmachines/inkling-small` | 0.188 |
+| 1 | `alibaba/qwen3-8-max` | 0.513 |
+| 2 | `xai/grok-4-6` | 0.507 |
+| 3 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
+| 4 | `kimi/kimi-k3` | 0.460 |
+| 5 | `anthropic/claude-opus-5-high` | 0.447 |
+| 6 | `openai/gpt-5-6-sol` | 0.443 |
+| 7 | `anthropic/claude-opus-5-xhigh` | 0.433 |
+| 8 | `anthropic/claude-opus-5` | 0.421 |
+| 9 | `xai/grok-4-5` | 0.421 |
+| 10 | `kimi/kimi-k3-low` | 0.416 |
 
 ## Terminal-Bench Hard
 
@@ -229,16 +229,16 @@ _Terminal-Bench hard sys-admin tasks (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-fable-5` | 0.629 |
-| 2 | `z-ai/glm-5` | 0.432 |
-| 3 | `minimax/minimax-m3` | 0.424 |
-| 4 | `openai/gpt-5` | 0.379 |
-| 5 | `openai/o3` | 0.371 |
-| 6 | `deepseek/deepseek-v4-flash` | 0.356 |
-| 7 | `tencent/hy3-preview` | 0.341 |
-| 8 | `mistralai/mistral-medium-3-5` | 0.333 |
-| 9 | `z-ai/glm-5-turbo` | 0.333 |
-| 10 | `openai/gpt-5-mini` | 0.333 |
+| 1 | `openai/gpt-5-6-sol` | 0.659 |
+| 2 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
+| 3 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 4 | `anthropic/claude-fable-5` | 0.629 |
+| 5 | `openai/gpt-5-6-sol-high` | 0.621 |
+| 6 | `openai/gpt-5-6-sol-xhigh` | 0.614 |
+| 7 | `openai/gpt-5-6-sol-low` | 0.606 |
+| 8 | `openai/gpt-5-5` | 0.606 |
+| 9 | `openai/gpt-5-5-high` | 0.598 |
+| 10 | `anthropic/claude-opus-4-8` | 0.583 |
 
 ## Terminal-Bench v2.1
 
@@ -247,13 +247,13 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-opus-5` | 0.861 |
-| 2 | `anthropic/claude-fable-5` | 0.846 |
-| 3 | `moonshotai/kimi-k3` | 0.824 |
-| 4 | `deepseek/deepseek-v4-pro` | 0.787 |
-| 5 | `nex-agi/nex-n2-pro` | 0.678 |
-| 6 | `minimax/minimax-m3` | 0.652 |
-| 7 | `tencent/hy3` | 0.644 |
-| 8 | `deepseek/deepseek-v4-flash` | 0.618 |
-| 9 | `upstage/solar-pro4` | 0.573 |
-| 10 | `inclusionai/ling-3.0-flash` | 0.554 |
+| 1 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
+| 2 | `anthropic/claude-opus-5` | 0.891 |
+| 3 | `xai/grok-4-6` | 0.884 |
+| 4 | `openai/gpt-5-6-sol` | 0.880 |
+| 5 | `openai/gpt-5-6-terra` | 0.880 |
+| 6 | `anthropic/claude-opus-5-xhigh` | 0.880 |
+| 7 | `anthropic/claude-opus-5-high` | 0.876 |
+| 8 | `openai/gpt-5-6-sol-high` | 0.873 |
+| 9 | `openai/gpt-5-6-sol-medium` | 0.861 |
+| 10 | `anthropic/claude-opus-5-medium` | 0.861 |
