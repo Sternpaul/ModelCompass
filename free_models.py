@@ -266,12 +266,6 @@ def main():
 
     rows.sort(key=sort_key)
 
-    # Warn for Nous-free models missing from AA (known data gap, e.g. longcat)
-    for r in rows:
-        if "nous" in r["free_on"] and r["aa"] is None:
-            warn(f"{r['id']} is free on Nous but has no Artificial Analysis score in our dataset "
-                 f"(may exist on artificialanalysis.ai but not captured by the AA fetch).")
-
     # 7. Thresholds for bolding
     best_intel = max((r["aa"][AA_PRIMARY] for r in rows if r["aa"] and r["aa"].get(AA_PRIMARY) is not None), default=None)
     best_coding = max((r["aa"][AA_SECONDARY] for r in rows if r["aa"] and r["aa"].get(AA_SECONDARY) is not None), default=None)

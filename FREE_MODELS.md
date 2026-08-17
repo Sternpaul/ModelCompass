@@ -4,12 +4,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 
 **Sorting:** Arena rank (primary) → AA Intelligence (secondary). Models with no benchmark coverage sort to the bottom. **Bold** = best value in that column.
 
-> ⚠️ **Data warnings (run 2026-08-17):**
-> - stepfun/step-3.7-flash:free is free on Nous but has no Artificial Analysis score in our dataset (may exist on artificialanalysis.ai but not captured by the AA fetch).
-> - poolside/laguna-s-2.1:free is free on Nous but has no Artificial Analysis score in our dataset (may exist on artificialanalysis.ai but not captured by the AA fetch).
-> - poolside/laguna-xs-2.1:free is free on Nous but has no Artificial Analysis score in our dataset (may exist on artificialanalysis.ai but not captured by the AA fetch).
-> - meituan/longcat-2.0:free is free on Nous but has no Artificial Analysis score in our dataset (may exist on artificialanalysis.ai but not captured by the AA fetch).
-
 | Model | Free on | AA Intelligence | AA Coding | Arena Rank |
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | unorouter | — | — | **7** (document) |
