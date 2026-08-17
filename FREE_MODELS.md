@@ -16,7 +16,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | kimi-k2-7-code:free | kenari/openrouter | 43.0 | 60.8 | 39 (code) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 34.3 | 48.2 | 42 (vision) |
 | deepseek-v4-pro:free | openrouter/unorouter | **53.2** | 68.8 | 47 (code) |
-| mimo-v2-5:free | kenari/openrouter | — | — | 50 (vision) |
+| mimo-v2-5:free | kenari/openrouter | — | — | 50 (code) |
 | minimax-m2.7:free | openrouter/unorouter | 38.9 | 52.6 | 64 (code) |
 | upstage/solar-pro4:free | nous | 41.6 | 52.7 | 75 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 23.3 | — | 177 (text) |
