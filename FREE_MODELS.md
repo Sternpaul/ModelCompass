@@ -27,7 +27,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 23.6 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 20.2 | 36.5 | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
-| liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
 | poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |
 | poolside/laguna-xs-2.1:free | kilo/nous/openrouter | — | — | — |
 | nvidia/nemotron-3.5-content-safety:free | kilo/openrouter | — | — | — |

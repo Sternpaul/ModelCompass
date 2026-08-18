@@ -3,8 +3,8 @@
     "leaderboard": "aa_artificial_analysis_intelligence_index",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "artificial_analysis_intelligence_index",
-    "fetched_at": "2026-08-17T14:20:02.914849+00:00",
-    "model_count_with_data": 608
+    "fetched_at": "2026-08-18T04:41:24.527218+00:00",
+    "model_count_with_data": 609
   },
   "models": [
     {
@@ -158,6 +158,11 @@
       "score": 52.3
     },
     {
+      "model": "alibaba/qwen3-8-27b",
+      "name": "Qwen3.8 27B",
+      "score": 52.0
+    },
+    {
       "model": "google/gemini-3-5-flash",
       "name": "Gemini 3.5 Flash (high)",
       "score": 52.0
@@ -188,13 +193,13 @@
       "score": 50.7
     },
     {
-      "model": "openai/gpt-5-6-luna-xhigh",
-      "name": "GPT-5.6 Luna (xhigh)",
+      "model": "openai/gpt-5-6-terra-high",
+      "name": "GPT-5.6 Terra (high)",
       "score": 50.1
     },
     {
-      "model": "openai/gpt-5-6-terra-high",
-      "name": "GPT-5.6 Terra (high)",
+      "model": "openai/gpt-5-6-luna-xhigh",
+      "name": "GPT-5.6 Luna (xhigh)",
       "score": 50.1
     },
     {
@@ -963,13 +968,13 @@
       "score": 26.1
     },
     {
-      "model": "anthropic/claude-4-sonnet",
-      "name": "Claude 4 Sonnet (Non-reasoning)",
+      "model": "anthropic/claude-4-opus",
+      "name": "Claude 4 Opus (Non-reasoning)",
       "score": 26.0
     },
     {
-      "model": "anthropic/claude-4-opus",
-      "name": "Claude 4 Opus (Non-reasoning)",
+      "model": "anthropic/claude-4-sonnet",
+      "name": "Claude 4 Sonnet (Non-reasoning)",
       "score": 26.0
     },
     {
@@ -1093,13 +1098,13 @@
       "score": 23.3
     },
     {
-      "model": "xai/grok-3-mini-reasoning",
-      "name": "Grok 3 mini Reasoning (high)",
+      "model": "xai/grok-4-20-0309-non-reasoning",
+      "name": "Grok 4.20 0309 (Non-reasoning)",
       "score": 22.9
     },
     {
-      "model": "xai/grok-4-20-0309-non-reasoning",
-      "name": "Grok 4.20 0309 (Non-reasoning)",
+      "model": "xai/grok-3-mini-reasoning",
+      "name": "Grok 3 mini Reasoning (high)",
       "score": 22.9
     },
     {
@@ -2163,13 +2168,13 @@
       "score": 8.3
     },
     {
-      "model": "alibaba/qwen3-4b-instruct-reasoning",
-      "name": "Qwen3 4B (Reasoning)",
+      "model": "alibaba/qwen3-vl-8b-instruct",
+      "name": "Qwen3 VL 8B Instruct",
       "score": 8.2
     },
     {
-      "model": "alibaba/qwen3-vl-8b-instruct",
-      "name": "Qwen3 VL 8B Instruct",
+      "model": "alibaba/qwen3-4b-instruct-reasoning",
+      "name": "Qwen3 4B (Reasoning)",
       "score": 8.2
     },
     {
@@ -2273,13 +2278,13 @@
       "score": 7.3
     },
     {
-      "model": "nvidia/nvidia-nemotron-3-nano-30b-a3b",
-      "name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
+      "model": "nvidia/nvidia-nemotron-nano-9b-v2",
+      "name": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
       "score": 7.2
     },
     {
-      "model": "nvidia/nvidia-nemotron-nano-9b-v2",
-      "name": "NVIDIA Nemotron Nano 9B V2 (Non-reasoning)",
+      "model": "nvidia/nvidia-nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA Nemotron 3 Nano 30B A3B (Non-reasoning)",
       "score": 7.2
     },
     {
@@ -2633,13 +2638,13 @@
       "score": 3.7
     },
     {
-      "model": "alibaba/qwen3-vl-4b-instruct",
-      "name": "Qwen3 VL 4B Instruct",
+      "model": "alibaba/qwen1.5-110b-chat",
+      "name": "Qwen1.5 Chat 110B",
       "score": 3.7
     },
     {
-      "model": "alibaba/qwen1.5-110b-chat",
-      "name": "Qwen1.5 Chat 110B",
+      "model": "alibaba/qwen3-vl-4b-instruct",
+      "name": "Qwen3 VL 4B Instruct",
       "score": 3.7
     },
     {
@@ -2748,13 +2753,13 @@
       "score": 2.7
     },
     {
-      "model": "meta/llama-2-chat-70b",
-      "name": "Llama 2 Chat 70B",
+      "model": "meta/llama-2-chat-13b",
+      "name": "Llama 2 Chat 13B",
       "score": 2.6
     },
     {
-      "model": "meta/llama-2-chat-13b",
-      "name": "Llama 2 Chat 13B",
+      "model": "meta/llama-2-chat-70b",
+      "name": "Llama 2 Chat 70B",
       "score": 2.6
     },
     {
@@ -2803,13 +2808,13 @@
       "score": 2.3
     },
     {
-      "model": "liquidai/lfm2-2-6b",
-      "name": "LFM2 2.6B",
+      "model": "liquidai/lfm2-5-1-2b-instruct",
+      "name": "LFM2.5-1.2B-Instruct",
       "score": 2.3
     },
     {
-      "model": "liquidai/lfm2-5-1-2b-instruct",
-      "name": "LFM2.5-1.2B-Instruct",
+      "model": "liquidai/lfm2-2-6b",
+      "name": "LFM2 2.6B",
       "score": 2.3
     },
     {
@@ -2918,13 +2923,13 @@
       "score": 1.0
     },
     {
-      "model": "ibm/granite-4-0-350m",
-      "name": "Granite 4.0 350M",
+      "model": "ibm/granite-4-0-h-350m",
+      "name": "Granite 4.0 H 350M",
       "score": 1.0
     },
     {
-      "model": "ibm/granite-4-0-h-350m",
-      "name": "Granite 4.0 H 350M",
+      "model": "ibm/granite-4-0-350m",
+      "name": "Granite 4.0 350M",
       "score": 1.0
     },
     {
@@ -2948,11 +2953,6 @@
       "score": 1.0
     },
     {
-      "model": "google/gemma-3n-e4b",
-      "name": "Gemma 3n E4B Instruct",
-      "score": 1.0
-    },
-    {
       "model": "google/gemma-3-4b",
       "name": "Gemma 3 4B Instruct",
       "score": 1.0
@@ -2960,6 +2960,11 @@
     {
       "model": "google/gemma-3-1b",
       "name": "Gemma 3 1B Instruct",
+      "score": 1.0
+    },
+    {
+      "model": "google/gemma-3n-e4b",
+      "name": "Gemma 3n E4B Instruct",
       "score": 1.0
     },
     {

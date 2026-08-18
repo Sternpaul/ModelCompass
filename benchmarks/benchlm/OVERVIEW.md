@@ -19,7 +19,7 @@ _Tool-use / agentic task category score._
 | 4 | `claude-fable` | 93.400 |
 | 5 | `gpt-5-6-terra` | 92.100 |
 | 6 | `claude-sonnet-5` | 87 |
-| 7 | `grok-4-6` | 86.900 |
+| 7 | `grok-4-6` | 87 |
 | 8 | `qwen3-8-max` | 86.700 |
 | 9 | `gpt-5-6-luna` | 86.200 |
 | 10 | `gpt-5-5` | 85.800 |
@@ -40,7 +40,7 @@ _Code generation category score._
 | 7 | `claude-opus-4-8` | 68.800 |
 | 8 | `deepseek-v3-2` | 67.200 |
 | 9 | `sakana-fugu` | 66.200 |
-| 10 | `kimi-3` | 64.100 |
+| 10 | `kimi-3` | 64 |
 
 ## Instruction Following
 

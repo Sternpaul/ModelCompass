@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T14:20:03.101180+00:00",
+    "generated_at": "2026-08-18T04:41:24.709185+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -24,13 +24,13 @@
       "arena_image-edit": {
         "source": "https://arena.ai/leaderboard/image-edit",
         "subdir": "arena",
-        "model_count": 52,
+        "model_count": 51,
         "top_n": 10
       },
       "arena_image-to-video": {
         "source": "https://arena.ai/leaderboard/image-to-video",
         "subdir": "arena",
-        "model_count": 44,
+        "model_count": 45,
         "top_n": 10
       },
       "arena_search": {
@@ -42,13 +42,13 @@
       "arena_text-to-image": {
         "source": "https://arena.ai/leaderboard/text-to-image",
         "subdir": "arena",
-        "model_count": 76,
+        "model_count": 75,
         "top_n": 10
       },
       "arena_text-to-video": {
         "source": "https://arena.ai/leaderboard/text-to-video",
         "subdir": "arena",
-        "model_count": 44,
+        "model_count": 45,
         "top_n": 10
       },
       "arena_text": {
@@ -60,8 +60,8 @@
       "arena_video-edit": {
         "source": "https://arena.ai/leaderboard/video-edit",
         "subdir": "arena",
-        "model_count": 8,
-        "top_n": 8
+        "model_count": 9,
+        "top_n": 9
       },
       "arena_vision": {
         "source": "https://arena.ai/leaderboard/vision",
@@ -84,13 +84,13 @@
       "aa_artificial_analysis_coding_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 220,
+        "model_count": 221,
         "top_n": 10
       },
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 595,
+        "model_count": 596,
         "top_n": 10
       },
       "aa_artificial_analysis_math_index": {
@@ -102,13 +102,13 @@
       "aa_gpqa": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 575,
+        "model_count": 576,
         "top_n": 10
       },
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 567,
+        "model_count": 568,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -120,7 +120,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 500,
+        "model_count": 501,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -144,7 +144,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 567,
+        "model_count": 568,
         "top_n": 10
       },
       "aa_tau2": {
@@ -156,7 +156,7 @@
       "aa_tau_banking": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 166,
+        "model_count": 167,
         "top_n": 10
       },
       "aa_terminalbench_hard": {
@@ -168,7 +168,7 @@
       "aa_terminalbench_v2_1": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 200,
+        "model_count": 201,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -180,7 +180,7 @@
       "benchlm_coding": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 96,
+        "model_count": 97,
         "top_n": 10
       },
       "benchlm_instructionFollowing": {
@@ -258,6 +258,16 @@
             "name": "Tool Hallucination",
             "score": 1.13,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 19.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 525
@@ -297,6 +307,16 @@
             "name": "Tool Hallucination",
             "score": 1.22,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 24.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 1050
@@ -336,6 +356,16 @@
             "name": "Tool Hallucination",
             "score": 1.18,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 15.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 525
@@ -375,6 +405,16 @@
             "name": "Tool Hallucination",
             "score": 1.22,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 18.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 530
@@ -414,6 +454,16 @@
             "name": "Tool Hallucination",
             "score": 1.22,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 28.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 315
@@ -453,6 +503,16 @@
             "name": "Tool Hallucination",
             "score": 0.8,
             "ci": 2.47
+          },
+          {
+            "name": "Cost/Task",
+            "score": 35.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 525
@@ -492,6 +552,16 @@
             "name": "Tool Hallucination",
             "score": 1.21,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 47.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 25015
@@ -531,6 +601,16 @@
             "name": "Tool Hallucination",
             "score": 1.12,
             "ci": 0.21
+          },
+          {
+            "name": "Cost/Task",
+            "score": 36.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 525
@@ -570,6 +650,16 @@
             "name": "Tool Hallucination",
             "score": 1.22,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 72.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 25015
@@ -609,6 +699,16 @@
             "name": "Tool Hallucination",
             "score": 1.17,
             "ci": 0.19
+          },
+          {
+            "name": "Cost/Task",
+            "score": 36.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
           }
         ],
         "sessions": 525
@@ -902,15 +1002,24 @@
       },
       {
         "rank": 2,
-        "model": "dreamina-seedance-2.0-720p",
+        "model": "dreamina-seedance-2.5-720p",
         "vendor": "Bytedance",
         "license": "proprietary",
-        "score": 1479.0,
+        "score": 1484.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 3,
+        "model": "dreamina-seedance-2.0-720p",
+        "vendor": "Bytedance",
+        "license": "proprietary",
+        "score": 1478.0,
+        "ci": null,
+        "votes": null
+      },
+      {
+        "rank": 4,
         "model": "gemini-omni-flash",
         "vendor": "Google",
         "license": "proprietary",
@@ -919,7 +1028,7 @@
         "votes": null
       },
       {
-        "rank": 4,
+        "rank": 5,
         "model": "grok-imagine-video-1.5-720p",
         "vendor": "SpaceXAI",
         "license": "proprietary",
@@ -928,56 +1037,47 @@
         "votes": null
       },
       {
-        "rank": 5,
+        "rank": 6,
         "model": "flux-3-video-20260811",
         "vendor": "Black Forest Labs",
         "license": "proprietary",
-        "score": 1453.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "happyhorse-1.0",
-        "vendor": "Alibaba-ATH",
-        "license": "proprietary",
-        "score": 1441.0,
+        "score": 1449.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 7,
-        "model": "wan2.7-i2v",
-        "vendor": "Alibaba",
+        "model": "happyhorse-1.0",
+        "vendor": "Alibaba-ATH",
         "license": "proprietary",
-        "score": 1426.0,
+        "score": 1442.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 8,
-        "model": "grok-imagine-video-720p",
-        "vendor": "SpaceXAI",
+        "model": "wan2.7-i2v",
+        "vendor": "Alibaba",
         "license": "proprietary",
-        "score": 1416.0,
+        "score": 1427.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 9,
-        "model": "veo-3.1-audio",
-        "vendor": "Google",
+        "model": "grok-imagine-video-720p",
+        "vendor": "SpaceXAI",
         "license": "proprietary",
-        "score": 1397.0,
+        "score": 1415.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 10,
-        "model": "veo-3.1-audio-1080p",
+        "model": "veo-3.1-audio",
         "vendor": "Google",
         "license": "proprietary",
-        "score": 1390.0,
+        "score": 1397.0,
         "ci": null,
         "votes": null
       }
@@ -1181,7 +1281,7 @@
         "model": "flux-3-video",
         "vendor": "Black Forest Labs",
         "license": "proprietary",
-        "score": 1496.0,
+        "score": 1494.0,
         "ci": null,
         "votes": null
       },
@@ -1190,12 +1290,21 @@
         "model": "dreamina-seedance-2.0-720p",
         "vendor": "Bytedance",
         "license": "proprietary",
-        "score": 1478.0,
+        "score": 1482.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 4,
+        "model": "dreamina-seedance-2.5-720p",
+        "vendor": "Bytedance",
+        "license": "proprietary",
+        "score": 1477.0,
+        "ci": null,
+        "votes": null
+      },
+      {
+        "rank": 5,
         "model": "muse-video",
         "vendor": "Meta",
         "license": "proprietary",
@@ -1204,7 +1313,7 @@
         "votes": null
       },
       {
-        "rank": 5,
+        "rank": 6,
         "model": "minimax-h3",
         "vendor": "MiniMax",
         "license": null,
@@ -1213,7 +1322,7 @@
         "votes": null
       },
       {
-        "rank": 6,
+        "rank": 7,
         "model": "happyhorse-1.0",
         "vendor": "Alibaba-ATH",
         "license": "proprietary",
@@ -1222,16 +1331,16 @@
         "votes": null
       },
       {
-        "rank": 7,
+        "rank": 8,
         "model": "sora-2-pro",
         "vendor": "OpenAI",
         "license": "proprietary",
-        "score": 1366.0,
+        "score": 1364.0,
         "ci": null,
         "votes": null
       },
       {
-        "rank": 8,
+        "rank": 9,
         "model": "veo-3.1-audio",
         "vendor": "Google",
         "license": "proprietary",
@@ -1240,20 +1349,11 @@
         "votes": null
       },
       {
-        "rank": 9,
+        "rank": 10,
         "model": "veo-3.1-audio-1080p",
         "vendor": "Google",
         "license": "proprietary",
         "score": 1363.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 10,
-        "model": "veo-3.1-fast-audio",
-        "vendor": "Google",
-        "license": "proprietary",
-        "score": 1362.0,
         "ci": null,
         "votes": null
       }
@@ -1353,24 +1453,33 @@
     "arena_video-edit": [
       {
         "rank": 1,
-        "model": "minimax-h3",
-        "vendor": "MiniMax",
-        "license": null,
-        "score": 1390.0,
+        "model": "dreamina-seedance-2.5-720p",
+        "vendor": "Bytedance",
+        "license": "proprietary",
+        "score": 1411.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 2,
-        "model": "dreamina-seedance-2.0-720p",
-        "vendor": "Bytedance",
-        "license": "proprietary",
-        "score": 1358.0,
+        "model": "minimax-h3",
+        "vendor": "MiniMax",
+        "license": null,
+        "score": 1388.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 3,
+        "model": "dreamina-seedance-2.0-720p",
+        "vendor": "Bytedance",
+        "license": "proprietary",
+        "score": 1359.0,
+        "ci": null,
+        "votes": null
+      },
+      {
+        "rank": 4,
         "model": "gemini-omni-flash",
         "vendor": "Google",
         "license": "proprietary",
@@ -1379,7 +1488,7 @@
         "votes": null
       },
       {
-        "rank": 4,
+        "rank": 5,
         "model": "happyhorse-1.0",
         "vendor": "Alibaba-ATH",
         "license": "proprietary",
@@ -1388,25 +1497,25 @@
         "votes": null
       },
       {
-        "rank": 5,
+        "rank": 6,
         "model": "grok-imagine-video",
         "vendor": "SpaceXAI",
         "license": "proprietary",
-        "score": 1263.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "kling-o3-pro",
-        "vendor": "KlingAI",
-        "license": "proprietary",
-        "score": 1255.0,
+        "score": 1262.0,
         "ci": null,
         "votes": null
       },
       {
         "rank": 7,
+        "model": "kling-o3-pro",
+        "vendor": "KlingAI",
+        "license": "proprietary",
+        "score": 1257.0,
+        "ci": null,
+        "votes": null
+      },
+      {
+        "rank": 8,
         "model": "kling-o1-pro",
         "vendor": "KlingAI",
         "license": "proprietary",
@@ -1415,7 +1524,7 @@
         "votes": null
       },
       {
-        "rank": 8,
+        "rank": 9,
         "model": "runway-gen4-aleph",
         "vendor": "Runway",
         "license": "proprietary",
@@ -1657,13 +1766,13 @@
         "score": 76.7
       },
       {
-        "model": "anthropic/claude-fable-5",
-        "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
+        "model": "anthropic/claude-opus-5-high",
+        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
         "score": 76.5
       },
       {
-        "model": "anthropic/claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+        "model": "anthropic/claude-fable-5",
+        "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "score": 76.5
       },
       {
@@ -1798,13 +1907,13 @@
         "score": 0.941
       },
       {
-        "model": "anthropic/claude-opus-5-xhigh",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
+        "model": "anthropic/claude-opus-5-high",
+        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
         "score": 0.937
       },
       {
-        "model": "anthropic/claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
+        "model": "anthropic/claude-opus-5-xhigh",
+        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
         "score": 0.937
       },
       {
@@ -2261,6 +2370,11 @@
         "score": 0.490721649484536
       },
       {
+        "model": "alibaba/qwen3-8-27b",
+        "name": "Qwen3.8 27B",
+        "score": 0.480412371134021
+      },
+      {
         "model": "kimi/kimi-k3",
         "name": "Kimi K3 (max)",
         "score": 0.45979381443299
@@ -2289,11 +2403,6 @@
         "model": "xai/grok-4-5",
         "name": "Grok 4.5 (high)",
         "score": 0.420618556701031
-      },
-      {
-        "model": "kimi/kimi-k3-low",
-        "name": "Kimi K3 (low)",
-        "score": 0.416494845360825
       }
     ],
     "aa_terminalbench_hard": [
@@ -2303,13 +2412,13 @@
         "score": 0.659090909090909
       },
       {
-        "model": "openai/gpt-5-6-terra-xhigh",
-        "name": "GPT-5.6 Terra (xhigh)",
+        "model": "openai/gpt-5-6-sol-medium",
+        "name": "GPT-5.6 Sol (medium)",
         "score": 0.628787878787879
       },
       {
-        "model": "openai/gpt-5-6-sol-medium",
-        "name": "GPT-5.6 Sol (medium)",
+        "model": "openai/gpt-5-6-terra-xhigh",
+        "name": "GPT-5.6 Terra (xhigh)",
         "score": 0.628787878787879
       },
       {
@@ -2447,7 +2556,7 @@
         "model": "grok-4-6",
         "name": "Grok 4.6",
         "creator": "xAI",
-        "score": 86.9,
+        "score": 87,
         "category_rank": 7
       },
       {
@@ -2499,7 +2608,7 @@
         "name": "Qwen3.7 Max",
         "creator": "Alibaba",
         "score": 80.4,
-        "category_rank": 53
+        "category_rank": 52
       },
       {
         "model": "sakana-fugu-ultra",
@@ -2513,7 +2622,7 @@
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
         "score": 69.3,
-        "category_rank": 40
+        "category_rank": 39
       },
       {
         "model": "claude-opus-4-8",
@@ -2527,7 +2636,7 @@
         "name": "DeepSeek V3.2",
         "creator": "DeepSeek",
         "score": 67.2,
-        "category_rank": 71
+        "category_rank": 70
       },
       {
         "model": "sakana-fugu",
@@ -2540,7 +2649,7 @@
         "model": "kimi-3",
         "name": "Kimi K3",
         "creator": "Moonshot AI",
-        "score": 64.1,
+        "score": 64,
         "category_rank": 5
       }
     ],
