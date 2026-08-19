@@ -3,8 +3,8 @@
     "leaderboard": "aa_terminalbench_v2_1",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "terminalbench_v2_1",
-    "fetched_at": "2026-08-18T04:41:24.527218+00:00",
-    "model_count_with_data": 609
+    "fetched_at": "2026-08-19T04:42:20.002714+00:00",
+    "model_count_with_data": 610
   },
   "models": [
     {
@@ -81,6 +81,11 @@
       "model": "openai/gpt-5-5",
       "name": "GPT-5.5 (xhigh)",
       "score": 0.842696629213483
+    },
+    {
+      "model": "zai/glm-5-3",
+      "name": "GLM-5.3 (max)",
+      "score": 0.838951310861423
     },
     {
       "model": "anthropic/claude-opus-4-7",
@@ -763,13 +768,13 @@
       "score": 0.149812734082397
     },
     {
-      "model": "openai/gpt-oss-120b-low",
-      "name": "gpt-oss-120b (low)",
+      "model": "openai/gpt-oss-20b",
+      "name": "gpt-oss-20b (high)",
       "score": 0.138576779026217
     },
     {
-      "model": "openai/gpt-oss-20b",
-      "name": "gpt-oss-20b (high)",
+      "model": "openai/gpt-oss-120b-low",
+      "name": "gpt-oss-120b (low)",
       "score": 0.138576779026217
     },
     {
@@ -998,13 +1003,13 @@
       "score": 0.0
     },
     {
-      "model": "alibaba/qwen3-5-0-8b",
-      "name": "Qwen3.5 0.8B (Reasoning)",
+      "model": "alibaba/qwen3-5-2b-non-reasoning",
+      "name": "Qwen3.5 2B (Non-reasoning)",
       "score": 0.0
     },
     {
-      "model": "alibaba/qwen3-5-2b-non-reasoning",
-      "name": "Qwen3.5 2B (Non-reasoning)",
+      "model": "alibaba/qwen3-5-0-8b",
+      "name": "Qwen3.5 0.8B (Reasoning)",
       "score": 0.0
     },
     {

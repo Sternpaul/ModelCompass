@@ -13,16 +13,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `Claude Opus 5 (High)` | Net Improvement: 12.19, Confirmed Success: 15.35, Praise vs Complaint: 19.26, Steerability: 11.34, Bash Recovery: 13.89, Tool Hallucination: 1.13, Cost/Task: 19.0, Output Tokens/Task: None |
-| 2 | `Claude Fable 5 (High)` | Net Improvement: 12.01, Confirmed Success: 10.66, Praise vs Complaint: 25.14, Steerability: 8.84, Bash Recovery: 14.19, Tool Hallucination: 1.22, Cost/Task: 24.0, Output Tokens/Task: None |
-| 3 | `Claude Opus 5 (Max)` | Net Improvement: 11.95, Confirmed Success: 17.96, Praise vs Complaint: 19.3, Steerability: 6.95, Bash Recovery: 14.38, Tool Hallucination: 1.18, Cost/Task: 15.0, Output Tokens/Task: None |
-| 4 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 10.86, Confirmed Success: 10.12, Praise vs Complaint: 23.03, Steerability: 9.23, Bash Recovery: 10.71, Tool Hallucination: 1.22, Cost/Task: 18.0, Output Tokens/Task: None |
-| 5 | `Kimi K3 (Max)` | Net Improvement: 10.6, Confirmed Success: 15.55, Praise vs Complaint: 20.31, Steerability: 7.8, Bash Recovery: 8.12, Tool Hallucination: 1.22, Cost/Task: 28.0, Output Tokens/Task: None |
-| 6 | `Claude Opus 4.8 (High)` | Net Improvement: 9.78, Confirmed Success: 9.45, Praise vs Complaint: 22.52, Steerability: 8.44, Bash Recovery: 9.29, Tool Hallucination: 0.8, Cost/Task: 35.0, Output Tokens/Task: None |
-| 7 | `GPT 5.5 (xHigh)` | Net Improvement: 8.9, Confirmed Success: 4.97, Praise vs Complaint: 14.61, Steerability: 9.17, Bash Recovery: 14.53, Tool Hallucination: 1.21, Cost/Task: 47.0, Output Tokens/Task: None |
-| 8 | `Claude Opus 4.7 (High)` | Net Improvement: 8.17, Confirmed Success: 6.61, Praise vs Complaint: 12.32, Steerability: 7.72, Bash Recovery: 13.09, Tool Hallucination: 1.12, Cost/Task: 36.0, Output Tokens/Task: None |
-| 9 | `GPT 5.5 (High)` | Net Improvement: 7.73, Confirmed Success: 4.03, Praise vs Complaint: 11.62, Steerability: 8.59, Bash Recovery: 13.21, Tool Hallucination: 1.22, Cost/Task: 72.0, Output Tokens/Task: None |
-| 10 | `Claude Opus 4.7` | Net Improvement: 7.66, Confirmed Success: 5.45, Praise vs Complaint: 11.57, Steerability: 9.95, Bash Recovery: 10.15, Tool Hallucination: 1.17, Cost/Task: 36.0, Output Tokens/Task: None |
+| 1 | `Claude Opus 5 (High)` | Net Improvement: 12.29, Confirmed Success: 15.54, Praise vs Complaint: 19.5, Steerability: 10.68, Bash Recovery: 14.58, Tool Hallucination: 1.14, Cost/Task: 19.0, Output Tokens/Task: None |
+| 2 | `Claude Opus 5 (Max)` | Net Improvement: 12.04, Confirmed Success: 18.13, Praise vs Complaint: 19.48, Steerability: 6.4, Bash Recovery: 14.97, Tool Hallucination: 1.2, Cost/Task: 15.0, Output Tokens/Task: None |
+| 3 | `Claude Fable 5 (High)` | Net Improvement: 11.63, Confirmed Success: 12.35, Praise vs Complaint: 22.16, Steerability: 8.24, Bash Recovery: 14.16, Tool Hallucination: 1.23, Cost/Task: 31.0, Output Tokens/Task: None |
+| 4 | `Kimi K3 (Max)` | Net Improvement: 10.42, Confirmed Success: 15.38, Praise vs Complaint: 19.73, Steerability: 7.5, Bash Recovery: 8.24, Tool Hallucination: 1.24, Cost/Task: 28.0, Output Tokens/Task: None |
+| 5 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 9.97, Confirmed Success: 10.54, Praise vs Complaint: 22.07, Steerability: 6.14, Bash Recovery: 9.84, Tool Hallucination: 1.24, Cost/Task: 26.0, Output Tokens/Task: None |
+| 6 | `Claude Opus 4.8 (High)` | Net Improvement: 9.63, Confirmed Success: 8.43, Praise vs Complaint: 21.62, Steerability: 8.82, Bash Recovery: 9.65, Tool Hallucination: 0.37, Cost/Task: 35.0, Output Tokens/Task: None |
+| 7 | `GPT 5.5 (xHigh)` | Net Improvement: 8.76, Confirmed Success: 4.71, Praise vs Complaint: 13.84, Steerability: 9.0, Bash Recovery: 15.0, Tool Hallucination: 1.23, Cost/Task: 47.0, Output Tokens/Task: None |
+| 8 | `Claude Opus 4.7 (High)` | Net Improvement: 8.13, Confirmed Success: 5.72, Praise vs Complaint: 12.06, Steerability: 8.22, Bash Recovery: 13.55, Tool Hallucination: 1.12, Cost/Task: 36.0, Output Tokens/Task: None |
+| 9 | `GPT 5.5 (High)` | Net Improvement: 7.81, Confirmed Success: 4.18, Praise vs Complaint: 11.13, Steerability: 9.07, Bash Recovery: 13.44, Tool Hallucination: 1.24, Cost/Task: 73.0, Output Tokens/Task: None |
+| 10 | `Claude Opus 4.7` | Net Improvement: 7.56, Confirmed Success: 5.23, Praise vs Complaint: 11.67, Steerability: 9.1, Bash Recovery: 10.62, Tool Hallucination: 1.18, Cost/Task: 36.0, Output Tokens/Task: None |
 
 ## Code Arena
 
@@ -69,14 +69,14 @@ _Human-preference Elo._
 |---|-------|------:|
 | 1 | `gpt-image-2 (medium)` | 1463.000 |
 | 2 | `grok-imagine-image-2.0 (low)` | 1439.000 |
-| 3 | `muse-image` | 1405.000 |
-| 4 | `mai-image-2.5` | 1402.000 |
-| 5 | `seedream-5.0-pro` | 1393.000 |
-| 6 | `chatgpt-image-latest-high-fidelity (20251216)` | 1390.000 |
+| 3 | `mai-image-2.6-preview` | 1420.000 |
+| 4 | `muse-image` | 1406.000 |
+| 5 | `mai-image-2.5` | 1401.000 |
+| 6 | `seedream-5.0-pro` | 1394.000 |
 | 7 | `grok-imagine-image-quality (20260519)` | 1390.000 |
-| 8 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1389.000 |
-| 9 | `gemini-3-pro-image-preview (nano-banana-pro)` | 1385.000 |
-| 10 | `reve-2.1` | 1374.000 |
+| 8 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
+| 9 | `chatgpt-image-latest-high-fidelity (20251216)` | 1389.000 |
+| 10 | `gemini-3-pro-image-preview (nano-banana-pro)` | 1385.000 |
 
 ## Image To Video Arena
 

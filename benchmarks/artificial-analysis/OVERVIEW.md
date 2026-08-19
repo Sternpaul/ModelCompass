@@ -53,8 +53,8 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 | 2 | `google/gemini-3-7-flash` | 0.945 |
 | 3 | `openai/gpt-5-6-sol` | 0.941 |
 | 4 | `google/gemini-3-1-pro-preview` | 0.941 |
-| 5 | `anthropic/claude-opus-5-high` | 0.937 |
-| 6 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 5 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 6 | `anthropic/claude-opus-5-high` | 0.937 |
 | 7 | `kimi/kimi-k3` | 0.935 |
 | 8 | `alibaba/qwen3-8-2-4t-a95b` | 0.935 |
 | 9 | `openai/gpt-5-5` | 0.935 |
@@ -184,7 +184,7 @@ _SciCode scientific coding accuracy (%)._
 | 7 | `google/gemini-3-7-flash` | 0.568 |
 | 8 | `openai/gpt-5-4` | 0.566 |
 | 9 | `openai/gpt-5-6-sol-medium` | 0.565 |
-| 10 | `meta/muse-spark-1-2` | 0.564 |
+| 10 | `zai/glm-5-3` | 0.565 |
 
 ## TAU2
 
@@ -213,14 +213,14 @@ _TAU-bench banking domain agent score (%)._
 |---|-------|------:|
 | 1 | `alibaba/qwen3-8-max` | 0.513 |
 | 2 | `xai/grok-4-6` | 0.507 |
-| 3 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
-| 4 | `alibaba/qwen3-8-27b` | 0.480 |
-| 5 | `kimi/kimi-k3` | 0.460 |
-| 6 | `anthropic/claude-opus-5-high` | 0.447 |
-| 7 | `openai/gpt-5-6-sol` | 0.443 |
-| 8 | `anthropic/claude-opus-5-xhigh` | 0.433 |
-| 9 | `anthropic/claude-opus-5` | 0.421 |
-| 10 | `xai/grok-4-5` | 0.421 |
+| 3 | `zai/glm-5-3` | 0.503 |
+| 4 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
+| 5 | `alibaba/qwen3-8-27b` | 0.480 |
+| 6 | `kimi/kimi-k3` | 0.460 |
+| 7 | `anthropic/claude-opus-5-high` | 0.447 |
+| 8 | `openai/gpt-5-6-sol` | 0.443 |
+| 9 | `anthropic/claude-opus-5-xhigh` | 0.433 |
+| 10 | `anthropic/claude-opus-5` | 0.421 |
 
 ## Terminal-Bench Hard
 

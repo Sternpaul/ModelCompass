@@ -4,16 +4,16 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 
 | Rank | Model | Top-10 Appearances | Borda Points | Benchmarks |
 |------|-------|--------------------:|-------------:|------------|
-| 1 | `openai/gpt-5-6-sol` | 7 | 48 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
-| 2 | `anthropic/claude-fable-5` | 6 | 44 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_tau2… |
-| 3 | `anthropic/claude-opus-5` | 6 | 40 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
+| 1 | `openai/gpt-5-6-sol` | 7 | 47 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
+| 2 | `anthropic/claude-fable-5` | 6 | 45 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_tau2… |
+| 3 | `anthropic/claude-opus-5` | 6 | 39 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
 | 4 | `anthropic/claude-opus-5-xhigh` | 6 | 36 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
-| 5 | `anthropic/claude-opus-5-high` | 6 | 32 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
+| 5 | `anthropic/claude-opus-5-high` | 6 | 29 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
 | 6 | `claude-fable-5` | 5 | 40 | arena_code, arena_document, arena_search, arena_text, arena_vision |
 | 7 | `xai/grok-4-6` | 5 | 37 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_tau_banking, aa_terminalbench_v2_1 |
 | 8 | `gpt-5-6-sol` | 5 | 33 | benchlm_agentic, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
-| 9 | `kimi/kimi-k3` | 5 | 31 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_lcr, aa_scicode, aa_tau_banking |
-| 10 | `openai/gpt-5-6-sol-xhigh` | 5 | 30 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_terminalbench_hard, aa_terminalbench_v2_1 |
+| 9 | `kimi/kimi-k3` | 5 | 30 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_lcr, aa_scicode, aa_tau_banking |
+| 10 | `openai/gpt-5-6-sol-xhigh` | 5 | 29 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_terminalbench_hard, aa_terminalbench_v2_1 |
 | 11 | `qwen3-7-max` | 5 | 29 | benchlm_coding, benchlm_instructionFollowing, benchlm_math, benchlm_multilingual, benchlm_reasoning |
 | 12 | `qwen3-7-plus` | 5 | 24 | benchlm_coding, benchlm_instructionFollowing, benchlm_math, benchlm_multilingual, benchlm_reasoning |
 | 13 | `claude-opus-5` | 4 | 36 | benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded, benchlm_reasoning |
