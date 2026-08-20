@@ -13,16 +13,16 @@ _Tool-use / agentic task category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-mythos-5` | 98.100 |
-| 2 | `kimi-3` | 94.900 |
+| 1 | `claude-mythos-5` | 97.700 |
+| 2 | `kimi-k3` | 94.900 |
 | 3 | `gpt-5-6-sol` | 94.900 |
-| 4 | `claude-fable` | 93.400 |
-| 5 | `gpt-5-6-terra` | 92.100 |
-| 6 | `claude-sonnet-5` | 87 |
-| 7 | `grok-4-6` | 87 |
-| 8 | `qwen3-8-max` | 86.700 |
-| 9 | `gpt-5-6-luna` | 86.200 |
-| 10 | `gpt-5-5` | 85.800 |
+| 4 | `claude-fable` | 92.400 |
+| 5 | `gpt-5-6-terra` | 91.600 |
+| 6 | `grok-4-6` | 87 |
+| 7 | `claude-sonnet-5` | 86.200 |
+| 8 | `gemini-3-7-flash` | 85.700 |
+| 9 | `qwen3-8-max` | 85.600 |
+| 10 | `claude-opus-5` | 85.100 |
 
 ## Coding
 
@@ -31,16 +31,16 @@ _Code generation category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-mythos-5` | 82.700 |
-| 2 | `claude-opus-5` | 82.700 |
-| 3 | `claude-fable` | 82.700 |
-| 4 | `qwen3-7-max` | 80.400 |
-| 5 | `sakana-fugu-ultra` | 76.400 |
-| 6 | `qwen3-7-plus` | 69.300 |
-| 7 | `claude-opus-4-8` | 68.800 |
-| 8 | `deepseek-v3-2` | 67.200 |
-| 9 | `sakana-fugu` | 66.200 |
-| 10 | `kimi-3` | 64 |
+| 1 | `qwen3-7-max` | 83.500 |
+| 2 | `claude-mythos-5` | 82.700 |
+| 3 | `claude-opus-5` | 82.700 |
+| 4 | `claude-fable` | 82.700 |
+| 5 | `sakana-fugu-ultra` | 81.600 |
+| 6 | `claude-opus-4-8` | 78.300 |
+| 7 | `claude-opus-4-7-adaptive` | 72.400 |
+| 8 | `qwen3-7-plus` | 71.900 |
+| 9 | `ornith-1-5-397b` | 71.400 |
+| 10 | `sakana-fugu` | 68.800 |
 
 ## Instruction Following
 
@@ -68,15 +68,15 @@ _Factual knowledge category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `claude-mythos-5` | 93.900 |
-| 2 | `claude-opus-5` | 93.400 |
-| 3 | `muse-spark-1-1` | 93.400 |
+| 2 | `claude-opus-5` | 93.500 |
+| 3 | `muse-spark-1-1` | 93.500 |
 | 4 | `gpt-5-4-pro` | 88 |
 | 5 | `claude-opus-4-8` | 87.600 |
 | 6 | `claude-sonnet-5` | 85.900 |
 | 7 | `gpt-5-5-pro` | 85.500 |
-| 8 | `kimi-3` | 84.800 |
-| 9 | `gpt-5-6-sol` | 83.600 |
-| 10 | `sakana-fugu-ultra` | 83.600 |
+| 8 | `kimi-k3` | 84.800 |
+| 9 | `gpt-5-6-sol` | 83.500 |
+| 10 | `sakana-fugu-ultra` | 83.500 |
 
 ## Math
 
@@ -125,7 +125,7 @@ _Vision+text grounded understanding._
 | 2 | `gpt-5-4-pro` | 88.500 |
 | 3 | `qwen3-8-max` | 88.100 |
 | 4 | `claude-opus-4-8` | 88 |
-| 5 | `kimi-3` | 87.900 |
+| 5 | `kimi-k3` | 87.900 |
 | 6 | `claude-mythos-5` | 86.100 |
 | 7 | `gpt-5-6-sol` | 84.800 |
 | 8 | `gemini-3-5-flash` | 83.400 |
