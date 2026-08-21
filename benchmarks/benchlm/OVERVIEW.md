@@ -18,11 +18,11 @@ _Tool-use / agentic task category score._
 | 3 | `gpt-5-6-sol` | 94.900 |
 | 4 | `claude-fable` | 92.400 |
 | 5 | `gpt-5-6-terra` | 91.600 |
-| 6 | `grok-4-6` | 87 |
+| 6 | `grok-4-6` | 86.400 |
 | 7 | `claude-sonnet-5` | 86.200 |
-| 8 | `gemini-3-7-flash` | 85.700 |
+| 8 | `glm-5-3` | 86 |
 | 9 | `qwen3-8-max` | 85.600 |
-| 10 | `claude-opus-5` | 85.100 |
+| 10 | `claude-opus-5` | 85 |
 
 ## Coding
 
@@ -40,7 +40,7 @@ _Code generation category score._
 | 7 | `claude-opus-4-7-adaptive` | 72.400 |
 | 8 | `qwen3-7-plus` | 71.900 |
 | 9 | `ornith-1-5-397b` | 71.400 |
-| 10 | `sakana-fugu` | 68.800 |
+| 10 | `kimi-k3` | 69.500 |
 
 ## Instruction Following
 
@@ -49,11 +49,11 @@ _Following complex instructions._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `qwen3-8-max` | 97.900 |
-| 2 | `mai-thinking-1` | 97.900 |
-| 3 | `inkling-small` | 96.500 |
-| 4 | `nemotron-3-ultra` | 95.400 |
-| 5 | `grok-4-3` | 94.500 |
+| 1 | `qwen3-8-max` | 97.800 |
+| 2 | `mai-thinking-1` | 97.800 |
+| 3 | `inkling-small` | 96.400 |
+| 4 | `nemotron-3-ultra` | 95.300 |
+| 5 | `grok-4-3` | 94.400 |
 | 6 | `dots3-note-preview` | 94.300 |
 | 7 | `qwen3-5-27b` | 93.700 |
 | 8 | `agents-a1` | 93.700 |
@@ -121,13 +121,13 @@ _Vision+text grounded understanding._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5` | 88.600 |
-| 2 | `gpt-5-4-pro` | 88.500 |
+| 1 | `claude-opus-5` | 88.500 |
+| 2 | `gpt-5-4-pro` | 88.400 |
 | 3 | `qwen3-8-max` | 88.100 |
 | 4 | `claude-opus-4-8` | 88 |
 | 5 | `kimi-k3` | 87.900 |
 | 6 | `claude-mythos-5` | 86.100 |
-| 7 | `gpt-5-6-sol` | 84.800 |
+| 7 | `gpt-5-6-sol` | 84.700 |
 | 8 | `gemini-3-5-flash` | 83.400 |
 | 9 | `gemini-3-1-pro` | 80.600 |
 | 10 | `qwen3-8-27b` | 79.800 |

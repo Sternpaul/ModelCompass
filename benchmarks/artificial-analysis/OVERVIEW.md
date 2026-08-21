@@ -230,8 +230,8 @@ _Terminal-Bench hard sys-admin tasks (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `openai/gpt-5-6-sol` | 0.659 |
-| 2 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
-| 3 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 2 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 3 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
 | 4 | `anthropic/claude-fable-5` | 0.629 |
 | 5 | `openai/gpt-5-6-sol-high` | 0.621 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.614 |
