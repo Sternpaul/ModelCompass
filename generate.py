@@ -251,6 +251,40 @@ def fetch_or_usage():
 
 
 # ---------------------------------------------------------------------------
+# Source 1d: DeepSWE (datacurve.ai) — agentic software-engineering eval
+# ---------------------------------------------------------------------------
+DEEPSWE_URL = (
+    "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json"
+)
+
+
+def fetch_deepswe():
+    """Return (rows, note). DeepSWE = pass@1 on 113 real GitHub issues run
+    through agent harnesses (mini-swe-agent etc). Fresh artifact JSON with
+    generated_at; soft-fail with note if unavailable."""
+    try:
+        d = fetch_json(DEEPSWE_URL, timeout=60)
+    except Exception as e:
+        return [], f"fetch error: {e}"
+    rows = d.get("rows") or []
+    out = []
+    for r in rows:
+        if not r.get("model"):
+            continue
+        out.append({
+            "model": r["model"],
+            "harness": r.get("harness"),
+            "reasoning_effort": r.get("reasoning_effort"),
+            "pass_rate": r.get("pass_rate"),
+            "n_passed": r.get("n_passed"),
+            "n_attempted": r.get("n_attempted"),
+            "mean_cost_usd": r.get("mean_cost_usd"),
+            "mean_output_tokens": r.get("mean_output_tokens"),
+        })
+    return out, f"ok ({len(out)} configs, generated_at={d.get('generated_at', '?')[:10]})"
+
+
+# ---------------------------------------------------------------------------
 # Source 2: Artificial Analysis
 # ---------------------------------------------------------------------------
 def fetch_artificial_analysis(api_key):
@@ -918,6 +952,16 @@ SOURCE_META = {
             "or_usage_tokens": ("Usage Rank", "Rank by total tokens processed; requests kept alongside."),
         },
     },
+    "deepswe": {
+        "title": "DeepSWE (Datacurve)",
+        "source_url": DEEPSWE_URL,
+        "desc": "Agentic software-engineering eval: pass@1 on 113 real GitHub "
+                "issues executed through agent harnesses. Cost and token stats "
+                "kept as raw columns, never blended.",
+        "benches": {
+            "deepswe_v1_1": ("DeepSWE v1.1", "pass@1 per harness+model+effort config."),
+        },
+    },
 }
 
 WRITTEN = {}  # subdir -> [bname, ...]
@@ -1089,6 +1133,30 @@ def write_usage_benchmarks(usage):
         rows,
     )
     return {"or_usage_tokens": True}
+
+
+def write_deepswe_benchmarks(deepswe_rows):
+    """Write DeepSWE agentic-SWE results into deepswe/. Each row is one
+    harness+model+effort config; ranked by pass_rate. Cost/tokens kept as
+    separate raw columns, never blended."""
+    subdir = "deepswe"
+    if not deepswe_rows:
+        return {}
+    rows = [r for r in deepswe_rows if r.get("pass_rate") is not None]
+    rows.sort(key=lambda r: r["pass_rate"], reverse=True)
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    _write_benchmark_json(
+        subdir,
+        "deepswe_v1_1",
+        {
+            "leaderboard": "deepswe_v1_1",
+            "source_url": DEEPSWE_URL,
+            "benchmark": "DeepSWE v1.1 (113-task agentic SWE, pass@1)",
+        },
+        rows,
+    )
+    return {"deepswe_v1_1": True}
 
 
 
@@ -1587,6 +1655,10 @@ def main():
     usage, usage_note = fetch_or_usage()
     log(f"OpenRouter usage: {usage_note}")
 
+    # 6. DeepSWE (agentic SWE, separate spine)
+    deepswe_rows, deepswe_note = fetch_deepswe()
+    log(f"DeepSWE: {deepswe_note}")
+
     # Merge: attach catalog enrichment to benchmark spines (no filtering)
     counts = merge(or_models, aa, arena_data, benchlm or [])
     log(f"Merged: {counts}")
@@ -1604,6 +1676,7 @@ def main():
     write_arena_benchmarks(arena_data)
     write_benchlm_benchmarks(benchlm or [])
     write_usage_benchmarks(usage)
+    write_deepswe_benchmarks(deepswe_rows)
     # Write catalog
     arena_note = (
         f"ok ({len(arena_data)} leaderboards; "
@@ -1615,6 +1688,7 @@ def main():
             "openrouter": "ok",
             "models.dev": md_note,
             "openrouter_usage": usage_note,
+            "deepswe": deepswe_note,
             "artificial_analysis": aa_note,
             "arena_ai": arena_note,
             "benchlm": benchlm_note,
