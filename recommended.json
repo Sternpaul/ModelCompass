@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-22T08:12:58.606805+00:00",
+    "generated_at": "2026-08-22T12:59:01.032114+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -54,7 +54,7 @@
       "arena_text": {
         "source": "https://arena.ai/leaderboard/text",
         "subdir": "arena",
-        "model_count": 394,
+        "model_count": 344,
         "top_n": 10
       },
       "arena_video-edit": {
@@ -217,6 +217,12 @@
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
         "model_count": 38,
+        "top_n": 10
+      },
+      "deepswe_v1_1": {
+        "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
+        "subdir": "deepswe",
+        "model_count": 62,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -1377,8 +1383,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1508.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 24331
       },
       {
         "rank": 2,
@@ -1386,8 +1392,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1504.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 72359
       },
       {
         "rank": 3,
@@ -1395,8 +1401,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1502.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 60203
       },
       {
         "rank": 4,
@@ -1404,8 +1410,8 @@
         "vendor": "Meta",
         "license": "proprietary",
         "score": 1498.0,
-        "ci": null,
-        "votes": null
+        "ci": 10.0,
+        "votes": 3257
       },
       {
         "rank": 5,
@@ -1413,8 +1419,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1497.0,
-        "ci": null,
-        "votes": null
+        "ci": 3.0,
+        "votes": 76362
       },
       {
         "rank": 6,
@@ -1422,8 +1428,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1494.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 61304
       },
       {
         "rank": 7,
@@ -1431,8 +1437,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1493.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 27610
       },
       {
         "rank": 8,
@@ -1440,8 +1446,8 @@
         "vendor": "Meta",
         "license": "proprietary",
         "score": 1491.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 20242
       },
       {
         "rank": 9,
@@ -1449,7 +1455,7 @@
         "vendor": "Google",
         "license": "proprietary",
         "score": 1490.0,
-        "ci": null,
+        "ci": 8.0,
         "votes": null
       },
       {
@@ -1458,8 +1464,8 @@
         "vendor": "Moonshot",
         "license": null,
         "score": 1489.0,
-        "ci": null,
-        "votes": null
+        "ci": 6.0,
+        "votes": 15054
       }
     ],
     "arena_video-edit": [
@@ -3097,6 +3103,118 @@
         "category_rank": null
       }
     ],
+    "deepswe_v1_1": [
+      {
+        "model": "claude-opus-5",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.7364864864864865,
+        "n_passed": 327,
+        "n_attempted": 444,
+        "mean_cost_usd": 11.837583271396396,
+        "mean_output_tokens": 117565.6936936937,
+        "rank": 1
+      },
+      {
+        "model": "claude-opus-5",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "xhigh",
+        "pass_rate": 0.7315436241610739,
+        "n_passed": 327,
+        "n_attempted": 447,
+        "mean_cost_usd": 9.07220232326622,
+        "mean_output_tokens": 91672.01565995526,
+        "rank": 2
+      },
+      {
+        "model": "claude-opus-5",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "high",
+        "pass_rate": 0.7282850779510023,
+        "n_passed": 327,
+        "n_attempted": 449,
+        "mean_cost_usd": 6.076084489977728,
+        "mean_output_tokens": 64207.43429844098,
+        "rank": 3
+      },
+      {
+        "model": "gpt-5-6-sol",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.7266666666666667,
+        "n_passed": 327,
+        "n_attempted": 450,
+        "mean_cost_usd": 8.386436346666667,
+        "mean_output_tokens": 60013.64444444444,
+        "rank": 4
+      },
+      {
+        "model": "gpt-5-6-sol",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "xhigh",
+        "pass_rate": 0.7073170731707317,
+        "n_passed": 319,
+        "n_attempted": 451,
+        "mean_cost_usd": 4.703663860310422,
+        "mean_output_tokens": 40744.59201773836,
+        "rank": 5
+      },
+      {
+        "model": "claude-fable-5",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "xhigh",
+        "pass_rate": 0.6991150442477876,
+        "n_passed": 316,
+        "n_attempted": 452,
+        "mean_cost_usd": 13.414521495535714,
+        "mean_output_tokens": 80352.1703539823,
+        "rank": 6
+      },
+      {
+        "model": "claude-fable-5",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.6972477064220184,
+        "n_passed": 304,
+        "n_attempted": 436,
+        "mean_cost_usd": 21.634702092592594,
+        "mean_output_tokens": 118592.77293577982,
+        "rank": 7
+      },
+      {
+        "model": "gpt-5-6-terra",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.6962305986696231,
+        "n_passed": 314,
+        "n_attempted": 451,
+        "mean_cost_usd": 4.945847263858093,
+        "mean_output_tokens": 71938.62527716186,
+        "rank": 8
+      },
+      {
+        "model": "gpt-5-6-sol",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "high",
+        "pass_rate": 0.6940133037694013,
+        "n_passed": 313,
+        "n_attempted": 451,
+        "mean_cost_usd": 3.4698331108647453,
+        "mean_output_tokens": 28450.31929046563,
+        "rank": 9
+      },
+      {
+        "model": "glm-5-3",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.6895787139689579,
+        "n_passed": 311,
+        "n_attempted": 451,
+        "mean_cost_usd": 3.9933584893126386,
+        "mean_output_tokens": 80435.60975609756,
+        "rank": 10
+      }
+    ],
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
@@ -3181,8 +3299,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 42.1,
-        "prompt_price_per_m": 0.06986,
-        "value": 602.63
+        "prompt_price_per_m": 0.06426,
+        "value": 655.15
       },
       {
         "model": "openai/gpt-oss-20b",
@@ -3217,8 +3335,8 @@
       {
         "model": "deepseek/deepseek-v4-pro",
         "aa_intelligence": 53.2,
-        "prompt_price_per_m": 0.43065,
-        "value": 123.53
+        "prompt_price_per_m": 0.413772,
+        "value": 128.57
       }
     ]
   }

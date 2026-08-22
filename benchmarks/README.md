@@ -60,3 +60,9 @@ Aggregated category scores (0–100) across 437 benchmarks and 388 models (MIT-l
 Real-world adoption: tokens processed and request counts via OpenRouter (rolling window). NOT a quality score — usage is never blended into benchmark rankings.
 
 - [Usage Rank](./openrouter-usage/or_usage_tokens.json)
+
+## [DeepSWE (Datacurve)](./deepswe/OVERVIEW.md) — [https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json](https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json)
+
+Agentic software-engineering eval: pass@1 on 113 real GitHub issues executed through agent harnesses. Cost and token stats kept as raw columns, never blended.
+
+- [DeepSWE v1.1](./deepswe/deepswe_v1_1.json)

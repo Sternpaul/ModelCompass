@@ -1,11 +1,104 @@
 {
   "meta": {
-    "generated_at": "2026-08-22T08:12:58.626700+00:00",
+    "generated_at": "2026-08-22T12:59:01.050579+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
   },
   "consensus": [
+    {
+      "model": "claude-opus-5",
+      "top_appearances": 8,
+      "borda_points": 63,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 10,
+          "score": 85
+        },
+        "benchlm_coding": {
+          "rank": 3,
+          "score": 82.7
+        },
+        "benchlm_knowledge": {
+          "rank": 2,
+          "score": 93.5
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 1,
+          "score": 88.5
+        },
+        "benchlm_reasoning": {
+          "rank": 3,
+          "score": 90.8
+        },
+        "deepswe_v1_1": {
+          "rank": 3,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "gpt-5-6-sol",
+      "top_appearances": 8,
+      "borda_points": 48,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 3,
+          "score": 94.9
+        },
+        "benchlm_knowledge": {
+          "rank": 9,
+          "score": 83.5
+        },
+        "benchlm_math": {
+          "rank": 1,
+          "score": 96.9
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 7,
+          "score": 84.7
+        },
+        "benchlm_reasoning": {
+          "rank": 2,
+          "score": 93
+        },
+        "deepswe_v1_1": {
+          "rank": 9,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "claude-fable-5",
+      "top_appearances": 7,
+      "borda_points": 49,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 6,
+          "score": 1626.0
+        },
+        "arena_document": {
+          "rank": 4,
+          "score": 1504.0
+        },
+        "arena_search": {
+          "rank": 3,
+          "score": 1237.0
+        },
+        "arena_text": {
+          "rank": 1,
+          "score": 1508.0
+        },
+        "arena_vision": {
+          "rank": 1,
+          "score": 1312.0
+        },
+        "deepswe_v1_1": {
+          "rank": 7,
+          "score": null
+        }
+      }
+    },
     {
       "model": "openai/gpt-5-6-sol",
       "top_appearances": 7,
@@ -166,33 +259,6 @@
       }
     },
     {
-      "model": "claude-fable-5",
-      "top_appearances": 5,
-      "borda_points": 40,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 6,
-          "score": 1626.0
-        },
-        "arena_document": {
-          "rank": 4,
-          "score": 1504.0
-        },
-        "arena_search": {
-          "rank": 3,
-          "score": 1237.0
-        },
-        "arena_text": {
-          "rank": 1,
-          "score": 1508.0
-        },
-        "arena_vision": {
-          "rank": 1,
-          "score": 1312.0
-        }
-      }
-    },
-    {
       "model": "xai/grok-4-6",
       "top_appearances": 5,
       "borda_points": 37,
@@ -216,60 +282,6 @@
         "aa_terminalbench_v2_1": {
           "rank": 3,
           "score": 0.883895131086142
-        }
-      }
-    },
-    {
-      "model": "claude-opus-5",
-      "top_appearances": 5,
-      "borda_points": 36,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 10,
-          "score": 85
-        },
-        "benchlm_coding": {
-          "rank": 3,
-          "score": 82.7
-        },
-        "benchlm_knowledge": {
-          "rank": 2,
-          "score": 93.5
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 1,
-          "score": 88.5
-        },
-        "benchlm_reasoning": {
-          "rank": 3,
-          "score": 90.8
-        }
-      }
-    },
-    {
-      "model": "gpt-5-6-sol",
-      "top_appearances": 5,
-      "borda_points": 33,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 3,
-          "score": 94.9
-        },
-        "benchlm_knowledge": {
-          "rank": 9,
-          "score": 83.5
-        },
-        "benchlm_math": {
-          "rank": 1,
-          "score": 96.9
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 7,
-          "score": 84.7
-        },
-        "benchlm_reasoning": {
-          "rank": 2,
-          "score": 93
         }
       }
     },
@@ -566,6 +578,29 @@
       }
     },
     {
+      "model": "gpt-5-6-terra",
+      "top_appearances": 4,
+      "borda_points": 20,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 5,
+          "score": 91.6
+        },
+        "benchlm_math": {
+          "rank": 2,
+          "score": 96.9
+        },
+        "benchlm_reasoning": {
+          "rank": 9,
+          "score": 83.8
+        },
+        "deepswe_v1_1": {
+          "rank": 8,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "google/gemini-3-7-flash",
       "top_appearances": 4,
       "borda_points": 19,
@@ -840,25 +875,6 @@
         "aa_scicode": {
           "rank": 2,
           "score": 0.589
-        }
-      }
-    },
-    {
-      "model": "gpt-5-6-terra",
-      "top_appearances": 3,
-      "borda_points": 17,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 5,
-          "score": 91.6
-        },
-        "benchlm_math": {
-          "rank": 2,
-          "score": 96.9
-        },
-        "benchlm_reasoning": {
-          "rank": 9,
-          "score": 83.8
         }
       }
     },
@@ -1491,6 +1507,21 @@
         "benchlm_multilingual": {
           "rank": 10,
           "score": 36.8
+        }
+      }
+    },
+    {
+      "model": "glm-5-3",
+      "top_appearances": 2,
+      "borda_points": 4,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 8,
+          "score": 86
+        },
+        "deepswe_v1_1": {
+          "rank": 10,
+          "score": null
         }
       }
     },
@@ -2559,17 +2590,6 @@
         "aa_tau2": {
           "rank": 8,
           "score": 0.982456140350877
-        }
-      }
-    },
-    {
-      "model": "glm-5-3",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 8,
-          "score": 86
         }
       }
     },

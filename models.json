@@ -1,18 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-08-22T08:12:58.427364+00:00",
+    "generated_at": "2026-08-22T12:59:00.853439+00:00",
     "model_count": 3357,
     "sources": {
       "openrouter": "ok",
       "models.dev": "ok (7246 models from 193 providers)",
       "openrouter_usage": "ok (471 models with live usage)",
+      "deepswe": "ok (62 configs, generated_at=2026-08-20)",
       "artificial_analysis": "ok (610 models)",
-      "arena_ai": "ok (11 leaderboards; 0 live-discovered via scrape, 11 from curated fallback)",
+      "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
       "benchlm": "ok (393 models)"
     },
     "coverage": {
       "aa": 407,
-      "arena": 421,
+      "arena": 417,
       "benchlm": 205
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
@@ -72,9 +73,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.44,
-        "completion": 1.32,
-        "cache_read": 0.014
+        "prompt": 0.22,
+        "completion": 0.66,
+        "cache_read": 0.007
       },
       "benchmarks": {}
     },
@@ -5011,9 +5012,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.43065,
-        "completion": 0.8613,
-        "cache_read": 0.035888
+        "prompt": 0.413772,
+        "completion": 0.827544,
+        "cache_read": 0.034481
       },
       "benchmarks": {
         "aa": {
@@ -5074,9 +5075,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.06986,
-        "completion": 0.13972,
-        "cache_read": 0.013972
+        "prompt": 0.06426,
+        "completion": 0.12852,
+        "cache_read": 0.012852
       },
       "benchmarks": {
         "aa": {
@@ -11349,8 +11350,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1422.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 18492
           }
         }
       }
@@ -13484,8 +13485,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1398.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18524
           }
         }
       }
@@ -13952,8 +13953,8 @@
             "vendor": "Mistral",
             "license": null,
             "score": 1314.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45459
           }
         }
       }
@@ -13994,8 +13995,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1271.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5432
           }
         }
       }
@@ -14246,8 +14247,8 @@
             "vendor": "Alibaba",
             "license": null,
             "score": 1303.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 39406
           }
         }
       }
@@ -15889,8 +15890,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1468.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 42267
           }
         }
       }
@@ -16258,8 +16259,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1476.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60896
           },
           "vision": {
             "rank": 14,
@@ -16522,8 +16523,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1466.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 63659
           },
           "vision": {
             "rank": 20,
@@ -16603,8 +16604,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1434.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27838
           }
         }
       }
@@ -16910,8 +16911,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1396.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45595
           }
         }
       }
@@ -16984,8 +16985,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 9.0,
+            "votes": 3926
           }
         }
       }
@@ -17121,8 +17122,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1374.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 32628
           }
         }
       }
@@ -17163,8 +17164,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1399.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9014
           }
         }
       }
@@ -17267,8 +17268,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1327.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26549
           }
         }
       }
@@ -17350,8 +17351,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70207
           },
           "vision": {
             "rank": 43,
@@ -17433,8 +17434,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1417.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 15002
           }
         },
         "benchlm": {
@@ -18210,8 +18211,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1383.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 23828
           }
         }
       }
@@ -18252,8 +18253,8 @@
             "vendor": "OpenAI",
             "license": "open",
             "score": 1352.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 30761
           }
         },
         "benchlm": {
@@ -18492,8 +18493,8 @@
             "vendor": "MiniMax",
             "license": "open",
             "score": 1363.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 35247
           }
         }
       }
@@ -18797,8 +18798,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1410.0,
-            "ci": null,
-            "votes": null
+            "ci": 2.0,
+            "votes": 124731
           },
           "vision": {
             "rank": 65,
@@ -18848,8 +18849,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1369.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 13749
           }
         }
       }
@@ -18931,8 +18932,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1388.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 25788
           }
         }
       }
@@ -19003,8 +19004,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1424.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 9195
           }
         },
         "benchlm": {
@@ -19313,8 +19314,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 97398
           }
         }
       }
@@ -19355,8 +19356,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1401.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 23000
           }
         }
       }
@@ -19531,8 +19532,8 @@
             "vendor": "Xiaomi",
             "license": "open",
             "score": 1386.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 10982
           }
         },
         "benchlm": {
@@ -19759,8 +19760,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1373.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 31190
           }
         },
         "benchlm": {
@@ -20159,8 +20160,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1445.0,
-            "ci": null,
-            "votes": null
+            "ci": 2.0,
+            "votes": 124807
           },
           "vision": {
             "rank": 44,
@@ -20369,8 +20370,8 @@
             "vendor": "OpenAI",
             "license": "open",
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 10669
           }
         },
         "benchlm": {
@@ -20565,8 +20566,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1411.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24403
           }
         },
         "benchlm": {
@@ -21315,8 +21316,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1436.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 49001
           }
         }
       }
@@ -21576,8 +21577,8 @@
             "vendor": "Google",
             "license": "open",
             "score": 1451.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5899
           },
           "vision": {
             "rank": 33,
@@ -22416,8 +22417,8 @@
             "vendor": "Moonshot",
             "license": null,
             "score": 1461.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 37543
           },
           "vision": {
             "rank": 32,
@@ -22870,8 +22871,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 54263
           }
         }
       }
@@ -23296,8 +23297,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1167.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 7936
           }
         }
       }
@@ -23368,8 +23369,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1111.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 8045
           }
         }
       }
@@ -23410,8 +23411,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1322.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 30378
           },
           "vision": {
             "rank": 109,
@@ -23731,8 +23732,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1336.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 25443
           }
         }
       }
@@ -23812,8 +23813,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1440.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3205
           },
           "vision": {
             "rank": 37,
@@ -23925,8 +23926,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1367.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11747
           }
         }
       }
@@ -24129,8 +24130,8 @@
             "vendor": "MiniMax",
             "license": null,
             "score": 1390.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41032
           }
         }
       }
@@ -24242,8 +24243,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1425.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 47295
           }
         }
       }
@@ -24415,8 +24416,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11982
           }
         }
       }
@@ -24600,8 +24601,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1424.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 35830
           }
         },
         "benchlm": {
@@ -24802,8 +24803,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27850
           }
         },
         "benchlm": {
@@ -24986,8 +24987,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 12155
           }
         },
         "benchlm": {
@@ -25163,8 +25164,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 54774
           }
         }
       }
@@ -25963,8 +25964,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 61016
           },
           "vision": {
             "rank": 47,
@@ -26044,8 +26045,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1427.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 31681
           },
           "vision": {
             "rank": 57,
@@ -26491,8 +26492,8 @@
             "vendor": "Nvidia",
             "license": null,
             "score": 1299.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 7140
           }
         }
       }
@@ -27556,8 +27557,8 @@
             "vendor": "Google",
             "license": null,
             "score": 1200.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 46616
           }
         }
       }
@@ -27748,8 +27749,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1211.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 49605
           }
         }
       }
@@ -27790,8 +27791,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1293.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 55240
           }
         }
       }
@@ -27922,8 +27923,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1327.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 40038
           },
           "vision": {
             "rank": 101,
@@ -28156,8 +28157,8 @@
             "vendor": "StepFun",
             "license": "open",
             "score": 1394.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 57417
           }
         }
       }
@@ -28703,8 +28704,8 @@
             "vendor": "Mistral",
             "license": null,
             "score": 1427.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 11009
           },
           "vision": {
             "rank": 75,
@@ -28881,8 +28882,8 @@
             "vendor": "MiniMax",
             "license": null,
             "score": 1443.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41023
           },
           "vision": {
             "rank": 51,
@@ -28990,8 +28991,8 @@
             "vendor": "MiniMax",
             "license": null,
             "score": 1416.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 62076
           }
         }
       }
@@ -29784,8 +29785,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1375.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26331
           }
         },
         "benchlm": {
@@ -30151,8 +30152,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1472.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 66512
           },
           "vision": {
             "rank": 26,
@@ -30308,8 +30309,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1473.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45331
           },
           "vision": {
             "rank": 22,
@@ -30391,8 +30392,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1335.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45499
           },
           "vision": {
             "rank": 114,
@@ -30843,8 +30844,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 68715
           },
           "vision": {
             "rank": 117,
@@ -31088,8 +31089,8 @@
             "vendor": "Z.ai",
             "license": "proprietary",
             "score": 1433.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9380
           },
           "vision": {
             "rank": 54,
@@ -31292,8 +31293,8 @@
             "vendor": "Mistral",
             "license": "proprietary",
             "score": 1409.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 94016
           },
           "vision": {
             "rank": 95,
@@ -31431,8 +31432,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 17985
           },
           "vision": {
             "rank": 29,
@@ -31977,8 +31978,8 @@
             "vendor": "Amazon",
             "license": "proprietary",
             "score": 1336.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 12294
           }
         }
       }
@@ -32561,8 +32562,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1322.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 6103
           },
           "vision": {
             "rank": 119,
@@ -33188,8 +33189,8 @@
             "vendor": "Google",
             "license": null,
             "score": 1366.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 47563
           },
           "vision": {
             "rank": 93,
@@ -33371,8 +33372,8 @@
             "vendor": "Mistral",
             "license": "open",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 62644
           },
           "vision": {
             "rank": 71,
@@ -33551,8 +33552,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1497.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 76362
           },
           "vision": {
             "rank": 7,
@@ -33634,8 +33635,8 @@
             "vendor": "Nvidia",
             "license": null,
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 12.0,
+            "votes": 2549
           }
         }
       }
@@ -33708,8 +33709,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 51118
           },
           "vision": {
             "rank": 66,
@@ -34261,8 +34262,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1494.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 61304
           },
           "vision": {
             "rank": 4,
@@ -34552,8 +34553,8 @@
             "vendor": "Mistral",
             "license": "open",
             "score": 1197.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 73503
           }
         }
       }
@@ -34824,8 +34825,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1417.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 28413
           },
           "vision": {
             "rank": 56,
@@ -34947,8 +34948,8 @@
             "vendor": "Mistral",
             "license": "open",
             "score": 1149.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 19402
           }
         }
       }
@@ -35305,8 +35306,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1383.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 39399
           },
           "vision": {
             "rank": 72,
@@ -35773,8 +35774,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1439.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 43653
           },
           "vision": {
             "rank": 49,
@@ -37042,8 +37043,8 @@
             "vendor": "MiniMax",
             "license": "open",
             "score": 1346.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 6903
           }
         }
       }
@@ -37631,8 +37632,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1395.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 29097
           }
         }
       }
@@ -37802,8 +37803,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1397.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 58319
           }
         }
       }
@@ -37926,19 +37927,7 @@
         "completion": 200600.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 228,
-            "model": "yi-lightning",
-            "vendor": null,
-            "license": null,
-            "score": 1328.0,
-            "ci": null,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "gemini-2.5-flash-preview-09-2025-thinking",
@@ -38378,8 +38367,8 @@
             "vendor": "Inception AI",
             "license": "proprietary",
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 11.0,
+            "votes": 3122
           }
         },
         "benchlm": {
@@ -38829,8 +38818,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1460.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5196
           }
         }
       }
@@ -38989,8 +38978,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1481.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9955
           },
           "vision": {
             "rank": 2,
@@ -39362,8 +39351,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 34426
           },
           "vision": {
             "rank": 31,
@@ -39823,8 +39812,8 @@
             "vendor": "Baidu",
             "license": "proprietary",
             "score": 1468.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 37137
           }
         }
       }
@@ -40165,8 +40154,8 @@
             "vendor": "Z.ai",
             "license": "proprietary",
             "score": 1319.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26126
           }
         }
       }
@@ -41342,8 +41331,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1408.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27282
           },
           "vision": {
             "rank": 60,
@@ -43405,8 +43394,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41123
           }
         }
       }
@@ -43971,8 +43960,8 @@
             "vendor": "Moonshot",
             "license": null,
             "score": 1450.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70943
           },
           "vision": {
             "rank": 42,
@@ -44082,8 +44071,8 @@
             "vendor": "Google",
             "license": null,
             "score": 1303.0,
-            "ci": null,
-            "votes": null
+            "ci": 9.0,
+            "votes": 4171
           }
         }
       }
@@ -44154,8 +44143,8 @@
             "vendor": "Google",
             "license": null,
             "score": 1342.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3829
           }
         }
       }
@@ -45932,8 +45921,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1415.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3700
           }
         }
       }
@@ -45974,8 +45963,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1425.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9109
           }
         }
       }
@@ -46046,8 +46035,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1416.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 11786
           }
         }
       }
@@ -46628,8 +46617,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11556
           },
           "vision": {
             "rank": 64,
@@ -47245,8 +47234,8 @@
             "vendor": "Xiaomi",
             "license": "open",
             "score": 1468.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 54177
           }
         }
       }
@@ -48249,8 +48238,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1377.0,
-            "ci": null,
-            "votes": null
+            "ci": 11.0,
+            "votes": 2817
           },
           "vision": {
             "rank": 90,
@@ -48748,8 +48737,8 @@
             "vendor": "Thinky",
             "license": "open",
             "score": 1405.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11455
           },
           "vision": {
             "rank": 70,
@@ -50857,8 +50846,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1395.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 7986
           },
           "vision": {
             "rank": 79,
@@ -51599,8 +51588,8 @@
             "vendor": "Tencent",
             "license": "open",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5877
           }
         }
       }
@@ -53114,8 +53103,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1508.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24331
           },
           "vision": {
             "rank": 1,
@@ -53837,8 +53826,8 @@
             "vendor": "Xiaomi",
             "license": "proprietary",
             "score": 1449.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24397
           }
         },
         "benchlm": {
@@ -54068,8 +54057,8 @@
             "vendor": "Xiaomi",
             "license": "open",
             "score": 1434.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 44557
           },
           "vision": {
             "rank": 52,
@@ -54636,8 +54625,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1486.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 99182
           },
           "vision": {
             "rank": 24,
@@ -55056,8 +55045,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1432.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60594
           },
           "vision": {
             "rank": 53,
@@ -55857,8 +55846,8 @@
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1443.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45376
           }
         }
       }
@@ -56910,8 +56899,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1390.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45538
           },
           "vision": {
             "rank": 73,
@@ -58228,8 +58217,8 @@
             "vendor": "Thinky",
             "license": "open",
             "score": 1440.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18488
           }
         }
       }
@@ -58418,8 +58407,8 @@
             "vendor": "Meta",
             "license": "proprietary",
             "score": 1498.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3257
           },
           "vision": {
             "rank": 8,
@@ -58536,8 +58525,8 @@
             "vendor": "Meta",
             "license": "proprietary",
             "score": 1491.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 20242
           },
           "vision": {
             "rank": 18,
@@ -58979,8 +58968,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1353.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 4968
           },
           "vision": {
             "rank": 98,
@@ -60303,8 +60292,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1470.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 22030
           },
           "vision": {
             "rank": 17,
@@ -60729,8 +60718,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1404.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18811
           }
         },
         "benchlm": {
@@ -61220,8 +61209,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1431.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 56768
           },
           "vision": {
             "rank": 76,
@@ -61439,8 +61428,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1435.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 79397
           },
           "vision": {
             "rank": 55,
@@ -61490,8 +61479,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1431.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 59888
           },
           "vision": {
             "rank": 63,
@@ -61945,8 +61934,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1348.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 57440
           }
         },
         "benchlm": {
@@ -62133,8 +62122,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1409.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41530
           },
           "vision": {
             "rank": 85,
@@ -64207,8 +64196,8 @@
             "vendor": "Moonshot",
             "license": null,
             "score": 1430.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 62107
           }
         }
       }
@@ -69443,8 +69432,8 @@
             "vendor": "Cohere",
             "license": "open",
             "score": 1227.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 54036
           }
         }
       }
@@ -75427,8 +75416,8 @@
             "vendor": "Nvidia",
             "license": null,
             "score": 1360.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 7535
           }
         }
       }
@@ -78503,8 +78492,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1324.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 98114
           },
           "vision": {
             "rank": 115,
@@ -79252,8 +79241,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1402.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27807
           },
           "vision": {
             "rank": 78,
@@ -79778,8 +79767,8 @@
             "vendor": "Xiaomi",
             "license": "proprietary",
             "score": 1430.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 19434
           },
           "vision": {
             "rank": 62,
@@ -81105,8 +81094,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 86359
           },
           "vision": {
             "rank": 34,
@@ -82386,8 +82375,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1276.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 156876
           }
         }
       }
@@ -90593,17 +90582,6 @@
           },
           "median_tps": 0.0,
           "ttft": 0.0
-        },
-        "arena": {
-          "text": {
-            "rank": 192,
-            "model": "intellect-3",
-            "vendor": null,
-            "license": null,
-            "score": 1356.0,
-            "ci": null,
-            "votes": null
-          }
         }
       }
     },
@@ -91672,8 +91650,8 @@
             "vendor": "Cohere",
             "license": "open",
             "score": 1354.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 56404
           }
         }
       }
@@ -97281,8 +97259,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1474.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 25863
           },
           "vision": {
             "rank": 25,
@@ -97332,8 +97310,8 @@
             "vendor": "StepFun",
             "license": "open",
             "score": 1348.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 6558
           },
           "vision": {
             "rank": 102,
@@ -99498,15 +99476,6 @@
             "vendor": null,
             "license": null,
             "score": 1238.0,
-            "ci": null,
-            "votes": null
-          },
-          "text": {
-            "rank": 179,
-            "model": "trinity-large-thinking",
-            "vendor": null,
-            "license": null,
-            "score": 1369.0,
             "ci": null,
             "votes": null
           }
@@ -105807,8 +105776,8 @@
             "vendor": "Microsoft",
             "license": "open",
             "score": 1256.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24126
           }
         },
         "benchlm": {
@@ -106254,8 +106223,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1472.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 62272
           },
           "vision": {
             "rank": 36,
@@ -106365,8 +106334,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1324.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70041
           },
           "vision": {
             "rank": 107,
@@ -106575,8 +106544,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1470.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60864
           },
           "vision": {
             "rank": 40,
@@ -106656,8 +106625,8 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1459.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 67767
           }
         },
         "benchlm": {
@@ -106933,8 +106902,8 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1485.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41491
           },
           "vision": {
             "rank": 10,
@@ -107294,17 +107263,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 170,
-            "model": "trinity-large-preview",
-            "vendor": null,
-            "license": null,
-            "score": 1379.0,
-            "ci": null,
-            "votes": null
-          }
-        },
         "benchlm": {
           "slug": "trinity-large-preview",
           "canonicalModelKey": "trinity-large-preview",
@@ -107887,8 +107845,8 @@
             "vendor": "Mistral",
             "license": "proprietary",
             "score": 1222.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 34550
           }
         }
       }
@@ -119875,8 +119833,8 @@
             "vendor": "Google",
             "license": "open",
             "score": 1438.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5809
           },
           "vision": {
             "rank": 46,
@@ -131812,8 +131770,8 @@
             "vendor": "DeepSeek",
             "license": null,
             "score": 1358.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 21770
           }
         },
         "benchlm": {
@@ -132806,8 +132764,8 @@
             "vendor": "Meta",
             "license": null,
             "score": 1223.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 104642
           }
         }
       }
