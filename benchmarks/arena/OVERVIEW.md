@@ -34,13 +34,13 @@ _Human-preference Elo._
 | 1 | `claude-opus-5-max` | 1691.000 |
 | 2 | `kimi-k3-max` | 1674.000 |
 | 3 | `qwen3.8-max` | 1669.000 |
-| 4 | `claude-opus-5-high` | 1662.000 |
+| 4 | `claude-opus-5-high` | 1663.000 |
 | 5 | `grok-4.6-high` | 1629.000 |
 | 6 | `claude-fable-5` | 1626.000 |
 | 7 | `gpt-5.6-sol-xhigh (codex-harness)` | 1619.000 |
-| 8 | `glm-5.3-max` | 1597.000 |
-| 9 | `gemini-3.7-flash-high` | 1588.000 |
-| 10 | `deepseek-v4-pro-high-20260813` | 1582.000 |
+| 8 | `glm-5.3-max` | 1599.000 |
+| 9 | `qwen3.8-27b` | 1595.000 |
+| 10 | `gemini-3.7-flash-high` | 1587.000 |
 
 ## Document Arena
 
@@ -121,8 +121,8 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1507.000 |
-| 2 | `claude-opus-4-6-high` | 1505.000 |
+| 1 | `claude-fable-5` | 1508.000 |
+| 2 | `claude-opus-4-6-high` | 1504.000 |
 | 3 | `claude-opus-4-7-high` | 1502.000 |
 | 4 | `muse-spark-1.2 (xHigh)` | 1498.000 |
 | 5 | `claude-opus-4-6` | 1497.000 |
@@ -130,7 +130,7 @@ _Human-preference Elo._
 | 7 | `claude-opus-5-high` | 1493.000 |
 | 8 | `muse-spark-1.1` | 1491.000 |
 | 9 | `gemini-3.7-flash-high` | 1490.000 |
-| 10 | `kimi-k3-max` | 1490.000 |
+| 10 | `kimi-k3-max` | 1489.000 |
 
 ## Text To Image Arena
 
@@ -192,13 +192,13 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1315.000 |
-| 2 | `qwen3.8-max` | 1301.000 |
+| 1 | `claude-fable-5` | 1312.000 |
+| 2 | `qwen3.8-max` | 1302.000 |
 | 3 | `claude-opus-4-7-high` | 1301.000 |
-| 4 | `claude-opus-4-6-high` | 1300.000 |
-| 5 | `claude-opus-4-7` | 1299.000 |
-| 6 | `claude-opus-5-high` | 1297.000 |
-| 7 | `gemini-3.6-flash-high` | 1295.000 |
-| 8 | `muse-spark` | 1294.000 |
-| 9 | `claude-opus-4-6` | 1293.000 |
-| 10 | `muse-spark-1.2 (xHigh)` | 1290.000 |
+| 4 | `claude-opus-4-7` | 1299.000 |
+| 5 | `claude-opus-4-6-high` | 1299.000 |
+| 6 | `muse-spark` | 1294.000 |
+| 7 | `claude-opus-4-6` | 1293.000 |
+| 8 | `muse-spark-1.2 (xHigh)` | 1292.000 |
+| 9 | `claude-opus-5-high` | 1292.000 |
+| 10 | `gemini-3-pro` | 1289.000 |

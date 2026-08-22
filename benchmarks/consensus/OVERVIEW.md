@@ -20,7 +20,7 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 14 | `claude-mythos-5` | 4 | 34 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded |
 | 15 | `google/gemini-3-flash-reasoning` | 4 | 32 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
 | 16 | `qwen3-8-max` | 4 | 30 | benchlm_agentic, benchlm_instructionFollowing, benchlm_multimodalGrounded, benchlm_reasoning |
-| 17 | `claude-opus-5-high` | 4 | 26 | arena_code, arena_document, arena_text, arena_vision |
-| 18 | `openai/gpt-5-2` | 4 | 26 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
-| 19 | `google/gemini-3-pro` | 4 | 26 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
-| 20 | `claude-opus-4-7` | 4 | 24 | arena_document, arena_search, arena_text, arena_vision |
+| 17 | `openai/gpt-5-2` | 4 | 26 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
+| 18 | `google/gemini-3-pro` | 4 | 26 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
+| 19 | `claude-opus-4-7` | 4 | 25 | arena_document, arena_search, arena_text, arena_vision |
+| 20 | `claude-opus-5-high` | 4 | 23 | arena_code, arena_document, arena_text, arena_vision |

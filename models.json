@@ -1,22 +1,82 @@
 {
   "meta": {
-    "generated_at": "2026-08-21T04:44:57.948535+00:00",
-    "model_count": 3346,
+    "generated_at": "2026-08-22T04:39:37.275684+00:00",
+    "model_count": 3356,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7219 models from 193 providers)",
+      "models.dev": "ok (7245 models from 193 providers)",
       "artificial_analysis": "ok (610 models)",
       "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
       "benchlm": "ok (393 models)"
     },
     "coverage": {
       "aa": 407,
-      "arena": 418,
+      "arena": 417,
       "benchlm": 205
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
   },
   "models": [
+    {
+      "id": "meta/muse-spark-1.2-contributor",
+      "name": "Meta: Muse Spark 1.2 Contributor",
+      "provider": "meta",
+      "family": "meta/muse-spark-1.2-contributor",
+      "source": "openrouter",
+      "created_unix": 1787336476,
+      "context": 1048576,
+      "modality": "text+image+file+audio+video->text",
+      "is_vision": true,
+      "is_audio_input": true,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.1,
+        "completion": 0.2,
+        "cache_read": 0.002
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4-flash-vision-exp",
+      "source": "openrouter",
+      "created_unix": 1787311563,
+      "context": 1048576,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.22,
+        "completion": 0.66,
+        "cache_read": 0.007
+      },
+      "benchmarks": {}
+    },
     {
       "id": "stealth/ox-alpha",
       "name": "Ox Alpha",
@@ -995,8 +1055,8 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.065,
-        "completion": 0.14,
-        "cache_read": 0.014
+        "completion": 0.18,
+        "cache_read": 0.02
       },
       "benchmarks": {}
     },
@@ -1024,9 +1084,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.14,
-        "completion": 0.28,
-        "cache_read": 0.028
+        "prompt": 0.08,
+        "completion": 0.18,
+        "cache_read": 0.016
       },
       "benchmarks": {
         "benchlm": {
@@ -1386,6 +1446,36 @@
           }
         }
       }
+    },
+    {
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "provider": "thinkingmachines",
+      "family": "thinkingmachines/inkling-small",
+      "source": "openrouter",
+      "created_unix": 1785443117,
+      "context": 262144,
+      "modality": "text+image+audio->text",
+      "is_vision": true,
+      "is_audio_input": true,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "thinkingmachines/Inkling-Small",
+      "open_weight": true,
+      "synthetic": false,
+      "free": true,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
     },
     {
       "id": "qwen/qwen3.7-flash",
@@ -2100,6 +2190,36 @@
       "benchmarks": {}
     },
     {
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "provider": "thinkingmachines",
+      "family": "thinkingmachines/inkling",
+      "source": "openrouter",
+      "created_unix": 1784325956,
+      "context": 262144,
+      "modality": "text+image+audio->text",
+      "is_vision": true,
+      "is_audio_input": true,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "thinkingmachines/Inkling",
+      "open_weight": true,
+      "synthetic": false,
+      "free": true,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "openrouter/auto-beta",
       "name": "Auto Router (Beta)",
       "provider": "openrouter",
@@ -2546,9 +2666,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.5,
-        "completion": 15.0,
-        "cache_read": 0.25
+        "prompt": 2.0,
+        "completion": 10.0,
+        "cache_read": 0.2
       },
       "benchmarks": {}
     },
@@ -2576,9 +2696,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.25,
-        "completion": 7.5,
-        "cache_read": 0.125
+        "prompt": 1.0,
+        "completion": 5.0,
+        "cache_read": 0.1
       },
       "benchmarks": {}
     },
@@ -2606,9 +2726,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.5,
-        "completion": 15.0,
-        "cache_read": 0.25
+        "prompt": 2.0,
+        "completion": 10.0,
+        "cache_read": 0.2
       },
       "benchmarks": {}
     },
@@ -2636,9 +2756,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.25,
-        "completion": 7.5,
-        "cache_read": 0.125
+        "prompt": 1.0,
+        "completion": 5.0,
+        "cache_read": 0.1
       },
       "benchmarks": {}
     },
@@ -4590,9 +4710,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.5,
-        "completion": 15.0,
-        "cache_read": 0.25
+        "prompt": 2.0,
+        "completion": 10.0,
+        "cache_read": 0.2
       },
       "benchmarks": {}
     },
@@ -4890,9 +5010,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.6,
-        "completion": 3.2,
-        "cache_read": 0.135
+        "prompt": 0.498336,
+        "completion": 0.996672,
+        "cache_read": 0.041528
       },
       "benchmarks": {
         "aa": {
@@ -4953,9 +5073,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0826,
-        "completion": 0.1652,
-        "cache_read": 0.01652
+        "prompt": 0.07546,
+        "completion": 0.15092,
+        "cache_read": 0.015092
       },
       "benchmarks": {
         "aa": {
@@ -5256,9 +5376,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.95,
-        "completion": 4.0,
-        "cache_read": 0.16
+        "prompt": 0.5415,
+        "completion": 2.28,
+        "cache_read": 0.0912
       },
       "benchmarks": {}
     },
@@ -6760,8 +6880,8 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.27,
-        "completion": 0.95,
-        "cache_read": 0.03
+        "completion": 1.08,
+        "cache_read": 0.027
       },
       "benchmarks": {}
     },
@@ -7965,9 +8085,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.269,
-        "completion": 0.4,
-        "cache_read": 0.1345
+        "prompt": 0.26,
+        "completion": 0.38,
+        "cache_read": 0.13
       },
       "benchmarks": {}
     },
@@ -8121,36 +8241,6 @@
         "prompt": 2.0,
         "completion": 12.0,
         "cache_read": 0.2
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "deepcogito/cogito-v2.1-671b",
-      "name": "Deep Cogito: Cogito v2.1 671B",
-      "provider": "deepcogito",
-      "family": "deepcogito/cogito-v2.1-671b",
-      "source": "openrouter",
-      "created_unix": 1763071233,
-      "context": 128000,
-      "modality": "text->text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": false,
-      "supports_json": true,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": "",
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 1.25,
-        "completion": 1.25,
-        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -9410,16 +9500,16 @@
       "supports_reasoning": false,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": "2025-09-30",
       "hugging_face_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.09,
+        "prompt": 0.1,
         "completion": 1.1,
-        "cache_read": null
+        "cache_read": 0.07
       },
       "benchmarks": {}
     },
@@ -9690,9 +9780,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.25,
-        "completion": 0.95,
-        "cache_read": 0.13
+        "prompt": 0.55,
+        "completion": 1.65,
+        "cache_read": 0.55
       },
       "benchmarks": {}
     },
@@ -10282,36 +10372,6 @@
           "ttft": 0.636
         }
       }
-    },
-    {
-      "id": "openai/gpt-oss-20b:free",
-      "name": "OpenAI: gpt-oss-20b (free)",
-      "provider": "openai",
-      "family": "openai/gpt-oss-20b",
-      "source": "openrouter",
-      "created_unix": 1754414229,
-      "context": 131072,
-      "modality": "text->text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": true,
-      "supports_caching": false,
-      "knowledge_cutoff": "2024-06-30",
-      "hugging_face_id": "openai/gpt-oss-20b",
-      "open_weight": true,
-      "synthetic": false,
-      "free": true,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
     },
     {
       "id": "anthropic/claude-opus-4.1",
@@ -10956,7 +11016,7 @@
       "family": "mistralai/mistral-small-3.2-24b-instruct",
       "source": "openrouter",
       "created_unix": 1750443016,
-      "context": 256000,
+      "context": 131072,
       "modality": "text+image->text",
       "is_vision": true,
       "is_audio_input": false,
@@ -10973,8 +11033,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.09375,
-        "completion": 0.25,
+        "prompt": 0.075,
+        "completion": 0.2,
         "cache_read": null
       },
       "benchmarks": {}
@@ -11283,13 +11343,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 111,
+            "rank": 112,
             "model": "deepseek-r1-0528",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1422.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 18492
           }
         }
       }
@@ -13418,13 +13478,13 @@
         },
         "arena": {
           "text": {
-            "rank": 145,
+            "rank": 146,
             "model": "deepseek-r1",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1398.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18524
           }
         }
       }
@@ -13886,13 +13946,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 249,
+            "rank": 250,
             "model": "mistral-large-2407",
             "vendor": "Mistral",
             "license": null,
             "score": 1314.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45459
           }
         }
       }
@@ -13928,13 +13988,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 288,
+            "rank": 289,
             "model": "qwen2.5-coder-32b-instruct",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1271.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5432
           }
         }
       }
@@ -14180,13 +14240,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 265,
+            "rank": 266,
             "model": "qwen2.5-72b-instruct",
             "vendor": "Alibaba",
             "license": null,
             "score": 1303.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 39406
           }
         }
       }
@@ -15814,11 +15874,11 @@
             "sessions": 140440
           },
           "code": {
-            "rank": 30,
+            "rank": 31,
             "model": "glm-5.1",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1510.0,
+            "score": 1509.0,
             "ci": null,
             "votes": null
           },
@@ -15828,8 +15888,8 @@
             "vendor": "Z.ai",
             "license": "open",
             "score": 1468.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 42267
           }
         }
       }
@@ -16171,14 +16231,14 @@
                 "ci": null
               }
             ],
-            "sessions": 25015
+            "sessions": 530
           },
           "code": {
-            "rank": 45,
+            "rank": 46,
             "model": "gpt-5.5 (codex-harness)",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1457.0,
+            "score": 1458.0,
             "ci": null,
             "votes": null
           },
@@ -16192,20 +16252,20 @@
             "votes": null
           },
           "text": {
-            "rank": 24,
+            "rank": 23,
             "model": "gpt-5.5",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1476.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60896
           },
           "vision": {
-            "rank": 12,
+            "rank": 14,
             "model": "gpt-5.5",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1286.0,
+            "score": 1285.0,
             "ci": null,
             "votes": null
           }
@@ -16438,11 +16498,11 @@
             "sessions": 25015
           },
           "code": {
-            "rank": 70,
+            "rank": 71,
             "model": "gpt-5.4",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1389.0,
+            "score": 1391.0,
             "ci": null,
             "votes": null
           },
@@ -16461,8 +16521,8 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1466.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 63659
           },
           "vision": {
             "rank": 20,
@@ -16537,13 +16597,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 88,
+            "rank": 89,
             "model": "qwen3-max-preview",
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1434.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27838
           }
         }
       }
@@ -16844,13 +16904,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 147,
+            "rank": 148,
             "model": "deepseek-v3-0324",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1396.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45595
           }
         }
       }
@@ -16918,13 +16978,13 @@
         },
         "arena": {
           "text": {
-            "rank": 204,
+            "rank": 205,
             "model": "qwen3-32b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 9.0,
+            "votes": 3926
           }
         }
       }
@@ -17055,13 +17115,13 @@
         },
         "arena": {
           "text": {
-            "rank": 174,
+            "rank": 175,
             "model": "qwen2.5-max",
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1374.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 32628
           }
         }
       }
@@ -17097,13 +17157,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 144,
+            "rank": 145,
             "model": "qwen3-235b-a22b-thinking-2507",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1399.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9014
           }
         }
       }
@@ -17201,13 +17261,13 @@
         },
         "arena": {
           "text": {
-            "rank": 230,
+            "rank": 231,
             "model": "qwen3-30b-a3b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1327.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26549
           }
         }
       }
@@ -17275,7 +17335,7 @@
         },
         "arena": {
           "code": {
-            "rank": 65,
+            "rank": 66,
             "model": "qwen3.5-397b-a17b",
             "vendor": "Alibaba",
             "license": "open",
@@ -17284,20 +17344,20 @@
             "votes": null
           },
           "text": {
-            "rank": 77,
+            "rank": 78,
             "model": "qwen3.5-397b-a17b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70207
           },
           "vision": {
-            "rank": 42,
+            "rank": 43,
             "model": "qwen3.5-397b-a17b",
             "vendor": "Alibaba",
             "license": "open",
-            "score": 1247.0,
+            "score": 1248.0,
             "ci": null,
             "votes": null
           }
@@ -17367,13 +17427,13 @@
         },
         "arena": {
           "text": {
-            "rank": 116,
+            "rank": 117,
             "model": "deepseek-v3.1",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1417.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 15002
           }
         },
         "benchlm": {
@@ -18144,13 +18204,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 165,
+            "rank": 166,
             "model": "qwen3-30b-a3b-instruct-2507",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1383.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 23828
           }
         }
       }
@@ -18186,13 +18246,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 195,
+            "rank": 196,
             "model": "gpt-oss-120b",
             "vendor": "OpenAI",
             "license": "open",
             "score": 1352.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 30761
           }
         },
         "benchlm": {
@@ -18426,13 +18486,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 184,
+            "rank": 185,
             "model": "minimax-m1",
             "vendor": "MiniMax",
             "license": "open",
             "score": 1363.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 35247
           }
         }
       }
@@ -18731,13 +18791,13 @@
         },
         "arena": {
           "text": {
-            "rank": 131,
+            "rank": 132,
             "model": "gemini-2.5-flash",
             "vendor": "Google",
             "license": "proprietary",
             "score": 1410.0,
-            "ci": null,
-            "votes": null
+            "ci": 2.0,
+            "votes": 124731
           },
           "vision": {
             "rank": 65,
@@ -18782,13 +18842,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 178,
+            "rank": 180,
             "model": "qwen3-next-80b-a3b-thinking",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1369.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 13749
           }
         }
       }
@@ -18856,7 +18916,7 @@
         },
         "arena": {
           "code": {
-            "rank": 99,
+            "rank": 100,
             "model": "qwen3-coder-480b-a35b-instruct",
             "vendor": "Alibaba",
             "license": "open",
@@ -18865,13 +18925,13 @@
             "votes": null
           },
           "text": {
-            "rank": 160,
+            "rank": 161,
             "model": "qwen3-coder-480b-a35b-instruct",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1388.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 25788
           }
         }
       }
@@ -18937,13 +18997,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 107,
+            "rank": 108,
             "model": "qwen3-max-2025-09-23",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "score": 1424.0,
+            "ci": 6.0,
+            "votes": 9195
           }
         },
         "benchlm": {
@@ -19247,13 +19307,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 108,
+            "rank": 109,
             "model": "qwen3-235b-a22b-instruct-2507",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 97398
           }
         }
       }
@@ -19289,13 +19349,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 141,
+            "rank": 143,
             "model": "qwen3-next-80b-a3b-instruct",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1401.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 23000
           }
         }
       }
@@ -19456,7 +19516,7 @@
         },
         "arena": {
           "code": {
-            "rank": 98,
+            "rank": 99,
             "model": "mimo-v2-flash (thinking)",
             "vendor": "Xiaomi",
             "license": "open",
@@ -19465,13 +19525,13 @@
             "votes": null
           },
           "text": {
-            "rank": 163,
+            "rank": 164,
             "model": "mimo-v2-flash (thinking)",
             "vendor": "Xiaomi",
             "license": "open",
             "score": 1386.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 10982
           }
         },
         "benchlm": {
@@ -19693,13 +19753,13 @@
         },
         "arena": {
           "text": {
-            "rank": 176,
+            "rank": 177,
             "model": "glm-4.5-air",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1373.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 31190
           }
         },
         "benchlm": {
@@ -19878,11 +19938,11 @@
       "benchmarks": {
         "arena": {
           "vision": {
-            "rank": 82,
+            "rank": 83,
             "model": "qwen-vl-max-2025-08-13",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1186.0,
+            "score": 1187.0,
             "ci": null,
             "votes": null
           }
@@ -20075,11 +20135,11 @@
         },
         "arena": {
           "code": {
-            "rank": 110,
+            "rank": 111,
             "model": "gemini-2.5-pro",
             "vendor": "Google",
             "license": "proprietary",
-            "score": 1225.0,
+            "score": 1226.0,
             "ci": null,
             "votes": null
           },
@@ -20098,11 +20158,11 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1445.0,
-            "ci": null,
-            "votes": null
+            "ci": 2.0,
+            "votes": 124807
           },
           "vision": {
-            "rank": 43,
+            "rank": 44,
             "model": "gemini-2.5-pro",
             "vendor": "Google",
             "license": "proprietary",
@@ -20303,13 +20363,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 246,
+            "rank": 247,
             "model": "gpt-oss-20b",
             "vendor": "OpenAI",
             "license": "open",
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 10669
           }
         },
         "benchlm": {
@@ -20499,13 +20559,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 130,
+            "rank": 131,
             "model": "glm-4.5",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1411.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24403
           }
         },
         "benchlm": {
@@ -21249,13 +21309,13 @@
         },
         "arena": {
           "text": {
-            "rank": 85,
+            "rank": 86,
             "model": "deepseek-v4-flash",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1436.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 49001
           }
         }
       }
@@ -21492,7 +21552,7 @@
             "sessions": 14040
           },
           "code": {
-            "rank": 79,
+            "rank": 80,
             "model": "gemma-4-31b",
             "vendor": "Google",
             "license": "open",
@@ -21515,15 +21575,15 @@
             "vendor": "Google",
             "license": "open",
             "score": 1451.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5899
           },
           "vision": {
-            "rank": 35,
+            "rank": 33,
             "model": "gemma-4-31b",
             "vendor": "Google",
             "license": "open",
-            "score": 1256.0,
+            "score": 1260.0,
             "ci": null,
             "votes": null
           }
@@ -22209,7 +22269,7 @@
             "sessions": 954
           },
           "code": {
-            "rank": 40,
+            "rank": 41,
             "model": "kimi-k2.7-code",
             "vendor": "Moonshot",
             "license": null,
@@ -22332,7 +22392,7 @@
             "sessions": 954
           },
           "code": {
-            "rank": 31,
+            "rank": 32,
             "model": "kimi-k2.6",
             "vendor": "Moonshot",
             "license": null,
@@ -22350,16 +22410,16 @@
             "votes": null
           },
           "text": {
-            "rank": 48,
+            "rank": 47,
             "model": "kimi-k2.6",
             "vendor": "Moonshot",
             "license": null,
-            "score": 1460.0,
-            "ci": null,
-            "votes": null
+            "score": 1461.0,
+            "ci": 5.0,
+            "votes": 37543
           },
           "vision": {
-            "rank": 30,
+            "rank": 32,
             "model": "kimi-k2.6",
             "vendor": "Moonshot",
             "license": null,
@@ -22795,22 +22855,22 @@
             "sessions": 132396
           },
           "code": {
-            "rank": 48,
+            "rank": 49,
             "model": "deepseek-v4-pro",
             "vendor": "DeepSeek",
             "license": "open",
-            "score": 1446.0,
+            "score": 1445.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 53,
+            "rank": 52,
             "model": "deepseek-v4-pro",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 54263
           }
         }
       }
@@ -23230,13 +23290,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 346,
+            "rank": 347,
             "model": "llama-3.2-3b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1167.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 7936
           }
         }
       }
@@ -23302,13 +23362,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 375,
+            "rank": 376,
             "model": "llama-3.2-1b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1111.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 8045
           }
         }
       }
@@ -23344,16 +23404,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 236,
+            "rank": 237,
             "model": "llama-4-scout-17b-16e-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1322.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 30378
           },
           "vision": {
-            "rank": 107,
+            "rank": 109,
             "model": "llama-4-scout-17b-16e-instruct",
             "vendor": "Meta",
             "license": null,
@@ -23670,8 +23730,8 @@
             "vendor": "Alibaba",
             "license": "open",
             "score": 1336.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 25443
           }
         }
       }
@@ -23734,7 +23794,37 @@
         "completion": 3200000.0,
         "cache_read": null
       },
-      "benchmarks": {}
+      "benchmarks": {
+        "arena": {
+          "code": {
+            "rank": 9,
+            "model": "qwen3.8-27b",
+            "vendor": "Alibaba",
+            "license": "open",
+            "score": 1595.0,
+            "ci": null,
+            "votes": null
+          },
+          "text": {
+            "rank": 81,
+            "model": "qwen3.8-27b",
+            "vendor": "Alibaba",
+            "license": "open",
+            "score": 1440.0,
+            "ci": 10.0,
+            "votes": 3205
+          },
+          "vision": {
+            "rank": 37,
+            "model": "qwen3.8-27b",
+            "vendor": "Alibaba",
+            "license": "open",
+            "score": 1253.0,
+            "ci": null,
+            "votes": null
+          }
+        }
+      }
     },
     {
       "id": "@cf/zai-org/glm-5.2",
@@ -23829,13 +23919,13 @@
         },
         "arena": {
           "text": {
-            "rank": 180,
+            "rank": 181,
             "model": "glm-4.7-flash",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1367.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11747
           }
         }
       }
@@ -24024,7 +24114,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 74,
+            "rank": 75,
             "model": "minimax-m2.5",
             "vendor": "MiniMax",
             "license": null,
@@ -24033,13 +24123,13 @@
             "votes": null
           },
           "text": {
-            "rank": 154,
+            "rank": 155,
             "model": "minimax-m2.5",
             "vendor": "MiniMax",
             "license": null,
             "score": 1390.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41032
           }
         }
       }
@@ -24137,22 +24227,22 @@
         },
         "arena": {
           "code": {
-            "rank": 94,
+            "rank": 95,
             "model": "deepseek-v3.2",
             "vendor": "DeepSeek",
             "license": "open",
-            "score": 1324.0,
+            "score": 1325.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 103,
+            "rank": 104,
             "model": "deepseek-v3.2",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1425.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 47295
           }
         }
       }
@@ -24310,7 +24400,7 @@
         },
         "arena": {
           "code": {
-            "rank": 100,
+            "rank": 101,
             "model": "deepseek-v3.2-exp",
             "vendor": "DeepSeek",
             "license": "open",
@@ -24319,13 +24409,13 @@
             "votes": null
           },
           "text": {
-            "rank": 110,
+            "rank": 111,
             "model": "deepseek-v3.2-exp",
             "vendor": "DeepSeek",
             "license": "open",
-            "score": 1422.0,
-            "ci": null,
-            "votes": null
+            "score": 1423.0,
+            "ci": 6.0,
+            "votes": 11982
           }
         }
       }
@@ -24421,11 +24511,11 @@
       "benchmarks": {
         "arena": {
           "vision": {
-            "rank": 112,
+            "rank": 113,
             "model": "qwen2.5-vl-32b-instruct",
             "vendor": "Alibaba",
             "license": "open",
-            "score": 1119.0,
+            "score": 1120.0,
             "ci": null,
             "votes": null
           }
@@ -24495,7 +24585,7 @@
         },
         "arena": {
           "code": {
-            "rank": 89,
+            "rank": 90,
             "model": "glm-4.6",
             "vendor": "Z.ai",
             "license": "open",
@@ -24504,13 +24594,13 @@
             "votes": null
           },
           "text": {
-            "rank": 106,
+            "rank": 107,
             "model": "glm-4.6",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1424.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 35830
           }
         },
         "benchlm": {
@@ -24697,22 +24787,22 @@
         },
         "arena": {
           "code": {
-            "rank": 54,
+            "rank": 55,
             "model": "glm-5",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1436.0,
+            "score": 1435.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 56,
+            "rank": 55,
             "model": "glm-5",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27850
           }
         },
         "benchlm": {
@@ -24881,7 +24971,7 @@
         },
         "arena": {
           "code": {
-            "rank": 55,
+            "rank": 56,
             "model": "glm-4.7",
             "vendor": "Z.ai",
             "license": "open",
@@ -24894,9 +24984,9 @@
             "model": "glm-4.7",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1441.0,
-            "ci": null,
-            "votes": null
+            "score": 1442.0,
+            "ci": 6.0,
+            "votes": 12155
           }
         },
         "benchlm": {
@@ -25067,13 +25157,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 242,
+            "rank": 243,
             "model": "llama-3.3-70b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 54774
           }
         }
       }
@@ -25665,7 +25755,7 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": "2026-03",
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -25695,7 +25785,7 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": "2026-03",
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -25853,7 +25943,7 @@
             "model": "grok-4.3",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1356.0,
+            "score": 1357.0,
             "ci": null,
             "votes": null
           },
@@ -25867,20 +25957,20 @@
             "votes": null
           },
           "text": {
-            "rank": 78,
+            "rank": 77,
             "model": "grok-4.3",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 61016
           },
           "vision": {
-            "rank": 44,
+            "rank": 47,
             "model": "grok-4.3",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1244.0,
+            "score": 1241.0,
             "ci": null,
             "votes": null
           }
@@ -25948,20 +26038,20 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 99,
+            "rank": 100,
             "model": "gpt-5-chat",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1427.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 31681
           },
           "vision": {
             "rank": 57,
             "model": "gpt-5-chat",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1225.0,
+            "score": 1226.0,
             "ci": null,
             "votes": null
           }
@@ -26395,13 +26485,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 266,
+            "rank": 267,
             "model": "llama-3.1-nemotron-70b-instruct",
             "vendor": "Nvidia",
             "license": null,
             "score": 1299.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 7140
           }
         }
       }
@@ -27460,13 +27550,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 324,
+            "rank": 325,
             "model": "gemma-2-2b-it",
             "vendor": "Google",
             "license": null,
             "score": 1200.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 46616
           }
         }
       }
@@ -27652,13 +27742,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 320,
+            "rank": 321,
             "model": "llama-3.1-8b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1211.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 49605
           }
         }
       }
@@ -27694,13 +27784,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 268,
+            "rank": 269,
             "model": "llama-3.1-70b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1293.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 55240
           }
         }
       }
@@ -27826,16 +27916,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 229,
+            "rank": 230,
             "model": "llama-4-maverick-17b-128e-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1327.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 40038
           },
           "vision": {
-            "rank": 100,
+            "rank": 101,
             "model": "llama-4-maverick-17b-128e-instruct",
             "vendor": "Meta",
             "license": null,
@@ -28060,13 +28150,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 151,
+            "rank": 152,
             "model": "step-3.5-flash",
             "vendor": "StepFun",
             "license": "open",
             "score": 1394.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 57417
           }
         }
       }
@@ -28598,7 +28688,7 @@
             "sessions": 150750
           },
           "code": {
-            "rank": 101,
+            "rank": 102,
             "model": "mistral-medium-3.5",
             "vendor": "Mistral",
             "license": null,
@@ -28607,20 +28697,20 @@
             "votes": null
           },
           "text": {
-            "rank": 98,
+            "rank": 99,
             "model": "mistral-medium-3.5",
             "vendor": "Mistral",
             "license": null,
             "score": 1427.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 11009
           },
           "vision": {
-            "rank": 74,
+            "rank": 75,
             "model": "mistral-medium-3.5",
             "vendor": "Mistral",
             "license": null,
-            "score": 1198.0,
+            "score": 1199.0,
             "ci": null,
             "votes": null
           }
@@ -28767,11 +28857,11 @@
             "sessions": 60240
           },
           "code": {
-            "rank": 36,
+            "rank": 37,
             "model": "minimax-m3",
             "vendor": "MiniMax",
             "license": null,
-            "score": 1489.0,
+            "score": 1488.0,
             "ci": null,
             "votes": null
           },
@@ -28789,16 +28879,16 @@
             "model": "minimax-m3",
             "vendor": "MiniMax",
             "license": null,
-            "score": 1442.0,
-            "ci": null,
-            "votes": null
+            "score": 1443.0,
+            "ci": 4.0,
+            "votes": 41023
           },
           "vision": {
-            "rank": 47,
+            "rank": 51,
             "model": "minimax-m3",
             "vendor": "MiniMax",
             "license": null,
-            "score": 1240.0,
+            "score": 1237.0,
             "ci": null,
             "votes": null
           }
@@ -28885,7 +28975,7 @@
             "sessions": 30120
           },
           "code": {
-            "rank": 66,
+            "rank": 67,
             "model": "minimax-m2.7",
             "vendor": "MiniMax",
             "license": null,
@@ -28894,13 +28984,13 @@
             "votes": null
           },
           "text": {
-            "rank": 119,
+            "rank": 121,
             "model": "minimax-m2.7",
             "vendor": "MiniMax",
             "license": null,
             "score": 1416.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 62076
           }
         }
       }
@@ -29688,13 +29778,13 @@
         },
         "arena": {
           "text": {
-            "rank": 172,
+            "rank": 173,
             "model": "qwen3-235b-a22b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1375.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26331
           }
         },
         "benchlm": {
@@ -30037,11 +30127,11 @@
             "sessions": 150750
           },
           "code": {
-            "rank": 24,
+            "rank": 25,
             "model": "claude-sonnet-4-6",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1523.0,
+            "score": 1522.0,
             "ci": null,
             "votes": null
           },
@@ -30060,8 +30150,8 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1472.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 66512
           },
           "vision": {
             "rank": 26,
@@ -30217,15 +30307,15 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1473.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45331
           },
           "vision": {
-            "rank": 21,
+            "rank": 22,
             "model": "claude-opus-4-8",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1280.0,
+            "score": 1278.0,
             "ci": null,
             "votes": null
           }
@@ -30295,16 +30385,16 @@
         },
         "arena": {
           "text": {
-            "rank": 221,
+            "rank": 222,
             "model": "gpt-4o-2024-08-06",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1335.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45499
           },
           "vision": {
-            "rank": 113,
+            "rank": 114,
             "model": "gpt-4o-2024-08-06",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -30747,16 +30837,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 245,
+            "rank": 246,
             "model": "gpt-4o-mini-2024-07-18",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1318.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 68715
           },
           "vision": {
-            "rank": 116,
+            "rank": 117,
             "model": "gpt-4o-mini-2024-07-18",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -30974,7 +31064,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 64,
+            "rank": 65,
             "model": "glm-5v-turbo",
             "vendor": "Z.ai",
             "license": "proprietary",
@@ -30992,20 +31082,20 @@
             "votes": null
           },
           "text": {
-            "rank": 91,
+            "rank": 92,
             "model": "glm-5v-turbo",
             "vendor": "Z.ai",
             "license": "proprietary",
             "score": 1433.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9380
           },
           "vision": {
-            "rank": 53,
+            "rank": 54,
             "model": "glm-5v-turbo",
             "vendor": "Z.ai",
             "license": "proprietary",
-            "score": 1231.0,
+            "score": 1230.0,
             "ci": null,
             "votes": null
           }
@@ -31196,16 +31286,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 133,
+            "rank": 134,
             "model": "mistral-medium-2508",
             "vendor": "Mistral",
             "license": "proprietary",
             "score": 1409.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 94016
           },
           "vision": {
-            "rank": 94,
+            "rank": 95,
             "model": "mistral-medium-2508",
             "vendor": "Mistral",
             "license": "proprietary",
@@ -31326,7 +31416,7 @@
             "sessions": 15125
           },
           "code": {
-            "rank": 46,
+            "rank": 47,
             "model": "gemini-3.5-flash-lite",
             "vendor": "Google",
             "license": "proprietary",
@@ -31335,20 +31425,20 @@
             "votes": null
           },
           "text": {
-            "rank": 55,
+            "rank": 54,
             "model": "gemini-3.5-flash-lite",
             "vendor": "Google",
             "license": "proprietary",
             "score": 1457.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 17985
           },
           "vision": {
-            "rank": 32,
+            "rank": 29,
             "model": "gemini-3.5-flash-lite",
             "vendor": "Google",
             "license": "proprietary",
-            "score": 1260.0,
+            "score": 1270.0,
             "ci": null,
             "votes": null
           }
@@ -31707,7 +31797,7 @@
                 "ci": null
               }
             ],
-            "sessions": 15
+            "sessions": 210
           }
         },
         "benchlm": {
@@ -31881,13 +31971,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 218,
+            "rank": 221,
             "model": "nova-2-lite",
             "vendor": "Amazon",
             "license": "proprietary",
             "score": 1336.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 12294
           }
         }
       }
@@ -32391,11 +32481,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 112,
+            "rank": 113,
             "model": "devstral-2",
             "vendor": "Mistral",
             "license": null,
-            "score": 1193.0,
+            "score": 1194.0,
             "ci": null,
             "votes": null
           }
@@ -32465,16 +32555,16 @@
         },
         "arena": {
           "text": {
-            "rank": 237,
+            "rank": 238,
             "model": "gpt-4.1-nano-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1322.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 6103
           },
           "vision": {
-            "rank": 118,
+            "rank": 119,
             "model": "gpt-4.1-nano-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -33092,16 +33182,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 181,
+            "rank": 182,
             "model": "gemma-3-27b-it",
             "vendor": "Google",
             "license": null,
             "score": 1366.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 47563
           },
           "vision": {
-            "rank": 92,
+            "rank": 93,
             "model": "gemma-3-27b-it",
             "vendor": "Google",
             "license": null,
@@ -33266,7 +33356,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 109,
+            "rank": 110,
             "model": "mistral-large-3",
             "vendor": "Mistral",
             "license": "open",
@@ -33275,20 +33365,20 @@
             "votes": null
           },
           "text": {
-            "rank": 124,
+            "rank": 125,
             "model": "mistral-large-3",
             "vendor": "Mistral",
             "license": "open",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 62644
           },
           "vision": {
-            "rank": 73,
+            "rank": 71,
             "model": "mistral-large-3",
             "vendor": "Mistral",
             "license": "open",
-            "score": 1199.0,
+            "score": 1203.0,
             "ci": null,
             "votes": null
           }
@@ -33437,11 +33527,11 @@
             "sessions": 525
           },
           "code": {
-            "rank": 22,
+            "rank": 23,
             "model": "claude-opus-4-6",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1537.0,
+            "score": 1536.0,
             "ci": null,
             "votes": null
           },
@@ -33460,11 +33550,11 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1497.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 76362
           },
           "vision": {
-            "rank": 9,
+            "rank": 7,
             "model": "claude-opus-4-6",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -33538,13 +33628,13 @@
         },
         "arena": {
           "text": {
-            "rank": 202,
+            "rank": 203,
             "model": "llama-3.1-nemotron-ultra-253b-v1",
             "vendor": "Nvidia",
             "license": null,
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 12.0,
+            "votes": 2549
           }
         }
       }
@@ -33612,16 +33702,16 @@
         },
         "arena": {
           "text": {
-            "rank": 125,
+            "rank": 126,
             "model": "gpt-4.1-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 51118
           },
           "vision": {
-            "rank": 64,
+            "rank": 66,
             "model": "gpt-4.1-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -34138,7 +34228,7 @@
             "sessions": 525
           },
           "code": {
-            "rank": 14,
+            "rank": 15,
             "model": "claude-opus-4-7",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -34170,11 +34260,11 @@
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1494.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 61304
           },
           "vision": {
-            "rank": 5,
+            "rank": 4,
             "model": "claude-opus-4-7",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -34456,13 +34546,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 326,
+            "rank": 327,
             "model": "mixtral-8x7b-instruct-v0.1",
             "vendor": "Mistral",
             "license": "open",
             "score": 1197.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 73503
           }
         }
       }
@@ -34719,7 +34809,7 @@
         },
         "arena": {
           "code": {
-            "rank": 83,
+            "rank": 84,
             "model": "qwen3.5-122b-a10b",
             "vendor": "Alibaba",
             "license": "open",
@@ -34728,16 +34818,16 @@
             "votes": null
           },
           "text": {
-            "rank": 118,
+            "rank": 119,
             "model": "qwen3.5-122b-a10b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1417.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 28413
           },
           "vision": {
-            "rank": 55,
+            "rank": 56,
             "model": "qwen3.5-122b-a10b",
             "vendor": "Alibaba",
             "license": "open",
@@ -34779,11 +34869,11 @@
       "benchmarks": {
         "arena": {
           "vision": {
-            "rank": 129,
+            "rank": 130,
             "model": "pixtral-12b-2409",
             "vendor": "Mistral",
             "license": "open",
-            "score": 1026.0,
+            "score": 1025.0,
             "ci": null,
             "votes": null
           }
@@ -34851,13 +34941,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 355,
+            "rank": 356,
             "model": "mistral-7b-instruct-v0.2",
             "vendor": "Mistral",
             "license": "open",
             "score": 1149.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 19402
           }
         }
       }
@@ -35209,20 +35299,20 @@
         },
         "arena": {
           "text": {
-            "rank": 166,
+            "rank": 167,
             "model": "gpt-4.1-mini-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1383.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 39399
           },
           "vision": {
-            "rank": 70,
+            "rank": 72,
             "model": "gpt-4.1-mini-2025-04-14",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1203.0,
+            "score": 1202.0,
             "ci": null,
             "votes": null
           }
@@ -35659,7 +35749,7 @@
         },
         "arena": {
           "code": {
-            "rank": 88,
+            "rank": 89,
             "model": "gpt-5.1",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -35677,13 +35767,13 @@
             "votes": null
           },
           "text": {
-            "rank": 81,
+            "rank": 82,
             "model": "gpt-5.1",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1439.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 43653
           },
           "vision": {
             "rank": 49,
@@ -36937,7 +37027,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 97,
+            "rank": 98,
             "model": "minimax-m2",
             "vendor": "MiniMax",
             "license": "open",
@@ -36946,13 +37036,13 @@
             "votes": null
           },
           "text": {
-            "rank": 209,
+            "rank": 210,
             "model": "minimax-m2",
             "vendor": "MiniMax",
             "license": "open",
             "score": 1346.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 6903
           }
         }
       }
@@ -37526,7 +37616,7 @@
         },
         "arena": {
           "code": {
-            "rank": 104,
+            "rank": 105,
             "model": "qwen3.5-35b-a3b",
             "vendor": "Alibaba",
             "license": "open",
@@ -37535,13 +37625,13 @@
             "votes": null
           },
           "text": {
-            "rank": 148,
+            "rank": 149,
             "model": "qwen3.5-35b-a3b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1395.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 29097
           }
         }
       }
@@ -37697,7 +37787,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 108,
+            "rank": 109,
             "model": "qwen3.5-flash",
             "vendor": "Alibaba",
             "license": "proprietary",
@@ -37706,13 +37796,13 @@
             "votes": null
           },
           "text": {
-            "rank": 146,
+            "rank": 147,
             "model": "qwen3.5-flash",
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1397.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 58319
           }
         }
       }
@@ -37835,19 +37925,7 @@
         "completion": 200600.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 227,
-            "model": "yi-lightning",
-            "vendor": null,
-            "license": null,
-            "score": 1328.0,
-            "ci": null,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "gemini-2.5-flash-preview-09-2025-thinking",
@@ -38273,7 +38351,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 114,
+            "rank": 115,
             "model": "mercury-2",
             "vendor": "Inception AI",
             "license": "proprietary",
@@ -38282,13 +38360,13 @@
             "votes": null
           },
           "text": {
-            "rank": 205,
+            "rank": 206,
             "model": "mercury-2",
             "vendor": "Inception AI",
             "license": "proprietary",
             "score": 1347.0,
-            "ci": null,
-            "votes": null
+            "ci": 11.0,
+            "votes": 3122
           }
         },
         "benchlm": {
@@ -38724,7 +38802,7 @@
         },
         "arena": {
           "code": {
-            "rank": 38,
+            "rank": 39,
             "model": "qwen3.6-max-preview",
             "vendor": "Alibaba",
             "license": "proprietary",
@@ -38733,13 +38811,13 @@
             "votes": null
           },
           "text": {
-            "rank": 49,
+            "rank": 48,
             "model": "qwen3.6-max-preview",
             "vendor": "Alibaba",
             "license": "proprietary",
             "score": 1460.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5196
           }
         }
       }
@@ -38893,20 +38971,20 @@
             "votes": null
           },
           "text": {
-            "rank": 17,
+            "rank": 19,
             "model": "qwen3.8-max",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1482.0,
-            "ci": null,
-            "votes": null
+            "score": 1481.0,
+            "ci": 7.0,
+            "votes": 9955
           },
           "vision": {
             "rank": 2,
             "model": "qwen3.8-max",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1301.0,
+            "score": 1302.0,
             "ci": null,
             "votes": null
           }
@@ -39266,20 +39344,20 @@
             "votes": null
           },
           "text": {
-            "rank": 52,
+            "rank": 53,
             "model": "qwen3.7-plus",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "score": 1457.0,
+            "ci": 5.0,
+            "votes": 34426
           },
           "vision": {
             "rank": 31,
             "model": "qwen3.7-plus",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1262.0,
+            "score": 1265.0,
             "ci": null,
             "votes": null
           }
@@ -39732,8 +39810,8 @@
             "vendor": "Baidu",
             "license": "proprietary",
             "score": 1468.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 37137
           }
         }
       }
@@ -40069,13 +40147,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 241,
+            "rank": 242,
             "model": "glm-4-plus",
             "vendor": "Z.ai",
             "license": "proprietary",
             "score": 1319.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 26126
           }
         }
       }
@@ -41237,7 +41315,7 @@
         },
         "arena": {
           "code": {
-            "rank": 84,
+            "rank": 85,
             "model": "qwen3.5-27b",
             "vendor": "Alibaba",
             "license": "open",
@@ -41246,16 +41324,16 @@
             "votes": null
           },
           "text": {
-            "rank": 134,
+            "rank": 135,
             "model": "qwen3.5-27b",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1408.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27282
           },
           "vision": {
-            "rank": 59,
+            "rank": 60,
             "model": "qwen3.5-27b",
             "vendor": "Alibaba",
             "license": "open",
@@ -43300,7 +43378,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 81,
+            "rank": 82,
             "model": "deepseek-v3.2-thinking",
             "vendor": "DeepSeek",
             "license": "open",
@@ -43309,13 +43387,13 @@
             "votes": null
           },
           "text": {
-            "rank": 109,
+            "rank": 110,
             "model": "deepseek-v3.2-thinking",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1423.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41123
           }
         }
       }
@@ -43501,36 +43579,6 @@
       "benchmarks": {}
     },
     {
-      "id": "meta/muse-spark-1.2-contributor",
-      "name": "Muse Spark 1.2 Contributor (Data Used for Training)",
-      "provider": "meta",
-      "family": "meta/muse-spark-1.2-contributor",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "audio/image/pdf/text/video",
-      "is_vision": true,
-      "is_audio_input": true,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 100000.0,
-        "completion": 200000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "soob3123/Veiled-Calla-12B",
       "name": "Veiled Calla 12B",
       "provider": "soob3123",
@@ -43681,7 +43729,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 87,
+            "rank": 88,
             "model": "laguna-m.1",
             "vendor": "Poolside",
             "license": "open",
@@ -43887,7 +43935,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 53,
+            "rank": 54,
             "model": "kimi-k2.5-thinking",
             "vendor": "Moonshot",
             "license": null,
@@ -43910,15 +43958,15 @@
             "vendor": "Moonshot",
             "license": null,
             "score": 1450.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70943
           },
           "vision": {
-            "rank": 41,
+            "rank": 42,
             "model": "kimi-k2.5-thinking",
             "vendor": "Moonshot",
             "license": null,
-            "score": 1249.0,
+            "score": 1250.0,
             "ci": null,
             "votes": null
           }
@@ -44016,13 +44064,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 264,
+            "rank": 265,
             "model": "gemma-3-4b-it",
             "vendor": "Google",
             "license": null,
             "score": 1303.0,
-            "ci": null,
-            "votes": null
+            "ci": 9.0,
+            "votes": 4171
           }
         }
       }
@@ -44088,13 +44136,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 213,
+            "rank": 214,
             "model": "gemma-3-12b-it",
             "vendor": "Google",
             "license": null,
             "score": 1342.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3829
           }
         }
       }
@@ -45866,13 +45914,13 @@
         },
         "arena": {
           "text": {
-            "rank": 122,
+            "rank": 123,
             "model": "deepseek-v3.1-terminus",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1415.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3700
           }
         }
       }
@@ -45908,13 +45956,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 105,
+            "rank": 106,
             "model": "deepseek-v3.2-exp-thinking",
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1425.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 9109
           }
         }
       }
@@ -45985,8 +46033,8 @@
             "vendor": "DeepSeek",
             "license": "open",
             "score": 1416.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 11786
           }
         }
       }
@@ -46562,16 +46610,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 123,
+            "rank": 124,
             "model": "qwen3-vl-235b-a22b-instruct",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1414.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11556
           },
           "vision": {
-            "rank": 63,
+            "rank": 64,
             "model": "qwen3-vl-235b-a22b-instruct",
             "vendor": "Alibaba",
             "license": "open",
@@ -46608,6 +46656,36 @@
       "price_per_million": {
         "prompt": 470000.0,
         "completion": 470000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "qwen/qwen3.8-27b-uncensored",
+      "name": "Qwen 3.8 27B Uncensored",
+      "provider": "qwen",
+      "family": "qwen/qwen3.8-27b-uncensored",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 131072,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 180000.0,
+        "completion": 500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -46697,6 +46775,36 @@
       "free": false,
       "price_per_million": {
         "prompt": 300000.0,
+        "completion": 500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "qwen/qwen3.6-35b-a3b-uncensored",
+      "name": "Qwen 3.6 35B A3B Uncensored",
+      "provider": "qwen",
+      "family": "qwen/qwen3.6-35b-a3b-uncensored",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 65536,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
         "completion": 500000.0,
         "cache_read": null
       },
@@ -47110,7 +47218,7 @@
             "sessions": 43087
           },
           "code": {
-            "rank": 39,
+            "rank": 40,
             "model": "mimo-v2.5-pro",
             "vendor": "Xiaomi",
             "license": "open",
@@ -47123,9 +47231,9 @@
             "model": "mimo-v2.5-pro",
             "vendor": "Xiaomi",
             "license": "open",
-            "score": 1467.0,
-            "ci": null,
-            "votes": null
+            "score": 1468.0,
+            "ci": 4.0,
+            "votes": 54177
           }
         }
       }
@@ -48123,16 +48231,16 @@
         },
         "arena": {
           "text": {
-            "rank": 170,
+            "rank": 171,
             "model": "glm-4.6v",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1377.0,
-            "ci": null,
-            "votes": null
+            "ci": 11.0,
+            "votes": 2817
           },
           "vision": {
-            "rank": 89,
+            "rank": 90,
             "model": "glm-4.6v",
             "vendor": "Z.ai",
             "license": "open",
@@ -48613,7 +48721,7 @@
             "sessions": 45120
           },
           "code": {
-            "rank": 63,
+            "rank": 64,
             "model": "Inkling Small",
             "vendor": "Thinky",
             "license": "open",
@@ -48622,20 +48730,20 @@
             "votes": null
           },
           "text": {
-            "rank": 135,
+            "rank": 136,
             "model": "Inkling Small",
             "vendor": "Thinky",
             "license": "open",
             "score": 1405.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 11455
           },
           "vision": {
-            "rank": 67,
+            "rank": 70,
             "model": "Inkling Small",
             "vendor": "Thinky",
             "license": "open",
-            "score": 1210.0,
+            "score": 1206.0,
             "ci": null,
             "votes": null
           }
@@ -50731,20 +50839,20 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 149,
+            "rank": 151,
             "model": "qwen3-vl-235b-a22b-thinking",
             "vendor": "Alibaba",
             "license": "open",
             "score": 1395.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 7986
           },
           "vision": {
-            "rank": 78,
+            "rank": 79,
             "model": "qwen3-vl-235b-a22b-thinking",
             "vendor": "Alibaba",
             "license": "open",
-            "score": 1190.0,
+            "score": 1189.0,
             "ci": null,
             "votes": null
           }
@@ -51464,22 +51572,22 @@
             "sessions": 13053
           },
           "code": {
-            "rank": 27,
+            "rank": 28,
             "model": "hy3",
             "vendor": "Tencent",
             "license": "open",
-            "score": 1517.0,
+            "score": 1518.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 54,
+            "rank": 56,
             "model": "hy3",
             "vendor": "Tencent",
             "license": "open",
-            "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "score": 1457.0,
+            "ci": 8.0,
+            "votes": 5877
           }
         }
       }
@@ -51630,6 +51738,36 @@
       "price_per_million": {
         "prompt": 3000000.0,
         "completion": 3000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek V4 Flash Vision Exp",
+      "provider": "deepseek",
+      "family": "deepseek-v4-flash-vision-exp",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 140000.0,
+        "completion": 280000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -52962,16 +53100,16 @@
             "model": "claude-fable-5",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1507.0,
-            "ci": null,
-            "votes": null
+            "score": 1508.0,
+            "ci": 5.0,
+            "votes": 24331
           },
           "vision": {
             "rank": 1,
             "model": "claude-fable-5",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1315.0,
+            "score": 1312.0,
             "ci": null,
             "votes": null
           }
@@ -53672,11 +53810,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 56,
+            "rank": 57,
             "model": "mimo-v2-pro",
             "vendor": "Xiaomi",
             "license": "proprietary",
-            "score": 1433.0,
+            "score": 1434.0,
             "ci": null,
             "votes": null
           },
@@ -53686,8 +53824,8 @@
             "vendor": "Xiaomi",
             "license": "proprietary",
             "score": 1449.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24397
           }
         },
         "benchlm": {
@@ -53903,7 +54041,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 51,
+            "rank": 53,
             "model": "mimo-v2.5",
             "vendor": "Xiaomi",
             "license": "open",
@@ -53912,20 +54050,20 @@
             "votes": null
           },
           "text": {
-            "rank": 90,
+            "rank": 91,
             "model": "mimo-v2.5",
             "vendor": "Xiaomi",
             "license": "open",
             "score": 1434.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 44557
           },
           "vision": {
-            "rank": 50,
+            "rank": 52,
             "model": "mimo-v2.5",
             "vendor": "Xiaomi",
             "license": "open",
-            "score": 1238.0,
+            "score": 1235.0,
             "ci": null,
             "votes": null
           }
@@ -54310,7 +54448,7 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": "2026-03",
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -54462,11 +54600,11 @@
             "sessions": 16
           },
           "code": {
-            "rank": 47,
+            "rank": 48,
             "model": "gemini-3.1-pro-preview",
             "vendor": "Google",
             "license": "proprietary",
-            "score": 1447.0,
+            "score": 1446.0,
             "ci": null,
             "votes": null
           },
@@ -54480,16 +54618,16 @@
             "votes": null
           },
           "text": {
-            "rank": 13,
+            "rank": 14,
             "model": "gemini-3.1-pro-preview",
             "vendor": "Google",
             "license": "proprietary",
             "score": 1486.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 99182
           },
           "vision": {
-            "rank": 25,
+            "rank": 24,
             "model": "gemini-3.1-pro-preview",
             "vendor": "Google",
             "license": "proprietary",
@@ -54698,7 +54836,7 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": "2026-03",
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -54891,7 +55029,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 103,
+            "rank": 104,
             "model": "gemini-3.1-flash-lite-preview",
             "vendor": "Google",
             "license": "proprietary",
@@ -54900,16 +55038,16 @@
             "votes": null
           },
           "text": {
-            "rank": 92,
+            "rank": 93,
             "model": "gemini-3.1-flash-lite-preview",
             "vendor": "Google",
             "license": "proprietary",
             "score": 1432.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60594
           },
           "vision": {
-            "rank": 52,
+            "rank": 53,
             "model": "gemini-3.1-flash-lite-preview",
             "vendor": "Google",
             "license": "proprietary",
@@ -54919,6 +55057,36 @@
           }
         }
       }
+    },
+    {
+      "id": "claude-fable-5@default",
+      "name": "Claude Fable 5",
+      "provider": "google-vertex",
+      "family": "claude-fable-5@default",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-01-31",
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 10000000.0,
+        "completion": 50000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemini-3-flash-preview",
@@ -55662,7 +55830,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 44,
+            "rank": 45,
             "model": "qwen3.6-plus",
             "vendor": "Alibaba",
             "license": "proprietary",
@@ -55675,9 +55843,9 @@
             "model": "qwen3.6-plus",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1444.0,
-            "ci": null,
-            "votes": null
+            "score": 1443.0,
+            "ci": 4.0,
+            "votes": 45376
           }
         }
       }
@@ -56724,20 +56892,20 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 155,
+            "rank": 156,
             "model": "o4-mini-2025-04-16",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1390.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 45538
           },
           "vision": {
-            "rank": 72,
+            "rank": 73,
             "model": "o4-mini-2025-04-16",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1202.0,
+            "score": 1201.0,
             "ci": null,
             "votes": null
           }
@@ -58033,11 +58201,11 @@
             "sessions": 1405
           },
           "code": {
-            "rank": 61,
+            "rank": 62,
             "model": "inkling",
             "vendor": "Thinky",
             "license": "open",
-            "score": 1406.0,
+            "score": 1408.0,
             "ci": null,
             "votes": null
           },
@@ -58047,8 +58215,8 @@
             "vendor": "Thinky",
             "license": "open",
             "score": 1440.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18488
           }
         }
       }
@@ -58223,7 +58391,7 @@
             "sessions": 125425
           },
           "code": {
-            "rank": 23,
+            "rank": 24,
             "model": "muse-spark-1.2 (xHigh)",
             "vendor": "Meta",
             "license": "proprietary",
@@ -58237,15 +58405,15 @@
             "vendor": "Meta",
             "license": "proprietary",
             "score": 1498.0,
-            "ci": null,
-            "votes": null
+            "ci": 10.0,
+            "votes": 3257
           },
           "vision": {
-            "rank": 10,
+            "rank": 8,
             "model": "muse-spark-1.2 (xHigh)",
             "vendor": "Meta",
             "license": "proprietary",
-            "score": 1290.0,
+            "score": 1292.0,
             "ci": null,
             "votes": null
           }
@@ -58355,15 +58523,15 @@
             "vendor": "Meta",
             "license": "proprietary",
             "score": 1491.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 20242
           },
           "vision": {
-            "rank": 19,
+            "rank": 18,
             "model": "muse-spark-1.1",
             "vendor": "Meta",
             "license": "proprietary",
-            "score": 1282.0,
+            "score": 1281.0,
             "ci": null,
             "votes": null
           }
@@ -58793,20 +58961,20 @@
         },
         "arena": {
           "text": {
-            "rank": 194,
+            "rank": 195,
             "model": "glm-4.5v",
             "vendor": "Z.ai",
             "license": "open",
             "score": 1353.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 4968
           },
           "vision": {
-            "rank": 97,
+            "rank": 98,
             "model": "glm-4.5v",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1156.0,
+            "score": 1155.0,
             "ci": null,
             "votes": null
           }
@@ -60099,11 +60267,11 @@
             "sessions": 26
           },
           "code": {
-            "rank": 16,
+            "rank": 17,
             "model": "grok-4.5",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1557.0,
+            "score": 1556.0,
             "ci": null,
             "votes": null
           },
@@ -60117,20 +60285,20 @@
             "votes": null
           },
           "text": {
-            "rank": 36,
+            "rank": 35,
             "model": "grok-4.5",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1470.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 22030
           },
           "vision": {
-            "rank": 13,
+            "rank": 17,
             "model": "grok-4.5",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1285.0,
+            "score": 1282.0,
             "ci": null,
             "votes": null
           }
@@ -60534,22 +60702,22 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 116,
+            "rank": 117,
             "model": "grok-4-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1161.0,
+            "score": 1162.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 137,
+            "rank": 138,
             "model": "grok-4-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1404.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 18811
           }
         },
         "benchlm": {
@@ -60765,7 +60933,7 @@
         },
         "arena": {
           "code": {
-            "rank": 105,
+            "rank": 106,
             "model": "gpt-5.1-codex-mini",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -60837,11 +61005,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 115,
+            "rank": 116,
             "model": "grok-code-fast-1",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1164.0,
+            "score": 1165.0,
             "ci": null,
             "votes": null
           }
@@ -61025,7 +61193,7 @@
         },
         "arena": {
           "code": {
-            "rank": 106,
+            "rank": 107,
             "model": "grok-4-1-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -61034,13 +61202,13 @@
             "votes": null
           },
           "text": {
-            "rank": 95,
+            "rank": 96,
             "model": "grok-4-1-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1431.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 56768
           },
           "vision": {
             "rank": 76,
@@ -61235,7 +61403,7 @@
         },
         "arena": {
           "code": {
-            "rank": 59,
+            "rank": 60,
             "model": "gpt-5.2",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -61253,20 +61421,20 @@
             "votes": null
           },
           "text": {
-            "rank": 87,
+            "rank": 88,
             "model": "gpt-5.2",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1435.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 79397
           },
           "vision": {
-            "rank": 54,
+            "rank": 55,
             "model": "gpt-5.2",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1229.0,
+            "score": 1230.0,
             "ci": null,
             "votes": null
           }
@@ -61304,16 +61472,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 94,
+            "rank": 95,
             "model": "o3-2025-04-16",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1431.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 59888
           },
           "vision": {
-            "rank": 62,
+            "rank": 63,
             "model": "o3-2025-04-16",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -61598,7 +61766,7 @@
         },
         "arena": {
           "code": {
-            "rank": 90,
+            "rank": 91,
             "model": "gpt-5.2-codex",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -61759,13 +61927,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 201,
+            "rank": 202,
             "model": "o3-mini",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1348.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 57440
           }
         },
         "benchlm": {
@@ -61947,16 +62115,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 132,
+            "rank": 133,
             "model": "grok-4-0709",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1409.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41530
           },
           "vision": {
-            "rank": 84,
+            "rank": 85,
             "model": "grok-4-0709",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -62487,7 +62655,7 @@
         },
         "arena": {
           "code": {
-            "rank": 91,
+            "rank": 92,
             "model": "gpt-5.1-codex",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -64012,22 +64180,22 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 95,
+            "rank": 96,
             "model": "kimi-k2-thinking-turbo",
             "vendor": "Moonshot",
             "license": null,
-            "score": 1322.0,
+            "score": 1323.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 97,
+            "rank": 98,
             "model": "kimi-k2-thinking-turbo",
             "vendor": "Moonshot",
             "license": null,
             "score": 1430.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 62107
           }
         }
       }
@@ -69261,9 +69429,9 @@
             "model": "command-r",
             "vendor": "Cohere",
             "license": "open",
-            "score": 1226.0,
-            "ci": null,
-            "votes": null
+            "score": 1227.0,
+            "ci": 5.0,
+            "votes": 54036
           }
         }
       }
@@ -71912,7 +72080,7 @@
       "benchmarks": {
         "arena": {
           "vision": {
-            "rank": 110,
+            "rank": 111,
             "model": "qwen2.5-vl-72b-instruct",
             "vendor": "Alibaba",
             "license": null,
@@ -75241,13 +75409,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 186,
+            "rank": 187,
             "model": "nvidia-nemotron-3-super-120b-a12b",
             "vendor": "Nvidia",
             "license": null,
             "score": 1360.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 7535
           }
         }
       }
@@ -78317,16 +78485,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 232,
+            "rank": 233,
             "model": "gpt-4-turbo-2024-04-09",
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1324.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 98114
           },
           "vision": {
-            "rank": 114,
+            "rank": 115,
             "model": "gpt-4-turbo-2024-04-09",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -78896,11 +79064,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 78,
+            "rank": 79,
             "model": "gpt-5.3-codex (codex-harness)",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1370.0,
+            "score": 1369.0,
             "ci": null,
             "votes": null
           }
@@ -79071,11 +79239,11 @@
             "vendor": "OpenAI",
             "license": "proprietary",
             "score": 1402.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 27807
           },
           "vision": {
-            "rank": 77,
+            "rank": 78,
             "model": "o1-2024-12-17",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -79502,6 +79670,36 @@
       "benchmarks": {}
     },
     {
+      "id": "ox-alpha-free",
+      "name": "Ox Alpha Free (Unlimited)",
+      "provider": "opencode-go",
+      "family": "ox-alpha-free",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "glm-5.3",
       "name": "GLM-5.3",
       "provider": "opencode-go",
@@ -79562,16 +79760,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 96,
+            "rank": 97,
             "model": "mimo-v2-omni",
             "vendor": "Xiaomi",
             "license": "proprietary",
             "score": 1430.0,
-            "ci": null,
-            "votes": null
+            "ci": 6.0,
+            "votes": 19434
           },
           "vision": {
-            "rank": 61,
+            "rank": 62,
             "model": "mimo-v2-omni",
             "vendor": "Xiaomi",
             "license": "proprietary",
@@ -80871,7 +81069,7 @@
             "sessions": 503
           },
           "code": {
-            "rank": 75,
+            "rank": 76,
             "model": "gemini-3-flash (thinking-minimal)",
             "vendor": "Google",
             "license": "proprietary",
@@ -80894,15 +81092,15 @@
             "vendor": "Google",
             "license": "proprietary",
             "score": 1458.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 86359
           },
           "vision": {
-            "rank": 33,
+            "rank": 34,
             "model": "gemini-3-flash (thinking-minimal)",
             "vendor": "Google",
             "license": "proprietary",
-            "score": 1259.0,
+            "score": 1260.0,
             "ci": null,
             "votes": null
           }
@@ -82170,13 +82368,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 282,
+            "rank": 283,
             "model": "llama-3-70b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1276.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 156876
           }
         }
       }
@@ -84996,6 +85194,36 @@
       "price_per_million": {
         "prompt": 950000.0,
         "completion": 4000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "ranoai/deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash (RanoAI)",
+      "provider": "ranoai",
+      "family": "ranoai/deepseek-v4-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 140000.0,
+        "completion": 280000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -88637,6 +88865,36 @@
       "benchmarks": {}
     },
     {
+      "id": "vertex-openai/grok-4-6",
+      "name": "Grok 4.6 (Vertex AI (OpenAI-compatible))",
+      "provider": "vertex-openai",
+      "family": "vertex-openai/grok-4-6",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 500000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-02-01",
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 2000000.0,
+        "completion": 6000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "vertex-openai/glm-5",
       "name": "GLM-5 (Vertex AI (OpenAI-compatible))",
       "provider": "vertex-openai",
@@ -90322,17 +90580,6 @@
           },
           "median_tps": 0.0,
           "ttft": 0.0
-        },
-        "arena": {
-          "text": {
-            "rank": 191,
-            "model": "intellect-3",
-            "vendor": null,
-            "license": null,
-            "score": 1356.0,
-            "ci": null,
-            "votes": null
-          }
         }
       }
     },
@@ -91396,13 +91643,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 192,
+            "rank": 193,
             "model": "command-a-03-2025",
             "vendor": "Cohere",
             "license": "open",
             "score": 1354.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 56404
           }
         }
       }
@@ -97009,16 +97256,16 @@
             "model": "gpt-5.5-instant",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1473.0,
-            "ci": null,
-            "votes": null
+            "score": 1474.0,
+            "ci": 5.0,
+            "votes": 25863
           },
           "vision": {
-            "rank": 24,
+            "rank": 25,
             "model": "gpt-5.5-instant",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1278.0,
+            "score": 1277.0,
             "ci": null,
             "votes": null
           }
@@ -97056,13 +97303,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 199,
+            "rank": 201,
             "model": "step-3",
             "vendor": "StepFun",
             "license": "open",
             "score": 1348.0,
-            "ci": null,
-            "votes": null
+            "ci": 7.0,
+            "votes": 6558
           },
           "vision": {
             "rank": 102,
@@ -99222,20 +99469,11 @@
         },
         "arena": {
           "code": {
-            "rank": 107,
+            "rank": 108,
             "model": "trinity-large-thinking",
             "vendor": null,
             "license": null,
             "score": 1238.0,
-            "ci": null,
-            "votes": null
-          },
-          "text": {
-            "rank": 179,
-            "model": "trinity-large-thinking",
-            "vendor": null,
-            "license": null,
-            "score": 1369.0,
             "ci": null,
             "votes": null
           }
@@ -100485,6 +100723,36 @@
       "price_per_million": {
         "prompt": 600000.0,
         "completion": 3600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "bailian/qwen3.8-27b",
+      "name": "Qwen3.8 27B",
+      "provider": "bailian",
+      "family": "bailian/qwen3.8-27b",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1131072,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 450000.0,
+        "completion": 3200000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -105501,13 +105769,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 297,
+            "rank": 298,
             "model": "phi-4",
             "vendor": "Microsoft",
             "license": "open",
             "score": 1256.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 24126
           }
         },
         "benchlm": {
@@ -105930,7 +106198,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 76,
+            "rank": 77,
             "model": "grok-4.20-beta-0309-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -105953,15 +106221,15 @@
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1472.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 62272
           },
           "vision": {
             "rank": 36,
             "model": "grok-4.20-beta-0309-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1255.0,
+            "score": 1256.0,
             "ci": null,
             "votes": null
           }
@@ -106059,16 +106327,16 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 233,
+            "rank": 234,
             "model": "claude-3-5-haiku-20241022",
             "vendor": "Anthropic",
             "license": "proprietary",
             "score": 1324.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 70041
           },
           "vision": {
-            "rank": 106,
+            "rank": 107,
             "model": "claude-3-5-haiku-20241022",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -106269,16 +106537,16 @@
             "votes": null
           },
           "text": {
-            "rank": 34,
+            "rank": 36,
             "model": "grok-4.20-multi-agent-beta-0309",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1470.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 60864
           },
           "vision": {
-            "rank": 38,
+            "rank": 40,
             "model": "grok-4.20-multi-agent-beta-0309",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -106350,13 +106618,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 50,
+            "rank": 49,
             "model": "grok-4.1",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "score": 1459.0,
-            "ci": null,
-            "votes": null
+            "ci": 3.0,
+            "votes": 67767
           }
         },
         "benchlm": {
@@ -106627,16 +106895,16 @@
             "votes": null
           },
           "text": {
-            "rank": 14,
+            "rank": 15,
             "model": "gemini-3-pro",
             "vendor": "Google",
             "license": "proprietary",
             "score": 1485.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 41491
           },
           "vision": {
-            "rank": 11,
+            "rank": 10,
             "model": "gemini-3-pro",
             "vendor": "Google",
             "license": "proprietary",
@@ -106993,17 +107261,6 @@
         "cache_read": null
       },
       "benchmarks": {
-        "arena": {
-          "text": {
-            "rank": 169,
-            "model": "trinity-large-preview",
-            "vendor": null,
-            "license": null,
-            "score": 1379.0,
-            "ci": null,
-            "votes": null
-          }
-        },
         "benchlm": {
           "slug": "trinity-large-preview",
           "canonicalModelKey": "trinity-large-preview",
@@ -107162,7 +107419,7 @@
     },
     {
       "id": "x-preview-f-free",
-      "name": "Ox Alpha Free",
+      "name": "Ox Alpha Free (Unlimited)",
       "provider": "opencode",
       "family": "x-preview-f-free",
       "source": "models.dev",
@@ -107581,13 +107838,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 316,
+            "rank": 317,
             "model": "mistral-medium",
             "vendor": "Mistral",
             "license": "proprietary",
             "score": 1222.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 34550
           }
         }
       }
@@ -109480,7 +109737,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 96,
+            "rank": 97,
             "model": "laguna-xs.2",
             "vendor": "Poolside",
             "license": "open",
@@ -119560,29 +119817,29 @@
         },
         "arena": {
           "code": {
-            "rank": 80,
+            "rank": 81,
             "model": "gemma-4-26b-a4b",
             "vendor": "Google",
             "license": "open",
-            "score": 1361.0,
+            "score": 1362.0,
             "ci": null,
             "votes": null
           },
           "text": {
-            "rank": 82,
+            "rank": 84,
             "model": "gemma-4-26b-a4b",
             "vendor": "Google",
             "license": "open",
             "score": 1438.0,
-            "ci": null,
-            "votes": null
+            "ci": 8.0,
+            "votes": 5809
           },
           "vision": {
-            "rank": 48,
+            "rank": 46,
             "model": "gemma-4-26b-a4b",
             "vendor": "Google",
             "license": "open",
-            "score": 1240.0,
+            "score": 1242.0,
             "ci": null,
             "votes": null
           }
@@ -124565,8 +124822,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 5000000.0,
-        "completion": 30000000.0,
+        "prompt": 4000000.0,
+        "completion": 20000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -128921,7 +129178,7 @@
       "family": "nebius/nvidia/nemotron-3-super-120b-a12b",
       "source": "models.dev",
       "created_unix": null,
-      "context": 8000,
+      "context": 262144,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -129778,8 +130035,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 726000.0,
-        "completion": 2178000.0,
+        "prompt": 602580.0,
+        "completion": 1807740.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -129838,8 +130095,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 242000.0,
-        "completion": 726000.0,
+        "prompt": 200860.0,
+        "completion": 602580.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -129928,8 +130185,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 175215.0,
-        "completion": 759265.0,
+        "prompt": 175485.0,
+        "completion": 760435.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -129958,8 +130215,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 759265.0,
-        "completion": 759265.0,
+        "prompt": 760435.0,
+        "completion": 760435.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -129988,8 +130245,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1051290.0,
-        "completion": 1051290.0,
+        "prompt": 1052910.0,
+        "completion": 1052910.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -130018,8 +130275,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 175215.0,
-        "completion": 700860.0,
+        "prompt": 175485.0,
+        "completion": 701940.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -130048,8 +130305,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 467240.0,
-        "completion": 934480.0,
+        "prompt": 467960.0,
+        "completion": 935920.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -131476,13 +131733,13 @@
         },
         "arena": {
           "text": {
-            "rank": 188,
+            "rank": 189,
             "model": "deepseek-v3",
             "vendor": "DeepSeek",
             "license": null,
             "score": 1358.0,
-            "ci": null,
-            "votes": null
+            "ci": 5.0,
+            "votes": 21770
           }
         },
         "benchlm": {
@@ -132470,13 +132727,13 @@
       "benchmarks": {
         "arena": {
           "text": {
-            "rank": 313,
+            "rank": 314,
             "model": "llama-3-8b-instruct",
             "vendor": "Meta",
             "license": null,
             "score": 1223.0,
-            "ci": null,
-            "votes": null
+            "ci": 4.0,
+            "votes": 104642
           }
         }
       }
@@ -137698,6 +137955,36 @@
       "price_per_million": {
         "prompt": 500000.0,
         "completion": 2000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "stealth-ox-alpha",
+      "name": "Ox Alpha",
+      "provider": "venice",
+      "family": "stealth-ox-alpha",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
         "cache_read": null
       },
       "benchmarks": {}
