@@ -219,6 +219,38 @@ def fetch_modelsdev():
 
 
 # ---------------------------------------------------------------------------
+# Source 1c: OpenRouter usage rankings (real-world adoption signal)
+# ---------------------------------------------------------------------------
+OR_RANKINGS_URL = "https://openrouter.ai/api/frontend/v1/rankings/models"
+
+
+def fetch_or_usage():
+    """Return (usage_dict, note). usage_dict maps model_permaslug -> aggregate
+    usage over the returned window: total tokens (prompt+completion), request
+    count. This is REAL-WORLD USAGE, not a quality benchmark — it lives in its
+    own spine and never blends into scores."""
+    try:
+        data = fetch_json(OR_RANKINGS_URL, timeout=60)["data"]
+    except Exception as e:
+        return {}, f"fetch error: {e}"
+    agg = {}
+    for row in data:
+        slug = row.get("model_permaslug") or ""
+        if not slug:
+            continue
+        a = agg.setdefault(slug, {"tokens": 0, "requests": 0, "days": set()})
+        a["tokens"] += (row.get("total_prompt_tokens") or 0) + (
+            row.get("total_completion_tokens") or 0
+        )
+        a["requests"] += row.get("count") or 0
+        if row.get("date"):
+            a["days"].add(row["date"][:10])
+    for a in agg.values():
+        a.pop("days", None)
+    return agg, f"ok ({len(agg)} models with live usage)"
+
+
+# ---------------------------------------------------------------------------
 # Source 2: Artificial Analysis
 # ---------------------------------------------------------------------------
 def fetch_artificial_analysis(api_key):
@@ -876,6 +908,16 @@ SOURCE_META = {
             "consensus": ("Consensus Ranking", "Top-10 appearance count, tie-broken by Borda points."),
         },
     },
+    "openrouter-usage": {
+        "title": "OpenRouter Usage",
+        "source_url": OR_RANKINGS_URL,
+        "desc": "Real-world adoption: tokens processed and request counts via "
+                "OpenRouter (rolling window). NOT a quality score — usage is "
+                "never blended into benchmark rankings.",
+        "benches": {
+            "or_usage_tokens": ("Usage Rank", "Rank by total tokens processed; requests kept alongside."),
+        },
+    },
 }
 
 WRITTEN = {}  # subdir -> [bname, ...]
@@ -1010,6 +1052,43 @@ def write_benchlm_benchmarks(benchlm_items):
             )
             written[bname] = True
     return written
+
+
+def write_usage_benchmarks(usage):
+    """Write OpenRouter real-world usage into openrouter-usage/.
+
+    Usage is NOT a quality score: models are ranked by tokens processed
+    (adoption), with request counts kept alongside. Never blended into
+    benchmark rankings.
+    """
+    subdir = "openrouter-usage"
+    if not usage:
+        return {}
+    rows = []
+    for slug, a in usage.items():
+        if not (a.get("tokens") or a.get("requests")):
+            continue
+        rows.append(
+            {
+                "model": slug,
+                "tokens": a["tokens"],
+                "requests": a["requests"],
+            }
+        )
+    rows.sort(key=lambda r: r["tokens"], reverse=True)
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    _write_benchmark_json(
+        subdir,
+        "or_usage_tokens",
+        {
+            "leaderboard": "or_usage_tokens",
+            "source_url": OR_RANKINGS_URL,
+            "benchmark": "OpenRouter Usage (tokens, rolling window)",
+        },
+        rows,
+    )
+    return {"or_usage_tokens": True}
 
 
 
@@ -1321,6 +1400,135 @@ def write_archive():
 
 
 # ---------------------------------------------------------------------------
+# Output: weekly movers (rank deltas vs newest previous archive snapshot)
+# ---------------------------------------------------------------------------
+def _load_rank_map(path):
+    """{model: rank} from a benchmark json file."""
+    try:
+        with open(path) as f:
+            models = json.load(f).get("models", [])
+    except Exception:
+        return {}
+    return {m.get("model", ""): m.get("rank") or m.get("score") for m in models
+            if m.get("model")}
+
+
+def write_movers():
+    """Compare current benchmark ranks with the most recent archive snapshot
+    and write benchmarks/movers/movers.json + .md. Deterministic rank diffs,
+    no score blending. Soft-fails (with a note) if no previous snapshot exists.
+    """
+    subdir = "movers"
+    snaps = []
+    if os.path.isdir("archive"):
+        for month in sorted(os.listdir("archive")):
+            mdir = os.path.join("archive", month)
+            if not os.path.isdir(mdir):
+                continue
+            for day in sorted(os.listdir(mdir)):
+                snaps.append((month + day, os.path.join(mdir, day)))
+    snaps = [s for s in snaps if s[0] != datetime.now(timezone.utc).strftime("%Y%m%d")]
+    if not snaps:
+        log("Movers: no previous archive snapshot yet — skipped (not an error)")
+        return
+    prev_root = sorted(snaps)[-1][1]
+
+    # Track a small deterministic set of high-signal boards
+    boards = [
+        ("arena/arena_text.json", "Arena Text"),
+        ("arena/arena_code.json", "Arena Code"),
+        ("artificial-analysis/aa_artificial_analysis_intelligence_index.json", "AA Intelligence"),
+    ]
+    out = []
+    for rel, label in boards:
+        cur = _load_rank_map(os.path.join("benchmarks", rel))
+        old = _load_rank_map(os.path.join(prev_root, rel))
+        if not cur or not old:
+            continue
+        # rank files may store score in 'rank' slot; treat smaller=better for
+        # ranks and larger=better for scores uniformly by using signed delta
+        for model, cur_v in cur.items():
+            if model in old and cur_v is not None and old[model] is not None:
+                delta = old[model] - cur_v  # positive = moved up
+                if abs(delta) >= 1:
+                    out.append({
+                        "board": label,
+                        "model": model,
+                        "previous": old[model],
+                        "current": cur_v,
+                        "delta": round(delta, 4),
+                    })
+    if not out:
+        log(f"Movers: no rank changes vs {os.path.basename(prev_root)}")
+        return
+    out.sort(key=lambda r: -abs(r["delta"]))
+    os.makedirs(os.path.join("benchmarks", subdir), exist_ok=True)
+    payload = {
+        "meta": {
+            "leaderboard": "movers",
+            "compared_against": os.path.basename(prev_root),
+            "note": "Signed rank/value deltas per board. Positive = moved up.",
+        },
+        "models": out[:200],
+    }
+    with open(os.path.join("benchmarks", subdir, "movers.json"), "w") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    WRITTEN.setdefault(subdir, []).append("movers")
+    log(f"Movers: {len(out)} changes vs {os.path.basename(prev_root)}")
+
+
+# ---------------------------------------------------------------------------
+# Output: price-performance frontier (from catalog + AA intelligence)
+# ---------------------------------------------------------------------------
+def write_price_performance():
+    """Cheapest models per AA-Intelligence band, from catalog pricing.
+    Deterministic: no derived scores — raw price + raw score side by side.
+    """
+    try:
+        with open(os.path.join(OUTDIR, "models.json")) as f:
+            catalog = json.load(f)["models"]
+    except Exception as e:
+        log(f"Price-performance: models.json unreadable ({e}) — skipped")
+        return
+    rows = []
+    for m in catalog:
+        aa = (m.get("benchmarks") or {}).get("aa") or {}
+        intel = (aa.get("evaluations") or {}).get(
+            "artificial_analysis_intelligence_index"
+        )
+        price = (m.get("price_per_million") or {}).get("prompt")
+        if price is None:
+            # fall back to AA's own blended price (attached with the spine)
+            price = ((aa.get("pricing") or {}).get("blended"))
+        if intel is None or price is None or price <= 0:
+            continue
+        rows.append({
+            "model": m["id"],
+            "aa_intelligence": intel,
+            "prompt_price_per_m": price,
+            "value": round(intel / price, 2),  # intelligence points per $/M — explicit ratio, not a blended score
+        })
+    rows.sort(key=lambda r: -r["value"])
+    if not rows:
+        log("Price-performance: no models with both AA intelligence and price — skipped")
+        return
+    subdir = "price-performance"
+    os.makedirs(os.path.join("benchmarks", subdir), exist_ok=True)
+    payload = {
+        "meta": {
+            "leaderboard": "price_performance",
+            "note": "value = AA Intelligence / prompt $ per M tokens. "
+                    "Explicit ratio of two raw numbers — not a blended score.",
+        },
+        "models": rows[:200],
+    }
+    with open(os.path.join("benchmarks", subdir, "price_performance.json"), "w") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    WRITTEN.setdefault(subdir, []).append("price_performance")
+    log(f"Price-performance: {len(rows)} priced models with AA intelligence")
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main():
@@ -1375,6 +1583,10 @@ def main():
     benchlm, benchlm_note = fetch_benchlm()
     log(f"BenchLM: {benchlm_note}")
 
+    # 5. OpenRouter usage (real-world adoption, separate spine)
+    usage, usage_note = fetch_or_usage()
+    log(f"OpenRouter usage: {usage_note}")
+
     # Merge: attach catalog enrichment to benchmark spines (no filtering)
     counts = merge(or_models, aa, arena_data, benchlm or [])
     log(f"Merged: {counts}")
@@ -1391,7 +1603,7 @@ def main():
     write_aa_benchmarks(aa)
     write_arena_benchmarks(arena_data)
     write_benchlm_benchmarks(benchlm or [])
-
+    write_usage_benchmarks(usage)
     # Write catalog
     arena_note = (
         f"ok ({len(arena_data)} leaderboards; "
@@ -1402,6 +1614,7 @@ def main():
         "sources": {
             "openrouter": "ok",
             "models.dev": md_note,
+            "openrouter_usage": usage_note,
             "artificial_analysis": aa_note,
             "arena_ai": arena_note,
             "benchlm": benchlm_note,
@@ -1409,6 +1622,10 @@ def main():
     }
     write_models_json(or_models, meta, counts)
     log(f"wrote models.json ({len(or_models)} models)")
+
+    # Movers + price-performance (need models.json / archives on disk first)
+    write_movers()
+    write_price_performance()
 
     # Per-source OVERVIEW.md + benchmarks/README.md index
     for subdir, smeta in SOURCE_META.items():
