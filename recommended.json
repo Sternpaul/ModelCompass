@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-23T00:30:04.799035+00:00",
+    "generated_at": "2026-08-23T04:43:15.817905+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -54,7 +54,7 @@
       "arena_text": {
         "source": "https://arena.ai/leaderboard/text",
         "subdir": "arena",
-        "model_count": 394,
+        "model_count": 344,
         "top_n": 10
       },
       "arena_video-edit": {
@@ -228,7 +228,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 471,
+        "model_count": 472,
         "top_n": 10
       },
       "price_performance": {
@@ -1383,8 +1383,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1508.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 24331
       },
       {
         "rank": 2,
@@ -1392,8 +1392,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1504.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 72359
       },
       {
         "rank": 3,
@@ -1401,8 +1401,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1502.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 60203
       },
       {
         "rank": 4,
@@ -1410,8 +1410,8 @@
         "vendor": "Meta",
         "license": "proprietary",
         "score": 1498.0,
-        "ci": null,
-        "votes": null
+        "ci": 10.0,
+        "votes": 3257
       },
       {
         "rank": 5,
@@ -1419,8 +1419,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1497.0,
-        "ci": null,
-        "votes": null
+        "ci": 3.0,
+        "votes": 76362
       },
       {
         "rank": 6,
@@ -1428,8 +1428,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1494.0,
-        "ci": null,
-        "votes": null
+        "ci": 4.0,
+        "votes": 61304
       },
       {
         "rank": 7,
@@ -1437,8 +1437,8 @@
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1493.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 27610
       },
       {
         "rank": 8,
@@ -1446,8 +1446,8 @@
         "vendor": "Meta",
         "license": "proprietary",
         "score": 1491.0,
-        "ci": null,
-        "votes": null
+        "ci": 5.0,
+        "votes": 20242
       },
       {
         "rank": 9,
@@ -1455,7 +1455,7 @@
         "vendor": "Google",
         "license": "proprietary",
         "score": 1490.0,
-        "ci": null,
+        "ci": 8.0,
         "votes": null
       },
       {
@@ -1464,8 +1464,8 @@
         "vendor": "Moonshot",
         "license": null,
         "score": 1489.0,
-        "ci": null,
-        "votes": null
+        "ci": 6.0,
+        "votes": 15054
       }
     ],
     "arena_video-edit": [
@@ -3218,62 +3218,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 11655618450900,
-        "requests": 424432559,
+        "tokens": 11641384423845,
+        "requests": 419508717,
         "rank": 1
       },
       {
-        "model": "tencent/hy3-20260706",
-        "tokens": 8927608566046,
-        "requests": 112687698,
+        "model": "xiaomi/mimo-v2.5-20260422",
+        "tokens": 9137359629552,
+        "requests": 114629807,
         "rank": 2
       },
       {
-        "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 8183926669741,
-        "requests": 104942730,
+        "model": "tencent/hy3-20260706",
+        "tokens": 8563891738369,
+        "requests": 107405134,
         "rank": 3
       },
       {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 5408477149093,
-        "requests": 232958000,
+        "model": "stealth/ox-alpha",
+        "tokens": 6544553067741,
+        "requests": 81850744,
         "rank": 4
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260423",
-        "tokens": 5196874824167,
-        "requests": 520604180,
+        "tokens": 5296979279557,
+        "requests": 528565477,
         "rank": 5
       },
       {
-        "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 4119889465467,
-        "requests": 40214027,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 5177557952854,
+        "requests": 273065661,
         "rank": 6
       },
       {
-        "model": "z-ai/glm-5.2-20260616",
-        "tokens": 3804203488033,
-        "requests": 75451801,
+        "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "tokens": 4451889126287,
+        "requests": 42361772,
         "rank": 7
       },
       {
-        "model": "anthropic/claude-opus-5-20260723",
-        "tokens": 2471494826620,
-        "requests": 27775843,
+        "model": "z-ai/glm-5.2-20260616",
+        "tokens": 3604653154888,
+        "requests": 73649781,
         "rank": 8
       },
       {
-        "model": "stealth/ox-alpha",
-        "tokens": 2002781900704,
-        "requests": 27449106,
+        "model": "anthropic/claude-opus-5-20260723",
+        "tokens": 2086812883978,
+        "requests": 23197319,
         "rank": 9
       },
       {
         "model": "deepseek/deepseek-v4-pro-20260423",
-        "tokens": 1962920714625,
-        "requests": 80061507,
+        "tokens": 1878900331336,
+        "requests": 75768778,
         "rank": 10
       }
     ],
@@ -3293,8 +3293,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 42.1,
-        "prompt_price_per_m": 0.05586,
-        "value": 753.67
+        "prompt_price_per_m": 0.05306,
+        "value": 793.44
       },
       {
         "model": "openai/gpt-oss-120b",
