@@ -19,20 +19,20 @@
     {
       "model": "deepseek/deepseek-v4-flash",
       "aa_intelligence": 42.1,
-      "prompt_price_per_m": 0.05306,
-      "value": 793.44
-    },
-    {
-      "model": "openai/gpt-oss-120b",
-      "aa_intelligence": 24.1,
-      "prompt_price_per_m": 0.037,
-      "value": 651.35
+      "prompt_price_per_m": 0.0574,
+      "value": 733.45
     },
     {
       "model": "openai/gpt-oss-20b",
-      "aa_intelligence": 15.2,
+      "aa_intelligence": 14.4,
       "prompt_price_per_m": 0.03,
-      "value": 506.67
+      "value": 480.0
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "aa_intelligence": 14.9,
+      "prompt_price_per_m": 0.037,
+      "value": 402.7
     },
     {
       "model": "openai/gpt-5-nano",
@@ -59,22 +59,16 @@
       "value": 166.8
     },
     {
-      "model": "deepseek/deepseek-v4-pro",
-      "aa_intelligence": 53.2,
-      "prompt_price_per_m": 0.413772,
-      "value": 128.57
+      "model": "openai/gpt-5-mini",
+      "aa_intelligence": 31.6,
+      "prompt_price_per_m": 0.25,
+      "value": 126.4
     },
     {
       "model": "qwen/qwen3-vl-32b-instruct",
       "aa_intelligence": 11,
       "prompt_price_per_m": 0.104,
       "value": 105.77
-    },
-    {
-      "model": "openai/gpt-5-mini",
-      "aa_intelligence": 25.8,
-      "prompt_price_per_m": 0.25,
-      "value": 103.2
     },
     {
       "model": "upstage/solar-pro-3",
@@ -93,6 +87,12 @@
       "aa_intelligence": 21.9,
       "prompt_price_per_m": 0.25,
       "value": 87.6
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro",
+      "aa_intelligence": 45.3,
+      "prompt_price_per_m": 0.526176,
+      "value": 86.09
     },
     {
       "model": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -137,6 +137,12 @@
       "value": 60.36
     },
     {
+      "model": "moonshotai/kimi-k2",
+      "aa_intelligence": 33.5,
+      "prompt_price_per_m": 0.57,
+      "value": 58.77
+    },
+    {
       "model": "glm-4.5-air",
       "aa_intelligence": 16.7,
       "prompt_price_per_m": 0.372,
@@ -153,12 +159,6 @@
       "aa_intelligence": 42.3,
       "prompt_price_per_m": 1.0,
       "value": 42.3
-    },
-    {
-      "model": "moonshotai/kimi-k2",
-      "aa_intelligence": 24,
-      "prompt_price_per_m": 0.57,
-      "value": 42.11
     },
     {
       "model": "qwen3-32b",
@@ -197,16 +197,22 @@
       "value": 31.0
     },
     {
-      "model": "openai/gpt-5",
-      "aa_intelligence": 34.6,
-      "prompt_price_per_m": 1.25,
-      "value": 27.68
+      "model": "deepseek/deepseek-r1",
+      "aa_intelligence": 20.4,
+      "prompt_price_per_m": 0.7,
+      "value": 29.14
     },
     {
-      "model": "deepseek/deepseek-r1",
-      "aa_intelligence": 18.6,
-      "prompt_price_per_m": 0.7,
-      "value": 26.57
+      "model": "anthropic/claude-sonnet-5",
+      "aa_intelligence": 55.3,
+      "prompt_price_per_m": 2.0,
+      "value": 27.65
+    },
+    {
+      "model": "openai/gpt-5",
+      "aa_intelligence": 31.9,
+      "prompt_price_per_m": 1.25,
+      "value": 25.52
     },
     {
       "model": "deepseek-v3.1",
@@ -245,12 +251,6 @@
       "value": 19.66
     },
     {
-      "model": "qwen3-30b-a3b",
-      "aa_intelligence": 6.6,
-      "prompt_price_per_m": 0.35,
-      "value": 18.86
-    },
-    {
       "model": "openai/o3-mini",
       "aa_intelligence": 19.2,
       "prompt_price_per_m": 1.1,
@@ -282,9 +282,15 @@
     },
     {
       "model": "anthropic/claude-opus-5",
-      "aa_intelligence": 61.5,
+      "aa_intelligence": 63.1,
       "prompt_price_per_m": 5.0,
-      "value": 12.3
+      "value": 12.62
+    },
+    {
+      "model": "qwen3-30b-a3b",
+      "aa_intelligence": 9.2,
+      "prompt_price_per_m": 0.75,
+      "value": 12.27
     },
     {
       "model": "deepseek/deepseek-r1-distill-llama-70b",
@@ -333,6 +339,12 @@
       "aa_intelligence": 11.1,
       "prompt_price_per_m": 2.5,
       "value": 4.44
+    },
+    {
+      "model": "claude-3.7-sonnet",
+      "aa_intelligence": 23.9,
+      "prompt_price_per_m": 6.0,
+      "value": 3.98
     },
     {
       "model": "openai/gpt-4o-2024-08-06",
@@ -516,7 +528,7 @@
     },
     {
       "model": "zai-org/GLM-4.6",
-      "aa_intelligence": 29.3,
+      "aa_intelligence": 23.4,
       "prompt_price_per_m": 450000.0,
       "value": 0.0
     },
@@ -666,7 +678,7 @@
     },
     {
       "model": "gemini-2.5-flash-lite-preview-06-17",
-      "aa_intelligence": 15.2,
+      "aa_intelligence": 13.1,
       "prompt_price_per_m": 150000.0,
       "value": 0.0
     },
@@ -684,7 +696,7 @@
     },
     {
       "model": "gemini-2.5-flash-preview-09-2025",
-      "aa_intelligence": 19.1,
+      "aa_intelligence": 11.6,
       "prompt_price_per_m": 300000.0,
       "value": 0.0
     },
@@ -761,6 +773,12 @@
       "value": 0.0
     },
     {
+      "model": "liquid/lfm-2.5-2.6b",
+      "aa_intelligence": 11,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
       "model": "xiaomi/mimo-v2.5-pro-crof",
       "aa_intelligence": 28.4,
       "prompt_price_per_m": 400000.0,
@@ -798,7 +816,7 @@
     },
     {
       "model": "zai-org/GLM-4.5V",
-      "aa_intelligence": 6.8,
+      "aa_intelligence": 9,
       "prompt_price_per_m": 600000.0,
       "value": 0.0
     },
@@ -948,7 +966,7 @@
     },
     {
       "model": "qwen3-8b",
-      "aa_intelligence": 8.3,
+      "aa_intelligence": 4.8,
       "prompt_price_per_m": 72000.0,
       "value": 0.0
     },
@@ -1008,7 +1026,7 @@
     },
     {
       "model": "xai/grok-4-6",
-      "aa_intelligence": 60.9,
+      "aa_intelligence": 60,
       "prompt_price_per_m": 2000000.0,
       "value": 0.0
     },
@@ -1032,14 +1050,8 @@
     },
     {
       "model": "alibaba/qwen3-max",
-      "aa_intelligence": 32.5,
+      "aa_intelligence": 24.5,
       "prompt_price_per_m": 3000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mistral/mistral-small-2506",
-      "aa_intelligence": 10.7,
-      "prompt_price_per_m": 100000.0,
       "value": 0.0
     },
     {
@@ -1086,7 +1098,7 @@
     },
     {
       "model": "mistral/devstral-small-2507",
-      "aa_intelligence": 11.8,
+      "aa_intelligence": 9.1,
       "prompt_price_per_m": 100000.0,
       "value": 0.0
     },
@@ -1128,7 +1140,7 @@
     },
     {
       "model": "xiaomi/mimo-v2-omni",
-      "aa_intelligence": 35.9,
+      "aa_intelligence": 37.3,
       "prompt_price_per_m": 400000.0,
       "value": 0.0
     },
@@ -1190,18 +1202,6 @@
       "model": "gemini-3-5-flash-lite",
       "aa_intelligence": 37.4,
       "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5-2",
-      "aa_intelligence": 38.9,
-      "prompt_price_per_m": 1750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-6-flash",
-      "aa_intelligence": 51.6,
-      "prompt_price_per_m": 1500000.0,
       "value": 0.0
     }
   ]

@@ -53,12 +53,12 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 | 2 | `google/gemini-3-7-flash` | 0.945 |
 | 3 | `openai/gpt-5-6-sol` | 0.941 |
 | 4 | `google/gemini-3-1-pro-preview` | 0.941 |
-| 5 | `anthropic/claude-opus-5-xhigh` | 0.937 |
-| 6 | `anthropic/claude-opus-5-high` | 0.937 |
-| 7 | `kimi/kimi-k3` | 0.935 |
-| 8 | `alibaba/qwen3-8-2-4t-a95b` | 0.935 |
-| 9 | `openai/gpt-5-5` | 0.935 |
-| 10 | `anthropic/claude-opus-5` | 0.932 |
+| 5 | `anthropic/claude-opus-5-high` | 0.937 |
+| 6 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 7 | `xai/grok-4-6-medium` | 0.935 |
+| 8 | `xai/grok-4-6-xhigh` | 0.935 |
+| 9 | `kimi/kimi-k3` | 0.935 |
+| 10 | `alibaba/qwen3-8-2-4t-a95b` | 0.935 |
 
 ## HLE
 
@@ -216,11 +216,11 @@ _TAU-bench banking domain agent score (%)._
 | 3 | `zai/glm-5-3` | 0.503 |
 | 4 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
 | 5 | `alibaba/qwen3-8-27b` | 0.480 |
-| 6 | `kimi/kimi-k3` | 0.460 |
-| 7 | `anthropic/claude-opus-5-high` | 0.447 |
-| 8 | `openai/gpt-5-6-sol` | 0.443 |
-| 9 | `anthropic/claude-opus-5-xhigh` | 0.433 |
-| 10 | `anthropic/claude-opus-5` | 0.421 |
+| 6 | `alibaba/qwen3-8-27b-medium` | 0.474 |
+| 7 | `kimi/kimi-k3` | 0.460 |
+| 8 | `anthropic/claude-opus-5-high` | 0.447 |
+| 9 | `openai/gpt-5-6-sol` | 0.443 |
+| 10 | `xai/grok-4-6-medium` | 0.443 |
 
 ## Terminal-Bench Hard
 
@@ -230,8 +230,8 @@ _Terminal-Bench hard sys-admin tasks (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `openai/gpt-5-6-sol` | 0.659 |
-| 2 | `openai/gpt-5-6-sol-medium` | 0.629 |
-| 3 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
+| 2 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
+| 3 | `openai/gpt-5-6-sol-medium` | 0.629 |
 | 4 | `anthropic/claude-fable-5` | 0.629 |
 | 5 | `openai/gpt-5-6-sol-high` | 0.621 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.614 |
@@ -253,7 +253,7 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 | 4 | `openai/gpt-5-6-sol` | 0.880 |
 | 5 | `openai/gpt-5-6-terra` | 0.880 |
 | 6 | `anthropic/claude-opus-5-xhigh` | 0.880 |
-| 7 | `anthropic/claude-opus-5-high` | 0.876 |
-| 8 | `openai/gpt-5-6-sol-high` | 0.873 |
-| 9 | `openai/gpt-5-6-sol-medium` | 0.861 |
-| 10 | `anthropic/claude-opus-5-medium` | 0.861 |
+| 7 | `xai/grok-4-6-xhigh` | 0.880 |
+| 8 | `anthropic/claude-opus-5-high` | 0.876 |
+| 9 | `openai/gpt-5-6-sol-high` | 0.873 |
+| 10 | `openai/gpt-5-6-sol-medium` | 0.861 |
