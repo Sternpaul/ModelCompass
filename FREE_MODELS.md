@@ -12,12 +12,14 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 51.8 | 69.1 | 13 (code) |
 | gpt-5.4:free | openrouter/unorouter | 40.2 | **71.1** | 15 (document) |
 | kimi-k2-6:free | kenari/openrouter | 45.1 | 61.8 | 22 (document) |
+| minimax/minimax-m3:free | openrouter | 45.4 | 58.6 | 27 (document) |
 | tencent/hy3:free | kilo/nous/openrouter | 42.2 | 58.8 | 28 (code) |
 | kimi-k2-7-code:free | kenari/openrouter | 43.0 | 60.8 | 41 (code) |
-| thinkingmachines/inkling:free | kilo/openrouter | 42.3 | 52.1 | 41 (agent) |
+| thinkingmachines/inkling:free | kilo/openrouter | 42.3 | 52.1 | 43 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 34.3 | 48.2 | 43 (vision) |
 | deepseek-v4-pro:free | openrouter/unorouter | **53.2** | 68.8 | 49 (code) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 52 (vision) |
+| minimax/minimax-m2.7:free | kilo/openrouter | 38.9 | 52.6 | 67 (code) |
 | minimax-m2.7:free | openrouter/unorouter | 38.9 | 52.6 | 67 (code) |
 | upstage/solar-pro4:free | nous | 41.6 | 52.7 | 78 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 23.3 | — | 181 (text) |
@@ -38,9 +40,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-26b-a4b-it:free | openrouter | — | — | — |
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | — |
-| nvidia/nemotron-3-nano-30b-a3b:free | openrouter | — | — | — |
-| nvidia/nemotron-nano-12b-v2-vl:free | openrouter | — | — | — |
-| nvidia/nemotron-nano-9b-v2:free | openrouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | gemma-4-31b-it:free | openrouter/unorouter | — | — | — |

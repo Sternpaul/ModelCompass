@@ -53,10 +53,10 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 | 2 | `google/gemini-3-7-flash` | 0.945 |
 | 3 | `openai/gpt-5-6-sol` | 0.941 |
 | 4 | `google/gemini-3-1-pro-preview` | 0.941 |
-| 5 | `anthropic/claude-opus-5-high` | 0.937 |
-| 6 | `anthropic/claude-opus-5-xhigh` | 0.937 |
-| 7 | `xai/grok-4-6-medium` | 0.935 |
-| 8 | `xai/grok-4-6-xhigh` | 0.935 |
+| 5 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 6 | `anthropic/claude-opus-5-high` | 0.937 |
+| 7 | `xai/grok-4-6-xhigh` | 0.935 |
+| 8 | `xai/grok-4-6-medium` | 0.935 |
 | 9 | `kimi/kimi-k3` | 0.935 |
 | 10 | `alibaba/qwen3-8-2-4t-a95b` | 0.935 |
 
@@ -230,8 +230,8 @@ _Terminal-Bench hard sys-admin tasks (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `openai/gpt-5-6-sol` | 0.659 |
-| 2 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
-| 3 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 2 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 3 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
 | 4 | `anthropic/claude-fable-5` | 0.629 |
 | 5 | `openai/gpt-5-6-sol-high` | 0.621 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.614 |
@@ -250,8 +250,8 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 | 1 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
 | 2 | `anthropic/claude-opus-5` | 0.891 |
 | 3 | `xai/grok-4-6` | 0.884 |
-| 4 | `openai/gpt-5-6-sol` | 0.880 |
-| 5 | `openai/gpt-5-6-terra` | 0.880 |
+| 4 | `openai/gpt-5-6-terra` | 0.880 |
+| 5 | `openai/gpt-5-6-sol` | 0.880 |
 | 6 | `anthropic/claude-opus-5-xhigh` | 0.880 |
 | 7 | `xai/grok-4-6-xhigh` | 0.880 |
 | 8 | `anthropic/claude-opus-5-high` | 0.876 |

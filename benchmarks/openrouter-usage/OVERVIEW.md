@@ -13,13 +13,13 @@ _Rank by total tokens processed; requests kept alongside._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `deepseek/deepseek-v4-flash-20260731` | — |
-| 2 | `stealth/ox-alpha` | — |
+| 1 | `stealth/ox-alpha` | — |
+| 2 | `deepseek/deepseek-v4-flash-20260731` | — |
 | 3 | `xiaomi/mimo-v2.5-20260422` | — |
 | 4 | `tencent/hy3-20260706` | — |
 | 5 | `deepseek/deepseek-v4-flash-20260423` | — |
-| 6 | `openai/gpt-5.6-luna-20260709` | — |
-| 7 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 6 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 7 | `openai/gpt-5.6-luna-20260709` | — |
 | 8 | `z-ai/glm-5.2-20260616` | — |
-| 9 | `deepseek/deepseek-v4-pro-20260423` | — |
-| 10 | `google/gemini-3.7-flash-20260813` | — |
+| 9 | `google/gemini-3.7-flash-20260813` | — |
+| 10 | `deepseek/deepseek-v4-pro-20260423` | — |

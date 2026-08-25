@@ -75,8 +75,8 @@ _Factual knowledge category score._
 | 6 | `claude-sonnet-5` | 85.900 |
 | 7 | `gpt-5-5-pro` | 85.500 |
 | 8 | `kimi-k3` | 84.800 |
-| 9 | `gpt-5-6-sol` | 83.500 |
-| 10 | `sakana-fugu-ultra` | 83.500 |
+| 9 | `apodex-1-1` | 83.800 |
+| 10 | `gpt-5-6-sol` | 83.600 |
 
 ## Math
 
