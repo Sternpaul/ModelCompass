@@ -67,15 +67,15 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-image-2 (medium)` | 1463.000 |
+| 1 | `gpt-image-2 (medium)` | 1462.000 |
 | 2 | `grok-imagine-image-2.0 (low)` | 1439.000 |
-| 3 | `mai-image-2.6-preview` | 1420.000 |
-| 4 | `muse-image` | 1406.000 |
-| 5 | `mai-image-2.5` | 1401.000 |
-| 6 | `seedream-5.0-pro` | 1394.000 |
-| 7 | `grok-imagine-image-quality (20260519)` | 1390.000 |
-| 8 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
-| 9 | `chatgpt-image-latest-high-fidelity (20251216)` | 1389.000 |
+| 3 | `mai-image-2.6-preview` | 1417.000 |
+| 4 | `muse-image` | 1405.000 |
+| 5 | `mai-image-2.5` | 1399.000 |
+| 6 | `seedream-5.0-pro` | 1395.000 |
+| 7 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
+| 8 | `grok-imagine-image-quality (20260519)` | 1390.000 |
+| 9 | `chatgpt-image-latest-high-fidelity (20251216)` | 1390.000 |
 | 10 | `gemini-3-pro-image-preview (nano-banana-pro)` | 1385.000 |
 
 ## Image To Video Arena
@@ -139,15 +139,15 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-image-2 (medium)` | 1381.000 |
-| 2 | `mai-image-2.6-preview` | 1336.000 |
+| 1 | `gpt-image-2 (medium)` | 1382.000 |
+| 2 | `mai-image-2.6-preview` | 1331.000 |
 | 3 | `grok-imagine-image-2.0 (low)` | 1316.000 |
 | 4 | `reve-2.1` | 1302.000 |
-| 5 | `muse-image` | 1282.000 |
+| 5 | `muse-image` | 1281.000 |
 | 6 | `reve-2.0` | 1270.000 |
 | 7 | `seedream-5.0-pro` | 1258.000 |
-| 8 | `qwen-image-3.0-pro` | 1257.000 |
-| 9 | `mai-image-2.5` | 1256.000 |
+| 8 | `qwen-image-3.0-pro` | 1255.000 |
+| 9 | `mai-image-2.5` | 1254.000 |
 | 10 | `gemini-3.1-flash-lite-image (nano-banana-2-lite)` | 1251.000 |
 
 ## Text To Video Arena
