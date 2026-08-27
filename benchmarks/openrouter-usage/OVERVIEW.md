@@ -20,6 +20,6 @@ _Rank by total tokens processed; requests kept alongside._
 | 5 | `deepseek/deepseek-v4-flash-20260423` | — |
 | 6 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 7 | `openai/gpt-5.6-luna-20260709` | — |
-| 8 | `z-ai/glm-5.2-20260616` | — |
-| 9 | `google/gemini-3.7-flash-20260813` | — |
+| 8 | `google/gemini-3.7-flash-20260813` | — |
+| 9 | `z-ai/glm-5.2-20260616` | — |
 | 10 | `deepseek/deepseek-v4-pro-20260423` | — |

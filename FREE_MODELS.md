@@ -29,7 +29,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | stepfun/step-3.7-flash:free | kilo/nous/openrouter | 30.9 | 39.6 | — |
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 23.6 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 20.2 | 36.5 | — |
-| stealth/ox-alpha | openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
 | poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |

@@ -217,10 +217,10 @@ _TAU-bench banking domain agent score (%)._
 | 4 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
 | 5 | `alibaba/qwen3-8-27b` | 0.480 |
 | 6 | `alibaba/qwen3-8-27b-medium` | 0.474 |
-| 7 | `kimi/kimi-k3` | 0.460 |
-| 8 | `anthropic/claude-opus-5-high` | 0.447 |
-| 9 | `openai/gpt-5-6-sol` | 0.443 |
-| 10 | `xai/grok-4-6-medium` | 0.443 |
+| 7 | `zai/glm-5-3-flash` | 0.472 |
+| 8 | `kimi/kimi-k3` | 0.460 |
+| 9 | `anthropic/claude-opus-5-high` | 0.447 |
+| 10 | `openai/gpt-5-6-sol` | 0.443 |
 
 ## Terminal-Bench Hard
 
