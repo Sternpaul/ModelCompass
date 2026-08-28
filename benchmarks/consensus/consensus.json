@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-27T15:05:42.074458+00:00",
+    "generated_at": "2026-08-28T16:29:20.111066+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -9,7 +9,7 @@
     {
       "model": "gpt-5-6-sol",
       "top_appearances": 8,
-      "borda_points": 51,
+      "borda_points": 50,
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 3,
@@ -24,7 +24,7 @@
           "score": 97
         },
         "benchlm_multimodalGrounded": {
-          "rank": 7,
+          "rank": 8,
           "score": 82.7
         },
         "benchlm_reasoning": {
@@ -83,50 +83,15 @@
         },
         "arena_text": {
           "rank": 1,
-          "score": 1508.0
+          "score": 1507.0
         },
         "arena_vision": {
           "rank": 1,
-          "score": 1312.0
+          "score": 1313.0
         },
         "deepswe_v1_1": {
           "rank": 7,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-5-6-sol",
-      "top_appearances": 7,
-      "borda_points": 44,
-      "benchmarks": {
-        "aa_artificial_analysis_coding_index": {
-          "rank": 3,
-          "score": 77.4
-        },
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 5,
-          "score": 60.9
-        },
-        "aa_gpqa": {
-          "rank": 3,
-          "score": 0.941
-        },
-        "aa_hle": {
-          "rank": 6,
-          "score": 0.495
-        },
-        "aa_tau_banking": {
-          "rank": 10,
-          "score": 0.443298969072165
-        },
-        "aa_terminalbench_hard": {
-          "rank": 1,
-          "score": 0.659090909090909
-        },
-        "aa_terminalbench_v2_1": {
-          "rank": 5,
-          "score": 0.880149812734082
         }
       }
     },
@@ -162,9 +127,40 @@
       }
     },
     {
+      "model": "openai/gpt-5-6-sol",
+      "top_appearances": 6,
+      "borda_points": 43,
+      "benchmarks": {
+        "aa_artificial_analysis_coding_index": {
+          "rank": 3,
+          "score": 77.4
+        },
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 5,
+          "score": 60.9
+        },
+        "aa_gpqa": {
+          "rank": 3,
+          "score": 0.941
+        },
+        "aa_hle": {
+          "rank": 6,
+          "score": 0.495
+        },
+        "aa_terminalbench_hard": {
+          "rank": 1,
+          "score": 0.659090909090909
+        },
+        "aa_terminalbench_v2_1": {
+          "rank": 5,
+          "score": 0.880149812734082
+        }
+      }
+    },
+    {
       "model": "anthropic/claude-opus-5-high",
       "top_appearances": 6,
-      "borda_points": 26,
+      "borda_points": 25,
       "benchmarks": {
         "aa_artificial_analysis_coding_index": {
           "rank": 9,
@@ -183,7 +179,7 @@
           "score": 0.528
         },
         "aa_tau_banking": {
-          "rank": 9,
+          "rank": 10,
           "score": 0.447422680412371
         },
         "aa_terminalbench_v2_1": {
@@ -247,33 +243,6 @@
       }
     },
     {
-      "model": "claude-opus-4-7",
-      "top_appearances": 5,
-      "borda_points": 28,
-      "benchmarks": {
-        "arena_document": {
-          "rank": 5,
-          "score": 1498.0
-        },
-        "arena_search": {
-          "rank": 4,
-          "score": 1233.0
-        },
-        "arena_text": {
-          "rank": 6,
-          "score": 1494.0
-        },
-        "arena_vision": {
-          "rank": 4,
-          "score": 1299.0
-        },
-        "benchlm_coding": {
-          "rank": 8,
-          "score": 68.4
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5-6-sol-xhigh",
       "top_appearances": 5,
       "borda_points": 28,
@@ -330,10 +299,10 @@
     {
       "model": "qwen3-7-plus",
       "top_appearances": 5,
-      "borda_points": 21,
+      "borda_points": 23,
       "benchmarks": {
         "benchlm_coding": {
-          "rank": 9,
+          "rank": 7,
           "score": 68.2
         },
         "benchlm_instructionFollowing": {
@@ -516,6 +485,29 @@
       }
     },
     {
+      "model": "claude-opus-4-7",
+      "top_appearances": 4,
+      "borda_points": 25,
+      "benchmarks": {
+        "arena_document": {
+          "rank": 5,
+          "score": 1498.0
+        },
+        "arena_search": {
+          "rank": 4,
+          "score": 1233.0
+        },
+        "arena_text": {
+          "rank": 6,
+          "score": 1494.0
+        },
+        "arena_vision": {
+          "rank": 4,
+          "score": 1299.0
+        }
+      }
+    },
+    {
       "model": "claude-opus-5-high",
       "top_appearances": 4,
       "borda_points": 23,
@@ -530,11 +522,11 @@
         },
         "arena_text": {
           "rank": 7,
-          "score": 1493.0
+          "score": 1492.0
         },
         "arena_vision": {
           "rank": 9,
-          "score": 1292.0
+          "score": 1290.0
         }
       }
     },
@@ -608,105 +600,6 @@
       }
     },
     {
-      "model": "openai/gpt-5-6-sol-medium",
-      "top_appearances": 4,
-      "borda_points": 13,
-      "benchmarks": {
-        "aa_artificial_analysis_coding_index": {
-          "rank": 10,
-          "score": 76.3
-        },
-        "aa_scicode": {
-          "rank": 9,
-          "score": 0.565
-        },
-        "aa_terminalbench_hard": {
-          "rank": 2,
-          "score": 0.628787878787879
-        },
-        "aa_terminalbench_v2_1": {
-          "rank": 10,
-          "score": 0.861423220973783
-        }
-      }
-    },
-    {
-      "model": "dreamina-seedance-2.5-720p",
-      "top_appearances": 3,
-      "borda_points": 26,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 2,
-          "score": 1484.0
-        },
-        "arena_text-to-video": {
-          "rank": 4,
-          "score": 1477.0
-        },
-        "arena_video-edit": {
-          "rank": 1,
-          "score": 1411.0
-        }
-      }
-    },
-    {
-      "model": "minimax-h3",
-      "top_appearances": 3,
-      "borda_points": 24,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 1,
-          "score": 1489.0
-        },
-        "arena_text-to-video": {
-          "rank": 6,
-          "score": 1453.0
-        },
-        "arena_video-edit": {
-          "rank": 2,
-          "score": 1388.0
-        }
-      }
-    },
-    {
-      "model": "dreamina-seedance-2.0-720p",
-      "top_appearances": 3,
-      "borda_points": 24,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 3,
-          "score": 1478.0
-        },
-        "arena_text-to-video": {
-          "rank": 3,
-          "score": 1482.0
-        },
-        "arena_video-edit": {
-          "rank": 3,
-          "score": 1359.0
-        }
-      }
-    },
-    {
-      "model": "gemini-omni-flash",
-      "top_appearances": 3,
-      "borda_points": 24,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 4,
-          "score": 1462.0
-        },
-        "arena_text-to-video": {
-          "rank": 1,
-          "score": 1512.0
-        },
-        "arena_video-edit": {
-          "rank": 4,
-          "score": 1358.0
-        }
-      }
-    },
-    {
       "model": "claude-opus-4-6-high",
       "top_appearances": 3,
       "borda_points": 23,
@@ -717,7 +610,7 @@
         },
         "arena_text": {
           "rank": 2,
-          "score": 1504.0
+          "score": 1505.0
         },
         "arena_vision": {
           "rank": 5,
@@ -726,28 +619,47 @@
       }
     },
     {
-      "model": "kimi-k3",
+      "model": "minimax-h3",
       "top_appearances": 3,
-      "borda_points": 22,
+      "borda_points": 23,
       "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 2,
-          "score": 94.6
+        "arena_image-to-video": {
+          "rank": 1,
+          "score": 1494.0
         },
-        "benchlm_coding": {
+        "arena_text-to-video": {
           "rank": 6,
-          "score": 69.5
+          "score": 1460.0
         },
-        "benchlm_multimodalGrounded": {
+        "arena_video-edit": {
           "rank": 3,
-          "score": 86.2
+          "score": 1392.0
+        }
+      }
+    },
+    {
+      "model": "dreamina-seedance-2.5-720p",
+      "top_appearances": 3,
+      "borda_points": 23,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 3,
+          "score": 1483.0
+        },
+        "arena_text-to-video": {
+          "rank": 5,
+          "score": 1476.0
+        },
+        "arena_video-edit": {
+          "rank": 2,
+          "score": 1410.0
         }
       }
     },
     {
       "model": "claude-opus-4-7-high",
       "top_appearances": 3,
-      "borda_points": 21,
+      "borda_points": 22,
       "benchmarks": {
         "arena_document": {
           "rank": 6,
@@ -758,8 +670,27 @@
           "score": 1502.0
         },
         "arena_vision": {
-          "rank": 3,
+          "rank": 2,
           "score": 1301.0
+        }
+      }
+    },
+    {
+      "model": "gemini-omni-flash",
+      "top_appearances": 3,
+      "borda_points": 22,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 5,
+          "score": 1463.0
+        },
+        "arena_text-to-video": {
+          "rank": 2,
+          "score": 1512.0
+        },
+        "arena_video-edit": {
+          "rank": 4,
+          "score": 1367.0
         }
       }
     },
@@ -779,6 +710,25 @@
         "aa_livecodebench": {
           "rank": 4,
           "score": 0.894
+        }
+      }
+    },
+    {
+      "model": "dreamina-seedance-2.0-720p",
+      "top_appearances": 3,
+      "borda_points": 20,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 4,
+          "score": 1477.0
+        },
+        "arena_text-to-video": {
+          "rank": 4,
+          "score": 1479.0
+        },
+        "arena_video-edit": {
+          "rank": 5,
+          "score": 1365.0
         }
       }
     },
@@ -880,11 +830,11 @@
     {
       "model": "claude-opus-4-8",
       "top_appearances": 3,
-      "borda_points": 16,
+      "borda_points": 17,
       "benchmarks": {
         "benchlm_coding": {
-          "rank": 7,
-          "score": 69.5
+          "rank": 6,
+          "score": 68.8
         },
         "benchlm_knowledge": {
           "rank": 5,
@@ -893,25 +843,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 5,
           "score": 85.4
-        }
-      }
-    },
-    {
-      "model": "happyhorse-1.0",
-      "top_appearances": 3,
-      "borda_points": 14,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 7,
-          "score": 1442.0
-        },
-        "arena_text-to-video": {
-          "rank": 7,
-          "score": 1428.0
-        },
-        "arena_video-edit": {
-          "rank": 5,
-          "score": 1307.0
         }
       }
     },
@@ -935,6 +866,25 @@
       }
     },
     {
+      "model": "openai/gpt-5-6-sol-medium",
+      "top_appearances": 3,
+      "borda_points": 12,
+      "benchmarks": {
+        "aa_artificial_analysis_coding_index": {
+          "rank": 10,
+          "score": 76.3
+        },
+        "aa_scicode": {
+          "rank": 9,
+          "score": 0.565
+        },
+        "aa_terminalbench_hard": {
+          "rank": 2,
+          "score": 0.628787878787879
+        }
+      }
+    },
+    {
       "model": "xai/grok-4-6-xhigh",
       "top_appearances": 3,
       "borda_points": 12,
@@ -950,6 +900,25 @@
         "aa_terminalbench_v2_1": {
           "rank": 7,
           "score": 0.880149812734082
+        }
+      }
+    },
+    {
+      "model": "happyhorse-1.0",
+      "top_appearances": 3,
+      "borda_points": 11,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 8,
+          "score": 1442.0
+        },
+        "arena_text-to-video": {
+          "rank": 8,
+          "score": 1428.0
+        },
+        "arena_video-edit": {
+          "rank": 6,
+          "score": 1307.0
         }
       }
     },
@@ -1041,6 +1010,21 @@
       }
     },
     {
+      "model": "gemini-omni-1.1-flash",
+      "top_appearances": 2,
+      "borda_points": 19,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 2,
+          "score": 1488.0
+        },
+        "arena_text-to-video": {
+          "rank": 1,
+          "score": 1515.0
+        }
+      }
+    },
+    {
       "model": "openai/gpt-5-codex",
       "top_appearances": 2,
       "borda_points": 18,
@@ -1052,21 +1036,6 @@
         "aa_artificial_analysis_math_index": {
           "rank": 2,
           "score": 98.7
-        }
-      }
-    },
-    {
-      "model": "qwen3.8-max",
-      "top_appearances": 2,
-      "borda_points": 17,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 3,
-          "score": 1669.0
-        },
-        "arena_vision": {
-          "rank": 2,
-          "score": 1302.0
         }
       }
     },
@@ -1097,6 +1066,36 @@
         "arena_text-to-image": {
           "rank": 2,
           "score": 1331.0
+        }
+      }
+    },
+    {
+      "model": "kimi-k3",
+      "top_appearances": 2,
+      "borda_points": 17,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 2,
+          "score": 94.6
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 3,
+          "score": 86.2
+        }
+      }
+    },
+    {
+      "model": "qwen3.8-max",
+      "top_appearances": 2,
+      "borda_points": 16,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 3,
+          "score": 1669.0
+        },
+        "arena_vision": {
+          "rank": 3,
+          "score": 1300.0
         }
       }
     },
@@ -1202,6 +1201,21 @@
         "aa_scicode": {
           "rank": 5,
           "score": 0.579
+        }
+      }
+    },
+    {
+      "model": "qwen3.8-27b",
+      "top_appearances": 2,
+      "borda_points": 12,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 9,
+          "score": 1595.0
+        },
+        "movers": {
+          "rank": 1,
+          "score": null
         }
       }
     },
@@ -1446,6 +1460,21 @@
       }
     },
     {
+      "model": "claude-sonnet-5",
+      "top_appearances": 2,
+      "borda_points": 6,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 7,
+          "score": 85.8
+        },
+        "benchlm_knowledge": {
+          "rank": 9,
+          "score": 84.6
+        }
+      }
+    },
+    {
       "model": "anthropic/claude-opus-4-8",
       "top_appearances": 2,
       "borda_points": 5,
@@ -1457,6 +1486,21 @@
         "aa_terminalbench_hard": {
           "rank": 10,
           "score": 0.583333333333333
+        }
+      }
+    },
+    {
+      "model": "sakana-fugu",
+      "top_appearances": 2,
+      "borda_points": 5,
+      "benchmarks": {
+        "benchlm_coding": {
+          "rank": 9,
+          "score": 66.1
+        },
+        "benchlm_knowledge": {
+          "rank": 8,
+          "score": 86
         }
       }
     },
@@ -1476,36 +1520,6 @@
       }
     },
     {
-      "model": "glm-5-3",
-      "top_appearances": 2,
-      "borda_points": 4,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 8,
-          "score": 86
-        },
-        "deepswe_v1_1": {
-          "rank": 10,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "claude-sonnet-5",
-      "top_appearances": 2,
-      "borda_points": 4,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 9,
-          "score": 85.8
-        },
-        "benchlm_knowledge": {
-          "rank": 9,
-          "score": 84.6
-        }
-      }
-    },
-    {
       "model": "gemini-3.7-flash-high",
       "top_appearances": 2,
       "borda_points": 3,
@@ -1521,17 +1535,32 @@
       }
     },
     {
-      "model": "veo-3.1-audio",
+      "model": "alibaba/qwen3-8-flash-next",
       "top_appearances": 2,
       "borda_points": 3,
       "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 10,
-          "score": 1397.0
-        },
-        "arena_text-to-video": {
+        "aa_tau_banking": {
           "rank": 9,
-          "score": 1364.0
+          "score": 0.45360824742268
+        },
+        "aa_terminalbench_v2_1": {
+          "rank": 10,
+          "score": 0.861423220973783
+        }
+      }
+    },
+    {
+      "model": "glm-5-3",
+      "top_appearances": 2,
+      "borda_points": 3,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 9,
+          "score": 85.5
+        },
+        "deepswe_v1_1": {
+          "rank": 10,
+          "score": null
         }
       }
     },
@@ -1547,21 +1576,6 @@
         "aa_artificial_analysis_math_index": {
           "rank": 10,
           "score": 94.7
-        }
-      }
-    },
-    {
-      "model": "qwen3-8-flash-next",
-      "top_appearances": 2,
-      "borda_points": 2,
-      "benchmarks": {
-        "benchlm_instructionFollowing": {
-          "rank": 10,
-          "score": 91.2
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 10,
-          "score": 77.5
         }
       }
     },
@@ -1595,6 +1609,17 @@
         "arena_search": {
           "rank": 1,
           "score": 1257.0
+        }
+      }
+    },
+    {
+      "model": "wan3.0",
+      "top_appearances": 1,
+      "borda_points": 10,
+      "benchmarks": {
+        "arena_video-edit": {
+          "rank": 1,
+          "score": 1414.0
         }
       }
     },
@@ -1698,17 +1723,6 @@
       }
     },
     {
-      "model": "flux-3-video",
-      "top_appearances": 1,
-      "borda_points": 9,
-      "benchmarks": {
-        "arena_text-to-video": {
-          "rank": 2,
-          "score": 1494.0
-        }
-      }
-    },
-    {
       "model": "xai/grok-4-20-0309",
       "top_appearances": 1,
       "borda_points": 9,
@@ -1738,6 +1752,17 @@
         "aa_tau2": {
           "rank": 2,
           "score": 0.991228070175439
+        }
+      }
+    },
+    {
+      "model": "ibm-granite-h-small",
+      "top_appearances": 1,
+      "borda_points": 9,
+      "benchmarks": {
+        "movers": {
+          "rank": 2,
+          "score": null
         }
       }
     },
@@ -1786,6 +1811,17 @@
       }
     },
     {
+      "model": "flux-3-video",
+      "top_appearances": 1,
+      "borda_points": 8,
+      "benchmarks": {
+        "arena_text-to-video": {
+          "rank": 3,
+          "score": 1495.0
+        }
+      }
+    },
+    {
       "model": "zai/glm-4-7-flash",
       "top_appearances": 1,
       "borda_points": 8,
@@ -1826,6 +1862,17 @@
         "benchlm_math": {
           "rank": 3,
           "score": 97
+        }
+      }
+    },
+    {
+      "model": "gemini-3-flash",
+      "top_appearances": 1,
+      "borda_points": 8,
+      "benchmarks": {
+        "movers": {
+          "rank": 3,
+          "score": null
         }
       }
     },
@@ -1918,6 +1965,17 @@
       }
     },
     {
+      "model": "deepseek-v4-pro-high-20260813",
+      "top_appearances": 1,
+      "borda_points": 7,
+      "benchmarks": {
+        "movers": {
+          "rank": 4,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "tencent/hy3-20260706",
       "top_appearances": 1,
       "borda_points": 7,
@@ -1958,28 +2016,6 @@
         "arena_code": {
           "rank": 5,
           "score": 1629.0
-        }
-      }
-    },
-    {
-      "model": "grok-imagine-video-1.5-720p",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 5,
-          "score": 1460.0
-        }
-      }
-    },
-    {
-      "model": "muse-video",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "arena_text-to-video": {
-          "rank": 5,
-          "score": 1457.0
         }
       }
     },
@@ -2072,7 +2108,18 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash-20260423",
+      "model": "gemma-3n-e4b-it",
+      "top_appearances": 1,
+      "borda_points": 6,
+      "benchmarks": {
+        "movers": {
+          "rank": 5,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2094,13 +2141,13 @@
       }
     },
     {
-      "model": "flux-3-video-20260811",
+      "model": "grok-imagine-video-1.5-720p",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 6,
-          "score": 1449.0
+          "score": 1459.0
         }
       }
     },
@@ -2123,17 +2170,6 @@
         "arena_text-to-image": {
           "rank": 6,
           "score": 1270.0
-        }
-      }
-    },
-    {
-      "model": "grok-imagine-video",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "arena_video-edit": {
-          "rank": 6,
-          "score": 1262.0
         }
       }
     },
@@ -2237,7 +2273,18 @@
       }
     },
     {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "model": "grok-4.1-thinking",
+      "top_appearances": 1,
+      "borda_points": 5,
+      "benchmarks": {
+        "movers": {
+          "rank": 6,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "deepseek/deepseek-v4-flash-20260423",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2303,6 +2350,17 @@
       }
     },
     {
+      "model": "flux-3-video-20260811",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 7,
+          "score": 1447.0
+        }
+      }
+    },
+    {
       "model": "claude-sonnet-4-6-search",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2314,13 +2372,24 @@
       }
     },
     {
-      "model": "kling-o3-pro",
+      "model": "muse-video",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "arena_text-to-video": {
+          "rank": 7,
+          "score": 1457.0
+        }
+      }
+    },
+    {
+      "model": "grok-imagine-video",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
         "arena_video-edit": {
           "rank": 7,
-          "score": 1257.0
+          "score": 1258.0
         }
       }
     },
@@ -2402,17 +2471,6 @@
       }
     },
     {
-      "model": "grok-4-6",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 7,
-          "score": 86.4
-        }
-      }
-    },
-    {
       "model": "deepseek-v4-flash-0731",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2420,6 +2478,28 @@
         "benchlm_math": {
           "rank": 7,
           "score": 80.1
+        }
+      }
+    },
+    {
+      "model": "hy4-preview",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "benchlm_multimodalGrounded": {
+          "rank": 7,
+          "score": 84
+        }
+      }
+    },
+    {
+      "model": "qwen3.7-plus",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "movers": {
+          "rank": 7,
+          "score": null
         }
       }
     },
@@ -2490,17 +2570,6 @@
       }
     },
     {
-      "model": "wan2.7-i2v",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 8,
-          "score": 1427.0
-        }
-      }
-    },
-    {
       "model": "grok-4.5",
       "top_appearances": 1,
       "borda_points": 3,
@@ -2523,35 +2592,24 @@
       }
     },
     {
-      "model": "sora-2-pro",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "arena_text-to-video": {
-          "rank": 8,
-          "score": 1364.0
-        }
-      }
-    },
-    {
       "model": "muse-spark-1.1",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "arena_text": {
           "rank": 8,
-          "score": 1491.0
+          "score": 1490.0
         }
       }
     },
     {
-      "model": "kling-o1-pro",
+      "model": "kling-o3-pro",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "arena_video-edit": {
           "rank": 8,
-          "score": 1200.0
+          "score": 1255.0
         }
       }
     },
@@ -2633,13 +2691,24 @@
       }
     },
     {
-      "model": "sakana-fugu",
+      "model": "grok-4-6",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
-        "benchlm_knowledge": {
+        "benchlm_agentic": {
           "rank": 8,
-          "score": 86
+          "score": 85.7
+        }
+      }
+    },
+    {
+      "model": "deepseek-v3-2",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "benchlm_coding": {
+          "rank": 8,
+          "score": 67.4
         }
       }
     },
@@ -2655,13 +2724,13 @@
       }
     },
     {
-      "model": "gemini-3-5-flash",
+      "model": "hy3",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
-        "benchlm_multimodalGrounded": {
+        "movers": {
           "rank": 8,
-          "score": 80.6
+          "score": null
         }
       }
     },
@@ -2699,17 +2768,6 @@
       }
     },
     {
-      "model": "qwen3.8-27b",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 9,
-          "score": 1595.0
-        }
-      }
-    },
-    {
       "model": "gpt-5.5",
       "top_appearances": 1,
       "borda_points": 2,
@@ -2732,13 +2790,13 @@
       }
     },
     {
-      "model": "grok-imagine-video-720p",
+      "model": "wan2.7-i2v",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 9,
-          "score": 1415.0
+          "score": 1427.0
         }
       }
     },
@@ -2754,13 +2812,24 @@
       }
     },
     {
-      "model": "runway-gen4-aleph",
+      "model": "sora-2-pro",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "arena_text-to-video": {
+          "rank": 9,
+          "score": 1365.0
+        }
+      }
+    },
+    {
+      "model": "kling-o1-pro",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "arena_video-edit": {
           "rank": 9,
-          "score": 1183.0
+          "score": 1197.0
         }
       }
     },
@@ -2831,13 +2900,24 @@
       }
     },
     {
-      "model": "glm-5-3-flash",
+      "model": "gemini-3-5-flash",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "benchlm_multimodalGrounded": {
           "rank": 9,
-          "score": 77.8
+          "score": 80.6
+        }
+      }
+    },
+    {
+      "model": "ernie-5.0-preview-1203",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "movers": {
+          "rank": 9,
+          "score": null
         }
       }
     },
@@ -2897,6 +2977,17 @@
       }
     },
     {
+      "model": "grok-imagine-video-720p",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 10,
+          "score": 1415.0
+        }
+      }
+    },
+    {
       "model": "gemini-3-pro-grounding",
       "top_appearances": 1,
       "borda_points": 1,
@@ -2919,13 +3010,24 @@
       }
     },
     {
-      "model": "veo-3.1-audio-1080p",
+      "model": "veo-3.1-audio",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "arena_text-to-video": {
           "rank": 10,
-          "score": 1363.0
+          "score": 1364.0
+        }
+      }
+    },
+    {
+      "model": "runway-gen4-aleph",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "arena_video-edit": {
+          "rank": 10,
+          "score": 1182.0
         }
       }
     },
@@ -3007,13 +3109,24 @@
       }
     },
     {
-      "model": "deepseek-v3-2",
+      "model": "claude-opus-4-7-adaptive",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 10,
-          "score": 67.4
+          "score": 63.9
+        }
+      }
+    },
+    {
+      "model": "qwen3-8-flash-next",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "benchlm_instructionFollowing": {
+          "rank": 10,
+          "score": 91.2
         }
       }
     },
@@ -3040,7 +3153,29 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-pro-20260423",
+      "model": "glm-5-3-flash",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "benchlm_multimodalGrounded": {
+          "rank": 10,
+          "score": 77.8
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "movers": {
+          "rank": 10,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "minimax/minimax-m3-20260531",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {

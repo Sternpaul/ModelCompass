@@ -19,9 +19,9 @@ _Tool-use / agentic task category score._
 | 4 | `claude-fable` | 92.800 |
 | 5 | `gpt-5-6-terra` | 90.700 |
 | 6 | `qwen3-8-max` | 86.700 |
-| 7 | `grok-4-6` | 86.400 |
-| 8 | `glm-5-3` | 86 |
-| 9 | `claude-sonnet-5` | 85.800 |
+| 7 | `claude-sonnet-5` | 85.800 |
+| 8 | `grok-4-6` | 85.700 |
+| 9 | `glm-5-3` | 85.500 |
 | 10 | `qwen3-8-27b` | 85.400 |
 
 ## Coding
@@ -36,11 +36,11 @@ _Code generation category score._
 | 3 | `claude-fable` | 83 |
 | 4 | `qwen3-7-max` | 79.500 |
 | 5 | `sakana-fugu-ultra` | 76 |
-| 6 | `kimi-k3` | 69.500 |
-| 7 | `claude-opus-4-8` | 69.500 |
-| 8 | `claude-opus-4-7` | 68.400 |
-| 9 | `qwen3-7-plus` | 68.200 |
-| 10 | `deepseek-v3-2` | 67.400 |
+| 6 | `claude-opus-4-8` | 68.800 |
+| 7 | `qwen3-7-plus` | 68.200 |
+| 8 | `deepseek-v3-2` | 67.400 |
+| 9 | `sakana-fugu` | 66.100 |
+| 10 | `claude-opus-4-7-adaptive` | 63.900 |
 
 ## Instruction Following
 
@@ -127,10 +127,10 @@ _Vision+text grounded understanding._
 | 4 | `claude-opus-5` | 85.900 |
 | 5 | `claude-opus-4-8` | 85.400 |
 | 6 | `claude-mythos-5` | 84.800 |
-| 7 | `gpt-5-6-sol` | 82.700 |
-| 8 | `gemini-3-5-flash` | 80.600 |
-| 9 | `glm-5-3-flash` | 77.800 |
-| 10 | `qwen3-8-flash-next` | 77.500 |
+| 7 | `hy4-preview` | 84 |
+| 8 | `gpt-5-6-sol` | 82.700 |
+| 9 | `gemini-3-5-flash` | 80.600 |
+| 10 | `glm-5-3-flash` | 77.800 |
 
 ## Reasoning
 
