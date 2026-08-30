@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T01:54:51.754242+00:00",
+    "generated_at": "2026-08-30T09:52:16.307121+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -223,12 +223,6 @@
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
         "model_count": 63,
-        "top_n": 10
-      },
-      "movers": {
-        "source": "unknown",
-        "subdir": "movers",
-        "model_count": 200,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -3230,78 +3224,6 @@
         "rank": 10
       }
     ],
-    "movers": [
-      {
-        "board": "Arena Text",
-        "model": "qwen3.8-27b",
-        "previous": 81,
-        "current": 87,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "ibm-granite-h-small",
-        "previous": 275,
-        "current": 280,
-        "delta": -5
-      },
-      {
-        "board": "Arena Text",
-        "model": "gemini-3-flash",
-        "previous": 30,
-        "current": 26,
-        "delta": 4
-      },
-      {
-        "board": "Arena Text",
-        "model": "deepseek-v4-pro-high-20260813",
-        "previous": 50,
-        "current": 46,
-        "delta": 4
-      },
-      {
-        "board": "Arena Text",
-        "model": "gemma-3n-e4b-it",
-        "previous": 244,
-        "current": 248,
-        "delta": -4
-      },
-      {
-        "board": "Arena Text",
-        "model": "grok-4.1-thinking",
-        "previous": 42,
-        "current": 45,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "qwen3.7-plus",
-        "previous": 53,
-        "current": 56,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "hy3",
-        "previous": 56,
-        "current": 59,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "ernie-5.0-preview-1203",
-        "previous": 65,
-        "current": 68,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "deepseek-v4-flash",
-        "previous": 86,
-        "current": 89,
-        "delta": -3
-      }
-    ],
     "or_usage_tokens": [
       {
         "model": "stealth/ox-alpha",
@@ -3311,8 +3233,8 @@
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 12256810696594,
-        "requests": 426098419,
+        "tokens": 12256811044358,
+        "requests": 426098420,
         "rank": 2
       },
       {
@@ -3380,8 +3302,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 42.1,
-        "prompt_price_per_m": 0.08092,
-        "value": 520.27
+        "prompt_price_per_m": 0.08036,
+        "value": 523.89
       },
       {
         "model": "openai/gpt-oss-20b",

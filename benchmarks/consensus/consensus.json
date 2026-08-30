@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T01:54:51.770763+00:00",
+    "generated_at": "2026-08-30T09:52:16.320576+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1205,21 +1205,6 @@
       }
     },
     {
-      "model": "qwen3.8-27b",
-      "top_appearances": 2,
-      "borda_points": 12,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 9,
-          "score": 1595.0
-        },
-        "movers": {
-          "rank": 1,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "openai/o4-mini",
       "top_appearances": 2,
       "borda_points": 12,
@@ -1756,17 +1741,6 @@
       }
     },
     {
-      "model": "ibm-granite-h-small",
-      "top_appearances": 1,
-      "borda_points": 9,
-      "benchmarks": {
-        "movers": {
-          "rank": 2,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 9,
@@ -1866,17 +1840,6 @@
       }
     },
     {
-      "model": "gemini-3-flash",
-      "top_appearances": 1,
-      "borda_points": 8,
-      "benchmarks": {
-        "movers": {
-          "rank": 3,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "xiaomi/mimo-v2.5-20260422",
       "top_appearances": 1,
       "borda_points": 8,
@@ -1961,17 +1924,6 @@
         "benchlm_multilingual": {
           "rank": 4,
           "score": 69.7
-        }
-      }
-    },
-    {
-      "model": "deepseek-v4-pro-high-20260813",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "movers": {
-          "rank": 4,
-          "score": null
         }
       }
     },
@@ -2104,17 +2056,6 @@
         "benchlm_multilingual": {
           "rank": 5,
           "score": 69.7
-        }
-      }
-    },
-    {
-      "model": "gemma-3n-e4b-it",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "movers": {
-          "rank": 5,
-          "score": null
         }
       }
     },
@@ -2269,17 +2210,6 @@
         "benchlm_reasoning": {
           "rank": 6,
           "score": 79
-        }
-      }
-    },
-    {
-      "model": "grok-4.1-thinking",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "movers": {
-          "rank": 6,
-          "score": null
         }
       }
     },
@@ -2489,17 +2419,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 7,
           "score": 84
-        }
-      }
-    },
-    {
-      "model": "qwen3.7-plus",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "movers": {
-          "rank": 7,
-          "score": null
         }
       }
     },
@@ -2724,17 +2643,6 @@
       }
     },
     {
-      "model": "hy3",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "movers": {
-          "rank": 8,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 3,
@@ -2764,6 +2672,17 @@
         "arena_agent": {
           "rank": 9,
           "score": null
+        }
+      }
+    },
+    {
+      "model": "qwen3.8-27b",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 9,
+          "score": 1595.0
         }
       }
     },
@@ -2907,17 +2826,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 9,
           "score": 80.6
-        }
-      }
-    },
-    {
-      "model": "ernie-5.0-preview-1203",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "movers": {
-          "rank": 9,
-          "score": null
         }
       }
     },
@@ -3160,17 +3068,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 10,
           "score": 77.8
-        }
-      }
-    },
-    {
-      "model": "deepseek-v4-flash",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "movers": {
-          "rank": 10,
-          "score": null
         }
       }
     },
