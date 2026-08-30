@@ -20,8 +20,8 @@ _Tool-use / agentic task category score._
 | 5 | `gpt-5-6-terra` | 90.700 |
 | 6 | `qwen3-8-max` | 86.700 |
 | 7 | `claude-sonnet-5` | 85.800 |
-| 8 | `grok-4-6` | 85.700 |
-| 9 | `glm-5-3` | 85.500 |
+| 8 | `grok-4-6` | 85.400 |
+| 9 | `glm-5-3` | 85.400 |
 | 10 | `qwen3-8-27b` | 85.400 |
 
 ## Coding
