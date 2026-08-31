@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T09:52:16.170756+00:00",
-    "model_count": 3409,
+    "generated_at": "2026-08-31T10:43:44.080032+00:00",
+    "model_count": 3410,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7488 models from 211 providers)",
+      "models.dev": "ok (7494 models from 212 providers)",
       "openrouter_usage": "ok (483 models with live usage)",
       "deepswe": "ok (63 configs, generated_at=2026-08-26)",
       "artificial_analysis": "ok (624 models)",
@@ -13,7 +13,7 @@
     },
     "coverage": {
       "aa": 415,
-      "arena": 428,
+      "arena": 432,
       "benchlm": 212
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
@@ -1400,7 +1400,7 @@
       "price_per_million": {
         "prompt": 0.03,
         "completion": 0.16,
-        "cache_read": 0.01
+        "cache_read": 0.013
       },
       "benchmarks": {}
     },
@@ -1951,33 +1951,33 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 12.73,
-                "ci": 1.96
+                "score": 12.0,
+                "ci": 2.06
               },
               {
                 "name": "Confirmed Success",
-                "score": 17.55,
-                "ci": 3.79
+                "score": 15.98,
+                "ci": 4.06
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 19.14,
-                "ci": 7.22
+                "score": 20.03,
+                "ci": 7.51
               },
               {
                 "name": "Steerability",
-                "score": 10.72,
-                "ci": 3.93
+                "score": 7.69,
+                "ci": 4.0
               },
               {
                 "name": "Bash Recovery",
-                "score": 15.25,
-                "ci": 0.89
+                "score": 15.41,
+                "ci": 0.88
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.99,
-                "ci": 0.16
+                "score": 0.88,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -5144,9 +5144,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.447528,
-        "completion": 0.895056,
-        "cache_read": 0.037294
+        "prompt": 1.6,
+        "completion": 3.2,
+        "cache_read": 0.135
       },
       "benchmarks": {
         "aa": {
@@ -5207,9 +5207,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.08036,
-        "completion": 0.16072,
-        "cache_read": 0.016072
+        "prompt": 0.088606,
+        "completion": 0.177212,
+        "cache_read": 0.017721
       },
       "benchmarks": {
         "aa": {
@@ -7193,9 +7193,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.6,
-        "completion": 3.0,
-        "cache_read": 0.1
+        "prompt": 0.45,
+        "completion": 2.25,
+        "cache_read": 0.07
       },
       "benchmarks": {}
     },
@@ -7799,9 +7799,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.44,
-        "completion": 2.2,
-        "cache_read": 0.044
+        "prompt": 0.4,
+        "completion": 2.0,
+        "cache_read": 0.04
       },
       "benchmarks": {}
     },
@@ -11272,6 +11272,120 @@
           },
           "median_tps": 0.0,
           "ttft": 0.0
+        },
+        "benchlm": {
+          "slug": "mistral-medium-3",
+          "canonicalModelKey": "mistral-medium-3",
+          "model": "Mistral Medium 3",
+          "creator": "Mistral",
+          "sourceType": "Proprietary",
+          "reasoningType": "Non-Reasoning",
+          "contextWindow": "128K",
+          "contextWindowTokens": 128000,
+          "displayScore": 43.56,
+          "provisionalDisplayScore": 0,
+          "publicRankingMode": "bench-align-v5",
+          "evidenceStatus": "estimated",
+          "scoreInterval90": {
+            "lower": 32.05,
+            "upper": 55.07
+          },
+          "rankingEligible": true,
+          "overallRank": 176,
+          "url": "https://benchlm.ai/models/mistral-medium-3",
+          "markdownUrl": "https://benchlm.ai/md/models/mistral-medium-3.md",
+          "id": 106,
+          "releaseDate": "2026-02-20",
+          "market": null,
+          "isRegional": false,
+          "family": {
+            "familyKey": "mistral-medium-3",
+            "familyName": "Mistral Medium 3",
+            "variantType": "base",
+            "snapshotLabel": null,
+            "baseFamilyModelKey": "mistral-medium-3",
+            "relatedModelKeys": [],
+            "isCanonicalFamilyEntry": true,
+            "supersedesModelKey": null
+          },
+          "scores": {
+            "displayScore": 0,
+            "overallScore": 0,
+            "rawOverallScore": 0,
+            "verifiedDisplayScore": null,
+            "displayCategoryScores": {
+              "agentic": null,
+              "coding": null,
+              "reasoning": null,
+              "multimodalGrounded": null,
+              "knowledge": null,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            },
+            "verifiedDisplayCategoryScores": {
+              "agentic": null,
+              "coding": null,
+              "reasoning": null,
+              "multimodalGrounded": null,
+              "knowledge": null,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            }
+          },
+          "ranking": {
+            "rankingEligible": false,
+            "verifiedRankingEligible": false,
+            "overallRank": 176,
+            "categoryRanks": {},
+            "categoryRankingEligible": {
+              "agentic": false,
+              "coding": false,
+              "reasoning": false,
+              "multimodalGrounded": false,
+              "knowledge": false,
+              "multilingual": false,
+              "instructionFollowing": false,
+              "math": false
+            }
+          },
+          "coverage": {
+            "trustedBenchmarkCount": 0,
+            "verifiedBenchmarkCount": 0,
+            "rankableBenchmarkCount": 0,
+            "generatedBenchmarkCount": 0,
+            "scoreConfidence": 1
+          },
+          "benchmarks": {
+            "agentic": {
+              "tau2Bench": 24.3
+            },
+            "coding": {
+              "aaSciCode": 33.1
+            },
+            "reasoning": {
+              "lcr": 31.7,
+              "critpt": 0
+            },
+            "multimodalGrounded": {
+              "aaMmmuPro": 53,
+              "designArenaWebsite": 1099
+            },
+            "knowledge": {
+              "artificialAnalysis": 12.47,
+              "aaGpqaDiamond": 57.8,
+              "aaHle": 4.1,
+              "aaOmniscienceIndex": -31.4,
+              "omniscienceAccuracy": 18.3,
+              "omniscienceHallucinationRate": 60.9
+            },
+            "multilingual": {},
+            "instructionFollowing": {
+              "aaIfBench": 39.3
+            },
+            "math": {}
+          }
         }
       }
     },
@@ -11859,7 +11973,7 @@
       "price_per_million": {
         "prompt": 0.1,
         "completion": 0.4,
-        "cache_read": 0.03
+        "cache_read": 0.025
       },
       "benchmarks": {}
     },
@@ -11888,7 +12002,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.2,
-        "completion": 0.8,
+        "completion": 0.696,
         "cache_read": null
       },
       "benchmarks": {}
@@ -14976,37 +15090,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 5.94,
-                "ci": 0.79
+                "score": 5.99,
+                "ci": 0.77
               },
               {
                 "name": "Confirmed Success",
-                "score": 7.82,
-                "ci": 1.74
+                "score": 8.43,
+                "ci": 1.69
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 9.28,
-                "ci": 2.74
+                "score": 10.26,
+                "ci": 2.7
               },
               {
                 "name": "Steerability",
-                "score": 5.88,
-                "ci": 1.49
+                "score": 5.42,
+                "ci": 1.43
               },
               {
                 "name": "Bash Recovery",
-                "score": 5.72,
-                "ci": 0.93
+                "score": 4.94,
+                "ci": 0.82
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 61.0,
+                "score": 64.0,
                 "ci": null
               },
               {
@@ -15083,40 +15197,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 33,
+            "rank": 35,
             "model": "GLM 5.1",
             "vendor": "Z.ai",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 0.79,
-                "ci": 0.84
+                "score": 1.34,
+                "ci": 0.91
               },
               {
                 "name": "Confirmed Success",
-                "score": 0.72,
-                "ci": 1.87
+                "score": 0.74,
+                "ci": 2.01
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 0.79,
-                "ci": 2.46
+                "score": 1.47,
+                "ci": 2.6
               },
               {
                 "name": "Steerability",
-                "score": 0.0,
-                "ci": 1.64
+                "score": 0.61,
+                "ci": 1.73
               },
               {
                 "name": "Bash Recovery",
-                "score": 2.9,
-                "ci": 1.74
+                "score": 4.2,
+                "ci": 1.97
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.98,
-                "ci": 0.5
+                "score": 1.17,
+                "ci": 0.54
               },
               {
                 "name": "Cost/Task",
@@ -15132,7 +15246,7 @@
             "sessions": 140440
           },
           "code": {
-            "rank": 31,
+            "rank": 36,
             "model": "glm-5.1",
             "vendor": "Z.ai",
             "license": "open",
@@ -15222,37 +15336,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 10.24,
-                "ci": 1.48
+                "score": 9.81,
+                "ci": 1.55
               },
               {
                 "name": "Confirmed Success",
-                "score": 9.83,
-                "ci": 3.07
+                "score": 7.88,
+                "ci": 3.21
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 21.35,
-                "ci": 5.47
+                "score": 23.16,
+                "ci": 5.73
               },
               {
                 "name": "Steerability",
-                "score": 9.69,
-                "ci": 2.92
+                "score": 8.29,
+                "ci": 2.9
               },
               {
                 "name": "Bash Recovery",
-                "score": 9.28,
-                "ci": 1.09
+                "score": 8.84,
+                "ci": 1.03
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 27.0,
+                "score": 28.0,
                 "ci": null
               },
               {
@@ -15329,44 +15443,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 21,
+            "rank": 25,
             "model": "GPT 5.6 Luna (xHigh)",
             "vendor": "OpenAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 3.41,
-                "ci": 1.38
+                "score": 2.36,
+                "ci": 1.25
               },
               {
                 "name": "Confirmed Success",
-                "score": 0.04,
-                "ci": 3.16
+                "score": 0.41,
+                "ci": 2.95
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 3.6,
-                "ci": 4.54
+                "score": 0.82,
+                "ci": 4.08
               },
               {
                 "name": "Steerability",
-                "score": 3.51,
-                "ci": 2.94
+                "score": 2.31,
+                "ci": 2.6
               },
               {
                 "name": "Bash Recovery",
-                "score": 8.9,
-                "ci": 1.18
+                "score": 8.15,
+                "ci": 1.24
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 13.0,
+                "score": 16.0,
                 "ci": null
               },
               {
@@ -15443,44 +15557,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 17,
+            "rank": 18,
             "model": "GPT 5.5",
             "vendor": "OpenAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 5.66,
-                "ci": 0.83
+                "score": 5.01,
+                "ci": 0.88
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.84,
-                "ci": 1.82
+                "score": 2.48,
+                "ci": 1.94
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 7.96,
-                "ci": 2.91
+                "score": 6.65,
+                "ci": 2.99
               },
               {
                 "name": "Steerability",
-                "score": 5.04,
-                "ci": 1.56
+                "score": 4.67,
+                "ci": 1.61
               },
               {
                 "name": "Bash Recovery",
-                "score": 11.42,
-                "ci": 0.93
+                "score": 10.34,
+                "ci": 1.08
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 76.0,
+                "score": 77.0,
                 "ci": null
               },
               {
@@ -15492,7 +15606,7 @@
             "sessions": 530
           },
           "code": {
-            "rank": 46,
+            "rank": 49,
             "model": "gpt-5.5 (codex-harness)",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -15593,44 +15707,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 23,
+            "rank": 22,
             "model": "GPT 5.6 Terra (xHigh)",
             "vendor": "OpenAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 3.0,
-                "ci": 1.19
+                "score": 2.93,
+                "ci": 1.18
               },
               {
                 "name": "Confirmed Success",
-                "score": 3.8,
-                "ci": 3.01
+                "score": 3.37,
+                "ci": 3.04
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 0.14,
-                "ci": 3.82
+                "score": 1.09,
+                "ci": 3.83
               },
               {
                 "name": "Steerability",
-                "score": 8.94,
-                "ci": 2.46
+                "score": 9.61,
+                "ci": 2.38
               },
               {
                 "name": "Bash Recovery",
-                "score": 9.0,
-                "ci": 1.35
+                "score": 8.58,
+                "ci": 1.26
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 15.0,
+                "score": 16.0,
                 "ci": null
               },
               {
@@ -15707,44 +15821,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 19,
+            "rank": 21,
             "model": "GPT 5.4 (High)",
             "vendor": "OpenAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 4.1,
-                "ci": 0.84
+                "score": 3.33,
+                "ci": 0.86
               },
               {
                 "name": "Confirmed Success",
-                "score": 3.82,
-                "ci": 1.9
+                "score": 2.88,
+                "ci": 2.03
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 2.09,
-                "ci": 2.8
+                "score": 0.03,
+                "ci": 2.83
               },
               {
                 "name": "Steerability",
-                "score": 4.73,
-                "ci": 1.67
+                "score": 4.35,
+                "ci": 1.72
               },
               {
                 "name": "Bash Recovery",
-                "score": 8.86,
-                "ci": 1.01
+                "score": 8.48,
+                "ci": 0.95
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 75.0,
+                "score": 76.0,
                 "ci": null
               },
               {
@@ -15756,11 +15870,11 @@
             "sessions": 25015
           },
           "code": {
-            "rank": 71,
+            "rank": 75,
             "model": "gpt-5.4",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1391.0,
+            "score": 1388.0,
             "ci": null,
             "votes": null
           },
@@ -16593,11 +16707,11 @@
         },
         "arena": {
           "code": {
-            "rank": 66,
+            "rank": 70,
             "model": "qwen3.5-397b-a17b",
             "vendor": "Alibaba",
             "license": "open",
-            "score": 1399.0,
+            "score": 1398.0,
             "ci": null,
             "votes": null
           },
@@ -18172,7 +18286,7 @@
         },
         "arena": {
           "code": {
-            "rank": 100,
+            "rank": 103,
             "model": "qwen3-coder-480b-a35b-instruct",
             "vendor": "Alibaba",
             "license": "open",
@@ -18772,7 +18886,7 @@
         },
         "arena": {
           "code": {
-            "rank": 99,
+            "rank": 102,
             "model": "mimo-v2-flash (thinking)",
             "vendor": "Xiaomi",
             "license": "open",
@@ -19391,11 +19505,11 @@
         },
         "arena": {
           "code": {
-            "rank": 111,
+            "rank": 114,
             "model": "gemini-2.5-pro",
             "vendor": "Google",
             "license": "proprietary",
-            "score": 1226.0,
+            "score": 1225.0,
             "ci": null,
             "votes": null
           },
@@ -20503,40 +20617,40 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 26,
+            "rank": 27,
             "model": "Kimi K2.7 Code",
             "vendor": "Moonshot",
             "license": null,
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.71,
-                "ci": 2.27
+                "score": 1.42,
+                "ci": 2.47
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.87,
-                "ci": 4.95
+                "score": 2.32,
+                "ci": 5.42
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 1.04,
-                "ci": 7.61
+                "score": 1.13,
+                "ci": 8.38
               },
               {
                 "name": "Steerability",
-                "score": 5.6,
-                "ci": 5.2
+                "score": 5.22,
+                "ci": 5.42
               },
               {
                 "name": "Bash Recovery",
-                "score": 1.97,
-                "ci": 2.66
+                "score": 2.48,
+                "ci": 2.74
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -20552,7 +20666,7 @@
             "sessions": 66340
           },
           "code": {
-            "rank": 41,
+            "rank": 44,
             "model": "kimi-k2.7-code",
             "vendor": "Moonshot",
             "license": null,
@@ -20686,44 +20800,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 22,
+            "rank": 23,
             "model": "Deepseek V4 Flash (High) (20260731)",
             "vendor": "DeepSeek",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 3.07,
-                "ci": 0.77
+                "score": 2.92,
+                "ci": 0.78
               },
               {
                 "name": "Confirmed Success",
-                "score": 7.43,
-                "ci": 1.84
+                "score": 7.68,
+                "ci": 1.82
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 1.79,
-                "ci": 2.51
+                "score": 1.93,
+                "ci": 2.55
               },
               {
                 "name": "Steerability",
-                "score": 1.0,
-                "ci": 1.6
+                "score": 0.75,
+                "ci": 1.62
               },
               {
                 "name": "Bash Recovery",
-                "score": 4.12,
-                "ci": 0.65
+                "score": 3.37,
+                "ci": 0.67
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.01,
-                "ci": 0.16
+                "score": 0.89,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 47.0,
+                "score": 50.0,
                 "ci": null
               },
               {
@@ -20846,37 +20960,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 0.2,
-                "ci": 0.95
+                "score": 0.14,
+                "ci": 1.02
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.69,
-                "ci": 2.42
+                "score": 1.5,
+                "ci": 2.6
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 1.93,
-                "ci": 3.04
+                "score": 1.78,
+                "ci": 3.34
               },
               {
                 "name": "Steerability",
-                "score": 1.31,
-                "ci": 1.83
+                "score": 0.83,
+                "ci": 1.91
               },
               {
                 "name": "Bash Recovery",
-                "score": 4.73,
+                "score": 4.69,
                 "ci": 0.95
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.19,
-                "ci": 0.25
+                "score": 0.13,
+                "ci": 0.23
               },
               {
                 "name": "Cost/Task",
-                "score": 30.0,
+                "score": 31.0,
                 "ci": null
               },
               {
@@ -20888,7 +21002,7 @@
             "sessions": 132396
           },
           "code": {
-            "rank": 49,
+            "rank": 52,
             "model": "deepseek-v4-pro",
             "vendor": "DeepSeek",
             "license": "open",
@@ -21091,40 +21205,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 54,
+            "rank": 55,
             "model": "Gemma 4 31B",
             "vendor": "Google",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 21.31,
-                "ci": 2.97
+                "score": 22.2,
+                "ci": 3.28
               },
               {
                 "name": "Confirmed Success",
-                "score": 1.94,
-                "ci": 1.98
+                "score": 2.36,
+                "ci": 2.16
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 3.87,
-                "ci": 2.69
+                "score": 4.08,
+                "ci": 2.89
               },
               {
                 "name": "Steerability",
-                "score": 9.81,
-                "ci": 2.07
+                "score": 10.37,
+                "ci": 2.21
               },
               {
                 "name": "Bash Recovery",
-                "score": 60.51,
-                "ci": 12.42
+                "score": 64.7,
+                "ci": 14.18
               },
               {
                 "name": "Tool Hallucination",
-                "score": 30.44,
-                "ci": 7.12
+                "score": 29.5,
+                "ci": 6.96
               },
               {
                 "name": "Cost/Task",
@@ -21140,11 +21254,11 @@
             "sessions": 14040
           },
           "code": {
-            "rank": 80,
+            "rank": 83,
             "model": "gemma-4-31b",
             "vendor": "Google",
             "license": "open",
-            "score": 1364.0,
+            "score": 1362.0,
             "ci": null,
             "votes": null
           },
@@ -21341,6 +21455,88 @@
       "benchmarks": {}
     },
     {
+      "id": "glm-5.3",
+      "name": "GLM 5.3",
+      "provider": "neuralwatt",
+      "family": "glm-5.3",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048560,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1450000.0,
+        "completion": 4500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "arena": {
+          "agent": {
+            "rank": 20,
+            "model": "GLM 5.3 (Max)",
+            "vendor": "Z.ai",
+            "license": "open",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 3.71,
+                "ci": 0.81
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 12.36,
+                "ci": 1.82
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 4.06,
+                "ci": 2.65
+              },
+              {
+                "name": "Steerability",
+                "score": 0.56,
+                "ci": 1.65
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 0.66,
+                "ci": 0.87
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.91,
+                "ci": 0.15
+              },
+              {
+                "name": "Cost/Task",
+                "score": 39.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 140440
+          }
+        }
+      }
+    },
+    {
       "id": "glm-5.2-short-fast-flex",
       "name": "GLM 5.2 Short Fast Flex",
       "provider": "neuralwatt",
@@ -21493,11 +21689,11 @@
         },
         "arena": {
           "code": {
-            "rank": 9,
+            "rank": 12,
             "model": "qwen3.8-27b",
             "vendor": "Alibaba",
             "license": "open",
-            "score": 1595.0,
+            "score": 1598.0,
             "ci": null,
             "votes": null
           },
@@ -21740,37 +21936,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 9.22,
-                "ci": 0.61
+                "score": 8.73,
+                "ci": 0.65
               },
               {
                 "name": "Confirmed Success",
-                "score": 17.88,
-                "ci": 1.22
+                "score": 17.01,
+                "ci": 1.34
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 17.03,
-                "ci": 2.15
+                "score": 16.03,
+                "ci": 2.28
               },
               {
                 "name": "Steerability",
-                "score": 1.99,
-                "ci": 1.23
+                "score": 1.78,
+                "ci": 1.29
               },
               {
                 "name": "Bash Recovery",
-                "score": 8.2,
+                "score": 7.9,
                 "ci": 0.53
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 92.0,
+                "score": 94.0,
                 "ci": null
               },
               {
@@ -21998,44 +22194,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 40,
+            "rank": 41,
             "model": "Minimax M3",
             "vendor": "MiniMax",
             "license": null,
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 2.79,
-                "ci": 0.89
+                "score": 3.64,
+                "ci": 0.92
               },
               {
                 "name": "Confirmed Success",
-                "score": 5.87,
-                "ci": 2.3
+                "score": 7.91,
+                "ci": 2.46
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 8.82,
-                "ci": 2.73
+                "score": 9.84,
+                "ci": 2.74
               },
               {
                 "name": "Steerability",
-                "score": 5.5,
-                "ci": 1.77
+                "score": 6.2,
+                "ci": 1.84
               },
               {
                 "name": "Bash Recovery",
-                "score": 5.69,
-                "ci": 0.83
+                "score": 5.29,
+                "ci": 0.85
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.55,
-                "ci": 0.26
+                "score": 0.47,
+                "ci": 0.23
               },
               {
                 "name": "Cost/Task",
-                "score": 34.0,
+                "score": 35.0,
                 "ci": null
               },
               {
@@ -22047,11 +22243,11 @@
             "sessions": 30120
           },
           "code": {
-            "rank": 37,
+            "rank": 40,
             "model": "minimax-m3",
             "vendor": "MiniMax",
             "license": null,
-            "score": 1488.0,
+            "score": 1487.0,
             "ci": null,
             "votes": null
           },
@@ -22116,44 +22312,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 11,
+            "rank": 12,
             "model": "Qwen3.8 Max",
             "vendor": "Alibaba",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.66,
-                "ci": 1.18
+                "score": 6.18,
+                "ci": 1.13
               },
               {
                 "name": "Confirmed Success",
-                "score": 12.73,
-                "ci": 2.49
+                "score": 11.41,
+                "ci": 2.42
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 8.05,
-                "ci": 4.2
+                "score": 6.93,
+                "ci": 3.93
               },
               {
                 "name": "Steerability",
-                "score": 4.71,
-                "ci": 2.4
+                "score": 5.34,
+                "ci": 2.25
               },
               {
                 "name": "Bash Recovery",
-                "score": 7.77,
+                "score": 7.3,
                 "ci": 1.0
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.07,
-                "ci": 0.28
+                "score": 0.09,
+                "ci": 0.27
               },
               {
                 "name": "Cost/Task",
-                "score": 16.0,
+                "score": 18.0,
                 "ci": null
               },
               {
@@ -22225,88 +22421,6 @@
       "benchmarks": {}
     },
     {
-      "id": "glm-5.3",
-      "name": "GLM-5.3",
-      "provider": "vancine",
-      "family": "glm-5.3",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 1120000.0,
-        "completion": 3520000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "arena": {
-          "agent": {
-            "rank": 20,
-            "model": "GLM 5.3 (Max)",
-            "vendor": "Z.ai",
-            "license": "open",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 3.91,
-                "ci": 0.92
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 13.31,
-                "ci": 1.9
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 4.75,
-                "ci": 3.06
-              },
-              {
-                "name": "Steerability",
-                "score": 0.35,
-                "ci": 2.02
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 0.82,
-                "ci": 0.91
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
-              },
-              {
-                "name": "Cost/Task",
-                "score": 30.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 140440
-          }
-        }
-      }
-    },
-    {
       "id": "glm-5.3-flash",
       "name": "GLM-5.3-Flash",
       "provider": "vancine",
@@ -22336,6 +22450,64 @@
       },
       "benchmarks": {
         "arena": {
+          "agent": {
+            "rank": 19,
+            "model": "GLM 5.3 Flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 4.56,
+                "ci": 1.45
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 15.26,
+                "ci": 3.01
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 4.91,
+                "ci": 4.8
+              },
+              {
+                "name": "Steerability",
+                "score": 2.44,
+                "ci": 3.18
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 0.75,
+                "ci": 1.33
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.91,
+                "ci": 0.15
+              },
+              {
+                "name": "Cost/Task",
+                "score": 9.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 15050
+          },
+          "code": {
+            "rank": 11,
+            "model": "glm-5.3-flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "score": 1606.0,
+            "ci": null,
+            "votes": null
+          },
           "text": {
             "rank": 38,
             "model": "glm-5.3-flash",
@@ -22795,40 +22967,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 30,
+            "rank": 31,
             "model": "Kimi K2.6",
             "vendor": "Moonshot",
             "license": null,
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 0.65,
-                "ci": 2.47
+                "score": 0.33,
+                "ci": 2.64
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.73,
-                "ci": 5.2
+                "score": 3.82,
+                "ci": 5.69
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 4.15,
-                "ci": 7.94
+                "score": 4.78,
+                "ci": 8.69
               },
               {
                 "name": "Steerability",
-                "score": 8.53,
-                "ci": 5.44
+                "score": 8.21,
+                "ci": 5.66
               },
               {
                 "name": "Bash Recovery",
-                "score": 7.71,
-                "ci": 5.0
+                "score": 8.42,
+                "ci": 5.22
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -22844,7 +23016,7 @@
             "sessions": 954
           },
           "code": {
-            "rank": 32,
+            "rank": 35,
             "model": "kimi-k2.6",
             "vendor": "Moonshot",
             "license": null,
@@ -23344,7 +23516,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -23672,7 +23844,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 75,
+            "rank": 78,
             "model": "minimax-m2.5",
             "vendor": "MiniMax",
             "license": null,
@@ -23982,7 +24154,7 @@
         },
         "arena": {
           "code": {
-            "rank": 95,
+            "rank": 98,
             "model": "deepseek-v3.2",
             "vendor": "DeepSeek",
             "license": "open",
@@ -24155,7 +24327,7 @@
         },
         "arena": {
           "code": {
-            "rank": 101,
+            "rank": 104,
             "model": "deepseek-v3.2-exp",
             "vendor": "DeepSeek",
             "license": "open",
@@ -24340,7 +24512,7 @@
         },
         "arena": {
           "code": {
-            "rank": 90,
+            "rank": 93,
             "model": "glm-4.6",
             "vendor": "Z.ai",
             "license": "open",
@@ -24542,11 +24714,11 @@
         },
         "arena": {
           "code": {
-            "rank": 55,
+            "rank": 58,
             "model": "glm-5",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1435.0,
+            "score": 1436.0,
             "ci": null,
             "votes": null
           },
@@ -24726,11 +24898,11 @@
         },
         "arena": {
           "code": {
-            "rank": 56,
+            "rank": 59,
             "model": "glm-4.7",
             "vendor": "Z.ai",
             "license": "open",
-            "score": 1434.0,
+            "score": 1435.0,
             "ci": null,
             "votes": null
           },
@@ -25916,44 +26088,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 15,
+            "rank": 14,
             "model": "Grok 4.6 (xHigh)",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.11,
-                "ci": 1.45
+                "score": 6.07,
+                "ci": 1.31
               },
               {
                 "name": "Confirmed Success",
-                "score": 13.17,
-                "ci": 3.26
+                "score": 12.32,
+                "ci": 2.96
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 2.59,
-                "ci": 5.0
+                "score": 3.36,
+                "ci": 4.57
               },
               {
                 "name": "Steerability",
-                "score": 4.92,
-                "ci": 3.09
+                "score": 4.3,
+                "ci": 2.75
               },
               {
                 "name": "Bash Recovery",
-                "score": 8.85,
-                "ci": 1.13
+                "score": 9.46,
+                "ci": 0.92
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 12.0,
+                "score": 14.0,
                 "ci": null
               },
               {
@@ -25998,44 +26170,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 14,
+            "rank": 11,
             "model": "Grok 4.5",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.48,
-                "ci": 1.18
+                "score": 6.22,
+                "ci": 1.15
               },
               {
                 "name": "Confirmed Success",
-                "score": 4.99,
-                "ci": 2.59
+                "score": 6.42,
+                "ci": 2.54
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 6.95,
-                "ci": 4.18
+                "score": 5.71,
+                "ci": 4.09
               },
               {
                 "name": "Steerability",
-                "score": 8.68,
-                "ci": 2.22
+                "score": 7.43,
+                "ci": 2.24
               },
               {
                 "name": "Bash Recovery",
-                "score": 10.75,
-                "ci": 1.26
+                "score": 10.62,
+                "ci": 1.18
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.91,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 32.0,
+                "score": 33.0,
                 "ci": null
               },
               {
@@ -26047,7 +26219,7 @@
             "sessions": 26
           },
           "code": {
-            "rank": 17,
+            "rank": 20,
             "model": "grok-4.5",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -26157,40 +26329,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 53,
+            "rank": 54,
             "model": "Grok 4.3",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 17.94,
-                "ci": 1.44
+                "score": 18.69,
+                "ci": 1.6
               },
               {
                 "name": "Confirmed Success",
-                "score": 12.08,
-                "ci": 1.81
+                "score": 12.26,
+                "ci": 1.96
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 15.37,
-                "ci": 1.97
+                "score": 15.18,
+                "ci": 2.19
               },
               {
                 "name": "Steerability",
-                "score": 10.04,
-                "ci": 1.44
+                "score": 10.53,
+                "ci": 1.51
               },
               {
                 "name": "Bash Recovery",
-                "score": 53.08,
-                "ci": 6.41
+                "score": 56.28,
+                "ci": 7.18
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.9,
-                "ci": 0.16
+                "score": 0.79,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -26206,11 +26378,11 @@
             "sessions": 125250
           },
           "code": {
-            "rank": 86,
+            "rank": 90,
             "model": "grok-4.3",
             "vendor": "SpaceXAI",
             "license": "proprietary",
-            "score": 1357.0,
+            "score": 1356.0,
             "ci": null,
             "votes": null
           },
@@ -26356,7 +26528,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 109,
+            "rank": 111,
             "model": "qwen3.5-flash",
             "vendor": "Alibaba",
             "license": "proprietary",
@@ -28906,44 +29078,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 43,
+            "rank": 45,
             "model": "Mistral Medium 3.5",
             "vendor": "Mistral",
             "license": null,
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 5.76,
-                "ci": 1.82
+                "score": 6.05,
+                "ci": 1.69
               },
               {
                 "name": "Confirmed Success",
-                "score": 13.6,
-                "ci": 4.36
+                "score": 13.32,
+                "ci": 4.16
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 12.05,
-                "ci": 4.98
+                "score": 12.07,
+                "ci": 4.73
               },
               {
                 "name": "Steerability",
-                "score": 2.1,
-                "ci": 4.2
+                "score": 0.36,
+                "ci": 3.83
               },
               {
                 "name": "Bash Recovery",
-                "score": 2.53,
-                "ci": 2.78
+                "score": 3.06,
+                "ci": 2.42
               },
               {
                 "name": "Tool Hallucination",
-                "score": 2.71,
-                "ci": 1.64
+                "score": 2.14,
+                "ci": 1.22
               },
               {
                 "name": "Cost/Task",
-                "score": 6.0,
+                "score": 7.0,
                 "ci": null
               },
               {
@@ -28955,7 +29127,7 @@
             "sessions": 75375
           },
           "code": {
-            "rank": 102,
+            "rank": 105,
             "model": "mistral-medium-3.5",
             "vendor": "Mistral",
             "license": null,
@@ -29105,44 +29277,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 49,
+            "rank": 48,
             "model": "Minimax M2.7",
             "vendor": "MiniMax",
             "license": null,
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 10.18,
-                "ci": 1.16
+                "score": 10.25,
+                "ci": 1.19
               },
               {
                 "name": "Confirmed Success",
-                "score": 12.93,
-                "ci": 2.73
+                "score": 11.99,
+                "ci": 2.84
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 16.54,
-                "ci": 3.01
+                "score": 17.05,
+                "ci": 3.11
               },
               {
                 "name": "Steerability",
-                "score": 4.76,
-                "ci": 2.39
+                "score": 4.82,
+                "ci": 2.44
               },
               {
                 "name": "Bash Recovery",
-                "score": 17.55,
-                "ci": 2.83
+                "score": 18.17,
+                "ci": 2.87
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.88,
-                "ci": 0.18
+                "score": 0.77,
+                "ci": 0.17
               },
               {
                 "name": "Cost/Task",
-                "score": 34.0,
+                "score": 35.0,
                 "ci": null
               },
               {
@@ -29154,11 +29326,11 @@
             "sessions": 30120
           },
           "code": {
-            "rank": 67,
+            "rank": 69,
             "model": "minimax-m2.7",
             "vendor": "MiniMax",
             "license": null,
-            "score": 1398.0,
+            "score": 1399.0,
             "ci": null,
             "votes": null
           },
@@ -30257,44 +30429,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 25,
+            "rank": 28,
             "model": "Claude Sonnet 4.6",
             "vendor": "Anthropic",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.75,
-                "ci": 1.26
+                "score": 1.03,
+                "ci": 1.27
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.11,
-                "ci": 2.94
+                "score": 4.16,
+                "ci": 3.15
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 0.02,
-                "ci": 3.76
+                "score": 0.95,
+                "ci": 3.91
               },
               {
                 "name": "Steerability",
-                "score": 0.97,
-                "ci": 2.53
+                "score": 1.1,
+                "ci": 2.54
               },
               {
                 "name": "Bash Recovery",
-                "score": 10.92,
-                "ci": 2.05
+                "score": 10.54,
+                "ci": 1.84
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.92,
-                "ci": 0.2
+                "score": 0.82,
+                "ci": 0.18
               },
               {
                 "name": "Cost/Task",
-                "score": 37.0,
+                "score": 38.0,
                 "ci": null
               },
               {
@@ -30306,7 +30478,7 @@
             "sessions": 150750
           },
           "code": {
-            "rank": 25,
+            "rank": 29,
             "model": "claude-sonnet-4-6",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -30412,33 +30584,33 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 2.52,
-                "ci": 2.45
+                "score": 2.36,
+                "ci": 2.58
               },
               {
                 "name": "Confirmed Success",
-                "score": 7.09,
-                "ci": 2.98
+                "score": 6.86,
+                "ci": 3.18
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 11.73,
-                "ci": 4.93
+                "score": 11.65,
+                "ci": 5.29
               },
               {
                 "name": "Steerability",
-                "score": 10.35,
-                "ci": 2.85
+                "score": 9.91,
+                "ci": 2.96
               },
               {
                 "name": "Bash Recovery",
-                "score": 10.97,
-                "ci": 1.81
+                "score": 10.54,
+                "ci": 1.83
               },
               {
                 "name": "Tool Hallucination",
-                "score": 27.55,
-                "ci": 9.91
+                "score": 27.15,
+                "ci": 10.4
               },
               {
                 "name": "Cost/Task",
@@ -30454,11 +30626,11 @@
             "sessions": 525
           },
           "code": {
-            "rank": 19,
+            "rank": 22,
             "model": "claude-opus-4-8",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1539.0,
+            "score": 1540.0,
             "ci": null,
             "votes": null
           },
@@ -31213,7 +31385,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 65,
+            "rank": 68,
             "model": "glm-5v-turbo",
             "vendor": "Z.ai",
             "license": "proprietary",
@@ -31516,44 +31688,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 51,
+            "rank": 49,
             "model": "Gemini 3.5 Flash Lite",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 10.89,
-                "ci": 1.37
+                "score": 10.68,
+                "ci": 1.4
               },
               {
                 "name": "Confirmed Success",
-                "score": 13.52,
-                "ci": 3.32
+                "score": 13.96,
+                "ci": 3.55
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 14.56,
-                "ci": 3.36
+                "score": 13.75,
+                "ci": 3.62
               },
               {
                 "name": "Steerability",
-                "score": 9.58,
-                "ci": 2.95
+                "score": 9.73,
+                "ci": 2.92
               },
               {
                 "name": "Bash Recovery",
-                "score": 16.21,
-                "ci": 3.11
+                "score": 15.12,
+                "ci": 2.92
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.61,
-                "ci": 0.93
+                "score": 0.86,
+                "ci": 0.92
               },
               {
                 "name": "Cost/Task",
-                "score": 21.0,
+                "score": 22.0,
                 "ci": null
               },
               {
@@ -31565,7 +31737,7 @@
             "sessions": 15125
           },
           "code": {
-            "rank": 47,
+            "rank": 50,
             "model": "gemini-3.5-flash-lite",
             "vendor": "Google",
             "license": "proprietary",
@@ -31877,37 +32049,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 7.65,
-                "ci": 2.25
+                "score": 7.48,
+                "ci": 2.18
               },
               {
                 "name": "Confirmed Success",
-                "score": 1.14,
-                "ci": 4.72
+                "score": 1.22,
+                "ci": 4.56
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 11.65,
-                "ci": 7.52
+                "score": 11.94,
+                "ci": 7.5
               },
               {
                 "name": "Steerability",
-                "score": 13.55,
-                "ci": 4.86
+                "score": 12.37,
+                "ci": 4.57
               },
               {
                 "name": "Bash Recovery",
-                "score": 11.04,
-                "ci": 1.91
+                "score": 11.09,
+                "ci": 1.68
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.9,
+                "score": 0.76,
                 "ci": 0.17
               },
               {
                 "name": "Cost/Task",
-                "score": 26.0,
+                "score": 27.0,
                 "ci": null
               },
               {
@@ -32758,7 +32930,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 113,
+            "rank": 116,
             "model": "devstral-2",
             "vendor": "Mistral",
             "license": null,
@@ -33166,40 +33338,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 42,
+            "rank": 43,
             "model": "Gemini 3.5 Flash (Medium)",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 3.67,
-                "ci": 1.42
+                "score": 4.01,
+                "ci": 1.46
               },
               {
                 "name": "Confirmed Success",
-                "score": 8.88,
-                "ci": 3.51
+                "score": 8.46,
+                "ci": 3.59
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 5.99,
-                "ci": 4.06
+                "score": 5.59,
+                "ci": 4.2
               },
               {
                 "name": "Steerability",
-                "score": 1.3,
-                "ci": 2.85
+                "score": 2.31,
+                "ci": 2.88
               },
               {
                 "name": "Bash Recovery",
-                "score": 2.66,
-                "ci": 2.43
+                "score": 4.05,
+                "ci": 2.52
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.46,
-                "ci": 0.53
+                "score": 0.35,
+                "ci": 0.54
               },
               {
                 "name": "Cost/Task",
@@ -33633,11 +33805,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 110,
+            "rank": 113,
             "model": "mistral-large-3",
             "vendor": "Mistral",
             "license": "open",
-            "score": 1230.0,
+            "score": 1229.0,
             "ci": null,
             "votes": null
           },
@@ -33752,6 +33924,17 @@
           },
           "median_tps": 82.85,
           "ttft": 1.216
+        },
+        "arena": {
+          "code": {
+            "rank": 8,
+            "model": "qwen3.8-flash-next",
+            "vendor": "Alibaba",
+            "license": null,
+            "score": 1622.0,
+            "ci": null,
+            "votes": null
+          }
         },
         "benchlm": {
           "slug": "qwen3-8-flash-next",
@@ -33966,40 +34149,40 @@
         },
         "arena": {
           "agent": {
-            "rank": 18,
+            "rank": 17,
             "model": "Claude Opus 4.6",
             "vendor": "Anthropic",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 5.54,
-                "ci": 1.26
+                "score": 5.25,
+                "ci": 1.34
               },
               {
                 "name": "Confirmed Success",
-                "score": 3.44,
-                "ci": 2.75
+                "score": 3.29,
+                "ci": 2.94
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 7.51,
-                "ci": 4.14
+                "score": 7.5,
+                "ci": 4.46
               },
               {
                 "name": "Steerability",
-                "score": 5.83,
-                "ci": 2.41
+                "score": 5.23,
+                "ci": 2.47
               },
               {
                 "name": "Bash Recovery",
-                "score": 9.93,
+                "score": 9.36,
                 "ci": 1.83
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.9,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -34015,7 +34198,7 @@
             "sessions": 525
           },
           "code": {
-            "rank": 23,
+            "rank": 26,
             "model": "claude-opus-4-6",
             "vendor": "Anthropic",
             "license": "proprietary",
@@ -34400,44 +34583,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 41,
+            "rank": 42,
             "model": "Gemini 3.6 Flash (High)",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 3.33,
-                "ci": 1.18
+                "score": 3.65,
+                "ci": 1.15
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.67,
-                "ci": 2.98
+                "score": 1.95,
+                "ci": 2.94
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 5.69,
-                "ci": 3.65
+                "score": 7.28,
+                "ci": 3.47
               },
               {
                 "name": "Steerability",
-                "score": 4.36,
-                "ci": 2.39
+                "score": 4.35,
+                "ci": 2.37
               },
               {
                 "name": "Bash Recovery",
-                "score": 4.92,
-                "ci": 1.6
+                "score": 5.57,
+                "ci": 1.56
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.98,
-                "ci": 0.16
+                "score": 0.88,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 15.0,
+                "score": 16.0,
                 "ci": null
               },
               {
@@ -34674,33 +34857,33 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.86,
-                "ci": 1.32
+                "score": 6.38,
+                "ci": 1.41
               },
               {
                 "name": "Confirmed Success",
-                "score": 4.36,
-                "ci": 2.82
+                "score": 3.83,
+                "ci": 3.04
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 10.84,
-                "ci": 4.32
+                "score": 10.6,
+                "ci": 4.62
               },
               {
                 "name": "Steerability",
-                "score": 8.59,
-                "ci": 2.51
+                "score": 7.86,
+                "ci": 2.6
               },
               {
                 "name": "Bash Recovery",
-                "score": 9.55,
-                "ci": 2.18
+                "score": 8.74,
+                "ci": 2.45
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.97,
-                "ci": 0.16
+                "score": 0.85,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -34716,11 +34899,11 @@
             "sessions": 525
           },
           "code": {
-            "rank": 15,
+            "rank": 18,
             "model": "claude-opus-4-7",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1558.0,
+            "score": 1557.0,
             "ci": null,
             "votes": null
           },
@@ -35297,7 +35480,7 @@
         },
         "arena": {
           "code": {
-            "rank": 84,
+            "rank": 87,
             "model": "qwen3.5-122b-a10b",
             "vendor": "Alibaba",
             "license": "open",
@@ -36032,40 +36215,40 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 28,
+            "rank": 30,
             "model": "Gemini 3.7 Flash (High)",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.33,
-                "ci": 0.87
+                "score": 1.0,
+                "ci": 0.9
               },
               {
                 "name": "Confirmed Success",
-                "score": 9.82,
-                "ci": 2.06
+                "score": 9.95,
+                "ci": 2.11
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 1.75,
-                "ci": 2.81
+                "score": 1.65,
+                "ci": 2.9
               },
               {
                 "name": "Steerability",
-                "score": 4.42,
-                "ci": 1.86
+                "score": 5.16,
+                "ci": 1.89
               },
               {
                 "name": "Bash Recovery",
-                "score": 2.08,
-                "ci": 0.99
+                "score": 1.03,
+                "ci": 1.04
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.95,
-                "ci": 0.17
+                "score": 0.84,
+                "ci": 0.16
               },
               {
                 "name": "Cost/Task",
@@ -36239,7 +36422,7 @@
         },
         "arena": {
           "code": {
-            "rank": 89,
+            "rank": 92,
             "model": "gpt-5.1",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -36614,36 +36797,6 @@
       "benchmarks": {}
     },
     {
-      "id": "claude-opus-4-thinking:32000",
-      "name": "Claude 4 Opus Thinking (32K)",
-      "provider": "nano-gpt",
-      "family": "claude-opus-4-thinking:32000",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 200000,
-      "modality": "image/pdf/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-03-31",
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 15000000.0,
-        "completion": 75000000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "doubao-1.5-vision-pro-32k",
       "name": "Doubao 1.5 Vision Pro 32k",
       "provider": "nano-gpt",
@@ -36967,8 +37120,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37027,8 +37180,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37087,8 +37240,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37517,11 +37670,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 98,
+            "rank": 101,
             "model": "minimax-m2",
             "vendor": "MiniMax",
             "license": "open",
-            "score": 1297.0,
+            "score": 1298.0,
             "ci": null,
             "votes": null
           },
@@ -38076,7 +38229,7 @@
         },
         "arena": {
           "code": {
-            "rank": 105,
+            "rank": 108,
             "model": "qwen3.5-35b-a3b",
             "vendor": "Alibaba",
             "license": "open",
@@ -38240,8 +38393,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -38700,7 +38853,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 115,
+            "rank": 118,
             "model": "mercury-2",
             "vendor": "Inception AI",
             "license": "proprietary",
@@ -39022,8 +39175,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39181,11 +39334,11 @@
         },
         "arena": {
           "code": {
-            "rank": 39,
+            "rank": 42,
             "model": "qwen3.6-max-preview",
             "vendor": "Alibaba",
             "license": "proprietary",
-            "score": 1479.0,
+            "score": 1478.0,
             "ci": null,
             "votes": null
           },
@@ -39225,8 +39378,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39586,44 +39739,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 36,
+            "rank": 37,
             "model": "Qwen3.7 Plus",
             "vendor": "Alibaba",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 2.26,
-                "ci": 1.34
+                "score": 2.65,
+                "ci": 1.31
               },
               {
                 "name": "Confirmed Success",
-                "score": 3.58,
+                "score": 4.12,
                 "ci": 3.39
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 9.9,
-                "ci": 3.91
+                "score": 11.03,
+                "ci": 3.84
               },
               {
                 "name": "Steerability",
-                "score": 2.94,
-                "ci": 2.91
+                "score": 2.78,
+                "ci": 2.81
               },
               {
                 "name": "Bash Recovery",
-                "score": 5.2,
-                "ci": 2.01
+                "score": 4.8,
+                "ci": 1.82
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.08,
-                "ci": 0.41
+                "score": 0.12,
+                "ci": 0.36
               },
               {
                 "name": "Cost/Task",
-                "score": 17.0,
+                "score": 18.0,
                 "ci": null
               },
               {
@@ -39688,8 +39841,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39748,8 +39901,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39778,38 +39931,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "claude-opus-4-1-thinking:32000",
-      "name": "Claude 4.1 Opus Thinking (32K)",
-      "provider": "nano-gpt",
-      "family": "claude-opus-4-1-thinking:32000",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 200000,
-      "modality": "image/pdf/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-03-31",
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 15000000.0,
-        "completion": 75000000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39868,8 +39991,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -40989,8 +41112,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -41019,8 +41142,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -41384,8 +41507,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -41675,7 +41798,7 @@
         },
         "arena": {
           "code": {
-            "rank": 85,
+            "rank": 88,
             "model": "qwen3.5-27b",
             "vendor": "Alibaba",
             "license": "open",
@@ -41788,8 +41911,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42184,8 +42307,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42274,8 +42397,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42394,8 +42517,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42514,8 +42637,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42544,8 +42667,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 120000.0,
+        "completion": 380000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -42799,8 +42922,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 330000.0,
+        "prompt": 100000.0,
+        "completion": 450000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -43787,7 +43910,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -44361,8 +44484,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 125000.0,
-        "completion": 500000.0,
+        "prompt": 350000.0,
+        "completion": 1400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -44608,11 +44731,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 82,
+            "rank": 85,
             "model": "deepseek-v3.2-thinking",
             "vendor": "DeepSeek",
             "license": "open",
-            "score": 1360.0,
+            "score": 1361.0,
             "ci": null,
             "votes": null
           },
@@ -45019,7 +45142,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 54,
+            "rank": 57,
             "model": "kimi-k2.5-thinking",
             "vendor": "Moonshot",
             "license": null,
@@ -47300,8 +47423,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 50000.0,
-        "completion": 100000.0,
+        "prompt": 100000.0,
+        "completion": 200000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -47330,8 +47453,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 50000.0,
-        "completion": 100000.0,
+        "prompt": 100000.0,
+        "completion": 200000.0,
         "cache_read": null
       },
       "benchmarks": {
@@ -47902,8 +48025,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 180000.0,
-        "completion": 500000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -47983,8 +48106,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 200000.0,
-        "completion": 1400000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48013,8 +48136,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 180000.0,
-        "completion": 500000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48073,8 +48196,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 180000.0,
-        "completion": 500000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48194,7 +48317,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 150000.0,
-        "completion": 500000.0,
+        "completion": 950000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48254,7 +48377,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 150000.0,
-        "completion": 500000.0,
+        "completion": 950000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48283,8 +48406,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 180000.0,
-        "completion": 500000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -48667,44 +48790,44 @@
         },
         "arena": {
           "agent": {
-            "rank": 39,
+            "rank": 40,
             "model": "Mimo V2.5 Pro",
             "vendor": "Xiaomi",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 2.68,
-                "ci": 0.93
+                "score": 3.49,
+                "ci": 0.95
               },
               {
                 "name": "Confirmed Success",
-                "score": 3.82,
-                "ci": 2.29
+                "score": 4.66,
+                "ci": 2.41
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 7.44,
-                "ci": 2.81
+                "score": 9.24,
+                "ci": 2.77
               },
               {
                 "name": "Steerability",
-                "score": 2.31,
-                "ci": 1.75
+                "score": 2.68,
+                "ci": 1.8
               },
               {
                 "name": "Bash Recovery",
-                "score": 0.3,
-                "ci": 1.47
+                "score": 0.8,
+                "ci": 1.72
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.14,
-                "ci": 0.34
+                "score": 0.09,
+                "ci": 0.29
               },
               {
                 "name": "Cost/Task",
-                "score": 34.0,
+                "score": 35.0,
                 "ci": null
               },
               {
@@ -48716,7 +48839,7 @@
             "sessions": 43087
           },
           "code": {
-            "rank": 40,
+            "rank": 43,
             "model": "mimo-v2.5-pro",
             "vendor": "Xiaomi",
             "license": "open",
@@ -49133,7 +49256,7 @@
       "family": "abacusai/Dracarys-72B-Instruct",
       "source": "models.dev",
       "created_unix": null,
-      "context": 16384,
+      "context": 32768,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -49344,37 +49467,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.18,
-                "ci": 1.89
+                "score": 5.12,
+                "ci": 1.85
               },
               {
                 "name": "Confirmed Success",
-                "score": 18.21,
-                "ci": 5.24
+                "score": 17.22,
+                "ci": 5.14
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 18.38,
-                "ci": 5.05
+                "score": 16.49,
+                "ci": 5.34
               },
               {
                 "name": "Steerability",
-                "score": 6.52,
-                "ci": 4.96
+                "score": 3.75,
+                "ci": 4.52
               },
               {
                 "name": "Bash Recovery",
-                "score": 11.94,
-                "ci": 1.54
+                "score": 11.71,
+                "ci": 1.37
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.27,
-                "ci": 0.46
+                "score": 0.18,
+                "ci": 0.39
               },
               {
                 "name": "Cost/Task",
-                "score": 9.0,
+                "score": 10.0,
                 "ci": null
               },
               {
@@ -49386,11 +49509,11 @@
             "sessions": 50120
           },
           "code": {
-            "rank": 64,
+            "rank": 67,
             "model": "Inkling Small",
             "vendor": "Thinky",
             "license": "open",
-            "score": 1402.0,
+            "score": 1403.0,
             "ci": null,
             "votes": null
           },
@@ -50341,6 +50464,36 @@
       "price_per_million": {
         "prompt": 2000000.0,
         "completion": 2000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "TEE/glm-5.3",
+      "name": "GLM 5.3 TEE",
+      "provider": "TEE",
+      "family": "TEE/glm-5.3",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1400000.0,
+        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -51972,44 +52125,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 35,
+            "rank": 36,
             "model": "Hy3",
             "vendor": "Tencent",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.19,
-                "ci": 1.28
+                "score": 1.46,
+                "ci": 1.33
               },
               {
                 "name": "Confirmed Success",
-                "score": 2.86,
-                "ci": 2.87
+                "score": 3.67,
+                "ci": 2.95
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 2.96,
-                "ci": 4.07
+                "score": 1.82,
+                "ci": 4.31
               },
               {
                 "name": "Steerability",
-                "score": 0.46,
-                "ci": 2.6
+                "score": 0.12,
+                "ci": 2.63
               },
               {
                 "name": "Bash Recovery",
-                "score": 0.97,
-                "ci": 2.07
+                "score": 0.25,
+                "ci": 2.36
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.57,
-                "ci": 0.64
+                "score": 1.44,
+                "ci": 0.58
               },
               {
                 "name": "Cost/Task",
-                "score": 22.0,
+                "score": 23.0,
                 "ci": null
               },
               {
@@ -52021,11 +52174,11 @@
             "sessions": 13053
           },
           "code": {
-            "rank": 28,
+            "rank": 33,
             "model": "hy3",
             "vendor": "Tencent",
             "license": "open",
-            "score": 1518.0,
+            "score": 1513.0,
             "ci": null,
             "votes": null
           },
@@ -53506,37 +53659,37 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 11.7,
-                "ci": 1.62
+                "score": 10.86,
+                "ci": 1.56
               },
               {
                 "name": "Confirmed Success",
-                "score": 10.44,
-                "ci": 3.23
+                "score": 8.07,
+                "ci": 3.29
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 20.65,
-                "ci": 5.77
+                "score": 19.73,
+                "ci": 5.57
               },
               {
                 "name": "Steerability",
-                "score": 14.39,
-                "ci": 2.99
+                "score": 13.64,
+                "ci": 2.87
               },
               {
                 "name": "Bash Recovery",
                 "score": 11.99,
-                "ci": 2.64
+                "ci": 2.14
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.02,
-                "ci": 0.16
+                "score": 0.9,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 33.0,
+                "score": 34.0,
                 "ci": null
               },
               {
@@ -53548,11 +53701,11 @@
             "sessions": 1050
           },
           "code": {
-            "rank": 6,
+            "rank": 7,
             "model": "claude-fable-5",
             "vendor": "Anthropic",
             "license": "proprietary",
-            "score": 1626.0,
+            "score": 1628.0,
             "ci": null,
             "votes": null
           },
@@ -53957,6 +54110,17 @@
         "cache_read": null
       },
       "benchmarks": {
+        "arena": {
+          "code": {
+            "rank": 5,
+            "model": "hy4-preview",
+            "vendor": "Tencent",
+            "license": "open",
+            "score": 1631.0,
+            "ci": null,
+            "votes": null
+          }
+        },
         "benchlm": {
           "slug": "hy4-preview",
           "canonicalModelKey": "hy4-preview",
@@ -54455,11 +54619,11 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 57,
+            "rank": 60,
             "model": "mimo-v2-pro",
             "vendor": "Xiaomi",
             "license": "proprietary",
-            "score": 1434.0,
+            "score": 1433.0,
             "ci": null,
             "votes": null
           },
@@ -54686,7 +54850,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 53,
+            "rank": 56,
             "model": "mimo-v2.5",
             "vendor": "Xiaomi",
             "license": "open",
@@ -55196,44 +55360,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 38,
+            "rank": 39,
             "model": "Gemini 3.1 Pro Preview",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 2.62,
-                "ci": 0.78
+                "score": 3.11,
+                "ci": 0.88
               },
               {
                 "name": "Confirmed Success",
-                "score": 0.18,
-                "ci": 1.75
+                "score": 1.7,
+                "ci": 2.02
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 2.73,
-                "ci": 2.32
+                "score": 2.07,
+                "ci": 2.61
               },
               {
                 "name": "Steerability",
-                "score": 3.04,
-                "ci": 1.41
+                "score": 1.93,
+                "ci": 1.51
               },
               {
                 "name": "Bash Recovery",
-                "score": 13.38,
-                "ci": 1.52
+                "score": 14.63,
+                "ci": 1.73
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.77,
-                "ci": 0.28
+                "score": 0.66,
+                "ci": 0.27
               },
               {
                 "name": "Cost/Task",
-                "score": 82.0,
+                "score": 83.0,
                 "ci": null
               },
               {
@@ -55245,7 +55409,7 @@
             "sessions": 16
           },
           "code": {
-            "rank": 48,
+            "rank": 51,
             "model": "gemini-3.1-pro-preview",
             "vendor": "Google",
             "license": "proprietary",
@@ -55674,7 +55838,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 104,
+            "rank": 107,
             "model": "gemini-3.1-flash-lite-preview",
             "vendor": "Google",
             "license": "proprietary",
@@ -56476,7 +56640,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 45,
+            "rank": 48,
             "model": "qwen3.6-plus",
             "vendor": "Alibaba",
             "license": "proprietary",
@@ -58817,7 +58981,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -58918,44 +59082,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 45,
+            "rank": 46,
             "model": "Inkling",
             "vendor": "Thinky",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 6.58,
-                "ci": 1.04
+                "score": 7.09,
+                "ci": 1.07
               },
               {
                 "name": "Confirmed Success",
-                "score": 12.1,
-                "ci": 2.89
+                "score": 14.35,
+                "ci": 3.07
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 17.74,
-                "ci": 3.0
+                "score": 18.13,
+                "ci": 3.07
               },
               {
                 "name": "Steerability",
-                "score": 10.94,
-                "ci": 2.36
+                "score": 10.72,
+                "ci": 2.41
               },
               {
                 "name": "Bash Recovery",
-                "score": 7.32,
-                "ci": 1.08
+                "score": 7.35,
+                "ci": 1.12
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.54,
-                "ci": 0.21
+                "score": 0.4,
+                "ci": 0.25
               },
               {
                 "name": "Cost/Task",
-                "score": 38.0,
+                "score": 39.0,
                 "ci": null
               },
               {
@@ -58967,7 +59131,7 @@
             "sessions": 1405
           },
           "code": {
-            "rank": 62,
+            "rank": 64,
             "model": "inkling",
             "vendor": "Thinky",
             "license": "open",
@@ -59115,33 +59279,33 @@
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.32,
-                "ci": 1.11
+                "score": 1.01,
+                "ci": 1.12
               },
               {
                 "name": "Confirmed Success",
-                "score": 6.7,
-                "ci": 2.74
+                "score": 6.54,
+                "ci": 2.8
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 6.39,
-                "ci": 3.35
+                "score": 6.44,
+                "ci": 3.36
               },
               {
                 "name": "Steerability",
-                "score": 4.81,
-                "ci": 2.39
+                "score": 5.49,
+                "ci": 2.42
               },
               {
                 "name": "Bash Recovery",
-                "score": 10.09,
-                "ci": 1.33
+                "score": 9.52,
+                "ci": 1.38
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.01,
-                "ci": 0.16
+                "score": 0.9,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -59157,7 +59321,7 @@
             "sessions": 125425
           },
           "code": {
-            "rank": 24,
+            "rank": 27,
             "model": "muse-spark-1.2 (xHigh)",
             "vendor": "Meta",
             "license": "proprietary",
@@ -59217,44 +59381,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 31,
+            "rank": 33,
             "model": "Muse Spark 1.1",
             "vendor": "Meta",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 0.19,
-                "ci": 0.62
+                "score": 0.6,
+                "ci": 0.63
               },
               {
                 "name": "Confirmed Success",
-                "score": 5.99,
-                "ci": 1.45
+                "score": 5.72,
+                "ci": 1.49
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 7.08,
-                "ci": 1.82
+                "score": 7.93,
+                "ci": 1.85
               },
               {
                 "name": "Steerability",
-                "score": 5.83,
+                "score": 5.69,
                 "ci": 1.3
               },
               {
                 "name": "Bash Recovery",
-                "score": 4.96,
+                "score": 4.01,
                 "ci": 1.1
               },
               {
                 "name": "Tool Hallucination",
-                "score": 1.0,
-                "ci": 0.16
+                "score": 0.89,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
-                "score": 83.0,
+                "score": 86.0,
                 "ci": null
               },
               {
@@ -59266,11 +59430,11 @@
             "sessions": 125425
           },
           "code": {
-            "rank": 20,
+            "rank": 23,
             "model": "muse-spark-1.1",
             "vendor": "Meta",
             "license": "proprietary",
-            "score": 1539.0,
+            "score": 1540.0,
             "ci": null,
             "votes": null
           },
@@ -61230,40 +61394,40 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 47,
+            "rank": 52,
             "model": "Grok Build 0.1",
             "vendor": "SpaceXAI",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 10.09,
-                "ci": 1.06
+                "score": 11.16,
+                "ci": 1.18
               },
               {
                 "name": "Confirmed Success",
-                "score": 6.52,
-                "ci": 2.03
+                "score": 6.67,
+                "ci": 2.22
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 11.47,
-                "ci": 2.42
+                "score": 11.56,
+                "ci": 2.67
               },
               {
                 "name": "Steerability",
-                "score": 5.47,
-                "ci": 2.07
+                "score": 6.0,
+                "ci": 2.2
               },
               {
                 "name": "Bash Recovery",
-                "score": 27.61,
-                "ci": 3.39
+                "score": 32.14,
+                "ci": 3.92
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.63,
-                "ci": 0.16
+                "score": 0.55,
+                "ci": 0.15
               },
               {
                 "name": "Cost/Task",
@@ -61462,7 +61626,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 117,
+            "rank": 120,
             "model": "grok-4-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -61693,11 +61857,11 @@
         },
         "arena": {
           "code": {
-            "rank": 106,
+            "rank": 109,
             "model": "gpt-5.1-codex-mini",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1244.0,
+            "score": 1243.0,
             "ci": null,
             "votes": null
           }
@@ -61765,7 +61929,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 116,
+            "rank": 119,
             "model": "grok-code-fast-1",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -61953,7 +62117,7 @@
         },
         "arena": {
           "code": {
-            "rank": 107,
+            "rank": 110,
             "model": "grok-4-1-fast-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -62163,11 +62327,11 @@
         },
         "arena": {
           "code": {
-            "rank": 60,
+            "rank": 63,
             "model": "gpt-5.2",
             "vendor": "OpenAI",
             "license": "proprietary",
-            "score": 1418.0,
+            "score": 1416.0,
             "ci": null,
             "votes": null
           },
@@ -62526,7 +62690,7 @@
         },
         "arena": {
           "code": {
-            "rank": 91,
+            "rank": 94,
             "model": "gpt-5.2-codex",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -63415,7 +63579,7 @@
         },
         "arena": {
           "code": {
-            "rank": 92,
+            "rank": 95,
             "model": "gpt-5.1-codex",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -63975,7 +64139,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 88,
+            "rank": 91,
             "model": "laguna-m.1",
             "vendor": "Poolside",
             "license": "open",
@@ -65206,7 +65370,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 96,
+            "rank": 99,
             "model": "kimi-k2-thinking-turbo",
             "vendor": "Moonshot",
             "license": null,
@@ -68204,7 +68368,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -72909,6 +73073,36 @@
       "price_per_million": {
         "prompt": null,
         "completion": null,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "sensenova-6.8-flash-lite",
+      "name": "SenseNova 6.8 Flash Lite",
+      "provider": "sensenova",
+      "family": "sensenova-6.8-flash-lite",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -82164,7 +82358,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 79,
+            "rank": 82,
             "model": "gpt-5.3-codex (codex-harness)",
             "vendor": "OpenAI",
             "license": "proprietary",
@@ -84309,40 +84503,40 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 50,
+            "rank": 51,
             "model": "Gemini 3 Flash",
             "vendor": "Google",
             "license": "proprietary",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 10.65,
-                "ci": 0.93
+                "score": 11.16,
+                "ci": 1.03
               },
               {
                 "name": "Confirmed Success",
-                "score": 8.2,
-                "ci": 1.72
+                "score": 8.1,
+                "ci": 1.87
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 10.38,
-                "ci": 1.97
+                "score": 10.35,
+                "ci": 2.17
               },
               {
                 "name": "Steerability",
-                "score": 9.25,
-                "ci": 1.45
+                "score": 9.82,
+                "ci": 1.53
               },
               {
                 "name": "Bash Recovery",
-                "score": 24.5,
-                "ci": 2.7
+                "score": 26.42,
+                "ci": 3.0
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.93,
-                "ci": 1.99
+                "score": 1.12,
+                "ci": 2.25
               },
               {
                 "name": "Cost/Task",
@@ -84358,7 +84552,7 @@
             "sessions": 503
           },
           "code": {
-            "rank": 76,
+            "rank": 79,
             "model": "gemini-3-flash (thinking-minimal)",
             "vendor": "Google",
             "license": "proprietary",
@@ -85706,7 +85900,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -86528,7 +86722,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -90127,7 +90321,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -92983,7 +93177,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -94612,7 +94806,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -97116,40 +97310,40 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 52,
+            "rank": 53,
             "model": "Nemotron 3 Ultra",
             "vendor": "Nvidia",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 12.92,
-                "ci": 2.46
+                "score": 13.49,
+                "ci": 2.55
               },
               {
                 "name": "Confirmed Success",
-                "score": 15.58,
-                "ci": 5.19
+                "score": 15.38,
+                "ci": 5.38
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 14.62,
-                "ci": 6.39
+                "score": 14.79,
+                "ci": 6.68
               },
               {
                 "name": "Steerability",
-                "score": 7.7,
-                "ci": 5.1
+                "score": 8.88,
+                "ci": 5.18
               },
               {
                 "name": "Bash Recovery",
-                "score": 27.03,
-                "ci": 6.89
+                "score": 28.7,
+                "ci": 7.12
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.33,
-                "ci": 0.34
+                "score": 0.29,
+                "ci": 0.31
               },
               {
                 "name": "Cost/Task",
@@ -102717,7 +102911,7 @@
         },
         "arena": {
           "code": {
-            "rank": 108,
+            "rank": 112,
             "model": "trinity-large-thinking",
             "vendor": null,
             "license": null,
@@ -109308,7 +109502,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 77,
+            "rank": 80,
             "model": "grok-4.20-beta-0309-reasoning",
             "vendor": "SpaceXAI",
             "license": "proprietary",
@@ -109957,7 +110151,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 52,
+            "rank": 54,
             "model": "gemini-3-pro",
             "vendor": "Google",
             "license": "proprietary",
@@ -111931,7 +112125,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -112878,7 +113072,7 @@
       "benchmarks": {
         "arena": {
           "code": {
-            "rank": 97,
+            "rank": 100,
             "model": "laguna-xs.2",
             "vendor": "Poolside",
             "license": "open",
@@ -113837,10 +114031,10 @@
       "benchmarks": {}
     },
     {
-      "id": "cheap",
+      "id": "trustedrouter/cheap",
       "name": "Cheap",
       "provider": "trustedrouter",
-      "family": "cheap",
+      "family": "trustedrouter/cheap",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -113867,10 +114061,10 @@
       "benchmarks": {}
     },
     {
-      "id": "fast",
+      "id": "trustedrouter/fast",
       "name": "Fast",
       "provider": "trustedrouter",
-      "family": "fast",
+      "family": "trustedrouter/fast",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -113897,10 +114091,40 @@
       "benchmarks": {}
     },
     {
-      "id": "synth-code",
+      "id": "trustedrouter/auto",
+      "name": "Auto",
+      "provider": "trustedrouter",
+      "family": "trustedrouter/auto",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": null,
+        "completion": null,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "trustedrouter/synth-code",
       "name": "Synth Code",
       "provider": "trustedrouter",
-      "family": "synth-code",
+      "family": "trustedrouter/synth-code",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -113927,10 +114151,10 @@
       "benchmarks": {}
     },
     {
-      "id": "e2e",
+      "id": "trustedrouter/e2e",
       "name": "End-to-End Encrypted",
       "provider": "trustedrouter",
-      "family": "e2e",
+      "family": "trustedrouter/e2e",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -113957,10 +114181,10 @@
       "benchmarks": {}
     },
     {
-      "id": "zdr",
+      "id": "trustedrouter/zdr",
       "name": "Zero Data Retention",
       "provider": "trustedrouter",
-      "family": "zdr",
+      "family": "trustedrouter/zdr",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -113987,10 +114211,10 @@
       "benchmarks": {}
     },
     {
-      "id": "synth",
+      "id": "trustedrouter/synth",
       "name": "Synth",
       "provider": "trustedrouter",
-      "family": "synth",
+      "family": "trustedrouter/synth",
       "source": "models.dev",
       "created_unix": null,
       "context": 1000000,
@@ -118992,7 +119216,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -122077,151 +122301,6 @@
       "benchmarks": {}
     },
     {
-      "id": "mistral-medium-3",
-      "name": "Mistral Medium 3",
-      "provider": "empiriolabs",
-      "family": "mistral-medium-3",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 130000,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-05",
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "benchlm": {
-          "slug": "mistral-medium-3",
-          "canonicalModelKey": "mistral-medium-3",
-          "model": "Mistral Medium 3",
-          "creator": "Mistral",
-          "sourceType": "Proprietary",
-          "reasoningType": "Non-Reasoning",
-          "contextWindow": "128K",
-          "contextWindowTokens": 128000,
-          "displayScore": 43.56,
-          "provisionalDisplayScore": 0,
-          "publicRankingMode": "bench-align-v5",
-          "evidenceStatus": "estimated",
-          "scoreInterval90": {
-            "lower": 32.05,
-            "upper": 55.07
-          },
-          "rankingEligible": true,
-          "overallRank": 176,
-          "url": "https://benchlm.ai/models/mistral-medium-3",
-          "markdownUrl": "https://benchlm.ai/md/models/mistral-medium-3.md",
-          "id": 106,
-          "releaseDate": "2026-02-20",
-          "market": null,
-          "isRegional": false,
-          "family": {
-            "familyKey": "mistral-medium-3",
-            "familyName": "Mistral Medium 3",
-            "variantType": "base",
-            "snapshotLabel": null,
-            "baseFamilyModelKey": "mistral-medium-3",
-            "relatedModelKeys": [],
-            "isCanonicalFamilyEntry": true,
-            "supersedesModelKey": null
-          },
-          "scores": {
-            "displayScore": 0,
-            "overallScore": 0,
-            "rawOverallScore": 0,
-            "verifiedDisplayScore": null,
-            "displayCategoryScores": {
-              "agentic": null,
-              "coding": null,
-              "reasoning": null,
-              "multimodalGrounded": null,
-              "knowledge": null,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            },
-            "verifiedDisplayCategoryScores": {
-              "agentic": null,
-              "coding": null,
-              "reasoning": null,
-              "multimodalGrounded": null,
-              "knowledge": null,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            }
-          },
-          "ranking": {
-            "rankingEligible": false,
-            "verifiedRankingEligible": false,
-            "overallRank": 176,
-            "categoryRanks": {},
-            "categoryRankingEligible": {
-              "agentic": false,
-              "coding": false,
-              "reasoning": false,
-              "multimodalGrounded": false,
-              "knowledge": false,
-              "multilingual": false,
-              "instructionFollowing": false,
-              "math": false
-            }
-          },
-          "coverage": {
-            "trustedBenchmarkCount": 0,
-            "verifiedBenchmarkCount": 0,
-            "rankableBenchmarkCount": 0,
-            "generatedBenchmarkCount": 0,
-            "scoreConfidence": 1
-          },
-          "benchmarks": {
-            "agentic": {
-              "tau2Bench": 24.3
-            },
-            "coding": {
-              "aaSciCode": 33.1
-            },
-            "reasoning": {
-              "lcr": 31.7,
-              "critpt": 0
-            },
-            "multimodalGrounded": {
-              "aaMmmuPro": 53,
-              "designArenaWebsite": 1099
-            },
-            "knowledge": {
-              "artificialAnalysis": 12.47,
-              "aaGpqaDiamond": 57.8,
-              "aaHle": 4.1,
-              "aaOmniscienceIndex": -31.4,
-              "omniscienceAccuracy": 18.3,
-              "omniscienceHallucinationRate": 60.9
-            },
-            "multilingual": {},
-            "instructionFollowing": {
-              "aaIfBench": 39.3
-            },
-            "math": {}
-          }
-        }
-      }
-    },
-    {
       "id": "qwen3-5-plus",
       "name": "Qwen3.5 Plus",
       "provider": "empiriolabs",
@@ -122422,7 +122501,7 @@
         },
         "arena": {
           "code": {
-            "rank": 81,
+            "rank": 84,
             "model": "gemma-4-26b-a4b",
             "vendor": "Google",
             "license": "open",
@@ -130869,6 +130948,36 @@
       "benchmarks": {}
     },
     {
+      "id": "minimax/minimax-h3-max",
+      "name": "MiniMax H3 Max",
+      "provider": "minimax",
+      "family": "minimax/minimax-h3-max",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 0,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": null,
+        "completion": null,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "deepinfra/nemotron-3-ultra-550b-a55b",
       "name": "Nemotron 3 Ultra 550B A55B",
       "provider": "deepinfra",
@@ -138881,7 +138990,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -142437,44 +142546,44 @@
       "benchmarks": {
         "arena": {
           "agent": {
-            "rank": 27,
+            "rank": 26,
             "model": "Qwen 3.8 27B",
             "vendor": "Alibaba",
             "license": "open",
             "scores": [
               {
                 "name": "Net Improvement",
-                "score": 1.56,
-                "ci": 1.47
+                "score": 1.72,
+                "ci": 1.19
               },
               {
                 "name": "Confirmed Success",
-                "score": 8.05,
-                "ci": 3.39
+                "score": 7.08,
+                "ci": 2.75
               },
               {
                 "name": "Praise vs Complaint",
-                "score": 0.1,
-                "ci": 4.76
+                "score": 1.56,
+                "ci": 3.95
               },
               {
                 "name": "Steerability",
-                "score": 0.89,
-                "ci": 3.3
+                "score": 1.11,
+                "ci": 2.44
               },
               {
                 "name": "Bash Recovery",
-                "score": 1.3,
-                "ci": 1.27
+                "score": 1.35,
+                "ci": 1.08
               },
               {
                 "name": "Tool Hallucination",
-                "score": 0.25,
-                "ci": 0.32
+                "score": 0.18,
+                "ci": 0.26
               },
               {
                 "name": "Cost/Task",
-                "score": 10.0,
+                "score": 15.0,
                 "ci": null
               },
               {
@@ -143048,7 +143157,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {

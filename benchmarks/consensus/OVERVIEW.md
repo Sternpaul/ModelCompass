@@ -6,7 +6,7 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 |------|-------|--------------------:|-------------:|------------|
 | 1 | `gpt-5-6-sol` | 8 | 50 | benchlm_agentic, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning… |
 | 2 | `claude-opus-5` | 7 | 60 | benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded, benchlm_reasoning, deepswe_v1_1 |
-| 3 | `claude-fable-5` | 7 | 47 | arena_code, arena_document, arena_search, arena_text, arena_vision… |
+| 3 | `claude-fable-5` | 7 | 46 | arena_code, arena_document, arena_search, arena_text, arena_vision… |
 | 4 | `anthropic/claude-fable-5` | 6 | 45 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_tau2… |
 | 5 | `openai/gpt-5-6-sol` | 6 | 43 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_terminalbench_hard… |
 | 6 | `anthropic/claude-opus-5-high` | 6 | 25 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_gpqa, aa_hle, aa_tau_banking… |
