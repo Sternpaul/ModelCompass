@@ -14,10 +14,9 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | kimi-k2-6:free | kenari/openrouter | 45.1 | 61.8 | 22 (document) |
 | minimax/minimax-m3:free | kilo/openrouter | 45.4 | 58.6 | 27 (document) |
 | hy3:free | kenari/openrouter | 42.2 | 58.8 | 33 (code) |
-| tencent/hy3:free | kilo/nous/openrouter | 42.2 | 58.8 | 33 (code) |
 | kimi-k2-7-code:free | kenari/openrouter | 43.0 | 60.8 | 44 (code) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 34.3 | 48.2 | 44 (vision) |
-| thinkingmachines/inkling:free | kilo/openrouter | 42.3 | 52.1 | 46 (agent) |
+| thinkingmachines/inkling:free | kilo/openrouter | 42.3 | 52.1 | 47 (agent) |
 | deepseek-v4-pro:free | openrouter/unorouter | **53.2** | 68.8 | 52 (code) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 54 (vision) |
 | minimax/minimax-m2.7:free | kilo/openrouter | 38.9 | 52.6 | 69 (code) |
