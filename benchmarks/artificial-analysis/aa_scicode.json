@@ -3,14 +3,24 @@
     "leaderboard": "aa_scicode",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "scicode",
-    "fetched_at": "2026-09-01T09:19:00.716752+00:00",
-    "model_count_with_data": 624
+    "fetched_at": "2026-09-02T08:40:53.649369+00:00",
+    "model_count_with_data": 631
   },
   "models": [
+    {
+      "model": "anthropic/claude-fable-5-1",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+      "score": 0.62
+    },
     {
       "model": "anthropic/claude-fable-5",
       "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
       "score": 0.602
+    },
+    {
+      "model": "anthropic/claude-fable-5-1-xhigh",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "score": 0.601
     },
     {
       "model": "google/gemini-3-1-pro-preview",
@@ -31,6 +41,11 @@
       "model": "google/gemini-3-7-flash-medium",
       "name": "Gemini 3.7 Flash (medium)",
       "score": 0.579
+    },
+    {
+      "model": "anthropic/claude-fable-5-1-high",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
+      "score": 0.576
     },
     {
       "model": "openai/gpt-5-6-sol-high",
@@ -93,9 +108,19 @@
       "score": 0.557
     },
     {
+      "model": "anthropic/claude-fable-5-1-low",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
+      "score": 0.557
+    },
+    {
       "model": "openai/gpt-5-6-sol-low",
       "name": "GPT-5.6 Sol (low)",
       "score": 0.554
+    },
+    {
+      "model": "anthropic/claude-fable-5-1-medium",
+      "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
+      "score": 0.553
     },
     {
       "model": "anthropic/claude-opus-5-xhigh",
@@ -523,6 +548,11 @@
       "score": 0.451
     },
     {
+      "model": "multiversecomputing/quasar-438b",
+      "name": "Quasar 438B",
+      "score": 0.45
+    },
+    {
       "model": "deepseek/deepseek-v4-flash-0420",
       "name": "DeepSeek V4 Flash (Reasoning, Max Effort)",
       "score": 0.449
@@ -631,6 +661,11 @@
       "model": "alibaba/qwen3-max-thinking",
       "name": "Qwen3 Max Thinking",
       "score": 0.431
+    },
+    {
+      "model": "apodex/apodex-1-1",
+      "name": "Apodex 1.1",
+      "score": 0.429
     },
     {
       "model": "openai/gpt-5",

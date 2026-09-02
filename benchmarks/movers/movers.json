@@ -6,45 +6,521 @@
   },
   "models": [
     {
+      "board": "Arena Text",
+      "model": "glm-5.3-flash",
+      "previous": 38,
+      "current": 30,
+      "delta": 8
+    },
+    {
+      "board": "Arena Text",
+      "model": "nvidia-nemotron-3.5-lightning-30b-a3b-nvfp4",
+      "previous": 202,
+      "current": 196,
+      "delta": 6
+    },
+    {
       "board": "Arena Code",
       "model": "hy3",
       "previous": 28,
-      "current": 33,
-      "delta": -5
+      "current": 34,
+      "delta": -6
     },
     {
       "board": "Arena Code",
       "model": "glm-5.1",
       "previous": 31,
-      "current": 36,
-      "delta": -5
-    },
-    {
-      "board": "Arena Code",
-      "model": "claude-sonnet-4-6",
-      "previous": 25,
-      "current": 29,
-      "delta": -4
+      "current": 37,
+      "delta": -6
     },
     {
       "board": "Arena Code",
       "model": "gemini-3-flash",
       "previous": 51,
-      "current": 55,
-      "delta": -4
+      "current": 57,
+      "delta": -6
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-sonnet-4-6",
+      "previous": 25,
+      "current": 30,
+      "delta": -5
     },
     {
       "board": "Arena Code",
       "model": "qwen3.5-397b-a17b",
       "previous": 66,
-      "current": 70,
-      "delta": -4
+      "current": 71,
+      "delta": -5
     },
     {
       "board": "Arena Code",
       "model": "gpt-5.4",
       "previous": 71,
-      "current": 75,
+      "current": 76,
+      "delta": -5
+    },
+    {
+      "board": "Arena Code",
+      "model": "KAT-Coder-Pro-V1",
+      "previous": 103,
+      "current": 108,
+      "delta": -5
+    },
+    {
+      "board": "Arena Code",
+      "model": "trinity-large-thinking",
+      "previous": 108,
+      "current": 113,
+      "delta": -5
+    },
+    {
+      "board": "Arena Text",
+      "model": "deepseek-v4-pro-high-20260813",
+      "previous": 46,
+      "current": 50,
+      "delta": -4
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-1.1-7b-it",
+      "previous": 337,
+      "current": 341,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "qwen3.8-27b",
+      "previous": 9,
+      "current": 13,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.7-flash-high",
+      "previous": 10,
+      "current": 14,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "glm-5.2-max",
+      "previous": 11,
+      "current": 15,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v4-pro-high-20260813",
+      "previous": 12,
+      "current": 16,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v4-flash-high",
+      "previous": 13,
+      "current": 17,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-8-high",
+      "previous": 14,
+      "current": 18,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-7",
+      "previous": 15,
+      "current": 19,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-7-high",
+      "previous": 16,
+      "current": 20,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "grok-4.5",
+      "previous": 17,
+      "current": 21,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-6-high",
+      "previous": 18,
+      "current": 22,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-8",
+      "previous": 19,
+      "current": 23,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "muse-spark-1.1",
+      "previous": 20,
+      "current": 24,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.6-flash-high",
+      "previous": 21,
+      "current": 25,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-sonnet-5-high",
+      "previous": 22,
+      "current": 26,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-6",
+      "previous": 23,
+      "current": 27,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "muse-spark-1.2 (xHigh)",
+      "previous": 24,
+      "current": 28,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.6-terra-xhigh (codex-harness)",
+      "previous": 27,
+      "current": 31,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "kimi-k2.6",
+      "previous": 32,
+      "current": 36,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.5-flash-high",
+      "previous": 34,
+      "current": 38,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-5-20251101-high-32k",
+      "previous": 35,
+      "current": 39,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.5-flash-medium",
+      "previous": 36,
+      "current": 40,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "minimax-m3",
+      "previous": 37,
+      "current": 41,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.5-high (codex-harness)",
+      "previous": 38,
+      "current": 42,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "qwen3.6-max-preview",
+      "previous": 39,
+      "current": 43,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "mimo-v2.5-pro",
+      "previous": 40,
+      "current": 44,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "kimi-k2.7-code",
+      "previous": 41,
+      "current": 45,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-opus-4-5-20251101",
+      "previous": 42,
+      "current": 46,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v4-pro-high-preview",
+      "previous": 43,
+      "current": 47,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.4-high (codex-harness)",
+      "previous": 44,
+      "current": 48,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "qwen3.6-plus",
+      "previous": 45,
+      "current": 49,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.5 (codex-harness)",
+      "previous": 46,
+      "current": 50,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.5-flash-lite",
+      "previous": 47,
+      "current": 51,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3.1-pro-preview",
+      "previous": 48,
+      "current": 52,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v4-pro",
+      "previous": 49,
+      "current": 53,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.4-medium (codex-harness)",
+      "previous": 50,
+      "current": 54,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "kimi-k2.5-thinking",
+      "previous": 54,
+      "current": 58,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "glm-5",
+      "previous": 55,
+      "current": 59,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "glm-4.7",
+      "previous": 56,
+      "current": 60,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "mimo-v2-pro",
+      "previous": 57,
+      "current": 61,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v4-flash-high-preview",
+      "previous": 58,
+      "current": 62,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5-medium",
+      "previous": 59,
+      "current": 63,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.2",
+      "previous": 60,
+      "current": 64,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.3-codex (codex-harness)",
+      "previous": 79,
+      "current": 83,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "inkling",
+      "previous": 62,
+      "current": 66,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "kimi-k2.5-instant",
+      "previous": 63,
+      "current": 67,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "Inkling Small",
+      "previous": 64,
+      "current": 68,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "glm-5v-turbo",
+      "previous": 65,
+      "current": 69,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.4-mini-high",
+      "previous": 68,
+      "current": 72,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-sonnet-4-5-20250929-high-32k",
+      "previous": 69,
+      "current": 73,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gpt-5.1-medium",
+      "previous": 70,
+      "current": 74,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "minimax-m2.1-preview",
+      "previous": 73,
+      "current": 77,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "claude-sonnet-4-5-20250929",
+      "previous": 74,
+      "current": 78,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "minimax-m2.5",
+      "previous": 75,
+      "current": 79,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemini-3-flash (thinking-minimal)",
+      "previous": 76,
+      "current": 80,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "grok-4.20-beta-0309-reasoning",
+      "previous": 77,
+      "current": 81,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "solar-pro4",
+      "previous": 78,
+      "current": 82,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemma-4-31b",
+      "previous": 80,
+      "current": 84,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "gemma-4-26b-a4b",
+      "previous": 81,
+      "current": 85,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "deepseek-v3.2-thinking",
+      "previous": 82,
+      "current": 86,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "muse-glimmer",
+      "previous": 83,
+      "current": 87,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "qwen3.5-122b-a10b",
+      "previous": 84,
+      "current": 88,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "qwen3.5-27b",
+      "previous": 85,
+      "current": 89,
       "delta": -4
     },
     {
@@ -56,254 +532,786 @@
     },
     {
       "board": "Arena Code",
-      "model": "trinity-large-thinking",
-      "previous": 108,
-      "current": 112,
+      "model": "hunyuan-hy3-preview",
+      "previous": 87,
+      "current": 91,
       "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "qwen3.8-27b",
-      "previous": 9,
-      "current": 12,
-      "delta": -3
+      "model": "laguna-m.1",
+      "previous": 88,
+      "current": 92,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "gemini-3.7-flash-high",
-      "previous": 10,
-      "current": 13,
-      "delta": -3
+      "model": "gpt-5.1",
+      "previous": 89,
+      "current": 93,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "glm-5.2-max",
-      "previous": 11,
-      "current": 14,
-      "delta": -3
+      "model": "glm-4.6",
+      "previous": 90,
+      "current": 94,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "deepseek-v4-pro-high-20260813",
-      "previous": 12,
-      "current": 15,
-      "delta": -3
+      "model": "gpt-5.2-codex",
+      "previous": 91,
+      "current": 95,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "deepseek-v4-flash-high",
-      "previous": 13,
-      "current": 16,
-      "delta": -3
+      "model": "gpt-5.1-codex",
+      "previous": 92,
+      "current": 96,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-8-high",
-      "previous": 14,
-      "current": 17,
-      "delta": -3
+      "model": "mimo-v2-flash (non-thinking)",
+      "previous": 93,
+      "current": 97,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-7",
-      "previous": 15,
-      "current": 18,
-      "delta": -3
+      "model": "claude-haiku-4-5-20251001",
+      "previous": 94,
+      "current": 98,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-7-high",
-      "previous": 16,
-      "current": 19,
-      "delta": -3
+      "model": "deepseek-v3.2",
+      "previous": 95,
+      "current": 99,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "grok-4.5",
-      "previous": 17,
-      "current": 20,
-      "delta": -3
+      "model": "kimi-k2-thinking-turbo",
+      "previous": 96,
+      "current": 100,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-6-high",
-      "previous": 18,
-      "current": 21,
-      "delta": -3
+      "model": "laguna-xs.2",
+      "previous": 97,
+      "current": 101,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-8",
-      "previous": 19,
-      "current": 22,
-      "delta": -3
+      "model": "minimax-m2",
+      "previous": 98,
+      "current": 102,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "muse-spark-1.1",
-      "previous": 20,
-      "current": 23,
-      "delta": -3
+      "model": "mimo-v2-flash (thinking)",
+      "previous": 99,
+      "current": 103,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "gemini-3.6-flash-high",
-      "previous": 21,
-      "current": 24,
-      "delta": -3
+      "model": "qwen3-coder-480b-a35b-instruct",
+      "previous": 100,
+      "current": 104,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-sonnet-5-high",
-      "previous": 22,
-      "current": 25,
-      "delta": -3
+      "model": "deepseek-v3.2-exp",
+      "previous": 101,
+      "current": 105,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-6",
-      "previous": 23,
-      "current": 26,
-      "delta": -3
+      "model": "mistral-medium-3.5",
+      "previous": 102,
+      "current": 106,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "muse-spark-1.2 (xHigh)",
-      "previous": 24,
-      "current": 27,
-      "delta": -3
+      "model": "qwen3.5-35b-a3b",
+      "previous": 105,
+      "current": 109,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "gpt-5.6-terra-xhigh (codex-harness)",
-      "previous": 27,
-      "current": 30,
-      "delta": -3
+      "model": "gpt-5.1-codex-mini",
+      "previous": 106,
+      "current": 110,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "kimi-k2.6",
-      "previous": 32,
-      "current": 35,
-      "delta": -3
+      "model": "grok-4-1-fast-reasoning",
+      "previous": 107,
+      "current": 111,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "gemini-3.5-flash-high",
-      "previous": 34,
-      "current": 37,
-      "delta": -3
+      "model": "mistral-large-3",
+      "previous": 110,
+      "current": 114,
+      "delta": -4
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-5-20251101-high-32k",
-      "previous": 35,
-      "current": 38,
-      "delta": -3
+      "model": "gemini-2.5-pro",
+      "previous": 111,
+      "current": 115,
+      "delta": -4
     },
     {
       "board": "Arena Code",
+      "model": "grok-4.1-thinking",
+      "previous": 112,
+      "current": 116,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "devstral-2",
+      "previous": 113,
+      "current": 117,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "granite-4.1-8b",
+      "previous": 114,
+      "current": 118,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "mercury-2",
+      "previous": 115,
+      "current": 119,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "grok-code-fast-1",
+      "previous": 116,
+      "current": 120,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "grok-4-fast-reasoning",
+      "previous": 117,
+      "current": 121,
+      "delta": -4
+    },
+    {
+      "board": "Arena Code",
+      "model": "devstral-medium-2507",
+      "previous": 118,
+      "current": 122,
+      "delta": -4
+    },
+    {
+      "board": "Arena Text",
       "model": "gemini-3.5-flash-medium",
-      "previous": 36,
-      "current": 39,
+      "previous": 28,
+      "current": 25,
+      "delta": 3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gpt-4-0314",
+      "previous": 275,
+      "current": 278,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemini-1.5-flash-001",
+      "previous": 276,
+      "current": 279,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.1-nemotron-51b-instruct",
+      "previous": 277,
+      "current": 280,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.1-tulu-3-70b",
+      "previous": 278,
+      "current": 281,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "olmo-3.1-32b-think",
+      "previous": 279,
+      "current": 282,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "ibm-granite-h-small",
+      "previous": 280,
+      "current": 283,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "claude-3-sonnet-20240229",
+      "previous": 281,
+      "current": 284,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "nemotron-4-340b-instruct",
+      "previous": 283,
+      "current": 286,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3-70b-instruct",
+      "previous": 284,
+      "current": 287,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "command-r-plus-08-2024",
+      "previous": 285,
+      "current": 288,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gpt-4-0613",
+      "previous": 286,
+      "current": 289,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mistral-small-24b-instruct-2501",
+      "previous": 287,
+      "current": 290,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "glm-4-0520",
+      "previous": 288,
+      "current": 291,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen2.5-coder-32b-instruct",
+      "previous": 290,
+      "current": 293,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "c4ai-aya-expanse-32b",
+      "previous": 291,
+      "current": 294,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-2-9b-it",
+      "previous": 292,
+      "current": 295,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "deepseek-coder-v2",
+      "previous": 293,
+      "current": 296,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen2-72b-instruct",
+      "previous": 294,
+      "current": 297,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "command-r-plus",
+      "previous": 295,
+      "current": 298,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "claude-3-haiku-20240307",
+      "previous": 296,
+      "current": 299,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "amazon-nova-lite-v1.0",
+      "previous": 297,
+      "current": 300,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemini-1.5-flash-8b-001",
+      "previous": 298,
+      "current": 301,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-4",
+      "previous": 299,
+      "current": 302,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "olmo-2-0325-32b-instruct",
+      "previous": 300,
+      "current": 303,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "command-r-08-2024",
+      "previous": 301,
+      "current": 304,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mistral-large-2402",
+      "previous": 302,
+      "current": 305,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "amazon-nova-micro-v1.0",
+      "previous": 303,
+      "current": 306,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "ministral-8b-2410",
+      "previous": 305,
+      "current": 308,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemini-pro-dev-api",
+      "previous": 306,
+      "current": 309,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-110b-chat",
+      "previous": 307,
+      "current": 310,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "hunyuan-standard-256k",
+      "previous": 308,
+      "current": 311,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-72b-chat",
+      "previous": 310,
+      "current": 313,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mixtral-8x22b-instruct-v0.1",
+      "previous": 311,
+      "current": 314,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "command-r",
+      "previous": 312,
+      "current": 315,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gpt-3.5-turbo-0125",
+      "previous": 314,
+      "current": 317,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3-8b-instruct",
+      "previous": 315,
+      "current": 318,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemini-pro",
+      "previous": 316,
+      "current": 319,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "c4ai-aya-expanse-8b",
+      "previous": 317,
+      "current": 320,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mistral-medium",
+      "previous": 318,
+      "current": 321,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.1-tulu-3-8b",
+      "previous": 319,
+      "current": 322,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.1-8b-instruct",
+      "previous": 322,
+      "current": 325,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "granite-3.1-8b-instruct",
+      "previous": 323,
+      "current": 326,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gpt-3.5-turbo-1106",
+      "previous": 324,
+      "current": 327,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-32b-chat",
+      "previous": 325,
+      "current": 328,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-2-2b-it",
+      "previous": 326,
+      "current": 329,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-3-medium-4k-instruct",
+      "previous": 327,
+      "current": 330,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mixtral-8x7b-instruct-v0.1",
+      "previous": 328,
+      "current": 331,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-14b-chat",
+      "previous": 330,
+      "current": 333,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "deepseek-llm-67b-chat",
+      "previous": 332,
+      "current": 335,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "wizardlm-70b",
+      "previous": 333,
+      "current": 336,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "granite-3.0-8b-instruct",
+      "previous": 335,
+      "current": 338,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "granite-3.1-2b-instruct",
+      "previous": 340,
+      "current": 343,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-3-small-8k-instruct",
+      "previous": 344,
+      "current": 347,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-2-70b-chat",
+      "previous": 346,
+      "current": 349,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.2-3b-instruct",
+      "previous": 348,
+      "current": 351,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "granite-3.0-2b-instruct",
+      "previous": 350,
+      "current": 353,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama2-70b-steerlm-chat",
+      "previous": 351,
+      "current": 354,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwq-32b-preview",
+      "previous": 352,
+      "current": 355,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "wizardlm-13b",
+      "previous": 356,
+      "current": 359,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mistral-7b-instruct-v0.2",
+      "previous": 357,
+      "current": 360,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-7b-chat",
+      "previous": 359,
+      "current": 362,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-3-mini-4k-instruct-june-2024",
+      "previous": 360,
+      "current": 363,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen-14b-chat",
+      "previous": 363,
+      "current": 366,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "palm-2",
+      "previous": 364,
+      "current": 367,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-7b-it",
+      "previous": 365,
+      "current": 368,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "codellama-34b-instruct",
+      "previous": 366,
+      "current": 369,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-3-mini-128k-instruct",
+      "previous": 368,
+      "current": 371,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "phi-3-mini-4k-instruct",
+      "previous": 369,
+      "current": 372,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "codellama-70b-instruct",
+      "previous": 373,
+      "current": 376,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-1.1-2b-it",
+      "previous": 374,
+      "current": 377,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-3.2-1b-instruct",
+      "previous": 377,
+      "current": 380,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "mistral-7b-instruct",
+      "previous": 378,
+      "current": 381,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-2-7b-chat",
+      "previous": 379,
+      "current": 382,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "gemma-2b-it",
+      "previous": 380,
+      "current": 383,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "qwen1.5-4b-chat",
+      "previous": 381,
+      "current": 384,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "olmo-7b-instruct",
+      "previous": 382,
+      "current": 385,
+      "delta": -3
+    },
+    {
+      "board": "Arena Text",
+      "model": "llama-13b",
+      "previous": 394,
+      "current": 397,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "minimax-m3",
-      "previous": 37,
-      "current": 40,
+      "model": "gpt-5.6-sol-xhigh (codex-harness)",
+      "previous": 7,
+      "current": 10,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "gpt-5.5-high (codex-harness)",
-      "previous": 38,
-      "current": 41,
+      "model": "glm-5.3-max",
+      "previous": 8,
+      "current": 11,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "qwen3.6-max-preview",
-      "previous": 39,
-      "current": 42,
+      "model": "seed-2.1-pro-preview",
+      "previous": 26,
+      "current": 29,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "mimo-v2.5-pro",
-      "previous": 40,
-      "current": 43,
+      "model": "gpt-5.6-luna-xhigh (codex-harness)",
+      "previous": 29,
+      "current": 32,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "kimi-k2.7-code",
-      "previous": 41,
-      "current": 44,
+      "model": "qwen3.7-max-20260517",
+      "previous": 30,
+      "current": 33,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "claude-opus-4-5-20251101",
-      "previous": 42,
-      "current": 45,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v4-pro-high-preview",
-      "previous": 43,
-      "current": 46,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.4-high (codex-harness)",
-      "previous": 44,
-      "current": 47,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3.6-plus",
-      "previous": 45,
-      "current": 48,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.5 (codex-harness)",
-      "previous": 46,
-      "current": 49,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemini-3.5-flash-lite",
-      "previous": 47,
-      "current": 50,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemini-3.1-pro-preview",
-      "previous": 48,
-      "current": 51,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v4-pro",
-      "previous": 49,
-      "current": 52,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.4-medium (codex-harness)",
-      "previous": 50,
-      "current": 53,
+      "model": "gemini-3-pro",
+      "previous": 52,
+      "current": 55,
       "delta": -3
     },
     {
@@ -315,296 +1323,16 @@
     },
     {
       "board": "Arena Code",
-      "model": "kimi-k2.5-thinking",
-      "previous": 54,
-      "current": 57,
+      "model": "minimax-m2.7",
+      "previous": 67,
+      "current": 70,
       "delta": -3
     },
     {
       "board": "Arena Code",
-      "model": "glm-5",
-      "previous": 55,
-      "current": 58,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "glm-4.7",
-      "previous": 56,
-      "current": 59,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mimo-v2-pro",
-      "previous": 57,
-      "current": 60,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v4-flash-high-preview",
-      "previous": 58,
-      "current": 61,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5-medium",
-      "previous": 59,
-      "current": 62,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.2",
-      "previous": 60,
-      "current": 63,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.3-codex (codex-harness)",
-      "previous": 79,
-      "current": 82,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "kimi-k2.5-instant",
-      "previous": 63,
-      "current": 66,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "Inkling Small",
-      "previous": 64,
-      "current": 67,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "glm-5v-turbo",
-      "previous": 65,
-      "current": 68,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.4-mini-high",
-      "previous": 68,
-      "current": 71,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "claude-sonnet-4-5-20250929-high-32k",
-      "previous": 69,
-      "current": 72,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.1-medium",
-      "previous": 70,
-      "current": 73,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "minimax-m2.1-preview",
-      "previous": 73,
-      "current": 76,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "claude-sonnet-4-5-20250929",
-      "previous": 74,
-      "current": 77,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "minimax-m2.5",
-      "previous": 75,
-      "current": 78,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemini-3-flash (thinking-minimal)",
-      "previous": 76,
-      "current": 79,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "grok-4.20-beta-0309-reasoning",
-      "previous": 77,
-      "current": 80,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "solar-pro4",
-      "previous": 78,
-      "current": 81,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemma-4-31b",
-      "previous": 80,
-      "current": 83,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemma-4-26b-a4b",
-      "previous": 81,
-      "current": 84,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v3.2-thinking",
-      "previous": 82,
-      "current": 85,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "muse-glimmer",
-      "previous": 83,
-      "current": 86,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3.5-122b-a10b",
-      "previous": 84,
-      "current": 87,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3.5-27b",
-      "previous": 85,
-      "current": 88,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "laguna-m.1",
-      "previous": 88,
-      "current": 91,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.1",
-      "previous": 89,
-      "current": 92,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "glm-4.6",
-      "previous": 90,
-      "current": 93,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.2-codex",
-      "previous": 91,
-      "current": 94,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.1-codex",
-      "previous": 92,
-      "current": 95,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mimo-v2-flash (non-thinking)",
-      "previous": 93,
-      "current": 96,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "claude-haiku-4-5-20251001",
-      "previous": 94,
-      "current": 97,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v3.2",
-      "previous": 95,
-      "current": 98,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "kimi-k2-thinking-turbo",
-      "previous": 96,
-      "current": 99,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "laguna-xs.2",
-      "previous": 97,
-      "current": 100,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "minimax-m2",
-      "previous": 98,
-      "current": 101,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mimo-v2-flash (thinking)",
-      "previous": 99,
-      "current": 102,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3-coder-480b-a35b-instruct",
-      "previous": 100,
-      "current": 103,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "deepseek-v3.2-exp",
-      "previous": 101,
-      "current": 104,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mistral-medium-3.5",
-      "previous": 102,
-      "current": 105,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "KAT-Coder-Pro-V1",
-      "previous": 103,
-      "current": 106,
+      "model": "claude-opus-4-1-20250805",
+      "previous": 72,
+      "current": 75,
       "delta": -3
     },
     {
@@ -616,185 +1344,66 @@
     },
     {
       "board": "Arena Code",
-      "model": "qwen3.5-35b-a3b",
-      "previous": 105,
-      "current": 108,
+      "model": "qwen3.5-flash",
+      "previous": 109,
+      "current": 112,
       "delta": -3
     },
     {
-      "board": "Arena Code",
-      "model": "gpt-5.1-codex-mini",
-      "previous": 106,
-      "current": 109,
-      "delta": -3
+      "board": "Arena Text",
+      "model": "gpt-5.6-sol-xhigh",
+      "previous": 17,
+      "current": 15,
+      "delta": 2
     },
     {
-      "board": "Arena Code",
-      "model": "grok-4-1-fast-reasoning",
-      "previous": 107,
-      "current": 110,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mistral-large-3",
-      "previous": 110,
-      "current": 113,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gemini-2.5-pro",
-      "previous": 111,
-      "current": 114,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "grok-4.1-thinking",
-      "previous": 112,
-      "current": 115,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "devstral-2",
-      "previous": 113,
-      "current": 116,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "granite-4.1-8b",
-      "previous": 114,
-      "current": 117,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "mercury-2",
-      "previous": 115,
-      "current": 118,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "grok-code-fast-1",
-      "previous": 116,
-      "current": 119,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "grok-4-fast-reasoning",
-      "previous": 117,
-      "current": 120,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "devstral-medium-2507",
-      "previous": 118,
-      "current": 121,
-      "delta": -3
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.6-sol-xhigh (codex-harness)",
-      "previous": 7,
-      "current": 9,
-      "delta": -2
-    },
-    {
-      "board": "Arena Code",
+      "board": "Arena Text",
       "model": "glm-5.3-max",
-      "previous": 8,
-      "current": 10,
+      "previous": 15,
+      "current": 17,
       "delta": -2
     },
     {
-      "board": "Arena Code",
-      "model": "seed-2.1-pro-preview",
-      "previous": 26,
-      "current": 28,
-      "delta": -2
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.6-luna-xhigh (codex-harness)",
-      "previous": 29,
-      "current": 31,
-      "delta": -2
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3.7-max-20260517",
+      "board": "Arena Text",
+      "model": "claude-opus-4-5-20251101-high-32k",
       "previous": 30,
       "current": 32,
       "delta": -2
     },
     {
-      "board": "Arena Code",
-      "model": "gemini-3-pro",
-      "previous": 52,
-      "current": 54,
+      "board": "Arena Text",
+      "model": "glm-5.2-max",
+      "previous": 33,
+      "current": 35,
       "delta": -2
     },
     {
-      "board": "Arena Code",
-      "model": "inkling",
+      "board": "Arena Text",
+      "model": "qwen3.7-plus",
+      "previous": 56,
+      "current": 58,
+      "delta": -2
+    },
+    {
+      "board": "Arena Text",
+      "model": "claude-sonnet-4-5-20250929",
       "previous": 62,
-      "current": 64,
-      "delta": -2
+      "current": 60,
+      "delta": 2
     },
     {
-      "board": "Arena Code",
-      "model": "minimax-m2.7",
-      "previous": 67,
-      "current": 69,
-      "delta": -2
+      "board": "Arena Text",
+      "model": "deepseek-v4-flash",
+      "previous": 89,
+      "current": 87,
+      "delta": 2
     },
     {
-      "board": "Arena Code",
-      "model": "claude-opus-4-1-20250805",
-      "previous": 72,
-      "current": 74,
-      "delta": -2
-    },
-    {
-      "board": "Arena Code",
-      "model": "hunyuan-hy3-preview",
+      "board": "Arena Text",
+      "model": "qwen3.8-27b",
       "previous": 87,
       "current": 89,
       "delta": -2
-    },
-    {
-      "board": "Arena Code",
-      "model": "qwen3.5-flash",
-      "previous": 109,
-      "current": 111,
-      "delta": -2
-    },
-    {
-      "board": "Arena Code",
-      "model": "grok-4.6-high",
-      "previous": 5,
-      "current": 6,
-      "delta": -1
-    },
-    {
-      "board": "Arena Code",
-      "model": "claude-fable-5",
-      "previous": 6,
-      "current": 7,
-      "delta": -1
-    },
-    {
-      "board": "Arena Code",
-      "model": "gpt-5.5-xhigh (codex-harness)",
-      "previous": 33,
-      "current": 34,
-      "delta": -1
     }
   ]
 }
