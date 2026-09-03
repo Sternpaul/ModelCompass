@@ -18,11 +18,11 @@ _Tool-use / agentic task category score._
 | 3 | `gpt-5-6-sol` | 94.500 |
 | 4 | `claude-fable` | 92.700 |
 | 5 | `gpt-5-6-terra` | 91.200 |
-| 6 | `claude-sonnet-5` | 86.200 |
-| 7 | `qwen3-8-max` | 86.100 |
-| 8 | `glm-5-3` | 85.100 |
-| 9 | `claude-fable-5-1` | 85 |
-| 10 | `gpt-5-5` | 85 |
+| 6 | `gemini-3-8-flash` | 87 |
+| 7 | `claude-sonnet-5` | 86.200 |
+| 8 | `qwen3-8-max` | 86.100 |
+| 9 | `grok-4-6` | 85.200 |
+| 10 | `claude-fable-5-1` | 85.100 |
 
 ## Coding
 

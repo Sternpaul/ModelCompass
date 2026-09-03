@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `qwen3.8-max-0902` | 1691.000 |
-| 2 | `claude-opus-5-max` | 1687.000 |
-| 3 | `kimi-k3-max` | 1674.000 |
-| 4 | `qwen3.8-max` | 1669.000 |
-| 5 | `claude-opus-5-high` | 1661.000 |
-| 6 | `grok-4.6-high` | 1629.000 |
-| 7 | `claude-fable-5` | 1628.000 |
-| 8 | `hy4-preview` | 1627.000 |
-| 9 | `qwen3.8-flash-next` | 1622.000 |
-| 10 | `gpt-5.6-sol-xhigh (codex-harness)` | 1616.000 |
+| 1 | `claude-fable-5.1-max` | 1765.000 |
+| 2 | `qwen3.8-max-0902` | 1688.000 |
+| 3 | `claude-opus-5-max` | 1687.000 |
+| 4 | `kimi-k3-max` | 1674.000 |
+| 5 | `qwen3.8-max` | 1669.000 |
+| 6 | `claude-opus-5-high` | 1661.000 |
+| 7 | `grok-4.6-high` | 1629.000 |
+| 8 | `claude-fable-5` | 1628.000 |
+| 9 | `hy4-preview` | 1626.000 |
+| 10 | `qwen3.8-flash-next` | 1622.000 |
 
 ## Document Arena
 
@@ -85,16 +85,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `minimax-h3` | 1494.000 |
+| 1 | `minimax-h3` | 1497.000 |
 | 2 | `gemini-omni-1.1-flash` | 1488.000 |
-| 3 | `dreamina-seedance-2.5-720p` | 1483.000 |
-| 4 | `dreamina-seedance-2.0-720p` | 1477.000 |
-| 5 | `gemini-omni-flash` | 1463.000 |
-| 6 | `grok-imagine-video-1.5-720p` | 1459.000 |
-| 7 | `flux-3-video-20260811` | 1447.000 |
-| 8 | `happyhorse-1.0` | 1442.000 |
-| 9 | `wan2.7-i2v` | 1427.000 |
-| 10 | `grok-imagine-video-720p` | 1415.000 |
+| 3 | `wan3.0` | 1481.000 |
+| 4 | `dreamina-seedance-2.5-720p` | 1478.000 |
+| 5 | `dreamina-seedance-2.0-720p` | 1477.000 |
+| 6 | `gemini-omni-flash` | 1462.000 |
+| 7 | `grok-imagine-video-1.5-720p` | 1456.000 |
+| 8 | `flux-3-video-20260811` | 1449.000 |
+| 9 | `happyhorse-1.0` | 1442.000 |
+| 10 | `wan2.7-i2v` | 1428.000 |
 
 ## Search Arena
 
@@ -121,16 +121,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1508.000 |
+| 1 | `claude-fable-5` | 1507.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-opus-4-7-high` | 1502.000 |
-| 4 | `muse-spark-1.2 (xHigh)` | 1499.000 |
-| 5 | `claude-opus-4-6` | 1498.000 |
-| 6 | `claude-opus-4-7` | 1494.000 |
-| 7 | `claude-opus-5-high` | 1492.000 |
-| 8 | `muse-spark-1.1` | 1491.000 |
-| 9 | `gemini-3.7-flash-high` | 1491.000 |
-| 10 | `kimi-k3-max` | 1489.000 |
+| 3 | `claude-fable-5.1-max` | 1504.000 |
+| 4 | `claude-opus-4-7-high` | 1502.000 |
+| 5 | `muse-spark-1.2 (xHigh)` | 1499.000 |
+| 6 | `claude-opus-4-6` | 1498.000 |
+| 7 | `claude-opus-4-7` | 1494.000 |
+| 8 | `gemini-3.8-flash-high` | 1494.000 |
+| 9 | `claude-opus-5-high` | 1493.000 |
+| 10 | `muse-spark-1.1` | 1492.000 |
 
 ## Text To Image Arena
 

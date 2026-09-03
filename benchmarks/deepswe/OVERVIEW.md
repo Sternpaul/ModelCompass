@@ -13,13 +13,13 @@ _pass@1 per harness+model+effort config._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5` | — |
+| 1 | `gemini-3-8-flash` | — |
 | 2 | `claude-opus-5` | — |
 | 3 | `claude-opus-5` | — |
-| 4 | `gpt-5-6-sol` | — |
+| 4 | `claude-opus-5` | — |
 | 5 | `gpt-5-6-sol` | — |
-| 6 | `claude-fable-5` | — |
-| 7 | `claude-fable-5` | — |
-| 8 | `gpt-5-6-terra` | — |
-| 9 | `gpt-5-6-sol` | — |
-| 10 | `glm-5-3` | — |
+| 6 | `gemini-3-8-flash` | — |
+| 7 | `gpt-5-6-sol` | — |
+| 8 | `claude-fable-5` | — |
+| 9 | `claude-fable-5` | — |
+| 10 | `gpt-5-6-terra` | — |

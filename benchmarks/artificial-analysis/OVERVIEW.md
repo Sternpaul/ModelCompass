@@ -49,16 +49,16 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `xai/grok-4-6` | 0.949 |
-| 2 | `google/gemini-3-7-flash` | 0.945 |
-| 3 | `openai/gpt-5-6-sol` | 0.941 |
-| 4 | `google/gemini-3-1-pro-preview` | 0.941 |
-| 5 | `anthropic/claude-opus-5-xhigh` | 0.937 |
-| 6 | `anthropic/claude-opus-5-high` | 0.937 |
-| 7 | `anthropic/claude-fable-5-1` | 0.937 |
-| 8 | `xai/grok-4-6-xhigh` | 0.935 |
-| 9 | `xai/grok-4-6-medium` | 0.935 |
-| 10 | `kimi/kimi-k3` | 0.935 |
+| 1 | `google/gemini-3-8-flash` | 0.953 |
+| 2 | `xai/grok-4-6` | 0.949 |
+| 3 | `google/gemini-3-7-flash` | 0.945 |
+| 4 | `openai/gpt-5-6-sol` | 0.941 |
+| 5 | `google/gemini-3-1-pro-preview` | 0.941 |
+| 6 | `anthropic/claude-opus-5-xhigh` | 0.937 |
+| 7 | `anthropic/claude-opus-5-high` | 0.937 |
+| 8 | `anthropic/claude-fable-5-1` | 0.937 |
+| 9 | `google/gemini-3-8-flash-medium` | 0.935 |
+| 10 | `xai/grok-4-6-xhigh` | 0.935 |
 
 ## HLE
 
@@ -105,14 +105,14 @@ _Long-context reasoning score (%)._
 |---|-------|------:|
 | 1 | `meta/muse-spark-1-2` | 0.833 |
 | 2 | `kimi/kimi-k3` | 0.827 |
-| 3 | `meta/muse-spark-1-1` | 0.813 |
-| 4 | `google/gemini-3-7-flash-medium` | 0.810 |
-| 5 | `google/gemini-3-5-flash` | 0.810 |
-| 6 | `minimax/minimax-m3` | 0.803 |
-| 7 | `meta/muse-glimmer` | 0.800 |
-| 8 | `google/gemini-3-7-flash` | 0.800 |
-| 9 | `anthropic/claude-fable-5-1` | 0.800 |
-| 10 | `openai/gpt-5-6-terra` | 0.797 |
+| 3 | `google/gemini-3-8-flash-medium` | 0.820 |
+| 4 | `meta/muse-spark-1-1` | 0.813 |
+| 5 | `google/gemini-3-8-flash` | 0.810 |
+| 6 | `google/gemini-3-7-flash-medium` | 0.810 |
+| 7 | `google/gemini-3-5-flash` | 0.810 |
+| 8 | `minimax/minimax-m3` | 0.803 |
+| 9 | `meta/muse-glimmer` | 0.800 |
+| 10 | `google/gemini-3-7-flash` | 0.800 |
 
 ## LiveCodeBench
 
@@ -220,7 +220,7 @@ _TAU-bench banking domain agent score (%)._
 | 7 | `zai/glm-5-3-flash` | 0.472 |
 | 8 | `anthropic/claude-fable-5-1` | 0.472 |
 | 9 | `kimi/kimi-k3` | 0.460 |
-| 10 | `anthropic/claude-fable-5-1-xhigh` | 0.458 |
+| 10 | `google/gemini-3-8-flash-medium` | 0.458 |
 
 ## Terminal-Bench Hard
 
