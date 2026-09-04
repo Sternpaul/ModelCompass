@@ -3,8 +3,8 @@
     "leaderboard": "aa_lcr",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "lcr",
-    "fetched_at": "2026-09-03T08:49:15.740181+00:00",
-    "model_count_with_data": 634
+    "fetched_at": "2026-09-04T08:45:05.944721+00:00",
+    "model_count_with_data": 643
   },
   "models": [
     {
@@ -73,6 +73,11 @@
       "score": 0.796666666666667
     },
     {
+      "model": "meta/muse-spark-1-3-xhigh",
+      "name": "Muse Spark 1.3 (xhigh)",
+      "score": 0.793333333333333
+    },
+    {
       "model": "anthropic/claude-fable-5-1-low",
       "name": "Claude Fable 5.1 (Adaptive Reasoning, Low Effort, Default Fallback)",
       "score": 0.793333333333333
@@ -86,6 +91,11 @@
       "model": "openai/gpt-5-2-codex",
       "name": "GPT-5.2 Codex (xhigh)",
       "score": 0.793333333333333
+    },
+    {
+      "model": "meta/muse-spark-1-3",
+      "name": "Muse Spark 1.3 (max)",
+      "score": 0.79
     },
     {
       "model": "google/gemini-3-6-flash",
@@ -243,6 +253,11 @@
       "score": 0.766666666666667
     },
     {
+      "model": "openai/gpt-6-astra-medium",
+      "name": "GPT-6 Astra (medium)",
+      "score": 0.763333333333333
+    },
+    {
       "model": "openai/gpt-5-6-sol-xhigh",
       "name": "GPT-5.6 Sol (xhigh)",
       "score": 0.763333333333333
@@ -283,9 +298,19 @@
       "score": 0.763333333333333
     },
     {
+      "model": "openai/gpt-6-astra-high",
+      "name": "GPT-6 Astra (high)",
+      "score": 0.76
+    },
+    {
       "model": "anthropic/claude-opus-4-5-thinking",
       "name": "Claude Opus 4.5 (Reasoning)",
       "score": 0.76
+    },
+    {
+      "model": "mbzuai/k2-horizon-375b-a23b",
+      "name": "K2 Horizon 375B A23B",
+      "score": 0.756666666666667
     },
     {
       "model": "anthropic/claude-opus-5",
@@ -324,7 +349,7 @@
     },
     {
       "model": "multiversecomputing/quasar-438b",
-      "name": "Quasar 438B",
+      "name": "Quasar 438B (max, based on GLM-5.2)",
       "score": 0.75
     },
     {
@@ -368,6 +393,11 @@
       "score": 0.746666666666667
     },
     {
+      "model": "openai/gpt-6-astra",
+      "name": "GPT-6 Astra (max)",
+      "score": 0.743333333333333
+    },
+    {
       "model": "openai/gpt-5-6-sol-medium",
       "name": "GPT-5.6 Sol (medium)",
       "score": 0.743333333333333
@@ -386,6 +416,11 @@
       "model": "anthropic/claude-opus-4-6-adaptive",
       "name": "Claude Opus 4.6 (Adaptive Reasoning, Max Effort)",
       "score": 0.743333333333333
+    },
+    {
+      "model": "openai/gpt-6-astra-xhigh",
+      "name": "GPT-6 Astra (xhigh)",
+      "score": 0.74
     },
     {
       "model": "openai/gpt-5-6-luna-high",
@@ -476,6 +511,11 @@
       "model": "kimi/kimi-k2-5",
       "name": "Kimi K2.5 (Reasoning)",
       "score": 0.73
+    },
+    {
+      "model": "openai/gpt-6-astra-low",
+      "name": "GPT-6 Astra (low)",
+      "score": 0.726666666666667
     },
     {
       "model": "xai/grok-4-6-medium",
@@ -731,6 +771,11 @@
       "model": "alibaba/qwen3-5-35b-a3b",
       "name": "Qwen3.5 35B A3B (Reasoning)",
       "score": 0.683333333333333
+    },
+    {
+      "model": "openai/gpt-6-astra-non-reasoning",
+      "name": "GPT-6 Astra (Non-reasoning)",
+      "score": 0.68
     },
     {
       "model": "google/gemini-2-5-flash-preview-09-2025-reasoning",
@@ -1599,7 +1644,7 @@
     },
     {
       "model": "multiversecomputing/hypernova-60b",
-      "name": "HyperNova 60B 2605",
+      "name": "HyperNova 60B 2605 (high, based on gpt-oss-120b)",
       "score": 0.353333333333333
     },
     {

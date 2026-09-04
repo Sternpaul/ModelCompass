@@ -18,11 +18,11 @@ _Tool-use / agentic task category score._
 | 3 | `gpt-5-6-sol` | 94.500 |
 | 4 | `claude-fable` | 92.700 |
 | 5 | `gpt-5-6-terra` | 91.200 |
-| 6 | `gemini-3-8-flash` | 87 |
+| 6 | `qwen3-8-flash-next` | 88.700 |
 | 7 | `claude-sonnet-5` | 86.200 |
 | 8 | `qwen3-8-max` | 86.100 |
-| 9 | `grok-4-6` | 85.200 |
-| 10 | `claude-fable-5-1` | 85.100 |
+| 9 | `gpt-5-5` | 85 |
+| 10 | `gpt-6-astra` | 85 |
 
 ## Coding
 
@@ -75,8 +75,8 @@ _Factual knowledge category score._
 | 6 | `claude-opus-4-8` | 86.500 |
 | 7 | `gpt-5-6-sol` | 85.900 |
 | 8 | `sakana-fugu-ultra` | 85.900 |
-| 9 | `sakana-fugu` | 85.900 |
-| 10 | `claude-sonnet-5` | 84.300 |
+| 9 | `gpt-6-astra` | 85.900 |
+| 10 | `sakana-fugu` | 85.900 |
 
 ## Math
 
@@ -88,13 +88,13 @@ _Quantitative reasoning category score._
 | 1 | `gpt-5-6-sol` | 97 |
 | 2 | `gpt-5-6-terra` | 97 |
 | 3 | `gpt-5-6-luna` | 97 |
-| 4 | `qwen3-7-max` | 82.200 |
-| 5 | `glm-5-2` | 80.700 |
-| 6 | `deepseek-v4-pro-0813` | 80.500 |
-| 7 | `deepseek-v4-flash-0731` | 80.100 |
-| 8 | `inkling` | 79 |
-| 9 | `qwen3-7-plus` | 78.400 |
-| 10 | `inkling-small` | 77 |
+| 4 | `gpt-6-astra` | 85.200 |
+| 5 | `qwen3-7-max` | 82.200 |
+| 6 | `glm-5-2` | 80.700 |
+| 7 | `deepseek-v4-pro-0813` | 80.500 |
+| 8 | `deepseek-v4-flash-0731` | 80.100 |
+| 9 | `inkling` | 79 |
+| 10 | `qwen3-7-plus` | 78.400 |
 
 ## Multilingual
 
@@ -141,11 +141,11 @@ _Logical reasoning category score._
 |---|-------|------:|
 | 1 | `qwen3-8-max` | 95.500 |
 | 2 | `gpt-5-6-sol` | 85.200 |
-| 3 | `claude-opus-5` | 83.500 |
-| 4 | `claude-fable-5-1` | 83.100 |
-| 5 | `sakana-fugu-ultra` | 82.200 |
-| 6 | `qwen3-7-plus` | 79.700 |
-| 7 | `gpt-5-5` | 79 |
-| 8 | `gpt-5-6-terra` | 78.100 |
-| 9 | `qwen3-7-max` | 78 |
-| 10 | `gpt-5-4-pro` | 77.600 |
+| 3 | `gpt-6-astra` | 85.200 |
+| 4 | `claude-opus-5` | 83.500 |
+| 5 | `claude-fable-5-1` | 83.100 |
+| 6 | `sakana-fugu-ultra` | 82.200 |
+| 7 | `qwen3-7-plus` | 79.700 |
+| 8 | `gpt-5-5` | 79 |
+| 9 | `gpt-5-6-terra` | 78.100 |
+| 10 | `qwen3-7-max` | 78 |

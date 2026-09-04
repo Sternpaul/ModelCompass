@@ -49,16 +49,16 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `google/gemini-3-8-flash` | 0.953 |
-| 2 | `xai/grok-4-6` | 0.949 |
-| 3 | `google/gemini-3-7-flash` | 0.945 |
-| 4 | `openai/gpt-5-6-sol` | 0.941 |
-| 5 | `google/gemini-3-1-pro-preview` | 0.941 |
-| 6 | `anthropic/claude-opus-5-xhigh` | 0.937 |
-| 7 | `anthropic/claude-opus-5-high` | 0.937 |
-| 8 | `anthropic/claude-fable-5-1` | 0.937 |
-| 9 | `google/gemini-3-8-flash-medium` | 0.935 |
-| 10 | `xai/grok-4-6-xhigh` | 0.935 |
+| 1 | `openai/gpt-6-astra-xhigh` | 0.963 |
+| 2 | `openai/gpt-6-astra` | 0.961 |
+| 3 | `google/gemini-3-8-flash` | 0.953 |
+| 4 | `openai/gpt-6-astra-high` | 0.949 |
+| 5 | `xai/grok-4-6` | 0.949 |
+| 6 | `google/gemini-3-7-flash` | 0.945 |
+| 7 | `openai/gpt-5-6-sol` | 0.941 |
+| 8 | `meta/muse-spark-1-3-xhigh` | 0.941 |
+| 9 | `google/gemini-3-1-pro-preview` | 0.941 |
+| 10 | `openai/gpt-6-astra-medium` | 0.939 |
 
 ## HLE
 
@@ -72,11 +72,11 @@ _Humanity's Last Exam accuracy (%)._
 | 3 | `anthropic/claude-fable-5-1-high` | 0.559 |
 | 4 | `anthropic/claude-fable-5` | 0.555 |
 | 5 | `anthropic/claude-opus-5` | 0.549 |
-| 6 | `anthropic/claude-opus-5-xhigh` | 0.544 |
-| 7 | `anthropic/claude-fable-5-1-medium` | 0.538 |
-| 8 | `anthropic/claude-opus-5-high` | 0.528 |
-| 9 | `anthropic/claude-opus-5-medium` | 0.513 |
-| 10 | `openai/gpt-5-6-sol` | 0.495 |
+| 6 | `openai/gpt-6-astra` | 0.547 |
+| 7 | `openai/gpt-6-astra-xhigh` | 0.546 |
+| 8 | `anthropic/claude-opus-5-xhigh` | 0.544 |
+| 9 | `anthropic/claude-fable-5-1-medium` | 0.538 |
+| 10 | `openai/gpt-6-astra-high` | 0.531 |
 
 ## IFBench
 
@@ -180,11 +180,11 @@ _SciCode scientific coding accuracy (%)._
 | 3 | `anthropic/claude-fable-5-1-xhigh` | 0.601 |
 | 4 | `google/gemini-3-1-pro-preview` | 0.589 |
 | 5 | `kimi/kimi-k3` | 0.587 |
-| 6 | `meta/muse-spark-1-1` | 0.582 |
-| 7 | `google/gemini-3-7-flash-medium` | 0.579 |
-| 8 | `anthropic/claude-fable-5-1-high` | 0.576 |
-| 9 | `openai/gpt-5-6-sol-high` | 0.569 |
-| 10 | `google/gemini-3-7-flash` | 0.568 |
+| 6 | `meta/muse-spark-1-3-xhigh` | 0.586 |
+| 7 | `meta/muse-spark-1-1` | 0.582 |
+| 8 | `google/gemini-3-7-flash-medium` | 0.579 |
+| 9 | `anthropic/claude-fable-5-1-high` | 0.576 |
+| 10 | `meta/muse-spark-1-3` | 0.573 |
 
 ## TAU2
 
@@ -211,16 +211,16 @@ _TAU-bench banking domain agent score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `alibaba/qwen3-8-max` | 0.513 |
-| 2 | `xai/grok-4-6` | 0.507 |
-| 3 | `zai/glm-5-3` | 0.503 |
-| 4 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
-| 5 | `alibaba/qwen3-8-27b` | 0.480 |
-| 6 | `alibaba/qwen3-8-27b-medium` | 0.474 |
-| 7 | `zai/glm-5-3-flash` | 0.472 |
-| 8 | `anthropic/claude-fable-5-1` | 0.472 |
-| 9 | `kimi/kimi-k3` | 0.460 |
-| 10 | `google/gemini-3-8-flash-medium` | 0.458 |
+| 1 | `meta/muse-spark-1-3` | 0.524 |
+| 2 | `alibaba/qwen3-8-max` | 0.513 |
+| 3 | `xai/grok-4-6` | 0.507 |
+| 4 | `zai/glm-5-3` | 0.503 |
+| 5 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
+| 6 | `alibaba/qwen3-8-27b` | 0.480 |
+| 7 | `alibaba/qwen3-8-27b-medium` | 0.474 |
+| 8 | `zai/glm-5-3-flash` | 0.472 |
+| 9 | `meta/muse-spark-1-3-xhigh` | 0.472 |
+| 10 | `anthropic/claude-fable-5-1` | 0.472 |
 
 ## Terminal-Bench Hard
 
@@ -249,11 +249,11 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 |---|-------|------:|
 | 1 | `anthropic/claude-fable-5-1` | 0.914 |
 | 2 | `anthropic/claude-fable-5-1-xhigh` | 0.910 |
-| 3 | `anthropic/claude-fable-5-1-high` | 0.899 |
-| 4 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
-| 5 | `anthropic/claude-opus-5` | 0.891 |
-| 6 | `xai/grok-4-6` | 0.884 |
-| 7 | `openai/gpt-5-6-terra` | 0.880 |
-| 8 | `openai/gpt-5-6-sol` | 0.880 |
-| 9 | `anthropic/claude-opus-5-xhigh` | 0.880 |
-| 10 | `anthropic/claude-fable-5-1-medium` | 0.880 |
+| 3 | `openai/gpt-6-astra-high` | 0.899 |
+| 4 | `anthropic/claude-fable-5-1-high` | 0.899 |
+| 5 | `openai/gpt-6-astra-medium` | 0.895 |
+| 6 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
+| 7 | `openai/gpt-6-astra-non-reasoning` | 0.891 |
+| 8 | `openai/gpt-6-astra-xhigh` | 0.891 |
+| 9 | `anthropic/claude-opus-5` | 0.891 |
+| 10 | `openai/gpt-6-astra` | 0.884 |

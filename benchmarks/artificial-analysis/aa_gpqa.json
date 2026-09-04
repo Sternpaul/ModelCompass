@@ -3,14 +3,29 @@
     "leaderboard": "aa_gpqa",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "gpqa",
-    "fetched_at": "2026-09-03T08:49:15.740181+00:00",
-    "model_count_with_data": 634
+    "fetched_at": "2026-09-04T08:45:05.944721+00:00",
+    "model_count_with_data": 643
   },
   "models": [
+    {
+      "model": "openai/gpt-6-astra-xhigh",
+      "name": "GPT-6 Astra (xhigh)",
+      "score": 0.963
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "name": "GPT-6 Astra (max)",
+      "score": 0.961
+    },
     {
       "model": "google/gemini-3-8-flash",
       "name": "Gemini 3.8 Flash (high)",
       "score": 0.953
+    },
+    {
+      "model": "openai/gpt-6-astra-high",
+      "name": "GPT-6 Astra (high)",
+      "score": 0.949
     },
     {
       "model": "xai/grok-4-6",
@@ -28,9 +43,24 @@
       "score": 0.941
     },
     {
+      "model": "meta/muse-spark-1-3-xhigh",
+      "name": "Muse Spark 1.3 (xhigh)",
+      "score": 0.941
+    },
+    {
       "model": "google/gemini-3-1-pro-preview",
       "name": "Gemini 3.1 Pro Preview",
       "score": 0.941
+    },
+    {
+      "model": "openai/gpt-6-astra-medium",
+      "name": "GPT-6 Astra (medium)",
+      "score": 0.939
+    },
+    {
+      "model": "meta/muse-spark-1-3",
+      "name": "Muse Spark 1.3 (max)",
+      "score": 0.938
     },
     {
       "model": "anthropic/claude-opus-5-xhigh",
@@ -91,6 +121,11 @@
       "model": "openai/gpt-5-5-high",
       "name": "GPT-5.5 (high)",
       "score": 0.932
+    },
+    {
+      "model": "openai/gpt-6-astra-low",
+      "name": "GPT-6 Astra (low)",
+      "score": 0.931
     },
     {
       "model": "openai/gpt-5-6-sol-xhigh",
@@ -343,6 +378,11 @@
       "score": 0.896
     },
     {
+      "model": "openai/gpt-6-astra-non-reasoning",
+      "name": "GPT-6 Astra (Non-reasoning)",
+      "score": 0.895
+    },
+    {
       "model": "openai/gpt-5-6-luna-xhigh",
       "name": "GPT-5.6 Luna (xhigh)",
       "score": 0.895
@@ -476,6 +516,11 @@
       "model": "minimax/minimax-m2-7",
       "name": "MiniMax-M2.7",
       "score": 0.874
+    },
+    {
+      "model": "mbzuai/k2-horizon-375b-a23b",
+      "name": "K2 Horizon 375B A23B",
+      "score": 0.873
     },
     {
       "model": "openai/gpt-5-1",
@@ -1374,7 +1419,7 @@
     },
     {
       "model": "multiversecomputing/hypernova-60b",
-      "name": "HyperNova 60B 2605",
+      "name": "HyperNova 60B 2605 (high, based on gpt-oss-120b)",
       "score": 0.733
     },
     {
@@ -1394,7 +1439,7 @@
     },
     {
       "model": "multiversecomputing/quasar-438b",
-      "name": "Quasar 438B",
+      "name": "Quasar 438B (max, based on GLM-5.2)",
       "score": 0.732
     },
     {

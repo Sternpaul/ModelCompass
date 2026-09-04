@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-03T08:49:15.990940+00:00",
+    "generated_at": "2026-09-04T08:45:06.189038+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -84,13 +84,13 @@
       "aa_artificial_analysis_coding_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 246,
+        "model_count": 255,
         "top_n": 10
       },
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 621,
+        "model_count": 630,
         "top_n": 10
       },
       "aa_artificial_analysis_math_index": {
@@ -102,13 +102,13 @@
       "aa_gpqa": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 602,
+        "model_count": 611,
         "top_n": 10
       },
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 593,
+        "model_count": 602,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -120,7 +120,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 526,
+        "model_count": 535,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -144,7 +144,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 593,
+        "model_count": 602,
         "top_n": 10
       },
       "aa_tau2": {
@@ -156,7 +156,7 @@
       "aa_tau_banking": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 194,
+        "model_count": 203,
         "top_n": 10
       },
       "aa_terminalbench_hard": {
@@ -168,19 +168,19 @@
       "aa_terminalbench_v2_1": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 226,
+        "model_count": 235,
         "top_n": 10
       },
       "benchlm_agentic": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 93,
+        "model_count": 96,
         "top_n": 10
       },
       "benchlm_coding": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 107,
+        "model_count": 108,
         "top_n": 10
       },
       "benchlm_instructionFollowing": {
@@ -192,13 +192,13 @@
       "benchlm_knowledge": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 105,
+        "model_count": 107,
         "top_n": 10
       },
       "benchlm_math": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 69,
+        "model_count": 70,
         "top_n": 10
       },
       "benchlm_multilingual": {
@@ -216,13 +216,13 @@
       "benchlm_reasoning": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 39,
+        "model_count": 40,
         "top_n": 10
       },
       "deepswe_v1_1": {
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
-        "model_count": 65,
+        "model_count": 70,
         "top_n": 10
       },
       "movers": {
@@ -1799,6 +1799,11 @@
         "score": 77.2
       },
       {
+        "model": "openai/gpt-6-astra-high",
+        "name": "GPT-6 Astra (high)",
+        "score": 77.1
+      },
+      {
         "model": "anthropic/claude-fable-5-1-medium",
         "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
         "score": 77.1
@@ -1807,11 +1812,6 @@
         "model": "anthropic/claude-opus-5-xhigh",
         "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
         "score": 77.0
-      },
-      {
-        "model": "xai/grok-4-6",
-        "name": "Grok 4.6 (high)",
-        "score": 76.8
       }
     ],
     "aa_artificial_analysis_intelligence_index": [
@@ -1841,6 +1841,11 @@
         "score": 62.5
       },
       {
+        "model": "meta/muse-spark-1-3",
+        "name": "Muse Spark 1.3 (max)",
+        "score": 62.1
+      },
+      {
         "model": "anthropic/claude-fable-5",
         "name": "Claude Fable 5 (Adaptive Reasoning, Max Effort, Opus 4.8 Fallback)",
         "score": 62.1
@@ -1851,19 +1856,14 @@
         "score": 61.5
       },
       {
-        "model": "openai/gpt-5-6-sol",
-        "name": "GPT-5.6 Sol (max)",
-        "score": 60.9
+        "model": "openai/gpt-6-astra",
+        "name": "GPT-6 Astra (max)",
+        "score": 61.2
       },
       {
-        "model": "xai/grok-4-6",
-        "name": "Grok 4.6 (high)",
-        "score": 60.9
-      },
-      {
-        "model": "anthropic/claude-fable-5-1-medium",
-        "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-        "score": 60.5
+        "model": "openai/gpt-6-astra-xhigh",
+        "name": "GPT-6 Astra (xhigh)",
+        "score": 61.0
       }
     ],
     "aa_artificial_analysis_math_index": [
@@ -1920,9 +1920,24 @@
     ],
     "aa_gpqa": [
       {
+        "model": "openai/gpt-6-astra-xhigh",
+        "name": "GPT-6 Astra (xhigh)",
+        "score": 0.963
+      },
+      {
+        "model": "openai/gpt-6-astra",
+        "name": "GPT-6 Astra (max)",
+        "score": 0.961
+      },
+      {
         "model": "google/gemini-3-8-flash",
         "name": "Gemini 3.8 Flash (high)",
         "score": 0.953
+      },
+      {
+        "model": "openai/gpt-6-astra-high",
+        "name": "GPT-6 Astra (high)",
+        "score": 0.949
       },
       {
         "model": "xai/grok-4-6",
@@ -1940,34 +1955,19 @@
         "score": 0.941
       },
       {
+        "model": "meta/muse-spark-1-3-xhigh",
+        "name": "Muse Spark 1.3 (xhigh)",
+        "score": 0.941
+      },
+      {
         "model": "google/gemini-3-1-pro-preview",
         "name": "Gemini 3.1 Pro Preview",
         "score": 0.941
       },
       {
-        "model": "anthropic/claude-opus-5-xhigh",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-        "score": 0.937
-      },
-      {
-        "model": "anthropic/claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "score": 0.937
-      },
-      {
-        "model": "anthropic/claude-fable-5-1",
-        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
-        "score": 0.937
-      },
-      {
-        "model": "google/gemini-3-8-flash-medium",
-        "name": "Gemini 3.8 Flash (medium)",
-        "score": 0.935
-      },
-      {
-        "model": "xai/grok-4-6-xhigh",
-        "name": "Grok 4.6 (xhigh)",
-        "score": 0.935
+        "model": "openai/gpt-6-astra-medium",
+        "name": "GPT-6 Astra (medium)",
+        "score": 0.939
       }
     ],
     "aa_hle": [
@@ -1997,6 +1997,16 @@
         "score": 0.549
       },
       {
+        "model": "openai/gpt-6-astra",
+        "name": "GPT-6 Astra (max)",
+        "score": 0.547
+      },
+      {
+        "model": "openai/gpt-6-astra-xhigh",
+        "name": "GPT-6 Astra (xhigh)",
+        "score": 0.546
+      },
+      {
         "model": "anthropic/claude-opus-5-xhigh",
         "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
         "score": 0.544
@@ -2007,19 +2017,9 @@
         "score": 0.538
       },
       {
-        "model": "anthropic/claude-opus-5-high",
-        "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
-        "score": 0.528
-      },
-      {
-        "model": "anthropic/claude-opus-5-medium",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
-        "score": 0.513
-      },
-      {
-        "model": "openai/gpt-5-6-sol",
-        "name": "GPT-5.6 Sol (max)",
-        "score": 0.495
+        "model": "openai/gpt-6-astra-high",
+        "name": "GPT-6 Astra (high)",
+        "score": 0.531
       }
     ],
     "aa_ifbench": [
@@ -2309,6 +2309,11 @@
         "score": 0.587
       },
       {
+        "model": "meta/muse-spark-1-3-xhigh",
+        "name": "Muse Spark 1.3 (xhigh)",
+        "score": 0.586
+      },
+      {
         "model": "meta/muse-spark-1-1",
         "name": "Muse Spark 1.1 (xhigh)",
         "score": 0.582
@@ -2324,14 +2329,9 @@
         "score": 0.576
       },
       {
-        "model": "openai/gpt-5-6-sol-high",
-        "name": "GPT-5.6 Sol (high)",
-        "score": 0.569
-      },
-      {
-        "model": "google/gemini-3-7-flash",
-        "name": "Gemini 3.7 Flash (high)",
-        "score": 0.568
+        "model": "meta/muse-spark-1-3",
+        "name": "Muse Spark 1.3 (max)",
+        "score": 0.573
       }
     ],
     "aa_tau2": [
@@ -2388,6 +2388,11 @@
     ],
     "aa_tau_banking": [
       {
+        "model": "meta/muse-spark-1-3",
+        "name": "Muse Spark 1.3 (max)",
+        "score": 0.523711340206186
+      },
+      {
         "model": "alibaba/qwen3-8-max",
         "name": "Qwen3.8 Max",
         "score": 0.51340206185567
@@ -2423,19 +2428,14 @@
         "score": 0.472164948453608
       },
       {
-        "model": "anthropic/claude-fable-5-1",
-        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "model": "meta/muse-spark-1-3-xhigh",
+        "name": "Muse Spark 1.3 (xhigh)",
         "score": 0.472164948453608
       },
       {
-        "model": "kimi/kimi-k3",
-        "name": "Kimi K3 (max)",
-        "score": 0.45979381443299
-      },
-      {
-        "model": "google/gemini-3-8-flash-medium",
-        "name": "Gemini 3.8 Flash (medium)",
-        "score": 0.457731958762887
+        "model": "anthropic/claude-fable-5-1",
+        "name": "Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)",
+        "score": 0.472164948453608
       }
     ],
     "aa_terminalbench_hard": [
@@ -2502,9 +2502,19 @@
         "score": 0.910112359550562
       },
       {
+        "model": "openai/gpt-6-astra-high",
+        "name": "GPT-6 Astra (high)",
+        "score": 0.898876404494382
+      },
+      {
         "model": "anthropic/claude-fable-5-1-high",
         "name": "Claude Fable 5.1 (Adaptive Reasoning, High Effort, Default Fallback)",
         "score": 0.898876404494382
+      },
+      {
+        "model": "openai/gpt-6-astra-medium",
+        "name": "GPT-6 Astra (medium)",
+        "score": 0.895131086142322
       },
       {
         "model": "openai/gpt-5-6-sol-xhigh",
@@ -2512,34 +2522,24 @@
         "score": 0.895131086142322
       },
       {
+        "model": "openai/gpt-6-astra-non-reasoning",
+        "name": "GPT-6 Astra (Non-reasoning)",
+        "score": 0.891385767790262
+      },
+      {
+        "model": "openai/gpt-6-astra-xhigh",
+        "name": "GPT-6 Astra (xhigh)",
+        "score": 0.891385767790262
+      },
+      {
         "model": "anthropic/claude-opus-5",
         "name": "Claude Opus 5 (Adaptive Reasoning, Max Effort)",
         "score": 0.891385767790262
       },
       {
-        "model": "xai/grok-4-6",
-        "name": "Grok 4.6 (high)",
+        "model": "openai/gpt-6-astra",
+        "name": "GPT-6 Astra (max)",
         "score": 0.883895131086142
-      },
-      {
-        "model": "openai/gpt-5-6-terra",
-        "name": "GPT-5.6 Terra (max)",
-        "score": 0.880149812734082
-      },
-      {
-        "model": "openai/gpt-5-6-sol",
-        "name": "GPT-5.6 Sol (max)",
-        "score": 0.880149812734082
-      },
-      {
-        "model": "anthropic/claude-opus-5-xhigh",
-        "name": "Claude Opus 5 (Adaptive Reasoning, Xhigh Effort)",
-        "score": 0.880149812734082
-      },
-      {
-        "model": "anthropic/claude-fable-5-1-medium",
-        "name": "Claude Fable 5.1 (Adaptive Reasoning, Medium Effort, Default Fallback)",
-        "score": 0.880149812734082
       }
     ],
     "benchlm_agentic": [
@@ -2576,14 +2576,14 @@
         "name": "GPT-5.6 Terra",
         "creator": "OpenAI",
         "score": 91.2,
-        "category_rank": 23
+        "category_rank": 26
       },
       {
-        "model": "gemini-3-8-flash",
-        "name": "Gemini 3.8 Flash",
-        "creator": "Google",
-        "score": 87,
-        "category_rank": 28
+        "model": "qwen3-8-flash-next",
+        "name": "Qwen3.8-Flash-Next",
+        "creator": "Alibaba",
+        "score": 88.7,
+        "category_rank": 8
       },
       {
         "model": "claude-sonnet-5",
@@ -2600,18 +2600,18 @@
         "category_rank": 5
       },
       {
-        "model": "grok-4-6",
-        "name": "Grok 4.6",
-        "creator": "xAI",
-        "score": 85.2,
-        "category_rank": 12
+        "model": "gpt-5-5",
+        "name": "GPT-5.5",
+        "creator": "OpenAI",
+        "score": 85,
+        "category_rank": 14
       },
       {
-        "model": "claude-fable-5-1",
-        "name": "Claude Fable 5.1",
-        "creator": "Anthropic",
-        "score": 85.1,
-        "category_rank": 2
+        "model": "gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "creator": "OpenAI",
+        "score": 85,
+        "category_rank": 23
       }
     ],
     "benchlm_coding": [
@@ -2641,7 +2641,7 @@
         "name": "Qwen3.7 Max",
         "creator": "Alibaba",
         "score": 81.7,
-        "category_rank": 49
+        "category_rank": 50
       },
       {
         "model": "claude-fable-5-1",
@@ -2669,14 +2669,14 @@
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
         "score": 70.1,
-        "category_rank": 41
+        "category_rank": 43
       },
       {
         "model": "claude-opus-4-7-adaptive",
         "name": "Claude Opus 4.7 (Adaptive)",
         "creator": "Anthropic",
         "score": 69.8,
-        "category_rank": 19
+        "category_rank": 21
       },
       {
         "model": "ornith-1-5-397b",
@@ -2816,18 +2816,18 @@
         "category_rank": null
       },
       {
+        "model": "gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "creator": "OpenAI",
+        "score": 85.9,
+        "category_rank": null
+      },
+      {
         "model": "sakana-fugu",
         "name": "Sakana Fugu",
         "creator": "Sakana AI",
         "score": 85.9,
         "category_rank": null
-      },
-      {
-        "model": "claude-sonnet-5",
-        "name": "Claude Sonnet 5",
-        "creator": "Anthropic",
-        "score": 84.3,
-        "category_rank": 6
       }
     ],
     "benchlm_math": [
@@ -2850,6 +2850,13 @@
         "name": "GPT-5.6 Luna",
         "creator": "OpenAI",
         "score": 97,
+        "category_rank": null
+      },
+      {
+        "model": "gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "creator": "OpenAI",
+        "score": 85.2,
         "category_rank": null
       },
       {
@@ -2892,13 +2899,6 @@
         "name": "Qwen3.7 Plus",
         "creator": "Alibaba",
         "score": 78.4,
-        "category_rank": null
-      },
-      {
-        "model": "inkling-small",
-        "name": "Inkling-Small",
-        "creator": "Thinking Machines Lab",
-        "score": 77,
         "category_rank": null
       }
     ],
@@ -3062,6 +3062,13 @@
         "category_rank": null
       },
       {
+        "model": "gpt-6-astra",
+        "name": "GPT-6 Astra",
+        "creator": "OpenAI",
+        "score": 85.2,
+        "category_rank": null
+      },
+      {
         "model": "claude-opus-5",
         "name": "Claude Opus 5",
         "creator": "Anthropic",
@@ -3109,16 +3116,20 @@
         "creator": "Alibaba",
         "score": 78,
         "category_rank": null
-      },
-      {
-        "model": "gpt-5-4-pro",
-        "name": "GPT-5.4 Pro",
-        "creator": "OpenAI",
-        "score": 77.6,
-        "category_rank": null
       }
     ],
     "deepswe_v1_1": [
+      {
+        "model": "gpt-6-astra",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "xhigh",
+        "pass_rate": 0.7411504424778761,
+        "n_passed": 335,
+        "n_attempted": 452,
+        "mean_cost_usd": 6.52377356460177,
+        "mean_output_tokens": 29557.327433628318,
+        "rank": 1
+      },
       {
         "model": "gemini-3-8-flash",
         "harness": "mini-swe-agent",
@@ -3128,7 +3139,7 @@
         "n_attempted": 447,
         "mean_cost_usd": 2.362349413758389,
         "mean_output_tokens": 143242.6644295302,
-        "rank": 1
+        "rank": 2
       },
       {
         "model": "claude-opus-5",
@@ -3139,7 +3150,29 @@
         "n_attempted": 444,
         "mean_cost_usd": 11.837583271396396,
         "mean_output_tokens": 117565.6936936937,
-        "rank": 2
+        "rank": 3
+      },
+      {
+        "model": "gpt-6-astra",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "high",
+        "pass_rate": 0.7323008849557522,
+        "n_passed": 331,
+        "n_attempted": 452,
+        "mean_cost_usd": 5.723721956194691,
+        "mean_output_tokens": 26505.853982300883,
+        "rank": 4
+      },
+      {
+        "model": "gpt-6-astra",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "max",
+        "pass_rate": 0.7323008849557522,
+        "n_passed": 331,
+        "n_attempted": 452,
+        "mean_cost_usd": 12.369032401327434,
+        "mean_output_tokens": 61148.50663716814,
+        "rank": 5
       },
       {
         "model": "claude-opus-5",
@@ -3150,7 +3183,7 @@
         "n_attempted": 447,
         "mean_cost_usd": 9.07220232326622,
         "mean_output_tokens": 91672.01565995526,
-        "rank": 3
+        "rank": 6
       },
       {
         "model": "claude-opus-5",
@@ -3161,7 +3194,18 @@
         "n_attempted": 449,
         "mean_cost_usd": 6.076084489977728,
         "mean_output_tokens": 64207.43429844098,
-        "rank": 4
+        "rank": 7
+      },
+      {
+        "model": "gpt-6-astra",
+        "harness": "mini-swe-agent",
+        "reasoning_effort": "medium",
+        "pass_rate": 0.7278761061946902,
+        "n_passed": 329,
+        "n_attempted": 452,
+        "mean_cost_usd": 4.379527705752213,
+        "mean_output_tokens": 20361.809734513274,
+        "rank": 8
       },
       {
         "model": "gpt-5-6-sol",
@@ -3172,7 +3216,7 @@
         "n_attempted": 450,
         "mean_cost_usd": 8.386436346666667,
         "mean_output_tokens": 60013.64444444444,
-        "rank": 5
+        "rank": 9
       },
       {
         "model": "gemini-3-8-flash",
@@ -3183,50 +3227,6 @@
         "n_attempted": 452,
         "mean_cost_usd": 1.9671024789823006,
         "mean_output_tokens": 124684.36283185841,
-        "rank": 6
-      },
-      {
-        "model": "gpt-5-6-sol",
-        "harness": "mini-swe-agent",
-        "reasoning_effort": "xhigh",
-        "pass_rate": 0.7073170731707317,
-        "n_passed": 319,
-        "n_attempted": 451,
-        "mean_cost_usd": 4.703663860310422,
-        "mean_output_tokens": 40744.59201773836,
-        "rank": 7
-      },
-      {
-        "model": "claude-fable-5",
-        "harness": "mini-swe-agent",
-        "reasoning_effort": "xhigh",
-        "pass_rate": 0.6991150442477876,
-        "n_passed": 316,
-        "n_attempted": 452,
-        "mean_cost_usd": 13.414521495535714,
-        "mean_output_tokens": 80352.1703539823,
-        "rank": 8
-      },
-      {
-        "model": "claude-fable-5",
-        "harness": "mini-swe-agent",
-        "reasoning_effort": "max",
-        "pass_rate": 0.6972477064220184,
-        "n_passed": 304,
-        "n_attempted": 436,
-        "mean_cost_usd": 21.634702092592594,
-        "mean_output_tokens": 118592.77293577982,
-        "rank": 9
-      },
-      {
-        "model": "gpt-5-6-terra",
-        "harness": "mini-swe-agent",
-        "reasoning_effort": "max",
-        "pass_rate": 0.6962305986696231,
-        "n_passed": 314,
-        "n_attempted": 451,
-        "mean_cost_usd": 4.945847263858093,
-        "mean_output_tokens": 71938.62527716186,
         "rank": 10
       }
     ],
@@ -3304,63 +3304,63 @@
     ],
     "or_usage_tokens": [
       {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 11610288106978,
-        "requests": 361595456,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 11948724757643,
+        "requests": 359348957,
         "rank": 1
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11441176022416,
-        "requests": 334961890,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 11600823306313,
+        "requests": 364524521,
         "rank": 2
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 11373625081202,
-        "requests": 425205307,
+        "tokens": 11285690777157,
+        "requests": 429068938,
         "rank": 3
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 7985097492153,
-        "requests": 65238211,
+        "tokens": 10974170793670,
+        "requests": 92786286,
         "rank": 4
       },
       {
-        "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 6106068657104,
-        "requests": 87516072,
+        "model": "minimax/minimax-m3-20260531",
+        "tokens": 6600321689016,
+        "requests": 92963155,
         "rank": 5
       },
       {
-        "model": "minimax/minimax-m3-20260531",
-        "tokens": 6025474995233,
-        "requests": 85992278,
+        "model": "tencent/hy3-20260706",
+        "tokens": 5248186042870,
+        "requests": 69607859,
         "rank": 6
       },
       {
-        "model": "tencent/hy3-20260706",
-        "tokens": 5588658607857,
-        "requests": 75566250,
+        "model": "deepseek/deepseek-v4-flash-20260423",
+        "tokens": 5180516330110,
+        "requests": 494879333,
         "rank": 7
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260423",
-        "tokens": 5178243763696,
-        "requests": 491804455,
+        "model": "xiaomi/mimo-v2.5-20260422",
+        "tokens": 4501597690393,
+        "requests": 79190749,
         "rank": 8
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 4435170913596,
-        "requests": 37487092,
+        "tokens": 4129651724567,
+        "requests": 35353069,
         "rank": 9
       },
       {
         "model": "google/gemini-3.7-flash-20260813",
-        "tokens": 2847175288627,
-        "requests": 88621462,
+        "tokens": 2640577544490,
+        "requests": 82519688,
         "rank": 10
       }
     ],
