@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5.1-max` | 1765.000 |
-| 2 | `qwen3.8-max-0902` | 1688.000 |
+| 1 | `claude-fable-5.1-max` | 1763.000 |
+| 2 | `qwen3.8-max-0902` | 1689.000 |
 | 3 | `claude-opus-5-max` | 1687.000 |
 | 4 | `kimi-k3-max` | 1674.000 |
-| 5 | `qwen3.8-max` | 1669.000 |
-| 6 | `claude-opus-5-high` | 1661.000 |
-| 7 | `grok-4.6-high` | 1629.000 |
-| 8 | `claude-fable-5` | 1628.000 |
-| 9 | `hy4-preview` | 1626.000 |
-| 10 | `qwen3.8-flash-next` | 1622.000 |
+| 5 | `qwen3.8-max` | 1670.000 |
+| 6 | `claude-opus-5-high` | 1662.000 |
+| 7 | `claude-fable-5` | 1629.000 |
+| 8 | `grok-4.6-high` | 1625.000 |
+| 9 | `qwen3.8-flash-next` | 1625.000 |
+| 10 | `hy4-preview` | 1623.000 |
 
 ## Document Arena
 
@@ -67,15 +67,15 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-image-2 (medium)` | 1462.000 |
-| 2 | `grok-imagine-image-2.0 (low)` | 1439.000 |
-| 3 | `mai-image-2.6-preview` | 1417.000 |
-| 4 | `muse-image` | 1405.000 |
-| 5 | `mai-image-2.5` | 1399.000 |
-| 6 | `seedream-5.0-pro` | 1395.000 |
-| 7 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
+| 1 | `gpt-image-2 (medium)` | 1461.000 |
+| 2 | `mai-image-2.6` | 1439.000 |
+| 3 | `grok-imagine-image-2.0 (low)` | 1439.000 |
+| 4 | `muse-image` | 1403.000 |
+| 5 | `mai-image-2.5` | 1400.000 |
+| 6 | `seedream-5.0-pro` | 1394.000 |
+| 7 | `chatgpt-image-latest-high-fidelity (20251216)` | 1390.000 |
 | 8 | `grok-imagine-image-quality (20260519)` | 1390.000 |
-| 9 | `chatgpt-image-latest-high-fidelity (20251216)` | 1390.000 |
+| 9 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
 | 10 | `gemini-3-pro-image-preview (nano-banana-pro)` | 1385.000 |
 
 ## Image To Video Arena
@@ -140,15 +140,15 @@ _Human-preference Elo._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gpt-image-2 (medium)` | 1382.000 |
-| 2 | `mai-image-2.6-preview` | 1331.000 |
-| 3 | `grok-imagine-image-2.0 (low)` | 1316.000 |
-| 4 | `reve-2.1` | 1302.000 |
-| 5 | `muse-image` | 1281.000 |
+| 2 | `mai-image-2.6` | 1332.000 |
+| 3 | `grok-imagine-image-2.0 (low)` | 1315.000 |
+| 4 | `reve-2.1` | 1301.000 |
+| 5 | `muse-image` | 1279.000 |
 | 6 | `reve-2.0` | 1270.000 |
 | 7 | `seedream-5.0-pro` | 1258.000 |
-| 8 | `qwen-image-3.0-pro` | 1255.000 |
+| 8 | `qwen-image-3.0-pro` | 1254.000 |
 | 9 | `mai-image-2.5` | 1254.000 |
-| 10 | `gemini-3.1-flash-lite-image (nano-banana-2-lite)` | 1251.000 |
+| 10 | `gemini-3.1-flash-lite-image (nano-banana-2-lite)` | 1250.000 |
 
 ## Text To Video Arena
 
@@ -158,15 +158,15 @@ _Human-preference Elo._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gemini-omni-1.1-flash` | 1515.000 |
-| 2 | `gemini-omni-flash` | 1512.000 |
-| 3 | `flux-3-video` | 1495.000 |
-| 4 | `dreamina-seedance-2.0-720p` | 1479.000 |
-| 5 | `dreamina-seedance-2.5-720p` | 1476.000 |
-| 6 | `minimax-h3` | 1460.000 |
-| 7 | `muse-video` | 1457.000 |
-| 8 | `happyhorse-1.0` | 1428.000 |
-| 9 | `sora-2-pro` | 1365.000 |
-| 10 | `veo-3.1-audio` | 1364.000 |
+| 2 | `gemini-omni-flash` | 1511.000 |
+| 3 | `wan3.0` | 1494.000 |
+| 4 | `flux-3-video` | 1494.000 |
+| 5 | `dreamina-seedance-2.5-720p` | 1482.000 |
+| 6 | `dreamina-seedance-2.0-720p` | 1479.000 |
+| 7 | `minimax-h3` | 1462.000 |
+| 8 | `muse-video` | 1456.000 |
+| 9 | `happyhorse-1.0` | 1427.000 |
+| 10 | `sora-2-pro` | 1367.000 |
 
 ## Video Edit Arena
 

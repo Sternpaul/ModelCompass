@@ -103,16 +103,16 @@ _Long-context reasoning score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `meta/muse-spark-1-2` | 0.833 |
-| 2 | `kimi/kimi-k3` | 0.827 |
-| 3 | `google/gemini-3-8-flash-medium` | 0.820 |
-| 4 | `meta/muse-spark-1-1` | 0.813 |
-| 5 | `google/gemini-3-8-flash` | 0.810 |
-| 6 | `google/gemini-3-7-flash-medium` | 0.810 |
-| 7 | `google/gemini-3-5-flash` | 0.810 |
-| 8 | `minimax/minimax-m3` | 0.803 |
-| 9 | `meta/muse-glimmer` | 0.800 |
-| 10 | `google/gemini-3-7-flash` | 0.800 |
+| 1 | `kimi/kimi-k3` | 0.887 |
+| 2 | `anthropic/claude-fable-5-1` | 0.853 |
+| 3 | `anthropic/claude-fable-5-1-medium` | 0.847 |
+| 4 | `meta/muse-spark-1-3` | 0.843 |
+| 5 | `openai/gpt-5-5` | 0.843 |
+| 6 | `openai/gpt-5-5-high` | 0.843 |
+| 7 | `google/gemini-3-8-flash-medium` | 0.840 |
+| 8 | `openai/gpt-5-6-sol` | 0.840 |
+| 9 | `openai/gpt-5-6-luna` | 0.837 |
+| 10 | `anthropic/claude-fable-5-1-high` | 0.837 |
 
 ## LiveCodeBench
 
@@ -175,16 +175,16 @@ _SciCode scientific coding accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-fable-5-1` | 0.620 |
-| 2 | `anthropic/claude-fable-5` | 0.602 |
-| 3 | `anthropic/claude-fable-5-1-xhigh` | 0.601 |
-| 4 | `google/gemini-3-1-pro-preview` | 0.589 |
-| 5 | `kimi/kimi-k3` | 0.587 |
-| 6 | `meta/muse-spark-1-3-xhigh` | 0.586 |
-| 7 | `meta/muse-spark-1-1` | 0.582 |
-| 8 | `google/gemini-3-7-flash-medium` | 0.579 |
-| 9 | `anthropic/claude-fable-5-1-high` | 0.576 |
-| 10 | `meta/muse-spark-1-3` | 0.573 |
+| 1 | `anthropic/claude-fable-5-1` | 0.631 |
+| 2 | `anthropic/claude-fable-5` | 0.610 |
+| 3 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
+| 4 | `google/gemini-3-7-flash-medium` | 0.598 |
+| 5 | `meta/muse-spark-1-3-xhigh` | 0.597 |
+| 6 | `kimi/kimi-k3` | 0.595 |
+| 7 | `zai/glm-5-3` | 0.590 |
+| 8 | `anthropic/claude-fable-5-1-high` | 0.587 |
+| 9 | `meta/muse-spark-1-3` | 0.583 |
+| 10 | `openai/gpt-5-6-sol-high` | 0.578 |
 
 ## TAU2
 
