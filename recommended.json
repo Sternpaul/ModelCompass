@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T01:29:34.198449+00:00",
+    "generated_at": "2026-09-06T08:34:06.762595+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -223,12 +223,6 @@
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
         "model_count": 70,
-        "top_n": 10
-      },
-      "movers": {
-        "source": "unknown",
-        "subdir": "movers",
-        "model_count": 200,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -3230,78 +3224,6 @@
         "rank": 10
       }
     ],
-    "movers": [
-      {
-        "board": "AA Intelligence",
-        "model": "google/gemini-3-5-flash",
-        "previous": 52.0,
-        "current": 39.7,
-        "delta": 12.3
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "zai/glm-5-3-flash",
-        "previous": 57.5,
-        "current": 46.2,
-        "delta": 11.3
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "google/gemini-3-6-flash",
-        "previous": 51.6,
-        "current": 40.3,
-        "delta": 11.3
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "alibaba/qwen3-8-max",
-        "previous": 58.1,
-        "current": 46.9,
-        "delta": 11.2
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "deepseek/deepseek-v4-pro",
-        "previous": 53.2,
-        "current": 42.1,
-        "delta": 11.1
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "alibaba/qwen3-8-2-4t-a95b",
-        "previous": 57.7,
-        "current": 46.7,
-        "delta": 11.0
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "deepseek/deepseek-v4-flash",
-        "previous": 51.8,
-        "current": 40.8,
-        "delta": 11.0
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "google/gemini-3-1-pro-preview",
-        "previous": 47.7,
-        "current": 36.7,
-        "delta": 11.0
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "zai/glm-5-3",
-        "previous": 59.5,
-        "current": 48.6,
-        "delta": 10.9
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "anthropic/claude-opus-4-8",
-        "previous": 57.3,
-        "current": 46.4,
-        "delta": 10.9
-      }
-    ],
     "or_usage_tokens": [
       {
         "model": "tencent/hy4-preview-20260827",
@@ -3317,8 +3239,8 @@
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 12279587815410,
-        "requests": 469001852,
+        "tokens": 12279590222138,
+        "requests": 469001855,
         "rank": 3
       },
       {
@@ -3374,8 +3296,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 33.1,
-        "prompt_price_per_m": 0.08246,
-        "value": 401.41
+        "prompt_price_per_m": 0.08134,
+        "value": 406.93
       },
       {
         "model": "openai/gpt-oss-20b",

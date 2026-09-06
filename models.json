@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T01:29:34.050507+00:00",
-    "model_count": 3457,
+    "generated_at": "2026-09-06T08:34:06.581271+00:00",
+    "model_count": 3458,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7562 models from 213 providers)",
+      "models.dev": "ok (7563 models from 213 providers)",
       "openrouter_usage": "ok (487 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-03)",
       "artificial_analysis": "ok (643 models)",
@@ -1814,9 +1814,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.065,
-        "completion": 0.18,
-        "cache_read": 0.016
+        "prompt": 0.04998,
+        "completion": 0.09996,
+        "cache_read": 0.009996
       },
       "benchmarks": {
         "benchlm": {
@@ -5483,9 +5483,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.778824,
-        "completion": 1.557648,
-        "cache_read": 0.064902
+        "prompt": 0.717924,
+        "completion": 1.435848,
+        "cache_read": 0.059827
       },
       "benchmarks": {
         "aa": {
@@ -5546,9 +5546,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.08246,
-        "completion": 0.16492,
-        "cache_read": 0.016492
+        "prompt": 0.08134,
+        "completion": 0.16268,
+        "cache_read": 0.016268
       },
       "benchmarks": {
         "aa": {
@@ -9497,9 +9497,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.5,
-        "completion": 2.0,
-        "cache_read": 0.1
+        "prompt": 0.55,
+        "completion": 2.2,
+        "cache_read": 0.11
       },
       "benchmarks": {}
     },
@@ -57752,7 +57752,7 @@
                 "ci": null
               }
             ],
-            "sessions": 8033
+            "sessions": 13053
           },
           "code": {
             "rank": 38,
@@ -111177,8 +111177,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 3125000.0,
-        "completion": 18750000.0,
+        "prompt": 2500000.0,
+        "completion": 15000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -112639,8 +112639,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 6250000.0,
-        "completion": 37500000.0,
+        "prompt": 2500000.0,
+        "completion": 12500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -112699,8 +112699,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 3125000.0,
-        "completion": 18750000.0,
+        "prompt": 2500000.0,
+        "completion": 15000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -112789,8 +112789,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1250000.0,
-        "completion": 7500000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -113470,8 +113470,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 266666.67,
-        "completion": 1600000.0,
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -113770,8 +113770,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 6250000.0,
-        "completion": 37500000.0,
+        "prompt": 2500000.0,
+        "completion": 12500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -142426,8 +142426,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 580800.0,
-        "completion": 1742400.0,
+        "prompt": 1122000.0,
+        "completion": 3366000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -142456,8 +142456,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 176000.0,
-        "completion": 528000.0,
+        "prompt": 352000.0,
+        "completion": 1056000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -143874,6 +143874,36 @@
       "price_per_million": {
         "prompt": 140000.0,
         "completion": 280000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "databricks/databricks-inkling",
+      "name": "Inkling",
+      "provider": "databricks",
+      "family": "databricks/databricks-inkling",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1000020.0,
+        "completion": 4049990.0,
         "cache_read": null
       },
       "benchmarks": {}
