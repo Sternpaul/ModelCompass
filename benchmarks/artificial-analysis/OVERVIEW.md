@@ -182,9 +182,9 @@ _SciCode scientific coding accuracy (%)._
 | 5 | `meta/muse-spark-1-3-xhigh` | 0.597 |
 | 6 | `kimi/kimi-k3` | 0.595 |
 | 7 | `zai/glm-5-3` | 0.590 |
-| 8 | `anthropic/claude-fable-5-1-high` | 0.587 |
-| 9 | `meta/muse-spark-1-3` | 0.583 |
-| 10 | `openai/gpt-5-6-sol-high` | 0.578 |
+| 8 | `meta/muse-spark-1-1` | 0.588 |
+| 9 | `google/gemini-3-1-pro-preview` | 0.587 |
+| 10 | `anthropic/claude-fable-5-1-high` | 0.587 |
 
 ## TAU2
 

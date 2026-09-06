@@ -21,5 +21,5 @@ _Rank by total tokens processed; requests kept alongside._
 | 6 | `deepseek/deepseek-v4-flash-20260423` | — |
 | 7 | `tencent/hy3-20260706` | — |
 | 8 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
-| 9 | `xiaomi/mimo-v2.5-20260422` | — |
-| 10 | `z-ai/glm-5.3-20260816` | — |
+| 9 | `z-ai/glm-5.3-20260816` | — |
+| 10 | `xiaomi/mimo-v2.5-20260422` | — |
