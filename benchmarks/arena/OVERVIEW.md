@@ -168,24 +168,6 @@ _Human-preference Elo._
 | 9 | `muse-video` | 1456.000 |
 | 10 | `happyhorse-1.0` | 1427.000 |
 
-## Video Edit Arena
-
-_Human-preference Elo._
-
-
-| # | Model | Score |
-|---|-------|------:|
-| 1 | `wan3.0` | 1414.000 |
-| 2 | `dreamina-seedance-2.5-720p` | 1410.000 |
-| 3 | `minimax-h3` | 1392.000 |
-| 4 | `gemini-omni-flash` | 1367.000 |
-| 5 | `dreamina-seedance-2.0-720p` | 1365.000 |
-| 6 | `happyhorse-1.0` | 1307.000 |
-| 7 | `grok-imagine-video` | 1258.000 |
-| 8 | `kling-o3-pro` | 1255.000 |
-| 9 | `kling-o1-pro` | 1197.000 |
-| 10 | `runway-gen4-aleph` | 1182.000 |
-
 ## Vision Arena
 
 _Human-preference Elo._

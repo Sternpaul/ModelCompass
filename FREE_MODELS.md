@@ -8,7 +8,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 35.3 | 60.9 | **7** (document) |
 | gpt-5.4:free | openrouter/unorouter | 32.1 | **71.1** | 15 (document) |
-| z-ai/glm-5.2:free | openrouter | **42.5** | 68.8 | 18 (code) |
 | glm-5.2:free | openrouter/unorouter | **42.5** | 68.8 | 18 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 40.8 | 69.1 | 20 (code) |
 | kimi-k2-6:free | kenari/openrouter | 35.8 | 61.8 | 22 (document) |

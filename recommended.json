@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T08:34:06.762595+00:00",
+    "generated_at": "2026-09-07T09:12:41.567654+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -55,12 +55,6 @@
         "source": "https://arena.ai/leaderboard/text",
         "subdir": "arena",
         "model_count": 350,
-        "top_n": 10
-      },
-      "arena_video-edit": {
-        "source": "https://arena.ai/leaderboard/video-edit",
-        "subdir": "arena",
-        "model_count": 10,
         "top_n": 10
       },
       "arena_vision": {
@@ -228,7 +222,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 487,
+        "model_count": 486,
         "top_n": 10
       },
       "price_performance": {
@@ -1466,98 +1460,6 @@
         "score": 1492.0,
         "ci": 5.0,
         "votes": 24064
-      }
-    ],
-    "arena_video-edit": [
-      {
-        "rank": 1,
-        "model": "wan3.0",
-        "vendor": "Alibaba",
-        "license": "proprietary",
-        "score": 1414.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 2,
-        "model": "dreamina-seedance-2.5-720p",
-        "vendor": "Bytedance",
-        "license": "proprietary",
-        "score": 1410.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 3,
-        "model": "minimax-h3",
-        "vendor": "MiniMax",
-        "license": null,
-        "score": 1392.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 4,
-        "model": "gemini-omni-flash",
-        "vendor": "Google",
-        "license": "proprietary",
-        "score": 1367.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 5,
-        "model": "dreamina-seedance-2.0-720p",
-        "vendor": "Bytedance",
-        "license": "proprietary",
-        "score": 1365.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "happyhorse-1.0",
-        "vendor": "Alibaba-ATH",
-        "license": "proprietary",
-        "score": 1307.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 7,
-        "model": "grok-imagine-video",
-        "vendor": "SpaceXAI",
-        "license": "proprietary",
-        "score": 1258.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 8,
-        "model": "kling-o3-pro",
-        "vendor": "KlingAI",
-        "license": "proprietary",
-        "score": 1255.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 9,
-        "model": "kling-o1-pro",
-        "vendor": "KlingAI",
-        "license": "proprietary",
-        "score": 1197.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 10,
-        "model": "runway-gen4-aleph",
-        "vendor": "Runway",
-        "license": "proprietary",
-        "score": 1182.0,
-        "ci": null,
-        "votes": null
       }
     ],
     "arena_vision": [
@@ -3227,62 +3129,62 @@
     "or_usage_tokens": [
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 14069828687582,
-        "requests": 123502356,
+        "tokens": 14673075368091,
+        "requests": 131126190,
         "rank": 1
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 12458567235471,
-        "requests": 361802978,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 12944343832589,
+        "requests": 419775178,
         "rank": 2
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 12279590222138,
-        "requests": 469001855,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 12393890095116,
+        "requests": 369057571,
         "rank": 3
       },
       {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 12183083537403,
-        "requests": 386435924,
+        "model": "deepseek/deepseek-v4-flash-20260731",
+        "tokens": 12360523346686,
+        "requests": 495438347,
         "rank": 4
       },
       {
         "model": "minimax/minimax-m3-20260531",
-        "tokens": 7027079269255,
-        "requests": 101783135,
+        "tokens": 6462981942033,
+        "requests": 95282488,
         "rank": 5
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260423",
-        "tokens": 5235613513098,
-        "requests": 525501555,
+        "tokens": 5187916825483,
+        "requests": 524158581,
         "rank": 6
       },
       {
         "model": "tencent/hy3-20260706",
-        "tokens": 4439181564002,
-        "requests": 62225673,
+        "tokens": 3992205549751,
+        "requests": 56418720,
         "rank": 7
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 3692356372870,
-        "requests": 32477240,
+        "tokens": 3687481033281,
+        "requests": 32344744,
         "rank": 8
       },
       {
         "model": "z-ai/glm-5.3-20260816",
-        "tokens": 2812857570419,
-        "requests": 49611420,
+        "tokens": 3023483716071,
+        "requests": 42411116,
         "rank": 9
       },
       {
-        "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 2761818391842,
-        "requests": 73365936,
+        "model": "z-ai/glm-5.2-20260616",
+        "tokens": 2372053433173,
+        "requests": 64822652,
         "rank": 10
       }
     ],
@@ -3296,8 +3198,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 33.1,
-        "prompt_price_per_m": 0.08134,
-        "value": 406.93
+        "prompt_price_per_m": 0.088606,
+        "value": 373.56
       },
       {
         "model": "openai/gpt-oss-20b",

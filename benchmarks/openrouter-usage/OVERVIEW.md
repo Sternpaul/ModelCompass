@@ -14,12 +14,12 @@ _Rank by total tokens processed; requests kept alongside._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `tencent/hy4-preview-20260827` | — |
-| 2 | `z-ai/glm-5.3-flash-20260826` | — |
-| 3 | `deepseek/deepseek-v4-flash-20260731` | — |
-| 4 | `openai/gpt-5.6-luna-20260709` | — |
+| 2 | `openai/gpt-5.6-luna-20260709` | — |
+| 3 | `z-ai/glm-5.3-flash-20260826` | — |
+| 4 | `deepseek/deepseek-v4-flash-20260731` | — |
 | 5 | `minimax/minimax-m3-20260531` | — |
 | 6 | `deepseek/deepseek-v4-flash-20260423` | — |
 | 7 | `tencent/hy3-20260706` | — |
 | 8 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 9 | `z-ai/glm-5.3-20260816` | — |
-| 10 | `xiaomi/mimo-v2.5-20260422` | — |
+| 10 | `z-ai/glm-5.2-20260616` | — |

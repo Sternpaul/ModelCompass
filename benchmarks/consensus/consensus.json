@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T08:34:06.781284+00:00",
+    "generated_at": "2026-09-07T09:12:41.585331+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -538,25 +538,6 @@
       }
     },
     {
-      "model": "wan3.0",
-      "top_appearances": 3,
-      "borda_points": 26,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 3,
-          "score": 1481.0
-        },
-        "arena_text-to-video": {
-          "rank": 3,
-          "score": 1494.0
-        },
-        "arena_video-edit": {
-          "rank": 1,
-          "score": 1414.0
-        }
-      }
-    },
-    {
       "model": "kimi-k3",
       "top_appearances": 3,
       "borda_points": 25,
@@ -610,63 +591,6 @@
         "arena_vision": {
           "rank": 2,
           "score": 1301.0
-        }
-      }
-    },
-    {
-      "model": "minimax-h3",
-      "top_appearances": 3,
-      "borda_points": 21,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 1,
-          "score": 1497.0
-        },
-        "arena_text-to-video": {
-          "rank": 8,
-          "score": 1462.0
-        },
-        "arena_video-edit": {
-          "rank": 3,
-          "score": 1392.0
-        }
-      }
-    },
-    {
-      "model": "dreamina-seedance-2.5-720p",
-      "top_appearances": 3,
-      "borda_points": 21,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 4,
-          "score": 1478.0
-        },
-        "arena_text-to-video": {
-          "rank": 6,
-          "score": 1482.0
-        },
-        "arena_video-edit": {
-          "rank": 2,
-          "score": 1410.0
-        }
-      }
-    },
-    {
-      "model": "gemini-omni-flash",
-      "top_appearances": 3,
-      "borda_points": 21,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 6,
-          "score": 1462.0
-        },
-        "arena_text-to-video": {
-          "rank": 2,
-          "score": 1511.0
-        },
-        "arena_video-edit": {
-          "rank": 4,
-          "score": 1367.0
         }
       }
     },
@@ -804,25 +728,6 @@
       }
     },
     {
-      "model": "dreamina-seedance-2.0-720p",
-      "top_appearances": 3,
-      "borda_points": 16,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 5,
-          "score": 1477.0
-        },
-        "arena_text-to-video": {
-          "rank": 7,
-          "score": 1479.0
-        },
-        "arena_video-edit": {
-          "rank": 5,
-          "score": 1365.0
-        }
-      }
-    },
-    {
       "model": "anthropic/claude-fable-5-1-medium",
       "top_appearances": 3,
       "borda_points": 12,
@@ -895,25 +800,6 @@
         "aa_livecodebench": {
           "rank": 5,
           "score": 0.894
-        }
-      }
-    },
-    {
-      "model": "happyhorse-1.0",
-      "top_appearances": 3,
-      "borda_points": 8,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 9,
-          "score": 1442.0
-        },
-        "arena_text-to-video": {
-          "rank": 10,
-          "score": 1427.0
-        },
-        "arena_video-edit": {
-          "rank": 6,
-          "score": 1307.0
         }
       }
     },
@@ -1080,6 +966,21 @@
       }
     },
     {
+      "model": "wan3.0",
+      "top_appearances": 2,
+      "borda_points": 16,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 3,
+          "score": 1481.0
+        },
+        "arena_text-to-video": {
+          "rank": 3,
+          "score": 1494.0
+        }
+      }
+    },
+    {
       "model": "qwen3-7-max",
       "top_appearances": 2,
       "borda_points": 16,
@@ -1121,6 +1022,21 @@
         "benchlm_math": {
           "rank": 2,
           "score": 97
+        }
+      }
+    },
+    {
+      "model": "gemini-omni-flash",
+      "top_appearances": 2,
+      "borda_points": 14,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 6,
+          "score": 1462.0
+        },
+        "arena_text-to-video": {
+          "rank": 2,
+          "score": 1511.0
         }
       }
     },
@@ -1200,6 +1116,21 @@
       }
     },
     {
+      "model": "minimax-h3",
+      "top_appearances": 2,
+      "borda_points": 13,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 1,
+          "score": 1497.0
+        },
+        "arena_text-to-video": {
+          "rank": 8,
+          "score": 1462.0
+        }
+      }
+    },
+    {
       "model": "muse-spark-1-1",
       "top_appearances": 2,
       "borda_points": 13,
@@ -1211,6 +1142,21 @@
         "benchlm_reasoning": {
           "rank": 5,
           "score": 78.5
+        }
+      }
+    },
+    {
+      "model": "dreamina-seedance-2.5-720p",
+      "top_appearances": 2,
+      "borda_points": 12,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 4,
+          "score": 1478.0
+        },
+        "arena_text-to-video": {
+          "rank": 6,
+          "score": 1482.0
         }
       }
     },
@@ -1316,6 +1262,21 @@
         "aa_tau_banking": {
           "rank": 4,
           "score": 0.503092783505155
+        }
+      }
+    },
+    {
+      "model": "dreamina-seedance-2.0-720p",
+      "top_appearances": 2,
+      "borda_points": 10,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 5,
+          "score": 1477.0
+        },
+        "arena_text-to-video": {
+          "rank": 7,
+          "score": 1479.0
         }
       }
     },
@@ -1496,6 +1457,21 @@
         "aa_scicode": {
           "rank": 9,
           "score": 0.587
+        }
+      }
+    },
+    {
+      "model": "happyhorse-1.0",
+      "top_appearances": 2,
+      "borda_points": 3,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 9,
+          "score": 1442.0
+        },
+        "arena_text-to-video": {
+          "rank": 10,
+          "score": 1427.0
         }
       }
     },
@@ -1702,7 +1678,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "openai/gpt-5.6-luna-20260709",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1823,7 +1799,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash-20260731",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1933,7 +1909,7 @@
       }
     },
     {
-      "model": "openai/gpt-5.6-luna-20260709",
+      "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2285,17 +2261,6 @@
       }
     },
     {
-      "model": "grok-imagine-video",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "arena_video-edit": {
-          "rank": 7,
-          "score": 1258.0
-        }
-      }
-    },
-    {
       "model": "alibaba/qwen3-30b-a3b-2507-reasoning",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2538,17 +2503,6 @@
       }
     },
     {
-      "model": "kling-o3-pro",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "arena_video-edit": {
-          "rank": 8,
-          "score": 1255.0
-        }
-      }
-    },
-    {
       "model": "alibaba/qwen3-7-max",
       "top_appearances": 1,
       "borda_points": 3,
@@ -2732,17 +2686,6 @@
         "arena_text-to-video": {
           "rank": 9,
           "score": 1456.0
-        }
-      }
-    },
-    {
-      "model": "kling-o1-pro",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "arena_video-edit": {
-          "rank": 9,
-          "score": 1197.0
         }
       }
     },
@@ -2978,17 +2921,6 @@
       }
     },
     {
-      "model": "runway-gen4-aleph",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "arena_video-edit": {
-          "rank": 10,
-          "score": 1182.0
-        }
-      }
-    },
-    {
       "model": "gemini-3-pro",
       "top_appearances": 1,
       "borda_points": 1,
@@ -3110,7 +3042,7 @@
       }
     },
     {
-      "model": "xiaomi/mimo-v2.5-20260422",
+      "model": "z-ai/glm-5.2-20260616",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
