@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-09-07T09:12:41.378842+00:00",
-    "model_count": 3454,
+    "generated_at": "2026-09-08T08:46:47.823445+00:00",
+    "model_count": 3455,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7556 models from 213 providers)",
-      "openrouter_usage": "ok (486 models with live usage)",
+      "models.dev": "ok (7561 models from 213 providers)",
+      "openrouter_usage": "ok (485 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-03)",
-      "artificial_analysis": "ok (643 models)",
-      "arena_ai": "ok (10 leaderboards; 0 live-discovered via scrape, 10 from curated fallback)",
+      "artificial_analysis": "ok (644 models)",
+      "arena_ai": "ok (11 leaderboards; 0 live-discovered via scrape, 11 from curated fallback)",
       "benchlm": "ok (411 models)"
     },
     "coverage": {
       "aa": 431,
-      "arena": 437,
+      "arena": 438,
       "benchlm": 212
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
@@ -77,8 +77,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 57.452,
-          "ttft": 61.929
+          "median_tps": 57.461,
+          "ttft": 68.458
         }
       }
     },
@@ -491,8 +491,8 @@
       "supports_json": true,
       "supports_caching": true,
       "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
+      "hugging_face_id": "tencent/Hy4-preview",
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -1665,8 +1665,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 59.084,
-          "ttft": 1.224
+          "median_tps": 61.142,
+          "ttft": 1.114
         }
       }
     },
@@ -1814,9 +1814,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.14,
-        "completion": 0.28,
-        "cache_read": 0.028
+        "prompt": 0.065,
+        "completion": 0.18,
+        "cache_read": 0.016
       },
       "benchmarks": {
         "benchlm": {
@@ -2042,7 +2042,7 @@
           "creator_slug": "thinking-machines",
           "slug": "inkling-small",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 32.3,
+            "artificial_analysis_intelligence_index": 32.2,
             "artificial_analysis_coding_index": 52.9,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -2065,8 +2065,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 117.21,
-          "ttft": 2.192
+          "median_tps": 132.807,
+          "ttft": 1.69
         },
         "benchlm": {
           "slug": "inkling-small",
@@ -2366,8 +2366,8 @@
             "completion": 25.0,
             "blended": 10.0
           },
-          "median_tps": 49.059,
-          "ttft": 9.066
+          "median_tps": 51.081,
+          "ttft": 8.026
         },
         "arena": {
           "agent": {
@@ -2750,8 +2750,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 64.57,
-          "ttft": 2.511
+          "median_tps": 65.078,
+          "ttft": 2.316
         }
       }
     },
@@ -3593,8 +3593,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 60.01,
-          "ttft": 1.245
+          "median_tps": 64.697,
+          "ttft": 1.44
         }
       }
     },
@@ -4004,9 +4004,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.66,
-        "completion": 3.4,
-        "cache_read": 0.18
+        "prompt": 0.71,
+        "completion": 3.5,
+        "cache_read": 0.15
       },
       "benchmarks": {}
     },
@@ -4098,8 +4098,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 59.418,
-          "ttft": 53.361
+          "median_tps": 62.166,
+          "ttft": 50.977
         }
       }
     },
@@ -4191,8 +4191,8 @@
             "completion": 2.5,
             "blended": 1.0
           },
-          "median_tps": 125.635,
-          "ttft": 0.931
+          "median_tps": 114.886,
+          "ttft": 1.009
         }
       }
     },
@@ -4403,36 +4403,6 @@
         "prompt": 0.3,
         "completion": 1.2,
         "cache_read": 0.06
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "minimax/minimax-m3:free",
-      "name": "MiniMax: MiniMax M3 (free)",
-      "provider": "minimax",
-      "family": "minimax/minimax-m3",
-      "source": "openrouter",
-      "created_unix": 1780245374,
-      "context": 1048576,
-      "modality": "text+image+video->text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": true,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": "MiniMaxAI/Minimax-M3",
-      "open_weight": true,
-      "synthetic": false,
-      "free": true,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -4884,8 +4854,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 139.298,
-          "ttft": 0.71
+          "median_tps": 159.708,
+          "ttft": 0.704
         }
       }
     },
@@ -4896,7 +4866,7 @@
       "family": "mistralai/mistral-medium-3-5",
       "source": "openrouter",
       "created_unix": 1777570439,
-      "context": 32768,
+      "context": 262144,
       "modality": "text+image+file->text",
       "is_vision": true,
       "is_audio_input": false,
@@ -5063,9 +5033,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.55,
-        "completion": 12.75,
-        "cache_read": 0.256
+        "prompt": 2.5,
+        "completion": 14.0,
+        "cache_read": 0.29
       },
       "benchmarks": {}
     },
@@ -5464,7 +5434,7 @@
           "creator_slug": "deepseek",
           "slug": "deepseek-v4-pro-0424",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 35.8,
+            "artificial_analysis_intelligence_index": 34.5,
             "artificial_analysis_coding_index": 59.4,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -5487,8 +5457,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 61.264,
-          "ttft": 1.182
+          "median_tps": 64.59,
+          "ttft": 1.125
         }
       }
     },
@@ -5527,7 +5497,7 @@
           "creator_slug": "deepseek",
           "slug": "deepseek-v4-flash-0420",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 33.1,
+            "artificial_analysis_intelligence_index": 30.7,
             "artificial_analysis_coding_index": 56.2,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -6306,36 +6276,6 @@
       "benchmarks": {}
     },
     {
-      "id": "minimax/minimax-m2.7:free",
-      "name": "MiniMax: MiniMax M2.7 (free)",
-      "provider": "minimax",
-      "family": "minimax/minimax-m2.7",
-      "source": "openrouter",
-      "created_unix": 1773836697,
-      "context": 196608,
-      "modality": "text->text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": true,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": "MiniMaxAI/MiniMax-M2.7",
-      "open_weight": true,
-      "synthetic": false,
-      "free": true,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "openai/gpt-5.4-nano",
       "name": "OpenAI: GPT-5.4 Nano",
       "provider": "openai",
@@ -6843,8 +6783,8 @@
             "completion": 0.75,
             "blended": 0.375
           },
-          "median_tps": 794.899,
-          "ttft": 3.93
+          "median_tps": 1000.575,
+          "ttft": 3.728
         }
       }
     },
@@ -7633,14 +7573,14 @@
           "creator_slug": "upstage",
           "slug": "solar-pro-3",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 8.5,
+            "artificial_analysis_intelligence_index": 9.4,
             "artificial_analysis_coding_index": 16.2,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
             "gpqa": 0.724,
             "hle": 0.103,
             "livecodebench": null,
-            "scicode": null,
+            "scicode": 0.255,
             "math_500": null,
             "aime": null,
             "aime_25": null,
@@ -7656,8 +7596,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 139.432,
-          "ttft": 1.165
+          "median_tps": 138.384,
+          "ttft": 1.355
         }
       }
     },
@@ -7798,16 +7738,16 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": true,
+      "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": "zai-org/GLM-4.7-Flash",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.06,
+        "prompt": 0.0605,
         "completion": 0.4,
-        "cache_read": 0.01
+        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -8079,8 +8019,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 142.767,
-          "ttft": 0.825
+          "median_tps": 235.507,
+          "ttft": 0.7
         }
       }
     },
@@ -8791,7 +8731,7 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": true,
+      "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": "moonshotai/Kimi-K2-Thinking",
       "open_weight": true,
@@ -8800,7 +8740,7 @@
       "price_per_million": {
         "prompt": 0.6,
         "completion": 2.5,
-        "cache_read": 0.15
+        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -9467,9 +9407,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.43,
-        "completion": 1.75,
-        "cache_read": 0.08
+        "prompt": 0.55,
+        "completion": 2.2,
+        "cache_read": 0.11
       },
       "benchmarks": {}
     },
@@ -10037,9 +9977,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.55,
-        "completion": 1.65,
-        "cache_read": 0.55
+        "prompt": 0.25,
+        "completion": 0.95,
+        "cache_read": 0.13
       },
       "benchmarks": {}
     },
@@ -10568,8 +10508,8 @@
             "completion": 0.545,
             "blended": 0.249
           },
-          "median_tps": 211.773,
-          "ttft": 0.456
+          "median_tps": 239.518,
+          "ttft": 0.448
         }
       }
     },
@@ -10661,8 +10601,8 @@
             "completion": 0.2,
             "blended": 0.103
           },
-          "median_tps": 232.436,
-          "ttft": 0.553
+          "median_tps": 254.865,
+          "ttft": 0.443
         }
       }
     },
@@ -11506,7 +11446,7 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.55,
+        "prompt": 0.4,
         "completion": 2.2,
         "cache_read": null
       },
@@ -12185,8 +12125,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.12,
-        "completion": 0.24,
+        "prompt": 0.2275,
+        "completion": 0.91,
         "cache_read": null
       },
       "benchmarks": {}
@@ -12438,8 +12378,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 122.51,
-          "ttft": 4.411
+          "median_tps": 150.686,
+          "ttft": 4.29
         }
       }
     },
@@ -12823,16 +12763,16 @@
       "supports_reasoning": false,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": "2024-07-31",
       "hugging_face_id": "deepseek-ai/DeepSeek-V3-0324",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.25,
-        "completion": 1.0,
-        "cache_read": null
+        "prompt": 0.29,
+        "completion": 1.14,
+        "cache_read": 0.11
       },
       "benchmarks": {}
     },
@@ -13047,8 +12987,8 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 58.801,
-          "ttft": 0.323
+          "median_tps": 64.013,
+          "ttft": 0.302
         }
       }
     },
@@ -13110,8 +13050,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 89.571,
-          "ttft": 0.933
+          "median_tps": 89.521,
+          "ttft": 0.923
         }
       }
     },
@@ -14073,8 +14013,8 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 43.264,
-          "ttft": 1.057
+          "median_tps": 43.765,
+          "ttft": 1.044
         }
       }
     },
@@ -16116,8 +16056,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 102.495,
-          "ttft": 1.19
+          "median_tps": 109.256,
+          "ttft": 1.097
         },
         "arena": {
           "agent": {
@@ -16727,14 +16667,14 @@
           "creator_slug": "deepseek",
           "slug": "deepseek-v4-flash-0420-high",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 30.4,
+            "artificial_analysis_intelligence_index": 30.2,
             "artificial_analysis_coding_index": 52,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
             "gpqa": 0.867,
             "hle": 0.303,
             "livecodebench": null,
-            "scicode": null,
+            "scicode": 0.402,
             "math_500": null,
             "aime": null,
             "aime_25": null,
@@ -17447,8 +17387,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 62.907,
-          "ttft": 1.047
+          "median_tps": 64.01,
+          "ttft": 1.018
         },
         "arena": {
           "agent": {
@@ -18511,7 +18451,7 @@
                 "ci": null
               }
             ],
-            "sessions": 66340
+            "sessions": 71350
           },
           "code": {
             "rank": 49,
@@ -18745,8 +18685,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 87.4,
-          "ttft": 1.843
+          "median_tps": 86.605,
+          "ttft": 1.708
         },
         "arena": {
           "code": {
@@ -19102,8 +19042,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 138.127,
-          "ttft": 1.091
+          "median_tps": 137.675,
+          "ttft": 1.045
         }
       }
     },
@@ -20460,14 +20400,14 @@
           "creator_slug": "deepseek",
           "slug": "deepseek-v3",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 8.3,
+            "artificial_analysis_intelligence_index": 10.4,
             "artificial_analysis_coding_index": 23,
             "artificial_analysis_math_index": 26,
             "mmlu_pro": 0.752,
             "gpqa": 0.557,
             "hle": 0.029,
             "livecodebench": 0.359,
-            "scicode": null,
+            "scicode": 0.358,
             "math_500": 0.886666666666667,
             "aime": 0.253333333333333,
             "aime_25": 0.26,
@@ -21254,14 +21194,14 @@
           "creator_slug": "alibaba",
           "slug": "qwen3-32b-instruct-reasoning",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 5.7,
+            "artificial_analysis_intelligence_index": 8,
             "artificial_analysis_coding_index": 15.3,
             "artificial_analysis_math_index": 73,
             "mmlu_pro": 0.798,
             "gpqa": 0.668,
             "hle": 0.074,
             "livecodebench": 0.546,
-            "scicode": null,
+            "scicode": 0.361,
             "math_500": 0.960666666666667,
             "aime": 0.806666666666667,
             "aime_25": 0.73,
@@ -23307,8 +23247,8 @@
             "completion": 5.0,
             "blended": 2.0
           },
-          "median_tps": 82.132,
-          "ttft": 0.598
+          "median_tps": 91.342,
+          "ttft": 0.61
         }
       }
     },
@@ -24069,8 +24009,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 72.124,
-          "ttft": 0.927
+          "median_tps": 68.553,
+          "ttft": 0.891
         },
         "arena": {
           "agent": {
@@ -24772,8 +24712,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 31.335,
-          "ttft": 4.463
+          "median_tps": 37.006,
+          "ttft": 3.088
         },
         "arena": {
           "agent": {
@@ -24994,8 +24934,8 @@
             "completion": 2.95,
             "blended": 1.3
           },
-          "median_tps": 46.387,
-          "ttft": 2.726
+          "median_tps": 49.221,
+          "ttft": 2.467
         },
         "benchlm": {
           "slug": "longcat-2-0",
@@ -26012,8 +25952,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 49.653,
-          "ttft": 1.219
+          "median_tps": 52.155,
+          "ttft": 1.115
         },
         "arena": {
           "code": {
@@ -26104,8 +26044,8 @@
             "completion": 2.0,
             "blended": 0.688
           },
-          "median_tps": 157.34,
-          "ttft": 1.195
+          "median_tps": 158.703,
+          "ttft": 1.121
         },
         "arena": {
           "code": {
@@ -26529,8 +26469,8 @@
             "completion": 4.8,
             "blended": 1.5
           },
-          "median_tps": 116.563,
-          "ttft": 1.197
+          "median_tps": 117.158,
+          "ttft": 1.166
         }
       }
     },
@@ -28644,8 +28584,8 @@
             "completion": 0.8,
             "blended": 0.275
           },
-          "median_tps": 224.279,
-          "ttft": 0.961
+          "median_tps": 234.181,
+          "ttft": 0.911
         }
       }
     },
@@ -29187,8 +29127,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 147.872,
-          "ttft": 1.01
+          "median_tps": 147.481,
+          "ttft": 1.022
         },
         "arena": {
           "code": {
@@ -29669,8 +29609,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 16.222,
-          "ttft": 0.5
+          "median_tps": 17.25,
+          "ttft": 0.551
         }
       }
     },
@@ -30373,7 +30313,7 @@
           "creator_slug": "celeris",
           "slug": "celeris-1",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 6.3,
+            "artificial_analysis_intelligence_index": 7.6,
             "artificial_analysis_coding_index": 14.4,
             "artificial_analysis_math_index": null,
             "mmlu_pro": 0.78,
@@ -30396,8 +30336,8 @@
             "completion": 0.7,
             "blended": 0.325
           },
-          "median_tps": 2172.372,
-          "ttft": 0.461
+          "median_tps": 2235.745,
+          "ttft": 0.483
         },
         "benchlm": {
           "slug": "celeris-1",
@@ -32227,8 +32167,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 182.6,
-          "ttft": 1.229
+          "median_tps": 189.61,
+          "ttft": 1.118
         }
       }
     },
@@ -33610,8 +33550,8 @@
             "completion": 0.2,
             "blended": 0.2
           },
-          "median_tps": 93.246,
-          "ttft": 0.441
+          "median_tps": 87.118,
+          "ttft": 0.437
         },
         "benchlm": {
           "slug": "ministral-3-14b",
@@ -34433,8 +34373,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 55.842,
-          "ttft": 1.38
+          "median_tps": 56.811,
+          "ttft": 1.347
         }
       }
     },
@@ -35844,7 +35784,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 1400000.0,
-        "completion": 4600000.0,
+        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -35907,8 +35847,8 @@
             "completion": 0.4,
             "blended": 0.205
           },
-          "median_tps": 66.794,
-          "ttft": 0.614
+          "median_tps": 65.645,
+          "ttft": 0.59
         },
         "arena": {
           "agent": {
@@ -36349,7 +36289,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -36450,36 +36390,6 @@
       "benchmarks": {}
     },
     {
-      "id": "TEE/qwen3-8b",
-      "name": "Qwen3 8B TEE",
-      "provider": "TEE",
-      "family": "TEE/qwen3-8b",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 40960,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 110000.0,
-        "completion": 450000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "TEE/glm-5.1",
       "name": "GLM 5.1 TEE",
       "provider": "TEE",
@@ -36534,7 +36444,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 1400000.0,
-        "completion": 4600000.0,
+        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37270,6 +37180,36 @@
       "price_per_million": {
         "prompt": 1100000.0,
         "completion": 2200000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp-uncensored",
+      "name": "DeepSeek V4 Flash Vision Exp Uncensored",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4-flash-vision-exp-uncensored",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 524288,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 440000.0,
+        "completion": 1600000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -38884,8 +38824,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 206.793,
-          "ttft": 2.703
+          "median_tps": 204.335,
+          "ttft": 1.784
         },
         "benchlm": {
           "slug": "lfm2-5-2-6b",
@@ -39673,8 +39613,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 350000.0,
-        "completion": 1400000.0,
+        "prompt": 250000.0,
+        "completion": 1000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -39947,8 +39887,8 @@
             "completion": 0.25,
             "blended": 0.107
           },
-          "median_tps": 18.799,
-          "ttft": 27.662
+          "median_tps": 16.59,
+          "ttft": 31.284
         }
       }
     },
@@ -41625,7 +41565,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -42048,8 +41988,8 @@
             "completion": 0.15,
             "blended": 0.15
           },
-          "median_tps": 100.593,
-          "ttft": 0.51
+          "median_tps": 73.539,
+          "ttft": 0.474
         },
         "benchlm": {
           "slug": "ministral-3-8b",
@@ -44330,6 +44270,238 @@
       }
     },
     {
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "provider": "vivgrid",
+      "family": "claude-fable-5-1",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-06",
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 10000000.0,
+        "completion": 50000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "arena": {
+          "agent": {
+            "rank": 1,
+            "model": "Claude Fable 5.1 (Max)",
+            "vendor": "Anthropic",
+            "license": "proprietary",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 15.87,
+                "ci": 2.84
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 22.45,
+                "ci": 3.71
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 42.45,
+                "ci": 10.94
+              },
+              {
+                "name": "Steerability",
+                "score": 0.58,
+                "ci": 6.77
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 13.11,
+                "ci": 1.33
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.78,
+                "ci": 0.13
+              },
+              {
+                "name": "Cost/Task",
+                "score": 6.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 1050
+          }
+        },
+        "benchlm": {
+          "slug": "claude-fable-5-1",
+          "canonicalModelKey": "claude-fable-5-1",
+          "model": "Claude Fable 5.1",
+          "creator": "Anthropic",
+          "sourceType": "Proprietary",
+          "reasoningType": "Reasoning",
+          "contextWindow": "1M",
+          "contextWindowTokens": 1000000,
+          "displayScore": 82.95,
+          "provisionalDisplayScore": 77,
+          "publicRankingMode": "bench-align-v5",
+          "evidenceStatus": "supported",
+          "scoreInterval90": {
+            "lower": 79.99,
+            "upper": 85.91
+          },
+          "rankingEligible": true,
+          "overallRank": 1,
+          "url": "https://benchlm.ai/models/claude-fable-5-1",
+          "markdownUrl": "https://benchlm.ai/md/models/claude-fable-5-1.md",
+          "id": 416,
+          "releaseDate": "2026-09-01",
+          "market": null,
+          "isRegional": false,
+          "family": {
+            "familyKey": "claude-fable",
+            "familyName": "Claude Fable",
+            "variantType": "base",
+            "snapshotLabel": null,
+            "baseFamilyModelKey": "claude-fable-5-1",
+            "relatedModelKeys": [
+              "claude-fable-5",
+              "claude-mythos-5-1"
+            ],
+            "isCanonicalFamilyEntry": true,
+            "supersedesModelKey": "claude-fable-5"
+          },
+          "scores": {
+            "displayScore": 77,
+            "overallScore": 76,
+            "rawOverallScore": 79,
+            "verifiedDisplayScore": 75,
+            "displayCategoryScores": {
+              "agentic": 60.8,
+              "coding": 90.6,
+              "reasoning": 79.4,
+              "multimodalGrounded": null,
+              "knowledge": 97.5,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            },
+            "verifiedDisplayCategoryScores": {
+              "agentic": 52.3,
+              "coding": 90.6,
+              "reasoning": 79.4,
+              "multimodalGrounded": null,
+              "knowledge": 97.5,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            }
+          },
+          "ranking": {
+            "rankingEligible": true,
+            "verifiedRankingEligible": true,
+            "overallRank": 1,
+            "categoryRanks": {
+              "agentic": 1,
+              "coding": 1,
+              "reasoning": 2,
+              "knowledge": 1
+            },
+            "categoryRankingEligible": {
+              "agentic": true,
+              "coding": true,
+              "reasoning": true,
+              "multimodalGrounded": false,
+              "knowledge": true,
+              "multilingual": false,
+              "instructionFollowing": false,
+              "math": false
+            }
+          },
+          "coverage": {
+            "trustedBenchmarkCount": 32,
+            "verifiedBenchmarkCount": 32,
+            "rankableBenchmarkCount": 32,
+            "generatedBenchmarkCount": 0,
+            "scoreConfidence": 2
+          },
+          "benchmarks": {
+            "agentic": {
+              "terminalBench4": 55.8,
+              "terminalBenchScience": 52.6,
+              "osWorld2": 41.7,
+              "automationBench": 31.4,
+              "toolathlonVerified": 77.8,
+              "toolathlonVerifiedPass3": 81.5,
+              "toolathlonVerifiedPass3All": 73.1,
+              "toolathlonVerifiedAvgTurns": 23.7,
+              "aaAgenticIndex": 61.34,
+              "gdpvalAaNormalized": 67.7,
+              "gdpvalAa": 1853,
+              "aaBriefcaseElo": 1669,
+              "aaHarveyLab": 93,
+              "aaTau3Banking": 47.2,
+              "aaTerminalBench21": 91.4,
+              "valsTerminalBench21": 85
+            },
+            "coding": {
+              "bug-hunt-bench": 43,
+              "swePro": 81.2,
+              "sweMultilingual": 89.1,
+              "sweMultimodal": 54.7,
+              "deepSwe": 67.4,
+              "frontierSweV2": 56.3,
+              "programBench": 87.6,
+              "cursorBench32": 73.4,
+              "aaCodingIndex": 81.6,
+              "aaSciCode": 62,
+              "valsLiveCodeBench": 90.5
+            },
+            "reasoning": {
+              "arcAgi1": 97.5,
+              "arcAgi2": 90,
+              "lcr": 80,
+              "critpt": 29.7
+            },
+            "multimodalGrounded": {
+              "designArenaWebsite": 1330
+            },
+            "knowledge": {
+              "hle": 65,
+              "hleNoTools": 60.9,
+              "artificialAnalysis": 65.65,
+              "aaGpqaDiamond": 93.7,
+              "aaHle": 59.1,
+              "aaOmniscienceIndex": 43.5,
+              "omniscienceAccuracy": 67.2,
+              "omniscienceHallucinationRate": 72.6,
+              "valsGpqaDiamond": 93.4,
+              "valsMmluPro": 92.4
+            },
+            "multilingual": {},
+            "instructionFollowing": {},
+            "math": {}
+          }
+        }
+      }
+    },
+    {
       "id": "gpt-5.1-codex-max",
       "name": "GPT-5.1 Codex Max",
       "provider": "vivgrid",
@@ -44477,8 +44649,8 @@
             "completion": 1.2,
             "blended": 0.45
           },
-          "median_tps": 110.362,
-          "ttft": 0.817
+          "median_tps": 114.97,
+          "ttft": 0.709
         },
         "arena": {
           "agent": {
@@ -44781,6 +44953,88 @@
           },
           "median_tps": 0.0,
           "ttft": 0.0
+        }
+      }
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "provider": "vivgrid",
+      "family": "gemini-3.8-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "audio/image/pdf/text/video",
+      "is_vision": true,
+      "is_audio_input": true,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 750000.0,
+        "completion": 3750000.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "arena": {
+          "agent": {
+            "rank": 17,
+            "model": "Gemini 3.8 Flash (High)",
+            "vendor": "Google",
+            "license": "proprietary",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 5.47,
+                "ci": 1.92
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 10.42,
+                "ci": 4.42
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 14.25,
+                "ci": 6.25
+              },
+              {
+                "name": "Steerability",
+                "score": 1.73,
+                "ci": 4.9
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 3.72,
+                "ci": 1.14
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.7,
+                "ci": 0.15
+              },
+              {
+                "name": "Cost/Task",
+                "score": 10.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 75375
+          }
         }
       }
     },
@@ -45092,8 +45346,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 83.692,
-          "ttft": 0.889
+          "median_tps": 92.043,
+          "ttft": 0.762
         },
         "arena": {
           "agent": {
@@ -45386,8 +45640,8 @@
             "completion": 2.5,
             "blended": 1.563
           },
-          "median_tps": 108.333,
-          "ttft": 0.952
+          "median_tps": 115.343,
+          "ttft": 0.884
         },
         "arena": {
           "agent": {
@@ -50572,7 +50826,7 @@
           "creator_slug": "anthropic",
           "slug": "claude-opus-4-8",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 46.4,
+            "artificial_analysis_intelligence_index": 47.8,
             "artificial_analysis_coding_index": 74.3,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -53241,7 +53495,7 @@
           "creator_slug": "google",
           "slug": "gemini-3-1-flash-lite-preview",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 18.7,
+            "artificial_analysis_intelligence_index": 19.3,
             "artificial_analysis_coding_index": 34.7,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -53327,8 +53581,8 @@
             "completion": 9.0,
             "blended": 3.375
           },
-          "median_tps": 219.063,
-          "ttft": 0.699
+          "median_tps": 216.086,
+          "ttft": 0.747
         },
         "arena": {
           "agent": {
@@ -53638,59 +53892,7 @@
         "completion": 3750000.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "agent": {
-            "rank": 17,
-            "model": "Gemini 3.8 Flash (High)",
-            "vendor": "Google",
-            "license": "proprietary",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 5.47,
-                "ci": 1.92
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 10.42,
-                "ci": 4.42
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 14.25,
-                "ci": 6.25
-              },
-              {
-                "name": "Steerability",
-                "score": 1.73,
-                "ci": 4.9
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 3.72,
-                "ci": 1.14
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 0.7,
-                "ci": 0.15
-              },
-              {
-                "name": "Cost/Task",
-                "score": 10.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 75375
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "google-vertex/gemini-3.7-flash",
@@ -54020,8 +54222,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 57.829,
-          "ttft": 1.186
+          "median_tps": 62.233,
+          "ttft": 0.755
         },
         "arena": {
           "agent": {
@@ -55050,7 +55252,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -55786,7 +55988,7 @@
           "creator_slug": "anthropic",
           "slug": "claude-fable-5-1-xhigh",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 53.8,
+            "artificial_analysis_intelligence_index": 56.2,
             "artificial_analysis_coding_index": 80.7,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -55809,59 +56011,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 51.736,
-          "ttft": 34.809
-        },
-        "arena": {
-          "agent": {
-            "rank": 1,
-            "model": "Claude Fable 5.1 (Max)",
-            "vendor": "Anthropic",
-            "license": "proprietary",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 15.87,
-                "ci": 2.84
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 22.45,
-                "ci": 3.71
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 42.45,
-                "ci": 10.94
-              },
-              {
-                "name": "Steerability",
-                "score": 0.58,
-                "ci": 6.77
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 13.11,
-                "ci": 1.33
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 0.78,
-                "ci": 0.13
-              },
-              {
-                "name": "Cost/Task",
-                "score": 6.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 1050
-          }
+          "median_tps": 56.682,
+          "ttft": 32.596
         }
       }
     },
@@ -58199,7 +58350,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -58932,8 +59083,8 @@
             "completion": 0.25,
             "blended": 0.19
           },
-          "median_tps": 91.194,
-          "ttft": 0.457
+          "median_tps": 87.882,
+          "ttft": 0.393
         }
       }
     },
@@ -59607,8 +59758,8 @@
       "source": "models.dev",
       "created_unix": null,
       "context": 32768,
-      "modality": "text",
-      "is_vision": false,
+      "modality": "image/text",
+      "is_vision": true,
       "is_audio_input": false,
       "is_video_input": false,
       "is_image_output": false,
@@ -59697,10 +59848,10 @@
       "source": "models.dev",
       "created_unix": null,
       "context": 1048576,
-      "modality": "text",
-      "is_vision": false,
+      "modality": "image/pdf/text/video",
+      "is_vision": true,
       "is_audio_input": false,
-      "is_video_input": false,
+      "is_video_input": true,
       "is_image_output": false,
       "is_audio_output": false,
       "supports_reasoning": true,
@@ -59709,7 +59860,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -62056,8 +62207,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 48.376,
-          "ttft": 11.129
+          "median_tps": 52.607,
+          "ttft": 14.501
         }
       }
     },
@@ -62126,7 +62277,7 @@
           "creator_slug": "xai",
           "slug": "grok-4-3",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 29.3,
+            "artificial_analysis_intelligence_index": 29.9,
             "artificial_analysis_coding_index": 42.2,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -62219,7 +62370,7 @@
           "creator_slug": "xai",
           "slug": "grok-4-6-medium",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 48.4,
+            "artificial_analysis_intelligence_index": 48.8,
             "artificial_analysis_coding_index": 74.4,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -62242,8 +62393,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 55.39,
-          "ttft": 35.794
+          "median_tps": 53.466,
+          "ttft": 28.186
         }
       }
     },
@@ -62417,7 +62568,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -63347,7 +63498,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -65894,8 +66045,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 39.975,
-          "ttft": 1.748
+          "median_tps": 39.304,
+          "ttft": 1.757
         }
       }
     },
@@ -68615,7 +68766,7 @@
           "creator_slug": "kimi",
           "slug": "kimi-k3-low",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 38.8,
+            "artificial_analysis_intelligence_index": 37.1,
             "artificial_analysis_coding_index": 72,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -68638,8 +68789,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 35.892,
-          "ttft": 2.651
+          "median_tps": 43.331,
+          "ttft": 2.667
         }
       }
     },
@@ -70171,187 +70322,6 @@
               "frontierMathV2Tiers13": 20.69,
               "frontierMathV2Tier4": 4.167
             }
-          }
-        }
-      }
-    },
-    {
-      "id": "claude-fable-5-1",
-      "name": "Claude Fable 5.1",
-      "provider": "azure-cognitive-services",
-      "family": "claude-fable-5-1",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/pdf/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2026-06",
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 10000000.0,
-        "completion": 50000000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "benchlm": {
-          "slug": "claude-fable-5-1",
-          "canonicalModelKey": "claude-fable-5-1",
-          "model": "Claude Fable 5.1",
-          "creator": "Anthropic",
-          "sourceType": "Proprietary",
-          "reasoningType": "Reasoning",
-          "contextWindow": "1M",
-          "contextWindowTokens": 1000000,
-          "displayScore": 82.95,
-          "provisionalDisplayScore": 77,
-          "publicRankingMode": "bench-align-v5",
-          "evidenceStatus": "supported",
-          "scoreInterval90": {
-            "lower": 79.99,
-            "upper": 85.91
-          },
-          "rankingEligible": true,
-          "overallRank": 1,
-          "url": "https://benchlm.ai/models/claude-fable-5-1",
-          "markdownUrl": "https://benchlm.ai/md/models/claude-fable-5-1.md",
-          "id": 416,
-          "releaseDate": "2026-09-01",
-          "market": null,
-          "isRegional": false,
-          "family": {
-            "familyKey": "claude-fable",
-            "familyName": "Claude Fable",
-            "variantType": "base",
-            "snapshotLabel": null,
-            "baseFamilyModelKey": "claude-fable-5-1",
-            "relatedModelKeys": [
-              "claude-fable-5",
-              "claude-mythos-5-1"
-            ],
-            "isCanonicalFamilyEntry": true,
-            "supersedesModelKey": "claude-fable-5"
-          },
-          "scores": {
-            "displayScore": 77,
-            "overallScore": 76,
-            "rawOverallScore": 79,
-            "verifiedDisplayScore": 75,
-            "displayCategoryScores": {
-              "agentic": 60.8,
-              "coding": 90.6,
-              "reasoning": 79.4,
-              "multimodalGrounded": null,
-              "knowledge": 97.5,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            },
-            "verifiedDisplayCategoryScores": {
-              "agentic": 52.3,
-              "coding": 90.6,
-              "reasoning": 79.4,
-              "multimodalGrounded": null,
-              "knowledge": 97.5,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            }
-          },
-          "ranking": {
-            "rankingEligible": true,
-            "verifiedRankingEligible": true,
-            "overallRank": 1,
-            "categoryRanks": {
-              "agentic": 1,
-              "coding": 1,
-              "reasoning": 2,
-              "knowledge": 1
-            },
-            "categoryRankingEligible": {
-              "agentic": true,
-              "coding": true,
-              "reasoning": true,
-              "multimodalGrounded": false,
-              "knowledge": true,
-              "multilingual": false,
-              "instructionFollowing": false,
-              "math": false
-            }
-          },
-          "coverage": {
-            "trustedBenchmarkCount": 32,
-            "verifiedBenchmarkCount": 32,
-            "rankableBenchmarkCount": 32,
-            "generatedBenchmarkCount": 0,
-            "scoreConfidence": 2
-          },
-          "benchmarks": {
-            "agentic": {
-              "terminalBench4": 55.8,
-              "terminalBenchScience": 52.6,
-              "osWorld2": 41.7,
-              "automationBench": 31.4,
-              "toolathlonVerified": 77.8,
-              "toolathlonVerifiedPass3": 81.5,
-              "toolathlonVerifiedPass3All": 73.1,
-              "toolathlonVerifiedAvgTurns": 23.7,
-              "aaAgenticIndex": 61.34,
-              "gdpvalAaNormalized": 67.7,
-              "gdpvalAa": 1853,
-              "aaBriefcaseElo": 1669,
-              "aaHarveyLab": 93,
-              "aaTau3Banking": 47.2,
-              "aaTerminalBench21": 91.4,
-              "valsTerminalBench21": 85
-            },
-            "coding": {
-              "bug-hunt-bench": 43,
-              "swePro": 81.2,
-              "sweMultilingual": 89.1,
-              "sweMultimodal": 54.7,
-              "deepSwe": 67.4,
-              "frontierSweV2": 56.3,
-              "programBench": 87.6,
-              "cursorBench32": 73.4,
-              "aaCodingIndex": 81.6,
-              "aaSciCode": 62,
-              "valsLiveCodeBench": 90.5
-            },
-            "reasoning": {
-              "arcAgi1": 97.5,
-              "arcAgi2": 90,
-              "lcr": 80,
-              "critpt": 29.7
-            },
-            "multimodalGrounded": {
-              "designArenaWebsite": 1330
-            },
-            "knowledge": {
-              "hle": 65,
-              "hleNoTools": 60.9,
-              "artificialAnalysis": 65.65,
-              "aaGpqaDiamond": 93.7,
-              "aaHle": 59.1,
-              "aaOmniscienceIndex": 43.5,
-              "omniscienceAccuracy": 67.2,
-              "omniscienceHallucinationRate": 72.6,
-              "valsGpqaDiamond": 93.4,
-              "valsMmluPro": 92.4
-            },
-            "multilingual": {},
-            "instructionFollowing": {},
-            "math": {}
           }
         }
       }
@@ -72171,7 +72141,7 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 46.765,
+          "median_tps": 46.85,
           "ttft": 0.351
         }
       }
@@ -72234,8 +72204,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 17.476,
-          "ttft": 0.386
+          "median_tps": 17.441,
+          "ttft": 0.375
         }
       }
     },
@@ -72556,8 +72526,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 231.654,
-          "ttft": 0.162
+          "median_tps": 239.357,
+          "ttft": 0.15
         },
         "benchlm": {
           "slug": "command-a-plus",
@@ -72903,14 +72873,14 @@
           "creator_slug": "mistral",
           "slug": "mistral-small-3-1",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 8.6,
+            "artificial_analysis_intelligence_index": 10.3,
             "artificial_analysis_coding_index": 26.3,
             "artificial_analysis_math_index": 3.7,
             "mmlu_pro": 0.659,
             "gpqa": 0.454,
             "hle": 0.043,
             "livecodebench": 0.212,
-            "scicode": null,
+            "scicode": 0.278,
             "math_500": 0.706666666666667,
             "aime": 0.0933333333333333,
             "aime_25": 0.0366666666666667,
@@ -73361,8 +73331,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 86.946,
-          "ttft": 2.706
+          "median_tps": 100.115,
+          "ttft": 2.641
         },
         "benchlm": {
           "slug": "gpt-5-6-terra",
@@ -73812,8 +73782,8 @@
             "completion": 3.75,
             "blended": 1.5
           },
-          "median_tps": 294.255,
-          "ttft": 4.37
+          "median_tps": 315.125,
+          "ttft": 4.54
         },
         "benchlm": {
           "slug": "gemini-3-7-flash",
@@ -74214,7 +74184,7 @@
           "creator_slug": "alibaba",
           "slug": "qwen3-7-plus",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 30.8,
+            "artificial_analysis_intelligence_index": 31.9,
             "artificial_analysis_coding_index": 55.9,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -74237,8 +74207,8 @@
             "completion": 1.6,
             "blended": 0.7
           },
-          "median_tps": 55.55,
-          "ttft": 1.551
+          "median_tps": 55.217,
+          "ttft": 1.282
         },
         "benchlm": {
           "slug": "qwen3-7-plus",
@@ -74740,8 +74710,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 73.533,
-          "ttft": 6.906
+          "median_tps": 76.226,
+          "ttft": 11.58
         },
         "benchlm": {
           "slug": "gpt-5-6-sol",
@@ -74972,7 +74942,7 @@
             "gpqa": 0.859,
             "hle": 0.258,
             "livecodebench": null,
-            "scicode": null,
+            "scicode": 0.468,
             "math_500": null,
             "aime": null,
             "aime_25": null,
@@ -74988,8 +74958,8 @@
             "completion": 1.2,
             "blended": 0.45
           },
-          "median_tps": 102.38,
-          "ttft": 2.18
+          "median_tps": 103.789,
+          "ttft": 2.221
         },
         "benchlm": {
           "slug": "gpt-5-6-luna",
@@ -75243,8 +75213,8 @@
             "completion": 3.75,
             "blended": 1.5
           },
-          "median_tps": 185.655,
-          "ttft": 11.511
+          "median_tps": 188.462,
+          "ttft": 10.72
         },
         "benchlm": {
           "slug": "gemini-3-6-flash",
@@ -75437,8 +75407,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 77.374,
-          "ttft": 1.248
+          "median_tps": 74.538,
+          "ttft": 1.415
         },
         "benchlm": {
           "slug": "glm-5-3",
@@ -75662,7 +75632,7 @@
           "creator_slug": "kimi",
           "slug": "kimi-k2-7-code",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 33.9,
+            "artificial_analysis_intelligence_index": 32.7,
             "artificial_analysis_coding_index": 60.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -75685,8 +75655,8 @@
             "completion": 4.0,
             "blended": 1.712
           },
-          "median_tps": 46.905,
-          "ttft": 1.263
+          "median_tps": 65.697,
+          "ttft": 1.123
         },
         "benchlm": {
           "slug": "kimi-k2-7-code",
@@ -76844,7 +76814,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -76882,8 +76852,8 @@
             "completion": 0.5,
             "blended": 0.237
           },
-          "median_tps": 43.823,
-          "ttft": 1.209
+          "median_tps": 58.715,
+          "ttft": 1.217
         },
         "benchlm": {
           "slug": "glm-5-3-flash",
@@ -77558,7 +77528,7 @@
           "creator_slug": "zai",
           "slug": "glm-5-2",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 42.5,
+            "artificial_analysis_intelligence_index": 42.1,
             "artificial_analysis_coding_index": 68.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -77581,8 +77551,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 70.351,
-          "ttft": 1.427
+          "median_tps": 68.303,
+          "ttft": 1.236
         },
         "benchlm": {
           "slug": "glm-5-2",
@@ -77836,7 +77806,7 @@
           "creator_slug": "xiaomi",
           "slug": "mimo-v2-5-0424",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 29.5,
+            "artificial_analysis_intelligence_index": 28.2,
             "artificial_analysis_coding_index": 56.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -77859,8 +77829,8 @@
             "completion": 0.28,
             "blended": 0.175
           },
-          "median_tps": 53.59,
-          "ttft": 2.493
+          "median_tps": 61.447,
+          "ttft": 2.201
         },
         "benchlm": {
           "slug": "mimo-v2-5",
@@ -78096,8 +78066,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 34.263,
-          "ttft": 4.022
+          "median_tps": 40.743,
+          "ttft": 3.436
         },
         "benchlm": {
           "slug": "mimo-v2-5-pro",
@@ -78468,8 +78438,8 @@
             "completion": 1.15,
             "blended": 0.438
           },
-          "median_tps": 77.634,
-          "ttft": 2.229
+          "median_tps": 86.879,
+          "ttft": 1.717
         },
         "benchlm": {
           "slug": "step-3-7-flash",
@@ -78731,8 +78701,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 38.418,
-          "ttft": 1.732
+          "median_tps": 38.121,
+          "ttft": 1.701
         },
         "benchlm": {
           "slug": "qwen3-8-max",
@@ -79936,36 +79906,6 @@
       "benchmarks": {}
     },
     {
-      "id": "gemini-3.8-flash",
-      "name": "Gemini 3.8 Flash",
-      "provider": "google-vertex",
-      "family": "gemini-3.8-flash",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "audio/image/pdf/text/video",
-      "is_vision": true,
-      "is_audio_input": true,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 750000.0,
-        "completion": 3750000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "gemini-flash-latest",
       "name": "Gemini Flash Latest",
       "provider": "google-vertex",
@@ -80774,7 +80714,7 @@
           "creator_slug": "deepseek",
           "slug": "deepseek-v4-flash-vision",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 41.5,
+            "artificial_analysis_intelligence_index": 40.7,
             "artificial_analysis_coding_index": 65,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -80797,8 +80737,8 @@
             "completion": 1.32,
             "blended": 0.66
           },
-          "median_tps": 121.308,
-          "ttft": 0.652
+          "median_tps": 119.529,
+          "ttft": 0.625
         }
       }
     },
@@ -81415,14 +81355,14 @@
           "creator_slug": "alibaba",
           "slug": "qwen3-14b-instruct-reasoning",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 4.8,
+            "artificial_analysis_intelligence_index": 7.1,
             "artificial_analysis_coding_index": 13.8,
             "artificial_analysis_math_index": 55.7,
             "mmlu_pro": 0.774,
             "gpqa": 0.604,
             "hle": 0.045,
             "livecodebench": 0.523,
-            "scicode": null,
+            "scicode": 0.307,
             "math_500": 0.961333333333333,
             "aime": 0.763333333333333,
             "aime_25": 0.556666666666667,
@@ -84127,8 +84067,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 35.058,
-          "ttft": 0.969
+          "median_tps": 35.05,
+          "ttft": 0.949
         }
       }
     },
@@ -86618,7 +86558,7 @@
             "completion": 0.97,
             "blended": 0.43
           },
-          "median_tps": 105.658,
+          "median_tps": 106.972,
           "ttft": 0.878
         }
       }
@@ -87779,8 +87719,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 121.769,
-          "ttft": 2.055
+          "median_tps": 121.977,
+          "ttft": 1.842
         }
       }
     },
@@ -88485,7 +88425,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -88884,7 +88824,7 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
+      "knowledge_cutoff": null,
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -89451,8 +89391,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 152.305,
-          "ttft": 0.554
+          "median_tps": 164.81,
+          "ttft": 0.51
         },
         "benchlm": {
           "slug": "mistral-small-4-reasoning",
@@ -93604,8 +93544,8 @@
             "completion": 0.47,
             "blended": 0.23
           },
-          "median_tps": 73.944,
-          "ttft": 1.302
+          "median_tps": 76.399,
+          "ttft": 1.326
         },
         "arena": {
           "agent": {
@@ -93938,8 +93878,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 143.798,
-          "ttft": 1.811
+          "median_tps": 116.251,
+          "ttft": 1.676
         }
       }
     },
@@ -94406,8 +94346,8 @@
             "completion": 0.3,
             "blended": 0.131
           },
-          "median_tps": 321.434,
-          "ttft": 0.56
+          "median_tps": 0.0,
+          "ttft": 0.0
         }
       }
     },
@@ -95043,7 +94983,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -97781,7 +97721,7 @@
           "creator_slug": "tencent",
           "slug": "hy3",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 33.2,
+            "artificial_analysis_intelligence_index": 32.4,
             "artificial_analysis_coding_index": 58.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -97804,8 +97744,8 @@
             "completion": 0.554,
             "blended": 0.241
           },
-          "median_tps": 98.087,
-          "ttft": 1.62
+          "median_tps": 99.235,
+          "ttft": 1.624
         }
       }
     },
@@ -99832,8 +99772,8 @@
             "completion": 0.16,
             "blended": 0.07
           },
-          "median_tps": 94.506,
-          "ttft": 4.366
+          "median_tps": 107.642,
+          "ttft": 5.037
         }
       }
     },
@@ -101388,8 +101328,8 @@
             "completion": 14.0,
             "blended": 4.813
           },
-          "median_tps": 120.125,
-          "ttft": 31.505
+          "median_tps": 143.103,
+          "ttft": 31.124
         },
         "benchlm": {
           "slug": "gpt-5-3-codex",
@@ -101741,8 +101681,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 117.358,
-          "ttft": 20.28
+          "median_tps": 123.217,
+          "ttft": 21.656
         }
       }
     },
@@ -102732,7 +102672,7 @@
           "creator_slug": "nvidia",
           "slug": "nvidia-nemotron-3-ultra-550b-a55b",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 29.6,
+            "artificial_analysis_intelligence_index": 29.3,
             "artificial_analysis_coding_index": 49.3,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -102755,8 +102695,8 @@
             "completion": 2.6,
             "blended": 1.1
           },
-          "median_tps": 156.367,
-          "ttft": 1.211
+          "median_tps": 157.943,
+          "ttft": 1.228
         }
       }
     },
@@ -103887,8 +103827,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 182.255,
-          "ttft": 1.028
+          "median_tps": 183.363,
+          "ttft": 1.006
         }
       }
     },
@@ -104227,14 +104167,14 @@
           "creator_slug": "alibaba",
           "slug": "qwen3-coder-next",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 14.3,
+            "artificial_analysis_intelligence_index": 14.1,
             "artificial_analysis_coding_index": 36.2,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
             "gpqa": 0.737,
             "hle": 0.101,
             "livecodebench": null,
-            "scicode": null,
+            "scicode": 0.362,
             "math_500": null,
             "aime": null,
             "aime_25": null,
@@ -104250,8 +104190,8 @@
             "completion": 1.2,
             "blended": 0.563
           },
-          "median_tps": 115.622,
-          "ttft": 0.91
+          "median_tps": 138.443,
+          "ttft": 0.756
         }
       }
     },
@@ -106845,8 +106785,8 @@
             "completion": 0.68,
             "blended": 0.313
           },
-          "median_tps": 85.219,
-          "ttft": 0.611
+          "median_tps": 79.768,
+          "ttft": 0.594
         }
       }
     },
@@ -106885,14 +106825,14 @@
           "creator_slug": "meta",
           "slug": "llama-4-maverick",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 8.5,
+            "artificial_analysis_intelligence_index": 10.3,
             "artificial_analysis_coding_index": 16.3,
             "artificial_analysis_math_index": 19.3,
             "mmlu_pro": 0.809,
             "gpqa": 0.671,
             "hle": 0.049,
             "livecodebench": 0.397,
-            "scicode": null,
+            "scicode": 0.317,
             "math_500": 0.888666666666667,
             "aime": 0.39,
             "aime_25": 0.193333333333333,
@@ -106908,8 +106848,8 @@
             "completion": 0.91,
             "blended": 0.422
           },
-          "median_tps": 84.533,
-          "ttft": 0.582
+          "median_tps": 95.012,
+          "ttft": 0.577
         }
       }
     },
@@ -109385,8 +109325,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 134.894,
-          "ttft": 0.629
+          "median_tps": 152.288,
+          "ttft": 0.63
         }
       }
     },
@@ -109488,14 +109428,14 @@
           "creator_slug": "mistral",
           "slug": "devstral-small-2",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 11.2,
+            "artificial_analysis_intelligence_index": 11.7,
             "artificial_analysis_coding_index": 29.3,
             "artificial_analysis_math_index": 34.3,
             "mmlu_pro": 0.678,
             "gpqa": 0.532,
             "hle": 0.035,
             "livecodebench": 0.348,
-            "scicode": null,
+            "scicode": 0.324,
             "math_500": null,
             "aime": null,
             "aime_25": 0.343333333333333,
@@ -109511,8 +109451,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 134.405,
-          "ttft": 0.71
+          "median_tps": 143.768,
+          "ttft": 0.639
         }
       }
     },
@@ -109604,8 +109544,8 @@
             "completion": 1.5,
             "blended": 0.75
           },
-          "median_tps": 78.349,
-          "ttft": 0.758
+          "median_tps": 84.325,
+          "ttft": 0.756
         }
       }
     },
@@ -110021,8 +109961,8 @@
             "completion": 0.2,
             "blended": 0.095
           },
-          "median_tps": 295.608,
-          "ttft": 0.461
+          "median_tps": 299.689,
+          "ttft": 0.446
         }
       }
     },
@@ -110147,8 +110087,8 @@
             "completion": 0.1,
             "blended": 0.063
           },
-          "median_tps": 120.235,
-          "ttft": 0.46
+          "median_tps": 94.68,
+          "ttft": 0.481
         },
         "arena": {
           "code": {
@@ -110769,8 +110709,8 @@
             "completion": 0.2,
             "blended": 0.151
           },
-          "median_tps": 84.734,
-          "ttft": 1.142
+          "median_tps": 82.049,
+          "ttft": 1.019
         }
       }
     },
@@ -111574,8 +111514,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 89.184,
-          "ttft": 1.568
+          "median_tps": 87.23,
+          "ttft": 1.578
         }
       }
     },
@@ -111817,8 +111757,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 130.541,
-          "ttft": 1.055
+          "median_tps": 137.005,
+          "ttft": 1.027
         },
         "benchlm": {
           "slug": "qwen3-6-35b-a3b",
@@ -112518,8 +112458,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 315.484,
-          "ttft": 6.75
+          "median_tps": 338.576,
+          "ttft": 6.713
         },
         "benchlm": {
           "slug": "gemini-3-5-flash-lite",
@@ -113107,8 +113047,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 54.327,
-          "ttft": 1.371
+          "median_tps": 57.041,
+          "ttft": 1.331
         },
         "benchlm": {
           "slug": "qwen3-6-27b",
@@ -117261,6 +117201,36 @@
       "benchmarks": {}
     },
     {
+      "id": "accounts/fireworks/routers/glm-5p3-fast",
+      "name": "GLM 5.3 Fast",
+      "provider": "accounts",
+      "family": "accounts/fireworks/routers/glm-5p3-fast",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048572,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 2100000.0,
+        "completion": 6600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "accounts/fireworks/routers/glm-5p2-fast",
       "name": "GLM 5.2 Fast",
       "provider": "accounts",
@@ -117537,7 +117507,7 @@
       "family": "accounts/fireworks/models/glm-5p3",
       "source": "models.dev",
       "created_unix": null,
-      "context": 1000000,
+      "context": 1048573,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -117597,7 +117567,7 @@
       "family": "accounts/fireworks/models/glm-5p3-flash",
       "source": "models.dev",
       "created_unix": null,
-      "context": 1000000,
+      "context": 1048573,
       "modality": "image/pdf/text/video",
       "is_vision": true,
       "is_audio_input": false,
@@ -117610,7 +117580,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -118278,8 +118248,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 165.785,
-          "ttft": 0.4
+          "median_tps": 171.55,
+          "ttft": 0.438
         }
       }
     },
@@ -118371,8 +118341,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 141.927,
-          "ttft": 1.117
+          "median_tps": 141.826,
+          "ttft": 1.306
         }
       }
     },
@@ -118524,8 +118494,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 173.535,
-          "ttft": 0.632
+          "median_tps": 177.941,
+          "ttft": 0.573
         },
         "benchlm": {
           "slug": "mistral-small-4",
@@ -119128,8 +119098,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 17.353,
-          "ttft": 0.476
+          "median_tps": 20.322,
+          "ttft": 0.435
         }
       }
     },
@@ -119575,8 +119545,8 @@
             "completion": 0.4,
             "blended": 0.198
           },
-          "median_tps": 88.01,
-          "ttft": 0.683
+          "median_tps": 85.361,
+          "ttft": 0.636
         },
         "arena": {
           "code": {
@@ -119798,8 +119768,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 223.575,
-          "ttft": 7.366
+          "median_tps": 261.994,
+          "ttft": 7.863
         },
         "benchlm": {
           "slug": "muse-spark-1-2",
@@ -120231,8 +120201,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 135.654,
-          "ttft": 1.014
+          "median_tps": 135.854,
+          "ttft": 0.995
         },
         "benchlm": {
           "slug": "qwen3-5-122b-a10b",
@@ -120464,8 +120434,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 45.95,
-          "ttft": 1.244
+          "median_tps": 51.962,
+          "ttft": 1.192
         },
         "benchlm": {
           "slug": "qwen3-8-27b",
@@ -120666,7 +120636,7 @@
           "creator_slug": "meta",
           "slug": "muse-spark-1-1",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 43.3,
+            "artificial_analysis_intelligence_index": 41.2,
             "artificial_analysis_coding_index": 71.3,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -120908,7 +120878,7 @@
           "creator_slug": "alibaba",
           "slug": "qwen3-7-max",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 37,
+            "artificial_analysis_intelligence_index": 36.6,
             "artificial_analysis_coding_index": 66,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
@@ -121425,8 +121395,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 107.866,
-          "ttft": 45.194
+          "median_tps": 187.392,
+          "ttft": 25.777
         },
         "benchlm": {
           "slug": "muse-spark-1-3",
@@ -122194,6 +122164,36 @@
       "price_per_million": {
         "prompt": 150200.0,
         "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "glm-latest",
+      "name": "GLM (latest)",
+      "provider": "privatemode-ai",
+      "family": "glm-latest",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 256000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1791000.0,
+        "completion": 8943600.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -124723,8 +124723,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2500000.0,
-        "completion": 15000000.0,
+        "prompt": 2000000.0,
+        "completion": 10000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -125450,7 +125450,7 @@
             "completion": 0.1,
             "blended": 0.1
           },
-          "median_tps": 211.743,
+          "median_tps": 215.085,
           "ttft": 0.478
         },
         "benchlm": {
@@ -127809,8 +127809,8 @@
             "completion": 0.14,
             "blended": 0.061
           },
-          "median_tps": 271.355,
-          "ttft": 0.599
+          "median_tps": 295.868,
+          "ttft": 0.596
         }
       }
     },
@@ -132741,14 +132741,14 @@
           "creator_slug": "arcee",
           "slug": "trinity-large-thinking",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 12,
+            "artificial_analysis_intelligence_index": 13.1,
             "artificial_analysis_coding_index": 25.8,
             "artificial_analysis_math_index": null,
             "mmlu_pro": null,
             "gpqa": 0.752,
             "hle": 0.158,
             "livecodebench": null,
-            "scicode": null,
+            "scicode": 0.406,
             "math_500": null,
             "aime": null,
             "aime_25": null,
@@ -132764,8 +132764,8 @@
             "completion": 0.9,
             "blended": 0.412
           },
-          "median_tps": 328.262,
-          "ttft": 1.158
+          "median_tps": 332.759,
+          "ttft": 1.091
         },
         "arena": {
           "code": {
@@ -132996,8 +132996,8 @@
             "completion": 0.9,
             "blended": 0.563
           },
-          "median_tps": 179.61,
-          "ttft": 1.528
+          "median_tps": 172.936,
+          "ttft": 1.523
         }
       }
     },
@@ -134556,7 +134556,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -136254,8 +136254,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 55.565,
-          "ttft": 0.21
+          "median_tps": 84.736,
+          "ttft": 0.215
         }
       }
     },
@@ -136984,7 +136984,19 @@
         "completion": null,
         "cache_read": null
       },
-      "benchmarks": {}
+      "benchmarks": {
+        "arena": {
+          "video-edit": {
+            "rank": 7,
+            "model": "grok-imagine-video",
+            "vendor": "SpaceXAI",
+            "license": "proprietary",
+            "score": 1258.0,
+            "ci": null,
+            "votes": null
+          }
+        }
+      }
     },
     {
       "id": "grok-imagine-video-1.5",
@@ -138238,7 +138250,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -140337,14 +140349,14 @@
           "creator_slug": "anthropic",
           "slug": "claude-4-5-sonnet-thinking",
           "evaluations": {
-            "artificial_analysis_intelligence_index": 29,
+            "artificial_analysis_intelligence_index": 27.3,
             "artificial_analysis_coding_index": 52.1,
             "artificial_analysis_math_index": 88,
             "mmlu_pro": 0.875,
             "gpqa": 0.834,
             "hle": 0.178,
             "livecodebench": 0.714,
-            "scicode": null,
+            "scicode": 0.457,
             "math_500": null,
             "aime": null,
             "aime_25": 0.88,
@@ -141087,7 +141099,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -141656,6 +141668,36 @@
       "supports_json": false,
       "supports_caching": false,
       "knowledge_cutoff": "2025-03-31",
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "duo-chat-gpt-6-astra",
+      "name": "Agentic Chat (GPT-6 Astra)",
+      "provider": "gitlab",
+      "family": "duo-chat-gpt-6-astra",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1050000,
+      "modality": "image/pdf/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-04-30",
       "hugging_face_id": null,
       "open_weight": false,
       "synthetic": false,
@@ -143198,8 +143240,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 84.624,
-          "ttft": 1.121
+          "median_tps": 95.745,
+          "ttft": 1.002
         }
       }
     },
@@ -143384,36 +143426,6 @@
       "benchmarks": {}
     },
     {
-      "id": "flexai/deepseek-v4-flash-0731",
-      "name": "DeepSeek V4 Flash 0731 (FlexAI)",
-      "provider": "flexai",
-      "family": "flexai/deepseek-v4-flash-0731",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 786432,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-05",
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 30000.0,
-        "completion": 100000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "flexai/Nemotron-3-Super-120B-A12B",
       "name": "Nemotron 3 Super 120B A12B (FlexAI)",
       "provider": "flexai",
@@ -143498,6 +143510,36 @@
       "free": false,
       "price_per_million": {
         "prompt": 20000.0,
+        "completion": 100000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "flexai/DeepSeek-V4-Flash-0731",
+      "name": "DeepSeek V4 Flash 0731 (FlexAI)",
+      "provider": "flexai",
+      "family": "flexai/DeepSeek-V4-Flash-0731",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 786432,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 30000.0,
         "completion": 100000.0,
         "cache_read": null
       },
