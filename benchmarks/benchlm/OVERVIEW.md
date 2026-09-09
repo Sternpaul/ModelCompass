@@ -21,8 +21,8 @@ _Tool-use / agentic task category score._
 | 6 | `gpt-6-astra` | 87.100 |
 | 7 | `claude-opus-5` | 85.600 |
 | 8 | `qwen3-8-max` | 83.600 |
-| 9 | `claude-sonnet-5` | 82.400 |
-| 10 | `qwen3-8-27b` | 82.400 |
+| 9 | `grok-4-6` | 82.600 |
+| 10 | `claude-sonnet-5` | 82.400 |
 
 ## Coding
 
@@ -31,16 +31,16 @@ _Code generation category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-1` | 90.600 |
-| 2 | `claude-opus-5` | 89.900 |
-| 3 | `claude-fable` | 89.700 |
-| 4 | `claude-mythos-5` | 87.500 |
-| 5 | `gpt-6-astra` | 78.500 |
+| 1 | `claude-fable-5-1` | 90.400 |
+| 2 | `claude-opus-5` | 89.700 |
+| 3 | `claude-fable` | 89.500 |
+| 4 | `claude-mythos-5` | 87.300 |
+| 5 | `gpt-6-astra` | 78.200 |
 | 6 | `sakana-fugu-ultra` | 77.800 |
 | 7 | `muse-spark-1-3` | 77.300 |
-| 8 | `gemini-3-8-flash` | 75.500 |
-| 9 | `gemini-3-7-flash` | 75 |
-| 10 | `gemini-3-1-pro` | 74.500 |
+| 8 | `gemini-3-8-flash` | 75.200 |
+| 9 | `gemini-3-7-flash` | 74.800 |
+| 10 | `gemini-3-1-pro` | 74.300 |
 
 ## Instruction Following
 
@@ -51,14 +51,14 @@ _Following complex instructions._
 |---|-------|------:|
 | 1 | `mai-thinking-1` | 94.700 |
 | 2 | `grok-4-3` | 94.400 |
-| 3 | `gpt-5-2-codex` | 93.500 |
-| 4 | `minimax-m3` | 93.500 |
-| 5 | `glm-5-1` | 93.500 |
-| 6 | `mimo-v2-5-pro` | 93.500 |
-| 7 | `gpt-5-5` | 92.900 |
-| 8 | `muse-spark` | 92.900 |
-| 9 | `gpt-5-4-nano` | 92.900 |
-| 10 | `minimax-m2-7` | 92.700 |
+| 3 | `gpt-5-2-codex` | 93.700 |
+| 4 | `minimax-m3` | 93.700 |
+| 5 | `glm-5-1` | 93.700 |
+| 6 | `mimo-v2-5-pro` | 93.700 |
+| 7 | `gpt-5-5` | 93.200 |
+| 8 | `muse-spark` | 93.200 |
+| 9 | `gpt-5-4-nano` | 93.200 |
+| 10 | `minimax-m2-7` | 93 |
 
 ## Knowledge
 
@@ -69,14 +69,14 @@ _Factual knowledge category score._
 |---|-------|------:|
 | 1 | `claude-opus-5` | 97.500 |
 | 2 | `claude-fable-5-1` | 97.500 |
-| 3 | `claude-mythos-5` | 94.400 |
+| 3 | `claude-mythos-5` | 94.300 |
 | 4 | `muse-spark-1-1` | 90.600 |
 | 5 | `claude-fable` | 87.200 |
 | 6 | `gpt-6-astra` | 86.800 |
-| 7 | `claude-opus-4-8` | 86.400 |
+| 7 | `claude-opus-4-8` | 86.300 |
 | 8 | `gpt-5-6-sol` | 84.600 |
-| 9 | `gemini-3-7-flash` | 83.200 |
-| 10 | `gemini-3-8-flash` | 83.100 |
+| 9 | `gemini-3-7-flash` | 83.100 |
+| 10 | `gemini-3-8-flash` | 83 |
 
 ## Math
 
@@ -139,13 +139,13 @@ _Logical reasoning category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-astra` | 88.800 |
+| 1 | `gpt-6-astra` | 89.500 |
 | 2 | `qwen3-8-max` | 86.500 |
 | 3 | `claude-fable-5-1` | 79.400 |
 | 4 | `kimi-k3` | 78.500 |
-| 5 | `muse-spark-1-1` | 78.500 |
-| 6 | `minimax-m3` | 78.500 |
-| 7 | `muse-glimmer-30b` | 78.500 |
-| 8 | `gemini-3-8-flash` | 78.500 |
-| 9 | `gemini-3-7-flash` | 78.500 |
-| 10 | `muse-spark-1-2` | 78.500 |
+| 5 | `muse-glimmer-30b` | 78.300 |
+| 6 | `gpt-5-3-codex` | 78.300 |
+| 7 | `minimax-m3` | 78 |
+| 8 | `muse-spark-1-3` | 78 |
+| 9 | `sakana-fugu-ultra` | 77.900 |
+| 10 | `claude-fable` | 77.600 |

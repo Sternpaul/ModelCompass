@@ -106,13 +106,13 @@ _Long-context reasoning score (%)._
 | 1 | `kimi/kimi-k3` | 0.887 |
 | 2 | `anthropic/claude-fable-5-1` | 0.853 |
 | 3 | `anthropic/claude-fable-5-1-medium` | 0.847 |
-| 4 | `meta/muse-spark-1-3` | 0.843 |
-| 5 | `openai/gpt-5-5` | 0.843 |
-| 6 | `openai/gpt-5-5-high` | 0.843 |
-| 7 | `google/gemini-3-8-flash-medium` | 0.840 |
-| 8 | `openai/gpt-5-6-sol` | 0.840 |
-| 9 | `openai/gpt-5-6-luna` | 0.837 |
-| 10 | `anthropic/claude-fable-5-1-high` | 0.837 |
+| 4 | `openai/gpt-5-5` | 0.843 |
+| 5 | `openai/gpt-5-5-high` | 0.843 |
+| 6 | `google/gemini-3-8-flash-medium` | 0.840 |
+| 7 | `openai/gpt-5-6-sol` | 0.840 |
+| 8 | `openai/gpt-5-6-luna` | 0.837 |
+| 9 | `anthropic/claude-fable-5-1-high` | 0.837 |
+| 10 | `openai/gpt-5-3-codex` | 0.833 |
 
 ## LiveCodeBench
 
@@ -182,9 +182,9 @@ _SciCode scientific coding accuracy (%)._
 | 5 | `meta/muse-spark-1-3-xhigh` | 0.597 |
 | 6 | `kimi/kimi-k3` | 0.595 |
 | 7 | `zai/glm-5-3` | 0.590 |
-| 8 | `meta/muse-spark-1-1` | 0.588 |
-| 9 | `google/gemini-3-1-pro-preview` | 0.587 |
-| 10 | `anthropic/claude-fable-5-1-high` | 0.587 |
+| 8 | `meta/muse-spark-1-3` | 0.588 |
+| 9 | `meta/muse-spark-1-1` | 0.588 |
+| 10 | `google/gemini-3-1-pro-preview` | 0.587 |
 
 ## TAU2
 
@@ -211,9 +211,9 @@ _TAU-bench banking domain agent score (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `meta/muse-spark-1-3` | 0.524 |
-| 2 | `alibaba/qwen3-8-max` | 0.513 |
-| 3 | `xai/grok-4-6` | 0.507 |
+| 1 | `alibaba/qwen3-8-max` | 0.513 |
+| 2 | `xai/grok-4-6` | 0.507 |
+| 3 | `meta/muse-spark-1-3` | 0.505 |
 | 4 | `zai/glm-5-3` | 0.503 |
 | 5 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
 | 6 | `alibaba/qwen3-8-27b` | 0.480 |
