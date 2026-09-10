@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-09-09T08:52:38.827542+00:00",
-    "model_count": 3487,
+    "generated_at": "2026-09-10T08:51:44.701087+00:00",
+    "model_count": 3497,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7612 models from 213 providers)",
-      "openrouter_usage": "ok (485 models with live usage)",
+      "models.dev": "ok (7617 models from 213 providers)",
+      "openrouter_usage": "ok (486 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-03)",
       "artificial_analysis": "ok (644 models)",
       "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
@@ -14,11 +14,41 @@
     "coverage": {
       "aa": 430,
       "arena": 421,
-      "benchlm": 214
+      "benchlm": 213
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
   },
   "models": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4.1-flash",
+      "source": "openrouter",
+      "created_unix": 1789021285,
+      "context": 1048576,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.3,
+        "completion": 1.2,
+        "cache_read": 0.006
+      },
+      "benchmarks": {}
+    },
     {
       "id": "inception/mercury-2.5",
       "name": "Inception: Mercury 2.5",
@@ -57,8 +87,8 @@
       "source": "openrouter",
       "created_unix": 1788890061,
       "context": 262144,
-      "modality": "text->text",
-      "is_vision": false,
+      "modality": "text+image->text",
+      "is_vision": true,
       "is_audio_input": false,
       "is_video_input": false,
       "is_image_output": false,
@@ -1011,9 +1041,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.113,
-        "completion": 3.498,
-        "cache_read": 0.2067
+        "prompt": 1.085,
+        "completion": 3.41,
+        "cache_read": 0.2015
       },
       "benchmarks": {}
     },
@@ -6486,6 +6516,36 @@
       "benchmarks": {}
     },
     {
+      "id": "mistralai/mistral-small-2603:batch",
+      "name": "Mistral: Mistral Small 4 (batch)",
+      "provider": "mistralai",
+      "family": "mistralai/mistral-small-2603",
+      "source": "openrouter",
+      "created_unix": 1773695685,
+      "context": 262144,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "mistralai/Mistral-Small-4-119B-2603",
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.075,
+        "completion": 0.3,
+        "cache_read": 0.0075
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "z-ai/glm-5-turbo",
       "name": "Z.ai: GLM 5 Turbo",
       "provider": "z-ai",
@@ -7022,8 +7082,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.29,
-        "completion": 2.4,
+        "prompt": 0.26,
+        "completion": 2.08,
         "cache_read": null
       },
       "benchmarks": {}
@@ -7352,9 +7412,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.27,
-        "completion": 1.08,
-        "cache_read": 0.027
+        "prompt": 0.3,
+        "completion": 1.2,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -8475,6 +8535,36 @@
       "benchmarks": {}
     },
     {
+      "id": "mistralai/ministral-8b-2512:batch",
+      "name": "Mistral: Ministral 3 8B 2512 (batch)",
+      "provider": "mistralai",
+      "family": "mistralai/ministral-8b-2512",
+      "source": "openrouter",
+      "created_unix": 1764681654,
+      "context": 262144,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "mistralai/Ministral-3-8B-Instruct-2512",
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.075,
+        "completion": 0.075,
+        "cache_read": 0.0075
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "mistralai/ministral-3b-2512",
       "name": "Mistral: Ministral 3 3B 2512",
       "provider": "mistralai",
@@ -8531,6 +8621,36 @@
         "prompt": 0.5,
         "completion": 1.5,
         "cache_read": 0.05
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "mistralai/mistral-large-2512:batch",
+      "name": "Mistral: Mistral Large 3 2512 (batch)",
+      "provider": "mistralai",
+      "family": "mistralai/mistral-large-2512",
+      "source": "openrouter",
+      "created_unix": 1764624472,
+      "context": 262144,
+      "modality": "text+image+file->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "",
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.25,
+        "completion": 0.75,
+        "cache_read": 0.025
       },
       "benchmarks": {}
     },
@@ -8791,7 +8911,7 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": null,
       "hugging_face_id": "moonshotai/Kimi-K2-Thinking",
       "open_weight": true,
@@ -8800,7 +8920,7 @@
       "price_per_million": {
         "prompt": 0.6,
         "completion": 2.5,
-        "cache_read": null
+        "cache_read": 0.15
       },
       "benchmarks": {}
     },
@@ -9954,36 +10074,6 @@
       "benchmarks": {}
     },
     {
-      "id": "nousresearch/hermes-4-70b",
-      "name": "Nous: Hermes 4 70B",
-      "provider": "nousresearch",
-      "family": "nousresearch/hermes-4-70b",
-      "source": "openrouter",
-      "created_unix": 1756236182,
-      "context": 131072,
-      "modality": "text->text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": false,
-      "supports_json": true,
-      "supports_caching": false,
-      "knowledge_cutoff": "2024-08-31",
-      "hugging_face_id": "NousResearch/Hermes-4-70B",
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.13,
-        "completion": 0.4,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "nousresearch/hermes-4-405b",
       "name": "Nous: Hermes 4 405B",
       "provider": "nousresearch",
@@ -10070,6 +10160,36 @@
         "prompt": 0.4,
         "completion": 2.0,
         "cache_read": 0.04
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1:batch",
+      "name": "Mistral: Mistral Medium 3.1 (batch)",
+      "provider": "mistralai",
+      "family": "mistralai/mistral-medium-3.1",
+      "source": "openrouter",
+      "created_unix": 1755095639,
+      "context": 131072,
+      "modality": "text+image+file->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": "2025-06-30",
+      "hugging_face_id": "",
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.2,
+        "completion": 1.0,
+        "cache_read": 0.02
       },
       "benchmarks": {}
     },
@@ -10781,6 +10901,36 @@
         "prompt": 0.3,
         "completion": 0.9,
         "cache_read": 0.03
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "mistralai/codestral-2508:batch",
+      "name": "Mistral: Codestral 2508 (batch)",
+      "provider": "mistralai",
+      "family": "mistralai/codestral-2508",
+      "source": "openrouter",
+      "created_unix": 1754079630,
+      "context": 256000,
+      "modality": "text+file->text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": "2025-03-31",
+      "hugging_face_id": "",
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.15,
+        "completion": 0.45,
+        "cache_read": 0.015
       },
       "benchmarks": {}
     },
@@ -14091,8 +14241,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.32,
-        "completion": 0.89,
+        "prompt": 0.2574,
+        "completion": 1.0287,
         "cache_read": null
       },
       "benchmarks": {}
@@ -18970,6 +19120,115 @@
       "benchmarks": {}
     },
     {
+      "id": "glm-5.3-flash",
+      "name": "GLM-5.3-Flash",
+      "provider": "greenpt",
+      "family": "glm-5.3-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 127754.0,
+        "completion": 511016.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "arena": {
+          "agent": {
+            "rank": 21,
+            "model": "GLM 5.3 Flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 2.0,
+                "ci": 0.92
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 12.59,
+                "ci": 1.96
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 3.18,
+                "ci": 3.05
+              },
+              {
+                "name": "Steerability",
+                "score": 1.13,
+                "ci": 1.89
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 5.05,
+                "ci": 0.89
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.39,
+                "ci": 0.04
+              },
+              {
+                "name": "Cost/Task",
+                "score": 23.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 7025
+          },
+          "code": {
+            "rank": 16,
+            "model": "glm-5.3-flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "score": 1605.0,
+            "ci": null,
+            "votes": null
+          },
+          "text": {
+            "rank": 29,
+            "model": "glm-5.3-flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "score": 1474.0,
+            "ci": 9.0,
+            "votes": 4672
+          },
+          "vision": {
+            "rank": 27,
+            "model": "glm-5.3-flash",
+            "vendor": "Z.ai",
+            "license": "open",
+            "score": 1273.0,
+            "ci": null,
+            "votes": null
+          }
+        }
+      }
+    },
+    {
       "id": "glm-5.2-caveman-lite",
       "name": "GLM-5.2 Caveman Lite",
       "provider": "greenpt",
@@ -19782,6 +20041,88 @@
         "cache_read": null
       },
       "benchmarks": {}
+    },
+    {
+      "id": "glm-5.3",
+      "name": "GLM-5.3",
+      "provider": "greenpt",
+      "family": "glm-5.3",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1277540.0,
+        "completion": 5110160.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "arena": {
+          "agent": {
+            "rank": 19,
+            "model": "GLM 5.3 (Max)",
+            "vendor": "Z.ai",
+            "license": "open",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 2.56,
+                "ci": 0.68
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 11.04,
+                "ci": 1.46
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 5.36,
+                "ci": 2.28
+              },
+              {
+                "name": "Steerability",
+                "score": 1.04,
+                "ci": 1.32
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 2.94,
+                "ci": 0.7
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.39,
+                "ci": 0.04
+              },
+              {
+                "name": "Cost/Task",
+                "score": 60.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 140440
+          }
+        }
+      }
     },
     {
       "id": "green-s-pro",
@@ -26399,6 +26740,36 @@
       "benchmarks": {}
     },
     {
+      "id": "k2-horizon-7b",
+      "name": "K2-Horizon-7B",
+      "provider": "nano-gpt",
+      "family": "k2-horizon-7b",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 131072,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 50000.0,
+        "completion": 200000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "glm-4-air-0111",
       "name": "GLM 4 Air 0111",
       "provider": "nano-gpt",
@@ -29414,6 +29785,36 @@
       "benchmarks": {}
     },
     {
+      "id": "agnes-3.0-flash",
+      "name": "Agnes 3.0 Flash",
+      "provider": "nano-gpt",
+      "family": "agnes-3.0-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 524288,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 50000.0,
+        "completion": 150000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "qwen3-vl-235b-a22b-instruct-original",
       "name": "Qwen3 VL 235B A22B Instruct Original",
       "provider": "nano-gpt",
@@ -30549,6 +30950,36 @@
       "benchmarks": {}
     },
     {
+      "id": "gemma-4-12b-it-semancer",
+      "name": "Gemma 4 12B Semancer",
+      "provider": "nano-gpt",
+      "family": "gemma-4-12b-it-semancer",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 131072,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 50000.0,
+        "completion": 250000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "Gemma-4-31B-MeroMero-v2",
       "name": "Gemma 4 31B MeroMero v2",
       "provider": "nano-gpt",
@@ -30938,6 +31369,36 @@
       "price_per_million": {
         "prompt": 0.0,
         "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "gemma-4-12b-it-station-keeper",
+      "name": "Gemma 4 12B StationKeeper",
+      "provider": "nano-gpt",
+      "family": "gemma-4-12b-it-station-keeper",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 131072,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 50000.0,
+        "completion": 250000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -31558,6 +32019,36 @@
       "benchmarks": {}
     },
     {
+      "id": "qwen/qwen3.8-27b-queen",
+      "name": "Qwen 3.8 27B Queen",
+      "provider": "qwen",
+      "family": "qwen/qwen3.8-27b-queen",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 250000.0,
+        "completion": 1500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "qwen/qwen3.5-plus-thinking",
       "name": "Qwen3.5 Plus Thinking",
       "provider": "qwen",
@@ -31613,36 +32104,6 @@
       "price_per_million": {
         "prompt": 130000.0,
         "completion": 500000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "qwen/qwen3.6-35b-a3b-uncensored:thinking",
-      "name": "Qwen 3.6 35B A3B Uncensored Thinking",
-      "provider": "qwen",
-      "family": "qwen/qwen3.6-35b-a3b-uncensored",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 150000.0,
-        "completion": 950000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -31847,36 +32308,6 @@
       "price_per_million": {
         "prompt": 300000.0,
         "completion": 500000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "qwen/qwen3.6-35b-a3b-uncensored",
-      "name": "Qwen 3.6 35B A3B Uncensored",
-      "provider": "qwen",
-      "family": "qwen/qwen3.6-35b-a3b-uncensored",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 150000.0,
-        "completion": 950000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -32150,186 +32581,6 @@
         "cache_read": null
       },
       "benchmarks": {}
-    },
-    {
-      "id": "ornith-ai/ornith-1.5-9b:thinking",
-      "name": "Ornith 1.5 9B Thinking",
-      "provider": "ornith-ai",
-      "family": "ornith-ai/ornith-1.5-9b",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 100000.0,
-        "completion": 200000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "ornith-ai/ornith-1.5-9b",
-      "name": "Ornith 1.5 9B",
-      "provider": "ornith-ai",
-      "family": "ornith-ai/ornith-1.5-9b",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 100000.0,
-        "completion": 200000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "benchlm": {
-          "slug": "ornith-1-5-9b",
-          "canonicalModelKey": "ornith-1-5-9b",
-          "model": "Ornith-1.5-9B",
-          "creator": "Ornith AI",
-          "sourceType": "Open Weight",
-          "reasoningType": "Reasoning",
-          "contextWindow": "262K",
-          "contextWindowTokens": 262000,
-          "displayScore": null,
-          "provisionalDisplayScore": 34,
-          "publicRankingMode": "bench-align-v5",
-          "evidenceStatus": null,
-          "scoreInterval90": null,
-          "rankingEligible": false,
-          "overallRank": null,
-          "url": "https://benchlm.ai/models/ornith-1-5-9b",
-          "markdownUrl": "https://benchlm.ai/md/models/ornith-1-5-9b.md",
-          "id": 396,
-          "releaseDate": "2026-08-18",
-          "market": null,
-          "isRegional": false,
-          "family": {
-            "familyKey": "ornith-1-5",
-            "familyName": "Ornith 1.5",
-            "variantType": "9b",
-            "snapshotLabel": "9B",
-            "baseFamilyModelKey": "ornith-1-5-397b",
-            "relatedModelKeys": [
-              "ornith-1-5-397b",
-              "ornith-1-5-35b-a3b",
-              "ornith-1-0-9b"
-            ],
-            "isCanonicalFamilyEntry": false,
-            "supersedesModelKey": "ornith-1-0-9b"
-          },
-          "scores": {
-            "displayScore": 34,
-            "overallScore": 34,
-            "rawOverallScore": 38,
-            "verifiedDisplayScore": 34,
-            "displayCategoryScores": {
-              "agentic": 26.1,
-              "coding": 26.6,
-              "reasoning": null,
-              "multimodalGrounded": null,
-              "knowledge": 29.7,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            },
-            "verifiedDisplayCategoryScores": {
-              "agentic": 25.7,
-              "coding": 26.5,
-              "reasoning": null,
-              "multimodalGrounded": null,
-              "knowledge": 29.7,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            }
-          },
-          "ranking": {
-            "rankingEligible": false,
-            "verifiedRankingEligible": false,
-            "overallRank": null,
-            "categoryRanks": {
-              "agentic": 87,
-              "coding": 80,
-              "knowledge": 119
-            },
-            "categoryRankingEligible": {
-              "agentic": false,
-              "coding": false,
-              "reasoning": false,
-              "multimodalGrounded": false,
-              "knowledge": false,
-              "multilingual": false,
-              "instructionFollowing": false,
-              "math": false
-            }
-          },
-          "coverage": {
-            "trustedBenchmarkCount": 16,
-            "verifiedBenchmarkCount": 16,
-            "rankableBenchmarkCount": 16,
-            "generatedBenchmarkCount": 0,
-            "scoreConfidence": 2
-          },
-          "benchmarks": {
-            "agentic": {
-              "terminalBench21": 46.2,
-              "hleWithTools": 30.5,
-              "mcpAtlas": 54.2,
-              "toolathlonVerified": 41.2,
-              "wideResearch": 59.5,
-              "browseComp": 56.4,
-              "clawEval": 66.5
-            },
-            "coding": {
-              "terminalBench21": 46.2,
-              "sweVerified": 70.6,
-              "swePro": 47.5,
-              "sweMultilingual": 54.4,
-              "nl2Repo": 32.4
-            },
-            "reasoning": {},
-            "multimodalGrounded": {},
-            "knowledge": {
-              "gpqa": 86.4,
-              "gpqaDiamond": 86.4,
-              "hle": 20.2,
-              "hleNoTools": 20.2
-            },
-            "multilingual": {},
-            "instructionFollowing": {},
-            "math": {}
-          }
-        }
-      }
     },
     {
       "id": "abliteration-ai/abliterated-model-large",
@@ -36818,36 +37069,6 @@
       "benchmarks": {}
     },
     {
-      "id": "deepseek/deepseek-v4.1-flash",
-      "name": "DeepSeek V4.1 Flash",
-      "provider": "deepseek",
-      "family": "deepseek/deepseek-v4.1-flash",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 156200.0,
-        "completion": 312400.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "deepseek/deepseek-v4-pro-0813:thinking",
       "name": "DeepSeek V4 Pro 0813 Thinking",
       "provider": "deepseek",
@@ -36873,6 +37094,36 @@
       "price_per_million": {
         "prompt": 1100000.0,
         "completion": 2500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash:thinking",
+      "name": "DeepSeek V4.1 Flash Thinking",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4.1-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 156200.0,
+        "completion": 312400.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37197,6 +37448,36 @@
       "price_per_million": {
         "prompt": 75000.0,
         "completion": 220000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-vl",
+      "name": "Ling 3.0 Flash VL",
+      "provider": "inclusionai",
+      "family": "inclusionai/ling-3.0-flash-vl",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 60000.0,
+        "completion": 180000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -41298,36 +41579,6 @@
       "benchmarks": {}
     },
     {
-      "id": "glm-5.3-flash",
-      "name": "GLM5.3 Flash",
-      "provider": "digitalocean",
-      "family": "glm-5.3-flash",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "image/text/video",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 150000.0,
-        "completion": 500000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "deepseek-r1-distill-llama-70b",
       "name": "DeepSeek R1 Distill Llama 70B",
       "provider": "digitalocean",
@@ -42798,36 +43049,6 @@
       "price_per_million": {
         "prompt": 198000.0,
         "completion": 198000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "glm-5.3",
-      "name": "GLM5.3",
-      "provider": "digitalocean",
-      "family": "glm-5.3",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 1400000.0,
-        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -52151,59 +52372,7 @@
         "completion": 4400000.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "agent": {
-            "rank": 19,
-            "model": "GLM 5.3 (Max)",
-            "vendor": "Z.ai",
-            "license": "open",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 2.56,
-                "ci": 0.68
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 11.04,
-                "ci": 1.46
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 5.36,
-                "ci": 2.28
-              },
-              {
-                "name": "Steerability",
-                "score": 1.04,
-                "ci": 1.32
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 2.94,
-                "ci": 0.7
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 0.39,
-                "ci": 0.04
-              },
-              {
-                "name": "Cost/Task",
-                "score": 60.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 140440
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "aws-mantle/gpt-5.6-sol",
@@ -54537,8 +54706,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 550000.0,
-        "completion": 1784000.0,
+        "prompt": 800000.0,
+        "completion": 2550000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54567,8 +54736,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 890000.0,
-        "completion": 3710000.0,
+        "prompt": 950000.0,
+        "completion": 4000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54597,8 +54766,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2830000.0,
-        "completion": 14130000.0,
+        "prompt": 3500000.0,
+        "completion": 18000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54627,8 +54796,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1990000.0,
-        "completion": 6160000.0,
+        "prompt": 2200000.0,
+        "completion": 6500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54657,90 +54826,11 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 130000.0,
-        "completion": 400000.0,
+        "prompt": 88000.0,
+        "completion": 250000.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "agent": {
-            "rank": 21,
-            "model": "GLM 5.3 Flash",
-            "vendor": "Z.ai",
-            "license": "open",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 2.0,
-                "ci": 0.92
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 12.59,
-                "ci": 1.96
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 3.18,
-                "ci": 3.05
-              },
-              {
-                "name": "Steerability",
-                "score": 1.13,
-                "ci": 1.89
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 5.05,
-                "ci": 0.89
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 0.39,
-                "ci": 0.04
-              },
-              {
-                "name": "Cost/Task",
-                "score": 23.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 7025
-          },
-          "code": {
-            "rank": 16,
-            "model": "glm-5.3-flash",
-            "vendor": "Z.ai",
-            "license": "open",
-            "score": 1605.0,
-            "ci": null,
-            "votes": null
-          },
-          "text": {
-            "rank": 29,
-            "model": "glm-5.3-flash",
-            "vendor": "Z.ai",
-            "license": "open",
-            "score": 1474.0,
-            "ci": 9.0,
-            "votes": 4672
-          },
-          "vision": {
-            "rank": 27,
-            "model": "glm-5.3-flash",
-            "vendor": "Z.ai",
-            "license": "open",
-            "score": 1273.0,
-            "ci": null,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "scx-ai-gp/qwen3.8-max",
@@ -54766,8 +54856,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1815000.0,
-        "completion": 5446100.0,
+        "prompt": 2000000.0,
+        "completion": 6000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54796,8 +54886,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1300000.0,
-        "completion": 4000000.0,
+        "prompt": 1400000.0,
+        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -104658,36 +104748,6 @@
       "benchmarks": {}
     },
     {
-      "id": "spacexai/grok-imagine-video-1.5-preview",
-      "name": "Grok Imagine Video 1.5 Preview",
-      "provider": "spacexai",
-      "family": "spacexai/grok-imagine-video-1.5-preview",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 0,
-      "modality": "text/video",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": null,
-        "completion": null,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "spacexai/grok-4.20-multi-agent-beta",
       "name": "Grok 4.20 Multi Agent Beta",
       "provider": "spacexai",
@@ -112779,6 +112839,36 @@
       }
     },
     {
+      "id": "qwen-3-8-flash",
+      "name": "Qwen 3.8 Flash",
+      "provider": "venice",
+      "family": "qwen-3-8-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 140000.0,
+        "completion": 490000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "qwen3-coder-480b-a35b-instruct-turbo",
       "name": "Qwen 3 Coder 480B Turbo",
       "provider": "venice",
@@ -114154,6 +114244,36 @@
       "price_per_million": {
         "prompt": 2500000.0,
         "completion": 10000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "provider": "llmgateway",
+      "family": "deepseek-v4.1-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1050000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 600000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -131264,7 +131384,7 @@
       "family": "Qwen/Qwen3-Embedding-0.6B",
       "source": "models.dev",
       "created_unix": null,
-      "context": 40960,
+      "context": 32768,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -131282,7 +131402,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 10000.0,
-        "completion": 0.0,
+        "completion": 10000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -131326,7 +131446,7 @@
       "created_unix": null,
       "context": 128000,
       "modality": "image/text",
-      "is_vision": true,
+      "is_vision": false,
       "is_audio_input": false,
       "is_video_input": false,
       "is_image_output": true,
@@ -141556,6 +141676,36 @@
       "benchmarks": {}
     },
     {
+      "id": "deepseek-flash",
+      "name": "DeepSeek V4.1 Flash",
+      "provider": "opencode-go",
+      "family": "deepseek-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "duo-chat-gpt-5-6-luna",
       "name": "Agentic Chat (GPT-5.6 Luna)",
       "provider": "gitlab",
@@ -142809,8 +142959,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 464560.0,
-        "completion": 929120.0,
+        "prompt": 466080.0,
+        "completion": 932160.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -142839,8 +142989,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 174210.0,
-        "completion": 696840.0,
+        "prompt": 174780.0,
+        "completion": 699120.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -142869,8 +143019,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1045260.0,
-        "completion": 1045260.0,
+        "prompt": 1048680.0,
+        "completion": 1048680.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -142901,6 +143051,36 @@
       "price_per_million": {
         "prompt": 140000.0,
         "completion": 280000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "nebius/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "name": "DeepSeek V4 Pro 0813 (Nebius)",
+      "provider": "nebius",
+      "family": "nebius/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 979000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1320000.0,
+        "completion": 3960000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -146325,8 +146505,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 754910.0,
-        "completion": 754910.0,
+        "prompt": 757380.0,
+        "completion": 757380.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -146355,8 +146535,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 174210.0,
-        "completion": 754910.0,
+        "prompt": 174780.0,
+        "completion": 757380.0,
         "cache_read": null
       },
       "benchmarks": {}
