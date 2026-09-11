@@ -20,9 +20,9 @@ _Tool-use / agentic task category score._
 | 5 | `gpt-5-6-terra` | 87.900 |
 | 6 | `gpt-6-astra` | 87.100 |
 | 7 | `claude-opus-5` | 85.600 |
-| 8 | `qwen3-8-max` | 83.600 |
-| 9 | `grok-4-6` | 82.600 |
-| 10 | `claude-sonnet-5` | 82.400 |
+| 8 | `deepseek-v4-1-flash` | 84.400 |
+| 9 | `qwen3-8-max` | 83.600 |
+| 10 | `grok-4-6` | 82.600 |
 
 ## Coding
 
@@ -35,12 +35,12 @@ _Code generation category score._
 | 2 | `claude-opus-5` | 89.700 |
 | 3 | `claude-fable` | 89.500 |
 | 4 | `claude-mythos-5` | 87.300 |
-| 5 | `gpt-6-astra` | 78.200 |
-| 6 | `sakana-fugu-ultra` | 77.800 |
-| 7 | `muse-spark-1-3` | 77.300 |
-| 8 | `gemini-3-8-flash` | 75.200 |
-| 9 | `gemini-3-7-flash` | 74.800 |
-| 10 | `gemini-3-1-pro` | 74.300 |
+| 5 | `sakana-fugu-ultra` | 77.800 |
+| 6 | `gpt-6-astra` | 75.200 |
+| 7 | `gemini-3-8-flash` | 75.200 |
+| 8 | `gemini-3-7-flash` | 74.800 |
+| 9 | `gemini-3-1-pro` | 74.300 |
+| 10 | `grok-4-6` | 73.500 |
 
 ## Instruction Following
 
@@ -143,9 +143,9 @@ _Logical reasoning category score._
 | 2 | `qwen3-8-max` | 86.500 |
 | 3 | `claude-fable-5-1` | 79.400 |
 | 4 | `kimi-k3` | 78.500 |
-| 5 | `muse-glimmer-30b` | 78.300 |
-| 6 | `gpt-5-3-codex` | 78.300 |
-| 7 | `minimax-m3` | 78 |
-| 8 | `muse-spark-1-3` | 78 |
-| 9 | `sakana-fugu-ultra` | 77.900 |
-| 10 | `claude-fable` | 77.600 |
+| 5 | `deepseek-v4-1-flash` | 78.500 |
+| 6 | `muse-glimmer-30b` | 78.300 |
+| 7 | `gpt-5-3-codex` | 78.300 |
+| 8 | `minimax-m3` | 78 |
+| 9 | `muse-spark-1-3` | 78 |
+| 10 | `sakana-fugu-ultra` | 77.900 |

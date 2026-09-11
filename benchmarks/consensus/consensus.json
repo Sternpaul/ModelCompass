@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-10T08:51:44.913591+00:00",
+    "generated_at": "2026-09-11T08:49:08.162918+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -9,15 +9,15 @@
     {
       "model": "gpt-6-astra",
       "top_appearances": 10,
-      "borda_points": 60,
+      "borda_points": 59,
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 6,
           "score": 87.1
         },
         "benchlm_coding": {
-          "rank": 5,
-          "score": 78.2
+          "rank": 6,
+          "score": 75.2
         },
         "benchlm_knowledge": {
           "rank": 6,
@@ -214,7 +214,7 @@
     {
       "model": "anthropic/claude-fable-5-1-high",
       "top_appearances": 5,
-      "borda_points": 31,
+      "borda_points": 30,
       "benchmarks": {
         "aa_artificial_analysis_coding_index": {
           "rank": 3,
@@ -229,7 +229,7 @@
           "score": 0.559
         },
         "aa_lcr": {
-          "rank": 9,
+          "rank": 10,
           "score": 0.836666666666667
         },
         "aa_terminalbench_v2_1": {
@@ -404,29 +404,6 @@
       }
     },
     {
-      "model": "openai/gpt-5-6-sol",
-      "top_appearances": 4,
-      "borda_points": 23,
-      "benchmarks": {
-        "aa_artificial_analysis_coding_index": {
-          "rank": 6,
-          "score": 77.4
-        },
-        "aa_gpqa": {
-          "rank": 7,
-          "score": 0.941
-        },
-        "aa_lcr": {
-          "rank": 7,
-          "score": 0.84
-        },
-        "aa_terminalbench_hard": {
-          "rank": 1,
-          "score": 0.659090909090909
-        }
-      }
-    },
-    {
       "model": "openai/gpt-6-astra",
       "top_appearances": 4,
       "borda_points": 23,
@@ -450,25 +427,25 @@
       }
     },
     {
-      "model": "claude-fable",
+      "model": "openai/gpt-5-6-sol",
       "top_appearances": 4,
       "borda_points": 22,
       "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 4,
-          "score": 89.1
+        "aa_artificial_analysis_coding_index": {
+          "rank": 6,
+          "score": 77.4
         },
-        "benchlm_coding": {
-          "rank": 3,
-          "score": 89.5
+        "aa_gpqa": {
+          "rank": 7,
+          "score": 0.941
         },
-        "benchlm_knowledge": {
-          "rank": 5,
-          "score": 87.2
+        "aa_lcr": {
+          "rank": 8,
+          "score": 0.84
         },
-        "benchlm_reasoning": {
-          "rank": 10,
-          "score": 77.6
+        "aa_terminalbench_hard": {
+          "rank": 1,
+          "score": 0.659090909090909
         }
       }
     },
@@ -521,10 +498,10 @@
     {
       "model": "gemini-3-8-flash",
       "top_appearances": 4,
-      "borda_points": 14,
+      "borda_points": 15,
       "benchmarks": {
         "benchlm_coding": {
-          "rank": 8,
+          "rank": 7,
           "score": 75.2
         },
         "benchlm_knowledge": {
@@ -709,6 +686,25 @@
       }
     },
     {
+      "model": "claude-fable",
+      "top_appearances": 3,
+      "borda_points": 21,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 4,
+          "score": 89.1
+        },
+        "benchlm_coding": {
+          "rank": 3,
+          "score": 89.5
+        },
+        "benchlm_knowledge": {
+          "rank": 5,
+          "score": 87.2
+        }
+      }
+    },
+    {
       "model": "deepseek/deepseek-v3-2-speciale",
       "top_appearances": 3,
       "borda_points": 20,
@@ -747,25 +743,6 @@
       }
     },
     {
-      "model": "qwen3-8-max",
-      "top_appearances": 3,
-      "borda_points": 18,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 8,
-          "score": 83.6
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 5,
-          "score": 87.4
-        },
-        "benchlm_reasoning": {
-          "rank": 2,
-          "score": 86.5
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5-6-sol-xhigh",
       "top_appearances": 3,
       "borda_points": 17,
@@ -781,6 +758,25 @@
         "aa_terminalbench_v2_1": {
           "rank": 6,
           "score": 0.895131086142322
+        }
+      }
+    },
+    {
+      "model": "qwen3-8-max",
+      "top_appearances": 3,
+      "borda_points": 17,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 9,
+          "score": 83.6
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 5,
+          "score": 87.4
+        },
+        "benchlm_reasoning": {
+          "rank": 2,
+          "score": 86.5
         }
       }
     },
@@ -1312,21 +1308,6 @@
       }
     },
     {
-      "model": "minimax-m3",
-      "top_appearances": 2,
-      "borda_points": 11,
-      "benchmarks": {
-        "benchlm_instructionFollowing": {
-          "rank": 4,
-          "score": 93.7
-        },
-        "benchlm_reasoning": {
-          "rank": 7,
-          "score": 78
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5-6-sol-high",
       "top_appearances": 2,
       "borda_points": 10,
@@ -1357,6 +1338,21 @@
       }
     },
     {
+      "model": "minimax-m3",
+      "top_appearances": 2,
+      "borda_points": 10,
+      "benchmarks": {
+        "benchlm_instructionFollowing": {
+          "rank": 4,
+          "score": 93.7
+        },
+        "benchlm_reasoning": {
+          "rank": 8,
+          "score": 78
+        }
+      }
+    },
+    {
       "model": "muse-image",
       "top_appearances": 2,
       "borda_points": 9,
@@ -1383,6 +1379,21 @@
         "arena_vision": {
           "rank": 8,
           "score": 1292.0
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-1-flash",
+      "top_appearances": 2,
+      "borda_points": 9,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 8,
+          "score": 84.4
+        },
+        "benchlm_reasoning": {
+          "rank": 5,
+          "score": 78.5
         }
       }
     },
@@ -1467,27 +1478,12 @@
       "borda_points": 7,
       "benchmarks": {
         "benchlm_coding": {
-          "rank": 6,
+          "rank": 5,
           "score": 77.8
         },
         "benchlm_reasoning": {
-          "rank": 9,
+          "rank": 10,
           "score": 77.9
-        }
-      }
-    },
-    {
-      "model": "muse-spark-1-3",
-      "top_appearances": 2,
-      "borda_points": 7,
-      "benchmarks": {
-        "benchlm_coding": {
-          "rank": 7,
-          "score": 77.3
-        },
-        "benchlm_reasoning": {
-          "rank": 8,
-          "score": 78
         }
       }
     },
@@ -1524,10 +1520,10 @@
     {
       "model": "gemini-3-7-flash",
       "top_appearances": 2,
-      "borda_points": 4,
+      "borda_points": 5,
       "benchmarks": {
         "benchlm_coding": {
-          "rank": 9,
+          "rank": 8,
           "score": 74.8
         },
         "benchlm_knowledge": {
@@ -1563,6 +1559,21 @@
         "aa_artificial_analysis_math_index": {
           "rank": 10,
           "score": 94.7
+        }
+      }
+    },
+    {
+      "model": "grok-4-6",
+      "top_appearances": 2,
+      "borda_points": 2,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 10,
+          "score": 82.6
+        },
+        "benchlm_coding": {
+          "rank": 10,
+          "score": 73.5
         }
       }
     },
@@ -1666,7 +1677,7 @@
       }
     },
     {
-      "model": "upstage/solar-pro4",
+      "model": "openai/gpt-oss-20b",
       "top_appearances": 1,
       "borda_points": 10,
       "benchmarks": {
@@ -1776,7 +1787,7 @@
       }
     },
     {
-      "model": "openai/gpt-oss-20b",
+      "model": "upstage/solar-pro4",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1897,7 +1908,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -2018,7 +2029,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash-20260731",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2128,17 +2139,6 @@
       }
     },
     {
-      "model": "muse-glimmer-30b",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "benchlm_reasoning": {
-          "rank": 5,
-          "score": 78.3
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4-flash-0420",
       "top_appearances": 1,
       "borda_points": 6,
@@ -2150,7 +2150,7 @@
       }
     },
     {
-      "model": "minimax/minimax-m3-20260531",
+      "model": "xiaomi/mimo-v2.5-20260422",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2172,7 +2172,7 @@
       }
     },
     {
-      "model": "GPT 5.6 Sol (xHigh)",
+      "model": "Claude Opus 4.8 (High)",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2315,7 +2315,7 @@
       }
     },
     {
-      "model": "gpt-5-3-codex",
+      "model": "muse-glimmer-30b",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2359,7 +2359,7 @@
       }
     },
     {
-      "model": "Claude Opus 4.8 (High)",
+      "model": "GPT 5.6 Sol (xHigh)",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2443,6 +2443,17 @@
         "aa_ifbench": {
           "rank": 7,
           "score": 0.80952380952381
+        }
+      }
+    },
+    {
+      "model": "deepseek/deepseek-v4-1-flash",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "aa_lcr": {
+          "rank": 7,
+          "score": 0.84
         }
       }
     },
@@ -2535,6 +2546,17 @@
       }
     },
     {
+      "model": "gpt-5-3-codex",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "benchlm_reasoning": {
+          "rank": 7,
+          "score": 78.3
+        }
+      }
+    },
+    {
       "model": "anthropic/claude-sonnet-4-6-adaptive",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2546,7 +2568,7 @@
       }
     },
     {
-      "model": "xiaomi/mimo-v2.5-20260422",
+      "model": "minimax/minimax-m3-20260531",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2663,17 +2685,6 @@
         "aa_ifbench": {
           "rank": 8,
           "score": 0.805442176870748
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-5-6-luna",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "aa_lcr": {
-          "rank": 8,
-          "score": 0.836666666666667
         }
       }
     },
@@ -2865,6 +2876,17 @@
       }
     },
     {
+      "model": "openai/gpt-5-6-luna",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "aa_lcr": {
+          "rank": 9,
+          "score": 0.836666666666667
+        }
+      }
+    },
+    {
       "model": "openai/gpt-5-1",
       "top_appearances": 1,
       "borda_points": 2,
@@ -2898,13 +2920,13 @@
       }
     },
     {
-      "model": "grok-4-6",
+      "model": "gemini-3-1-pro",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
-        "benchlm_agentic": {
+        "benchlm_coding": {
           "rank": 9,
-          "score": 82.6
+          "score": 74.3
         }
       }
     },
@@ -2949,6 +2971,17 @@
         "benchlm_multimodalGrounded": {
           "rank": 9,
           "score": 83.3
+        }
+      }
+    },
+    {
+      "model": "muse-spark-1-3",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "benchlm_reasoning": {
+          "rank": 9,
+          "score": 78
         }
       }
     },
@@ -3107,17 +3140,6 @@
       }
     },
     {
-      "model": "openai/gpt-5-3-codex",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "aa_lcr": {
-          "rank": 10,
-          "score": 0.833333333333333
-        }
-      }
-    },
-    {
       "model": "openai/o3-mini-high",
       "top_appearances": 1,
       "borda_points": 1,
@@ -3147,28 +3169,6 @@
         "aa_terminalbench_hard": {
           "rank": 10,
           "score": 0.583333333333333
-        }
-      }
-    },
-    {
-      "model": "claude-sonnet-5",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 10,
-          "score": 82.4
-        }
-      }
-    },
-    {
-      "model": "gemini-3-1-pro",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "benchlm_coding": {
-          "rank": 10,
-          "score": 74.3
         }
       }
     },

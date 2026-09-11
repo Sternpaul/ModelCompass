@@ -109,10 +109,10 @@ _Long-context reasoning score (%)._
 | 4 | `openai/gpt-5-5` | 0.843 |
 | 5 | `openai/gpt-5-5-high` | 0.843 |
 | 6 | `google/gemini-3-8-flash-medium` | 0.840 |
-| 7 | `openai/gpt-5-6-sol` | 0.840 |
-| 8 | `openai/gpt-5-6-luna` | 0.837 |
-| 9 | `anthropic/claude-fable-5-1-high` | 0.837 |
-| 10 | `openai/gpt-5-3-codex` | 0.833 |
+| 7 | `deepseek/deepseek-v4-1-flash` | 0.840 |
+| 8 | `openai/gpt-5-6-sol` | 0.840 |
+| 9 | `openai/gpt-5-6-luna` | 0.837 |
+| 10 | `anthropic/claude-fable-5-1-high` | 0.837 |
 
 ## LiveCodeBench
 
