@@ -217,10 +217,10 @@ _TAU-bench banking domain agent score (%)._
 | 4 | `zai/glm-5-3` | 0.503 |
 | 5 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
 | 6 | `alibaba/qwen3-8-27b` | 0.480 |
-| 7 | `alibaba/qwen3-8-27b-medium` | 0.474 |
-| 8 | `zai/glm-5-3-flash` | 0.472 |
-| 9 | `meta/muse-spark-1-3-xhigh` | 0.472 |
-| 10 | `anthropic/claude-fable-5-1` | 0.472 |
+| 7 | `agnes-ai/agnes-3-0-flash` | 0.476 |
+| 8 | `alibaba/qwen3-8-27b-medium` | 0.474 |
+| 9 | `zai/glm-5-3-flash` | 0.472 |
+| 10 | `meta/muse-spark-1-3-xhigh` | 0.472 |
 
 ## Terminal-Bench Hard
 
@@ -253,7 +253,7 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 | 4 | `anthropic/claude-fable-5-1-high` | 0.899 |
 | 5 | `openai/gpt-6-astra-medium` | 0.895 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
-| 7 | `openai/gpt-6-astra-non-reasoning` | 0.891 |
-| 8 | `openai/gpt-6-astra-xhigh` | 0.891 |
-| 9 | `anthropic/claude-opus-5` | 0.891 |
-| 10 | `openai/gpt-6-astra` | 0.884 |
+| 7 | `openai/gpt-6-astra-xhigh` | 0.891 |
+| 8 | `anthropic/claude-opus-5` | 0.891 |
+| 9 | `openai/gpt-6-astra` | 0.884 |
+| 10 | `xai/grok-4-6` | 0.884 |

@@ -6,6 +6,13 @@
   },
   "models": [
     {
+      "board": "Arena Text",
+      "model": "grok-4.6-high",
+      "previous": 49,
+      "current": 60,
+      "delta": -11
+    },
+    {
       "board": "AA Intelligence",
       "model": "openai/gpt-5-4-nano",
       "previous": 30.9,
@@ -35,10 +42,24 @@
     },
     {
       "board": "AA Intelligence",
+      "model": "zai/glm-5-2",
+      "previous": 42.5,
+      "current": 34.0,
+      "delta": 8.5
+    },
+    {
+      "board": "AA Intelligence",
       "model": "deepseek/deepseek-v4-flash-0420",
       "previous": 33.1,
       "current": 24.6,
       "delta": 8.5
+    },
+    {
+      "board": "AA Intelligence",
+      "model": "kimi/kimi-k3-low",
+      "previous": 38.8,
+      "current": 30.5,
+      "delta": 8.3
     },
     {
       "board": "AA Intelligence",
@@ -130,6 +151,13 @@
       "previous": 29.5,
       "current": 22.3,
       "delta": 7.2
+    },
+    {
+      "board": "AA Intelligence",
+      "model": "mbzuai/k2-horizon-375b-a23b",
+      "previous": 37.8,
+      "current": 30.7,
+      "delta": 7.1
     },
     {
       "board": "AA Intelligence",
@@ -741,6 +769,20 @@
       "delta": -5.1
     },
     {
+      "board": "Arena Text",
+      "model": "glm-5.3-max",
+      "previous": 20,
+      "current": 15,
+      "delta": 5
+    },
+    {
+      "board": "Arena Text",
+      "model": "kimi-k3-max",
+      "previous": 12,
+      "current": 17,
+      "delta": -5
+    },
+    {
       "board": "AA Intelligence",
       "model": "xai/grok-4-6-xhigh",
       "previous": 49.3,
@@ -1019,6 +1061,13 @@
       "previous": 1.0,
       "current": 5.8,
       "delta": -4.8
+    },
+    {
+      "board": "AA Intelligence",
+      "model": "openai/gpt-5-6-luna-medium",
+      "previous": 30.2,
+      "current": 25.5,
+      "delta": 4.7
     },
     {
       "board": "AA Intelligence",
@@ -1354,55 +1403,6 @@
       "model": "alibaba/qwen3-vl-8b-instruct",
       "previous": 2.8,
       "current": 7.3,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "liquidai/lfm2-5-8b-a1b",
-      "previous": 2.7,
-      "current": 7.2,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "anthropic/claude-35-sonnet-june-24",
-      "previous": 2.7,
-      "current": 7.2,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "ai2/tulu3-405b",
-      "previous": 2.7,
-      "current": 7.2,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "alibaba/qwen3-4b-instruct-reasoning",
-      "previous": 2.7,
-      "current": 7.2,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "openai/gpt-35-turbo",
-      "previous": 1.0,
-      "current": 5.5,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "meta/llama-3-instruct-70b",
-      "previous": 1.0,
-      "current": 5.5,
-      "delta": -4.5
-    },
-    {
-      "board": "AA Intelligence",
-      "model": "anthropic/claude-2",
-      "previous": 1.0,
-      "current": 5.5,
       "delta": -4.5
     }
   ]

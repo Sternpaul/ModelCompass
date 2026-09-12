@@ -31,15 +31,15 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-astra-max` | 1796.000 |
-| 2 | `claude-fable-5.1-max` | 1764.000 |
-| 3 | `claude-opus-5-max` | 1688.000 |
-| 4 | `qwen3.8-max-0902` | 1685.000 |
+| 1 | `gpt-6-astra-max` | 1800.000 |
+| 2 | `claude-fable-5.1-max` | 1758.000 |
+| 3 | `claude-opus-5-max` | 1687.000 |
+| 4 | `qwen3.8-max-0902` | 1681.000 |
 | 5 | `kimi-k3-max` | 1674.000 |
-| 6 | `qwen3.8-max` | 1670.000 |
-| 7 | `claude-opus-5-high` | 1661.000 |
-| 8 | `muse-spark-1.3-max` | 1650.000 |
-| 9 | `qwen3.8-flash-next` | 1631.000 |
+| 6 | `qwen3.8-max` | 1671.000 |
+| 7 | `claude-opus-5-high` | 1660.000 |
+| 8 | `muse-spark-1.3-max` | 1652.000 |
+| 9 | `qwen3.8-flash-next` | 1635.000 |
 | 10 | `claude-fable-5` | 1628.000 |
 
 ## Document Arena
@@ -121,16 +121,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1507.000 |
+| 1 | `claude-fable-5` | 1506.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-fable-5.1-max` | 1504.000 |
-| 4 | `claude-opus-4-7-high` | 1502.000 |
+| 3 | `claude-opus-4-7-high` | 1502.000 |
+| 4 | `claude-fable-5.1-max` | 1501.000 |
 | 5 | `muse-spark-1.2 (xHigh)` | 1499.000 |
-| 6 | `claude-opus-4-6` | 1498.000 |
+| 6 | `claude-opus-4-6` | 1497.000 |
 | 7 | `claude-opus-4-7` | 1494.000 |
-| 8 | `gemini-3.8-flash-high` | 1494.000 |
+| 8 | `muse-spark-1.1` | 1494.000 |
 | 9 | `claude-opus-5-high` | 1493.000 |
-| 10 | `muse-spark-1.1` | 1492.000 |
+| 10 | `gemini-3.8-flash-high` | 1493.000 |
 
 ## Text To Image Arena
 
