@@ -49,16 +49,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5-high` | 1520.000 |
-| 2 | `claude-opus-4-6` | 1510.000 |
-| 3 | `claude-opus-4-6-high` | 1506.000 |
-| 4 | `claude-fable-5` | 1504.000 |
-| 5 | `claude-opus-4-7` | 1498.000 |
-| 6 | `claude-opus-4-7-high` | 1497.000 |
-| 7 | `gpt-5.5-high` | 1485.000 |
-| 8 | `claude-sonnet-4-6` | 1483.000 |
-| 9 | `gpt-5.5` | 1480.000 |
-| 10 | `gpt-5.6-terra-xhigh` | 1479.000 |
+| 1 | `claude-opus-5-high` | 1516.000 |
+| 2 | `claude-fable-5.1-max` | 1513.000 |
+| 3 | `claude-opus-4-6-high` | 1507.000 |
+| 4 | `claude-opus-4-6` | 1507.000 |
+| 5 | `claude-fable-5` | 1496.000 |
+| 6 | `claude-opus-4-7` | 1495.000 |
+| 7 | `claude-opus-4-7-high` | 1495.000 |
+| 8 | `gpt-5.5` | 1486.000 |
+| 9 | `gpt-5.5-high` | 1484.000 |
+| 10 | `gpt-5.6-sol-xhigh` | 1483.000 |
 
 ## Image Edit Arena
 
@@ -124,13 +124,13 @@ _Human-preference Elo._
 | 1 | `claude-fable-5` | 1506.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
 | 3 | `claude-opus-4-7-high` | 1502.000 |
-| 4 | `claude-fable-5.1-max` | 1501.000 |
-| 5 | `muse-spark-1.2 (xHigh)` | 1499.000 |
+| 4 | `muse-spark-1.2 (xHigh)` | 1500.000 |
+| 5 | `claude-fable-5.1-max` | 1498.000 |
 | 6 | `claude-opus-4-6` | 1497.000 |
 | 7 | `claude-opus-4-7` | 1494.000 |
-| 8 | `muse-spark-1.1` | 1494.000 |
-| 9 | `claude-opus-5-high` | 1493.000 |
-| 10 | `gemini-3.8-flash-high` | 1493.000 |
+| 8 | `muse-spark-1.3-max` | 1493.000 |
+| 9 | `gemini-3.8-flash-high` | 1493.000 |
+| 10 | `claude-opus-5-high` | 1493.000 |
 
 ## Text To Image Arena
 
@@ -193,13 +193,13 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1313.000 |
-| 2 | `claude-opus-4-7-high` | 1301.000 |
-| 3 | `qwen3.8-max` | 1300.000 |
-| 4 | `claude-opus-4-7` | 1299.000 |
+| 1 | `claude-fable-5` | 1310.000 |
+| 2 | `qwen3.8-max` | 1302.000 |
+| 3 | `claude-opus-4-7-high` | 1301.000 |
+| 4 | `claude-opus-4-7` | 1300.000 |
 | 5 | `claude-opus-4-6-high` | 1299.000 |
-| 6 | `muse-spark` | 1294.000 |
-| 7 | `claude-opus-4-6` | 1293.000 |
-| 8 | `muse-spark-1.2 (xHigh)` | 1292.000 |
-| 9 | `claude-opus-5-high` | 1290.000 |
-| 10 | `gemini-3-pro` | 1289.000 |
+| 6 | `muse-spark-1.3-max` | 1294.000 |
+| 7 | `muse-spark` | 1294.000 |
+| 8 | `claude-opus-4-6` | 1293.000 |
+| 9 | `muse-spark-1.2 (xHigh)` | 1292.000 |
+| 10 | `claude-opus-5-high` | 1289.000 |

@@ -37,8 +37,8 @@ _AIME 2025 accuracy (%)._
 | 4 | `openai/gpt-5-2-medium` | 0.967 |
 | 5 | `deepseek/deepseek-v3-2-speciale` | 0.967 |
 | 6 | `xiaomi/mimo-v2-flash-reasoning` | 0.963 |
-| 7 | `openai/gpt-5-1-codex` | 0.957 |
-| 8 | `google/gemini-3-pro` | 0.957 |
+| 7 | `google/gemini-3-pro` | 0.957 |
+| 8 | `openai/gpt-5-1-codex` | 0.957 |
 | 9 | `zai/glm-4-7` | 0.950 |
 | 10 | `kimi/kimi-k2-thinking` | 0.947 |
 
@@ -108,11 +108,11 @@ _Long-context reasoning score (%)._
 | 3 | `anthropic/claude-fable-5-1-medium` | 0.847 |
 | 4 | `openai/gpt-5-5` | 0.843 |
 | 5 | `openai/gpt-5-5-high` | 0.843 |
-| 6 | `google/gemini-3-8-flash-medium` | 0.840 |
-| 7 | `deepseek/deepseek-v4-1-flash` | 0.840 |
-| 8 | `openai/gpt-5-6-sol` | 0.840 |
-| 9 | `openai/gpt-5-6-luna` | 0.837 |
-| 10 | `anthropic/claude-fable-5-1-high` | 0.837 |
+| 6 | `openai/gpt-5-6-sol` | 0.840 |
+| 7 | `google/gemini-3-8-flash-medium` | 0.840 |
+| 8 | `deepseek/deepseek-v4-1-flash` | 0.840 |
+| 9 | `anthropic/claude-fable-5-1-high` | 0.837 |
+| 10 | `openai/gpt-5-6-luna` | 0.837 |
 
 ## LiveCodeBench
 
@@ -158,8 +158,8 @@ _MMLU-Pro knowledge accuracy (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `google/gemini-3-pro` | 0.898 |
-| 2 | `google/gemini-3-pro-low` | 0.895 |
-| 3 | `anthropic/claude-opus-4-5-thinking` | 0.895 |
+| 2 | `anthropic/claude-opus-4-5-thinking` | 0.895 |
+| 3 | `google/gemini-3-pro-low` | 0.895 |
 | 4 | `google/gemini-3-flash-reasoning` | 0.890 |
 | 5 | `anthropic/claude-opus-4-5` | 0.889 |
 | 6 | `google/gemini-3-flash` | 0.882 |
@@ -184,7 +184,7 @@ _SciCode scientific coding accuracy (%)._
 | 7 | `zai/glm-5-3` | 0.590 |
 | 8 | `meta/muse-spark-1-3` | 0.588 |
 | 9 | `meta/muse-spark-1-1` | 0.588 |
-| 10 | `google/gemini-3-1-pro-preview` | 0.587 |
+| 10 | `anthropic/claude-fable-5-1-high` | 0.587 |
 
 ## TAU2
 
@@ -193,15 +193,15 @@ _TAU-bench agent benchmark (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `china-mobile/jt-35b-flash` | 0.991 |
-| 2 | `zai/glm-5-2` | 0.991 |
+| 1 | `zai/glm-5-2` | 0.991 |
+| 2 | `china-mobile/jt-35b-flash` | 0.991 |
 | 3 | `zai/glm-4-7-flash` | 0.988 |
 | 4 | `anthropic/claude-fable-5` | 0.985 |
-| 5 | `stepfun/step-3-7-flash` | 0.985 |
+| 5 | `zai/glm-5-turbo` | 0.985 |
 | 6 | `zai/glm-5v-turbo` | 0.985 |
-| 7 | `zai/glm-5-turbo` | 0.985 |
+| 7 | `stepfun/step-3-7-flash` | 0.985 |
 | 8 | `zai/glm-5` | 0.982 |
-| 9 | `xai/grok-4-3` | 0.977 |
+| 9 | `alibaba/qwen3-6-plus` | 0.977 |
 | 10 | `zai/glm-5-1` | 0.977 |
 
 ## TAU-Banking
@@ -219,7 +219,7 @@ _TAU-bench banking domain agent score (%)._
 | 6 | `alibaba/qwen3-8-27b` | 0.480 |
 | 7 | `agnes-ai/agnes-3-0-flash` | 0.476 |
 | 8 | `alibaba/qwen3-8-27b-medium` | 0.474 |
-| 9 | `zai/glm-5-3-flash` | 0.472 |
+| 9 | `anthropic/claude-fable-5-1` | 0.472 |
 | 10 | `meta/muse-spark-1-3-xhigh` | 0.472 |
 
 ## Terminal-Bench Hard
@@ -230,13 +230,13 @@ _Terminal-Bench hard sys-admin tasks (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `openai/gpt-5-6-sol` | 0.659 |
-| 2 | `openai/gpt-5-6-sol-medium` | 0.629 |
-| 3 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
-| 4 | `anthropic/claude-fable-5` | 0.629 |
+| 2 | `anthropic/claude-fable-5` | 0.629 |
+| 3 | `openai/gpt-5-6-sol-medium` | 0.629 |
+| 4 | `openai/gpt-5-6-terra-xhigh` | 0.629 |
 | 5 | `openai/gpt-5-6-sol-high` | 0.621 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.614 |
-| 7 | `openai/gpt-5-6-sol-low` | 0.606 |
-| 8 | `openai/gpt-5-5` | 0.606 |
+| 7 | `openai/gpt-5-5` | 0.606 |
+| 8 | `openai/gpt-5-6-sol-low` | 0.606 |
 | 9 | `openai/gpt-5-5-high` | 0.598 |
 | 10 | `anthropic/claude-opus-4-8` | 0.583 |
 
@@ -249,8 +249,8 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 |---|-------|------:|
 | 1 | `anthropic/claude-fable-5-1` | 0.914 |
 | 2 | `anthropic/claude-fable-5-1-xhigh` | 0.910 |
-| 3 | `openai/gpt-6-astra-high` | 0.899 |
-| 4 | `anthropic/claude-fable-5-1-high` | 0.899 |
+| 3 | `anthropic/claude-fable-5-1-high` | 0.899 |
+| 4 | `openai/gpt-6-astra-high` | 0.899 |
 | 5 | `openai/gpt-6-astra-medium` | 0.895 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
 | 7 | `openai/gpt-6-astra-xhigh` | 0.891 |
