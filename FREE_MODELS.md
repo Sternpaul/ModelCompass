@@ -8,9 +8,10 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
+| z-ai/glm-5.2:free | openrouter | 34.0 | 68.8 | 19 (code) |
 | glm-5.2:free | openrouter/unorouter | 34.0 | 68.8 | 19 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.5 | 69.1 | 22 (code) |
-| kimi-k2-6:free | kenari/openrouter | 31.3 | 61.8 | 27 (document) |
+| kimi-k2-6:free | kenari/openrouter | 27.5 | 61.8 | 27 (document) |
 | hy3:free | kenari/openrouter | 25.8 | 58.8 | 33 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.5 | 52.1 | 40 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 19.1 | 48.2 | 47 (vision) |
@@ -22,7 +23,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | upstage/solar-pro4:free | nous | 28.2 | 52.7 | 88 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 186 (text) |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 26.1 | 52.9 | — |
-| inclusionai/ling-3.0-flash-vl:free | kilo/openrouter | 24.8 | 57.0 | — |
+| inclusionai/ling-3.0-flash-vl:free | kilo/openrouter | 25.0 | 57.0 | — |
 | meituan/longcat-2.0:free | nous | 19.7 | 45.3 | — |
 | step-3-7-flash:free | kenari/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |

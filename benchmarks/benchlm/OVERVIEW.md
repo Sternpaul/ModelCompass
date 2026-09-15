@@ -22,7 +22,7 @@ _Tool-use / agentic task category score._
 | 7 | `claude-opus-5` | 85.600 |
 | 8 | `deepseek-v4-1-flash` | 84.400 |
 | 9 | `qwen3-8-max` | 83.600 |
-| 10 | `grok-4-6` | 82.600 |
+| 10 | `atria-dawn-preview` | 82.800 |
 
 ## Coding
 

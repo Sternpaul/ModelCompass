@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T09:44:37.116422+00:00",
+    "generated_at": "2026-09-15T09:19:32.109183+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -544,7 +544,7 @@
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 3,
-          "score": 1481.0
+          "score": 1479.0
         },
         "arena_text-to-video": {
           "rank": 3,
@@ -620,7 +620,7 @@
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 1,
-          "score": 1497.0
+          "score": 1494.0
         },
         "arena_text-to-video": {
           "rank": 8,
@@ -639,7 +639,7 @@
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 4,
-          "score": 1478.0
+          "score": 1475.0
         },
         "arena_text-to-video": {
           "rank": 6,
@@ -658,7 +658,7 @@
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 6,
-          "score": 1462.0
+          "score": 1464.0
         },
         "arena_text-to-video": {
           "rank": 2,
@@ -791,7 +791,7 @@
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 5,
-          "score": 1477.0
+          "score": 1474.0
         },
         "arena_text-to-video": {
           "rank": 7,
@@ -899,25 +899,6 @@
       }
     },
     {
-      "model": "minimax-m3",
-      "top_appearances": 3,
-      "borda_points": 11,
-      "benchmarks": {
-        "benchlm_instructionFollowing": {
-          "rank": 4,
-          "score": 93.7
-        },
-        "benchlm_reasoning": {
-          "rank": 8,
-          "score": 78
-        },
-        "movers": {
-          "rank": 10,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "zai/glm-4-7",
       "top_appearances": 3,
       "borda_points": 10,
@@ -977,10 +958,10 @@
     {
       "model": "happyhorse-1.0",
       "top_appearances": 3,
-      "borda_points": 8,
+      "borda_points": 7,
       "benchmarks": {
         "arena_image-to-video": {
-          "rank": 9,
+          "rank": 10,
           "score": 1442.0
         },
         "arena_text-to-video": {
@@ -1388,6 +1369,21 @@
       }
     },
     {
+      "model": "minimax-m3",
+      "top_appearances": 2,
+      "borda_points": 10,
+      "benchmarks": {
+        "benchlm_instructionFollowing": {
+          "rank": 4,
+          "score": 93.7
+        },
+        "benchlm_reasoning": {
+          "rank": 8,
+          "score": 78
+        }
+      }
+    },
+    {
       "model": "muse-image",
       "top_appearances": 2,
       "borda_points": 9,
@@ -1553,21 +1549,6 @@
       }
     },
     {
-      "model": "grok-4-6",
-      "top_appearances": 2,
-      "borda_points": 2,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 10,
-          "score": 82.6
-        },
-        "benchlm_coding": {
-          "rank": 10,
-          "score": 73.5
-        }
-      }
-    },
-    {
       "model": "Claude Fable 5.1 (Max)",
       "top_appearances": 1,
       "borda_points": 10,
@@ -1634,7 +1615,7 @@
       }
     },
     {
-      "model": "glm-5.3-max",
+      "model": "inclusionai/ling-3-0-flash",
       "top_appearances": 1,
       "borda_points": 10,
       "benchmarks": {
@@ -1733,7 +1714,7 @@
       }
     },
     {
-      "model": "muse-spark-1.1",
+      "model": "glm-5.3-max",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1766,7 +1747,7 @@
       }
     },
     {
-      "model": "Claude Opus 5 (High)",
+      "model": "Claude Opus 5 (Max)",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1876,7 +1857,7 @@
       }
     },
     {
-      "model": "claude-opus-4-8-high",
+      "model": "kimi/kimi-k2-6",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1887,7 +1868,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1909,7 +1890,7 @@
       }
     },
     {
-      "model": "Claude Opus 5 (Max)",
+      "model": "Claude Opus 5 (High)",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2008,7 +1989,7 @@
       }
     },
     {
-      "model": "grok-4.6-high",
+      "model": "muse-spark-1.1",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2019,7 +2000,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash-20260731",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2140,7 +2121,7 @@
       }
     },
     {
-      "model": "gemini-3.1-pro-preview",
+      "model": "claude-opus-4-8-high",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2316,7 +2297,7 @@
       }
     },
     {
-      "model": "gemini-3.5-flash-high",
+      "model": "grok-4.6-high",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2514,7 +2495,7 @@
       }
     },
     {
-      "model": "claude-opus-4-5-20251101-high-32k",
+      "model": "gemini-3.1-pro-preview",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2569,13 +2550,13 @@
       }
     },
     {
-      "model": "flux-3-video-20260811",
+      "model": "hidream-o1-video-1.0",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "arena_image-to-video": {
           "rank": 8,
-          "score": 1449.0
+          "score": 1452.0
         }
       }
     },
@@ -2723,7 +2704,7 @@
       }
     },
     {
-      "model": "gemini-3.5-flash-lite",
+      "model": "gemini-3.5-flash-high",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -2796,6 +2777,17 @@
         "arena_image-edit": {
           "rank": 9,
           "score": 1390.0
+        }
+      }
+    },
+    {
+      "model": "flux-3-video-20260811",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "arena_image-to-video": {
+          "rank": 9,
+          "score": 1450.0
         }
       }
     },
@@ -2998,7 +2990,7 @@
       }
     },
     {
-      "model": "claude-sonnet-4-5-20250929",
+      "model": "claude-opus-4-5-20251101-high-32k",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -3031,7 +3023,7 @@
       }
     },
     {
-      "model": "Hy4 preview",
+      "model": "GPT 5.5 (xHigh)",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
@@ -3049,17 +3041,6 @@
         "arena_image-edit": {
           "rank": 10,
           "score": 1390.0
-        }
-      }
-    },
-    {
-      "model": "wan2.7-i2v",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "arena_image-to-video": {
-          "rank": 10,
-          "score": 1428.0
         }
       }
     },
@@ -3163,6 +3144,28 @@
       }
     },
     {
+      "model": "atria-dawn-preview",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 10,
+          "score": 82.8
+        }
+      }
+    },
+    {
+      "model": "grok-4-6",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "benchlm_coding": {
+          "rank": 10,
+          "score": 73.5
+        }
+      }
+    },
+    {
       "model": "minimax-m2-7",
       "top_appearances": 1,
       "borda_points": 1,
@@ -3181,6 +3184,17 @@
         "benchlm_multilingual": {
           "rank": 10,
           "score": 36.8
+        }
+      }
+    },
+    {
+      "model": "gemini-3.5-flash-lite",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "movers": {
+          "rank": 10,
+          "score": null
         }
       }
     },
