@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-15T09:19:32.109183+00:00",
+    "generated_at": "2026-09-16T09:12:32.991481+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -44,7 +44,7 @@
     {
       "model": "anthropic/claude-fable-5-1",
       "top_appearances": 7,
-      "borda_points": 61,
+      "borda_points": 60,
       "benchmarks": {
         "aa_artificial_analysis_coding_index": {
           "rank": 1,
@@ -67,7 +67,7 @@
           "score": 0.631
         },
         "aa_tau_banking": {
-          "rank": 9,
+          "rank": 10,
           "score": 0.472164948453608
         },
         "aa_terminalbench_v2_1": {
@@ -408,29 +408,6 @@
       }
     },
     {
-      "model": "openai/gpt-6-astra",
-      "top_appearances": 4,
-      "borda_points": 24,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 3,
-          "score": 52.8
-        },
-        "aa_gpqa": {
-          "rank": 2,
-          "score": 0.961
-        },
-        "aa_hle": {
-          "rank": 6,
-          "score": 0.547
-        },
-        "aa_terminalbench_v2_1": {
-          "rank": 9,
-          "score": 0.883895131086142
-        }
-      }
-    },
-    {
       "model": "claude-opus-4-7",
       "top_appearances": 4,
       "borda_points": 23,
@@ -450,6 +427,29 @@
         "arena_vision": {
           "rank": 4,
           "score": 1300.0
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "top_appearances": 4,
+      "borda_points": 23,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 3,
+          "score": 52.8
+        },
+        "aa_gpqa": {
+          "rank": 2,
+          "score": 0.961
+        },
+        "aa_hle": {
+          "rank": 6,
+          "score": 0.547
+        },
+        "aa_terminalbench_v2_1": {
+          "rank": 10,
+          "score": 0.883895131086142
         }
       }
     },
@@ -804,21 +804,21 @@
       }
     },
     {
-      "model": "xai/grok-4-6",
+      "model": "alibaba/qwen3-8-max",
       "top_appearances": 3,
       "borda_points": 16,
       "benchmarks": {
-        "aa_gpqa": {
-          "rank": 5,
-          "score": 0.949
-        },
         "aa_tau_banking": {
-          "rank": 2,
-          "score": 0.507216494845361
+          "rank": 7,
+          "score": 0.478350515463918
         },
         "aa_terminalbench_v2_1": {
-          "rank": 10,
-          "score": 0.883895131086142
+          "rank": 9,
+          "score": 0.887640449438202
+        },
+        "movers": {
+          "rank": 1,
+          "score": null
         }
       }
     },
@@ -914,25 +914,6 @@
         "aa_livecodebench": {
           "rank": 5,
           "score": 0.894
-        }
-      }
-    },
-    {
-      "model": "meta/muse-spark-1-3-xhigh",
-      "top_appearances": 3,
-      "borda_points": 10,
-      "benchmarks": {
-        "aa_gpqa": {
-          "rank": 8,
-          "score": 0.941
-        },
-        "aa_scicode": {
-          "rank": 5,
-          "score": 0.597
-        },
-        "aa_tau_banking": {
-          "rank": 10,
-          "score": 0.472164948453608
         }
       }
     },
@@ -1095,6 +1076,21 @@
         "benchlm_multilingual": {
           "rank": 1,
           "score": 100
+        }
+      }
+    },
+    {
+      "model": "xai/grok-4-6",
+      "top_appearances": 2,
+      "borda_points": 15,
+      "benchmarks": {
+        "aa_gpqa": {
+          "rank": 5,
+          "score": 0.949
+        },
+        "aa_tau_banking": {
+          "rank": 2,
+          "score": 0.507216494845361
         }
       }
     },
@@ -1414,6 +1410,21 @@
       }
     },
     {
+      "model": "meta/muse-spark-1-3-xhigh",
+      "top_appearances": 2,
+      "borda_points": 9,
+      "benchmarks": {
+        "aa_gpqa": {
+          "rank": 8,
+          "score": 0.941
+        },
+        "aa_scicode": {
+          "rank": 5,
+          "score": 0.597
+        }
+      }
+    },
+    {
       "model": "deepseek-v4-1-flash",
       "top_appearances": 2,
       "borda_points": 9,
@@ -1593,7 +1604,7 @@
       }
     },
     {
-      "model": "alibaba/qwen3-8-max",
+      "model": "alibaba/qwen3-8-max-0803",
       "top_appearances": 1,
       "borda_points": 10,
       "benchmarks": {
@@ -1611,17 +1622,6 @@
         "benchlm_instructionFollowing": {
           "rank": 1,
           "score": 94.7
-        }
-      }
-    },
-    {
-      "model": "inclusionai/ling-3-0-flash",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "movers": {
-          "rank": 1,
-          "score": null
         }
       }
     },
@@ -1714,7 +1714,7 @@
       }
     },
     {
-      "model": "glm-5.3-max",
+      "model": "inclusionai/ling-3-0-flash",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1747,7 +1747,7 @@
       }
     },
     {
-      "model": "Claude Opus 5 (Max)",
+      "model": "Claude Opus 5 (High)",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1857,7 +1857,7 @@
       }
     },
     {
-      "model": "kimi/kimi-k2-6",
+      "model": "glm-5.3-max",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1890,7 +1890,7 @@
       }
     },
     {
-      "model": "Claude Opus 5 (High)",
+      "model": "Claude Opus 5 (Max)",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -1989,7 +1989,7 @@
       }
     },
     {
-      "model": "muse-spark-1.1",
+      "model": "kimi/kimi-k2-6",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2121,7 +2121,7 @@
       }
     },
     {
-      "model": "claude-opus-4-8-high",
+      "model": "muse-spark-1.1",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2132,7 +2132,7 @@
       }
     },
     {
-      "model": "xiaomi/mimo-v2.5-20260422",
+      "model": "deepseek/deepseek-v4.1-flash-20260910",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2297,7 +2297,7 @@
       }
     },
     {
-      "model": "grok-4.6-high",
+      "model": "claude-opus-4-8-high",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2308,7 +2308,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4.1-flash-20260910",
+      "model": "xiaomi/mimo-v2.5-20260422",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2440,17 +2440,6 @@
       }
     },
     {
-      "model": "agnes-ai/agnes-3-0-flash",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "aa_tau_banking": {
-          "rank": 7,
-          "score": 0.476288659793814
-        }
-      }
-    },
-    {
       "model": "gpt-5-5",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2495,7 +2484,7 @@
       }
     },
     {
-      "model": "gemini-3.1-pro-preview",
+      "model": "grok-4.6-high",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2649,13 +2638,13 @@
       }
     },
     {
-      "model": "alibaba/qwen3-8-27b-medium",
+      "model": "agnes-ai/agnes-3-0-flash",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "aa_tau_banking": {
           "rank": 8,
-          "score": 0.474226804123711
+          "score": 0.476288659793814
         }
       }
     },
@@ -2704,7 +2693,7 @@
       }
     },
     {
-      "model": "gemini-3.5-flash-high",
+      "model": "cohere/north-mini-code",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -2924,6 +2913,17 @@
       }
     },
     {
+      "model": "alibaba/qwen3-8-27b-medium",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "aa_tau_banking": {
+          "rank": 9,
+          "score": 0.474226804123711
+        }
+      }
+    },
+    {
       "model": "gemini-3-1-pro",
       "top_appearances": 1,
       "borda_points": 2,
@@ -2990,7 +2990,7 @@
       }
     },
     {
-      "model": "claude-opus-4-5-20251101-high-32k",
+      "model": "gemini-3.1-pro-preview",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -3188,7 +3188,7 @@
       }
     },
     {
-      "model": "gemini-3.5-flash-lite",
+      "model": "gemini-3.5-flash-high",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {

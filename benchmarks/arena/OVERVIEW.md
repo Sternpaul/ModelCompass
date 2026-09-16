@@ -13,16 +13,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 13.9, Confirmed Success: 23.7, Praise vs Complaint: 30.47, Steerability: 3.05, Bash Recovery: 11.91, Tool Hallucination: 0.37, Cost/Task: 12.0, Output Tokens/Task: None |
-| 2 | `GPT 6 Astra (Max)` | Net Improvement: 11.9, Confirmed Success: 19.54, Praise vs Complaint: 34.41, Steerability: 1.53, Bash Recovery: 6.7, Tool Hallucination: 0.38, Cost/Task: 9.0, Output Tokens/Task: None |
-| 3 | `Claude Opus 5 (Max)` | Net Improvement: 11.09, Confirmed Success: 12.92, Praise vs Complaint: 19.03, Steerability: 9.63, Bash Recovery: 13.49, Tool Hallucination: 0.37, Cost/Task: 19.0, Output Tokens/Task: None |
-| 4 | `Claude Opus 5 (High)` | Net Improvement: 10.49, Confirmed Success: 8.68, Praise vs Complaint: 17.92, Steerability: 13.33, Bash Recovery: 12.2, Tool Hallucination: 0.34, Cost/Task: 24.0, Output Tokens/Task: None |
-| 5 | `Claude Fable 5 (High)` | Net Improvement: 9.03, Confirmed Success: 7.07, Praise vs Complaint: 17.47, Steerability: 11.39, Bash Recovery: 8.86, Tool Hallucination: 0.38, Cost/Task: 37.0, Output Tokens/Task: None |
-| 6 | `Claude Opus 4.8 (High)` | Net Improvement: 7.75, Confirmed Success: 4.0, Praise vs Complaint: 15.78, Steerability: 11.8, Bash Recovery: 7.45, Tool Hallucination: 0.29, Cost/Task: 39.0, Output Tokens/Task: None |
-| 7 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 7.4, Confirmed Success: 3.86, Praise vs Complaint: 19.88, Steerability: 8.32, Bash Recovery: 4.56, Tool Hallucination: 0.38, Cost/Task: 31.0, Output Tokens/Task: None |
-| 8 | `Kimi K3 (Max)` | Net Improvement: 6.39, Confirmed Success: 14.8, Praise vs Complaint: 12.3, Steerability: 0.29, Bash Recovery: 4.15, Tool Hallucination: 0.38, Cost/Task: 104.0, Output Tokens/Task: None |
-| 9 | `Claude Sonnet 5 (High)` | Net Improvement: 5.45, Confirmed Success: 0.42, Praise vs Complaint: 9.32, Steerability: 9.26, Bash Recovery: 8.01, Tool Hallucination: 0.23, Cost/Task: 30.0, Output Tokens/Task: None |
-| 10 | `GPT 5.5 (xHigh)` | Net Improvement: 5.18, Confirmed Success: 0.59, Praise vs Complaint: 8.09, Steerability: 8.15, Bash Recovery: 9.87, Tool Hallucination: 0.38, Cost/Task: 52.0, Output Tokens/Task: None |
+| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 13.71, Confirmed Success: 19.83, Praise vs Complaint: 31.83, Steerability: 3.88, Bash Recovery: 12.62, Tool Hallucination: 0.37, Cost/Task: 13.0, Output Tokens/Task: None |
+| 2 | `GPT 6 Astra (Max)` | Net Improvement: 11.54, Confirmed Success: 17.7, Praise vs Complaint: 32.79, Steerability: 0.47, Bash Recovery: 7.28, Tool Hallucination: 0.37, Cost/Task: 10.0, Output Tokens/Task: None |
+| 3 | `Claude Opus 5 (High)` | Net Improvement: 10.25, Confirmed Success: 9.24, Praise vs Complaint: 18.66, Steerability: 11.04, Bash Recovery: 11.98, Tool Hallucination: 0.33, Cost/Task: 24.0, Output Tokens/Task: None |
+| 4 | `Claude Opus 5 (Max)` | Net Improvement: 10.16, Confirmed Success: 12.41, Praise vs Complaint: 18.15, Steerability: 6.83, Bash Recovery: 13.08, Tool Hallucination: 0.35, Cost/Task: 19.0, Output Tokens/Task: None |
+| 5 | `Claude Fable 5 (High)` | Net Improvement: 8.81, Confirmed Success: 5.97, Praise vs Complaint: 18.07, Steerability: 10.6, Bash Recovery: 9.06, Tool Hallucination: 0.37, Cost/Task: 38.0, Output Tokens/Task: None |
+| 6 | `Claude Opus 4.8 (High)` | Net Improvement: 8.19, Confirmed Success: 6.28, Praise vs Complaint: 16.23, Steerability: 11.06, Bash Recovery: 7.49, Tool Hallucination: 0.12, Cost/Task: 39.0, Output Tokens/Task: None |
+| 7 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 7.1, Confirmed Success: 3.74, Praise vs Complaint: 20.48, Steerability: 6.62, Bash Recovery: 4.3, Tool Hallucination: 0.37, Cost/Task: 32.0, Output Tokens/Task: None |
+| 8 | `Kimi K3 (Max)` | Net Improvement: 6.22, Confirmed Success: 11.91, Praise vs Complaint: 11.79, Steerability: 1.99, Bash Recovery: 5.03, Tool Hallucination: 0.37, Cost/Task: 108.0, Output Tokens/Task: None |
+| 9 | `Claude Sonnet 5 (High)` | Net Improvement: 5.97, Confirmed Success: 2.88, Praise vs Complaint: 11.03, Steerability: 8.39, Bash Recovery: 7.36, Tool Hallucination: 0.18, Cost/Task: 30.0, Output Tokens/Task: None |
+| 10 | `GPT 5.5 (xHigh)` | Net Improvement: 5.03, Confirmed Success: 0.61, Praise vs Complaint: 9.14, Steerability: 6.61, Bash Recovery: 9.63, Tool Hallucination: 0.37, Cost/Task: 53.0, Output Tokens/Task: None |
 
 ## Code Arena
 
