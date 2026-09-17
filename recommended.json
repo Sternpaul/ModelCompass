@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-16T09:12:32.976836+00:00",
+    "generated_at": "2026-09-17T09:21:23.208282+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -84,13 +84,13 @@
       "aa_artificial_analysis_coding_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 260,
+        "model_count": 261,
         "top_n": 10
       },
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 642,
+        "model_count": 643,
         "top_n": 10
       },
       "aa_artificial_analysis_math_index": {
@@ -108,7 +108,7 @@
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 614,
+        "model_count": 615,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -120,7 +120,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 525,
+        "model_count": 526,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -144,7 +144,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 178,
+        "model_count": 179,
         "top_n": 10
       },
       "aa_tau2": {
@@ -156,7 +156,7 @@
       "aa_tau_banking": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 210,
+        "model_count": 211,
         "top_n": 10
       },
       "aa_terminalbench_hard": {
@@ -168,7 +168,7 @@
       "aa_terminalbench_v2_1": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 242,
+        "model_count": 243,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -3305,62 +3305,62 @@
     "or_usage_tokens": [
       {
         "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 17436172815133,
-        "requests": 610657192,
+        "tokens": 17352882153850,
+        "requests": 547399154,
         "rank": 1
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 13629948596925,
-        "requests": 115874151,
+        "tokens": 11956588783522,
+        "requests": 101788801,
         "rank": 2
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 11509160727603,
-        "requests": 516976858,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 11271134240626,
+        "requests": 297988173,
         "rank": 3
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11423670456759,
-        "requests": 277881433,
+        "model": "deepseek/deepseek-v4-flash-20260731",
+        "tokens": 11239515976830,
+        "requests": 511906650,
         "rank": 4
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 8020468358539,
-        "requests": 129888306,
+        "tokens": 10269567815397,
+        "requests": 166645777,
         "rank": 5
       },
       {
         "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 7960011535946,
-        "requests": 106666706,
+        "tokens": 7834917735030,
+        "requests": 105645417,
         "rank": 6
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260423",
-        "tokens": 4322064619635,
-        "requests": 459206876,
+        "model": "tencent/hy3-20260706",
+        "tokens": 4471212443976,
+        "requests": 70823958,
         "rank": 7
       },
       {
-        "model": "tencent/hy3-20260706",
-        "tokens": 4285431729514,
-        "requests": 70598503,
+        "model": "deepseek/deepseek-v4-flash-20260423",
+        "tokens": 4241137787102,
+        "requests": 447393965,
         "rank": 8
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 3445070473162,
-        "requests": 29807803,
+        "tokens": 3523058756840,
+        "requests": 30197496,
         "rank": 9
       },
       {
-        "model": "google/gemini-3.8-flash-20260902",
-        "tokens": 2432044057142,
-        "requests": 55116334,
+        "model": "z-ai/glm-5.3-20260816",
+        "tokens": 2457196576665,
+        "requests": 31433515,
         "rank": 10
       }
     ],
@@ -3398,8 +3398,8 @@
       {
         "model": "nvidia/nemotron-3-nano-30b-a3b",
         "aa_intelligence": 8.9,
-        "prompt_price_per_m": 0.05,
-        "value": 178.0
+        "prompt_price_per_m": 0.06,
+        "value": 148.33
       },
       {
         "model": "qwen/qwen3-coder-30b-a3b-instruct",

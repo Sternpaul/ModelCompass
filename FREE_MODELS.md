@@ -24,6 +24,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 186 (text) |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 26.1 | 52.9 | — |
 | inclusionai/ling-3.0-flash-vl:free | kilo/openrouter | 25.0 | 57.0 | — |
+| inclusionai/ling-3.0-flash-fin:free | kilo/nous/openrouter | 23.0 | 55.6 | — |
 | meituan/longcat-2.0:free | nous | 19.7 | 45.3 | — |
 | step-3-7-flash:free | kenari/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |
@@ -31,10 +32,10 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 13.6 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
+| stealth/union-alpha | openrouter | — | — | — |
 | nex-agi/nex-n2.5-mini:free | kilo/openrouter | — | — | — |
 | nex-agi/nex-n2.5-pro:free | kilo/openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |
-| inclusionai/ling-3.0-flash-fin:free | kilo/nous/openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
 | poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |

@@ -37,8 +37,8 @@
     {
       "model": "nvidia/nemotron-3-nano-30b-a3b",
       "aa_intelligence": 8.9,
-      "prompt_price_per_m": 0.05,
-      "value": 178.0
+      "prompt_price_per_m": 0.06,
+      "value": 148.33
     },
     {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -83,6 +83,12 @@
       "value": 62.39
     },
     {
+      "model": "qwen/qwen3-vl-30b-a3b-instruct",
+      "aa_intelligence": 7.9,
+      "prompt_price_per_m": 0.13,
+      "value": 60.77
+    },
+    {
       "model": "thinkingmachines/inkling-small",
       "aa_intelligence": 26.1,
       "prompt_price_per_m": 0.45,
@@ -93,12 +99,6 @@
       "aa_intelligence": 5.6,
       "prompt_price_per_m": 0.1,
       "value": 56.0
-    },
-    {
-      "model": "qwen/qwen3-vl-30b-a3b-instruct",
-      "aa_intelligence": 7.9,
-      "prompt_price_per_m": 0.15,
-      "value": 52.67
     },
     {
       "model": "upstage/solar-pro-3",
@@ -410,18 +410,6 @@
       "model": "claude-sonnet-4-6",
       "aa_intelligence": 23.3,
       "prompt_price_per_m": 3000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v4-flash",
-      "aa_intelligence": 18.9,
-      "prompt_price_per_m": 98300.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v4-pro",
-      "aa_intelligence": 20.8,
-      "prompt_price_per_m": 435000.0,
       "value": 0.0
     },
     {
@@ -905,12 +893,6 @@
       "value": 0.0
     },
     {
-      "model": "runware/deepseek-v4-1-flash",
-      "aa_intelligence": 39.5,
-      "prompt_price_per_m": 150000.0,
-      "value": 0.0
-    },
-    {
       "model": "qwen3.8-2.4t-a95b",
       "aa_intelligence": 40,
       "prompt_price_per_m": 2000000.0,
@@ -974,12 +956,6 @@
       "model": "step-3.5-flash-2603",
       "aa_intelligence": 17,
       "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v4-flash-vision-exp",
-      "aa_intelligence": 35,
-      "prompt_price_per_m": 242000.0,
       "value": 0.0
     },
     {
@@ -1202,6 +1178,30 @@
       "model": "mistral-medium-latest@eu",
       "aa_intelligence": 5.5,
       "prompt_price_per_m": 440000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.5-2b",
+      "aa_intelligence": 6.2,
+      "prompt_price_per_m": 20000.0,
+      "value": 0.0
+    },
+    {
+      "model": "publicai/apertus-8b-instruct",
+      "aa_intelligence": 4.8,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "publicai/apertus-70b-instruct",
+      "aa_intelligence": 5.1,
+      "prompt_price_per_m": 820000.0,
+      "value": 0.0
+    },
+    {
+      "model": "tencent/Hy3",
+      "aa_intelligence": 25.8,
+      "prompt_price_per_m": 140000.0,
       "value": 0.0
     }
   ]
