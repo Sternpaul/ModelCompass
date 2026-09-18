@@ -40,7 +40,7 @@ _Human-preference Elo._
 | 7 | `claude-opus-5-high` | 1660.000 |
 | 8 | `muse-spark-1.3-max` | 1652.000 |
 | 9 | `qwen3.8-flash-next` | 1635.000 |
-| 10 | `claude-fable-5` | 1628.000 |
+| 10 | `claude-fable-5-high` | 1628.000 |
 
 ## Document Arena
 
@@ -53,7 +53,7 @@ _Human-preference Elo._
 | 2 | `claude-fable-5.1-max` | 1513.000 |
 | 3 | `claude-opus-4-6-high` | 1507.000 |
 | 4 | `claude-opus-4-6` | 1507.000 |
-| 5 | `claude-fable-5` | 1496.000 |
+| 5 | `claude-fable-5-high` | 1496.000 |
 | 6 | `claude-opus-4-7` | 1495.000 |
 | 7 | `claude-opus-4-7-high` | 1495.000 |
 | 8 | `gpt-5.5` | 1486.000 |
@@ -107,7 +107,7 @@ _Human-preference Elo._
 | 2 | `claude-opus-4-6-search` | 1253.000 |
 | 3 | `gpt-5.5-search` | 1242.000 |
 | 4 | `claude-opus-4-7` | 1233.000 |
-| 5 | `claude-fable-5` | 1230.000 |
+| 5 | `claude-fable-5-high` | 1230.000 |
 | 6 | `ernie-5.1` | 1227.000 |
 | 7 | `claude-sonnet-4-6-search` | 1221.000 |
 | 8 | `grok-4.5` | 1213.000 |
@@ -121,7 +121,7 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1506.000 |
+| 1 | `claude-fable-5-high` | 1506.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
 | 3 | `claude-opus-4-7-high` | 1502.000 |
 | 4 | `muse-spark-1.2 (xHigh)` | 1500.000 |
@@ -193,7 +193,7 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5` | 1310.000 |
+| 1 | `claude-fable-5-high` | 1310.000 |
 | 2 | `qwen3.8-max` | 1302.000 |
 | 3 | `claude-opus-4-7-high` | 1301.000 |
 | 4 | `claude-opus-4-7` | 1300.000 |

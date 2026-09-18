@@ -8,6 +8,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
+| qwen/qwen3.8-27b:free | kilo/openrouter | 26.5 | 56.1 | 18 (code) |
 | z-ai/glm-5.2:free | kilo/openrouter | 34.0 | 68.8 | 19 (code) |
 | glm-5.2:free | openrouter/unorouter | 34.0 | 68.8 | 19 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.5 | 69.1 | 22 (code) |
@@ -32,12 +33,12 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 13.6 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
-| stealth/union-alpha | openrouter | — | — | — |
 | nex-agi/nex-n2.5-mini:free | kilo/openrouter | — | — | — |
 | nex-agi/nex-n2.5-pro:free | kilo/openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
+| deepseek/deepseek-v4-flash-0731:free | kilo/openrouter | — | — | — |
 | poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |
 | poolside/laguna-xs-2.1:free | kilo/nous/openrouter | — | — | — |
 | nvidia/nemotron-3.5-content-safety:free | kilo/openrouter | — | — | — |
