@@ -1,24 +1,219 @@
 {
   "meta": {
-    "generated_at": "2026-09-18T08:56:03.654011+00:00",
-    "model_count": 3605,
+    "generated_at": "2026-09-19T08:43:29.802986+00:00",
+    "model_count": 3609,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7842 models from 221 providers)",
-      "openrouter_usage": "ok (495 models with live usage)",
+      "models.dev": "ok (7860 models from 222 providers)",
+      "openrouter_usage": "ok (498 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-03)",
-      "artificial_analysis": "ok (652 models)",
-      "arena_ai": "ok (11 leaderboards; 0 live-discovered via scrape, 11 from curated fallback)",
-      "benchlm": "ok (490 models)"
+      "artificial_analysis": "ok (653 models)",
+      "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
+      "benchlm": "ok (491 models)"
     },
     "coverage": {
-      "aa": 425,
+      "aa": 424,
       "arena": 425,
-      "benchlm": 233
+      "benchlm": 234
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
   },
   "models": [
+    {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "provider": "prism-ml",
+      "family": "prism-ml/ternary-bonsai-2-27b",
+      "source": "openrouter",
+      "created_unix": 1789754046,
+      "context": 262144,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.075,
+        "completion": 0.5,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "benchlm": {
+          "slug": "ternary-bonsai-2-27b",
+          "canonicalModelKey": "ternary-bonsai-2-27b",
+          "model": "Ternary Bonsai 2 27B",
+          "creator": "Prism ML",
+          "sourceType": "Open Weight",
+          "reasoningType": "Reasoning",
+          "contextWindow": "262K",
+          "contextWindowTokens": 262000,
+          "displayScore": 50.78,
+          "provisionalDisplayScore": 60,
+          "publicRankingMode": "bench-align-v5",
+          "evidenceStatus": "estimated",
+          "scoreInterval90": {
+            "lower": 40.91,
+            "upper": 60.65
+          },
+          "rankingEligible": true,
+          "overallRank": 113,
+          "url": "https://benchlm.ai/models/ternary-bonsai-2-27b",
+          "markdownUrl": "https://benchlm.ai/md/models/ternary-bonsai-2-27b.md",
+          "id": 499,
+          "releaseDate": "2026-09-17",
+          "market": null,
+          "isRegional": false,
+          "family": {
+            "familyKey": "ternary-bonsai-2",
+            "familyName": "Ternary Bonsai 2",
+            "variantType": "27b",
+            "snapshotLabel": null,
+            "baseFamilyModelKey": "ternary-bonsai-2-27b",
+            "relatedModelKeys": [
+              "ternary-bonsai-27b",
+              "bonsai-27b",
+              "qwen3-8-27b",
+              "qwen3-6-27b"
+            ],
+            "isCanonicalFamilyEntry": true,
+            "supersedesModelKey": "ternary-bonsai-27b"
+          },
+          "scores": {
+            "displayScore": 60,
+            "overallScore": 60,
+            "rawOverallScore": 0,
+            "verifiedDisplayScore": 59,
+            "displayCategoryScores": {
+              "agentic": null,
+              "coding": 33,
+              "reasoning": 73.9,
+              "multimodalGrounded": null,
+              "knowledge": 75.2,
+              "multilingual": null,
+              "instructionFollowing": 71,
+              "math": 76.8
+            },
+            "verifiedDisplayCategoryScores": {
+              "agentic": null,
+              "coding": 33,
+              "reasoning": 74.2,
+              "multimodalGrounded": null,
+              "knowledge": 75.3,
+              "multilingual": null,
+              "instructionFollowing": 71,
+              "math": 76.8
+            }
+          },
+          "ranking": {
+            "rankingEligible": false,
+            "verifiedRankingEligible": false,
+            "overallRank": 113,
+            "categoryRanks": {
+              "agentic": 59,
+              "coding": 64,
+              "knowledge": 78,
+              "instructionFollowing": 64
+            },
+            "categoryRankingEligible": {
+              "agentic": false,
+              "coding": false,
+              "reasoning": false,
+              "multimodalGrounded": false,
+              "knowledge": false,
+              "multilingual": false,
+              "instructionFollowing": true,
+              "math": false
+            }
+          },
+          "coverage": {
+            "trustedBenchmarkCount": 20,
+            "verifiedBenchmarkCount": 20,
+            "rankableBenchmarkCount": 20,
+            "generatedBenchmarkCount": 0,
+            "scoreConfidence": 3
+          },
+          "benchmarks": {
+            "agentic": {
+              "tau2Bench": 80.22,
+              "bfclV3": 74.92,
+              "terminalBench21": 52.8
+            },
+            "coding": {
+              "liveCodeBenchV6": 90.07,
+              "bigCodeBench": 58.07,
+              "sweVerified": 60.8,
+              "terminalBench21": 52.8
+            },
+            "reasoning": {
+              "lcr": 77
+            },
+            "multimodalGrounded": {
+              "charxivOverall": 80,
+              "aokvqa": 86.81,
+              "omniDocBench16": 89.13,
+              "realWorldQa": 80.13,
+              "ocrBenchV2": 56.88
+            },
+            "knowledge": {
+              "mmluRedux": 89.09,
+              "gpqa": 85.76,
+              "gpqaDiamond": 85.76
+            },
+            "multilingual": {},
+            "instructionFollowing": {
+              "ifeval": 91.31,
+              "ifBench": 74
+            },
+            "math": {
+              "gsm8k": 96.66,
+              "math500": 98.8,
+              "aime2025": 95,
+              "aime2026": 95.83
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "z-ai/glm-5.3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "provider": "z-ai",
+      "family": "z-ai/glm-5.3-flashx",
+      "source": "openrouter",
+      "created_unix": 1789744020,
+      "context": 1048576,
+      "modality": "text+image+video->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "",
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.37,
+        "completion": 1.25,
+        "cache_read": 0.075
+      },
+      "benchmarks": {}
+    },
     {
       "id": "unbiased/pareto",
       "name": "Pareto",
@@ -73,9 +268,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.7,
-        "completion": 2.96,
-        "cache_read": 0.033
+        "prompt": 0.57816,
+        "completion": 1.73448,
+        "cache_read": 0.018396
       },
       "benchmarks": {}
     },
@@ -103,9 +298,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.135,
-        "completion": 0.54,
-        "cache_read": 0.00405
+        "prompt": 0.13,
+        "completion": 0.52,
+        "cache_read": 0.0026
       },
       "benchmarks": {}
     },
@@ -433,9 +628,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.3,
-        "completion": 1.2,
-        "cache_read": 0.006
+        "prompt": 0.15,
+        "completion": 0.6,
+        "cache_read": 0.003
       },
       "benchmarks": {}
     },
@@ -587,8 +782,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 52.502,
-          "ttft": 2.202
+          "median_tps": 51.568,
+          "ttft": 1.574
         }
       }
     },
@@ -1431,9 +1626,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.8775,
-        "completion": 2.97,
-        "cache_read": 0.1755
+        "prompt": 0.8918,
+        "completion": 2.8028,
+        "cache_read": 0.16562
       },
       "benchmarks": {}
     },
@@ -1491,9 +1686,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.4,
-        "completion": 4.4,
-        "cache_read": 0.26
+        "prompt": 0.91,
+        "completion": 2.86,
+        "cache_read": 0.169
       },
       "benchmarks": {}
     },
@@ -1821,9 +2016,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.32,
-        "completion": 3.96,
-        "cache_read": 0.044
+        "prompt": 0.57816,
+        "completion": 1.73448,
+        "cache_read": 0.018396
       },
       "benchmarks": {
         "benchlm": {
@@ -2114,7 +2309,7 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.08,
+        "prompt": 0.07,
         "completion": 0.2,
         "cache_read": 0.04
       },
@@ -2238,8 +2433,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 65.614,
-          "ttft": 1.153
+          "median_tps": 68.214,
+          "ttft": 1.194
         }
       }
     },
@@ -2267,8 +2462,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.3,
-        "completion": 1.1,
+        "prompt": 0.35,
+        "completion": 1.5,
         "cache_read": 0.04
       },
       "benchmarks": {}
@@ -2357,9 +2552,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0558,
-        "completion": 0.1767,
-        "cache_read": 0.0088
+        "prompt": 0.04,
+        "completion": 0.08,
+        "cache_read": 0.008
       },
       "benchmarks": {}
     },
@@ -2387,9 +2582,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.06,
-        "completion": 0.12,
-        "cache_read": 0.012
+        "prompt": 0.04,
+        "completion": 0.08,
+        "cache_read": 0.008
       },
       "benchmarks": {
         "benchlm": {
@@ -2668,8 +2863,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 177.612,
-          "ttft": 1.741
+          "median_tps": 185.283,
+          "ttft": 1.709
         },
         "benchlm": {
           "slug": "inkling-small",
@@ -2939,8 +3134,8 @@
             "completion": 25.0,
             "blended": 10.0
           },
-          "median_tps": 53.445,
-          "ttft": 2.243
+          "median_tps": 50.95,
+          "ttft": 2.288
         }
       }
     },
@@ -3272,8 +3467,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 74.182,
-          "ttft": 2.588
+          "median_tps": 80.236,
+          "ttft": 2.567
         }
       }
     },
@@ -3391,9 +3586,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.1,
-        "completion": 10.95,
-        "cache_read": 0.23
+        "prompt": 1.7,
+        "completion": 8.5,
+        "cache_read": 0.17
       },
       "benchmarks": {}
     },
@@ -4115,8 +4310,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 65.695,
-          "ttft": 1.288
+          "median_tps": 64.911,
+          "ttft": 1.13
         }
       }
     },
@@ -4436,9 +4631,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.5625,
-        "completion": 1.8,
-        "cache_read": 0.105
+        "prompt": 0.5544,
+        "completion": 1.7424,
+        "cache_read": 0.10296
       },
       "benchmarks": {}
     },
@@ -4650,8 +4845,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 69.131,
-          "ttft": 52.667
+          "median_tps": 65.656,
+          "ttft": 39.153
         }
       }
     },
@@ -4769,9 +4964,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.625,
-        "completion": 3.125,
-        "cache_read": 0.1875
+        "prompt": 0.6,
+        "completion": 2.4,
+        "cache_read": 0.12
       },
       "benchmarks": {}
     },
@@ -5343,8 +5538,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 149.032,
-          "ttft": 0.643
+          "median_tps": 145.084,
+          "ttft": 0.685
         }
       }
     },
@@ -5522,9 +5717,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.1,
-        "completion": 10.95,
-        "cache_read": 0.23
+        "prompt": 1.7,
+        "completion": 8.5,
+        "cache_read": 0.17
       },
       "benchmarks": {}
     },
@@ -5882,9 +6077,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.6,
-        "completion": 3.2,
-        "cache_read": 0.135
+        "prompt": 0.533832,
+        "completion": 1.067664,
+        "cache_read": 0.044486
       },
       "benchmarks": {
         "aa": {
@@ -5916,7 +6111,7 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 83.552,
+          "median_tps": 95.282,
           "ttft": 1.087
         }
       }
@@ -5945,9 +6140,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.088606,
-        "completion": 0.177212,
-        "cache_read": 0.017721
+        "prompt": 0.04564,
+        "completion": 0.09128,
+        "cache_read": 0.009128
       },
       "benchmarks": {
         "aa": {
@@ -7242,8 +7437,8 @@
             "completion": 0.75,
             "blended": 0.375
           },
-          "median_tps": 599.314,
-          "ttft": 6.406
+          "median_tps": 508.617,
+          "ttft": 5.852
         }
       }
     },
@@ -8055,8 +8250,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 152.75,
-          "ttft": 1.125
+          "median_tps": 153.774,
+          "ttft": 1.65
         },
         "benchlm": {
           "slug": "solar-pro-3",
@@ -8593,8 +8788,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 112.174,
-          "ttft": 1.305
+          "median_tps": 119.568,
+          "ttft": 0.815
         }
       }
     },
@@ -9985,8 +10180,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.13,
-        "completion": 0.52,
+        "prompt": 0.2,
+        "completion": 0.7,
         "cache_read": null
       },
       "benchmarks": {
@@ -11207,8 +11402,8 @@
             "completion": 0.545,
             "blended": 0.249
           },
-          "median_tps": 168.73,
-          "ttft": 0.566
+          "median_tps": 171.841,
+          "ttft": 0.533
         }
       }
     },
@@ -11300,8 +11495,8 @@
             "completion": 0.19,
             "blended": 0.092
           },
-          "median_tps": 205.92,
-          "ttft": 0.436
+          "median_tps": 197.056,
+          "ttft": 0.452
         }
       }
     },
@@ -13041,8 +13236,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 124.723,
-          "ttft": 6.373
+          "median_tps": 127.607,
+          "ttft": 5.701
         }
       }
     },
@@ -13650,8 +13845,8 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 58.839,
-          "ttft": 0.41
+          "median_tps": 57.611,
+          "ttft": 0.401
         }
       }
     },
@@ -13713,8 +13908,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 89.563,
-          "ttft": 0.948
+          "median_tps": 90.356,
+          "ttft": 0.977
         }
       }
     },
@@ -14673,8 +14868,8 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 35.487,
-          "ttft": 1.021
+          "median_tps": 33.47,
+          "ttft": 1.111
         }
       }
     },
@@ -16683,8 +16878,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 119.824,
-          "ttft": 1.039
+          "median_tps": 115.902,
+          "ttft": 1.02
         },
         "arena": {
           "agent": {
@@ -17017,8 +17212,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 55.885,
-          "ttft": 1.097
+          "median_tps": 51.517,
+          "ttft": 1.002
         },
         "arena": {
           "agent": {
@@ -18354,7 +18549,7 @@
             "blended": 0.45
           },
           "median_tps": 121.146,
-          "ttft": 0.847
+          "ttft": 0.903
         },
         "arena": {
           "agent": {
@@ -19471,8 +19666,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 82.613,
-          "ttft": 1.665
+          "median_tps": 78.721,
+          "ttft": 1.667
         },
         "arena": {
           "code": {
@@ -19705,8 +19900,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 122.982,
-          "ttft": 1.222
+          "median_tps": 113.972,
+          "ttft": 1.212
         }
       }
     },
@@ -23855,8 +24050,8 @@
             "completion": 5.0,
             "blended": 2.0
           },
-          "median_tps": 99.645,
-          "ttft": 0.514
+          "median_tps": 96.551,
+          "ttft": 0.513
         }
       }
     },
@@ -24617,8 +24812,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 61.196,
-          "ttft": 1.359
+          "median_tps": 58.477,
+          "ttft": 1.223
         },
         "arena": {
           "agent": {
@@ -25375,8 +25570,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 47.998,
-          "ttft": 3.86
+          "median_tps": 49.942,
+          "ttft": 4.829
         },
         "arena": {
           "agent": {
@@ -28602,8 +28797,8 @@
             "completion": 0.7,
             "blended": 0.325
           },
-          "median_tps": 1914.055,
-          "ttft": 0.512
+          "median_tps": 1988.053,
+          "ttft": 0.49
         },
         "benchlm": {
           "slug": "celeris-1",
@@ -29695,8 +29890,8 @@
             "completion": 4.8,
             "blended": 1.5
           },
-          "median_tps": 87.009,
-          "ttft": 1.208
+          "median_tps": 82.351,
+          "ttft": 1.201
         }
       }
     },
@@ -30019,8 +30214,8 @@
             "completion": 0.8,
             "blended": 0.275
           },
-          "median_tps": 244.343,
-          "ttft": 0.909
+          "median_tps": 230.699,
+          "ttft": 0.913
         }
       }
     },
@@ -31222,36 +31417,6 @@
       "benchmarks": {}
     },
     {
-      "id": "mistralai/mistral-large-3-675b-instruct-2512",
-      "name": "Mistral Large 3 675B",
-      "provider": "mistralai",
-      "family": "mistralai/mistral-large-3-675b-instruct-2512",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 1000000.0,
-        "completion": 3000000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "mistralai/devstral-small-2505",
       "name": "Mistral Devstral Small 2505",
       "provider": "mistralai",
@@ -31369,8 +31534,8 @@
             "completion": 0.2,
             "blended": 0.2
           },
-          "median_tps": 86.004,
-          "ttft": 0.525
+          "median_tps": 85.811,
+          "ttft": 0.502
         },
         "benchlm": {
           "slug": "ministral-3-14b",
@@ -34005,8 +34170,8 @@
             "completion": 0.4,
             "blended": 0.205
           },
-          "median_tps": 46.594,
-          "ttft": 0.938
+          "median_tps": 40.863,
+          "ttft": 0.927
         },
         "arena": {
           "code": {
@@ -38211,7 +38376,7 @@
             "completion": 0.25,
             "blended": 0.107
           },
-          "median_tps": 16.001,
+          "median_tps": 16.66,
           "ttft": 30.381
         }
       }
@@ -40311,8 +40476,8 @@
             "completion": 0.15,
             "blended": 0.15
           },
-          "median_tps": 96.387,
-          "ttft": 0.546
+          "median_tps": 93.341,
+          "ttft": 0.512
         },
         "benchlm": {
           "slug": "ministral-3-8b",
@@ -43657,8 +43822,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 80.474,
-          "ttft": 0.859
+          "median_tps": 73.586,
+          "ttft": 0.852
         },
         "arena": {
           "agent": {
@@ -43712,6 +43877,301 @@
           }
         }
       }
+    },
+    {
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "provider": "vivgrid",
+      "family": "claude-sonnet-5",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-01-31",
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 2000000.0,
+        "completion": 10000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "aa": {
+          "key": "anthropic/claude-sonnet-5-non-reasoning",
+          "name": "Claude Sonnet 5 (Non-reasoning, High Effort)",
+          "creator_slug": "anthropic",
+          "slug": "claude-sonnet-5-non-reasoning",
+          "evaluations": {
+            "artificial_analysis_intelligence_index": 28.9,
+            "artificial_analysis_coding_index": 66.4,
+            "artificial_analysis_math_index": null,
+            "mmlu_pro": null,
+            "gpqa": 0.8,
+            "hle": 0.19,
+            "livecodebench": null,
+            "scicode": null,
+            "math_500": null,
+            "aime": null,
+            "aime_25": null,
+            "ifbench": null,
+            "lcr": 0.7,
+            "terminalbench_hard": null,
+            "terminalbench_v2_1": 0.752808988764045,
+            "tau2": null,
+            "tau_banking": 0.156701030927835
+          },
+          "pricing": {
+            "prompt": 2.0,
+            "completion": 10.0,
+            "blended": 4.0
+          },
+          "median_tps": 63.319,
+          "ttft": 1.083
+        },
+        "arena": {
+          "agent": {
+            "rank": 9,
+            "model": "Claude Sonnet 5 (High)",
+            "vendor": "Anthropic",
+            "license": "proprietary",
+            "scores": [
+              {
+                "name": "Net Improvement",
+                "score": 5.97,
+                "ci": 1.62
+              },
+              {
+                "name": "Confirmed Success",
+                "score": 2.88,
+                "ci": 3.34
+              },
+              {
+                "name": "Praise vs Complaint",
+                "score": 11.03,
+                "ci": 5.77
+              },
+              {
+                "name": "Steerability",
+                "score": 8.39,
+                "ci": 3.38
+              },
+              {
+                "name": "Bash Recovery",
+                "score": 7.36,
+                "ci": 1.06
+              },
+              {
+                "name": "Tool Hallucination",
+                "score": 0.18,
+                "ci": 0.1
+              },
+              {
+                "name": "Cost/Task",
+                "score": 30.0,
+                "ci": null
+              },
+              {
+                "name": "Output Tokens/Task",
+                "score": null,
+                "ci": null
+              }
+            ],
+            "sessions": 210
+          }
+        },
+        "benchlm": {
+          "slug": "claude-sonnet-5",
+          "canonicalModelKey": "claude-sonnet-5",
+          "model": "Claude Sonnet 5",
+          "creator": "Anthropic",
+          "sourceType": "Proprietary",
+          "reasoningType": "Reasoning",
+          "contextWindow": "1M",
+          "contextWindowTokens": 1000000,
+          "displayScore": 69.68,
+          "provisionalDisplayScore": 74,
+          "publicRankingMode": "bench-align-v5",
+          "evidenceStatus": "supported",
+          "scoreInterval90": {
+            "lower": 66.45,
+            "upper": 72.9
+          },
+          "rankingEligible": true,
+          "overallRank": 18,
+          "url": "https://benchlm.ai/models/claude-sonnet-5",
+          "markdownUrl": "https://benchlm.ai/md/models/claude-sonnet-5.md",
+          "id": 262,
+          "releaseDate": "2026-06-30",
+          "market": null,
+          "isRegional": false,
+          "family": {
+            "familyKey": "claude-sonnet-5",
+            "familyName": "Claude Sonnet 5",
+            "variantType": "base",
+            "snapshotLabel": null,
+            "baseFamilyModelKey": "claude-sonnet-5",
+            "relatedModelKeys": [
+              "claude-sonnet-4-6",
+              "claude-opus-4-8"
+            ],
+            "isCanonicalFamilyEntry": true,
+            "supersedesModelKey": "claude-sonnet-4-6"
+          },
+          "scores": {
+            "displayScore": 74,
+            "overallScore": 74,
+            "rawOverallScore": 73,
+            "verifiedDisplayScore": 73,
+            "displayCategoryScores": {
+              "agentic": 82.4,
+              "coding": 59.5,
+              "reasoning": 77.4,
+              "multimodalGrounded": 77.4,
+              "knowledge": 82.8,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            },
+            "verifiedDisplayCategoryScores": {
+              "agentic": 80.1,
+              "coding": 59.2,
+              "reasoning": 77.6,
+              "multimodalGrounded": 77.4,
+              "knowledge": 82.7,
+              "multilingual": null,
+              "instructionFollowing": null,
+              "math": null
+            }
+          },
+          "ranking": {
+            "rankingEligible": true,
+            "verifiedRankingEligible": true,
+            "overallRank": 18,
+            "categoryRanks": {
+              "agentic": 11,
+              "coding": 13,
+              "multimodalGrounded": 14,
+              "knowledge": 20
+            },
+            "categoryRankingEligible": {
+              "agentic": true,
+              "coding": true,
+              "reasoning": false,
+              "multimodalGrounded": true,
+              "knowledge": true,
+              "multilingual": false,
+              "instructionFollowing": false,
+              "math": false
+            }
+          },
+          "coverage": {
+            "trustedBenchmarkCount": 32,
+            "verifiedBenchmarkCount": 32,
+            "rankableBenchmarkCount": 32,
+            "generatedBenchmarkCount": 0,
+            "scoreConfidence": 3
+          },
+          "benchmarks": {
+            "agentic": {
+              "frontierBench": 14.59,
+              "terminalBench2": 80.4,
+              "browseComp": 84.7,
+              "hleWithTools": 57.4,
+              "osWorldVerified": 81.2,
+              "gdpvalAa": 1603,
+              "gdpvalAaNormalized": 50,
+              "valsTerminalBench21": 74.5,
+              "aaAgenticIndex": 44.28,
+              "aaAnalystAgent": 46.3,
+              "apprenticeBench": 16
+            },
+            "coding": {
+              "sweVerified": 85.2,
+              "swePro": 63.2,
+              "sweMultilingual": 78.3,
+              "sweMultimodal": 28.1,
+              "terminalBench2": 80.4,
+              "frontierCode": 42.7,
+              "cursorBench32": 61.5,
+              "aaSciCode": 54.3,
+              "vulcanCiiV1": 89.2,
+              "valsLiveCodeBench": 82.4,
+              "valsSweBench": 79.6,
+              "aaCodingIndex": 71.55,
+              "cursorBench40": 34.1
+            },
+            "reasoning": {
+              "lcr": 82,
+              "critpt": 16.9,
+              "aaMlcr": 55
+            },
+            "multimodalGrounded": {
+              "charxiv": 88.3,
+              "charxivNoTools": 77,
+              "aaMmmuPro": 77.3,
+              "designArenaWebsite": 1289
+            },
+            "knowledge": {
+              "hle": 57.4,
+              "hleNoTools": 43.2,
+              "hleVerified": 31,
+              "labBench2": 80.1,
+              "artificialAnalysis": 38.36,
+              "aaGpqaDiamond": 91.1,
+              "aaHle": 41.3,
+              "aaOmniscienceIndex": 16.5,
+              "omniscienceAccuracy": 40.1,
+              "omniscienceHallucinationRate": 39.4,
+              "valsGpqaDiamond": 88.9,
+              "valsMmluPro": 87.5
+            },
+            "multilingual": {},
+            "instructionFollowing": {},
+            "math": {}
+          }
+        }
+      }
+    },
+    {
+      "id": "jev",
+      "name": "Jev",
+      "provider": "vivgrid",
+      "family": "jev",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 64000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 42000.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-5.5",
@@ -43951,8 +44411,8 @@
             "completion": 2.5,
             "blended": 1.563
           },
-          "median_tps": 121.753,
-          "ttft": 0.572
+          "median_tps": 99.715,
+          "ttft": 0.55
         },
         "arena": {
           "code": {
@@ -46488,8 +46948,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 57.522,
-          "ttft": 1.384
+          "median_tps": 63.503,
+          "ttft": 1.396
         }
       }
     },
@@ -48068,8 +48528,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 47.913,
-          "ttft": 1.264
+          "median_tps": 49.422,
+          "ttft": 1.243
         },
         "arena": {
           "code": {
@@ -50963,7 +51423,7 @@
       "family": "aws-mantle/gpt-5.6-sol",
       "source": "models.dev",
       "created_unix": null,
-      "context": 278528,
+      "context": 921600,
       "modality": "image/pdf/text",
       "is_vision": true,
       "is_audio_input": false,
@@ -51023,7 +51483,7 @@
       "family": "aws-mantle/gpt-5.6-luna",
       "source": "models.dev",
       "created_unix": null,
-      "context": 278528,
+      "context": 921600,
       "modality": "image/pdf/text",
       "is_vision": true,
       "is_audio_input": false,
@@ -51053,7 +51513,7 @@
       "family": "aws-mantle/gpt-5.6-terra",
       "source": "models.dev",
       "created_unix": null,
-      "context": 278528,
+      "context": 921600,
       "modality": "image/pdf/text",
       "is_vision": true,
       "is_audio_input": false,
@@ -51863,7 +52323,7 @@
             "completion": 9.0,
             "blended": 3.375
           },
-          "median_tps": 257.805,
+          "median_tps": 262.813,
           "ttft": 0.713
         }
       }
@@ -52374,91 +52834,7 @@
         "completion": 10000000.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "aa": {
-          "key": "anthropic/claude-sonnet-5-non-reasoning",
-          "name": "Claude Sonnet 5 (Non-reasoning, High Effort)",
-          "creator_slug": "anthropic",
-          "slug": "claude-sonnet-5-non-reasoning",
-          "evaluations": {
-            "artificial_analysis_intelligence_index": 28.9,
-            "artificial_analysis_coding_index": 66.4,
-            "artificial_analysis_math_index": null,
-            "mmlu_pro": null,
-            "gpqa": 0.8,
-            "hle": 0.19,
-            "livecodebench": null,
-            "scicode": null,
-            "math_500": null,
-            "aime": null,
-            "aime_25": null,
-            "ifbench": null,
-            "lcr": 0.7,
-            "terminalbench_hard": null,
-            "terminalbench_v2_1": 0.752808988764045,
-            "tau2": null,
-            "tau_banking": 0.156701030927835
-          },
-          "pricing": {
-            "prompt": 2.0,
-            "completion": 10.0,
-            "blended": 4.0
-          },
-          "median_tps": 66.116,
-          "ttft": 0.786
-        },
-        "arena": {
-          "agent": {
-            "rank": 9,
-            "model": "Claude Sonnet 5 (High)",
-            "vendor": "Anthropic",
-            "license": "proprietary",
-            "scores": [
-              {
-                "name": "Net Improvement",
-                "score": 5.97,
-                "ci": 1.62
-              },
-              {
-                "name": "Confirmed Success",
-                "score": 2.88,
-                "ci": 3.34
-              },
-              {
-                "name": "Praise vs Complaint",
-                "score": 11.03,
-                "ci": 5.77
-              },
-              {
-                "name": "Steerability",
-                "score": 8.39,
-                "ci": 3.38
-              },
-              {
-                "name": "Bash Recovery",
-                "score": 7.36,
-                "ci": 1.06
-              },
-              {
-                "name": "Tool Hallucination",
-                "score": 0.18,
-                "ci": 0.1
-              },
-              {
-                "name": "Cost/Task",
-                "score": 30.0,
-                "ci": null
-              },
-              {
-                "name": "Output Tokens/Task",
-                "score": null,
-                "ci": null
-              }
-            ],
-            "sessions": 210
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "vertex-anthropic/claude-opus-4-5-20251101",
@@ -54465,8 +54841,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 53.098,
-          "ttft": 7.034
+          "median_tps": 50.784,
+          "ttft": 4.022
         }
       }
     },
@@ -57669,8 +58045,8 @@
             "completion": 0.25,
             "blended": 0.19
           },
-          "median_tps": 88.739,
-          "ttft": 0.424
+          "median_tps": 94.8,
+          "ttft": 0.438
         }
       }
     },
@@ -61368,7 +61744,7 @@
             "blended": 3.0
           },
           "median_tps": 64.461,
-          "ttft": 12.318
+          "ttft": 24.567
         }
       }
     },
@@ -61460,8 +61836,8 @@
             "completion": 2.5,
             "blended": 1.563
           },
-          "median_tps": 118.391,
-          "ttft": 6.951
+          "median_tps": 118.242,
+          "ttft": 7.751
         }
       }
     },
@@ -61553,8 +61929,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 51.105,
-          "ttft": 3.362
+          "median_tps": 49.011,
+          "ttft": 2.748
         }
       }
     },
@@ -64668,6 +65044,36 @@
       "benchmarks": {}
     },
     {
+      "id": "deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek V4 Flash Vision Exp",
+      "provider": "aihubmix",
+      "family": "deepseek-v4-flash-vision-exp",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 155000.0,
+        "completion": 620000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "doubao-seed-2-0-lite-260428",
       "name": "Doubao Seed 2.0 Lite 260428",
       "provider": "aihubmix",
@@ -65355,8 +65761,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 39.395,
-          "ttft": 1.9
+          "median_tps": 39.341,
+          "ttft": 1.822
         }
       }
     },
@@ -65980,6 +66386,36 @@
       }
     },
     {
+      "id": "ox-alpha",
+      "name": "Ox Alpha",
+      "provider": "aihubmix",
+      "family": "ox-alpha",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "gpt-5.2",
       "name": "GPT-5.2",
       "provider": "aihubmix",
@@ -66008,188 +66444,6 @@
         "cache_read": null
       },
       "benchmarks": {}
-    },
-    {
-      "id": "claude-sonnet-5",
-      "name": "Claude Sonnet 5",
-      "provider": "aihubmix",
-      "family": "claude-sonnet-5",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2026-01-31",
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 2000000.0,
-        "completion": 10000000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "benchlm": {
-          "slug": "claude-sonnet-5",
-          "canonicalModelKey": "claude-sonnet-5",
-          "model": "Claude Sonnet 5",
-          "creator": "Anthropic",
-          "sourceType": "Proprietary",
-          "reasoningType": "Reasoning",
-          "contextWindow": "1M",
-          "contextWindowTokens": 1000000,
-          "displayScore": 69.68,
-          "provisionalDisplayScore": 74,
-          "publicRankingMode": "bench-align-v5",
-          "evidenceStatus": "supported",
-          "scoreInterval90": {
-            "lower": 66.45,
-            "upper": 72.9
-          },
-          "rankingEligible": true,
-          "overallRank": 18,
-          "url": "https://benchlm.ai/models/claude-sonnet-5",
-          "markdownUrl": "https://benchlm.ai/md/models/claude-sonnet-5.md",
-          "id": 262,
-          "releaseDate": "2026-06-30",
-          "market": null,
-          "isRegional": false,
-          "family": {
-            "familyKey": "claude-sonnet-5",
-            "familyName": "Claude Sonnet 5",
-            "variantType": "base",
-            "snapshotLabel": null,
-            "baseFamilyModelKey": "claude-sonnet-5",
-            "relatedModelKeys": [
-              "claude-sonnet-4-6",
-              "claude-opus-4-8"
-            ],
-            "isCanonicalFamilyEntry": true,
-            "supersedesModelKey": "claude-sonnet-4-6"
-          },
-          "scores": {
-            "displayScore": 74,
-            "overallScore": 74,
-            "rawOverallScore": 73,
-            "verifiedDisplayScore": 73,
-            "displayCategoryScores": {
-              "agentic": 82.4,
-              "coding": 59.5,
-              "reasoning": 77.4,
-              "multimodalGrounded": 77.4,
-              "knowledge": 82.8,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            },
-            "verifiedDisplayCategoryScores": {
-              "agentic": 80.1,
-              "coding": 59.2,
-              "reasoning": 77.6,
-              "multimodalGrounded": 77.4,
-              "knowledge": 82.7,
-              "multilingual": null,
-              "instructionFollowing": null,
-              "math": null
-            }
-          },
-          "ranking": {
-            "rankingEligible": true,
-            "verifiedRankingEligible": true,
-            "overallRank": 18,
-            "categoryRanks": {
-              "agentic": 11,
-              "coding": 13,
-              "multimodalGrounded": 14,
-              "knowledge": 20
-            },
-            "categoryRankingEligible": {
-              "agentic": true,
-              "coding": true,
-              "reasoning": false,
-              "multimodalGrounded": true,
-              "knowledge": true,
-              "multilingual": false,
-              "instructionFollowing": false,
-              "math": false
-            }
-          },
-          "coverage": {
-            "trustedBenchmarkCount": 32,
-            "verifiedBenchmarkCount": 32,
-            "rankableBenchmarkCount": 32,
-            "generatedBenchmarkCount": 0,
-            "scoreConfidence": 3
-          },
-          "benchmarks": {
-            "agentic": {
-              "frontierBench": 14.59,
-              "terminalBench2": 80.4,
-              "browseComp": 84.7,
-              "hleWithTools": 57.4,
-              "osWorldVerified": 81.2,
-              "gdpvalAa": 1603,
-              "gdpvalAaNormalized": 50,
-              "valsTerminalBench21": 74.5,
-              "aaAgenticIndex": 44.28,
-              "aaAnalystAgent": 46.3,
-              "apprenticeBench": 16
-            },
-            "coding": {
-              "sweVerified": 85.2,
-              "swePro": 63.2,
-              "sweMultilingual": 78.3,
-              "sweMultimodal": 28.1,
-              "terminalBench2": 80.4,
-              "frontierCode": 42.7,
-              "cursorBench32": 61.5,
-              "aaSciCode": 54.3,
-              "vulcanCiiV1": 89.2,
-              "valsLiveCodeBench": 82.4,
-              "valsSweBench": 79.6,
-              "aaCodingIndex": 71.55,
-              "cursorBench40": 34.1
-            },
-            "reasoning": {
-              "lcr": 82,
-              "critpt": 16.9,
-              "aaMlcr": 55
-            },
-            "multimodalGrounded": {
-              "charxiv": 88.3,
-              "charxivNoTools": 77,
-              "aaMmmuPro": 77.3,
-              "designArenaWebsite": 1289
-            },
-            "knowledge": {
-              "hle": 57.4,
-              "hleNoTools": 43.2,
-              "hleVerified": 31,
-              "labBench2": 80.1,
-              "artificialAnalysis": 38.36,
-              "aaGpqaDiamond": 91.1,
-              "aaHle": 41.3,
-              "aaOmniscienceIndex": 16.5,
-              "omniscienceAccuracy": 40.1,
-              "omniscienceHallucinationRate": 39.4,
-              "valsGpqaDiamond": 88.9,
-              "valsMmluPro": 87.5
-            },
-            "multilingual": {},
-            "instructionFollowing": {},
-            "math": {}
-          }
-        }
-      }
     },
     {
       "id": "claude-opus-4-6-think",
@@ -68241,8 +68495,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 36.095,
-          "ttft": 3.531
+          "median_tps": 35.966,
+          "ttft": 3.104
         }
       }
     },
@@ -71762,8 +72016,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 46.667,
-          "ttft": 0.413
+          "median_tps": 47.024,
+          "ttft": 0.43
         }
       }
     },
@@ -71825,8 +72079,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 17.332,
-          "ttft": 0.423
+          "median_tps": 17.281,
+          "ttft": 0.415
         }
       }
     },
@@ -72144,8 +72398,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 246.437,
-          "ttft": 0.178
+          "median_tps": 248.293,
+          "ttft": 0.165
         },
         "benchlm": {
           "slug": "command-a-plus",
@@ -72978,8 +73232,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 78.902,
-          "ttft": 1.815
+          "median_tps": 72.299,
+          "ttft": 1.922
         },
         "benchlm": {
           "slug": "gpt-5-6-terra",
@@ -73433,7 +73687,7 @@
             "blended": 1.5
           },
           "median_tps": 324.606,
-          "ttft": 1.229
+          "ttft": 0.758
         },
         "benchlm": {
           "slug": "gemini-3-7-flash",
@@ -73855,8 +74109,8 @@
             "completion": 1.6,
             "blended": 0.7
           },
-          "median_tps": 68.578,
-          "ttft": 1.595
+          "median_tps": 65.991,
+          "ttft": 1.676
         },
         "benchlm": {
           "slug": "qwen3-7-plus",
@@ -74358,8 +74612,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 61.652,
-          "ttft": 2.719
+          "median_tps": 56.293,
+          "ttft": 2.667
         },
         "benchlm": {
           "slug": "gpt-5-6-sol",
@@ -74610,8 +74864,8 @@
             "completion": 1.2,
             "blended": 0.45
           },
-          "median_tps": 117.522,
-          "ttft": 1.506
+          "median_tps": 127.931,
+          "ttft": 1.288
         },
         "benchlm": {
           "slug": "gpt-5-6-luna",
@@ -74868,7 +75122,7 @@
             "blended": 1.5
           },
           "median_tps": 211.799,
-          "ttft": 18.617
+          "ttft": 11.506
         },
         "benchlm": {
           "slug": "gemini-3-6-flash",
@@ -75060,8 +75314,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 53.032,
-          "ttft": 2.951
+          "median_tps": 63.477,
+          "ttft": 2.654
         },
         "benchlm": {
           "slug": "glm-5-3",
@@ -75311,8 +75565,8 @@
             "completion": 4.0,
             "blended": 1.712
           },
-          "median_tps": 56.786,
-          "ttft": 1.188
+          "median_tps": 60.215,
+          "ttft": 1.196
         },
         "benchlm": {
           "slug": "kimi-k2-7-code",
@@ -76508,8 +76762,8 @@
             "completion": 0.5,
             "blended": 0.237
           },
-          "median_tps": 104.845,
-          "ttft": 2.131
+          "median_tps": 96.966,
+          "ttft": 2.344
         },
         "benchlm": {
           "slug": "glm-5-3-flash",
@@ -77490,8 +77744,8 @@
             "completion": 0.28,
             "blended": 0.175
           },
-          "median_tps": 44.108,
-          "ttft": 4.259
+          "median_tps": 31.009,
+          "ttft": 2.256
         },
         "benchlm": {
           "slug": "mimo-v2-5",
@@ -77727,8 +77981,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 52.915,
-          "ttft": 4.221
+          "median_tps": 51.498,
+          "ttft": 5.513
         },
         "benchlm": {
           "slug": "mimo-v2-5-pro",
@@ -78104,8 +78358,8 @@
             "completion": 1.15,
             "blended": 0.438
           },
-          "median_tps": 144.354,
-          "ttft": 1.423
+          "median_tps": 150.531,
+          "ttft": 1.368
         },
         "benchlm": {
           "slug": "step-3-7-flash",
@@ -78366,7 +78620,7 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 41.808,
+          "median_tps": 42.072,
           "ttft": 1.64
         },
         "benchlm": {
@@ -80700,69 +80954,6 @@
         "cache_read": null
       },
       "benchmarks": {}
-    },
-    {
-      "id": "deepseek-v4-flash-vision-exp",
-      "name": "DeepSeek V4 Flash Vision (Exp)",
-      "provider": "above",
-      "family": "deepseek-v4-flash-vision-exp",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 242000.0,
-        "completion": 726000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "aa": {
-          "key": "deepseek/deepseek-v4-flash-vision",
-          "name": "DeepSeek V4 Flash Vision (Reasoning, Max Effort)",
-          "creator_slug": "deepseek",
-          "slug": "deepseek-v4-flash-vision",
-          "evaluations": {
-            "artificial_analysis_intelligence_index": 35,
-            "artificial_analysis_coding_index": 65,
-            "artificial_analysis_math_index": null,
-            "mmlu_pro": null,
-            "gpqa": 0.913,
-            "hle": 0.345,
-            "livecodebench": null,
-            "scicode": 0.497,
-            "math_500": null,
-            "aime": null,
-            "aime_25": null,
-            "ifbench": null,
-            "lcr": 0.813333333333333,
-            "terminalbench_hard": null,
-            "terminalbench_v2_1": 0.741573033707865,
-            "tau2": null,
-            "tau_banking": 0.410309278350515
-          },
-          "pricing": {
-            "prompt": 0.44,
-            "completion": 1.32,
-            "blended": 0.66
-          },
-          "median_tps": 223.599,
-          "ttft": 0.944
-        }
-      }
     },
     {
       "id": "gemma-4-26b-a4b-it",
@@ -84233,8 +84424,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 35.285,
-          "ttft": 0.873
+          "median_tps": 35.231,
+          "ttft": 0.87
         }
       }
     },
@@ -86662,7 +86853,7 @@
             "blended": 0.43
           },
           "median_tps": 108.279,
-          "ttft": 0.921
+          "ttft": 0.886
         },
         "benchlm": {
           "slug": "qwen3-omni-30b-a3b-instruct",
@@ -88015,8 +88206,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 128.112,
-          "ttft": 2.028
+          "median_tps": 124.995,
+          "ttft": 2.11
         }
       }
     },
@@ -89269,8 +89460,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 140.57,
-          "ttft": 0.612
+          "median_tps": 140.58,
+          "ttft": 0.617
         }
       }
     },
@@ -89392,8 +89583,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 137.015,
-          "ttft": 0.721
+          "median_tps": 137.196,
+          "ttft": 0.682
         }
       }
     },
@@ -89984,8 +90175,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 152.831,
-          "ttft": 0.592
+          "median_tps": 149.334,
+          "ttft": 0.572
         },
         "benchlm": {
           "slug": "mistral-small-4-reasoning",
@@ -94313,8 +94504,8 @@
             "completion": 0.47,
             "blended": 0.23
           },
-          "median_tps": 54.027,
-          "ttft": 1.383
+          "median_tps": 52.438,
+          "ttft": 1.401
         },
         "arena": {
           "agent": {
@@ -94646,8 +94837,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 199.763,
-          "ttft": 1.884
+          "median_tps": 189.043,
+          "ttft": 1.838
         },
         "benchlm": {
           "slug": "ling-3-0-tiny",
@@ -95102,8 +95293,8 @@
             "completion": 2.0,
             "blended": 0.688
           },
-          "median_tps": 162.549,
-          "ttft": 1.184
+          "median_tps": 151.87,
+          "ttft": 1.085
         },
         "arena": {
           "code": {
@@ -99012,7 +99203,7 @@
             "completion": 0.58,
             "blended": 0.25
           },
-          "median_tps": 85.237,
+          "median_tps": 79.601,
           "ttft": 1.704
         }
       }
@@ -99825,8 +100016,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 144.33,
-          "ttft": 1.01
+          "median_tps": 144.283,
+          "ttft": 0.992
         },
         "arena": {
           "code": {
@@ -100040,6 +100231,36 @@
       "supports_json": false,
       "supports_caching": false,
       "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "mistralai/mistral-large-3-675b-instruct-2512",
+      "name": "Mistral Large 3 675B Instruct 2512",
+      "provider": "mistralai",
+      "family": "mistralai/mistral-large-3-675b-instruct-2512",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-01",
       "hugging_face_id": null,
       "open_weight": true,
       "synthetic": false,
@@ -101132,8 +101353,8 @@
             "completion": 0.195,
             "blended": 0.086
           },
-          "median_tps": 153.087,
-          "ttft": 1.762
+          "median_tps": 157.724,
+          "ttft": 1.326
         }
       }
     },
@@ -102850,8 +103071,8 @@
             "completion": 14.0,
             "blended": 4.813
           },
-          "median_tps": 141.376,
-          "ttft": 36.077
+          "median_tps": 133.528,
+          "ttft": 40.27
         },
         "benchlm": {
           "slug": "gpt-5-3-codex",
@@ -103202,8 +103423,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 133.634,
-          "ttft": 23.728
+          "median_tps": 123.818,
+          "ttft": 24.639
         }
       }
     },
@@ -104216,8 +104437,8 @@
             "completion": 2.4,
             "blended": 1.05
           },
-          "median_tps": 150.875,
-          "ttft": 1.277
+          "median_tps": 154.853,
+          "ttft": 1.273
         }
       }
     },
@@ -105258,8 +105479,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 189.452,
-          "ttft": 1.078
+          "median_tps": 179.891,
+          "ttft": 0.983
         }
       }
     },
@@ -105621,8 +105842,8 @@
             "completion": 1.2,
             "blended": 0.563
           },
-          "median_tps": 115.303,
-          "ttft": 0.842
+          "median_tps": 124.606,
+          "ttft": 0.921
         }
       }
     },
@@ -108591,7 +108812,7 @@
             "blended": 0.313
           },
           "median_tps": 96.323,
-          "ttft": 0.596
+          "ttft": 0.62
         }
       }
     },
@@ -108653,8 +108874,8 @@
             "completion": 0.91,
             "blended": 0.422
           },
-          "median_tps": 112.082,
-          "ttft": 0.569
+          "median_tps": 110.822,
+          "ttft": 0.56
         }
       }
     },
@@ -109253,40 +109474,10 @@
       "benchmarks": {}
     },
     {
-      "id": "fish-audio/s2.1-pro-free",
-      "name": "S2.1 Pro (Free)",
+      "id": "fish-audio/s2.1-pro",
+      "name": "S2.1 Pro",
       "provider": "fish-audio",
-      "family": "fish-audio/s2.1-pro-free",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 0,
-      "modality": "audio/text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": true,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": null,
-        "completion": null,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "fish-audio/s1-free",
-      "name": "S1 (Free)",
-      "provider": "fish-audio",
-      "family": "fish-audio/s1-free",
+      "family": "fish-audio/s2.1-pro",
       "source": "models.dev",
       "created_unix": null,
       "context": 0,
@@ -109317,6 +109508,36 @@
       "name": "S2 Pro",
       "provider": "fish-audio",
       "family": "fish-audio/s2-pro",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 0,
+      "modality": "audio/text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": true,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": null,
+        "completion": null,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "fish-audio/s1",
+      "name": "S1",
+      "provider": "fish-audio",
+      "family": "fish-audio/s1",
       "source": "models.dev",
       "created_unix": null,
       "context": 0,
@@ -110770,8 +110991,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 4000000.0,
-        "completion": 20000000.0,
+        "prompt": 8000000.0,
+        "completion": 40000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -111170,6 +111391,36 @@
       "benchmarks": {}
     },
     {
+      "id": "zai/glm-5.3-flashx",
+      "name": "GLM 5.3 FlashX",
+      "provider": "zai",
+      "family": "zai/glm-5.3-flashx",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 370000.0,
+        "completion": 1250000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "zai/glm-5.3-fast",
       "name": "GLM 5.3 Fast",
       "provider": "zai",
@@ -111410,8 +111661,8 @@
             "completion": 1.5,
             "blended": 0.75
           },
-          "median_tps": 75.073,
-          "ttft": 0.747
+          "median_tps": 73.609,
+          "ttft": 0.837
         }
       }
     },
@@ -111890,8 +112141,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 13.747,
-          "ttft": 0.63
+          "median_tps": 21.992,
+          "ttft": 0.5
         }
       }
     },
@@ -111953,8 +112204,8 @@
             "completion": 0.2,
             "blended": 0.095
           },
-          "median_tps": 270.917,
-          "ttft": 0.477
+          "median_tps": 281.802,
+          "ttft": 0.479
         }
       }
     },
@@ -112079,8 +112330,8 @@
             "completion": 0.1,
             "blended": 0.063
           },
-          "median_tps": 73.236,
-          "ttft": 0.504
+          "median_tps": 51.845,
+          "ttft": 0.486
         },
         "arena": {
           "code": {
@@ -112720,8 +112971,8 @@
             "completion": 0.2,
             "blended": 0.151
           },
-          "median_tps": 76.604,
-          "ttft": 0.697
+          "median_tps": 70.809,
+          "ttft": 0.808
         }
       }
     },
@@ -113113,8 +113364,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 223.034,
-          "ttft": 0.875
+          "median_tps": 220.996,
+          "ttft": 0.79
         },
         "benchlm": {
           "slug": "deepseek-v4-1-flash",
@@ -113636,8 +113887,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 82.692,
-          "ttft": 1.67
+          "median_tps": 85.322,
+          "ttft": 1.629
         }
       }
     },
@@ -114135,8 +114386,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 115.474,
-          "ttft": 1.117
+          "median_tps": 108.983,
+          "ttft": 1.084
         },
         "benchlm": {
           "slug": "qwen3-6-35b-a3b",
@@ -114833,8 +115084,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 356.785,
-          "ttft": 7.207
+          "median_tps": 362.617,
+          "ttft": 6.981
         },
         "benchlm": {
           "slug": "gemini-3-5-flash-lite",
@@ -115085,8 +115336,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2500000.0,
-        "completion": 12500000.0,
+        "prompt": 5000000.0,
+        "completion": 25000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -115422,8 +115673,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 59.966,
-          "ttft": 1.393
+          "median_tps": 61.979,
+          "ttft": 1.478
         },
         "benchlm": {
           "slug": "qwen3-6-27b",
@@ -116250,8 +116501,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2500000.0,
-        "completion": 12500000.0,
+        "prompt": 5000000.0,
+        "completion": 25000000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -119241,6 +119492,36 @@
       }
     },
     {
+      "id": "glm-5.3-flashx",
+      "name": "GLM-5.3-FlashX",
+      "provider": "zhipuai",
+      "family": "glm-5.3-flashx",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/pdf/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 370000.0,
+        "completion": 1250000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "glm-4.5-flash",
       "name": "GLM-4.5-Flash",
       "provider": "zhipuai",
@@ -119809,8 +120090,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 203.771,
-          "ttft": 1.147
+          "median_tps": 184.89,
+          "ttft": 1.188
         }
       }
     },
@@ -120560,7 +120841,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -121558,8 +121839,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 146.802,
-          "ttft": 0.421
+          "median_tps": 146.673,
+          "ttft": 0.399
         }
       }
     },
@@ -121651,8 +121932,8 @@
             "completion": 0.65,
             "blended": 0.307
           },
-          "median_tps": 142.394,
-          "ttft": 1.992
+          "median_tps": 145.19,
+          "ttft": 1.234
         }
       }
     },
@@ -121804,8 +122085,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 168.397,
-          "ttft": 0.562
+          "median_tps": 168.025,
+          "ttft": 0.567
         },
         "benchlm": {
           "slug": "mistral-small-4",
@@ -122592,8 +122873,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 25.146,
-          "ttft": 0.544
+          "median_tps": 26.384,
+          "ttft": 0.487
         }
       }
     },
@@ -123039,8 +123320,8 @@
             "completion": 0.4,
             "blended": 0.198
           },
-          "median_tps": 73.377,
-          "ttft": 0.754
+          "median_tps": 65.072,
+          "ttft": 0.817
         },
         "arena": {
           "code": {
@@ -123261,8 +123542,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 312.607,
-          "ttft": 11.699
+          "median_tps": 231.034,
+          "ttft": 8.772
         },
         "benchlm": {
           "slug": "muse-spark-1-2",
@@ -123692,7 +123973,7 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 134.803,
+          "median_tps": 133.407,
           "ttft": 0.995
         },
         "benchlm": {
@@ -124081,8 +124362,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 44.688,
-          "ttft": 1.273
+          "median_tps": 46.394,
+          "ttft": 1.255
         },
         "benchlm": {
           "slug": "qwen3-8-27b",
@@ -125043,8 +125324,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 291.115,
-          "ttft": 25.805
+          "median_tps": 211.267,
+          "ttft": 20.723
         },
         "benchlm": {
           "slug": "muse-spark-1-3",
@@ -125905,6 +126186,126 @@
       "price_per_million": {
         "prompt": 1791000.0,
         "completion": 8943600.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "kimi-for-coding-highspeed",
+      "name": "Kimi For Coding HighSpeed",
+      "provider": "kimi-code-plan-global",
+      "family": "kimi-for-coding-highspeed",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-01",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "k3-256k",
+      "name": "Kimi K3-256K",
+      "provider": "kimi-code-plan-global",
+      "family": "k3-256k",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "kimi-for-coding",
+      "name": "kimi-for-coding",
+      "provider": "kimi-code-plan-global",
+      "family": "kimi-for-coding",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "k3",
+      "name": "Kimi K3",
+      "provider": "kimi-code-plan-global",
+      "family": "k3",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.0,
+        "completion": 0.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -128507,36 +128908,6 @@
       "benchmarks": {}
     },
     {
-      "id": "openai/gpt-5.6-sol-discounted",
-      "name": "OpenAI: GPT-5.6 Sol (50% off)",
-      "provider": "openai",
-      "family": "openai/gpt-5.6-sol-discounted",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1050000,
-      "modality": "image/pdf/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 2000000.0,
-        "completion": 10000000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "stealth/claude-opus-4.8",
       "name": "Stealth: Claude Opus 4.8 (20% off)",
       "provider": "stealth",
@@ -129614,8 +129985,8 @@
             "completion": 0.1,
             "blended": 0.1
           },
-          "median_tps": 206.103,
-          "ttft": 0.463
+          "median_tps": 218.914,
+          "ttft": 0.465
         },
         "benchlm": {
           "slug": "ministral-3-3b",
@@ -129957,8 +130328,8 @@
             "completion": 0.14,
             "blended": 0.061
           },
-          "median_tps": 278.127,
-          "ttft": 0.581
+          "median_tps": 247.306,
+          "ttft": 0.578
         }
       }
     },
@@ -131523,8 +131894,8 @@
             "completion": 12.5,
             "blended": 5.0
           },
-          "median_tps": 69.705,
-          "ttft": 0.995
+          "median_tps": 59.981,
+          "ttft": 0.974
         }
       }
     },
@@ -135309,6 +135680,36 @@
       "benchmarks": {}
     },
     {
+      "id": "jev-1.13",
+      "name": "Jev 1.13",
+      "provider": "opencode",
+      "family": "jev-1.13",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 64000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 42000.0,
+        "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "north-mini-code-free",
       "name": "North Mini Code Free",
       "provider": "opencode",
@@ -135774,36 +136175,6 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "jev-latest",
-      "name": "Jev",
-      "provider": "opencode",
-      "family": "jev-latest",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 64000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 42000.0,
         "completion": 0.0,
         "cache_read": null
       },
@@ -137804,8 +138175,8 @@
             "completion": 0.9,
             "blended": 0.412
           },
-          "median_tps": 328.262,
-          "ttft": 1.096
+          "median_tps": 312.544,
+          "ttft": 1.109
         },
         "arena": {
           "code": {
@@ -138036,8 +138407,8 @@
             "completion": 0.9,
             "blended": 0.563
           },
-          "median_tps": 181.283,
-          "ttft": 2.832
+          "median_tps": 170.601,
+          "ttft": 2.746
         }
       }
     },
@@ -138151,7 +138522,7 @@
       "supports_caching": false,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
@@ -141079,7 +141450,7 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 67.55,
+          "median_tps": 76.466,
           "ttft": 0.225
         },
         "benchlm": {
@@ -146287,126 +146658,6 @@
       "benchmarks": {}
     },
     {
-      "id": "kimi-for-coding-highspeed",
-      "name": "Kimi For Coding HighSpeed",
-      "provider": "kimi-for-coding",
-      "family": "kimi-for-coding-highspeed",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text/video",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-01",
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "k3-256k",
-      "name": "Kimi K3-256K",
-      "provider": "kimi-for-coding",
-      "family": "k3-256k",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262144,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "kimi-for-coding",
-      "name": "kimi-for-coding",
-      "provider": "kimi-for-coding",
-      "family": "kimi-for-coding",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "image/text/video",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "k3",
-      "name": "Kimi K3",
-      "provider": "kimi-for-coding",
-      "family": "k3",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "image/text/video",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "meta.llama-4-maverick-17b-128e-instruct-fp8",
       "name": "Llama 4 Maverick 17B Instruct",
       "provider": "oci",
@@ -146612,36 +146863,6 @@
       "price_per_million": {
         "prompt": 290000.0,
         "completion": 1160000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "ox-alpha-free",
-      "name": "Ox Alpha Free (Unlimited)",
-      "provider": "opencode-go",
-      "family": "ox-alpha-free",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/text/video",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": true,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -148020,8 +148241,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 459240.0,
-        "completion": 918480.0,
+        "prompt": 458400.0,
+        "completion": 916800.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -148080,8 +148301,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 172215.0,
-        "completion": 688860.0,
+        "prompt": 171900.0,
+        "completion": 687600.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -148110,8 +148331,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1033290.0,
-        "completion": 1033290.0,
+        "prompt": 1031400.0,
+        "completion": 1031400.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -148747,8 +148968,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 140.644,
-          "ttft": 0.998
+          "median_tps": 120.397,
+          "ttft": 1.037
         }
       }
     },
@@ -148986,8 +149207,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 344430.0,
-        "completion": 459240.0,
+        "prompt": 343800.0,
+        "completion": 458400.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -149059,7 +149280,7 @@
       "family": "flexai/DeepSeek-V4-Flash-0731",
       "source": "models.dev",
       "created_unix": null,
-      "context": 786432,
+      "context": 1048576,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -152106,8 +152327,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 746265.0,
-        "completion": 746265.0,
+        "prompt": 744900.0,
+        "completion": 744900.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -152136,8 +152357,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 172215.0,
-        "completion": 746265.0,
+        "prompt": 171900.0,
+        "completion": 744900.0,
         "cache_read": null
       },
       "benchmarks": {}
