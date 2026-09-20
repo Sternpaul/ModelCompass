@@ -164,8 +164,8 @@ _MMLU-Pro knowledge accuracy (%)._
 | 5 | `anthropic/claude-opus-4-5` | 0.889 |
 | 6 | `google/gemini-3-flash` | 0.882 |
 | 7 | `anthropic/claude-4-1-opus-thinking` | 0.880 |
-| 8 | `anthropic/claude-4-5-sonnet-thinking` | 0.875 |
-| 9 | `minimax/minimax-m2-1` | 0.875 |
+| 8 | `minimax/minimax-m2-1` | 0.875 |
+| 9 | `anthropic/claude-4-5-sonnet-thinking` | 0.875 |
 | 10 | `openai/gpt-5-2` | 0.874 |
 
 ## SciCode
