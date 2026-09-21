@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T09:12:07.437165+00:00",
-    "model_count": 3619,
+    "generated_at": "2026-09-21T09:48:49.809108+00:00",
+    "model_count": 3615,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (7869 models from 222 providers)",
-      "openrouter_usage": "ok (498 models with live usage)",
+      "models.dev": "ok (7865 models from 222 providers)",
+      "openrouter_usage": "ok (497 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-03)",
       "artificial_analysis": "ok (653 models)",
       "arena_ai": "ok (11 leaderboards; 11 live-discovered via scrape, 0 from curated fallback)",
@@ -268,9 +268,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.56892,
-        "completion": 1.70676,
-        "cache_read": 0.018964
+        "prompt": 0.7,
+        "completion": 2.88,
+        "cache_read": 0.088
       },
       "benchmarks": {}
     },
@@ -298,9 +298,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.13,
-        "completion": 0.52,
-        "cache_read": 0.0026
+        "prompt": 0.12,
+        "completion": 0.48,
+        "cache_read": 0.0036
       },
       "benchmarks": {}
     },
@@ -628,9 +628,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.15,
-        "completion": 0.6,
-        "cache_read": 0.003
+        "prompt": 0.3,
+        "completion": 1.2,
+        "cache_read": 0.006
       },
       "benchmarks": {}
     },
@@ -782,8 +782,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 50.237,
-          "ttft": 1.286
+          "median_tps": 53.89,
+          "ttft": 1.412
         }
       }
     },
@@ -1141,9 +1141,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.06,
-        "completion": 0.25,
-        "cache_read": 0.015
+        "prompt": 0.1,
+        "completion": 0.15,
+        "cache_read": 0.05
       },
       "benchmarks": {}
     },
@@ -1411,9 +1411,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.2156,
-        "completion": 0.6468,
-        "cache_read": 0.00686
+        "prompt": 0.22,
+        "completion": 0.66,
+        "cache_read": 0.007
       },
       "benchmarks": {}
     },
@@ -1626,9 +1626,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.8442,
-        "completion": 2.6532,
-        "cache_read": 0.15678
+        "prompt": 0.7735,
+        "completion": 2.431,
+        "cache_read": 0.127075
       },
       "benchmarks": {}
     },
@@ -1686,9 +1686,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.896,
-        "completion": 2.816,
-        "cache_read": 0.1664
+        "prompt": 0.91,
+        "completion": 2.86,
+        "cache_read": 0.169
       },
       "benchmarks": {}
     },
@@ -1746,9 +1746,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.42,
-        "completion": 3.0,
-        "cache_read": 0.085
+        "prompt": 0.2,
+        "completion": 2.5,
+        "cache_read": 0.05
       },
       "benchmarks": {}
     },
@@ -2016,9 +2016,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.66,
-        "completion": 1.98,
-        "cache_read": 0.022
+        "prompt": 1.32,
+        "completion": 3.96,
+        "cache_read": 0.044
       },
       "benchmarks": {
         "benchlm": {
@@ -2433,8 +2433,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 72.219,
-          "ttft": 1.347
+          "median_tps": 67.885,
+          "ttft": 1.319
         }
       }
     },
@@ -2553,7 +2553,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.04,
-        "completion": 0.08,
+        "completion": 0.16,
         "cache_read": 0.016
       },
       "benchmarks": {}
@@ -2583,7 +2583,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.04,
-        "completion": 0.08,
+        "completion": 0.16,
         "cache_read": 0.016
       },
       "benchmarks": {
@@ -2833,8 +2833,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 207.718,
-          "ttft": 1.673
+          "median_tps": 219.233,
+          "ttft": 1.682
         },
         "benchlm": {
           "slug": "inkling-small",
@@ -3104,8 +3104,8 @@
             "completion": 25.0,
             "blended": 10.0
           },
-          "median_tps": 49.93,
-          "ttft": 2.467
+          "median_tps": 54.401,
+          "ttft": 2.323
         }
       }
     },
@@ -3437,8 +3437,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 89.632,
-          "ttft": 2.567
+          "median_tps": 100.213,
+          "ttft": 2.701
         }
       }
     },
@@ -4280,8 +4280,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 63.411,
-          "ttft": 1.157
+          "median_tps": 66.416,
+          "ttft": 1.297
         }
       }
     },
@@ -5508,8 +5508,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 152.18,
-          "ttft": 0.637
+          "median_tps": 163.002,
+          "ttft": 0.621
         }
       }
     },
@@ -5837,8 +5837,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.1,
-        "completion": 0.9,
+        "prompt": 0.15,
+        "completion": 1.0,
         "cache_read": 0.05
       },
       "benchmarks": {}
@@ -6047,9 +6047,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.422298,
-        "completion": 0.844596,
-        "cache_read": 0.035192
+        "prompt": 0.95526,
+        "completion": 1.91052,
+        "cache_read": 0.079605
       },
       "benchmarks": {
         "aa": {
@@ -6110,9 +6110,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0364,
-        "completion": 0.0728,
-        "cache_read": 0.00728
+        "prompt": 0.088606,
+        "completion": 0.177212,
+        "cache_read": 0.017721
       },
       "benchmarks": {
         "aa": {
@@ -7407,8 +7407,8 @@
             "completion": 0.75,
             "blended": 0.375
           },
-          "median_tps": 633.157,
-          "ttft": 6.498
+          "median_tps": 733.939,
+          "ttft": 5.999
         }
       }
     },
@@ -8758,8 +8758,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 116.793,
-          "ttft": 0.673
+          "median_tps": 130.731,
+          "ttft": 0.687
         }
       }
     },
@@ -11372,8 +11372,8 @@
             "completion": 0.545,
             "blended": 0.249
           },
-          "median_tps": 192.592,
-          "ttft": 0.541
+          "median_tps": 202.589,
+          "ttft": 0.487
         }
       }
     },
@@ -11466,7 +11466,7 @@
             "blended": 0.092
           },
           "median_tps": 178.794,
-          "ttft": 0.489
+          "ttft": 0.468
         }
       }
     },
@@ -13206,8 +13206,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 140.534,
-          "ttft": 4.978
+          "median_tps": 159.199,
+          "ttft": 5.429
         }
       }
     },
@@ -13538,8 +13538,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.1875,
-        "completion": 0.6525,
+        "prompt": 0.2,
+        "completion": 0.8,
         "cache_read": null
       },
       "benchmarks": {}
@@ -13815,8 +13815,8 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 54.941,
-          "ttft": 0.361
+          "median_tps": 59.35,
+          "ttft": 0.38
         }
       }
     },
@@ -13879,7 +13879,7 @@
             "blended": 0.35
           },
           "median_tps": 90.794,
-          "ttft": 1.053
+          "ttft": 0.927
         }
       }
     },
@@ -14838,8 +14838,8 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 32.715,
-          "ttft": 1.08
+          "median_tps": 35.382,
+          "ttft": 1.06
         }
       }
     },
@@ -15204,7 +15204,7 @@
       "is_audio_output": false,
       "supports_reasoning": false,
       "supports_tools": false,
-      "supports_json": false,
+      "supports_json": true,
       "supports_caching": false,
       "knowledge_cutoff": "2024-06-30",
       "hugging_face_id": "Qwen/Qwen2.5-Coder-32B-Instruct",
@@ -15689,8 +15689,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.4,
-        "completion": 0.4,
+        "prompt": 0.72,
+        "completion": 0.72,
         "cache_read": null
       },
       "benchmarks": {}
@@ -16848,8 +16848,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 108.373,
-          "ttft": 0.816
+          "median_tps": 0.0,
+          "ttft": 0.0
         },
         "arena": {
           "agent": {
@@ -17182,8 +17182,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 40.139,
-          "ttft": 0.966
+          "median_tps": 0.0,
+          "ttft": 0.0
         },
         "arena": {
           "agent": {
@@ -18518,8 +18518,8 @@
             "completion": 1.2,
             "blended": 0.45
           },
-          "median_tps": 139.615,
-          "ttft": 0.955
+          "median_tps": 149.256,
+          "ttft": 0.86
         },
         "arena": {
           "agent": {
@@ -19636,8 +19636,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 80.193,
-          "ttft": 1.656
+          "median_tps": 84.537,
+          "ttft": 1.704
         },
         "arena": {
           "code": {
@@ -19870,8 +19870,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 107.069,
-          "ttft": 1.181
+          "median_tps": 117.287,
+          "ttft": 1.199
         }
       }
     },
@@ -24020,7 +24020,7 @@
             "completion": 5.0,
             "blended": 2.0
           },
-          "median_tps": 95.946,
+          "median_tps": 106.826,
           "ttft": 0.513
         }
       }
@@ -24782,8 +24782,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 58.732,
-          "ttft": 1.185
+          "median_tps": 61.765,
+          "ttft": 1.106
         },
         "arena": {
           "agent": {
@@ -25540,8 +25540,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 49.19,
-          "ttft": 3.174
+          "median_tps": 46.109,
+          "ttft": 1.759
         },
         "arena": {
           "agent": {
@@ -28767,8 +28767,8 @@
             "completion": 0.7,
             "blended": 0.325
           },
-          "median_tps": 1973.747,
-          "ttft": 0.475
+          "median_tps": 2042.088,
+          "ttft": 0.484
         },
         "benchlm": {
           "slug": "celeris-1",
@@ -29860,8 +29860,8 @@
             "completion": 4.8,
             "blended": 1.5
           },
-          "median_tps": 88.573,
-          "ttft": 1.194
+          "median_tps": 90.944,
+          "ttft": 1.154
         }
       }
     },
@@ -30184,8 +30184,8 @@
             "completion": 0.8,
             "blended": 0.275
           },
-          "median_tps": 226.983,
-          "ttft": 0.93
+          "median_tps": 234.825,
+          "ttft": 1.024
         }
       }
     },
@@ -30303,8 +30303,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 200000.0,
-        "completion": 1700000.0,
+        "prompt": 150000.0,
+        "completion": 1200000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -30335,6 +30335,36 @@
       "price_per_million": {
         "prompt": 400000.0,
         "completion": 1600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "qwen/qwen3.8-27b-hemmingway",
+      "name": "Qwen 3.8 27B Hemingway",
+      "provider": "qwen",
+      "family": "qwen/qwen3.8-27b-hemmingway",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 250000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -30543,8 +30573,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 200000.0,
-        "completion": 1700000.0,
+        "prompt": 150000.0,
+        "completion": 1200000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -31387,6 +31417,69 @@
       "benchmarks": {}
     },
     {
+      "id": "stepfun/step-5-preview",
+      "name": "Step 5 Preview",
+      "provider": "stepfun",
+      "family": "stepfun/step-5-preview",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1000000.0,
+        "completion": 2700000.0,
+        "cache_read": null
+      },
+      "benchmarks": {
+        "aa": {
+          "key": "stepfun/step-5",
+          "name": "Step 5 Preview",
+          "creator_slug": "stepfun",
+          "slug": "step-5",
+          "evaluations": {
+            "artificial_analysis_intelligence_index": 43.7,
+            "artificial_analysis_coding_index": null,
+            "artificial_analysis_math_index": null,
+            "mmlu_pro": null,
+            "gpqa": null,
+            "hle": 0.465,
+            "livecodebench": null,
+            "scicode": 0.589,
+            "math_500": null,
+            "aime": null,
+            "aime_25": null,
+            "ifbench": null,
+            "lcr": 0.883333333333333,
+            "terminalbench_hard": null,
+            "terminalbench_v2_1": null,
+            "tau2": null,
+            "tau_banking": null
+          },
+          "pricing": {
+            "prompt": 1.0,
+            "completion": 2.7,
+            "blended": 1.425
+          },
+          "median_tps": 92.781,
+          "ttft": 1.803
+        }
+      }
+    },
+    {
       "id": "mlabonne/NeuralDaredevil-8B-abliterated",
       "name": "Neural Daredevil 8B abliterated",
       "provider": "mlabonne",
@@ -31534,7 +31627,7 @@
             "completion": 0.2,
             "blended": 0.2
           },
-          "median_tps": 88.694,
+          "median_tps": 91.709,
           "ttft": 0.521
         },
         "benchlm": {
@@ -34260,8 +34353,8 @@
             "completion": 0.4,
             "blended": 0.205
           },
-          "median_tps": 38.737,
-          "ttft": 0.934
+          "median_tps": 37.38,
+          "ttft": 0.881
         },
         "arena": {
           "code": {
@@ -34302,36 +34395,6 @@
           }
         }
       }
-    },
-    {
-      "id": "TEE/deepseek-v4-flash",
-      "name": "DeepSeek V4 Flash TEE",
-      "provider": "TEE",
-      "family": "TEE/deepseek-v4-flash",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1048576,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": "2025-05",
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 200000.0,
-        "completion": 400000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
     },
     {
       "id": "TEE/kimi-k2.7-code",
@@ -35638,8 +35701,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 100000.0,
-        "completion": 400000.0,
+        "prompt": 130000.0,
+        "completion": 520000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -37839,36 +37902,6 @@
       "benchmarks": {}
     },
     {
-      "id": "z-ai/glm-4.7-flash-original",
-      "name": "GLM 4.7 Flash Original",
-      "provider": "z-ai",
-      "family": "z-ai/glm-4.7-flash-original",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 200000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 70000.0,
-        "completion": 400000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "z-ai/GLM-4.5:thinking",
       "name": "GLM 4.5 (Thinking)",
       "provider": "z-ai",
@@ -38104,36 +38137,6 @@
       "price_per_million": {
         "prompt": 1000000.0,
         "completion": 3200000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "z-ai/glm-4.7-flash-original:thinking",
-      "name": "GLM 4.7 Flash Original Thinking",
-      "provider": "z-ai",
-      "family": "z-ai/glm-4.7-flash-original",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 200000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 70000.0,
-        "completion": 400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -38466,8 +38469,8 @@
             "completion": 0.25,
             "blended": 0.107
           },
-          "median_tps": 16.66,
-          "ttft": 30.381
+          "median_tps": 12.513,
+          "ttft": 35.483
         }
       }
     },
@@ -40566,8 +40569,8 @@
             "completion": 0.15,
             "blended": 0.15
           },
-          "median_tps": 104.713,
-          "ttft": 0.473
+          "median_tps": 103.211,
+          "ttft": 0.496
         },
         "benchlm": {
           "slug": "ministral-3-8b",
@@ -43912,8 +43915,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 88.359,
-          "ttft": 0.835
+          "median_tps": 90.481,
+          "ttft": 0.79
         },
         "arena": {
           "agent": {
@@ -44026,8 +44029,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 59.964,
-          "ttft": 1.048
+          "median_tps": 63.441,
+          "ttft": 1.028
         },
         "arena": {
           "agent": {
@@ -44232,36 +44235,6 @@
           }
         }
       }
-    },
-    {
-      "id": "jev",
-      "name": "Jev",
-      "provider": "vivgrid",
-      "family": "jev",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 64000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 42000.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
     },
     {
       "id": "gpt-5.5",
@@ -48618,7 +48591,7 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 49.491,
+          "median_tps": 52.175,
           "ttft": 1.224
         },
         "arena": {
@@ -51387,6 +51360,36 @@
       "benchmarks": {}
     },
     {
+      "id": "baidu/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (Baidu)",
+      "provider": "baidu",
+      "family": "baidu/deepseek-v4.1-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 300000.0,
+        "completion": 1200000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "baidu/glm-5",
       "name": "GLM-5 (Baidu)",
       "provider": "baidu",
@@ -54142,6 +54145,36 @@
       "benchmarks": {}
     },
     {
+      "id": "scx-ai-gp/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (SCX.ai)",
+      "provider": "scx-ai-gp",
+      "family": "scx-ai-gp/deepseek-v4.1-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "scx-ai-gp/kimi-k3",
       "name": "Kimi K3 (SCX.ai)",
       "provider": "scx-ai-gp",
@@ -54931,8 +54964,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 49.431,
-          "ttft": 4.605
+          "median_tps": 51.048,
+          "ttft": 4.526
         }
       }
     },
@@ -58075,8 +58108,8 @@
             "completion": 0.25,
             "blended": 0.19
           },
-          "median_tps": 94.822,
-          "ttft": 0.453
+          "median_tps": 85.674,
+          "ttft": 0.457
         }
       }
     },
@@ -61959,8 +61992,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 50.642,
-          "ttft": 2.508
+          "median_tps": 54.747,
+          "ttft": 2.961
         }
       }
     },
@@ -65791,8 +65824,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 39.059,
-          "ttft": 1.977
+          "median_tps": 40.724,
+          "ttft": 2.004
         }
       }
     },
@@ -68525,8 +68558,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 37.724,
-          "ttft": 2.7
+          "median_tps": 39.676,
+          "ttft": 2.586
         }
       }
     },
@@ -72046,8 +72079,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 46.57,
-          "ttft": 0.436
+          "median_tps": 46.727,
+          "ttft": 0.35
         }
       }
     },
@@ -72109,8 +72142,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 17.191,
-          "ttft": 0.372
+          "median_tps": 17.103,
+          "ttft": 0.36
         }
       }
     },
@@ -72428,8 +72461,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 216.147,
-          "ttft": 0.191
+          "median_tps": 232.68,
+          "ttft": 0.184
         },
         "benchlm": {
           "slug": "command-a-plus",
@@ -73262,8 +73295,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 87.27,
-          "ttft": 1.737
+          "median_tps": 88.864,
+          "ttft": 1.788
         },
         "benchlm": {
           "slug": "gpt-5-6-terra",
@@ -74139,8 +74172,8 @@
             "completion": 1.6,
             "blended": 0.7
           },
-          "median_tps": 67.385,
-          "ttft": 1.607
+          "median_tps": 68.03,
+          "ttft": 1.659
         },
         "benchlm": {
           "slug": "qwen3-7-plus",
@@ -74642,8 +74675,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 57.476,
-          "ttft": 2.493
+          "median_tps": 65.79,
+          "ttft": 2.225
         },
         "benchlm": {
           "slug": "gpt-5-6-sol",
@@ -74894,8 +74927,8 @@
             "completion": 1.2,
             "blended": 0.45
           },
-          "median_tps": 149.647,
-          "ttft": 1.274
+          "median_tps": 143.908,
+          "ttft": 1.311
         },
         "benchlm": {
           "slug": "gpt-5-6-luna",
@@ -75344,8 +75377,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 77.389,
-          "ttft": 2.654
+          "median_tps": 70.79,
+          "ttft": 2.916
         },
         "benchlm": {
           "slug": "glm-5-3",
@@ -75595,8 +75628,8 @@
             "completion": 4.0,
             "blended": 1.712
           },
-          "median_tps": 56.019,
-          "ttft": 1.242
+          "median_tps": 50.816,
+          "ttft": 1.223
         },
         "benchlm": {
           "slug": "kimi-k2-7-code",
@@ -76792,8 +76825,8 @@
             "completion": 0.5,
             "blended": 0.237
           },
-          "median_tps": 90.015,
-          "ttft": 2.477
+          "median_tps": 92.148,
+          "ttft": 2.425
         },
         "benchlm": {
           "slug": "glm-5-3-flash",
@@ -77774,8 +77807,8 @@
             "completion": 0.28,
             "blended": 0.175
           },
-          "median_tps": 32.019,
-          "ttft": 2.24
+          "median_tps": 32.395,
+          "ttft": 2.195
         },
         "benchlm": {
           "slug": "mimo-v2-5",
@@ -78011,8 +78044,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 49.786,
-          "ttft": 4.132
+          "median_tps": 45.627,
+          "ttft": 1.782
         },
         "benchlm": {
           "slug": "mimo-v2-5-pro",
@@ -78388,7 +78421,7 @@
             "completion": 1.15,
             "blended": 0.438
           },
-          "median_tps": 183.505,
+          "median_tps": 199.348,
           "ttft": 1.381
         },
         "benchlm": {
@@ -84454,8 +84487,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 35.282,
-          "ttft": 0.946
+          "median_tps": 35.266,
+          "ttft": 0.954
         }
       }
     },
@@ -86882,8 +86915,8 @@
             "completion": 0.97,
             "blended": 0.43
           },
-          "median_tps": 107.876,
-          "ttft": 0.881
+          "median_tps": 107.553,
+          "ttft": 0.884
         },
         "benchlm": {
           "slug": "qwen3-omni-30b-a3b-instruct",
@@ -88236,8 +88269,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 124.359,
-          "ttft": 2.06
+          "median_tps": 125.66,
+          "ttft": 2.118
         }
       }
     },
@@ -89550,8 +89583,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 138.144,
-          "ttft": 0.617
+          "median_tps": 144.412,
+          "ttft": 0.71
         }
       }
     },
@@ -89673,7 +89706,7 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 134.636,
+          "median_tps": 141.953,
           "ttft": 0.725
         }
       }
@@ -90265,8 +90298,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 148.949,
-          "ttft": 0.546
+          "median_tps": 158.221,
+          "ttft": 0.508
         },
         "benchlm": {
           "slug": "mistral-small-4-reasoning",
@@ -94594,8 +94627,8 @@
             "completion": 0.47,
             "blended": 0.23
           },
-          "median_tps": 52.438,
-          "ttft": 1.419
+          "median_tps": 53.882,
+          "ttft": 1.407
         },
         "arena": {
           "agent": {
@@ -94927,8 +94960,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 59.635,
-          "ttft": 2.761
+          "median_tps": 57.965,
+          "ttft": 2.445
         },
         "benchlm": {
           "slug": "ling-3-0-tiny",
@@ -95383,8 +95416,8 @@
             "completion": 2.0,
             "blended": 0.688
           },
-          "median_tps": 146.51,
-          "ttft": 1.377
+          "median_tps": 0.0,
+          "ttft": 0.0
         },
         "arena": {
           "code": {
@@ -99233,8 +99266,8 @@
             "completion": 0.58,
             "blended": 0.25
           },
-          "median_tps": 84.146,
-          "ttft": 1.759
+          "median_tps": 91.345,
+          "ttft": 1.761
         }
       }
     },
@@ -100046,8 +100079,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 142.874,
-          "ttft": 0.981
+          "median_tps": 141.568,
+          "ttft": 0.986
         },
         "arena": {
           "code": {
@@ -101383,8 +101416,8 @@
             "completion": 0.195,
             "blended": 0.086
           },
-          "median_tps": 157.724,
-          "ttft": 1.621
+          "median_tps": 161.754,
+          "ttft": 1.076
         }
       }
     },
@@ -103101,8 +103134,8 @@
             "completion": 14.0,
             "blended": 4.813
           },
-          "median_tps": 153.602,
-          "ttft": 36.111
+          "median_tps": 167.091,
+          "ttft": 39.633
         },
         "benchlm": {
           "slug": "gpt-5-3-codex",
@@ -103453,8 +103486,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 124.339,
-          "ttft": 24.639
+          "median_tps": 136.887,
+          "ttft": 24.917
         }
       }
     },
@@ -104467,8 +104500,8 @@
             "completion": 2.4,
             "blended": 1.05
           },
-          "median_tps": 158.098,
-          "ttft": 1.273
+          "median_tps": 186.269,
+          "ttft": 1.253
         }
       }
     },
@@ -105133,69 +105166,6 @@
       "benchmarks": {}
     },
     {
-      "id": "stepfun/step-5-preview",
-      "name": "Step 5 Preview",
-      "provider": "stepfun",
-      "family": "stepfun/step-5-preview",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 1000000,
-      "modality": "image/text",
-      "is_vision": true,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 1000000.0,
-        "completion": 2700000.0,
-        "cache_read": null
-      },
-      "benchmarks": {
-        "aa": {
-          "key": "stepfun/step-5",
-          "name": "Step 5 Preview",
-          "creator_slug": "stepfun",
-          "slug": "step-5",
-          "evaluations": {
-            "artificial_analysis_intelligence_index": 43.7,
-            "artificial_analysis_coding_index": null,
-            "artificial_analysis_math_index": null,
-            "mmlu_pro": null,
-            "gpqa": null,
-            "hle": 0.465,
-            "livecodebench": null,
-            "scicode": 0.589,
-            "math_500": null,
-            "aime": null,
-            "aime_25": null,
-            "ifbench": null,
-            "lcr": 0.883333333333333,
-            "terminalbench_hard": null,
-            "terminalbench_v2_1": null,
-            "tau2": null,
-            "tau_banking": null
-          },
-          "pricing": {
-            "prompt": 1.0,
-            "completion": 2.7,
-            "blended": 1.425
-          },
-          "median_tps": 92.781,
-          "ttft": 1.803
-        }
-      }
-    },
-    {
       "id": "interfaze/interfaze-beta",
       "name": "Interfaze Beta",
       "provider": "interfaze",
@@ -105333,36 +105303,6 @@
           }
         }
       }
-    },
-    {
-      "id": "typesafe-ai/jev",
-      "name": "Jev",
-      "provider": "typesafe-ai",
-      "family": "typesafe-ai/jev",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 32000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 42000.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
     },
     {
       "id": "minimax/minimax-h3-max",
@@ -105572,8 +105512,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 177.194,
-          "ttft": 0.994
+          "median_tps": 174.686,
+          "ttft": 1.019
         }
       }
     },
@@ -105935,7 +105875,7 @@
             "completion": 1.2,
             "blended": 0.563
           },
-          "median_tps": 124.521,
+          "median_tps": 117.798,
           "ttft": 0.804
         }
       }
@@ -109027,8 +108967,8 @@
             "completion": 0.68,
             "blended": 0.313
           },
-          "median_tps": 95.081,
-          "ttft": 0.654
+          "median_tps": 105.154,
+          "ttft": 0.612
         }
       }
     },
@@ -109090,8 +109030,8 @@
             "completion": 0.91,
             "blended": 0.422
           },
-          "median_tps": 107.191,
-          "ttft": 0.569
+          "median_tps": 108.16,
+          "ttft": 0.574
         }
       }
     },
@@ -111937,8 +111877,8 @@
             "completion": 1.5,
             "blended": 0.75
           },
-          "median_tps": 73.825,
-          "ttft": 0.731
+          "median_tps": 77.086,
+          "ttft": 0.712
         }
       }
     },
@@ -112417,8 +112357,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 13.936,
-          "ttft": 0.707
+          "median_tps": 11.515,
+          "ttft": 0.69
         }
       }
     },
@@ -112480,8 +112420,8 @@
             "completion": 0.2,
             "blended": 0.095
           },
-          "median_tps": 287.131,
-          "ttft": 0.464
+          "median_tps": 291.626,
+          "ttft": 0.448
         }
       }
     },
@@ -113277,8 +113217,8 @@
             "completion": 0.2,
             "blended": 0.151
           },
-          "median_tps": 69.445,
-          "ttft": 0.744
+          "median_tps": 69.892,
+          "ttft": 0.762
         }
       }
     },
@@ -113670,8 +113610,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 220.996,
-          "ttft": 0.82
+          "median_tps": 230.599,
+          "ttft": 0.805
         },
         "benchlm": {
           "slug": "deepseek-v4-1-flash",
@@ -114193,8 +114133,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 86.173,
-          "ttft": 1.6
+          "median_tps": 89.61,
+          "ttft": 1.567
         }
       }
     },
@@ -114692,8 +114632,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 112.933,
-          "ttft": 1.113
+          "median_tps": 119.307,
+          "ttft": 1.152
         },
         "benchlm": {
           "slug": "qwen3-6-35b-a3b",
@@ -115390,8 +115330,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 350.512,
-          "ttft": 6.706
+          "median_tps": 351.554,
+          "ttft": 7.238
         },
         "benchlm": {
           "slug": "gemini-3-5-flash-lite",
@@ -119487,36 +119427,6 @@
       "benchmarks": {}
     },
     {
-      "id": "typesafe/jev",
-      "name": "Jev",
-      "provider": "typesafe",
-      "family": "typesafe/jev",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 32000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 42000.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "claude-opus-4.8",
       "name": "Claude Opus 4.8",
       "provider": "github-copilot",
@@ -120396,8 +120306,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 177.967,
-          "ttft": 1.229
+          "median_tps": 169.695,
+          "ttft": 1.223
         }
       }
     },
@@ -122145,8 +122055,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 190.292,
-          "ttft": 0.399
+          "median_tps": 176.548,
+          "ttft": 0.407
         }
       }
     },
@@ -122238,8 +122148,8 @@
             "completion": 0.65,
             "blended": 0.307
           },
-          "median_tps": 198.96,
-          "ttft": 1.175
+          "median_tps": 212.188,
+          "ttft": 1.169
         }
       }
     },
@@ -122391,8 +122301,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 166.385,
-          "ttft": 0.576
+          "median_tps": 169.279,
+          "ttft": 0.502
         },
         "benchlm": {
           "slug": "mistral-small-4",
@@ -123179,8 +123089,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 22.685,
-          "ttft": 0.569
+          "median_tps": 16.557,
+          "ttft": 0.659
         }
       }
     },
@@ -123627,7 +123537,7 @@
             "blended": 0.198
           },
           "median_tps": 70.563,
-          "ttft": 0.805
+          "ttft": 0.726
         },
         "arena": {
           "code": {
@@ -124280,7 +124190,7 @@
             "blended": 1.1
           },
           "median_tps": 131.827,
-          "ttft": 1.075
+          "ttft": 1.008
         },
         "benchlm": {
           "slug": "qwen3-5-122b-a10b",
@@ -124668,8 +124578,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 47.68,
-          "ttft": 1.299
+          "median_tps": 53.603,
+          "ttft": 1.334
         },
         "benchlm": {
           "slug": "qwen3-8-27b",
@@ -125630,7 +125540,7 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 240.139,
+          "median_tps": 273.071,
           "ttft": 21.429
         },
         "benchlm": {
@@ -130291,8 +130201,8 @@
             "completion": 0.1,
             "blended": 0.1
           },
-          "median_tps": 211.339,
-          "ttft": 0.476
+          "median_tps": 228.603,
+          "ttft": 0.524
         },
         "benchlm": {
           "slug": "ministral-3-3b",
@@ -130634,8 +130544,8 @@
             "completion": 0.14,
             "blended": 0.061
           },
-          "median_tps": 234.077,
-          "ttft": 0.581
+          "median_tps": 223.944,
+          "ttft": 0.571
         }
       }
     },
@@ -135986,36 +135896,6 @@
       "benchmarks": {}
     },
     {
-      "id": "jev-1.13",
-      "name": "Jev 1.13",
-      "provider": "opencode",
-      "family": "jev-1.13",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 64000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": false,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 42000.0,
-        "completion": 0.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "north-mini-code-free",
       "name": "North Mini Code Free",
       "provider": "opencode",
@@ -138481,8 +138361,8 @@
             "completion": 0.9,
             "blended": 0.412
           },
-          "median_tps": 312.544,
-          "ttft": 1.153
+          "median_tps": 322.795,
+          "ttft": 1.146
         },
         "arena": {
           "code": {
@@ -138713,8 +138593,8 @@
             "completion": 0.9,
             "blended": 0.563
           },
-          "median_tps": 171.221,
-          "ttft": 2.87
+          "median_tps": 181.903,
+          "ttft": 2.931
         }
       }
     },
@@ -141756,8 +141636,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 85.546,
-          "ttft": 0.222
+          "median_tps": 87.752,
+          "ttft": 0.214
         },
         "benchlm": {
           "slug": "north-mini-code-1-0",
@@ -149406,8 +149286,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 107.461,
-          "ttft": 1.008
+          "median_tps": 112.85,
+          "ttft": 0.871
         }
       }
     },

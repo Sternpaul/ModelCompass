@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T09:12:07.650976+00:00",
+    "generated_at": "2026-09-21T09:48:50.016383+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1503,6 +1503,21 @@
       }
     },
     {
+      "model": "openai/gpt-oss-120b",
+      "top_appearances": 2,
+      "borda_points": 5,
+      "benchmarks": {
+        "aa_livecodebench": {
+          "rank": 7,
+          "score": 0.878
+        },
+        "price_performance": {
+          "rank": 10,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "grok-4-6",
       "top_appearances": 2,
       "borda_points": 3,
@@ -1610,7 +1625,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash",
+      "model": "upstage/solar-pro4",
       "top_appearances": 1,
       "borda_points": 10,
       "benchmarks": {
@@ -1698,7 +1713,7 @@
       }
     },
     {
-      "model": "upstage/solar-pro4",
+      "model": "openai/gpt-oss-20b",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1819,7 +1834,7 @@
       }
     },
     {
-      "model": "openai/gpt-5.6-luna-20260709",
+      "model": "tencent/hy4-preview-20260827",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1830,7 +1845,7 @@
       }
     },
     {
-      "model": "openai/gpt-oss-20b",
+      "model": "deepseek/deepseek-v4-flash",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1940,7 +1955,7 @@
       }
     },
     {
-      "model": "tencent/hy4-preview-20260827",
+      "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2083,7 +2098,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash-20260731",
+      "model": "openai/gpt-5.6-luna-20260709",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2343,17 +2358,6 @@
         "aa_ifbench": {
           "rank": 7,
           "score": 0.80952380952381
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-oss-120b",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "aa_livecodebench": {
-          "rank": 7,
-          "score": 0.878
         }
       }
     },
@@ -3122,17 +3126,6 @@
       "borda_points": 1,
       "benchmarks": {
         "or_usage_tokens": {
-          "rank": 10,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "deepseek/deepseek-v4-pro",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "price_performance": {
           "rank": 10,
           "score": null
         }

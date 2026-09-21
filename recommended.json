@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T09:12:07.631994+00:00",
+    "generated_at": "2026-09-21T09:48:49.997552+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -228,7 +228,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 498,
+        "model_count": 497,
         "top_n": 10
       },
       "price_performance": {
@@ -3227,72 +3227,66 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 14572362489487,
-        "requests": 243670574,
+        "tokens": 15768633499918,
+        "requests": 257142798,
         "rank": 1
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 12966546441850,
-        "requests": 353115680,
+        "tokens": 14073411503086,
+        "requests": 396046248,
         "rank": 2
       },
       {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 12471909070684,
-        "requests": 346907644,
+        "model": "tencent/hy4-preview-20260827",
+        "tokens": 12517195032750,
+        "requests": 110690157,
         "rank": 3
       },
       {
-        "model": "tencent/hy4-preview-20260827",
-        "tokens": 11925508167543,
-        "requests": 104098258,
+        "model": "deepseek/deepseek-v4-flash-20260731",
+        "tokens": 10528981459862,
+        "requests": 544806848,
         "rank": 4
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 10850302863796,
-        "requests": 528679335,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 9754276990093,
+        "requests": 320774341,
         "rank": 5
       },
       {
         "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 7174193751517,
-        "requests": 98052983,
+        "tokens": 7066449271754,
+        "requests": 96781176,
         "rank": 6
       },
       {
         "model": "tencent/hy3-20260706",
-        "tokens": 4751168871494,
-        "requests": 67912028,
+        "tokens": 4780910580939,
+        "requests": 69925314,
         "rank": 7
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 4215160427040,
-        "requests": 33472701,
+        "tokens": 4525555193659,
+        "requests": 35109979,
         "rank": 8
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260423",
-        "tokens": 3873849863507,
-        "requests": 395112962,
+        "tokens": 3772797649173,
+        "requests": 392002181,
         "rank": 9
       },
       {
         "model": "z-ai/glm-5.3-20260816",
-        "tokens": 2968003277557,
-        "requests": 34901102,
+        "tokens": 3000364730401,
+        "requests": 34796433,
         "rank": 10
       }
     ],
     "price_performance": [
-      {
-        "model": "deepseek/deepseek-v4-flash",
-        "aa_intelligence": 24.2,
-        "prompt_price_per_m": 0.0364,
-        "value": 664.84
-      },
       {
         "model": "upstage/solar-pro4",
         "aa_intelligence": 28.2,
@@ -3304,6 +3298,12 @@
         "aa_intelligence": 9,
         "prompt_price_per_m": 0.03,
         "value": 300.0
+      },
+      {
+        "model": "deepseek/deepseek-v4-flash",
+        "aa_intelligence": 24.2,
+        "prompt_price_per_m": 0.088606,
+        "value": 273.12
       },
       {
         "model": "openai/gpt-5-nano",
@@ -3342,10 +3342,10 @@
         "value": 72.73
       },
       {
-        "model": "deepseek/deepseek-v4-pro",
-        "aa_intelligence": 30.4,
-        "prompt_price_per_m": 0.422298,
-        "value": 71.99
+        "model": "openai/gpt-oss-120b",
+        "aa_intelligence": 10.2,
+        "prompt_price_per_m": 0.15,
+        "value": 68.0
       }
     ]
   }
