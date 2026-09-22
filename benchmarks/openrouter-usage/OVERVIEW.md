@@ -19,7 +19,7 @@ _Rank by total tokens processed; requests kept alongside._
 | 4 | `deepseek/deepseek-v4-flash-20260731` | — |
 | 5 | `openai/gpt-5.6-luna-20260709` | — |
 | 6 | `xiaomi/mimo-v2.5-20260422` | — |
-| 7 | `tencent/hy3-20260706` | — |
-| 8 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 7 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 8 | `tencent/hy3-20260706` | — |
 | 9 | `deepseek/deepseek-v4-flash-20260423` | — |
 | 10 | `z-ai/glm-5.3-20260816` | — |

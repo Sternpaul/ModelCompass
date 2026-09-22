@@ -31,16 +31,16 @@ _Code generation category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-1` | 90.400 |
-| 2 | `claude-opus-5` | 89.700 |
+| 1 | `claude-opus-5` | 90.400 |
+| 2 | `claude-fable-5-1` | 90.400 |
 | 3 | `claude-fable` | 89.500 |
 | 4 | `claude-mythos-5` | 87.300 |
 | 5 | `sakana-fugu-ultra` | 77.800 |
-| 6 | `gemini-3-8-flash` | 75.300 |
-| 7 | `gpt-6-astra` | 75.200 |
-| 8 | `gemini-3-7-flash` | 74.900 |
-| 9 | `gemini-3-1-pro` | 74.300 |
-| 10 | `grok-4-6` | 73.500 |
+| 6 | `gemini-3-7-flash` | 76.900 |
+| 7 | `gemini-3-1-pro` | 76.400 |
+| 8 | `step-5-preview` | 75.900 |
+| 9 | `gemini-3-8-flash` | 75.800 |
+| 10 | `grok-4-6` | 75.600 |
 
 ## Instruction Following
 
@@ -52,8 +52,8 @@ _Following complex instructions._
 | 1 | `mai-thinking-1` | 95.400 |
 | 2 | `grok-4-3` | 93.200 |
 | 3 | `gpt-5-2-codex` | 92.400 |
-| 4 | `minimax-m3` | 92.400 |
-| 5 | `glm-5-1` | 92.400 |
+| 4 | `glm-5-1` | 92.400 |
+| 5 | `minimax-m3` | 92.400 |
 | 6 | `mimo-v2-5-pro` | 92.400 |
 | 7 | `gpt-5-5` | 91.900 |
 | 8 | `muse-spark` | 91.900 |
@@ -69,14 +69,14 @@ _Factual knowledge category score._
 |---|-------|------:|
 | 1 | `claude-opus-5` | 97.500 |
 | 2 | `claude-fable-5-1` | 97.500 |
-| 3 | `claude-mythos-5` | 94.500 |
-| 4 | `muse-spark-1-1` | 93.400 |
-| 5 | `claude-opus-4-8` | 88.700 |
-| 6 | `claude-fable` | 87.300 |
-| 7 | `gpt-6-astra` | 86.900 |
-| 8 | `gpt-5-4-pro` | 84.800 |
-| 9 | `gpt-5-6-sol` | 84.700 |
-| 10 | `kimi-k3` | 84.500 |
+| 3 | `claude-mythos-5` | 94.100 |
+| 4 | `muse-spark-1-1` | 92.700 |
+| 5 | `claude-opus-4-8` | 88.300 |
+| 6 | `claude-fable` | 87.200 |
+| 7 | `gpt-6-astra` | 86.400 |
+| 8 | `gpt-5-4-pro` | 84.300 |
+| 9 | `kimi-k3` | 83.700 |
+| 10 | `gpt-5-6-sol` | 83.500 |
 
 ## Math
 
@@ -143,9 +143,9 @@ _Logical reasoning category score._
 | 2 | `qwen3-8-max` | 86.600 |
 | 3 | `claude-fable-5-1` | 79.400 |
 | 4 | `kimi-k3` | 78.500 |
-| 5 | `deepseek-v4-1-flash` | 78.500 |
-| 6 | `muse-glimmer-30b` | 78.300 |
+| 5 | `step-5-preview` | 78.500 |
+| 6 | `deepseek-v4-1-flash` | 78.500 |
 | 7 | `gpt-5-3-codex` | 78.300 |
-| 8 | `minimax-m3` | 78 |
-| 9 | `muse-spark-1-3` | 78 |
-| 10 | `sakana-fugu-ultra` | 77.900 |
+| 8 | `muse-glimmer-30b` | 78.300 |
+| 9 | `minimax-m3` | 78 |
+| 10 | `muse-spark-1-3` | 78 |

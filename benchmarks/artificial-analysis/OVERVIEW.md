@@ -105,14 +105,14 @@ _Long-context reasoning score (%)._
 |---|-------|------:|
 | 1 | `kimi/kimi-k3` | 0.887 |
 | 2 | `stepfun/step-5` | 0.883 |
-| 3 | `anthropic/claude-fable-5-1` | 0.853 |
-| 4 | `anthropic/claude-fable-5-1-medium` | 0.847 |
-| 5 | `openai/gpt-5-5` | 0.843 |
-| 6 | `openai/gpt-5-5-high` | 0.843 |
-| 7 | `openai/gpt-5-6-sol` | 0.840 |
-| 8 | `google/gemini-3-8-flash-medium` | 0.840 |
-| 9 | `deepseek/deepseek-v4-1-flash` | 0.840 |
-| 10 | `anthropic/claude-fable-5-1-high` | 0.837 |
+| 3 | `xiaomi/mimo-v2-6-pro` | 0.863 |
+| 4 | `anthropic/claude-fable-5-1` | 0.853 |
+| 5 | `anthropic/claude-fable-5-1-medium` | 0.847 |
+| 6 | `openai/gpt-5-5` | 0.843 |
+| 7 | `openai/gpt-5-5-high` | 0.843 |
+| 8 | `openai/gpt-5-6-sol` | 0.840 |
+| 9 | `google/gemini-3-8-flash-medium` | 0.840 |
+| 10 | `deepseek/deepseek-v4-1-flash` | 0.840 |
 
 ## LiveCodeBench
 
@@ -178,13 +178,13 @@ _SciCode scientific coding accuracy (%)._
 | 1 | `anthropic/claude-fable-5-1` | 0.631 |
 | 2 | `anthropic/claude-fable-5` | 0.610 |
 | 3 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
-| 4 | `google/gemini-3-7-flash-medium` | 0.598 |
-| 5 | `meta/muse-spark-1-3-xhigh` | 0.597 |
-| 6 | `kimi/kimi-k3` | 0.595 |
-| 7 | `zai/glm-5-3` | 0.590 |
-| 8 | `stepfun/step-5` | 0.589 |
-| 9 | `meta/muse-spark-1-3` | 0.588 |
-| 10 | `meta/muse-spark-1-1` | 0.588 |
+| 4 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 5 | `google/gemini-3-7-flash-medium` | 0.598 |
+| 6 | `meta/muse-spark-1-3-xhigh` | 0.597 |
+| 7 | `kimi/kimi-k3` | 0.595 |
+| 8 | `zai/glm-5-3` | 0.590 |
+| 9 | `stepfun/step-5` | 0.589 |
+| 10 | `meta/muse-spark-1-3` | 0.588 |
 
 ## TAU2
 
