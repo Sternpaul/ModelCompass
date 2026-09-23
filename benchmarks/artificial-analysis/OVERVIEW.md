@@ -67,16 +67,16 @@ _Humanity's Last Exam accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-fable-5-1` | 0.591 |
-| 2 | `anthropic/claude-fable-5-1-xhigh` | 0.587 |
-| 3 | `anthropic/claude-fable-5-1-high` | 0.559 |
-| 4 | `anthropic/claude-fable-5` | 0.555 |
-| 5 | `anthropic/claude-opus-5` | 0.549 |
-| 6 | `openai/gpt-6-astra` | 0.547 |
-| 7 | `openai/gpt-6-astra-xhigh` | 0.546 |
-| 8 | `anthropic/claude-opus-5-xhigh` | 0.544 |
-| 9 | `anthropic/claude-fable-5-1-medium` | 0.538 |
-| 10 | `openai/gpt-6-astra-high` | 0.531 |
+| 1 | `anthropic/claude-opus-5-5` | 0.614 |
+| 2 | `anthropic/claude-fable-5-1` | 0.591 |
+| 3 | `anthropic/claude-fable-5-1-xhigh` | 0.587 |
+| 4 | `anthropic/claude-opus-5-5-xhigh` | 0.575 |
+| 5 | `anthropic/claude-fable-5-1-high` | 0.559 |
+| 6 | `anthropic/claude-opus-5-5-high` | 0.556 |
+| 7 | `anthropic/claude-fable-5` | 0.555 |
+| 8 | `anthropic/claude-opus-5` | 0.549 |
+| 9 | `openai/gpt-6-astra` | 0.547 |
+| 10 | `anthropic/claude-opus-5-5-medium` | 0.547 |
 
 ## IFBench
 
@@ -107,12 +107,12 @@ _Long-context reasoning score (%)._
 | 2 | `stepfun/step-5` | 0.883 |
 | 3 | `xiaomi/mimo-v2-6-pro` | 0.863 |
 | 4 | `anthropic/claude-fable-5-1` | 0.853 |
-| 5 | `anthropic/claude-fable-5-1-medium` | 0.847 |
-| 6 | `openai/gpt-5-5` | 0.843 |
-| 7 | `openai/gpt-5-5-high` | 0.843 |
-| 8 | `openai/gpt-5-6-sol` | 0.840 |
-| 9 | `google/gemini-3-8-flash-medium` | 0.840 |
-| 10 | `deepseek/deepseek-v4-1-flash` | 0.840 |
+| 5 | `anthropic/claude-opus-5-5` | 0.847 |
+| 6 | `anthropic/claude-opus-5-5-xhigh` | 0.847 |
+| 7 | `anthropic/claude-fable-5-1-medium` | 0.847 |
+| 8 | `anthropic/claude-opus-5-5-medium` | 0.843 |
+| 9 | `openai/gpt-5-5` | 0.843 |
+| 10 | `openai/gpt-5-5-high` | 0.843 |
 
 ## LiveCodeBench
 
@@ -175,16 +175,16 @@ _SciCode scientific coding accuracy (%)._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `anthropic/claude-fable-5-1` | 0.631 |
-| 2 | `anthropic/claude-fable-5` | 0.610 |
-| 3 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
-| 4 | `xiaomi/mimo-v2-6-pro` | 0.609 |
-| 5 | `google/gemini-3-7-flash-medium` | 0.598 |
-| 6 | `meta/muse-spark-1-3-xhigh` | 0.597 |
-| 7 | `kimi/kimi-k3` | 0.595 |
-| 8 | `zai/glm-5-3` | 0.590 |
-| 9 | `stepfun/step-5` | 0.589 |
-| 10 | `meta/muse-spark-1-3` | 0.588 |
+| 1 | `anthropic/claude-opus-5-5` | 0.669 |
+| 2 | `anthropic/claude-opus-5-5-xhigh` | 0.650 |
+| 3 | `anthropic/claude-fable-5-1` | 0.631 |
+| 4 | `anthropic/claude-fable-5` | 0.610 |
+| 5 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
+| 6 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 7 | `anthropic/claude-opus-5-5-high` | 0.604 |
+| 8 | `google/gemini-3-7-flash-medium` | 0.598 |
+| 9 | `meta/muse-spark-1-3-xhigh` | 0.597 |
+| 10 | `kimi/kimi-k3` | 0.595 |
 
 ## TAU2
 
