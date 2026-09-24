@@ -218,9 +218,9 @@ _TAU-bench banking domain agent score (%)._
 | 5 | `alibaba/qwen3-8-2-4t-a95b` | 0.491 |
 | 6 | `alibaba/qwen3-8-27b` | 0.480 |
 | 7 | `alibaba/qwen3-8-max` | 0.478 |
-| 8 | `agnes-ai/agnes-3-0-flash` | 0.476 |
-| 9 | `alibaba/qwen3-8-27b-medium` | 0.474 |
-| 10 | `anthropic/claude-fable-5-1` | 0.472 |
+| 8 | `alibaba/qwen3-8-27b-medium` | 0.474 |
+| 9 | `anthropic/claude-fable-5-1` | 0.472 |
+| 10 | `meta/muse-spark-1-3-xhigh` | 0.472 |
 
 ## Terminal-Bench Hard
 

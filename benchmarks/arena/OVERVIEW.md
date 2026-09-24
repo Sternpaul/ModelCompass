@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-astra-max` | 1793.000 |
-| 2 | `claude-fable-5.1-max` | 1755.000 |
-| 3 | `claude-opus-5-max` | 1691.000 |
-| 4 | `qwen3.8-max` | 1671.000 |
-| 5 | `qwen3.8-max-0902` | 1662.000 |
-| 6 | `claude-opus-5-high` | 1661.000 |
-| 7 | `kimi-k3-max` | 1658.000 |
-| 8 | `muse-spark-1.3-max` | 1657.000 |
-| 9 | `qwen3.8-flash-next` | 1636.000 |
-| 10 | `grok-4.7-xhigh` | 1632.000 |
+| 1 | `claude-opus-5.5-max` | 1818.000 |
+| 2 | `gpt-6-astra-max` | 1792.000 |
+| 3 | `claude-fable-5.1-max` | 1755.000 |
+| 4 | `claude-opus-5-max` | 1692.000 |
+| 5 | `gpt-6-sol-max` | 1686.000 |
+| 6 | `qwen3.8-max` | 1671.000 |
+| 7 | `claude-opus-5-high` | 1662.000 |
+| 8 | `qwen3.8-max-0902` | 1661.000 |
+| 9 | `kimi-k3-max` | 1660.000 |
+| 10 | `muse-spark-1.3-max` | 1658.000 |
 
 ## Document Arena
 

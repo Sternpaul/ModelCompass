@@ -37,10 +37,10 @@ _Code generation category score._
 | 4 | `claude-mythos-5` | 87.300 |
 | 5 | `claude-opus-5-5` | 86.600 |
 | 6 | `sakana-fugu-ultra` | 77.800 |
-| 7 | `gpt-6-sol` | 77.500 |
-| 8 | `gemini-3-7-flash` | 76.900 |
-| 9 | `gemini-3-1-pro` | 76.400 |
-| 10 | `step-5-preview` | 75.900 |
+| 7 | `gemini-3-7-flash` | 76.900 |
+| 8 | `gemini-3-1-pro` | 76.400 |
+| 9 | `step-5-preview` | 75.900 |
+| 10 | `gemini-3-8-flash` | 75.800 |
 
 ## Instruction Following
 
