@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-24T09:11:24.660677+00:00",
+    "generated_at": "2026-09-25T09:31:22.690340+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -123,33 +123,6 @@
       }
     },
     {
-      "model": "claude-fable-5-high",
-      "top_appearances": 5,
-      "borda_points": 35,
-      "benchmarks": {
-        "arena_document": {
-          "rank": 5,
-          "score": 1496.0
-        },
-        "arena_search": {
-          "rank": 5,
-          "score": 1230.0
-        },
-        "arena_text": {
-          "rank": 1,
-          "score": 1506.0
-        },
-        "arena_vision": {
-          "rank": 1,
-          "score": 1310.0
-        },
-        "movers": {
-          "rank": 8,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "anthropic/claude-opus-5-5",
       "top_appearances": 4,
       "borda_points": 36,
@@ -169,6 +142,29 @@
         "aa_scicode": {
           "rank": 1,
           "score": 0.669
+        }
+      }
+    },
+    {
+      "model": "claude-fable-5-high",
+      "top_appearances": 4,
+      "borda_points": 32,
+      "benchmarks": {
+        "arena_document": {
+          "rank": 5,
+          "score": 1496.0
+        },
+        "arena_search": {
+          "rank": 5,
+          "score": 1230.0
+        },
+        "arena_text": {
+          "rank": 1,
+          "score": 1506.0
+        },
+        "arena_vision": {
+          "rank": 1,
+          "score": 1310.0
         }
       }
     },
@@ -265,6 +261,29 @@
       }
     },
     {
+      "model": "claude-opus-5-5",
+      "top_appearances": 4,
+      "borda_points": 27,
+      "benchmarks": {
+        "benchlm_coding": {
+          "rank": 5,
+          "score": 86.6
+        },
+        "benchlm_knowledge": {
+          "rank": 6,
+          "score": 87.5
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 3,
+          "score": 88.8
+        },
+        "benchlm_reasoning": {
+          "rank": 3,
+          "score": 82.4
+        }
+      }
+    },
+    {
       "model": "openai/gpt-5-2",
       "top_appearances": 4,
       "borda_points": 26,
@@ -334,29 +353,6 @@
       }
     },
     {
-      "model": "claude-opus-5-5",
-      "top_appearances": 4,
-      "borda_points": 25,
-      "benchmarks": {
-        "benchlm_coding": {
-          "rank": 5,
-          "score": 86.6
-        },
-        "benchlm_knowledge": {
-          "rank": 6,
-          "score": 87.5
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 3,
-          "score": 88.8
-        },
-        "benchlm_reasoning": {
-          "rank": 5,
-          "score": 78.5
-        }
-      }
-    },
-    {
       "model": "anthropic/claude-fable-5-1-high",
       "top_appearances": 4,
       "borda_points": 24,
@@ -380,6 +376,29 @@
       }
     },
     {
+      "model": "claude-fable",
+      "top_appearances": 4,
+      "borda_points": 24,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 5,
+          "score": 83.3
+        },
+        "benchlm_coding": {
+          "rank": 3,
+          "score": 89.5
+        },
+        "benchlm_knowledge": {
+          "rank": 7,
+          "score": 87.2
+        },
+        "benchlm_reasoning": {
+          "rank": 5,
+          "score": 80.6
+        }
+      }
+    },
+    {
       "model": "claude-opus-4-7",
       "top_appearances": 4,
       "borda_points": 23,
@@ -399,29 +418,6 @@
         "arena_vision": {
           "rank": 4,
           "score": 1300.0
-        }
-      }
-    },
-    {
-      "model": "kimi-k3",
-      "top_appearances": 4,
-      "borda_points": 21,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 8,
-          "score": 82.1
-        },
-        "benchlm_knowledge": {
-          "rank": 10,
-          "score": 83.7
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 1,
-          "score": 89.4
-        },
-        "benchlm_reasoning": {
-          "rank": 4,
-          "score": 78.5
         }
       }
     },
@@ -497,7 +493,7 @@
     {
       "model": "claude-fable-5-1",
       "top_appearances": 3,
-      "borda_points": 26,
+      "borda_points": 25,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 2,
@@ -508,8 +504,8 @@
           "score": 97.5
         },
         "benchlm_reasoning": {
-          "rank": 3,
-          "score": 79.4
+          "rank": 4,
+          "score": 81.4
         }
       }
     },
@@ -737,7 +733,7 @@
         },
         "benchlm_reasoning": {
           "rank": 2,
-          "score": 86.6
+          "score": 87.6
         }
       }
     },
@@ -776,25 +772,6 @@
         "aa_terminalbench_v2_1": {
           "rank": 7,
           "score": 0.891385767790262
-        }
-      }
-    },
-    {
-      "model": "claude-fable",
-      "top_appearances": 3,
-      "borda_points": 18,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 5,
-          "score": 83.3
-        },
-        "benchlm_coding": {
-          "rank": 3,
-          "score": 89.5
-        },
-        "benchlm_knowledge": {
-          "rank": 7,
-          "score": 87.2
         }
       }
     },
@@ -852,6 +829,25 @@
         "arena_vision": {
           "rank": 8,
           "score": 1293.0
+        }
+      }
+    },
+    {
+      "model": "kimi-k3",
+      "top_appearances": 3,
+      "borda_points": 14,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 8,
+          "score": 82.1
+        },
+        "benchlm_knowledge": {
+          "rank": 10,
+          "score": 83.7
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 1,
+          "score": 89.4
         }
       }
     },
@@ -1014,7 +1010,7 @@
         },
         "arena_text-to-image": {
           "rank": 1,
-          "score": 1423.0
+          "score": 1424.0
         }
       }
     },
@@ -1089,7 +1085,7 @@
         },
         "arena_text-to-image": {
           "rank": 3,
-          "score": 1381.0
+          "score": 1383.0
         }
       }
     },
@@ -1169,21 +1165,6 @@
       }
     },
     {
-      "model": "grok-imagine-image-2.0 (low)",
-      "top_appearances": 2,
-      "borda_points": 13,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 4,
-          "score": 1430.0
-        },
-        "arena_text-to-image": {
-          "rank": 5,
-          "score": 1302.0
-        }
-      }
-    },
-    {
       "model": "mai-image-2.6",
       "top_appearances": 2,
       "borda_points": 13,
@@ -1194,7 +1175,7 @@
         },
         "arena_text-to-image": {
           "rank": 4,
-          "score": 1334.0
+          "score": 1335.0
         }
       }
     },
@@ -1210,6 +1191,21 @@
         "aa_scicode": {
           "rank": 6,
           "score": 0.609
+        }
+      }
+    },
+    {
+      "model": "grok-imagine-image-2.0 (low)",
+      "top_appearances": 2,
+      "borda_points": 12,
+      "benchmarks": {
+        "arena_image-edit": {
+          "rank": 4,
+          "score": 1430.0
+        },
+        "arena_text-to-image": {
+          "rank": 6,
+          "score": 1301.0
         }
       }
     },
@@ -1364,21 +1360,6 @@
       }
     },
     {
-      "model": "qwen3.8-max-0902",
-      "top_appearances": 2,
-      "borda_points": 8,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 8,
-          "score": 1661.0
-        },
-        "movers": {
-          "rank": 6,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "muse-spark",
       "top_appearances": 2,
       "borda_points": 7,
@@ -1405,21 +1386,6 @@
         "aa_terminalbench_v2_1": {
           "rank": 5,
           "score": 0.895131086142322
-        }
-      }
-    },
-    {
-      "model": "kimi-k3-max",
-      "top_appearances": 2,
-      "borda_points": 6,
-      "benchmarks": {
-        "arena_code": {
-          "rank": 9,
-          "score": 1660.0
-        },
-        "movers": {
-          "rank": 7,
-          "score": null
         }
       }
     },
@@ -1494,7 +1460,7 @@
         },
         "benchlm_reasoning": {
           "rank": 7,
-          "score": 78.5
+          "score": 79.6
         }
       }
     },
@@ -1768,7 +1734,7 @@
       }
     },
     {
-      "model": "upstage/solar-pro4",
+      "model": "deepseek/deepseek-v4-flash",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1900,7 +1866,7 @@
       }
     },
     {
-      "model": "gpt-5.6-sol-xhigh (codex-harness)",
+      "model": "qwen3.8-27b",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1922,7 +1888,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-flash",
+      "model": "upstage/solar-pro4",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -2043,7 +2009,7 @@
       }
     },
     {
-      "model": "qwen3.8-27b",
+      "model": "claude-opus-4-8-high",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -2094,6 +2060,17 @@
         "arena_code": {
           "rank": 5,
           "score": 1686.0
+        }
+      }
+    },
+    {
+      "model": "reve-2.1",
+      "top_appearances": 1,
+      "borda_points": 6,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 5,
+          "score": 1302.0
         }
       }
     },
@@ -2175,7 +2152,7 @@
       }
     },
     {
-      "model": "claude-opus-4-8-high",
+      "model": "gpt-5.6-sol-xhigh (codex-harness)",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -2226,17 +2203,6 @@
         "arena_search": {
           "rank": 6,
           "score": 1227.0
-        }
-      }
-    },
-    {
-      "model": "reve-2.1",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "arena_text-to-image": {
-          "rank": 6,
-          "score": 1301.0
         }
       }
     },
@@ -2346,12 +2312,23 @@
       "benchmarks": {
         "benchlm_reasoning": {
           "rank": 6,
-          "score": 78.5
+          "score": 79.6
         }
       }
     },
     {
-      "model": "xiaomi/mimo-v2.5-20260422",
+      "model": "deepseek-v4-pro-high-20260813",
+      "top_appearances": 1,
+      "borda_points": 5,
+      "benchmarks": {
+        "movers": {
+          "rank": 6,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -2538,7 +2515,18 @@
       }
     },
     {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "model": "deepseek-v4-flash-high",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "movers": {
+          "rank": 7,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "xiaomi/mimo-v2.5-20260422",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2560,13 +2548,24 @@
       }
     },
     {
-      "model": "Kimi K3 (Max)",
+      "model": "Claude Sonnet 5 (High)",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "arena_agent": {
           "rank": 8,
           "score": null
+        }
+      }
+    },
+    {
+      "model": "qwen3.8-max-0902",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 8,
+          "score": 1661.0
         }
       }
     },
@@ -2610,7 +2609,7 @@
       "benchmarks": {
         "arena_text-to-image": {
           "rank": 8,
-          "score": 1270.0
+          "score": 1269.0
         }
       }
     },
@@ -2742,7 +2741,18 @@
       "benchmarks": {
         "benchlm_reasoning": {
           "rank": 8,
-          "score": 78.5
+          "score": 79.6
+        }
+      }
+    },
+    {
+      "model": "hy3",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "movers": {
+          "rank": 8,
+          "score": null
         }
       }
     },
@@ -2769,13 +2779,24 @@
       }
     },
     {
-      "model": "Claude Sonnet 5 (High)",
+      "model": "Kimi K3 (Max)",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "arena_agent": {
           "rank": 9,
           "score": null
+        }
+      }
+    },
+    {
+      "model": "kimi-k3-max",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "arena_code": {
+          "rank": 9,
+          "score": 1660.0
         }
       }
     },
@@ -2978,7 +2999,7 @@
       }
     },
     {
-      "model": "qwen3-5-122b-a10b",
+      "model": "qwen3-5-27b",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -3006,12 +3027,12 @@
       "benchmarks": {
         "benchlm_reasoning": {
           "rank": 9,
-          "score": 78.5
+          "score": 79.6
         }
       }
     },
     {
-      "model": "deepseek-v4-pro-high-20260813",
+      "model": "gemini-3.1-pro-preview",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -3083,7 +3104,7 @@
       "benchmarks": {
         "arena_text-to-image": {
           "rank": 10,
-          "score": 1254.0
+          "score": 1256.0
         }
       }
     },
@@ -3176,7 +3197,7 @@
       }
     },
     {
-      "model": "qwen3-5-27b",
+      "model": "qwen3-5-122b-a10b",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
@@ -3204,12 +3225,12 @@
       "benchmarks": {
         "benchlm_reasoning": {
           "rank": 10,
-          "score": 78.3
+          "score": 79.3
         }
       }
     },
     {
-      "model": "deepseek-v4-flash-high",
+      "model": "gpt-5.1-medium",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {

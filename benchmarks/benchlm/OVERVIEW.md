@@ -111,8 +111,8 @@ _Non-English capability category score._
 | 6 | `glm-5` | 48.700 |
 | 7 | `nemotron-3-ultra` | 47.400 |
 | 8 | `kimi-k2-5` | 38.200 |
-| 9 | `qwen3-5-122b-a10b` | 36.800 |
-| 10 | `qwen3-5-27b` | 36.800 |
+| 9 | `qwen3-5-27b` | 36.800 |
+| 10 | `qwen3-5-122b-a10b` | 36.800 |
 
 ## Multimodal Grounded
 
@@ -140,12 +140,12 @@ _Logical reasoning category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 89.500 |
-| 2 | `qwen3-8-max` | 86.600 |
-| 3 | `claude-fable-5-1` | 79.400 |
-| 4 | `kimi-k3` | 78.500 |
-| 5 | `claude-opus-5-5` | 78.500 |
-| 6 | `gpt-6-sol` | 78.500 |
-| 7 | `step-5-preview` | 78.500 |
-| 8 | `mimo-v2-6-pro` | 78.500 |
-| 9 | `deepseek-v4-1-flash` | 78.500 |
-| 10 | `gpt-5-3-codex` | 78.300 |
+| 2 | `qwen3-8-max` | 87.600 |
+| 3 | `claude-opus-5-5` | 82.400 |
+| 4 | `claude-fable-5-1` | 81.400 |
+| 5 | `claude-fable` | 80.600 |
+| 6 | `gpt-6-sol` | 79.600 |
+| 7 | `step-5-preview` | 79.600 |
+| 8 | `mimo-v2-6-pro` | 79.600 |
+| 9 | `deepseek-v4-1-flash` | 79.600 |
+| 10 | `gpt-5-3-codex` | 79.300 |
