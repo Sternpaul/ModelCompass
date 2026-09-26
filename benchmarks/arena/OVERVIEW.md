@@ -13,16 +13,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 13.44, Confirmed Success: 16.96, Praise vs Complaint: 30.8, Steerability: 7.53, Bash Recovery: 11.58, Tool Hallucination: 0.35, Cost/Task: 14.0, Output Tokens/Task: None |
-| 2 | `GPT 6 Astra (Max)` | Net Improvement: 11.08, Confirmed Success: 13.71, Praise vs Complaint: 34.74, Steerability: 0.15, Bash Recovery: 6.74, Tool Hallucination: 0.36, Cost/Task: 11.0, Output Tokens/Task: None |
-| 3 | `Claude Opus 5 (High)` | Net Improvement: 9.82, Confirmed Success: 7.54, Praise vs Complaint: 17.99, Steerability: 11.36, Bash Recovery: 11.9, Tool Hallucination: 0.32, Cost/Task: 26.0, Output Tokens/Task: None |
-| 4 | `Claude Opus 5 (Max)` | Net Improvement: 9.54, Confirmed Success: 10.55, Praise vs Complaint: 16.08, Steerability: 8.15, Bash Recovery: 12.57, Tool Hallucination: 0.34, Cost/Task: 21.0, Output Tokens/Task: None |
-| 5 | `Claude Fable 5 (High)` | Net Improvement: 8.37, Confirmed Success: 3.45, Praise vs Complaint: 17.86, Steerability: 11.64, Bash Recovery: 8.54, Tool Hallucination: 0.36, Cost/Task: 39.0, Output Tokens/Task: None |
-| 6 | `Claude Opus 4.8 (High)` | Net Improvement: 7.27, Confirmed Success: 4.61, Praise vs Complaint: 15.74, Steerability: 10.09, Bash Recovery: 5.96, Tool Hallucination: 0.06, Cost/Task: 40.0, Output Tokens/Task: None |
-| 7 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 6.2, Confirmed Success: 2.77, Praise vs Complaint: 18.71, Steerability: 6.31, Bash Recovery: 2.84, Tool Hallucination: 0.36, Cost/Task: 33.0, Output Tokens/Task: None |
-| 8 | `Claude Sonnet 5 (High)` | Net Improvement: 4.84, Confirmed Success: 0.7, Praise vs Complaint: 9.47, Steerability: 7.27, Bash Recovery: 6.56, Tool Hallucination: 0.19, Cost/Task: 31.0, Output Tokens/Task: None |
-| 9 | `Kimi K3 (Max)` | Net Improvement: 4.56, Confirmed Success: 10.04, Praise vs Complaint: 8.37, Steerability: 0.29, Bash Recovery: 4.32, Tool Hallucination: 0.36, Cost/Task: 126.0, Output Tokens/Task: None |
-| 10 | `GPT 5.5 (xHigh)` | Net Improvement: 4.44, Confirmed Success: 1.87, Praise vs Complaint: 7.67, Steerability: 7.08, Bash Recovery: 8.93, Tool Hallucination: 0.36, Cost/Task: 53.0, Output Tokens/Task: None |
+| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 13.8, Confirmed Success: 17.26, Praise vs Complaint: 32.31, Steerability: 7.43, Bash Recovery: 11.65, Tool Hallucination: 0.35, Cost/Task: 14.0, Output Tokens/Task: None |
+| 2 | `GPT 6 Astra (Max)` | Net Improvement: 10.85, Confirmed Success: 13.68, Praise vs Complaint: 34.62, Steerability: 0.89, Bash Recovery: 6.46, Tool Hallucination: 0.36, Cost/Task: 11.0, Output Tokens/Task: None |
+| 3 | `Claude Opus 5 (High)` | Net Improvement: 9.8, Confirmed Success: 7.68, Praise vs Complaint: 17.85, Steerability: 11.19, Bash Recovery: 11.97, Tool Hallucination: 0.32, Cost/Task: 26.0, Output Tokens/Task: None |
+| 4 | `Claude Opus 5 (Max)` | Net Improvement: 9.51, Confirmed Success: 10.55, Praise vs Complaint: 15.77, Steerability: 8.29, Bash Recovery: 12.58, Tool Hallucination: 0.34, Cost/Task: 21.0, Output Tokens/Task: None |
+| 5 | `Claude Fable 5 (High)` | Net Improvement: 8.28, Confirmed Success: 3.55, Praise vs Complaint: 17.42, Steerability: 11.55, Bash Recovery: 8.52, Tool Hallucination: 0.36, Cost/Task: 40.0, Output Tokens/Task: None |
+| 6 | `GPT 6 Sol (Max)` | Net Improvement: 7.68, Confirmed Success: 11.36, Praise vs Complaint: 2.62, Steerability: 15.7, Bash Recovery: 8.35, Tool Hallucination: 0.36, Cost/Task: 3.0, Output Tokens/Task: None |
+| 7 | `Claude Opus 4.8 (High)` | Net Improvement: 7.31, Confirmed Success: 4.64, Praise vs Complaint: 15.97, Steerability: 10.06, Bash Recovery: 5.94, Tool Hallucination: 0.06, Cost/Task: 40.0, Output Tokens/Task: None |
+| 8 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 6.16, Confirmed Success: 2.87, Praise vs Complaint: 18.19, Steerability: 6.61, Bash Recovery: 2.78, Tool Hallucination: 0.36, Cost/Task: 33.0, Output Tokens/Task: None |
+| 9 | `Claude Sonnet 5 (High)` | Net Improvement: 4.79, Confirmed Success: 0.54, Praise vs Complaint: 9.44, Steerability: 7.23, Bash Recovery: 6.57, Tool Hallucination: 0.18, Cost/Task: 31.0, Output Tokens/Task: None |
+| 10 | `Kimi K3 (Max)` | Net Improvement: 4.55, Confirmed Success: 9.96, Praise vs Complaint: 8.23, Steerability: 0.16, Bash Recovery: 4.34, Tool Hallucination: 0.36, Cost/Task: 127.0, Output Tokens/Task: None |
 
 ## Code Arena
 
@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5.5-max` | 1818.000 |
+| 1 | `claude-opus-5.5-max` | 1827.000 |
 | 2 | `gpt-6-astra-max` | 1792.000 |
-| 3 | `claude-fable-5.1-max` | 1755.000 |
-| 4 | `claude-opus-5-max` | 1692.000 |
-| 5 | `gpt-6-sol-max` | 1686.000 |
-| 6 | `qwen3.8-max` | 1671.000 |
+| 3 | `claude-fable-5.1-max` | 1751.000 |
+| 4 | `claude-opus-5-max` | 1693.000 |
+| 5 | `gpt-6-sol-max` | 1681.000 |
+| 6 | `qwen3.8-max` | 1672.000 |
 | 7 | `claude-opus-5-high` | 1662.000 |
-| 8 | `qwen3.8-max-0902` | 1661.000 |
+| 8 | `qwen3.8-max-0902` | 1662.000 |
 | 9 | `kimi-k3-max` | 1660.000 |
-| 10 | `muse-spark-1.3-max` | 1658.000 |
+| 10 | `muse-spark-1.3-max` | 1656.000 |
 
 ## Document Arena
 
@@ -121,16 +121,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-high` | 1506.000 |
+| 1 | `claude-opus-5.5-high` | 1509.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-opus-4-7-high` | 1502.000 |
-| 4 | `muse-spark-1.2 (xHigh)` | 1500.000 |
-| 5 | `claude-fable-5.1-max` | 1498.000 |
-| 6 | `claude-opus-4-6` | 1497.000 |
-| 7 | `claude-opus-4-7` | 1494.000 |
-| 8 | `muse-spark-1.3-max` | 1493.000 |
-| 9 | `gemini-3.8-flash-high` | 1493.000 |
-| 10 | `claude-opus-5-high` | 1493.000 |
+| 3 | `claude-fable-5-high` | 1504.000 |
+| 4 | `claude-opus-4-7-high` | 1502.000 |
+| 5 | `claude-fable-5.1-max` | 1501.000 |
+| 6 | `claude-opus-4-6` | 1498.000 |
+| 7 | `muse-spark-1.2 (xHigh)` | 1496.000 |
+| 8 | `claude-opus-4-7` | 1495.000 |
+| 9 | `muse-spark-1.3-max` | 1494.000 |
+| 10 | `gemini-3.8-flash-high` | 1492.000 |
 
 ## Text To Image Arena
 
