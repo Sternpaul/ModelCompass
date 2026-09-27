@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-27T02:02:21.568057+00:00",
+    "generated_at": "2026-09-27T09:56:16.759322+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -90,7 +90,7 @@
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 664,
+        "model_count": 665,
         "top_n": 10
       },
       "aa_artificial_analysis_math_index": {
@@ -108,7 +108,7 @@
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 636,
+        "model_count": 637,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -120,7 +120,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 547,
+        "model_count": 548,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -144,7 +144,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 201,
+        "model_count": 202,
         "top_n": 10
       },
       "aa_tau2": {
@@ -223,12 +223,6 @@
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
         "model_count": 70,
-        "top_n": 10
-      },
-      "movers": {
-        "source": "unknown",
-        "subdir": "movers",
-        "model_count": 126,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -3230,78 +3224,6 @@
         "rank": 10
       }
     ],
-    "movers": [
-      {
-        "board": "Arena Code",
-        "model": "minimax-m2.1-preview",
-        "previous": 82,
-        "current": 92,
-        "delta": -10
-      },
-      {
-        "board": "Arena Code",
-        "model": "claude-opus-4-8",
-        "previous": 30,
-        "current": 39,
-        "delta": -9
-      },
-      {
-        "board": "Arena Code",
-        "model": "muse-glimmer",
-        "previous": 93,
-        "current": 102,
-        "delta": -9
-      },
-      {
-        "board": "Arena Code",
-        "model": "claude-opus-4-8-high",
-        "previous": 24,
-        "current": 32,
-        "delta": -8
-      },
-      {
-        "board": "Arena Code",
-        "model": "gemini-3.5-flash-lite",
-        "previous": 58,
-        "current": 66,
-        "delta": -8
-      },
-      {
-        "board": "Arena Code",
-        "model": "claude-sonnet-4-5-20250929-high-32k",
-        "previous": 79,
-        "current": 87,
-        "delta": -8
-      },
-      {
-        "board": "Arena Code",
-        "model": "gemma-4-26b-a4b",
-        "previous": 91,
-        "current": 99,
-        "delta": -8
-      },
-      {
-        "board": "Arena Code",
-        "model": "qwen3.8-27b",
-        "previous": 18,
-        "current": 25,
-        "delta": -7
-      },
-      {
-        "board": "Arena Code",
-        "model": "gpt-5.6-terra-xhigh (codex-harness)",
-        "previous": 35,
-        "current": 42,
-        "delta": -7
-      },
-      {
-        "board": "Arena Code",
-        "model": "hy3",
-        "previous": 40,
-        "current": 47,
-        "delta": -7
-      }
-    ],
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
@@ -3353,8 +3275,8 @@
       },
       {
         "model": "xiaomi/mimo-v2.5-20260422",
-        "tokens": 3495302592901,
-        "requests": 52493598,
+        "tokens": 3495302861204,
+        "requests": 52493600,
         "rank": 9
       },
       {
@@ -3368,8 +3290,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 24.2,
-        "prompt_price_per_m": 0.04704,
-        "value": 514.46
+        "prompt_price_per_m": 0.0469,
+        "value": 515.99
       },
       {
         "model": "openai/gpt-oss-20b",

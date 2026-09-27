@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-27T02:02:21.586545+00:00",
+    "generated_at": "2026-09-27T09:56:16.778271+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -540,25 +540,6 @@
         "arena_video-edit": {
           "rank": 1,
           "score": 1414.0
-        }
-      }
-    },
-    {
-      "model": "claude-opus-4-8",
-      "top_appearances": 3,
-      "borda_points": 22,
-      "benchmarks": {
-        "benchlm_knowledge": {
-          "rank": 5,
-          "score": 88.3
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 4,
-          "score": 87.7
-        },
-        "movers": {
-          "rank": 2,
-          "score": null
         }
       }
     },
@@ -1191,6 +1172,21 @@
       }
     },
     {
+      "model": "claude-opus-4-8",
+      "top_appearances": 2,
+      "borda_points": 13,
+      "benchmarks": {
+        "benchlm_knowledge": {
+          "rank": 5,
+          "score": 88.3
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 4,
+          "score": 87.7
+        }
+      }
+    },
+    {
       "model": "grok-imagine-image-2.0 (low)",
       "top_appearances": 2,
       "borda_points": 12,
@@ -1598,17 +1594,6 @@
       }
     },
     {
-      "model": "minimax-m2.1-preview",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "movers": {
-          "rank": 1,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4.1-flash-20260910",
       "top_appearances": 1,
       "borda_points": 10,
@@ -1873,17 +1858,6 @@
       }
     },
     {
-      "model": "muse-glimmer",
-      "top_appearances": 1,
-      "borda_points": 8,
-      "benchmarks": {
-        "movers": {
-          "rank": 3,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "tencent/hy4-preview-20260827",
       "top_appearances": 1,
       "borda_points": 8,
@@ -2016,17 +1990,6 @@
       }
     },
     {
-      "model": "claude-opus-4-8-high",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "movers": {
-          "rank": 4,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "stealth/space-bunny-alpha",
       "top_appearances": 1,
       "borda_points": 7,
@@ -2155,17 +2118,6 @@
         "benchlm_multilingual": {
           "rank": 5,
           "score": 69.7
-        }
-      }
-    },
-    {
-      "model": "gemini-3.5-flash-lite",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "movers": {
-          "rank": 5,
-          "score": null
         }
       }
     },
@@ -2320,17 +2272,6 @@
         "benchlm_reasoning": {
           "rank": 6,
           "score": 79.6
-        }
-      }
-    },
-    {
-      "model": "claude-sonnet-4-5-20250929-high-32k",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "movers": {
-          "rank": 6,
-          "score": null
         }
       }
     },
@@ -2518,17 +2459,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 7,
           "score": 86.8
-        }
-      }
-    },
-    {
-      "model": "gemma-4-26b-a4b",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "movers": {
-          "rank": 7,
-          "score": null
         }
       }
     },
@@ -2749,17 +2679,6 @@
         "benchlm_reasoning": {
           "rank": 8,
           "score": 79.6
-        }
-      }
-    },
-    {
-      "model": "qwen3.8-27b",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "movers": {
-          "rank": 8,
-          "score": null
         }
       }
     },
@@ -3028,17 +2947,6 @@
       }
     },
     {
-      "model": "gpt-5.6-terra-xhigh (codex-harness)",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "movers": {
-          "rank": 9,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "xiaomi/mimo-v2.5-20260422",
       "top_appearances": 1,
       "borda_points": 2,
@@ -3233,17 +3141,6 @@
         "benchlm_reasoning": {
           "rank": 10,
           "score": 79.3
-        }
-      }
-    },
-    {
-      "model": "hy3",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "movers": {
-          "rank": 10,
-          "score": null
         }
       }
     },
