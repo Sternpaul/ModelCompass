@@ -5,12 +5,6 @@
   },
   "models": [
     {
-      "model": "deepseek/deepseek-v4-flash",
-      "aa_intelligence": 24.2,
-      "prompt_price_per_m": 0.0469,
-      "value": 515.99
-    },
-    {
       "model": "openai/gpt-oss-20b",
       "aa_intelligence": 9,
       "prompt_price_per_m": 0.018,
@@ -41,6 +35,12 @@
       "value": 178.0
     },
     {
+      "model": "deepseek/deepseek-v4-flash",
+      "aa_intelligence": 24.2,
+      "prompt_price_per_m": 0.14,
+      "value": 172.86
+    },
+    {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
       "aa_intelligence": 9.6,
       "prompt_price_per_m": 0.07,
@@ -51,12 +51,6 @@
       "aa_intelligence": 22.7,
       "prompt_price_per_m": 0.18,
       "value": 126.11
-    },
-    {
-      "model": "deepseek/deepseek-v4-pro",
-      "aa_intelligence": 30.4,
-      "prompt_price_per_m": 0.348,
-      "value": 87.36
     },
     {
       "model": "microsoft/phi-4",
@@ -161,6 +155,12 @@
       "value": 32.5
     },
     {
+      "model": "deepseek/deepseek-v4-pro",
+      "aa_intelligence": 30.4,
+      "prompt_price_per_m": 0.95526,
+      "value": 31.82
+    },
+    {
       "model": "moonshotai/kimi-k2",
       "aa_intelligence": 15.3,
       "prompt_price_per_m": 0.57,
@@ -243,12 +243,6 @@
       "aa_intelligence": 7.9,
       "prompt_price_per_m": 0.8,
       "value": 9.88
-    },
-    {
-      "model": "mistralai/mistral-medium-3-5",
-      "aa_intelligence": 14.2,
-      "prompt_price_per_m": 1.5,
-      "value": 9.47
     },
     {
       "model": "anthropic/claude-opus-5",
@@ -1031,6 +1025,18 @@
       "value": 0.0
     },
     {
+      "model": "deepinfra/ling-3.0-flash-vl",
+      "aa_intelligence": 24.6,
+      "prompt_price_per_m": 60000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepinfra/granite-4.2-8b",
+      "aa_intelligence": 11.1,
+      "prompt_price_per_m": 60000.0,
+      "value": 0.0
+    },
+    {
       "model": "zai/glm-4.5",
       "aa_intelligence": 12.8,
       "prompt_price_per_m": 600000.0,
@@ -1169,9 +1175,9 @@
       "value": 0.0
     },
     {
-      "model": "mistral/mistral-small-2506",
-      "aa_intelligence": 8.2,
-      "prompt_price_per_m": 100000.0,
+      "model": "mistral/mistral-medium-3-5",
+      "aa_intelligence": 14.2,
+      "prompt_price_per_m": 1500000.0,
       "value": 0.0
     },
     {
@@ -1196,12 +1202,6 @@
       "model": "grok-4-20",
       "aa_intelligence": 25.2,
       "prompt_price_per_m": 1420000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mercury-2-5",
-      "aa_intelligence": 12.3,
-      "prompt_price_per_m": 50000.0,
       "value": 0.0
     }
   ]
