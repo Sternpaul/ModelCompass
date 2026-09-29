@@ -31,16 +31,16 @@ _Code generation category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5` | 90.400 |
-| 2 | `claude-fable-5-1` | 90.400 |
+| 1 | `claude-fable-5-1` | 90.300 |
+| 2 | `claude-opus-5` | 89.500 |
 | 3 | `claude-fable` | 89.500 |
 | 4 | `claude-mythos-5` | 87.300 |
-| 5 | `claude-opus-5-5` | 86.600 |
-| 6 | `sakana-fugu-ultra` | 77.800 |
-| 7 | `gemini-3-7-flash` | 76.900 |
-| 8 | `gemini-3-1-pro` | 76.400 |
-| 9 | `step-5-preview` | 75.900 |
-| 10 | `gemini-3-8-flash` | 75.800 |
+| 5 | `claude-sonnet-5-5` | 86.600 |
+| 6 | `claude-opus-5-5` | 86.600 |
+| 7 | `gpt-6-sol` | 78.600 |
+| 8 | `muse-spark-1-3` | 78 |
+| 9 | `gpt-6-astra` | 77.700 |
+| 10 | `step-5-preview` | 77.600 |
 
 ## Instruction Following
 
@@ -67,16 +67,16 @@ _Factual knowledge category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5` | 97.500 |
-| 2 | `claude-fable-5-1` | 97.500 |
-| 3 | `claude-mythos-5` | 94.100 |
-| 4 | `muse-spark-1-1` | 92.700 |
-| 5 | `claude-opus-4-8` | 88.300 |
+| 1 | `claude-fable-5-1` | 97.500 |
+| 2 | `claude-opus-5` | 97.300 |
+| 3 | `claude-mythos-5` | 94 |
+| 4 | `muse-spark-1-1` | 92.600 |
+| 5 | `claude-opus-4-8` | 88.100 |
 | 6 | `claude-opus-5-5` | 87.500 |
 | 7 | `claude-fable` | 87.200 |
 | 8 | `gpt-6-astra` | 86.400 |
-| 9 | `gpt-5-4-pro` | 84.300 |
-| 10 | `kimi-k3` | 83.700 |
+| 9 | `claude-sonnet-5-5` | 85.200 |
+| 10 | `gpt-5-4-pro` | 84.200 |
 
 ## Math
 
@@ -124,12 +124,12 @@ _Vision+text grounded understanding._
 | 1 | `kimi-k3` | 89.400 |
 | 2 | `claude-opus-5` | 88.800 |
 | 3 | `claude-opus-5-5` | 88.800 |
-| 4 | `claude-opus-4-8` | 87.700 |
-| 5 | `gpt-5-6-sol` | 87.600 |
-| 6 | `qwen3-8-max` | 87.400 |
-| 7 | `gemini-3-5-flash` | 86.800 |
-| 8 | `claude-mythos-5` | 85.100 |
-| 9 | `qwen3-8-omni-flash` | 85.100 |
+| 4 | `gpt-5-6-sol` | 88.600 |
+| 5 | `qwen3-8-max` | 88.400 |
+| 6 | `gemini-3-5-flash` | 87.800 |
+| 7 | `claude-opus-4-8` | 87.700 |
+| 8 | `claude-mythos-5` | 86.200 |
+| 9 | `qwen3-8-omni-flash` | 86.200 |
 | 10 | `hy4-preview` | 84.900 |
 
 ## Reasoning
@@ -139,13 +139,13 @@ _Logical reasoning category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-astra` | 89.500 |
-| 2 | `qwen3-8-max` | 87.600 |
+| 1 | `gpt-6-astra` | 89.600 |
+| 2 | `qwen3-8-max` | 87.700 |
 | 3 | `claude-opus-5-5` | 82.400 |
 | 4 | `claude-fable-5-1` | 81.400 |
-| 5 | `claude-fable` | 80.600 |
-| 6 | `gpt-6-sol` | 79.600 |
-| 7 | `step-5-preview` | 79.600 |
-| 8 | `mimo-v2-6-pro` | 79.600 |
-| 9 | `deepseek-v4-1-flash` | 79.600 |
-| 10 | `gpt-5-3-codex` | 79.300 |
+| 5 | `claude-fable` | 80.700 |
+| 6 | `gpt-5-3-codex` | 79.600 |
+| 7 | `muse-glimmer-30b` | 79.600 |
+| 8 | `gpt-6-sol` | 79.600 |
+| 9 | `step-5-preview` | 79.600 |
+| 10 | `mimo-v2-6-pro` | 79.600 |
