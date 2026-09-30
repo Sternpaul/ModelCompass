@@ -3,8 +3,8 @@
     "leaderboard": "aa_lcr",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "lcr",
-    "fetched_at": "2026-09-29T10:33:23.343657+00:00",
-    "model_count_with_data": 679
+    "fetched_at": "2026-09-30T10:23:38.991465+00:00",
+    "model_count_with_data": 686
   },
   "models": [
     {
@@ -63,6 +63,11 @@
       "score": 0.84
     },
     {
+      "model": "openai/gpt-6-1-sol-low",
+      "name": "GPT-6.1 Sol (low)",
+      "score": 0.84
+    },
+    {
       "model": "google/gemini-3-8-flash-medium",
       "name": "Gemini 3.8 Flash (medium)",
       "score": 0.84
@@ -93,6 +98,11 @@
       "score": 0.836666666666667
     },
     {
+      "model": "openai/gpt-6-1-sol-medium",
+      "name": "GPT-6.1 Sol (medium)",
+      "score": 0.833333333333333
+    },
+    {
       "model": "openai/gpt-6-luna",
       "name": "GPT-6 Luna (max)",
       "score": 0.833333333333333
@@ -110,6 +120,11 @@
     {
       "model": "anthropic/claude-fable-5-1-xhigh",
       "name": "Claude Fable 5.1 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
+      "score": 0.83
+    },
+    {
+      "model": "openai/gpt-6-1-sol",
+      "name": "GPT-6.1 Sol (max)",
       "score": 0.83
     },
     {
@@ -156,6 +171,11 @@
       "model": "openai/gpt-5-2",
       "name": "GPT-5.2 (xhigh)",
       "score": 0.826666666666667
+    },
+    {
+      "model": "openai/gpt-6-1-sol-high",
+      "name": "GPT-6.1 Sol (high)",
+      "score": 0.823333333333333
     },
     {
       "model": "anthropic/claude-fable-5",
@@ -378,6 +398,11 @@
       "score": 0.796666666666667
     },
     {
+      "model": "openai/gpt-6-1-sol-xhigh",
+      "name": "GPT-6.1 Sol (xhigh)",
+      "score": 0.796666666666667
+    },
+    {
       "model": "openai/gpt-6-astra-medium",
       "name": "GPT-6 Astra (medium)",
       "score": 0.796666666666667
@@ -418,11 +443,6 @@
       "score": 0.793333333333333
     },
     {
-      "model": "kimi/kimi-k3-low",
-      "name": "Kimi K3 (low)",
-      "score": 0.793333333333333
-    },
-    {
       "model": "openai/gpt-6-sol-low",
       "name": "GPT-6 Sol (low)",
       "score": 0.793333333333333
@@ -430,6 +450,11 @@
     {
       "model": "openai/gpt-6-luna-high",
       "name": "GPT-6 Luna (high)",
+      "score": 0.793333333333333
+    },
+    {
+      "model": "kimi/kimi-k3-low",
+      "name": "Kimi K3 (low)",
       "score": 0.793333333333333
     },
     {
@@ -485,6 +510,11 @@
     {
       "model": "alibaba/qwen3-8-max-0803",
       "name": "Qwen3.8 Max",
+      "score": 0.783333333333333
+    },
+    {
+      "model": "china-mobile/jt236b",
+      "name": "JT-4.1 Flash 236B A21B",
       "score": 0.783333333333333
     },
     {
@@ -643,11 +673,6 @@
       "score": 0.763333333333333
     },
     {
-      "model": "anthropic/claude-sonnet-5-5-low",
-      "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
-      "score": 0.76
-    },
-    {
       "model": "motif-technologies/motif-3",
       "name": "Motif 3",
       "score": 0.76
@@ -670,6 +695,11 @@
     {
       "model": "google/gemini-3-5-flash-lite",
       "name": "Gemini 3.5 Flash-Lite",
+      "score": 0.76
+    },
+    {
+      "model": "anthropic/claude-sonnet-5-5-low",
+      "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Low Effort, Default Fallback)",
       "score": 0.76
     },
     {
@@ -838,11 +868,6 @@
       "score": 0.73
     },
     {
-      "model": "inclusionai/ling-3-0-flash",
-      "name": "Ling 3.0 Flash",
-      "score": 0.73
-    },
-    {
       "model": "xai/grok-4-3",
       "name": "Grok 4.3 (high)",
       "score": 0.73
@@ -850,6 +875,11 @@
     {
       "model": "kwaikat/kat-coder-pro-v2",
       "name": "KAT Coder Pro V2",
+      "score": 0.73
+    },
+    {
+      "model": "inclusionai/ling-3-0-flash",
+      "name": "Ling 3.0 Flash",
       "score": 0.73
     },
     {
@@ -939,7 +969,7 @@
     },
     {
       "model": "china-mobile/jt-4-1-flash-236b-a21b",
-      "name": "JT-4.1 Flash 236B A21B",
+      "name": "JT-4.1 Flash 236B A21B (non-reasoning)",
       "score": 0.713333333333333
     },
     {
@@ -1318,11 +1348,6 @@
       "score": 0.61
     },
     {
-      "model": "inclusionai/ling-3-0-tiny",
-      "name": "Ling 3.0 Tiny",
-      "score": 0.603333333333333
-    },
-    {
       "model": "aws/nova-2-0-lite-reasoning",
       "name": "Nova 2.0 Lite (high)",
       "score": 0.603333333333333
@@ -1330,6 +1355,11 @@
     {
       "model": "nvidia/nemotron-3-5-lightning",
       "name": "Nemotron 3.5 Lightning",
+      "score": 0.603333333333333
+    },
+    {
+      "model": "inclusionai/ling-3-0-tiny",
+      "name": "Ling 3.0 Tiny",
       "score": 0.603333333333333
     },
     {
@@ -1521,6 +1551,11 @@
       "model": "anthropic/claude-3-7-sonnet",
       "name": "Claude 3.7 Sonnet (Non-reasoning)",
       "score": 0.516666666666667
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro-non-reasoning",
+      "name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
+      "score": 0.506666666666667
     },
     {
       "model": "stepfun/step-3-5-flash-0202",

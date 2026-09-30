@@ -8,21 +8,21 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
-| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 22 (code) |
+| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 23 (code) |
 | qwen/qwen3.8-27b:free | kilo/openrouter | 26.2 | 56.1 | 25 (code) |
-| deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 27 (code) |
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
+| deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 29 (code) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 37 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 44 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 52 (vision) |
-| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 57 (code) |
+| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 58 (code) |
 | deepseek-v4-pro:free | openrouter/unorouter | **36.0** | 68.8 | 59 (text) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 62 (vision) |
 | mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 83 (vision) |
-| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 84 (code) |
-| upstage/solar-pro4:free | nous | 28.2 | 52.7 | 94 (code) |
+| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 85 (code) |
+| upstage/solar-pro4:free | nous | 28.2 | 52.7 | 96 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 194 (text) |
-| thinkingmachines/inkling-small:free | kilo/openrouter | 27.8 | 52.9 | — |
+| thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | — |
 | inclusionai/ling-3.0-flash-fin:free | nous | 22.6 | 55.6 | — |
 | stepfun/step-3.7-flash:free | kilo/nous/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |

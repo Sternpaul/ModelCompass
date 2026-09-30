@@ -37,10 +37,10 @@ _Code generation category score._
 | 4 | `claude-mythos-5` | 87.300 |
 | 5 | `claude-sonnet-5-5` | 86.600 |
 | 6 | `claude-opus-5-5` | 86.600 |
-| 7 | `gpt-6-sol` | 78.600 |
-| 8 | `muse-spark-1-3` | 78 |
-| 9 | `gpt-6-astra` | 77.700 |
-| 10 | `step-5-preview` | 77.600 |
+| 7 | `gpt-6-sol` | 78 |
+| 8 | `step-5-preview` | 77.500 |
+| 9 | `muse-spark-1-3` | 77.500 |
+| 10 | `gpt-6-astra` | 77.200 |
 
 ## Instruction Following
 
@@ -75,8 +75,8 @@ _Factual knowledge category score._
 | 6 | `claude-opus-5-5` | 87.500 |
 | 7 | `claude-fable` | 87.200 |
 | 8 | `gpt-6-astra` | 86.400 |
-| 9 | `claude-sonnet-5-5` | 85.200 |
-| 10 | `gpt-5-4-pro` | 84.200 |
+| 9 | `gpt-6-1-sol` | 85.900 |
+| 10 | `claude-sonnet-5-5` | 85.200 |
 
 ## Math
 

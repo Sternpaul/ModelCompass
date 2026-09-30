@@ -25,6 +25,7 @@ Raw benchmark evaluations from Artificial Analysis' proprietary suite (AA API v2
 - [TAU-Banking](./artificial-analysis/aa_tau_banking.json)
 - [Terminal-Bench Hard](./artificial-analysis/aa_terminalbench_hard.json)
 - [Terminal-Bench v2.1](./artificial-analysis/aa_terminalbench_v2_1.json)
+- [aa_terminalbench_v4_0](./artificial-analysis/aa_terminalbench_v4_0.json)
 
 ## [LMArena (arena.ai)](./arena/OVERVIEW.md) — [https://arena.ai](https://arena.ai)
 

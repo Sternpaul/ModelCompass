@@ -3,8 +3,8 @@
     "leaderboard": "aa_hle",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "hle",
-    "fetched_at": "2026-09-29T10:33:23.343657+00:00",
-    "model_count_with_data": 679
+    "fetched_at": "2026-09-30T10:23:38.991465+00:00",
+    "model_count_with_data": 686
   },
   "models": [
     {
@@ -83,6 +83,11 @@
       "score": 0.531
     },
     {
+      "model": "openai/gpt-6-1-sol",
+      "name": "GPT-6.1 Sol (max)",
+      "score": 0.529
+    },
+    {
       "model": "anthropic/claude-opus-5-high",
       "name": "Claude Opus 5 (Adaptive Reasoning, High Effort)",
       "score": 0.528
@@ -93,6 +98,16 @@
       "score": 0.527
     },
     {
+      "model": "openai/gpt-6-1-sol-xhigh",
+      "name": "GPT-6.1 Sol (xhigh)",
+      "score": 0.526
+    },
+    {
+      "model": "openai/gpt-6-1-sol-high",
+      "name": "GPT-6.1 Sol (high)",
+      "score": 0.514
+    },
+    {
       "model": "anthropic/claude-opus-5-medium",
       "name": "Claude Opus 5 (Adaptive Reasoning, Medium Effort)",
       "score": 0.513
@@ -101,6 +116,11 @@
       "model": "anthropic/claude-sonnet-5-5-xhigh",
       "name": "Claude Sonnet 5.5 (Adaptive Reasoning, Xhigh Effort, Default Fallback)",
       "score": 0.5
+    },
+    {
+      "model": "openai/gpt-6-1-sol-medium",
+      "name": "GPT-6.1 Sol (medium)",
+      "score": 0.499
     },
     {
       "model": "openai/gpt-5-6-sol",
@@ -156,6 +176,11 @@
       "model": "meta/muse-spark-1-3-xhigh",
       "name": "Muse Spark 1.3 (xhigh)",
       "score": 0.475
+    },
+    {
+      "model": "openai/gpt-6-1-sol-low",
+      "name": "GPT-6.1 Sol (low)",
+      "score": 0.474
     },
     {
       "model": "openai/gpt-5-6-sol-xhigh",
@@ -226,6 +251,11 @@
       "model": "openai/gpt-5-4",
       "name": "GPT-5.4 (xhigh)",
       "score": 0.437
+    },
+    {
+      "model": "china-mobile/jt236b",
+      "name": "JT-4.1 Flash 236B A21B",
+      "score": 0.436
     },
     {
       "model": "anthropic/claude-opus-5-low",
@@ -1099,7 +1129,7 @@
     },
     {
       "model": "china-mobile/jt-4-1-flash-236b-a21b",
-      "name": "JT-4.1 Flash 236B A21B",
+      "name": "JT-4.1 Flash 236B A21B (non-reasoning)",
       "score": 0.178
     },
     {
@@ -1521,6 +1551,11 @@
       "model": "anthropic/claude-4-sonnet-thinking",
       "name": "Claude 4 Sonnet (Reasoning)",
       "score": 0.107
+    },
+    {
+      "model": "deepseek/deepseek-v4-pro-non-reasoning",
+      "name": "DeepSeek V4 Pro 0813 (Non-reasoning)",
+      "score": 0.106
     },
     {
       "model": "nvidia/nemotron-3-5-lightning",
