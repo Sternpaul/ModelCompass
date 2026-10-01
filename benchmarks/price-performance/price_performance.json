@@ -5,10 +5,22 @@
   },
   "models": [
     {
+      "model": "deepseek/deepseek-v4-flash",
+      "aa_intelligence": 24.2,
+      "prompt_price_per_m": 0.042,
+      "value": 576.19
+    },
+    {
       "model": "openai/gpt-oss-20b",
       "aa_intelligence": 9,
       "prompt_price_per_m": 0.018,
       "value": 500.0
+    },
+    {
+      "model": "upstage/solar-mini4",
+      "aa_intelligence": 24.1,
+      "prompt_price_per_m": 0.05,
+      "value": 482.0
     },
     {
       "model": "upstage/solar-pro4",
@@ -30,9 +42,9 @@
     },
     {
       "model": "openai/gpt-6-luna",
-      "aa_intelligence": 20.9,
+      "aa_intelligence": 21.5,
       "prompt_price_per_m": 0.1,
-      "value": 209.0
+      "value": 215.0
     },
     {
       "model": "nvidia/nemotron-3-nano-30b-a3b",
@@ -41,10 +53,10 @@
       "value": 178.0
     },
     {
-      "model": "deepseek/deepseek-v4-flash",
-      "aa_intelligence": 24.2,
-      "prompt_price_per_m": 0.14,
-      "value": 172.86
+      "model": "deepseek/deepseek-v4-pro",
+      "aa_intelligence": 30.4,
+      "prompt_price_per_m": 0.2088,
+      "value": 145.59
     },
     {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -77,16 +89,16 @@
       "value": 67.2
     },
     {
+      "model": "qwen/qwen3-30b-a3b",
+      "aa_intelligence": 7.5,
+      "prompt_price_per_m": 0.12,
+      "value": 62.5
+    },
+    {
       "model": "qwen/qwen3-vl-8b-instruct",
       "aa_intelligence": 7.3,
       "prompt_price_per_m": 0.117,
       "value": 62.39
-    },
-    {
-      "model": "qwen/qwen3-30b-a3b",
-      "aa_intelligence": 7.5,
-      "prompt_price_per_m": 0.13,
-      "value": 57.69
     },
     {
       "model": "thinkingmachines/inkling-small",
@@ -155,12 +167,6 @@
       "value": 32.5
     },
     {
-      "model": "deepseek/deepseek-v4-pro",
-      "aa_intelligence": 30.4,
-      "prompt_price_per_m": 0.95526,
-      "value": 31.82
-    },
-    {
       "model": "moonshotai/kimi-k2",
       "aa_intelligence": 15.3,
       "prompt_price_per_m": 0.57,
@@ -186,9 +192,9 @@
     },
     {
       "model": "openai/gpt-6-sol",
-      "aa_intelligence": 33.9,
+      "aa_intelligence": 34.2,
       "prompt_price_per_m": 2.0,
-      "value": 16.95
+      "value": 17.1
     },
     {
       "model": "openai/gpt-5",
@@ -1128,7 +1134,7 @@
     },
     {
       "model": "azure/gpt-6-luna",
-      "aa_intelligence": 18.3,
+      "aa_intelligence": 18.5,
       "prompt_price_per_m": 100000.0,
       "value": 0.0
     },
@@ -1140,7 +1146,7 @@
     },
     {
       "model": "azure/gpt-6-sol",
-      "aa_intelligence": 28.1,
+      "aa_intelligence": 28.5,
       "prompt_price_per_m": 2000000.0,
       "value": 0.0
     },
@@ -1196,12 +1202,6 @@
       "model": "gemini-3-7-flash",
       "aa_intelligence": 36.9,
       "prompt_price_per_m": 937500.0,
-      "value": 0.0
-    },
-    {
-      "model": "grok-4-20",
-      "aa_intelligence": 25.2,
-      "prompt_price_per_m": 1420000.0,
       "value": 0.0
     }
   ]

@@ -71,12 +71,12 @@ _Humanity's Last Exam accuracy (%)._
 | 2 | `anthropic/claude-fable-5-1` | 0.591 |
 | 3 | `anthropic/claude-fable-5-1-xhigh` | 0.587 |
 | 4 | `anthropic/claude-opus-5-5-xhigh` | 0.575 |
-| 5 | `anthropic/claude-fable-5-1-high` | 0.559 |
-| 6 | `anthropic/claude-opus-5-5-high` | 0.556 |
-| 7 | `anthropic/claude-fable-5` | 0.555 |
-| 8 | `anthropic/claude-sonnet-5-5` | 0.550 |
-| 9 | `anthropic/claude-opus-5` | 0.549 |
-| 10 | `openai/gpt-6-astra` | 0.547 |
+| 5 | `google/gemini-4-argon` | 0.571 |
+| 6 | `anthropic/claude-fable-5-1-high` | 0.559 |
+| 7 | `anthropic/claude-opus-5-5-high` | 0.556 |
+| 8 | `anthropic/claude-fable-5` | 0.555 |
+| 9 | `anthropic/claude-sonnet-5-5` | 0.550 |
+| 10 | `anthropic/claude-opus-5` | 0.549 |
 
 ## IFBench
 
@@ -178,13 +178,13 @@ _SciCode scientific coding accuracy (%)._
 | 1 | `anthropic/claude-opus-5-5` | 0.669 |
 | 2 | `anthropic/claude-opus-5-5-xhigh` | 0.650 |
 | 3 | `anthropic/claude-fable-5-1` | 0.631 |
-| 4 | `anthropic/claude-sonnet-5-5` | 0.610 |
-| 5 | `anthropic/claude-fable-5` | 0.610 |
-| 6 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
-| 7 | `xiaomi/mimo-v2-6-pro` | 0.609 |
-| 8 | `anthropic/claude-opus-5-5-high` | 0.604 |
-| 9 | `google/gemini-3-7-flash-medium` | 0.598 |
-| 10 | `meta/muse-spark-1-3-xhigh` | 0.597 |
+| 4 | `google/gemini-4-argon` | 0.618 |
+| 5 | `anthropic/claude-sonnet-5-5` | 0.610 |
+| 6 | `anthropic/claude-fable-5` | 0.610 |
+| 7 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
+| 8 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 9 | `anthropic/claude-opus-5-5-high` | 0.604 |
+| 10 | `google/gemini-3-7-flash-medium` | 0.598 |
 
 ## TAU2
 

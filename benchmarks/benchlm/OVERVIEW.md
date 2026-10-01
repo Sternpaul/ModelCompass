@@ -37,10 +37,10 @@ _Code generation category score._
 | 4 | `claude-mythos-5` | 87.300 |
 | 5 | `claude-sonnet-5-5` | 86.600 |
 | 6 | `claude-opus-5-5` | 86.600 |
-| 7 | `gpt-6-sol` | 78 |
-| 8 | `step-5-preview` | 77.500 |
-| 9 | `muse-spark-1-3` | 77.500 |
-| 10 | `gpt-6-astra` | 77.200 |
+| 7 | `gemini-3-7-flash` | 76.900 |
+| 8 | `sakana-fugu-ultra` | 76.700 |
+| 9 | `gemini-3-1-pro` | 76.400 |
+| 10 | `step-5-preview` | 75.900 |
 
 ## Instruction Following
 
@@ -104,15 +104,15 @@ _Non-English capability category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `qwen3-7-max` | 100 |
-| 2 | `claude-opus-4-5` | 82.900 |
-| 3 | `qwen3-7-plus` | 78.900 |
-| 4 | `qwen3-6-plus` | 69.700 |
-| 5 | `qwen3-5-397b` | 69.700 |
-| 6 | `glm-5` | 48.700 |
-| 7 | `nemotron-3-ultra` | 47.400 |
-| 8 | `kimi-k2-5` | 38.200 |
-| 9 | `qwen3-5-27b` | 36.800 |
-| 10 | `qwen3-5-122b-a10b` | 36.800 |
+| 2 | `claude-opus-4-5` | 96.500 |
+| 3 | `qwen3-7-plus` | 95.700 |
+| 4 | `qwen3-6-plus` | 93.800 |
+| 5 | `qwen3-5-397b` | 93.800 |
+| 6 | `glm-5` | 89.500 |
+| 7 | `nemotron-3-ultra` | 89.200 |
+| 8 | `kimi-k2-5` | 87.300 |
+| 9 | `qwen3-5-122b-a10b` | 87.100 |
+| 10 | `qwen3-5-27b` | 87.100 |
 
 ## Multimodal Grounded
 
