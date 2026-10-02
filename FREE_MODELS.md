@@ -8,18 +8,18 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
-| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 25 (code) |
+| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 26 (code) |
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
-| qwen/qwen3.8-27b:free | kilo/openrouter | 26.2 | 56.1 | 27 (code) |
+| qwen/qwen3.8-27b:free | kilo/openrouter | 26.2 | 56.1 | 28 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 31 (code) |
-| hy3:free | kenari/openrouter | 25.3 | 58.8 | 37 (agent) |
-| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 44 (agent) |
+| hy3:free | kenari/openrouter | 25.3 | 58.8 | 39 (agent) |
+| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 46 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 52 (vision) |
 | deepseek-v4-pro:free | openrouter/unorouter | **36.0** | 68.8 | 60 (text) |
-| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 60 (code) |
+| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 61 (code) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 62 (vision) |
 | mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 83 (vision) |
-| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 86 (code) |
+| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 88 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 195 (text) |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | — |
 | stepfun/step-3.7-flash:free | kilo/nous/openrouter | 19.5 | 39.6 | — |
@@ -28,6 +28,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 12.9 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
+| apodex/apodex-1.1-mini:free | kilo/openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
 | stealth/space-bunny-alpha | nous/openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |

@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5.5-max` | 1818.000 |
-| 2 | `gpt-6-astra-max` | 1789.000 |
-| 3 | `gpt-6.1-sol-max` | 1759.000 |
-| 4 | `claude-fable-5.1-max` | 1751.000 |
-| 5 | `claude-sonnet-5.5-high` | 1709.000 |
-| 6 | `claude-opus-5-max` | 1694.000 |
-| 7 | `gpt-6-sol-max` | 1689.000 |
-| 8 | `gemini-4-argon-high` | 1679.000 |
-| 9 | `qwen3.8-max` | 1671.000 |
-| 10 | `qwen3.8-max-0902` | 1670.000 |
+| 1 | `claude-opus-5.5-max` | 1815.000 |
+| 2 | `gpt-6-astra-max` | 1788.000 |
+| 3 | `claude-sonnet-5.5-xhigh` | 1786.000 |
+| 4 | `gpt-6.1-sol-max` | 1758.000 |
+| 5 | `claude-fable-5.1-max` | 1749.000 |
+| 6 | `claude-sonnet-5.5-high` | 1715.000 |
+| 7 | `claude-opus-5-max` | 1695.000 |
+| 8 | `gpt-6-sol-max` | 1689.000 |
+| 9 | `gemini-4-argon-high` | 1680.000 |
+| 10 | `qwen3.8-max` | 1671.000 |
 
 ## Document Arena
 
