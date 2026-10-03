@@ -13,16 +13,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 14.55, Confirmed Success: 17.46, Praise vs Complaint: 33.73, Steerability: 8.95, Bash Recovery: 12.31, Tool Hallucination: 0.32, Cost/Task: 14.0, Output Tokens/Task: None |
-| 2 | `Claude Opus 5.5 (High)` | Net Improvement: 13.78, Confirmed Success: 13.95, Praise vs Complaint: 30.23, Steerability: 11.73, Bash Recovery: 12.69, Tool Hallucination: 0.3, Cost/Task: 5.0, Output Tokens/Task: None |
-| 3 | `GPT 6 Astra (Max)` | Net Improvement: 12.18, Confirmed Success: 12.03, Praise vs Complaint: 34.7, Steerability: 8.24, Bash Recovery: 5.59, Tool Hallucination: 0.32, Cost/Task: 11.0, Output Tokens/Task: None |
-| 4 | `GPT 6 Sol (Max)` | Net Improvement: 10.65, Confirmed Success: 9.87, Praise vs Complaint: 24.32, Steerability: 11.87, Bash Recovery: 6.84, Tool Hallucination: 0.32, Cost/Task: 5.0, Output Tokens/Task: None |
-| 5 | `Claude Opus 5 (High)` | Net Improvement: 8.76, Confirmed Success: 6.84, Praise vs Complaint: 17.81, Steerability: 6.96, Bash Recovery: 11.87, Tool Hallucination: 0.31, Cost/Task: 26.0, Output Tokens/Task: None |
-| 6 | `Claude Opus 5 (Max)` | Net Improvement: 8.55, Confirmed Success: 10.09, Praise vs Complaint: 14.51, Steerability: 4.76, Bash Recovery: 13.05, Tool Hallucination: 0.32, Cost/Task: 21.0, Output Tokens/Task: None |
-| 7 | `Claude Fable 5 (High)` | Net Improvement: 8.37, Confirmed Success: 5.5, Praise vs Complaint: 18.41, Steerability: 8.98, Bash Recovery: 8.62, Tool Hallucination: 0.32, Cost/Task: 39.0, Output Tokens/Task: None |
-| 8 | `Gemini 4 Argon (High)` | Net Improvement: 7.92, Confirmed Success: 14.15, Praise vs Complaint: 27.74, Steerability: 15.88, Bash Recovery: 18.07, Tool Hallucination: 0.1, Cost/Task: 3.0, Output Tokens/Task: None |
-| 9 | `GPT 5.6 Sol (xHigh)` | Net Improvement: 7.05, Confirmed Success: 5.64, Praise vs Complaint: 21.44, Steerability: 6.2, Bash Recovery: 1.67, Tool Hallucination: 0.32, Cost/Task: 33.0, Output Tokens/Task: None |
-| 10 | `Claude Opus 4.8 (High)` | Net Improvement: 6.92, Confirmed Success: 4.88, Praise vs Complaint: 15.19, Steerability: 7.46, Bash Recovery: 7.09, Tool Hallucination: 0.0, Cost/Task: 40.0, Output Tokens/Task: None |
+| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 14.31, Confirmed Success: 17.64, Praise vs Complaint: 32.19, Steerability: 8.84, Bash Recovery: 12.39, Tool Hallucination: 0.48, Cost/Task: 15.0, Output Tokens/Task: None |
+| 2 | `Claude Opus 5.5 (High)` | Net Improvement: 13.82, Confirmed Success: 14.12, Praise vs Complaint: 31.23, Steerability: 10.48, Bash Recovery: 12.78, Tool Hallucination: 0.47, Cost/Task: 5.0, Output Tokens/Task: None |
+| 3 | `Claude Sonnet 5.5 (Max)` | Net Improvement: 12.52, Confirmed Success: 13.91, Praise vs Complaint: 26.27, Steerability: 6.9, Bash Recovery: 15.05, Tool Hallucination: 0.47, Cost/Task: 5.0, Output Tokens/Task: None |
+| 4 | `GPT 6 Astra (Max)` | Net Improvement: 12.27, Confirmed Success: 13.24, Praise vs Complaint: 34.63, Steerability: 7.75, Bash Recovery: 5.34, Tool Hallucination: 0.39, Cost/Task: 11.0, Output Tokens/Task: None |
+| 5 | `GPT 6.1 Sol (Max)` | Net Improvement: 11.23, Confirmed Success: 15.47, Praise vs Complaint: 25.53, Steerability: 11.18, Bash Recovery: 3.47, Tool Hallucination: 0.49, Cost/Task: 6.0, Output Tokens/Task: None |
+| 6 | `GPT 6 Sol (Max)` | Net Improvement: 9.71, Confirmed Success: 7.13, Praise vs Complaint: 23.06, Steerability: 11.23, Bash Recovery: 7.01, Tool Hallucination: 0.12, Cost/Task: 6.0, Output Tokens/Task: None |
+| 7 | `Claude Opus 5 (High)` | Net Improvement: 8.67, Confirmed Success: 7.56, Praise vs Complaint: 16.56, Steerability: 6.63, Bash Recovery: 12.13, Tool Hallucination: 0.48, Cost/Task: 27.0, Output Tokens/Task: None |
+| 8 | `Claude Fable 5 (High)` | Net Improvement: 8.21, Confirmed Success: 6.07, Praise vs Complaint: 17.08, Steerability: 8.9, Bash Recovery: 8.52, Tool Hallucination: 0.49, Cost/Task: 41.0, Output Tokens/Task: None |
+| 9 | `Claude Opus 5 (Max)` | Net Improvement: 7.92, Confirmed Success: 9.52, Praise vs Complaint: 12.01, Steerability: 4.35, Bash Recovery: 13.27, Tool Hallucination: 0.47, Cost/Task: 22.0, Output Tokens/Task: None |
+| 10 | `Gemini 4 Argon (High)` | Net Improvement: 7.57, Confirmed Success: 15.44, Praise vs Complaint: 27.72, Steerability: 13.48, Bash Recovery: 18.93, Tool Hallucination: 0.13, Cost/Task: 10.0, Output Tokens/Task: None |
 
 ## Code Arena
 
@@ -70,13 +70,13 @@ _Human-preference Elo._
 | 1 | `gpt-image-2.5-sunburst` | 1522.000 |
 | 2 | `gpt-image-2.5-flare` | 1478.000 |
 | 3 | `gpt-image-2 (medium)` | 1461.000 |
-| 4 | `grok-imagine-image-2.0 (low)` | 1427.000 |
-| 5 | `mai-image-2.6` | 1427.000 |
-| 6 | `muse-image` | 1403.000 |
-| 7 | `mai-image-2.5` | 1401.000 |
-| 8 | `seedream-5.0-pro` | 1394.000 |
-| 9 | `grok-imagine-image-quality (20260519)` | 1391.000 |
-| 10 | `gemini-3-pro-image-2k (nano-banana-pro)` | 1390.000 |
+| 4 | `grok-imagine-image-2.0 (canvas)` | 1441.000 |
+| 5 | `grok-imagine-image-2.0 (20260801)` | 1427.000 |
+| 6 | `mai-image-2.6` | 1427.000 |
+| 7 | `muse-image` | 1403.000 |
+| 8 | `mai-image-2.5` | 1401.000 |
+| 9 | `seedream-5.0-pro` | 1394.000 |
+| 10 | `grok-imagine-image-quality (20260519)` | 1391.000 |
 
 ## Image To Video Arena
 
@@ -123,14 +123,14 @@ _Human-preference Elo._
 |---|-------|------:|
 | 1 | `gemini-4-argon-high` | 1525.000 |
 | 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-fable-5-high` | 1505.000 |
+| 3 | `claude-fable-5-high` | 1504.000 |
 | 4 | `claude-opus-5.5-high` | 1504.000 |
-| 5 | `claude-opus-4-7-high` | 1502.000 |
+| 5 | `claude-opus-4-7-high` | 1501.000 |
 | 6 | `claude-fable-5.1-max` | 1501.000 |
 | 7 | `claude-opus-4-6` | 1497.000 |
-| 8 | `muse-spark-1.3-max` | 1495.000 |
-| 9 | `claude-opus-4-7` | 1494.000 |
-| 10 | `muse-spark-1.2 (xHigh)` | 1494.000 |
+| 8 | `gemini-3.8-flash-high` | 1495.000 |
+| 9 | `muse-spark-1.3-max` | 1494.000 |
+| 10 | `claude-opus-4-7` | 1494.000 |
 
 ## Text To Image Arena
 
@@ -143,12 +143,12 @@ _Human-preference Elo._
 | 2 | `gpt-image-2.5-flare` | 1401.000 |
 | 3 | `gpt-image-2 (medium)` | 1383.000 |
 | 4 | `mai-image-2.6` | 1335.000 |
-| 5 | `reve-2.1` | 1302.000 |
-| 6 | `grok-imagine-image-2.0 (low)` | 1301.000 |
-| 7 | `muse-image` | 1276.000 |
-| 8 | `reve-2.0` | 1269.000 |
-| 9 | `seedream-5.0-pro` | 1256.000 |
-| 10 | `qwen-image-3.0-pro` | 1256.000 |
+| 5 | `grok-imagine-image-2.0 (canvas)` | 1335.000 |
+| 6 | `reve-2.1` | 1302.000 |
+| 7 | `grok-imagine-image-2.0 (20260801)` | 1301.000 |
+| 8 | `muse-image` | 1276.000 |
+| 9 | `reve-2.0` | 1269.000 |
+| 10 | `seedream-5.0-pro` | 1256.000 |
 
 ## Text To Video Arena
 
@@ -193,13 +193,13 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-high` | 1310.000 |
+| 1 | `claude-fable-5-high` | 1309.000 |
 | 2 | `qwen3.8-max` | 1301.000 |
 | 3 | `claude-opus-4-6-high` | 1299.000 |
-| 4 | `claude-opus-4-7` | 1299.000 |
+| 4 | `claude-opus-4-7` | 1298.000 |
 | 5 | `claude-opus-4-7-high` | 1298.000 |
-| 6 | `gemini-3.7-flash-high` | 1295.000 |
-| 7 | `claude-opus-4-6` | 1295.000 |
+| 6 | `gemini-3.7-flash-high` | 1296.000 |
+| 7 | `claude-opus-4-6` | 1294.000 |
 | 8 | `muse-spark` | 1294.000 |
-| 9 | `muse-spark-1.2 (xHigh)` | 1292.000 |
-| 10 | `muse-spark-1.3-max` | 1290.000 |
+| 9 | `muse-spark-1.2 (xHigh)` | 1293.000 |
+| 10 | `gpt-6.1-sol-max` | 1291.000 |

@@ -12,15 +12,15 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
 | qwen/qwen3.8-27b:free | kilo/openrouter | 26.2 | 56.1 | 28 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 31 (code) |
-| hy3:free | kenari/openrouter | 25.3 | 58.8 | 39 (agent) |
-| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 46 (agent) |
-| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 52 (vision) |
-| deepseek-v4-pro:free | openrouter/unorouter | **36.0** | 68.8 | 60 (text) |
+| hy3:free | kenari/openrouter | 25.3 | 58.8 | 42 (agent) |
+| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 49 (agent) |
+| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 54 (vision) |
 | kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 61 (code) |
-| mimo-v2-5:free | kenari/openrouter | — | — | 62 (vision) |
-| mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 83 (vision) |
+| deepseek-v4-pro:free | openrouter/unorouter | **36.0** | 68.8 | 62 (text) |
+| mimo-v2-5:free | kenari/openrouter | — | — | 65 (vision) |
+| mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 86 (vision) |
 | minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 88 (code) |
-| glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 195 (text) |
+| glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 198 (text) |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | — |
 | stepfun/step-3.7-flash:free | kilo/nous/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |
@@ -28,9 +28,11 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 12.9 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
+| inclusionai/ling-3.1-flash | openrouter | — | — | — |
 | apodex/apodex-1.1-mini:free | kilo/openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
 | stealth/space-bunny-alpha | nous/openrouter | — | — | — |
+| nvidia/switchyard | openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |

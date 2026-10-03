@@ -49,7 +49,7 @@ _Following complex instructions._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `mai-thinking-1` | 95.400 |
+| 1 | `mai-thinking-1` | 94.700 |
 | 2 | `grok-4-3` | 93.200 |
 | 3 | `gpt-5-2-codex` | 92.400 |
 | 4 | `glm-5-1` | 92.400 |
@@ -69,14 +69,14 @@ _Factual knowledge category score._
 |---|-------|------:|
 | 1 | `claude-fable-5-1` | 97.500 |
 | 2 | `claude-opus-5` | 97.300 |
-| 3 | `claude-mythos-5` | 94 |
-| 4 | `muse-spark-1-1` | 92.600 |
-| 5 | `claude-opus-4-8` | 88.100 |
+| 3 | `claude-mythos-5` | 94.100 |
+| 4 | `muse-spark-1-1` | 92.800 |
+| 5 | `claude-opus-4-8` | 88.300 |
 | 6 | `claude-opus-5-5` | 87.500 |
 | 7 | `claude-fable` | 87.200 |
 | 8 | `gpt-6-astra` | 86.400 |
 | 9 | `gpt-6-1-sol` | 85.900 |
-| 10 | `claude-sonnet-5-5` | 85.200 |
+| 10 | `claude-sonnet-5-5` | 85.700 |
 
 ## Math
 

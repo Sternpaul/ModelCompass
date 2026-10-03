@@ -21,6 +21,6 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 15 | `anthropic/claude-fable-5` | 4 | 24 | aa_hle, aa_scicode, aa_tau2, aa_terminalbench_hard |
 | 16 | `claude-fable` | 4 | 24 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_reasoning |
 | 17 | `openai/gpt-6-astra-xhigh` | 4 | 23 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_terminalbench_v2_1, aa_terminalbench_v4_0 |
-| 18 | `claude-opus-4-7` | 4 | 21 | arena_document, arena_search, arena_text, arena_vision |
-| 19 | `google/gemini-4-argon` | 4 | 21 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
+| 18 | `google/gemini-4-argon` | 4 | 21 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
+| 19 | `claude-opus-4-7` | 4 | 20 | arena_document, arena_search, arena_text, arena_vision |
 | 20 | `openai/gpt-6-astra` | 4 | 20 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_terminalbench_v2_1, aa_terminalbench_v4_0 |
