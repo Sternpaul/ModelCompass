@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T03:00:42.021705+00:00",
+    "generated_at": "2026-10-04T10:29:53.808880+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -229,12 +229,6 @@
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
         "model_count": 70,
-        "top_n": 10
-      },
-      "movers": {
-        "source": "unknown",
-        "subdir": "movers",
-        "model_count": 200,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -3288,78 +3282,6 @@
         "rank": 10
       }
     ],
-    "movers": [
-      {
-        "board": "Arena Text",
-        "model": "deepseek-v4.1-flash-max",
-        "previous": 29,
-        "current": 38,
-        "delta": -9
-      },
-      {
-        "board": "Arena Text",
-        "model": "inkling",
-        "previous": 87,
-        "current": 95,
-        "delta": -8
-      },
-      {
-        "board": "Arena Code",
-        "model": "gpt-6-luna-max",
-        "previous": 24,
-        "current": 32,
-        "delta": -8
-      },
-      {
-        "board": "AA Intelligence",
-        "model": "china-mobile/jt-4-1-flash-236b-a21b",
-        "previous": 27.3,
-        "current": 33.9,
-        "delta": -6.6
-      },
-      {
-        "board": "Arena Text",
-        "model": "glm-5.3-flash",
-        "previous": 35,
-        "current": 41,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "glm-5.1",
-        "previous": 49,
-        "current": 55,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "gemini-3.5-flash-lite",
-        "previous": 65,
-        "current": 71,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "mimo-v2.6-flash",
-        "previous": 71,
-        "current": 77,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "amazon-nova-experimental-chat-26-02-10",
-        "previous": 111,
-        "current": 117,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "gpt-4.1-2025-04-14",
-        "previous": 133,
-        "current": 139,
-        "delta": -6
-      }
-    ],
     "or_usage_tokens": [
       {
         "model": "stealth/space-bunny-alpha",
@@ -3426,8 +3348,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 24.2,
-        "prompt_price_per_m": 0.028,
-        "value": 864.29
+        "prompt_price_per_m": 0.0224,
+        "value": 1080.36
       },
       {
         "model": "openai/gpt-oss-20b",

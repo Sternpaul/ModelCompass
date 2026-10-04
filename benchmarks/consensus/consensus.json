@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T03:00:42.035119+00:00",
+    "generated_at": "2026-10-04T10:29:53.864428+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1225,21 +1225,6 @@
       }
     },
     {
-      "model": "inkling",
-      "top_appearances": 2,
-      "borda_points": 11,
-      "benchmarks": {
-        "benchlm_math": {
-          "rank": 9,
-          "score": 78.5
-        },
-        "movers": {
-          "rank": 2,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "qwen3.8-max",
       "top_appearances": 2,
       "borda_points": 10,
@@ -1669,17 +1654,6 @@
       }
     },
     {
-      "model": "deepseek-v4.1-flash-max",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "movers": {
-          "rank": 1,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "stealth/space-bunny-alpha",
       "top_appearances": 1,
       "borda_points": 10,
@@ -1955,17 +1929,6 @@
       }
     },
     {
-      "model": "gpt-6-luna-max",
-      "top_appearances": 1,
-      "borda_points": 8,
-      "benchmarks": {
-        "movers": {
-          "rank": 3,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 8,
@@ -2098,17 +2061,6 @@
       }
     },
     {
-      "model": "china-mobile/jt-4-1-flash-236b-a21b",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "movers": {
-          "rank": 4,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "xiaomi/mimo-v2.6-flash-20260921",
       "top_appearances": 1,
       "borda_points": 7,
@@ -2215,17 +2167,6 @@
         "benchlm_multilingual": {
           "rank": 5,
           "score": 93.8
-        }
-      }
-    },
-    {
-      "model": "glm-5.3-flash",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "movers": {
-          "rank": 5,
-          "score": null
         }
       }
     },
@@ -2406,17 +2347,6 @@
       }
     },
     {
-      "model": "glm-5.1",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "movers": {
-          "rank": 6,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 5,
@@ -2589,17 +2519,6 @@
         "benchlm_reasoning": {
           "rank": 7,
           "score": 79.6
-        }
-      }
-    },
-    {
-      "model": "gemini-3.5-flash-lite",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "movers": {
-          "rank": 7,
-          "score": null
         }
       }
     },
@@ -2831,17 +2750,6 @@
         "benchlm_reasoning": {
           "rank": 8,
           "score": 79.6
-        }
-      }
-    },
-    {
-      "model": "mimo-v2.6-flash",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "movers": {
-          "rank": 8,
-          "score": null
         }
       }
     },
@@ -3099,6 +3007,17 @@
       }
     },
     {
+      "model": "inkling",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "benchlm_math": {
+          "rank": 9,
+          "score": 78.5
+        }
+      }
+    },
+    {
       "model": "qwen3-5-122b-a10b",
       "top_appearances": 1,
       "borda_points": 2,
@@ -3117,17 +3036,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 9,
           "score": 86.2
-        }
-      }
-    },
-    {
-      "model": "amazon-nova-experimental-chat-26-02-10",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "movers": {
-          "rank": 9,
-          "score": null
         }
       }
     },
@@ -3315,17 +3223,6 @@
         "benchlm_reasoning": {
           "rank": 10,
           "score": 79.6
-        }
-      }
-    },
-    {
-      "model": "gpt-4.1-2025-04-14",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "movers": {
-          "rank": 10,
-          "score": null
         }
       }
     },
