@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T10:29:53.442406+00:00",
-    "model_count": 3803,
+    "generated_at": "2026-10-05T11:19:57.115345+00:00",
+    "model_count": 3806,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (8393 models from 226 providers)",
+      "models.dev": "ok (8390 models from 226 providers)",
       "openrouter_usage": "ok (543 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-22)",
       "artificial_analysis": "ok (690 models)",
@@ -733,8 +733,8 @@
             "completion": 0.4,
             "blended": 0.175
           },
-          "median_tps": 182.645,
-          "ttft": 1.014
+          "median_tps": 0.0,
+          "ttft": 0.0
         }
       }
     },
@@ -797,8 +797,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 183.462,
-          "ttft": 0.228
+          "median_tps": 148.336,
+          "ttft": 0.244
         },
         "benchlm": {
           "slug": "command-a-plus",
@@ -1073,7 +1073,7 @@
             "completion": 0.5,
             "blended": 0.2
           },
-          "median_tps": 124.805,
+          "median_tps": 131.507,
           "ttft": 2.416
         },
         "benchlm": {
@@ -1323,8 +1323,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 89.627,
-          "ttft": 1.778
+          "median_tps": 0.0,
+          "ttft": 0.0
         }
       }
     },
@@ -2182,9 +2182,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.003,
-        "completion": 2.4,
-        "cache_read": 0.003
+        "prompt": 0.3,
+        "completion": 1.2,
+        "cache_read": 0.006
       },
       "benchmarks": {}
     },
@@ -2367,8 +2367,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 52.769,
-          "ttft": 1.458
+          "median_tps": 57.821,
+          "ttft": 1.254
         }
       }
     },
@@ -2818,7 +2818,7 @@
       "price_per_million": {
         "prompt": 0.0352,
         "completion": 0.5,
-        "cache_read": 0.0352
+        "cache_read": 0.0232
       },
       "benchmarks": {}
     },
@@ -3152,9 +3152,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.05,
-        "completion": 5.0,
-        "cache_read": 0.04
+        "prompt": 0.03,
+        "completion": 12.0,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -3212,9 +3212,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 1.4,
-        "completion": 4.4,
-        "cache_read": 0.14
+        "prompt": 0.05,
+        "completion": 7.0,
+        "cache_read": 0.045
       },
       "benchmarks": {}
     },
@@ -3512,9 +3512,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.85,
+        "prompt": 0.45,
         "completion": 5.0,
-        "cache_read": 0.7
+        "cache_read": 0.4
       },
       "benchmarks": {}
     },
@@ -3602,9 +3602,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0595,
-        "completion": 0.17,
-        "cache_read": 0.02975
+        "prompt": 0.06,
+        "completion": 0.16,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -3727,8 +3727,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 98.019,
-          "ttft": 1.078
+          "median_tps": 98.049,
+          "ttft": 1.101
         }
       }
     },
@@ -3911,8 +3911,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 218.66,
-          "ttft": 1.815
+          "median_tps": 202.155,
+          "ttft": 1.986
         },
         "benchlm": {
           "slug": "inkling-small",
@@ -4591,8 +4591,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 168.868,
-          "ttft": 2.375
+          "median_tps": 178.515,
+          "ttft": 2.283
         }
       }
     },
@@ -4680,9 +4680,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.72,
-        "completion": 13.0,
-        "cache_read": 0.7
+        "prompt": 0.67,
+        "completion": 14.0,
+        "cache_read": 0.22
       },
       "benchmarks": {}
     },
@@ -5040,9 +5040,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 4.0,
-        "completion": 20.0,
-        "cache_read": 0.4
+        "prompt": 2.0,
+        "completion": 10.0,
+        "cache_read": 0.2
       },
       "benchmarks": {}
     },
@@ -5727,9 +5727,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.38,
-        "completion": 3.49,
-        "cache_read": 0.26
+        "prompt": 0.0224,
+        "completion": 16.0,
+        "cache_read": 0.0224
       },
       "benchmarks": {}
     },
@@ -6691,9 +6691,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.6756,
-        "completion": 13.0,
-        "cache_read": 0.45
+        "prompt": 0.3,
+        "completion": 20.0,
+        "cache_read": 0.3
       },
       "benchmarks": {}
     },
@@ -6894,7 +6894,7 @@
       "supports_reasoning": true,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": null,
       "hugging_face_id": "Qwen/Qwen3.6-27B",
       "open_weight": true,
@@ -6902,8 +6902,8 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.32,
-        "completion": 3.2,
-        "cache_read": null
+        "completion": 3.25,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -7115,9 +7115,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0224,
+        "prompt": 0.03,
         "completion": 1.28,
-        "cache_read": 0.0224
+        "cache_read": 0.03
       },
       "benchmarks": {
         "aa": {
@@ -7513,9 +7513,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0675,
-        "completion": 0.225,
-        "cache_read": 0.0375
+        "prompt": 0.09,
+        "completion": 0.3,
+        "cache_read": 0.05
       },
       "benchmarks": {}
     },
@@ -9753,7 +9753,7 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 205.71,
+          "median_tps": 193.399,
           "ttft": 0.511
         }
       }
@@ -12418,8 +12418,8 @@
             "completion": 0.545,
             "blended": 0.249
           },
-          "median_tps": 182.397,
-          "ttft": 0.498
+          "median_tps": 205.311,
+          "ttft": 0.487
         }
       }
     },
@@ -12512,8 +12512,8 @@
             "completion": 0.18,
             "blended": 0.098
           },
-          "median_tps": 206.843,
-          "ttft": 0.44
+          "median_tps": 227.873,
+          "ttft": 0.427
         }
       }
     },
@@ -14273,8 +14273,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 129.186,
-          "ttft": 6.062
+          "median_tps": 134.247,
+          "ttft": 4.105
         }
       }
     },
@@ -14659,16 +14659,16 @@
       "supports_reasoning": false,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": false,
+      "supports_caching": true,
       "knowledge_cutoff": "2024-07-31",
       "hugging_face_id": "deepseek-ai/DeepSeek-V3-0324",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.25,
-        "completion": 1.0,
-        "cache_read": null
+        "prompt": 0.29,
+        "completion": 1.14,
+        "cache_read": 0.11
       },
       "benchmarks": {}
     },
@@ -14752,7 +14752,7 @@
       "is_audio_output": false,
       "supports_reasoning": false,
       "supports_tools": true,
-      "supports_json": false,
+      "supports_json": true,
       "supports_caching": false,
       "knowledge_cutoff": "2023-10-31",
       "hugging_face_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
@@ -14885,8 +14885,8 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 69.68,
-          "ttft": 0.418
+          "median_tps": 67.73,
+          "ttft": 0.389
         }
       }
     },
@@ -14949,8 +14949,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 94.662,
-          "ttft": 0.744
+          "median_tps": 94.847,
+          "ttft": 0.846
         }
       }
     },
@@ -15742,8 +15742,8 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 40.843,
-          "ttft": 0.996
+          "median_tps": 42.7,
+          "ttft": 1.032
         }
       }
     },
@@ -15918,16 +15918,16 @@
       "supports_reasoning": false,
       "supports_tools": true,
       "supports_json": true,
-      "supports_caching": true,
+      "supports_caching": false,
       "knowledge_cutoff": "2023-12-31",
       "hugging_face_id": "meta-llama/Llama-3.3-70B-Instruct",
       "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.22,
-        "completion": 0.5,
-        "cache_read": 0.11
+        "prompt": 0.1,
+        "completion": 0.32,
+        "cache_read": null
       },
       "benchmarks": {}
     },
@@ -17584,8 +17584,8 @@
             "completion": 0.555,
             "blended": 0.241
           },
-          "median_tps": 92.174,
-          "ttft": 2.044
+          "median_tps": 90.085,
+          "ttft": 2.03
         },
         "arena": {
           "agent": {
@@ -18474,7 +18474,7 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 150000.0,
+        "prompt": 200000.0,
         "completion": 400000.0,
         "cache_read": null
       },
@@ -18650,8 +18650,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 54.229,
-          "ttft": 1.156
+          "median_tps": 52.099,
+          "ttft": 1.17
         },
         "arena": {
           "code": {
@@ -19392,8 +19392,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 151.13,
-          "ttft": 1.103
+          "median_tps": 143.674,
+          "ttft": 1.096
         }
       }
     },
@@ -19705,8 +19705,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 143.658,
-          "ttft": 1.016
+          "median_tps": 142.953,
+          "ttft": 1.033
         },
         "arena": {
           "code": {
@@ -19798,8 +19798,8 @@
             "completion": 0.25,
             "blended": 0.19
           },
-          "median_tps": 83.099,
-          "ttft": 0.425
+          "median_tps": 91.386,
+          "ttft": 0.417
         }
       }
     },
@@ -19892,8 +19892,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 36.431,
-          "ttft": 1.73
+          "median_tps": 36.844,
+          "ttft": 1.816
         }
       }
     },
@@ -20324,8 +20324,8 @@
             "completion": 2.98,
             "blended": 1.427
           },
-          "median_tps": 140.976,
-          "ttft": 1.045
+          "median_tps": 168.704,
+          "ttft": 0.991
         }
       }
     },
@@ -20388,8 +20388,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 216.88,
-          "ttft": 0.787
+          "median_tps": 215.977,
+          "ttft": 0.873
         },
         "arena": {
           "agent": {
@@ -23072,8 +23072,8 @@
             "completion": 1.095,
             "blended": 0.42
           },
-          "median_tps": 264.35,
-          "ttft": 0.216
+          "median_tps": 264.827,
+          "ttft": 0.236
         }
       }
     },
@@ -26469,8 +26469,8 @@
             "completion": 0.4,
             "blended": 0.205
           },
-          "median_tps": 40.085,
-          "ttft": 0.986
+          "median_tps": 43.872,
+          "ttft": 0.95
         },
         "arena": {
           "code": {
@@ -29257,40 +29257,10 @@
       "benchmarks": {}
     },
     {
-      "id": "Qwen3.6-27B",
-      "name": "Qwen3.6 27B",
+      "id": "Qwen3.8-27B",
+      "name": "Qwen3.8 27B",
       "provider": "blueclaw",
-      "family": "Qwen3.6-27B",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 196608,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": true,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": null,
-        "completion": null,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "Qwen/Qwen3.6-35B-A3B-FP8",
-      "name": "Qwen3.6 35B A3B FP8",
-      "provider": "Qwen",
-      "family": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "family": "Qwen3.8-27B",
       "source": "models.dev",
       "created_unix": null,
       "context": 131072,
@@ -31232,8 +31202,8 @@
             "completion": 0.5,
             "blended": 0.237
           },
-          "median_tps": 49.105,
-          "ttft": 2.986
+          "median_tps": 51.032,
+          "ttft": 2.865
         },
         "benchlm": {
           "slug": "glm-5-3-flash",
@@ -31530,8 +31500,8 @@
             "completion": 4.0,
             "blended": 1.712
           },
-          "median_tps": 92.595,
-          "ttft": 1.188
+          "median_tps": 93.349,
+          "ttft": 1.359
         },
         "benchlm": {
           "slug": "kimi-k2-7-code",
@@ -32935,8 +32905,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 43.404,
-          "ttft": 4.034
+          "median_tps": 46.034,
+          "ttft": 4.28
         },
         "benchlm": {
           "slug": "mimo-v2-6-pro",
@@ -34323,8 +34293,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 14.029,
-          "ttft": 0.756
+          "median_tps": 14.615,
+          "ttft": 0.715
         }
       }
     },
@@ -34387,7 +34357,7 @@
             "completion": 2.7,
             "blended": 1.425
           },
-          "median_tps": 84.482,
+          "median_tps": 89.294,
           "ttft": 1.912
         },
         "arena": {
@@ -35055,8 +35025,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 131.739,
-          "ttft": 0.996
+          "median_tps": 133.145,
+          "ttft": 0.992
         },
         "benchlm": {
           "slug": "qwen3-5-122b-a10b",
@@ -35817,8 +35787,8 @@
             "completion": 0.28,
             "blended": 0.175
           },
-          "median_tps": 57.409,
-          "ttft": 4.605
+          "median_tps": 53.252,
+          "ttft": 3.944
         },
         "benchlm": {
           "slug": "mimo-v2-6-flash",
@@ -36785,8 +36755,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 134.874,
-          "ttft": 1.045
+          "median_tps": 135.557,
+          "ttft": 0.99
         },
         "benchlm": {
           "slug": "qwen3-6-35b-a3b",
@@ -37025,8 +36995,8 @@
             "completion": 0.2,
             "blended": 0.151
           },
-          "median_tps": 64.787,
-          "ttft": 1.032
+          "median_tps": 76.298,
+          "ttft": 1.005
         }
       }
     },
@@ -37700,8 +37670,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 78.514,
-          "ttft": 2.777
+          "median_tps": 75.857,
+          "ttft": 2.724
         },
         "benchlm": {
           "slug": "glm-5-3",
@@ -38069,8 +38039,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 207.371,
-          "ttft": 0.787
+          "median_tps": 209.664,
+          "ttft": 0.802
         },
         "benchlm": {
           "slug": "deepseek-v4-1-flash",
@@ -38312,8 +38282,8 @@
             "completion": 1.6,
             "blended": 0.7
           },
-          "median_tps": 55.737,
-          "ttft": 1.639
+          "median_tps": 55.509,
+          "ttft": 1.615
         },
         "arena": {
           "agent": {
@@ -39021,8 +38991,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 165.452,
-          "ttft": 0.545
+          "median_tps": 166.705,
+          "ttft": 0.485
         },
         "benchlm": {
           "slug": "mistral-small-4-reasoning",
@@ -39518,8 +39488,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 161.96,
-          "ttft": 30.07
+          "median_tps": 150.879,
+          "ttft": 27.512
         },
         "arena": {
           "agent": {
@@ -40078,8 +40048,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 51.17,
-          "ttft": 1.225
+          "median_tps": 50.94,
+          "ttft": 1.245
         },
         "benchlm": {
           "slug": "qwen3-8-27b",
@@ -41221,8 +41191,8 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 86.361,
-          "ttft": 1.658
+          "median_tps": 87.495,
+          "ttft": 1.578
         },
         "arena": {
           "code": {
@@ -41344,8 +41314,8 @@
             "completion": 0.4,
             "blended": 0.198
           },
-          "median_tps": 87.237,
-          "ttft": 0.668
+          "median_tps": 94.651,
+          "ttft": 0.645
         },
         "arena": {
           "code": {
@@ -44963,8 +44933,8 @@
             "completion": 0.7,
             "blended": 0.325
           },
-          "median_tps": 2392.271,
-          "ttft": 0.472
+          "median_tps": 2124.464,
+          "ttft": 0.462
         },
         "benchlm": {
           "slug": "celeris-1",
@@ -50238,6 +50208,36 @@
       "benchmarks": {}
     },
     {
+      "id": "z-ai/glm-5.3-flash-apex-abliterated",
+      "name": "Apex Flash 1 Abliterated",
+      "provider": "z-ai",
+      "family": "z-ai/glm-5.3-flash-apex-abliterated",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "z-ai/glm-5.3-flash-uncensored",
       "name": "GLM 5.3 Flash Uncensored",
       "provider": "z-ai",
@@ -50293,6 +50293,36 @@
       "price_per_million": {
         "prompt": 70000.0,
         "completion": 400000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "z-ai/glm-5.3-flash-apex",
+      "name": "Apex Flash 1",
+      "provider": "z-ai",
+      "family": "z-ai/glm-5.3-flash-apex",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -54082,8 +54112,8 @@
             "completion": 0.2,
             "blended": 0.2
           },
-          "median_tps": 91.915,
-          "ttft": 0.551
+          "median_tps": 92.79,
+          "ttft": 0.497
         },
         "benchlm": {
           "slug": "ministral-3-14b",
@@ -55590,8 +55620,8 @@
             "completion": 4.8,
             "blended": 1.5
           },
-          "median_tps": 123.223,
-          "ttft": 1.107
+          "median_tps": 120.745,
+          "ttft": 1.125
         }
       }
     },
@@ -56048,8 +56078,8 @@
             "completion": 0.8,
             "blended": 0.275
           },
-          "median_tps": 233.695,
-          "ttft": 1.07
+          "median_tps": 220.32,
+          "ttft": 1.082
         }
       }
     },
@@ -61550,8 +61580,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 101.435,
-          "ttft": 0.24
+          "median_tps": 106.202,
+          "ttft": 0.234
         },
         "benchlm": {
           "slug": "north-mini-code-1-0",
@@ -61937,8 +61967,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 130.407,
-          "ttft": 0.216
+          "median_tps": 131.825,
+          "ttft": 0.229
         }
       }
     },
@@ -62430,8 +62460,8 @@
             "completion": 2.5,
             "blended": 1.075
           },
-          "median_tps": 168.912,
-          "ttft": 0.902
+          "median_tps": 172.631,
+          "ttft": 0.885
         }
       }
     },
@@ -62838,6 +62868,36 @@
       "benchmarks": {}
     },
     {
+      "id": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "name": "Qwen 3.6 35B A3B FP8",
+      "provider": "Qwen",
+      "family": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 170000.0,
+        "completion": 1100000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "zai-org/GLM-5.1-FP8",
       "name": "GLM-5.1 FP8",
       "provider": "zai-org",
@@ -63172,7 +63232,7 @@
             "completion": 0.2,
             "blended": 0.095
           },
-          "median_tps": 293.398,
+          "median_tps": 297.553,
           "ttft": 0.406
         }
       }
@@ -63242,15 +63302,15 @@
       }
     },
     {
-      "id": "subconscious/tim-qwen3.6-27b",
-      "name": "TIM-Qwen3.6 27B",
+      "id": "subconscious/deepseek-v4.1-flash-marathon",
+      "name": "DeepSeek V4.1 Flash Marathon",
       "provider": "subconscious",
-      "family": "subconscious/tim-qwen3.6-27b",
+      "family": "subconscious/deepseek-v4.1-flash-marathon",
       "source": "models.dev",
       "created_unix": null,
-      "context": 8192,
-      "modality": "text",
-      "is_vision": false,
+      "context": 5000000,
+      "modality": "image/text",
+      "is_vision": true,
       "is_audio_input": false,
       "is_video_input": false,
       "is_image_output": false,
@@ -63259,26 +63319,26 @@
       "supports_tools": true,
       "supports_json": false,
       "supports_caching": false,
-      "knowledge_cutoff": null,
+      "knowledge_cutoff": "2025-05",
       "hugging_face_id": null,
-      "open_weight": false,
+      "open_weight": true,
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 300000.0,
-        "completion": 3000000.0,
+        "prompt": 140000.0,
+        "completion": 280000.0,
         "cache_read": null
       },
       "benchmarks": {}
     },
     {
-      "id": "subconscious/glm-5.2",
-      "name": "GLM-5.2",
+      "id": "subconscious/glm-5.3-marathon",
+      "name": "GLM-5.3 Marathon",
       "provider": "subconscious",
-      "family": "subconscious/glm-5.2",
+      "family": "subconscious/glm-5.3-marathon",
       "source": "models.dev",
       "created_unix": null,
-      "context": 1000000,
+      "context": 5000000,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -63420,8 +63480,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 96.575,
-          "ttft": 0.694
+          "median_tps": 99.368,
+          "ttft": 0.693
         },
         "arena": {
           "agent": {
@@ -67650,7 +67710,7 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 150000.0,
+        "prompt": 200000.0,
         "completion": 400000.0,
         "cache_read": null
       },
@@ -68114,7 +68174,7 @@
             "blended": 0.107
           },
           "median_tps": 45.737,
-          "ttft": 0.442
+          "ttft": 0.431
         },
         "arena": {
           "text": {
@@ -69508,6 +69568,36 @@
       "price_per_million": {
         "prompt": 1400000.0,
         "completion": 4400000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "luminal/deepseek-v4.1-flash",
+      "name": "DeepSeek V4.1 Flash (luminal)",
+      "provider": "luminal",
+      "family": "luminal/deepseek-v4.1-flash",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1000000,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 135000.0,
+        "completion": 540000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -71011,8 +71101,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 73.536,
-          "ttft": 4.74
+          "median_tps": 73.142,
+          "ttft": 1.843
         }
       }
     },
@@ -71075,8 +71165,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 51.525,
-          "ttft": 3.342
+          "median_tps": 47.584,
+          "ttft": 2.275
         }
       }
     },
@@ -71293,8 +71383,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 100.693,
-          "ttft": 0.818
+          "median_tps": 95.793,
+          "ttft": 0.748
         }
       }
     },
@@ -75054,8 +75144,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 50.837,
-          "ttft": 2.461
+          "median_tps": 52.188,
+          "ttft": 1.982
         },
         "arena": {
           "agent": {
@@ -75987,7 +76077,7 @@
             "blended": 0.2
           },
           "median_tps": 126.316,
-          "ttft": 0.745
+          "ttft": 0.77
         },
         "arena": {
           "agent": {
@@ -76296,8 +76386,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 89.655,
-          "ttft": 0.975
+          "median_tps": 0.0,
+          "ttft": 0.0
         },
         "arena": {
           "agent": {
@@ -78695,8 +78785,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 67.924,
-          "ttft": 6.198
+          "median_tps": 69.868,
+          "ttft": 5.58
         }
       }
     },
@@ -80301,8 +80391,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 168.037,
-          "ttft": 0.546
+          "median_tps": 171.052,
+          "ttft": 0.572
         }
       }
     },
@@ -84274,8 +84364,8 @@
             "completion": 0.75,
             "blended": 0.375
           },
-          "median_tps": 858.457,
-          "ttft": 2.862
+          "median_tps": 858.831,
+          "ttft": 2.786
         },
         "benchlm": {
           "slug": "mercury-2-5",
@@ -86724,8 +86814,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 127.614,
-          "ttft": 17.367
+          "median_tps": 124.296,
+          "ttft": 14.392
         },
         "arena": {
           "agent": {
@@ -87233,7 +87323,7 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 338.647,
+          "median_tps": 338.926,
           "ttft": 7.1
         },
         "benchlm": {
@@ -93484,8 +93574,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 128.643,
-          "ttft": 1.981
+          "median_tps": 125.501,
+          "ttft": 1.843
         }
       }
     },
@@ -94134,7 +94224,7 @@
             "completion": 0.97,
             "blended": 0.43
           },
-          "median_tps": 108.516,
+          "median_tps": 108.783,
           "ttft": 0.895
         },
         "benchlm": {
@@ -97509,10 +97599,10 @@
       "benchmarks": {}
     },
     {
-      "id": "deepseek-v4.1-flash-fast-fp4",
-      "name": "DeepSeek V4.1 Flash FP4",
+      "id": "deepseek-v4.1-flash-fast",
+      "name": "DeepSeek V4.1 Flash",
       "provider": "coralbricks",
-      "family": "deepseek-v4.1-flash-fast-fp4",
+      "family": "deepseek-v4.1-flash-fast",
       "source": "models.dev",
       "created_unix": null,
       "context": 1048576,
@@ -97534,6 +97624,36 @@
       "price_per_million": {
         "prompt": 300000.0,
         "completion": 1200000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "glm-5.3-fast",
+      "name": "GLM-5.3",
+      "provider": "coralbricks",
+      "family": "glm-5.3-fast",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1120000.0,
+        "completion": 4400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -99937,8 +100057,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 17.249,
-          "ttft": 0.355
+          "median_tps": 17.061,
+          "ttft": 0.372
         }
       }
     },
@@ -101460,8 +101580,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 46.472,
-          "ttft": 0.325
+          "median_tps": 47.15,
+          "ttft": 0.335
         }
       }
     },
@@ -102508,8 +102628,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 186.362,
-          "ttft": 1.175
+          "median_tps": 193.964,
+          "ttft": 1.2
         }
       }
     },
@@ -106965,7 +107085,7 @@
             "blended": 0.23
           },
           "median_tps": 52.95,
-          "ttft": 1.564
+          "ttft": 1.617
         },
         "arena": {
           "agent": {
@@ -109443,8 +109563,8 @@
             "completion": 5.0,
             "blended": 2.0
           },
-          "median_tps": 103.751,
-          "ttft": 0.483
+          "median_tps": 101.177,
+          "ttft": 0.499
         }
       }
     },
@@ -112490,7 +112610,7 @@
       "source": "models.dev",
       "created_unix": null,
       "context": 1048576,
-      "modality": "image/text",
+      "modality": "image/pdf/text",
       "is_vision": true,
       "is_audio_input": false,
       "is_video_input": false,
@@ -112580,7 +112700,7 @@
       "source": "models.dev",
       "created_unix": null,
       "context": 1048550,
-      "modality": "image/text/video",
+      "modality": "image/pdf/text/video",
       "is_vision": true,
       "is_audio_input": false,
       "is_video_input": true,
@@ -113799,8 +113919,8 @@
             "completion": 14.0,
             "blended": 4.813
           },
-          "median_tps": 105.144,
-          "ttft": 43.969
+          "median_tps": 108.63,
+          "ttft": 34.298
         },
         "benchlm": {
           "slug": "gpt-5-3-codex",
@@ -114275,8 +114395,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 240.771,
-          "ttft": 0.418
+          "median_tps": 227.65,
+          "ttft": 0.475
         }
       }
     },
@@ -114369,7 +114489,7 @@
             "completion": 0.9,
             "blended": 0.45
           },
-          "median_tps": 156.782,
+          "median_tps": 153.608,
           "ttft": 0.846
         }
       }
@@ -115272,8 +115392,8 @@
             "completion": 0.25,
             "blended": 0.107
           },
-          "median_tps": 54.18,
-          "ttft": 9.431
+          "median_tps": 13.846,
+          "ttft": 36.544
         }
       }
     },
@@ -119429,8 +119549,8 @@
             "completion": 0.91,
             "blended": 0.422
           },
-          "median_tps": 69.778,
-          "ttft": 0.587
+          "median_tps": 68.637,
+          "ttft": 0.607
         }
       }
     },
@@ -119493,8 +119613,8 @@
             "completion": 0.68,
             "blended": 0.313
           },
-          "median_tps": 55.315,
-          "ttft": 0.635
+          "median_tps": 49.037,
+          "ttft": 0.658
         }
       }
     },
@@ -119831,8 +119951,8 @@
             "completion": 1.2,
             "blended": 0.563
           },
-          "median_tps": 115.838,
-          "ttft": 0.895
+          "median_tps": 114.723,
+          "ttft": 0.887
         }
       }
     },
@@ -120349,8 +120469,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 179.331,
-          "ttft": 1.019
+          "median_tps": 185.183,
+          "ttft": 1.023
         }
       }
     },
@@ -122566,8 +122686,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
+        "prompt": 75000.0,
+        "completion": 220000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -122661,8 +122781,8 @@
             "completion": 0.16,
             "blended": 0.07
           },
-          "median_tps": 18.657,
-          "ttft": 47.272
+          "median_tps": 18.299,
+          "ttft": 52.921
         }
       }
     },
@@ -122725,8 +122845,8 @@
             "completion": 0.6,
             "blended": 0.3
           },
-          "median_tps": 185.63,
-          "ttft": 0.79
+          "median_tps": 205.216,
+          "ttft": 0.807
         }
       }
     },
@@ -122969,8 +123089,8 @@
             "completion": 1.5,
             "blended": 0.75
           },
-          "median_tps": 81.552,
-          "ttft": 0.706
+          "median_tps": 80.756,
+          "ttft": 0.689
         },
         "arena": {
           "code": {
@@ -128880,8 +129000,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 34.35,
-          "ttft": 4.19
+          "median_tps": 38.934,
+          "ttft": 4.27
         }
       }
     },
@@ -131853,8 +131973,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 95.178,
-          "ttft": 1.594
+          "median_tps": 99.92,
+          "ttft": 1.314
         },
         "benchlm": {
           "slug": "gpt-5-6-terra",
@@ -136734,8 +136854,8 @@
             "completion": 0.195,
             "blended": 0.086
           },
-          "median_tps": 138.744,
-          "ttft": 1.844
+          "median_tps": 100.968,
+          "ttft": 6.155
         }
       }
     },
@@ -144003,7 +144123,7 @@
       "family": "greenference/gpt-oss-20b",
       "source": "models.dev",
       "created_unix": null,
-      "context": 131072,
+      "context": 32768,
       "modality": "text",
       "is_vision": false,
       "is_audio_input": false,
@@ -144020,8 +144140,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 9000.0,
-        "completion": 45000.0,
+        "prompt": 0.0,
+        "completion": 0.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -144445,8 +144565,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 74.309,
-          "ttft": 1.187
+          "median_tps": 76.23,
+          "ttft": 1.19
         }
       }
     },
@@ -144997,8 +145117,8 @@
             "completion": 0.14,
             "blended": 0.061
           },
-          "median_tps": 272.419,
-          "ttft": 0.616
+          "median_tps": 258.186,
+          "ttft": 0.595
         }
       }
     },
@@ -155429,8 +155549,8 @@
             "completion": 0.1,
             "blended": 0.1
           },
-          "median_tps": 265.635,
-          "ttft": 0.377
+          "median_tps": 273.632,
+          "ttft": 0.397
         },
         "benchlm": {
           "slug": "ministral-3-3b",
@@ -158121,8 +158241,8 @@
             "completion": 0.15,
             "blended": 0.15
           },
-          "median_tps": 109.279,
-          "ttft": 0.429
+          "median_tps": 107.272,
+          "ttft": 0.421
         },
         "benchlm": {
           "slug": "ministral-3-8b",
@@ -158650,36 +158770,6 @@
       "price_per_million": {
         "prompt": 70000.0,
         "completion": 300000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
-      "id": "Qwen3.8-27B",
-      "name": "Qwen3.8 27B",
-      "provider": "llmgateway",
-      "family": "Qwen3.8-27B",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 262000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": true,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 80000.0,
-        "completion": 350000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -164424,8 +164514,8 @@
             "completion": 0.8,
             "blended": 0.388
           },
-          "median_tps": 377.512,
-          "ttft": 1.034
+          "median_tps": 375.019,
+          "ttft": 1.012
         },
         "arena": {
           "code": {
