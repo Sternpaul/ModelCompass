@@ -141,11 +141,11 @@ _Logical reasoning category score._
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 89.600 |
 | 2 | `qwen3-8-max` | 87.700 |
-| 3 | `claude-opus-5-5` | 82.400 |
-| 4 | `claude-fable-5-1` | 81.400 |
-| 5 | `claude-fable` | 80.700 |
-| 6 | `gpt-5-3-codex` | 79.600 |
-| 7 | `muse-glimmer-30b` | 79.600 |
-| 8 | `gpt-6-sol` | 79.600 |
+| 3 | `gpt-6-1-sol` | 86.800 |
+| 4 | `claude-opus-5-5` | 82.400 |
+| 5 | `claude-fable-5-1` | 81.400 |
+| 6 | `claude-fable` | 80.700 |
+| 7 | `gpt-5-3-codex` | 79.600 |
+| 8 | `muse-glimmer-30b` | 79.600 |
 | 9 | `step-5-preview` | 79.600 |
 | 10 | `mimo-v2-6-pro` | 79.600 |

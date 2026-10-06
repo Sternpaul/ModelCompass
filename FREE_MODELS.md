@@ -10,7 +10,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
 | glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 26 (code) |
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
-| qwen/qwen3.8-27b:free | kilo/openrouter | 26.2 | 56.1 | 28 (code) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 31 (code) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 42 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 49 (agent) |
@@ -23,6 +22,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 198 (text) |
 | inclusionai/ling-3.1-flash | openrouter | **41.1** | — | — |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | — |
+| upstage/solar-mini4:free | nous | 24.1 | — | — |
 | stepfun/step-3.7-flash:free | kilo/nous/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |
 | step-3-7-flash:free | kenari/openrouter | 19.5 | 39.6 | — |
@@ -31,7 +31,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
 | apodex/apodex-1.1-mini:free | kilo/openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
-| stealth/space-bunny-alpha | nous/openrouter | — | — | — |
 | nvidia/switchyard | openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
@@ -49,3 +48,4 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
+| stealth/space-bunny-alpha | nous | — | — | — |

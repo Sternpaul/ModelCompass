@@ -67,12 +67,12 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-image-2.5-sunburst` | 1522.000 |
-| 2 | `gpt-image-2.5-flare` | 1478.000 |
-| 3 | `gpt-image-2 (medium)` | 1461.000 |
-| 4 | `grok-imagine-image-2.0 (canvas)` | 1441.000 |
-| 5 | `grok-imagine-image-2.0 (20260801)` | 1427.000 |
-| 6 | `mai-image-2.6` | 1427.000 |
+| 1 | `gpt-image-2.5-sunburst` | 1524.000 |
+| 2 | `gpt-image-2.5-flare` | 1481.000 |
+| 3 | `gpt-image-2 (medium)` | 1462.000 |
+| 4 | `grok-imagine-image-2.0 (canvas)` | 1437.000 |
+| 5 | `mai-image-2.6` | 1427.000 |
+| 6 | `grok-imagine-image-2.0 (20260801)` | 1426.000 |
 | 7 | `muse-image` | 1403.000 |
 | 8 | `mai-image-2.5` | 1401.000 |
 | 9 | `seedream-5.0-pro` | 1394.000 |
@@ -139,14 +139,14 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-image-2.5-sunburst` | 1424.000 |
-| 2 | `gpt-image-2.5-flare` | 1401.000 |
-| 3 | `gpt-image-2 (medium)` | 1383.000 |
-| 4 | `mai-image-2.6` | 1335.000 |
-| 5 | `grok-imagine-image-2.0 (canvas)` | 1335.000 |
+| 1 | `gpt-image-2.5-sunburst` | 1425.000 |
+| 2 | `gpt-image-2.5-flare` | 1397.000 |
+| 3 | `gpt-image-2 (medium)` | 1384.000 |
+| 4 | `grok-imagine-image-2.0 (canvas)` | 1336.000 |
+| 5 | `mai-image-2.6` | 1333.000 |
 | 6 | `reve-2.1` | 1302.000 |
-| 7 | `grok-imagine-image-2.0 (20260801)` | 1301.000 |
-| 8 | `muse-image` | 1276.000 |
+| 7 | `grok-imagine-image-2.0 (20260801)` | 1297.000 |
+| 8 | `muse-image` | 1274.000 |
 | 9 | `reve-2.0` | 1269.000 |
 | 10 | `seedream-5.0-pro` | 1256.000 |
 
