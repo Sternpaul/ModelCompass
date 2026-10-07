@@ -10,8 +10,8 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 4 | `anthropic/claude-fable-5-1-xhigh` | 6 | 36 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v2_1… |
 | 5 | `anthropic/claude-opus-5-5` | 5 | 45 | aa_artificial_analysis_intelligence_index, aa_hle, aa_lcr, aa_scicode, aa_terminalbench_v4_0 |
 | 6 | `anthropic/claude-opus-5-5-xhigh` | 5 | 37 | aa_artificial_analysis_intelligence_index, aa_hle, aa_lcr, aa_scicode, aa_terminalbench_v4_0 |
-| 7 | `google/gemini-3-flash-reasoning` | 4 | 32 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
-| 8 | `claude-fable-5-high` | 4 | 30 | arena_document, arena_search, arena_text, arena_vision |
+| 7 | `claude-fable-5-high` | 5 | 35 | arena_document, arena_search, arena_text, arena_vision, movers |
+| 8 | `google/gemini-3-flash-reasoning` | 4 | 32 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
 | 9 | `google/gemini-3-pro` | 4 | 28 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
 | 10 | `anthropic/claude-sonnet-5-5` | 4 | 27 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
 | 11 | `gpt-5-6-sol` | 4 | 27 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |

@@ -31,16 +31,16 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-opus-5.5-max` | 1815.000 |
+| 1 | `claude-opus-5.5-max` | 1814.000 |
 | 2 | `gpt-6-astra-max` | 1788.000 |
-| 3 | `claude-sonnet-5.5-xhigh` | 1786.000 |
-| 4 | `gpt-6.1-sol-max` | 1758.000 |
-| 5 | `claude-fable-5.1-max` | 1749.000 |
-| 6 | `claude-sonnet-5.5-high` | 1715.000 |
-| 7 | `claude-opus-5-max` | 1695.000 |
-| 8 | `gpt-6-sol-max` | 1689.000 |
-| 9 | `gemini-4-argon-high` | 1680.000 |
-| 10 | `qwen3.8-max` | 1671.000 |
+| 3 | `claude-sonnet-5.5-xhigh` | 1773.000 |
+| 4 | `gpt-6.1-sol-max` | 1757.000 |
+| 5 | `claude-fable-5.1-max` | 1745.000 |
+| 6 | `claude-sonnet-5.5-high` | 1716.000 |
+| 7 | `claude-opus-5-max` | 1692.000 |
+| 8 | `gpt-6-sol-max` | 1687.000 |
+| 9 | `gemini-4-argon-high` | 1678.000 |
+| 10 | `qwen3.8-max` | 1672.000 |
 
 ## Document Arena
 
@@ -70,13 +70,13 @@ _Human-preference Elo._
 | 1 | `gpt-image-2.5-sunburst` | 1524.000 |
 | 2 | `gpt-image-2.5-flare` | 1481.000 |
 | 3 | `gpt-image-2 (medium)` | 1462.000 |
-| 4 | `grok-imagine-image-2.0 (canvas)` | 1437.000 |
-| 5 | `mai-image-2.6` | 1427.000 |
-| 6 | `grok-imagine-image-2.0 (20260801)` | 1426.000 |
-| 7 | `muse-image` | 1403.000 |
-| 8 | `mai-image-2.5` | 1401.000 |
-| 9 | `seedream-5.0-pro` | 1394.000 |
-| 10 | `grok-imagine-image-quality (20260519)` | 1391.000 |
+| 4 | `grok-imagine-image-2.0 (canvas)` | 1439.000 |
+| 5 | `mai-image-2.6` | 1428.000 |
+| 6 | `gemini-nano-banana-2.1` | 1428.000 |
+| 7 | `grok-imagine-image-2.0 (20260801)` | 1425.000 |
+| 8 | `muse-image` | 1403.000 |
+| 9 | `mai-image-2.5` | 1401.000 |
+| 10 | `seedream-5.0-pro` | 1394.000 |
 
 ## Image To Video Arena
 
@@ -140,15 +140,15 @@ _Human-preference Elo._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gpt-image-2.5-sunburst` | 1425.000 |
-| 2 | `gpt-image-2.5-flare` | 1397.000 |
-| 3 | `gpt-image-2 (medium)` | 1384.000 |
-| 4 | `grok-imagine-image-2.0 (canvas)` | 1336.000 |
-| 5 | `mai-image-2.6` | 1333.000 |
-| 6 | `reve-2.1` | 1302.000 |
-| 7 | `grok-imagine-image-2.0 (20260801)` | 1297.000 |
-| 8 | `muse-image` | 1274.000 |
-| 9 | `reve-2.0` | 1269.000 |
-| 10 | `seedream-5.0-pro` | 1256.000 |
+| 2 | `gpt-image-2.5-flare` | 1398.000 |
+| 3 | `gpt-image-2 (medium)` | 1383.000 |
+| 4 | `mai-image-2.6` | 1333.000 |
+| 5 | `gemini-nano-banana-2.1` | 1328.000 |
+| 6 | `grok-imagine-image-2.0 (canvas)` | 1321.000 |
+| 7 | `reve-2.1` | 1302.000 |
+| 8 | `grok-imagine-image-2.0 (20260801)` | 1297.000 |
+| 9 | `muse-image` | 1274.000 |
+| 10 | `reve-2.0` | 1269.000 |
 
 ## Text To Video Arena
 

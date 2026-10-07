@@ -8,17 +8,17 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 |-------|---------|-----------------|-----------|------------|
 | gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
 | gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
-| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 26 (code) |
+| glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 27 (code) |
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
-| deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 31 (code) |
+| deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 33 (code) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 42 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 49 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 54 (vision) |
-| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 61 (code) |
 | deepseek-v4-pro:free | openrouter/unorouter | 36.0 | 68.8 | 62 (text) |
+| kimi-k2-7-code:free | kenari/openrouter | 25.8 | 60.8 | 64 (code) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 65 (vision) |
 | mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 86 (vision) |
-| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 88 (code) |
+| minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 91 (code) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 198 (text) |
 | inclusionai/ling-3.1-flash | openrouter | **41.1** | — | — |
 | thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | — |
@@ -29,7 +29,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 12.9 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
-| apodex/apodex-1.1-mini:free | kilo/openrouter | — | — | — |
+| apodex/apodex-1.1-mini:free | openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
 | nvidia/switchyard | openrouter | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | kilo/nous/openrouter | — | — | — |
