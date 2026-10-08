@@ -73,9 +73,9 @@ _Factual knowledge category score._
 | 4 | `muse-spark-1-1` | 92.800 |
 | 5 | `claude-opus-4-8` | 88.300 |
 | 6 | `claude-opus-5-5` | 87.500 |
-| 7 | `claude-fable` | 87.200 |
-| 8 | `gpt-6-astra` | 86.400 |
-| 9 | `gpt-6-1-sol` | 85.900 |
+| 7 | `claude-fable` | 87.300 |
+| 8 | `gpt-6-astra` | 86.500 |
+| 9 | `gpt-6-1-sol` | 86 |
 | 10 | `claude-sonnet-5-5` | 85.700 |
 
 ## Math

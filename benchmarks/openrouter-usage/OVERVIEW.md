@@ -13,13 +13,13 @@ _Rank by total tokens processed; requests kept alongside._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `stealth/space-bunny-alpha` | — |
-| 2 | `deepseek/deepseek-v4.1-flash-20260910` | — |
+| 1 | `deepseek/deepseek-v4.1-flash-20260910` | — |
+| 2 | `stealth/space-bunny-alpha` | — |
 | 3 | `z-ai/glm-5.3-flash-20260826` | — |
 | 4 | `xiaomi/mimo-v2.6-flash-20260921` | — |
-| 5 | `openai/gpt-6-luna-20260922` | — |
-| 6 | `tencent/hy4-preview-20260827` | — |
-| 7 | `deepseek/deepseek-v4-flash-20260731` | — |
-| 8 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
-| 9 | `typesafe/jev-1.13-20260917` | — |
-| 10 | `deepseek/deepseek-v4-flash-20260423` | — |
+| 5 | `tencent/hy4-preview-20260827` | — |
+| 6 | `openai/gpt-6-luna-20260922` | — |
+| 7 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 8 | `deepseek/deepseek-v4-flash-20260731` | — |
+| 9 | `anthropic/claude-opus-5.5-20260921` | — |
+| 10 | `typesafe/jev-1.13-20260917` | — |
