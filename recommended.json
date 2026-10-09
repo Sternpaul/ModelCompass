@@ -1,13 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T11:14:55.084800+00:00",
+    "generated_at": "2026-10-09T11:14:19.756976+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
         "source": "https://arena.ai/leaderboard/agent",
         "subdir": "arena",
-        "model_count": 51,
+        "model_count": 52,
         "top_n": 10
+      },
+      "arena_chat": {
+        "source": "https://arena.ai/leaderboard/chat",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
       },
       "arena_code": {
         "source": "https://arena.ai/leaderboard/code",
@@ -24,14 +30,20 @@
       "arena_image-edit": {
         "source": "https://arena.ai/leaderboard/image-edit",
         "subdir": "arena",
-        "model_count": 58,
-        "top_n": 10
+        "model_count": 0,
+        "top_n": 0
       },
       "arena_image-to-video": {
         "source": "https://arena.ai/leaderboard/image-to-video",
         "subdir": "arena",
         "model_count": 48,
         "top_n": 10
+      },
+      "arena_image": {
+        "source": "https://arena.ai/leaderboard/image",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
       },
       "arena_search": {
         "source": "https://arena.ai/leaderboard/search",
@@ -54,7 +66,7 @@
       "arena_text": {
         "source": "https://arena.ai/leaderboard/text",
         "subdir": "arena",
-        "model_count": 363,
+        "model_count": 364,
         "top_n": 10
       },
       "arena_video-edit": {
@@ -62,6 +74,12 @@
         "subdir": "arena",
         "model_count": 10,
         "top_n": 10
+      },
+      "arena_video": {
+        "source": "https://arena.ai/leaderboard/video",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
       },
       "arena_vision": {
         "source": "https://arena.ai/leaderboard/vision",
@@ -174,7 +192,7 @@
       "aa_terminalbench_v4_0": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 215,
+        "model_count": 216,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -186,7 +204,7 @@
       "benchlm_coding": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 134,
+        "model_count": 135,
         "top_n": 10
       },
       "benchlm_instructionFollowing": {
@@ -234,13 +252,13 @@
       "movers": {
         "source": "unknown",
         "subdir": "movers",
-        "model_count": 1,
-        "top_n": 1
+        "model_count": 200,
+        "top_n": 10
       },
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 557,
+        "model_count": 556,
         "top_n": 10
       },
       "price_performance": {
@@ -255,39 +273,137 @@
     "arena_agent": [
       {
         "rank": 1,
+        "model": "Claude Opus 5.5 (High)",
+        "vendor": "Anthropic",
+        "license": "proprietary",
+        "scores": [
+          {
+            "name": "Net Improvement",
+            "score": 14.33,
+            "ci": 2.18
+          },
+          {
+            "name": "Confirmed Success",
+            "score": 13.93,
+            "ci": 3.84
+          },
+          {
+            "name": "Praise vs Complaint",
+            "score": 33.69,
+            "ci": 9.12
+          },
+          {
+            "name": "Steerability",
+            "score": 9.98,
+            "ci": 2.12
+          },
+          {
+            "name": "Bash Recovery",
+            "score": 13.55,
+            "ci": 0.8
+          },
+          {
+            "name": "Tool Hallucination",
+            "score": 0.5,
+            "ci": 0.04
+          },
+          {
+            "name": "Cost/Task",
+            "score": 6.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
+          }
+        ],
+        "sessions": 420
+      },
+      {
+        "rank": 2,
+        "model": "GPT 6 Astra (Max)",
+        "vendor": "OpenAI",
+        "license": "proprietary",
+        "scores": [
+          {
+            "name": "Net Improvement",
+            "score": 13.09,
+            "ci": 2.37
+          },
+          {
+            "name": "Confirmed Success",
+            "score": 12.13,
+            "ci": 3.88
+          },
+          {
+            "name": "Praise vs Complaint",
+            "score": 38.54,
+            "ci": 9.96
+          },
+          {
+            "name": "Steerability",
+            "score": 8.85,
+            "ci": 2.5
+          },
+          {
+            "name": "Bash Recovery",
+            "score": 5.53,
+            "ci": 1.72
+          },
+          {
+            "name": "Tool Hallucination",
+            "score": 0.43,
+            "ci": 0.11
+          },
+          {
+            "name": "Cost/Task",
+            "score": 12.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
+          }
+        ],
+        "sessions": 1050
+      },
+      {
+        "rank": 3,
         "model": "Claude Fable 5.1 (Max)",
         "vendor": "Anthropic",
         "license": "proprietary",
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 14.31,
-            "ci": 1.9
+            "score": 12.66,
+            "ci": 2.05
           },
           {
             "name": "Confirmed Success",
-            "score": 17.64,
-            "ci": 2.82
+            "score": 16.19,
+            "ci": 2.96
           },
           {
             "name": "Praise vs Complaint",
-            "score": 32.19,
-            "ci": 7.71
+            "score": 26.22,
+            "ci": 7.98
           },
           {
             "name": "Steerability",
             "score": 8.84,
-            "ci": 2.86
+            "ci": 3.12
           },
           {
             "name": "Bash Recovery",
-            "score": 12.39,
-            "ci": 0.96
+            "score": 11.6,
+            "ci": 2.32
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.48,
-            "ci": 0.03
+            "score": 0.46,
+            "ci": 0.1
           },
           {
             "name": "Cost/Task",
@@ -303,93 +419,44 @@
         "sessions": 1050
       },
       {
-        "rank": 2,
-        "model": "Claude Opus 5.5 (High)",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "scores": [
-          {
-            "name": "Net Improvement",
-            "score": 13.82,
-            "ci": 2.17
-          },
-          {
-            "name": "Confirmed Success",
-            "score": 14.12,
-            "ci": 4.06
-          },
-          {
-            "name": "Praise vs Complaint",
-            "score": 31.23,
-            "ci": 8.72
-          },
-          {
-            "name": "Steerability",
-            "score": 10.48,
-            "ci": 2.38
-          },
-          {
-            "name": "Bash Recovery",
-            "score": 12.78,
-            "ci": 0.87
-          },
-          {
-            "name": "Tool Hallucination",
-            "score": 0.47,
-            "ci": 0.04
-          },
-          {
-            "name": "Cost/Task",
-            "score": 5.0,
-            "ci": null
-          },
-          {
-            "name": "Output Tokens/Task",
-            "score": null,
-            "ci": null
-          }
-        ],
-        "sessions": 420
-      },
-      {
-        "rank": 3,
+        "rank": 4,
         "model": "Claude Sonnet 5.5 (Max)",
         "vendor": "Anthropic",
         "license": "proprietary",
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 12.52,
-            "ci": 3.09
+            "score": 11.95,
+            "ci": 3.31
           },
           {
             "name": "Confirmed Success",
-            "score": 13.91,
-            "ci": 5.35
+            "score": 15.83,
+            "ci": 5.06
           },
           {
             "name": "Praise vs Complaint",
-            "score": 26.27,
-            "ci": 13.05
+            "score": 23.37,
+            "ci": 14.09
           },
           {
             "name": "Steerability",
-            "score": 6.9,
-            "ci": 3.07
+            "score": 5.1,
+            "ci": 3.33
           },
           {
             "name": "Bash Recovery",
-            "score": 15.05,
-            "ci": 2.36
+            "score": 15.04,
+            "ci": 1.7
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.47,
-            "ci": 0.04
+            "score": 0.43,
+            "ci": 0.12
           },
           {
             "name": "Cost/Task",
-            "score": 5.0,
+            "score": 6.0,
             "ci": null
           },
           {
@@ -401,55 +468,6 @@
         "sessions": null
       },
       {
-        "rank": 4,
-        "model": "GPT 6 Astra (Max)",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "scores": [
-          {
-            "name": "Net Improvement",
-            "score": 12.27,
-            "ci": 2.23
-          },
-          {
-            "name": "Confirmed Success",
-            "score": 13.24,
-            "ci": 3.7
-          },
-          {
-            "name": "Praise vs Complaint",
-            "score": 34.63,
-            "ci": 9.33
-          },
-          {
-            "name": "Steerability",
-            "score": 7.75,
-            "ci": 2.64
-          },
-          {
-            "name": "Bash Recovery",
-            "score": 5.34,
-            "ci": 1.8
-          },
-          {
-            "name": "Tool Hallucination",
-            "score": 0.39,
-            "ci": 0.14
-          },
-          {
-            "name": "Cost/Task",
-            "score": 11.0,
-            "ci": null
-          },
-          {
-            "name": "Output Tokens/Task",
-            "score": null,
-            "ci": null
-          }
-        ],
-        "sessions": 1050
-      },
-      {
         "rank": 5,
         "model": "GPT 6.1 Sol (Max)",
         "vendor": "OpenAI",
@@ -457,37 +475,37 @@
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 11.23,
-            "ci": 2.76
+            "score": 11.72,
+            "ci": 3.05
           },
           {
             "name": "Confirmed Success",
-            "score": 15.47,
-            "ci": 4.1
+            "score": 14.74,
+            "ci": 4.18
           },
           {
             "name": "Praise vs Complaint",
-            "score": 25.53,
-            "ci": 12.05
+            "score": 30.32,
+            "ci": 12.99
           },
           {
             "name": "Steerability",
-            "score": 11.18,
-            "ci": 2.78
+            "score": 8.52,
+            "ci": 3.07
           },
           {
             "name": "Bash Recovery",
-            "score": 3.47,
-            "ci": 1.71
+            "score": 4.53,
+            "ci": 1.59
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.49,
+            "score": 0.51,
             "ci": 0.03
           },
           {
             "name": "Cost/Task",
-            "score": 6.0,
+            "score": 8.0,
             "ci": null
           },
           {
@@ -506,32 +524,32 @@
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 9.71,
-            "ci": 2.37
+            "score": 9.92,
+            "ci": 2.38
           },
           {
             "name": "Confirmed Success",
-            "score": 7.13,
-            "ci": 4.3
+            "score": 6.97,
+            "ci": 4.34
           },
           {
             "name": "Praise vs Complaint",
-            "score": 23.06,
-            "ci": 9.6
+            "score": 23.55,
+            "ci": 9.64
           },
           {
             "name": "Steerability",
-            "score": 11.23,
-            "ci": 2.04
+            "score": 11.92,
+            "ci": 2.02
           },
           {
             "name": "Bash Recovery",
-            "score": 7.01,
-            "ci": 1.84
+            "score": 7.03,
+            "ci": 1.92
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.12,
+            "score": 0.14,
             "ci": 0.14
           },
           {
@@ -549,43 +567,43 @@
       },
       {
         "rank": 7,
-        "model": "Claude Opus 5 (High)",
-        "vendor": "Anthropic",
+        "model": "Gemini 4 Argon (High)",
+        "vendor": "Google",
         "license": "proprietary",
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 8.67,
-            "ci": 1.41
+            "score": 9.26,
+            "ci": 2.36
           },
           {
             "name": "Confirmed Success",
-            "score": 7.56,
-            "ci": 2.99
+            "score": 15.64,
+            "ci": 3.26
           },
           {
             "name": "Praise vs Complaint",
-            "score": 16.56,
-            "ci": 5.2
+            "score": 40.6,
+            "ci": 9.56
           },
           {
             "name": "Steerability",
-            "score": 6.63,
-            "ci": 1.78
+            "score": 11.64,
+            "ci": 2.1
           },
           {
             "name": "Bash Recovery",
-            "score": 12.13,
-            "ci": 0.83
+            "score": 21.41,
+            "ci": 3.8
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.48,
-            "ci": 0.03
+            "score": 0.18,
+            "ci": 0.34
           },
           {
             "name": "Cost/Task",
-            "score": 27.0,
+            "score": 17.0,
             "ci": null
           },
           {
@@ -594,7 +612,7 @@
             "ci": null
           }
         ],
-        "sessions": 525
+        "sessions": 210
       },
       {
         "rank": 8,
@@ -604,33 +622,33 @@
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 8.21,
-            "ci": 1.22
+            "score": 8.94,
+            "ci": 1.27
           },
           {
             "name": "Confirmed Success",
-            "score": 6.07,
-            "ci": 2.61
+            "score": 5.79,
+            "ci": 2.6
           },
           {
             "name": "Praise vs Complaint",
-            "score": 17.08,
-            "ci": 4.57
+            "score": 19.34,
+            "ci": 4.8
           },
           {
             "name": "Steerability",
-            "score": 8.9,
-            "ci": 1.31
+            "score": 9.49,
+            "ci": 1.39
           },
           {
             "name": "Bash Recovery",
-            "score": 8.52,
-            "ci": 1.31
+            "score": 9.6,
+            "ci": 1.22
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.49,
-            "ci": 0.03
+            "score": 0.47,
+            "ci": 0.08
           },
           {
             "name": "Cost/Task",
@@ -653,33 +671,33 @@
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 7.92,
+            "score": 8.12,
             "ci": 1.47
           },
           {
             "name": "Confirmed Success",
-            "score": 9.52,
-            "ci": 3.07
+            "score": 10.42,
+            "ci": 3.1
           },
           {
             "name": "Praise vs Complaint",
-            "score": 12.01,
-            "ci": 5.43
+            "score": 11.86,
+            "ci": 5.46
           },
           {
             "name": "Steerability",
-            "score": 4.35,
-            "ci": 2.02
+            "score": 4.22,
+            "ci": 2.01
           },
           {
             "name": "Bash Recovery",
-            "score": 13.27,
-            "ci": 0.76
+            "score": 13.57,
+            "ci": 0.79
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.47,
-            "ci": 0.04
+            "score": 0.5,
+            "ci": 0.03
           },
           {
             "name": "Cost/Task",
@@ -696,43 +714,43 @@
       },
       {
         "rank": 10,
-        "model": "Gemini 4 Argon (High)",
-        "vendor": "Google",
+        "model": "Claude Opus 5 (High)",
+        "vendor": "Anthropic",
         "license": "proprietary",
         "scores": [
           {
             "name": "Net Improvement",
-            "score": 7.57,
-            "ci": 1.93
+            "score": 7.95,
+            "ci": 1.39
           },
           {
             "name": "Confirmed Success",
-            "score": 15.44,
-            "ci": 2.96
+            "score": 8.37,
+            "ci": 2.99
           },
           {
             "name": "Praise vs Complaint",
-            "score": 27.72,
-            "ci": 7.58
+            "score": 12.43,
+            "ci": 5.05
           },
           {
             "name": "Steerability",
-            "score": 13.48,
-            "ci": 1.74
+            "score": 5.83,
+            "ci": 1.85
           },
           {
             "name": "Bash Recovery",
-            "score": 18.93,
-            "ci": 3.49
+            "score": 12.64,
+            "ci": 0.77
           },
           {
             "name": "Tool Hallucination",
-            "score": 0.13,
-            "ci": 0.22
+            "score": 0.5,
+            "ci": 0.03
           },
           {
             "name": "Cost/Task",
-            "score": 10.0,
+            "score": 27.0,
             "ci": null
           },
           {
@@ -741,9 +759,10 @@
             "ci": null
           }
         ],
-        "sessions": 210
+        "sessions": 525
       }
     ],
+    "arena_chat": [],
     "arena_code": [],
     "arena_document": [
       {
@@ -837,98 +856,7 @@
         "votes": null
       }
     ],
-    "arena_image-edit": [
-      {
-        "rank": 1,
-        "model": "gpt-image-2.5-sunburst",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1524.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 2,
-        "model": "gpt-image-2.5-flare",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1481.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 3,
-        "model": "gpt-image-2 (medium)",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1462.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 4,
-        "model": "grok-imagine-image-2.0 (canvas)",
-        "vendor": "SpaceXAI",
-        "license": "proprietary",
-        "score": 1439.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 5,
-        "model": "mai-image-2.6",
-        "vendor": "Microsoft AI",
-        "license": "proprietary",
-        "score": 1428.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "gemini-nano-banana-2.1",
-        "vendor": "Google",
-        "license": "proprietary",
-        "score": 1428.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 7,
-        "model": "grok-imagine-image-2.0 (20260801)",
-        "vendor": "SpaceXAI",
-        "license": "proprietary",
-        "score": 1425.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 8,
-        "model": "muse-image",
-        "vendor": "Meta",
-        "license": "proprietary",
-        "score": 1403.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 9,
-        "model": "mai-image-2.5",
-        "vendor": "Microsoft AI",
-        "license": "proprietary",
-        "score": 1401.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 10,
-        "model": "seedream-5.0-pro",
-        "vendor": "Bytedance",
-        "license": "proprietary",
-        "score": 1394.0,
-        "ci": null,
-        "votes": null
-      }
-    ],
+    "arena_image-edit": [],
     "arena_image-to-video": [
       {
         "rank": 1,
@@ -1021,6 +949,7 @@
         "votes": null
       }
     ],
+    "arena_image": [],
     "arena_search": [
       {
         "rank": 1,
@@ -1309,30 +1238,30 @@
       },
       {
         "rank": 2,
-        "model": "claude-opus-4-6-high",
+        "model": "claude-opus-5.5-high",
         "vendor": "Anthropic",
         "license": "proprietary",
-        "score": 1505.0,
-        "ci": 3.0,
-        "votes": 77636
+        "score": 1507.0,
+        "ci": 8.0,
+        "votes": 6272
       },
       {
         "rank": 3,
+        "model": "claude-opus-4-6-high",
+        "vendor": "Anthropic",
+        "license": "proprietary",
+        "score": 1504.0,
+        "ci": 3.0,
+        "votes": 79415
+      },
+      {
+        "rank": 4,
         "model": "claude-fable-5-high",
         "vendor": "Anthropic",
         "license": "proprietary",
         "score": 1504.0,
         "ci": 4.0,
-        "votes": 38387
-      },
-      {
-        "rank": 4,
-        "model": "claude-opus-5.5-high",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "score": 1504.0,
-        "ci": 9.0,
-        "votes": 4552
+        "votes": 40026
       },
       {
         "rank": 5,
@@ -1341,7 +1270,7 @@
         "license": "proprietary",
         "score": 1501.0,
         "ci": 4.0,
-        "votes": 64946
+        "votes": 65192
       },
       {
         "rank": 6,
@@ -1350,23 +1279,23 @@
         "license": "proprietary",
         "score": 1501.0,
         "ci": 6.0,
-        "votes": 11800
+        "votes": 13063
       },
       {
         "rank": 7,
         "model": "claude-opus-4-6",
         "vendor": "Anthropic",
         "license": "proprietary",
-        "score": 1497.0,
+        "score": 1498.0,
         "ci": 3.0,
-        "votes": 82189
+        "votes": 84095
       },
       {
         "rank": 8,
         "model": "gemini-3.8-flash-high",
         "vendor": "Google",
         "license": "proprietary",
-        "score": 1495.0,
+        "score": 1497.0,
         "ci": 5.0,
         "votes": null
       },
@@ -1377,7 +1306,7 @@
         "license": "proprietary",
         "score": 1494.0,
         "ci": 6.0,
-        "votes": 12343
+        "votes": 14694
       },
       {
         "rank": 10,
@@ -1386,7 +1315,7 @@
         "license": "proprietary",
         "score": 1494.0,
         "ci": 4.0,
-        "votes": 66058
+        "votes": 66315
       }
     ],
     "arena_video-edit": [
@@ -1481,6 +1410,7 @@
         "votes": null
       }
     ],
+    "arena_video": [],
     "arena_vision": [
       {
         "rank": 1,
@@ -2586,14 +2516,14 @@
         "model": "claude-fable-5-1",
         "name": "Claude Fable 5.1",
         "creator": "Anthropic",
-        "score": 90.3,
+        "score": 90.5,
         "category_rank": 3
       },
       {
         "model": "claude-opus-5",
         "name": "Claude Opus 5",
         "creator": "Anthropic",
-        "score": 89.5,
+        "score": 89.6,
         "category_rank": 7
       },
       {
@@ -2614,42 +2544,42 @@
         "model": "claude-sonnet-5-5",
         "name": "Claude Sonnet 5.5",
         "creator": "Anthropic",
-        "score": 86.6,
+        "score": 86.8,
         "category_rank": 1
       },
       {
         "model": "claude-opus-5-5",
         "name": "Claude Opus 5.5",
         "creator": "Anthropic",
-        "score": 86.6,
+        "score": 86.8,
         "category_rank": 2
       },
       {
         "model": "gemini-3-7-flash",
         "name": "Gemini 3.7 Flash",
         "creator": "Google",
-        "score": 76.9,
+        "score": 77.9,
         "category_rank": 23
       },
       {
         "model": "sakana-fugu-ultra",
         "name": "Sakana Fugu-Ultra",
         "creator": "Sakana AI",
-        "score": 76.7,
+        "score": 77.8,
         "category_rank": null
       },
       {
         "model": "gemini-3-1-pro",
         "name": "Gemini 3.1 Pro",
         "creator": "Google",
-        "score": 76.4,
+        "score": 77.3,
         "category_rank": 63
       },
       {
         "model": "step-5-preview",
         "name": "Step 5 Preview",
         "creator": "StepFun",
-        "score": 75.9,
+        "score": 76.9,
         "category_rank": 19
       }
     ],
@@ -3199,72 +3129,135 @@
     ],
     "movers": [
       {
-        "board": "AA Intelligence",
-        "model": "sk-telecom/a-x-k2",
-        "previous": 22.7,
-        "current": 21.5,
-        "delta": 1.2
+        "board": "Arena Text",
+        "model": "claude-sonnet-5.5-xhigh",
+        "previous": 45,
+        "current": 32,
+        "delta": 13
+      },
+      {
+        "board": "Arena Text",
+        "model": "Step 5 Preview",
+        "previous": 74,
+        "current": 83,
+        "delta": -9
+      },
+      {
+        "board": "Arena Text",
+        "model": "gpt-6-astra-max",
+        "previous": 29,
+        "current": 35,
+        "delta": -6
+      },
+      {
+        "board": "Arena Text",
+        "model": "hy3",
+        "previous": 67,
+        "current": 73,
+        "delta": -6
+      },
+      {
+        "board": "Arena Text",
+        "model": "glm-5.3-flash",
+        "previous": 41,
+        "current": 38,
+        "delta": 3
+      },
+      {
+        "board": "Arena Text",
+        "model": "claude-opus-4-8",
+        "previous": 37,
+        "current": 40,
+        "delta": -3
+      },
+      {
+        "board": "Arena Text",
+        "model": "gpt-6-sol-max",
+        "previous": 64,
+        "current": 67,
+        "delta": -3
+      },
+      {
+        "board": "Arena Text",
+        "model": "muse-glimmer",
+        "previous": 120,
+        "current": 123,
+        "delta": -3
+      },
+      {
+        "board": "Arena Text",
+        "model": "deepseek-v3.1-terminus-thinking",
+        "previous": 133,
+        "current": 136,
+        "delta": -3
+      },
+      {
+        "board": "Arena Text",
+        "model": "amazon-nova-experimental-chat-12-10",
+        "previous": 167,
+        "current": 170,
+        "delta": -3
       }
     ],
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 33606024447486,
-        "requests": 545768577,
+        "tokens": 35593745928271,
+        "requests": 574398705,
         "rank": 1
       },
       {
         "model": "stealth/space-bunny-alpha",
-        "tokens": 28002288288187,
-        "requests": 413996536,
+        "tokens": 22835599586634,
+        "requests": 347403041,
         "rank": 2
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 10494164216339,
-        "requests": 544512187,
+        "tokens": 10843334454956,
+        "requests": 682121679,
         "rank": 3
       },
       {
         "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 10095839060238,
-        "requests": 119840985,
+        "tokens": 10506391088318,
+        "requests": 125626112,
         "rank": 4
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 6736262188645,
-        "requests": 58998961,
+        "tokens": 7358279515016,
+        "requests": 65405682,
         "rank": 5
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 6485184211047,
-        "requests": 304257649,
+        "tokens": 6597842080291,
+        "requests": 310651974,
         "rank": 6
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 5973165920829,
-        "requests": 47063238,
+        "tokens": 6187071808431,
+        "requests": 48521481,
         "rank": 7
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 5533230081137,
-        "requests": 403026008,
+        "tokens": 5279227597383,
+        "requests": 401145865,
         "rank": 8
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 3377108704725,
-        "requests": 31679486,
+        "tokens": 3836223852131,
+        "requests": 36188510,
         "rank": 9
       },
       {
         "model": "typesafe/jev-1.13-20260917",
-        "tokens": 3322569762328,
-        "requests": 981107613,
+        "tokens": 3312571530048,
+        "requests": 986507318,
         "rank": 10
       }
     ],
@@ -3272,8 +3265,8 @@
       {
         "model": "deepseek/deepseek-v4-flash",
         "aa_intelligence": 24.2,
-        "prompt_price_per_m": 0.03,
-        "value": 806.67
+        "prompt_price_per_m": 0.0057,
+        "value": 4245.61
       },
       {
         "model": "openai/gpt-oss-20b",

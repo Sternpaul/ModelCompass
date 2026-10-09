@@ -31,16 +31,16 @@ _Code generation category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-1` | 90.300 |
-| 2 | `claude-opus-5` | 89.500 |
+| 1 | `claude-fable-5-1` | 90.500 |
+| 2 | `claude-opus-5` | 89.600 |
 | 3 | `claude-fable` | 89.500 |
 | 4 | `claude-mythos-5` | 87.300 |
-| 5 | `claude-sonnet-5-5` | 86.600 |
-| 6 | `claude-opus-5-5` | 86.600 |
-| 7 | `gemini-3-7-flash` | 76.900 |
-| 8 | `sakana-fugu-ultra` | 76.700 |
-| 9 | `gemini-3-1-pro` | 76.400 |
-| 10 | `step-5-preview` | 75.900 |
+| 5 | `claude-sonnet-5-5` | 86.800 |
+| 6 | `claude-opus-5-5` | 86.800 |
+| 7 | `gemini-3-7-flash` | 77.900 |
+| 8 | `sakana-fugu-ultra` | 77.800 |
+| 9 | `gemini-3-1-pro` | 77.300 |
+| 10 | `step-5-preview` | 76.900 |
 
 ## Instruction Following
 

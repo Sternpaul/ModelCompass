@@ -13,16 +13,23 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `Claude Fable 5.1 (Max)` | Net Improvement: 14.31, Confirmed Success: 17.64, Praise vs Complaint: 32.19, Steerability: 8.84, Bash Recovery: 12.39, Tool Hallucination: 0.48, Cost/Task: 15.0, Output Tokens/Task: None |
-| 2 | `Claude Opus 5.5 (High)` | Net Improvement: 13.82, Confirmed Success: 14.12, Praise vs Complaint: 31.23, Steerability: 10.48, Bash Recovery: 12.78, Tool Hallucination: 0.47, Cost/Task: 5.0, Output Tokens/Task: None |
-| 3 | `Claude Sonnet 5.5 (Max)` | Net Improvement: 12.52, Confirmed Success: 13.91, Praise vs Complaint: 26.27, Steerability: 6.9, Bash Recovery: 15.05, Tool Hallucination: 0.47, Cost/Task: 5.0, Output Tokens/Task: None |
-| 4 | `GPT 6 Astra (Max)` | Net Improvement: 12.27, Confirmed Success: 13.24, Praise vs Complaint: 34.63, Steerability: 7.75, Bash Recovery: 5.34, Tool Hallucination: 0.39, Cost/Task: 11.0, Output Tokens/Task: None |
-| 5 | `GPT 6.1 Sol (Max)` | Net Improvement: 11.23, Confirmed Success: 15.47, Praise vs Complaint: 25.53, Steerability: 11.18, Bash Recovery: 3.47, Tool Hallucination: 0.49, Cost/Task: 6.0, Output Tokens/Task: None |
-| 6 | `GPT 6 Sol (Max)` | Net Improvement: 9.71, Confirmed Success: 7.13, Praise vs Complaint: 23.06, Steerability: 11.23, Bash Recovery: 7.01, Tool Hallucination: 0.12, Cost/Task: 6.0, Output Tokens/Task: None |
-| 7 | `Claude Opus 5 (High)` | Net Improvement: 8.67, Confirmed Success: 7.56, Praise vs Complaint: 16.56, Steerability: 6.63, Bash Recovery: 12.13, Tool Hallucination: 0.48, Cost/Task: 27.0, Output Tokens/Task: None |
-| 8 | `Claude Fable 5 (High)` | Net Improvement: 8.21, Confirmed Success: 6.07, Praise vs Complaint: 17.08, Steerability: 8.9, Bash Recovery: 8.52, Tool Hallucination: 0.49, Cost/Task: 41.0, Output Tokens/Task: None |
-| 9 | `Claude Opus 5 (Max)` | Net Improvement: 7.92, Confirmed Success: 9.52, Praise vs Complaint: 12.01, Steerability: 4.35, Bash Recovery: 13.27, Tool Hallucination: 0.47, Cost/Task: 22.0, Output Tokens/Task: None |
-| 10 | `Gemini 4 Argon (High)` | Net Improvement: 7.57, Confirmed Success: 15.44, Praise vs Complaint: 27.72, Steerability: 13.48, Bash Recovery: 18.93, Tool Hallucination: 0.13, Cost/Task: 10.0, Output Tokens/Task: None |
+| 1 | `Claude Opus 5.5 (High)` | Net Improvement: 14.33, Confirmed Success: 13.93, Praise vs Complaint: 33.69, Steerability: 9.98, Bash Recovery: 13.55, Tool Hallucination: 0.5, Cost/Task: 6.0, Output Tokens/Task: None |
+| 2 | `GPT 6 Astra (Max)` | Net Improvement: 13.09, Confirmed Success: 12.13, Praise vs Complaint: 38.54, Steerability: 8.85, Bash Recovery: 5.53, Tool Hallucination: 0.43, Cost/Task: 12.0, Output Tokens/Task: None |
+| 3 | `Claude Fable 5.1 (Max)` | Net Improvement: 12.66, Confirmed Success: 16.19, Praise vs Complaint: 26.22, Steerability: 8.84, Bash Recovery: 11.6, Tool Hallucination: 0.46, Cost/Task: 15.0, Output Tokens/Task: None |
+| 4 | `Claude Sonnet 5.5 (Max)` | Net Improvement: 11.95, Confirmed Success: 15.83, Praise vs Complaint: 23.37, Steerability: 5.1, Bash Recovery: 15.04, Tool Hallucination: 0.43, Cost/Task: 6.0, Output Tokens/Task: None |
+| 5 | `GPT 6.1 Sol (Max)` | Net Improvement: 11.72, Confirmed Success: 14.74, Praise vs Complaint: 30.32, Steerability: 8.52, Bash Recovery: 4.53, Tool Hallucination: 0.51, Cost/Task: 8.0, Output Tokens/Task: None |
+| 6 | `GPT 6 Sol (Max)` | Net Improvement: 9.92, Confirmed Success: 6.97, Praise vs Complaint: 23.55, Steerability: 11.92, Bash Recovery: 7.03, Tool Hallucination: 0.14, Cost/Task: 6.0, Output Tokens/Task: None |
+| 7 | `Gemini 4 Argon (High)` | Net Improvement: 9.26, Confirmed Success: 15.64, Praise vs Complaint: 40.6, Steerability: 11.64, Bash Recovery: 21.41, Tool Hallucination: 0.18, Cost/Task: 17.0, Output Tokens/Task: None |
+| 8 | `Claude Fable 5 (High)` | Net Improvement: 8.94, Confirmed Success: 5.79, Praise vs Complaint: 19.34, Steerability: 9.49, Bash Recovery: 9.6, Tool Hallucination: 0.47, Cost/Task: 41.0, Output Tokens/Task: None |
+| 9 | `Claude Opus 5 (Max)` | Net Improvement: 8.12, Confirmed Success: 10.42, Praise vs Complaint: 11.86, Steerability: 4.22, Bash Recovery: 13.57, Tool Hallucination: 0.5, Cost/Task: 22.0, Output Tokens/Task: None |
+| 10 | `Claude Opus 5 (High)` | Net Improvement: 7.95, Confirmed Success: 8.37, Praise vs Complaint: 12.43, Steerability: 5.83, Bash Recovery: 12.64, Tool Hallucination: 0.5, Cost/Task: 27.0, Output Tokens/Task: None |
+
+## Chat Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
 
 ## Code Arena
 
@@ -49,23 +56,19 @@ _Human-preference Elo._
 | 9 | `gpt-5.5-high` | 1484.000 |
 | 10 | `gpt-5.6-sol-xhigh` | 1483.000 |
 
+## Image Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
 ## Image Edit Arena
 
 _Human-preference Elo._
 
 
-| # | Model | Score |
-|---|-------|------:|
-| 1 | `gpt-image-2.5-sunburst` | 1524.000 |
-| 2 | `gpt-image-2.5-flare` | 1481.000 |
-| 3 | `gpt-image-2 (medium)` | 1462.000 |
-| 4 | `grok-imagine-image-2.0 (canvas)` | 1439.000 |
-| 5 | `mai-image-2.6` | 1428.000 |
-| 6 | `gemini-nano-banana-2.1` | 1428.000 |
-| 7 | `grok-imagine-image-2.0 (20260801)` | 1425.000 |
-| 8 | `muse-image` | 1403.000 |
-| 9 | `mai-image-2.5` | 1401.000 |
-| 10 | `seedream-5.0-pro` | 1394.000 |
+_No models yet._
 
 ## Image To Video Arena
 
@@ -111,13 +114,13 @@ _Human-preference Elo._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gemini-4-argon-high` | 1525.000 |
-| 2 | `claude-opus-4-6-high` | 1505.000 |
-| 3 | `claude-fable-5-high` | 1504.000 |
-| 4 | `claude-opus-5.5-high` | 1504.000 |
+| 2 | `claude-opus-5.5-high` | 1507.000 |
+| 3 | `claude-opus-4-6-high` | 1504.000 |
+| 4 | `claude-fable-5-high` | 1504.000 |
 | 5 | `claude-opus-4-7-high` | 1501.000 |
 | 6 | `claude-fable-5.1-max` | 1501.000 |
-| 7 | `claude-opus-4-6` | 1497.000 |
-| 8 | `gemini-3.8-flash-high` | 1495.000 |
+| 7 | `claude-opus-4-6` | 1498.000 |
+| 8 | `gemini-3.8-flash-high` | 1497.000 |
 | 9 | `muse-spark-1.3-max` | 1494.000 |
 | 10 | `claude-opus-4-7` | 1494.000 |
 
@@ -156,6 +159,13 @@ _Human-preference Elo._
 | 8 | `minimax-h3` | 1460.000 |
 | 9 | `muse-video` | 1456.000 |
 | 10 | `happyhorse-1.0` | 1427.000 |
+
+## Video Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
 
 ## Video Edit Arena
 
