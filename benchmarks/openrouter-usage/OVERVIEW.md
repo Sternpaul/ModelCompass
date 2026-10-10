@@ -22,4 +22,4 @@ _Rank by total tokens processed; requests kept alongside._
 | 7 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 8 | `deepseek/deepseek-v4-flash-20260731` | — |
 | 9 | `anthropic/claude-opus-5.5-20260921` | — |
-| 10 | `typesafe/jev-1.13-20260917` | — |
+| 10 | `z-ai/glm-5.3-20260816` | — |

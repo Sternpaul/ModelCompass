@@ -192,13 +192,13 @@ _Human-preference Elo._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `claude-fable-5-high` | 1309.000 |
+| 1 | `claude-fable-5-high` | 1308.000 |
 | 2 | `qwen3.8-max` | 1301.000 |
 | 3 | `claude-opus-4-6-high` | 1299.000 |
 | 4 | `claude-opus-4-7` | 1298.000 |
 | 5 | `claude-opus-4-7-high` | 1298.000 |
-| 6 | `gemini-3.7-flash-high` | 1296.000 |
+| 6 | `gemini-3.7-flash-high` | 1297.000 |
 | 7 | `claude-opus-4-6` | 1294.000 |
-| 8 | `muse-spark` | 1294.000 |
-| 9 | `muse-spark-1.2 (xHigh)` | 1293.000 |
-| 10 | `gpt-6.1-sol-max` | 1291.000 |
+| 8 | `gpt-6.1-sol-max` | 1294.000 |
+| 9 | `muse-spark` | 1294.000 |
+| 10 | `muse-spark-1.2 (xHigh)` | 1293.000 |

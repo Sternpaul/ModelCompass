@@ -12,10 +12,10 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 33 (text) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 41 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 50 (agent) |
-| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 54 (vision) |
+| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 60 (vision) |
 | deepseek-v4-pro:free | openrouter/unorouter | 36.0 | 68.8 | 62 (text) |
-| mimo-v2-5:free | kenari/openrouter | — | — | 65 (vision) |
-| mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 86 (vision) |
+| mimo-v2-5:free | kenari/openrouter | — | — | 71 (vision) |
+| mistral-medium-3-5:free | kenari/openrouter | 14.2 | 46.9 | 91 (vision) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 103 (text) |
 | minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 138 (text) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 199 (text) |
