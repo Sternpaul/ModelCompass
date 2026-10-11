@@ -46,6 +46,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
+| stealth/missingno | nous | — | — | — |
 | stepfun/step-5-preview:free | nous | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
 | stealth/space-bunny-alpha | nous | — | — | — |

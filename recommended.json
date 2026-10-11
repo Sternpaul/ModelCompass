@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-11T02:24:49.141874+00:00",
+    "generated_at": "2026-10-11T10:43:22.827564+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -247,12 +247,6 @@
         "source": "https://deepswe.datacurve.ai/artifacts/v1.1/leaderboard-live.json",
         "subdir": "deepswe",
         "model_count": 70,
-        "top_n": 10
-      },
-      "movers": {
-        "source": "unknown",
-        "subdir": "movers",
-        "model_count": 200,
         "top_n": 10
       },
       "or_usage_tokens": {
@@ -3127,78 +3121,6 @@
         "rank": 10
       }
     ],
-    "movers": [
-      {
-        "board": "Arena Text",
-        "model": "claude-sonnet-5.5-xhigh",
-        "previous": 45,
-        "current": 32,
-        "delta": 13
-      },
-      {
-        "board": "Arena Text",
-        "model": "Step 5 Preview",
-        "previous": 74,
-        "current": 83,
-        "delta": -9
-      },
-      {
-        "board": "Arena Text",
-        "model": "gpt-6-astra-max",
-        "previous": 29,
-        "current": 35,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "hy3",
-        "previous": 67,
-        "current": 73,
-        "delta": -6
-      },
-      {
-        "board": "Arena Text",
-        "model": "glm-5.3-flash",
-        "previous": 41,
-        "current": 38,
-        "delta": 3
-      },
-      {
-        "board": "Arena Text",
-        "model": "claude-opus-4-8",
-        "previous": 37,
-        "current": 40,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "gpt-6-sol-max",
-        "previous": 64,
-        "current": 67,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "muse-glimmer",
-        "previous": 120,
-        "current": 123,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "deepseek-v3.1-terminus-thinking",
-        "previous": 133,
-        "current": 136,
-        "delta": -3
-      },
-      {
-        "board": "Arena Text",
-        "model": "amazon-nova-experimental-chat-12-10",
-        "previous": 167,
-        "current": 170,
-        "delta": -3
-      }
-    ],
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
@@ -3208,8 +3130,8 @@
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11629838424025,
-        "requests": 705561821,
+        "tokens": 11629879425871,
+        "requests": 705562893,
         "rank": 2
       },
       {
@@ -3232,8 +3154,8 @@
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 7149576460767,
-        "requests": 337022886,
+        "tokens": 7150435477964,
+        "requests": 337203734,
         "rank": 6
       },
       {

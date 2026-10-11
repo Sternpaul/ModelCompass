@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-11T02:24:49.165815+00:00",
+    "generated_at": "2026-10-11T10:43:22.850930+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -796,25 +796,6 @@
       }
     },
     {
-      "model": "claude-opus-4-8",
-      "top_appearances": 3,
-      "borda_points": 17,
-      "benchmarks": {
-        "benchlm_knowledge": {
-          "rank": 5,
-          "score": 87.5
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 5,
-          "score": 91.2
-        },
-        "movers": {
-          "rank": 6,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "claude-opus-4-7-high",
       "top_appearances": 3,
       "borda_points": 16,
@@ -1124,6 +1105,21 @@
         "aa_mmlu_pro": {
           "rank": 2,
           "score": 0.895
+        }
+      }
+    },
+    {
+      "model": "claude-opus-4-8",
+      "top_appearances": 2,
+      "borda_points": 12,
+      "benchmarks": {
+        "benchlm_knowledge": {
+          "rank": 5,
+          "score": 87.5
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 5,
+          "score": 91.2
         }
       }
     },
@@ -1493,17 +1489,6 @@
       }
     },
     {
-      "model": "claude-sonnet-5.5-xhigh",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "movers": {
-          "rank": 1,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4.1-flash-20260910",
       "top_appearances": 1,
       "borda_points": 10,
@@ -1632,17 +1617,6 @@
         "benchlm_multilingual": {
           "rank": 2,
           "score": 96.5
-        }
-      }
-    },
-    {
-      "model": "Step 5 Preview",
-      "top_appearances": 1,
-      "borda_points": 9,
-      "benchmarks": {
-        "movers": {
-          "rank": 2,
-          "score": null
         }
       }
     },
@@ -1812,17 +1786,6 @@
       }
     },
     {
-      "model": "gpt-6-astra-max",
-      "top_appearances": 1,
-      "borda_points": 8,
-      "benchmarks": {
-        "movers": {
-          "rank": 3,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "xiaomi/mimo-v2.6-flash-20260921",
       "top_appearances": 1,
       "borda_points": 8,
@@ -1955,17 +1918,6 @@
       }
     },
     {
-      "model": "hy3",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "movers": {
-          "rank": 4,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "stealth/space-bunny-alpha",
       "top_appearances": 1,
       "borda_points": 7,
@@ -2094,17 +2046,6 @@
         "benchlm_multilingual": {
           "rank": 5,
           "score": 93.8
-        }
-      }
-    },
-    {
-      "model": "glm-5.3-flash",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "movers": {
-          "rank": 5,
-          "score": null
         }
       }
     },
@@ -2428,17 +2369,6 @@
       }
     },
     {
-      "model": "gpt-6-sol-max",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "movers": {
-          "rank": 7,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 4,
@@ -2677,17 +2607,6 @@
         "benchlm_reasoning": {
           "rank": 8,
           "score": 83.4
-        }
-      }
-    },
-    {
-      "model": "muse-glimmer",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "movers": {
-          "rank": 8,
-          "score": null
         }
       }
     },
@@ -2945,17 +2864,6 @@
       }
     },
     {
-      "model": "deepseek-v3.1-terminus-thinking",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "movers": {
-          "rank": 9,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "deepseek/deepseek-v4-flash-20260731",
       "top_appearances": 1,
       "borda_points": 2,
@@ -3172,17 +3080,6 @@
         "benchlm_reasoning": {
           "rank": 10,
           "score": 83.4
-        }
-      }
-    },
-    {
-      "model": "amazon-nova-experimental-chat-12-10",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "movers": {
-          "rank": 10,
-          "score": null
         }
       }
     },
