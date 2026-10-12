@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-10-11T10:43:22.827564+00:00",
+    "generated_at": "2026-10-12T11:49:13.118797+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
         "source": "https://arena.ai/leaderboard/agent",
         "subdir": "arena",
-        "model_count": 52,
+        "model_count": 53,
         "top_n": 10
       },
       "arena_chat": {
@@ -252,7 +252,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 560,
+        "model_count": 559,
         "top_n": 10
       },
       "price_performance": {
@@ -267,6 +267,55 @@
     "arena_agent": [
       {
         "rank": 1,
+        "model": "Claude Opus 5.5 (Max)",
+        "vendor": "Anthropic",
+        "license": "proprietary",
+        "scores": [
+          {
+            "name": "Net Improvement",
+            "score": 15.53,
+            "ci": 4.63
+          },
+          {
+            "name": "Confirmed Success",
+            "score": 17.29,
+            "ci": 6.02
+          },
+          {
+            "name": "Praise vs Complaint",
+            "score": 36.78,
+            "ci": 20.55
+          },
+          {
+            "name": "Steerability",
+            "score": 8.2,
+            "ci": 4.06
+          },
+          {
+            "name": "Bash Recovery",
+            "score": 15.01,
+            "ci": 1.63
+          },
+          {
+            "name": "Tool Hallucination",
+            "score": 0.37,
+            "ci": 0.18
+          },
+          {
+            "name": "Cost/Task",
+            "score": 4.0,
+            "ci": null
+          },
+          {
+            "name": "Output Tokens/Task",
+            "score": null,
+            "ci": null
+          }
+        ],
+        "sessions": 420
+      },
+      {
+        "rank": 2,
         "model": "Claude Opus 5.5 (High)",
         "vendor": "Anthropic",
         "license": "proprietary",
@@ -315,7 +364,7 @@
         "sessions": 420
       },
       {
-        "rank": 2,
+        "rank": 3,
         "model": "GPT 6 Astra (Max)",
         "vendor": "OpenAI",
         "license": "proprietary",
@@ -364,7 +413,7 @@
         "sessions": 1050
       },
       {
-        "rank": 3,
+        "rank": 4,
         "model": "Claude Fable 5.1 (Max)",
         "vendor": "Anthropic",
         "license": "proprietary",
@@ -413,7 +462,7 @@
         "sessions": 1050
       },
       {
-        "rank": 4,
+        "rank": 5,
         "model": "Claude Sonnet 5.5 (Max)",
         "vendor": "Anthropic",
         "license": "proprietary",
@@ -462,7 +511,7 @@
         "sessions": null
       },
       {
-        "rank": 5,
+        "rank": 6,
         "model": "GPT 6.1 Sol (Max)",
         "vendor": "OpenAI",
         "license": "proprietary",
@@ -511,7 +560,7 @@
         "sessions": 210
       },
       {
-        "rank": 6,
+        "rank": 7,
         "model": "GPT 6 Sol (Max)",
         "vendor": "OpenAI",
         "license": "proprietary",
@@ -560,7 +609,7 @@
         "sessions": 210
       },
       {
-        "rank": 7,
+        "rank": 8,
         "model": "Gemini 4 Argon (High)",
         "vendor": "Google",
         "license": "proprietary",
@@ -609,7 +658,7 @@
         "sessions": 210
       },
       {
-        "rank": 8,
+        "rank": 9,
         "model": "Claude Fable 5 (High)",
         "vendor": "Anthropic",
         "license": "proprietary",
@@ -658,7 +707,7 @@
         "sessions": 1050
       },
       {
-        "rank": 9,
+        "rank": 10,
         "model": "Claude Opus 5 (Max)",
         "vendor": "Anthropic",
         "license": "proprietary",
@@ -696,55 +745,6 @@
           {
             "name": "Cost/Task",
             "score": 22.0,
-            "ci": null
-          },
-          {
-            "name": "Output Tokens/Task",
-            "score": null,
-            "ci": null
-          }
-        ],
-        "sessions": 525
-      },
-      {
-        "rank": 10,
-        "model": "Claude Opus 5 (High)",
-        "vendor": "Anthropic",
-        "license": "proprietary",
-        "scores": [
-          {
-            "name": "Net Improvement",
-            "score": 7.95,
-            "ci": 1.39
-          },
-          {
-            "name": "Confirmed Success",
-            "score": 8.37,
-            "ci": 2.99
-          },
-          {
-            "name": "Praise vs Complaint",
-            "score": 12.43,
-            "ci": 5.05
-          },
-          {
-            "name": "Steerability",
-            "score": 5.83,
-            "ci": 1.85
-          },
-          {
-            "name": "Bash Recovery",
-            "score": 12.64,
-            "ci": 0.77
-          },
-          {
-            "name": "Tool Hallucination",
-            "score": 0.5,
-            "ci": 0.03
-          },
-          {
-            "name": "Cost/Task",
-            "score": 27.0,
             "ci": null
           },
           {
@@ -3124,62 +3124,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 38715640729230,
-        "requests": 633436873,
+        "tokens": 40975669296796,
+        "requests": 705916577,
         "rank": 1
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11629879425871,
-        "requests": 705562893,
+        "tokens": 12237201627639,
+        "requests": 723308922,
         "rank": 2
       },
       {
         "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 11334574593639,
-        "requests": 139830798,
+        "tokens": 11457378265672,
+        "requests": 142400886,
         "rank": 3
       },
       {
-        "model": "stealth/space-bunny-alpha",
-        "tokens": 10924315530825,
-        "requests": 167862342,
+        "model": "stepfun/step-5-preview-20261008",
+        "tokens": 8836310984404,
+        "requests": 47719581,
         "rank": 4
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 8406366715113,
-        "requests": 75498732,
+        "tokens": 8279453201884,
+        "requests": 74756323,
         "rank": 5
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 7150435477964,
-        "requests": 337203734,
+        "tokens": 7112195705621,
+        "requests": 347821098,
         "rank": 6
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 6660689468940,
-        "requests": 52398032,
+        "tokens": 6909525374933,
+        "requests": 54449151,
         "rank": 7
       },
       {
-        "model": "stepfun/step-5-preview-20261008",
-        "tokens": 6369447973315,
-        "requests": 34018437,
+        "model": "anthropic/claude-opus-5.5-20260921",
+        "tokens": 5025145057335,
+        "requests": 44154862,
         "rank": 8
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 5044996425725,
-        "requests": 381085120,
+        "tokens": 4916132482232,
+        "requests": 373663920,
         "rank": 9
       },
       {
-        "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 4688825616917,
-        "requests": 42420718,
+        "model": "stealth/space-bunny-alpha",
+        "tokens": 4196825632807,
+        "requests": 74719719,
         "rank": 10
       }
     ],
@@ -3233,16 +3233,16 @@
         "value": 148.33
       },
       {
-        "model": "deepseek/deepseek-v4-pro",
-        "aa_intelligence": 30.4,
-        "prompt_price_per_m": 0.2088,
-        "value": 145.59
-      },
-      {
         "model": "qwen/qwen3-coder-30b-a3b-instruct",
         "aa_intelligence": 9.6,
         "prompt_price_per_m": 0.07,
         "value": 137.14
+      },
+      {
+        "model": "tencent/hy3-preview",
+        "aa_intelligence": 22.7,
+        "prompt_price_per_m": 0.18,
+        "value": 126.11
       }
     ]
   }

@@ -2,8 +2,8 @@
   "meta": {
     "leaderboard": "agent",
     "source_url": "https://arena.ai/leaderboard/agent",
-    "fetched_at": "2026-10-11T10:42:47.558390+00:00",
-    "model_count": 52,
+    "fetched_at": "2026-10-12T11:48:11.923998+00:00",
+    "model_count": 53,
     "dimensions": [
       "Net Improvement",
       "Confirmed Success",
@@ -19,6 +19,55 @@
   "models": [
     {
       "rank": 1,
+      "model": "Claude Opus 5.5 (Max)",
+      "vendor": "Anthropic",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 15.53,
+          "ci": 4.63
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 17.29,
+          "ci": 6.02
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 36.78,
+          "ci": 20.55
+        },
+        {
+          "name": "Steerability",
+          "score": 8.2,
+          "ci": 4.06
+        },
+        {
+          "name": "Bash Recovery",
+          "score": 15.01,
+          "ci": 1.63
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.37,
+          "ci": 0.18
+        },
+        {
+          "name": "Cost/Task",
+          "score": 4.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 420
+    },
+    {
+      "rank": 2,
       "model": "Claude Opus 5.5 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -67,7 +116,7 @@
       "sessions": 420
     },
     {
-      "rank": 2,
+      "rank": 3,
       "model": "GPT 6 Astra (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -116,7 +165,7 @@
       "sessions": 1050
     },
     {
-      "rank": 3,
+      "rank": 4,
       "model": "Claude Fable 5.1 (Max)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -165,7 +214,7 @@
       "sessions": 1050
     },
     {
-      "rank": 4,
+      "rank": 5,
       "model": "Claude Sonnet 5.5 (Max)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -214,7 +263,7 @@
       "sessions": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "model": "GPT 6.1 Sol (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -263,7 +312,7 @@
       "sessions": 210
     },
     {
-      "rank": 6,
+      "rank": 7,
       "model": "GPT 6 Sol (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -312,7 +361,7 @@
       "sessions": 210
     },
     {
-      "rank": 7,
+      "rank": 8,
       "model": "Gemini 4 Argon (High)",
       "vendor": "Google",
       "license": "proprietary",
@@ -361,7 +410,7 @@
       "sessions": 210
     },
     {
-      "rank": 8,
+      "rank": 9,
       "model": "Claude Fable 5 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -410,7 +459,7 @@
       "sessions": 1050
     },
     {
-      "rank": 9,
+      "rank": 10,
       "model": "Claude Opus 5 (Max)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -459,7 +508,7 @@
       "sessions": 525
     },
     {
-      "rank": 10,
+      "rank": 11,
       "model": "Claude Opus 5 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -508,7 +557,7 @@
       "sessions": 525
     },
     {
-      "rank": 11,
+      "rank": 12,
       "model": "Claude Opus 4.8 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -557,7 +606,7 @@
       "sessions": 525
     },
     {
-      "rank": 12,
+      "rank": 13,
       "model": "GPT 5.6 Sol (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -606,7 +655,7 @@
       "sessions": 420
     },
     {
-      "rank": 13,
+      "rank": 14,
       "model": "Claude Sonnet 5 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
@@ -655,7 +704,7 @@
       "sessions": 210
     },
     {
-      "rank": 14,
+      "rank": 15,
       "model": "GPT 5.5 (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -704,7 +753,7 @@
       "sessions": 530
     },
     {
-      "rank": 15,
+      "rank": 16,
       "model": "Muse Spark 1.3 (Max)",
       "vendor": "Meta",
       "license": "proprietary",
@@ -753,7 +802,7 @@
       "sessions": 125425
     },
     {
-      "rank": 16,
+      "rank": 17,
       "model": "Deepseek V4.1 Flash (Max)",
       "vendor": "DeepSeek",
       "license": "open",
@@ -802,7 +851,7 @@
       "sessions": 30120
     },
     {
-      "rank": 17,
+      "rank": 18,
       "model": "Kimi K3 (Max)",
       "vendor": "Moonshot",
       "license": null,
@@ -851,7 +900,7 @@
       "sessions": 315
     },
     {
-      "rank": 18,
+      "rank": 19,
       "model": "Hy4 preview",
       "vendor": "Tencent",
       "license": "open",
@@ -900,7 +949,7 @@
       "sessions": 83250
     },
     {
-      "rank": 19,
+      "rank": 20,
       "model": "MiMo V2.6 Pro",
       "vendor": "Xiaomi",
       "license": "open",
@@ -949,7 +998,7 @@
       "sessions": 43087
     },
     {
-      "rank": 20,
+      "rank": 21,
       "model": "GLM 5.2 (Max)",
       "vendor": "Z.ai",
       "license": "open",
@@ -998,7 +1047,7 @@
       "sessions": 140440
     },
     {
-      "rank": 21,
+      "rank": 22,
       "model": "Grok 4.7 (xHigh)",
       "vendor": "SpaceXAI",
       "license": "proprietary",
@@ -1047,7 +1096,7 @@
       "sessions": 26
     },
     {
-      "rank": 22,
+      "rank": 23,
       "model": "Gemini 3.8 Flash (High)",
       "vendor": "Google",
       "license": "proprietary",
@@ -1096,7 +1145,7 @@
       "sessions": 75375
     },
     {
-      "rank": 23,
+      "rank": 24,
       "model": "Qwen3.8 Max",
       "vendor": "Alibaba",
       "license": "proprietary",
@@ -1145,7 +1194,7 @@
       "sessions": 26
     },
     {
-      "rank": 24,
+      "rank": 25,
       "model": "GLM 5.3 (Max)",
       "vendor": "Z.ai",
       "license": "open",
@@ -1194,7 +1243,7 @@
       "sessions": 140440
     },
     {
-      "rank": 25,
+      "rank": 26,
       "model": "GPT 6 Luna (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -1243,7 +1292,7 @@
       "sessions": 10050
     },
     {
-      "rank": 26,
+      "rank": 27,
       "model": "DeepSeek V4 Pro (High) (0813)",
       "vendor": "DeepSeek",
       "license": "open",
@@ -1292,7 +1341,7 @@
       "sessions": null
     },
     {
-      "rank": 27,
+      "rank": 28,
       "model": "Grok 4.5",
       "vendor": "SpaceXAI",
       "license": "proprietary",
@@ -1341,7 +1390,7 @@
       "sessions": 26
     },
     {
-      "rank": 28,
+      "rank": 29,
       "model": "GPT 5.4 (High)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -1390,7 +1439,7 @@
       "sessions": 25015
     },
     {
-      "rank": 29,
+      "rank": 30,
       "model": "Grok 4.6 (xHigh)",
       "vendor": "SpaceXAI",
       "license": "proprietary",
@@ -1439,7 +1488,7 @@
       "sessions": null
     },
     {
-      "rank": 30,
+      "rank": 31,
       "model": "GPT 5.5",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -1488,7 +1537,7 @@
       "sessions": 530
     },
     {
-      "rank": 31,
+      "rank": 32,
       "model": "GPT 5.6 Terra (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -1537,7 +1586,7 @@
       "sessions": 212
     },
     {
-      "rank": 32,
+      "rank": 33,
       "model": "MiMo V2.6 Flash",
       "vendor": "Xiaomi",
       "license": "open",
@@ -1586,7 +1635,7 @@
       "sessions": 14028
     },
     {
-      "rank": 33,
+      "rank": 34,
       "model": "Step 5 Preview",
       "vendor": "StepFun",
       "license": "proprietary",
@@ -1635,7 +1684,7 @@
       "sessions": 1270
     },
     {
-      "rank": 34,
+      "rank": 35,
       "model": "Qwen3.8 Flash Next",
       "vendor": "Alibaba",
       "license": null,
@@ -1684,7 +1733,7 @@
       "sessions": 16047
     },
     {
-      "rank": 35,
+      "rank": 36,
       "model": "GLM 5.3 Flash",
       "vendor": "Z.ai",
       "license": "open",
@@ -1733,7 +1782,7 @@
       "sessions": 6020
     },
     {
-      "rank": 36,
+      "rank": 37,
       "model": "GPT 5.6 Luna (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
@@ -1782,7 +1831,7 @@
       "sessions": 20120
     },
     {
-      "rank": 37,
+      "rank": 38,
       "model": "Qwen 3.8 27B",
       "vendor": "Alibaba",
       "license": "open",
@@ -1831,7 +1880,7 @@
       "sessions": 403
     },
     {
-      "rank": 38,
+      "rank": 39,
       "model": "Gemini 3.7 Flash (High)",
       "vendor": "Google",
       "license": "proprietary",
@@ -1880,7 +1929,7 @@
       "sessions": 75375
     },
     {
-      "rank": 39,
+      "rank": 40,
       "model": "Muse Spark 1.2 (xHigh)",
       "vendor": "Meta",
       "license": "proprietary",
@@ -1929,7 +1978,7 @@
       "sessions": 125425
     },
     {
-      "rank": 40,
+      "rank": 41,
       "model": "Muse Spark 1.1",
       "vendor": "Meta",
       "license": "proprietary",
@@ -1978,7 +2027,7 @@
       "sessions": 125425
     },
     {
-      "rank": 41,
+      "rank": 42,
       "model": "Hy3",
       "vendor": "Tencent",
       "license": "open",
@@ -2027,7 +2076,7 @@
       "sessions": 13053
     },
     {
-      "rank": 42,
+      "rank": 43,
       "model": "Qwen3.7 Max Alibaba · Proprietary",
       "vendor": null,
       "license": "proprietary",
@@ -2076,7 +2125,7 @@
       "sessions": null
     },
     {
-      "rank": 43,
+      "rank": 44,
       "model": "mistral-large-4",
       "vendor": "Mistral",
       "license": "proprietary",
@@ -2125,7 +2174,7 @@
       "sessions": 68209
     },
     {
-      "rank": 44,
+      "rank": 45,
       "model": "Minimax M3",
       "vendor": "MiniMax",
       "license": null,
@@ -2174,7 +2223,7 @@
       "sessions": 30120
     },
     {
-      "rank": 45,
+      "rank": 46,
       "model": "Qwen3.7 Plus",
       "vendor": "Alibaba",
       "license": "proprietary",
@@ -2223,7 +2272,7 @@
       "sessions": 32128
     },
     {
-      "rank": 46,
+      "rank": 47,
       "model": "Mimo V2.5 Pro",
       "vendor": "Xiaomi",
       "license": "open",
@@ -2272,7 +2321,7 @@
       "sessions": 43087
     },
     {
-      "rank": 47,
+      "rank": 48,
       "model": "Gemini 3.6 Flash (High)",
       "vendor": "Google",
       "license": "proprietary",
@@ -2321,7 +2370,7 @@
       "sessions": 75375
     },
     {
-      "rank": 48,
+      "rank": 49,
       "model": "Gemini 3.1 Pro Preview",
       "vendor": "Google",
       "license": "proprietary",
@@ -2370,7 +2419,7 @@
       "sessions": 16
     },
     {
-      "rank": 49,
+      "rank": 50,
       "model": "Inkling Small",
       "vendor": "Thinky",
       "license": "open",
@@ -2419,7 +2468,7 @@
       "sessions": 45120
     },
     {
-      "rank": 50,
+      "rank": 51,
       "model": "Inkling",
       "vendor": "Thinky",
       "license": "open",
@@ -2468,7 +2517,7 @@
       "sessions": 1405
     },
     {
-      "rank": 51,
+      "rank": 52,
       "model": "Mistral Medium 3.5",
       "vendor": "Mistral",
       "license": null,
@@ -2517,7 +2566,7 @@
       "sessions": 75375
     },
     {
-      "rank": 52,
+      "rank": 53,
       "model": "Solar Pro 4",
       "vendor": "Upstage",
       "license": "proprietary",
