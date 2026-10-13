@@ -178,13 +178,13 @@ _SciCode scientific coding accuracy (%)._
 | 1 | `anthropic/claude-opus-5-5` | 0.669 |
 | 2 | `anthropic/claude-opus-5-5-xhigh` | 0.650 |
 | 3 | `anthropic/claude-fable-5-1` | 0.631 |
-| 4 | `google/gemini-4-argon` | 0.618 |
-| 5 | `anthropic/claude-sonnet-5-5` | 0.610 |
-| 6 | `anthropic/claude-fable-5` | 0.610 |
-| 7 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
-| 8 | `xiaomi/mimo-v2-6-pro` | 0.609 |
-| 9 | `anthropic/claude-opus-5-5-high` | 0.604 |
-| 10 | `google/gemini-3-7-flash-medium` | 0.598 |
+| 4 | `meta/muse-wonder-full` | 0.626 |
+| 5 | `google/gemini-4-argon` | 0.618 |
+| 6 | `anthropic/claude-sonnet-5-5` | 0.610 |
+| 7 | `anthropic/claude-fable-5` | 0.610 |
+| 8 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
+| 9 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 10 | `anthropic/claude-opus-5-5-high` | 0.604 |
 
 ## TAU2
 

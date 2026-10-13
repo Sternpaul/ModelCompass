@@ -2,14 +2,14 @@
   "meta": {
     "leaderboard": "agent",
     "source_url": "https://arena.ai/leaderboard/agent",
-    "fetched_at": "2026-10-12T11:48:11.923998+00:00",
-    "model_count": 53,
+    "fetched_at": "2026-10-13T11:36:06.716609+00:00",
+    "model_count": 52,
     "dimensions": [
       "Net Improvement",
       "Confirmed Success",
       "Praise vs Complaint",
       "Steerability",
-      "Bash Recovery",
+      "Bash Reliability",
       "Tool Hallucination",
       "Cost/Task",
       "Output Tokens/Task"
@@ -25,37 +25,37 @@
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 15.53,
-          "ci": 4.63
+          "score": 17.89,
+          "ci": 4.24
         },
         {
           "name": "Confirmed Success",
-          "score": 17.29,
-          "ci": 6.02
+          "score": 20.48,
+          "ci": 5.24
         },
         {
           "name": "Praise vs Complaint",
-          "score": 36.78,
-          "ci": 20.55
+          "score": 38.37,
+          "ci": 16.9
         },
         {
           "name": "Steerability",
-          "score": 8.2,
-          "ci": 4.06
+          "score": 13.59,
+          "ci": 3.38
         },
         {
-          "name": "Bash Recovery",
-          "score": 15.01,
-          "ci": 1.63
+          "name": "Bash Reliability",
+          "score": 15.08,
+          "ci": 0.88
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.37,
-          "ci": 0.18
+          "score": 0.51,
+          "ci": 0.15
         },
         {
           "name": "Cost/Task",
-          "score": 4.0,
+          "score": 5.0,
           "ci": null
         },
         {
@@ -68,239 +68,43 @@
     },
     {
       "rank": 2,
-      "model": "Claude Opus 5.5 (High)",
-      "vendor": "Anthropic",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 14.33,
-          "ci": 2.18
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 13.93,
-          "ci": 3.84
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 33.69,
-          "ci": 9.12
-        },
-        {
-          "name": "Steerability",
-          "score": 9.98,
-          "ci": 2.12
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 13.55,
-          "ci": 0.8
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.5,
-          "ci": 0.04
-        },
-        {
-          "name": "Cost/Task",
-          "score": 6.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 420
-    },
-    {
-      "rank": 3,
-      "model": "GPT 6 Astra (Max)",
-      "vendor": "OpenAI",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 13.09,
-          "ci": 2.37
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 12.13,
-          "ci": 3.88
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 38.54,
-          "ci": 9.96
-        },
-        {
-          "name": "Steerability",
-          "score": 8.85,
-          "ci": 2.5
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 5.53,
-          "ci": 1.72
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.43,
-          "ci": 0.11
-        },
-        {
-          "name": "Cost/Task",
-          "score": 12.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 1050
-    },
-    {
-      "rank": 4,
-      "model": "Claude Fable 5.1 (Max)",
-      "vendor": "Anthropic",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 12.66,
-          "ci": 2.05
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 16.19,
-          "ci": 2.96
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 26.22,
-          "ci": 7.98
-        },
-        {
-          "name": "Steerability",
-          "score": 8.84,
-          "ci": 3.12
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 11.6,
-          "ci": 2.32
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.46,
-          "ci": 0.1
-        },
-        {
-          "name": "Cost/Task",
-          "score": 15.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 1050
-    },
-    {
-      "rank": 5,
-      "model": "Claude Sonnet 5.5 (Max)",
-      "vendor": "Anthropic",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 11.95,
-          "ci": 3.31
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 15.83,
-          "ci": 5.06
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 23.37,
-          "ci": 14.09
-        },
-        {
-          "name": "Steerability",
-          "score": 5.1,
-          "ci": 3.33
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 15.04,
-          "ci": 1.7
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.43,
-          "ci": 0.12
-        },
-        {
-          "name": "Cost/Task",
-          "score": 6.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": null
-    },
-    {
-      "rank": 6,
       "model": "GPT 6.1 Sol (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 11.72,
-          "ci": 3.05
+          "score": 13.81,
+          "ci": 2.34
         },
         {
           "name": "Confirmed Success",
-          "score": 14.74,
-          "ci": 4.18
+          "score": 16.93,
+          "ci": 3.34
         },
         {
           "name": "Praise vs Complaint",
-          "score": 30.32,
-          "ci": 12.99
+          "score": 35.44,
+          "ci": 8.61
         },
         {
           "name": "Steerability",
-          "score": 8.52,
-          "ci": 3.07
+          "score": 7.82,
+          "ci": 2.47
         },
         {
-          "name": "Bash Recovery",
-          "score": 4.53,
-          "ci": 1.59
+          "name": "Bash Reliability",
+          "score": 2.63,
+          "ci": 2.61
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.51,
-          "ci": 0.03
+          "score": 0.65,
+          "ci": 0.04
         },
         {
           "name": "Cost/Task",
-          "score": 8.0,
+          "score": 11.0,
           "ci": null
         },
         {
@@ -312,39 +116,39 @@
       "sessions": 210
     },
     {
-      "rank": 7,
+      "rank": 3,
       "model": "GPT 6 Sol (Max)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 9.92,
-          "ci": 2.38
+          "score": 12.6,
+          "ci": 2.6
         },
         {
           "name": "Confirmed Success",
-          "score": 6.97,
-          "ci": 4.34
+          "score": 7.7,
+          "ci": 4.36
         },
         {
           "name": "Praise vs Complaint",
-          "score": 23.55,
-          "ci": 9.64
+          "score": 23.73,
+          "ci": 9.61
         },
         {
           "name": "Steerability",
-          "score": 11.92,
-          "ci": 2.02
+          "score": 19.47,
+          "ci": 1.95
         },
         {
-          "name": "Bash Recovery",
-          "score": 7.03,
-          "ci": 1.92
+          "name": "Bash Reliability",
+          "score": 11.03,
+          "ci": 0.98
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.14,
+          "score": 0.29,
           "ci": 0.14
         },
         {
@@ -361,44 +165,44 @@
       "sessions": 210
     },
     {
-      "rank": 8,
+      "rank": 4,
       "model": "Gemini 4 Argon (High)",
       "vendor": "Google",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 9.26,
-          "ci": 2.36
+          "score": 12.37,
+          "ci": 1.94
         },
         {
           "name": "Confirmed Success",
-          "score": 15.64,
-          "ci": 3.26
+          "score": 13.3,
+          "ci": 2.98
         },
         {
           "name": "Praise vs Complaint",
-          "score": 40.6,
-          "ci": 9.56
+          "score": 32.47,
+          "ci": 6.79
         },
         {
           "name": "Steerability",
-          "score": 11.64,
-          "ci": 2.1
+          "score": 10.88,
+          "ci": 2.14
         },
         {
-          "name": "Bash Recovery",
-          "score": 21.41,
-          "ci": 3.8
+          "name": "Bash Reliability",
+          "score": 1.78,
+          "ci": 2.76
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.18,
-          "ci": 0.34
+          "score": 0.09,
+          "ci": 0.67
         },
         {
           "name": "Cost/Task",
-          "score": 17.0,
+          "score": 24.0,
           "ci": null
         },
         {
@@ -410,44 +214,44 @@
       "sessions": 210
     },
     {
-      "rank": 9,
-      "model": "Claude Fable 5 (High)",
-      "vendor": "Anthropic",
+      "rank": 5,
+      "model": "GPT 6 Astra (Max)",
+      "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 8.94,
-          "ci": 1.27
+          "score": 12.34,
+          "ci": 2.47
         },
         {
           "name": "Confirmed Success",
-          "score": 5.79,
-          "ci": 2.6
+          "score": 10.84,
+          "ci": 4.27
         },
         {
           "name": "Praise vs Complaint",
-          "score": 19.34,
-          "ci": 4.8
+          "score": 30.11,
+          "ci": 9.17
         },
         {
           "name": "Steerability",
-          "score": 9.49,
-          "ci": 1.39
+          "score": 8.54,
+          "ci": 2.53
         },
         {
-          "name": "Bash Recovery",
-          "score": 9.6,
-          "ci": 1.22
+          "name": "Bash Reliability",
+          "score": 10.95,
+          "ci": 2.04
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.47,
-          "ci": 0.08
+          "score": 0.58,
+          "ci": 0.1
         },
         {
           "name": "Cost/Task",
-          "score": 41.0,
+          "score": 12.0,
           "ci": null
         },
         {
@@ -459,44 +263,191 @@
       "sessions": 1050
     },
     {
-      "rank": 10,
+      "rank": 6,
+      "model": "Claude Fable 5.1 (Max)",
+      "vendor": "Anthropic",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 11.74,
+          "ci": 2.1
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 15.95,
+          "ci": 3.16
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 22.48,
+          "ci": 7.51
+        },
+        {
+          "name": "Steerability",
+          "score": 8.48,
+          "ci": 2.79
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 10.68,
+          "ci": 1.23
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.56,
+          "ci": 0.12
+        },
+        {
+          "name": "Cost/Task",
+          "score": 16.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 1050
+    },
+    {
+      "rank": 7,
+      "model": "Claude Sonnet 5.5 (Max)",
+      "vendor": "Anthropic",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 10.75,
+          "ci": 3.29
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 18.7,
+          "ci": 5.24
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 13.96,
+          "ci": 12.08
+        },
+        {
+          "name": "Steerability",
+          "score": 8.77,
+          "ci": 3.63
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 13.05,
+          "ci": 0.8
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.44,
+          "ci": 0.27
+        },
+        {
+          "name": "Cost/Task",
+          "score": 7.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": null
+    },
+    {
+      "rank": 8,
+      "model": "Claude Fable 5 (High)",
+      "vendor": "Anthropic",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 9.27,
+          "ci": 1.41
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 6.24,
+          "ci": 2.55
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 18.33,
+          "ci": 4.74
+        },
+        {
+          "name": "Steerability",
+          "score": 9.98,
+          "ci": 1.74
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 13.11,
+          "ci": 1.75
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.61,
+          "ci": 0.07
+        },
+        {
+          "name": "Cost/Task",
+          "score": 42.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 1050
+    },
+    {
+      "rank": 9,
       "model": "Claude Opus 5 (Max)",
       "vendor": "Anthropic",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 8.12,
-          "ci": 1.47
+          "score": 8.21,
+          "ci": 1.59
         },
         {
           "name": "Confirmed Success",
-          "score": 10.42,
-          "ci": 3.1
+          "score": 12.51,
+          "ci": 3.0
         },
         {
           "name": "Praise vs Complaint",
-          "score": 11.86,
-          "ci": 5.46
+          "score": 12.6,
+          "ci": 5.39
         },
         {
           "name": "Steerability",
-          "score": 4.22,
+          "score": 5.11,
           "ci": 2.01
         },
         {
-          "name": "Bash Recovery",
-          "score": 13.57,
-          "ci": 0.79
+          "name": "Bash Reliability",
+          "score": 12.19,
+          "ci": 1.06
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.5,
-          "ci": 0.03
+          "score": 0.62,
+          "ci": 0.06
         },
         {
           "name": "Cost/Task",
-          "score": 22.0,
+          "score": 23.0,
           "ci": null
         },
         {
@@ -508,88 +459,39 @@
       "sessions": 525
     },
     {
-      "rank": 11,
-      "model": "Claude Opus 5 (High)",
-      "vendor": "Anthropic",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 7.95,
-          "ci": 1.39
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 8.37,
-          "ci": 2.99
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 12.43,
-          "ci": 5.05
-        },
-        {
-          "name": "Steerability",
-          "score": 5.83,
-          "ci": 1.85
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 12.64,
-          "ci": 0.77
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.5,
-          "ci": 0.03
-        },
-        {
-          "name": "Cost/Task",
-          "score": 27.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 525
-    },
-    {
-      "rank": 12,
+      "rank": 10,
       "model": "Claude Opus 4.8 (High)",
       "vendor": "Anthropic",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 7.13,
-          "ci": 1.37
+          "score": 7.76,
+          "ci": 1.48
         },
         {
           "name": "Confirmed Success",
-          "score": 4.68,
-          "ci": 2.75
+          "score": 3.96,
+          "ci": 2.76
         },
         {
           "name": "Praise vs Complaint",
-          "score": 15.14,
-          "ci": 5.03
+          "score": 14.12,
+          "ci": 4.95
         },
         {
           "name": "Steerability",
-          "score": 8.41,
-          "ci": 1.6
+          "score": 8.6,
+          "ci": 1.83
         },
         {
-          "name": "Bash Recovery",
-          "score": 7.22,
-          "ci": 1.9
+          "name": "Bash Reliability",
+          "score": 15.75,
+          "ci": 2.23
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.2,
+          "score": 0.34,
           "ci": 0.19
         },
         {
@@ -606,44 +508,44 @@
       "sessions": 525
     },
     {
-      "rank": 13,
+      "rank": 11,
       "model": "GPT 5.6 Sol (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 6.23,
-          "ci": 1.28
+          "score": 7.61,
+          "ci": 1.41
         },
         {
           "name": "Confirmed Success",
-          "score": 5.34,
-          "ci": 2.7
+          "score": 5.13,
+          "ci": 2.64
         },
         {
           "name": "Praise vs Complaint",
-          "score": 18.3,
-          "ci": 4.76
+          "score": 15.79,
+          "ci": 4.69
         },
         {
           "name": "Steerability",
-          "score": 6.46,
-          "ci": 1.66
+          "score": 6.91,
+          "ci": 1.83
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.73,
-          "ci": 1.38
+          "name": "Bash Reliability",
+          "score": 11.8,
+          "ci": 1.25
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.34,
-          "ci": 0.1
+          "score": 0.5,
+          "ci": 0.09
         },
         {
           "name": "Cost/Task",
-          "score": 35.0,
+          "score": 36.0,
           "ci": null
         },
         {
@@ -655,6 +557,104 @@
       "sessions": 420
     },
     {
+      "rank": 12,
+      "model": "Gemini 3.8 Flash (High)",
+      "vendor": "Google",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 5.18,
+          "ci": 1.07
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 6.02,
+          "ci": 2.09
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 5.77,
+          "ci": 3.41
+        },
+        {
+          "name": "Steerability",
+          "score": 5.37,
+          "ci": 1.58
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 11.31,
+          "ci": 0.51
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.5,
+          "ci": 0.08
+        },
+        {
+          "name": "Cost/Task",
+          "score": 37.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 75375
+    },
+    {
+      "rank": 13,
+      "model": "GPT 5.5 (xHigh)",
+      "vendor": "OpenAI",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 4.71,
+          "ci": 1.19
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 1.96,
+          "ci": 2.36
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 8.52,
+          "ci": 3.76
+        },
+        {
+          "name": "Steerability",
+          "score": 7.46,
+          "ci": 1.57
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 13.33,
+          "ci": 1.5
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.49,
+          "ci": 0.14
+        },
+        {
+          "name": "Cost/Task",
+          "score": 54.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 530
+    },
+    {
       "rank": 14,
       "model": "Claude Sonnet 5 (High)",
       "vendor": "Anthropic",
@@ -662,32 +662,32 @@
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 4.91,
-          "ci": 1.69
+          "score": 4.35,
+          "ci": 1.79
         },
         {
           "name": "Confirmed Success",
-          "score": 2.22,
+          "score": 1.29,
           "ci": 3.48
         },
         {
           "name": "Praise vs Complaint",
-          "score": 10.1,
-          "ci": 6.3
+          "score": 6.42,
+          "ci": 5.87
         },
         {
           "name": "Steerability",
-          "score": 4.57,
-          "ci": 2.32
+          "score": 3.61,
+          "ci": 2.49
         },
         {
-          "name": "Bash Recovery",
-          "score": 7.38,
-          "ci": 1.15
+          "name": "Bash Reliability",
+          "score": 15.63,
+          "ci": 1.09
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.3,
+          "score": 0.43,
           "ci": 0.13
         },
         {
@@ -705,43 +705,43 @@
     },
     {
       "rank": 15,
-      "model": "GPT 5.5 (xHigh)",
-      "vendor": "OpenAI",
+      "model": "Grok 4.7 (xHigh)",
+      "vendor": "SpaceXAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 4.38,
-          "ci": 1.09
+          "score": 3.59,
+          "ci": 1.76
         },
         {
           "name": "Confirmed Success",
-          "score": 0.88,
-          "ci": 2.34
+          "score": 5.65,
+          "ci": 3.43
         },
         {
           "name": "Praise vs Complaint",
-          "score": 8.78,
-          "ci": 3.87
+          "score": 3.3,
+          "ci": 5.52
         },
         {
           "name": "Steerability",
-          "score": 4.08,
-          "ci": 1.45
+          "score": 2.21,
+          "ci": 2.74
         },
         {
-          "name": "Bash Recovery",
-          "score": 9.55,
-          "ci": 1.15
+          "name": "Bash Reliability",
+          "score": 8.88,
+          "ci": 0.8
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.35,
-          "ci": 0.14
+          "score": 0.55,
+          "ci": 0.06
         },
         {
           "name": "Cost/Task",
-          "score": 54.0,
+          "score": 14.0,
           "ci": null
         },
         {
@@ -750,96 +750,47 @@
           "ci": null
         }
       ],
-      "sessions": 530
+      "sessions": 26
     },
     {
       "rank": 16,
-      "model": "Muse Spark 1.3 (Max)",
-      "vendor": "Meta",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 4.04,
-          "ci": 0.66
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 5.32,
-          "ci": 1.39
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 3.61,
-          "ci": 2.51
-        },
-        {
-          "name": "Steerability",
-          "score": 4.82,
-          "ci": 0.86
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 6.08,
-          "ci": 0.6
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.4,
-          "ci": 0.05
-        },
-        {
-          "name": "Cost/Task",
-          "score": 70.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 125425
-    },
-    {
-      "rank": 17,
       "model": "Deepseek V4.1 Flash (Max)",
       "vendor": "DeepSeek",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 3.8,
-          "ci": 0.39
+          "score": 3.34,
+          "ci": 0.41
         },
         {
           "name": "Confirmed Success",
-          "score": 7.44,
-          "ci": 0.86
+          "score": 7.61,
+          "ci": 0.79
         },
         {
           "name": "Praise vs Complaint",
-          "score": 2.44,
-          "ci": 1.45
+          "score": 3.7,
+          "ci": 1.32
         },
         {
           "name": "Steerability",
-          "score": 0.87,
-          "ci": 0.54
+          "score": 3.44,
+          "ci": 0.56
         },
         {
-          "name": "Bash Recovery",
-          "score": 7.86,
-          "ci": 0.28
+          "name": "Bash Reliability",
+          "score": 0.38,
+          "ci": 0.32
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.37,
-          "ci": 0.04
+          "score": 0.47,
+          "ci": 0.05
         },
         {
           "name": "Cost/Task",
-          "score": 182.0,
+          "score": 210.0,
           "ci": null
         },
         {
@@ -851,142 +802,93 @@
       "sessions": 30120
     },
     {
+      "rank": 17,
+      "model": "Muse Spark 1.3 (Max)",
+      "vendor": "Meta",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 3.26,
+          "ci": 0.83
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 4.87,
+          "ci": 1.61
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 4.5,
+          "ci": 2.75
+        },
+        {
+          "name": "Steerability",
+          "score": 3.55,
+          "ci": 1.16
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 2.42,
+          "ci": 0.82
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.54,
+          "ci": 0.06
+        },
+        {
+          "name": "Cost/Task",
+          "score": 73.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 125425
+    },
+    {
       "rank": 18,
-      "model": "Kimi K3 (Max)",
-      "vendor": "Moonshot",
-      "license": null,
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 3.78,
-          "ci": 0.59
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 6.46,
-          "ci": 1.32
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 6.44,
-          "ci": 2.05
-        },
-        {
-          "name": "Steerability",
-          "score": 1.14,
-          "ci": 0.86
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 4.38,
-          "ci": 0.55
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.51,
-          "ci": 0.03
-        },
-        {
-          "name": "Cost/Task",
-          "score": 133.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 315
-    },
-    {
-      "rank": 19,
-      "model": "Hy4 preview",
-      "vendor": "Tencent",
-      "license": "open",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 3.61,
-          "ci": 0.7
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 5.96,
-          "ci": 1.48
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 5.18,
-          "ci": 2.59
-        },
-        {
-          "name": "Steerability",
-          "score": 0.32,
-          "ci": 0.92
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 6.51,
-          "ci": 0.46
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.09,
-          "ci": 0.21
-        },
-        {
-          "name": "Cost/Task",
-          "score": 70.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 83250
-    },
-    {
-      "rank": 20,
       "model": "MiMo V2.6 Pro",
       "vendor": "Xiaomi",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 3.52,
-          "ci": 1.92
+          "score": 3.08,
+          "ci": 1.34
         },
         {
           "name": "Confirmed Success",
-          "score": 8.03,
-          "ci": 3.88
+          "score": 9.51,
+          "ci": 2.58
         },
         {
           "name": "Praise vs Complaint",
-          "score": 8.16,
-          "ci": 7.31
+          "score": 3.97,
+          "ci": 4.39
         },
         {
           "name": "Steerability",
-          "score": 0.56,
-          "ci": 2.45
+          "score": 1.67,
+          "ci": 1.89
         },
         {
-          "name": "Bash Recovery",
-          "score": 2.34,
-          "ci": 2.03
+          "name": "Bash Reliability",
+          "score": 4.5,
+          "ci": 1.2
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.35,
-          "ci": 0.54
+          "score": 0.18,
+          "ci": 0.33
         },
         {
           "name": "Cost/Task",
-          "score": 11.0,
+          "score": 20.0,
           "ci": null
         },
         {
@@ -998,44 +900,93 @@
       "sessions": 43087
     },
     {
-      "rank": 21,
+      "rank": 19,
       "model": "GLM 5.2 (Max)",
       "vendor": "Z.ai",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 3.19,
-          "ci": 0.73
+          "score": 3.08,
+          "ci": 0.82
         },
         {
           "name": "Confirmed Success",
-          "score": 4.11,
-          "ci": 1.58
+          "score": 3.9,
+          "ci": 1.63
         },
         {
           "name": "Praise vs Complaint",
-          "score": 8.94,
+          "score": 8.23,
           "ci": 2.61
         },
         {
           "name": "Steerability",
-          "score": 1.72,
-          "ci": 0.96
+          "score": 2.57,
+          "ci": 1.12
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.67,
-          "ci": 0.81
+          "name": "Bash Reliability",
+          "score": 2.9,
+          "ci": 1.05
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.48,
+          "score": 0.62,
+          "ci": 0.05
+        },
+        {
+          "name": "Cost/Task",
+          "score": 86.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 140440
+    },
+    {
+      "rank": 20,
+      "model": "Kimi K3 (Max)",
+      "vendor": "Moonshot",
+      "license": null,
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 2.99,
+          "ci": 0.7
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 6.5,
+          "ci": 1.44
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 5.15,
+          "ci": 2.14
+        },
+        {
+          "name": "Steerability",
+          "score": 2.01,
+          "ci": 1.07
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 1.68,
+          "ci": 1.0
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.65,
           "ci": 0.04
         },
         {
           "name": "Cost/Task",
-          "score": 85.0,
+          "score": 134.0,
           "ci": null
         },
         {
@@ -1044,287 +995,42 @@
           "ci": null
         }
       ],
-      "sessions": 140440
+      "sessions": 315
     },
     {
-      "rank": 22,
-      "model": "Grok 4.7 (xHigh)",
-      "vendor": "SpaceXAI",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 2.83,
-          "ci": 1.71
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 3.93,
-          "ci": 3.66
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 5.09,
-          "ci": 5.98
-        },
-        {
-          "name": "Steerability",
-          "score": 2.45,
-          "ci": 2.64
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 7.2,
-          "ci": 1.04
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.37,
-          "ci": 0.06
-        },
-        {
-          "name": "Cost/Task",
-          "score": 13.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 26
-    },
-    {
-      "rank": 23,
-      "model": "Gemini 3.8 Flash (High)",
-      "vendor": "Google",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 2.75,
-          "ci": 0.93
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 5.3,
-          "ci": 2.05
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 6.33,
-          "ci": 3.32
-        },
-        {
-          "name": "Steerability",
-          "score": 2.47,
-          "ci": 1.31
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 0.69,
-          "ci": 0.72
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.34,
-          "ci": 0.09
-        },
-        {
-          "name": "Cost/Task",
-          "score": 35.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 75375
-    },
-    {
-      "rank": 24,
-      "model": "Qwen3.8 Max",
-      "vendor": "Alibaba",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 2.35,
-          "ci": 0.59
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 5.09,
-          "ci": 1.32
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 2.95,
-          "ci": 2.13
-        },
-        {
-          "name": "Steerability",
-          "score": 1.81,
-          "ci": 0.82
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 2.8,
-          "ci": 0.62
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.92,
-          "ci": 0.17
-        },
-        {
-          "name": "Cost/Task",
-          "score": 59.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 26
-    },
-    {
-      "rank": 25,
-      "model": "GLM 5.3 (Max)",
-      "vendor": "Z.ai",
-      "license": "open",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 2.15,
-          "ci": 0.72
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 4.78,
-          "ci": 1.62
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 5.12,
-          "ci": 2.48
-        },
-        {
-          "name": "Steerability",
-          "score": 0.44,
-          "ci": 1.08
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 0.05,
-          "ci": 0.64
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.45,
-          "ci": 0.08
-        },
-        {
-          "name": "Cost/Task",
-          "score": 85.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 140440
-    },
-    {
-      "rank": 26,
-      "model": "GPT 6 Luna (Max)",
-      "vendor": "OpenAI",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 1.93,
-          "ci": 0.64
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 0.91,
-          "ci": 1.39
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 0.27,
-          "ci": 2.29
-        },
-        {
-          "name": "Steerability",
-          "score": 3.13,
-          "ci": 0.84
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 5.21,
-          "ci": 0.8
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.11,
-          "ci": 0.09
-        },
-        {
-          "name": "Cost/Task",
-          "score": 109.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 10050
-    },
-    {
-      "rank": 27,
+      "rank": 21,
       "model": "DeepSeek V4 Pro (High) (0813)",
       "vendor": "DeepSeek",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 1.34,
-          "ci": 1.66
+          "score": 2.97,
+          "ci": 1.82
         },
         {
           "name": "Confirmed Success",
-          "score": 2.0,
-          "ci": 4.01
+          "score": 1.45,
+          "ci": 3.97
         },
         {
           "name": "Praise vs Complaint",
-          "score": 1.86,
-          "ci": 5.99
+          "score": 2.78,
+          "ci": 6.04
         },
         {
           "name": "Steerability",
-          "score": 2.12,
-          "ci": 2.2
+          "score": 10.36,
+          "ci": 2.12
         },
         {
-          "name": "Bash Recovery",
-          "score": 4.4,
-          "ci": 1.28
+          "name": "Bash Reliability",
+          "score": 2.37,
+          "ci": 1.29
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.34,
+          "score": 0.48,
           "ci": 0.13
         },
         {
@@ -1341,44 +1047,44 @@
       "sessions": null
     },
     {
-      "rank": 28,
-      "model": "Grok 4.5",
-      "vendor": "SpaceXAI",
+      "rank": 22,
+      "model": "GPT 6 Luna (Max)",
+      "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 1.19,
-          "ci": 1.02
+          "score": 2.76,
+          "ci": 0.54
         },
         {
           "name": "Confirmed Success",
-          "score": 1.0,
-          "ci": 2.33
+          "score": 1.27,
+          "ci": 1.09
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.5,
-          "ci": 3.21
+          "score": 0.79,
+          "ci": 1.79
         },
         {
           "name": "Steerability",
-          "score": 2.88,
-          "ci": 1.41
+          "score": 4.52,
+          "ci": 0.68
         },
         {
-          "name": "Bash Recovery",
-          "score": 5.14,
-          "ci": 1.97
+          "name": "Bash Reliability",
+          "score": 10.9,
+          "ci": 0.37
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.45,
+          "score": 0.39,
           "ci": 0.07
         },
         {
           "name": "Cost/Task",
-          "score": 41.0,
+          "score": 144.0,
           "ci": null
         },
         {
@@ -1387,42 +1093,42 @@
           "ci": null
         }
       ],
-      "sessions": 26
+      "sessions": 10050
     },
     {
-      "rank": 29,
+      "rank": 23,
       "model": "GPT 5.4 (High)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 1.19,
-          "ci": 0.96
+          "score": 2.67,
+          "ci": 1.03
         },
         {
           "name": "Confirmed Success",
-          "score": 2.76,
-          "ci": 2.13
+          "score": 3.85,
+          "ci": 2.12
         },
         {
           "name": "Praise vs Complaint",
-          "score": 0.78,
-          "ci": 3.42
+          "score": 0.2,
+          "ci": 3.34
         },
         {
           "name": "Steerability",
-          "score": 6.5,
-          "ci": 1.12
+          "score": 10.22,
+          "ci": 1.24
         },
         {
-          "name": "Bash Recovery",
-          "score": 1.21,
-          "ci": 1.39
+          "name": "Bash Reliability",
+          "score": 10.24,
+          "ci": 1.89
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.19,
+          "score": 0.34,
           "ci": 0.2
         },
         {
@@ -1439,44 +1145,44 @@
       "sessions": 25015
     },
     {
-      "rank": 30,
-      "model": "Grok 4.6 (xHigh)",
-      "vendor": "SpaceXAI",
-      "license": "proprietary",
+      "rank": 24,
+      "model": "Hy4 preview",
+      "vendor": "Tencent",
+      "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 1.05,
-          "ci": 1.0
+          "score": 2.46,
+          "ci": 0.71
         },
         {
           "name": "Confirmed Success",
-          "score": 0.78,
-          "ci": 2.37
+          "score": 6.03,
+          "ci": 1.41
         },
         {
           "name": "Praise vs Complaint",
-          "score": 0.74,
-          "ci": 3.31
+          "score": 5.23,
+          "ci": 2.31
         },
         {
           "name": "Steerability",
-          "score": 0.75,
-          "ci": 1.45
+          "score": 0.65,
+          "ci": 0.9
         },
         {
-          "name": "Bash Recovery",
-          "score": 5.68,
-          "ci": 1.04
+          "name": "Bash Reliability",
+          "score": 1.94,
+          "ci": 0.61
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.36,
-          "ci": 0.08
+          "score": 0.14,
+          "ci": 0.18
         },
         {
           "name": "Cost/Task",
-          "score": 27.0,
+          "score": 79.0,
           "ci": null
         },
         {
@@ -1485,42 +1191,189 @@
           "ci": null
         }
       ],
-      "sessions": null
+      "sessions": 83250
     },
     {
-      "rank": 31,
+      "rank": 25,
+      "model": "MiMo V2.6 Flash",
+      "vendor": "Xiaomi",
+      "license": "open",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 2.32,
+          "ci": 1.6
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 6.04,
+          "ci": 2.91
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 3.51,
+          "ci": 5.36
+        },
+        {
+          "name": "Steerability",
+          "score": 5.28,
+          "ci": 2.07
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 1.88,
+          "ci": 1.21
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 3.45,
+          "ci": 0.62
+        },
+        {
+          "name": "Cost/Task",
+          "score": 18.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 14028
+    },
+    {
+      "rank": 26,
+      "model": "Qwen3.8 Max",
+      "vendor": "Alibaba",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 2.05,
+          "ci": 0.62
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 5.3,
+          "ci": 1.27
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 2.56,
+          "ci": 1.97
+        },
+        {
+          "name": "Steerability",
+          "score": 1.41,
+          "ci": 0.87
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 1.45,
+          "ci": 0.81
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.75,
+          "ci": 0.23
+        },
+        {
+          "name": "Cost/Task",
+          "score": 65.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 26
+    },
+    {
+      "rank": 27,
+      "model": "GLM 5.3 (Max)",
+      "vendor": "Z.ai",
+      "license": "open",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 1.82,
+          "ci": 0.83
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 4.19,
+          "ci": 1.72
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 5.5,
+          "ci": 2.57
+        },
+        {
+          "name": "Steerability",
+          "score": 0.23,
+          "ci": 1.2
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 3.74,
+          "ci": 1.05
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.59,
+          "ci": 0.08
+        },
+        {
+          "name": "Cost/Task",
+          "score": 86.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 140440
+    },
+    {
+      "rank": 28,
       "model": "GPT 5.5",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 0.93,
-          "ci": 1.01
+          "score": 1.24,
+          "ci": 1.14
         },
         {
           "name": "Confirmed Success",
-          "score": 5.11,
-          "ci": 2.2
+          "score": 6.31,
+          "ci": 2.21
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.67,
-          "ci": 3.31
+          "score": 3.79,
+          "ci": 3.32
         },
         {
           "name": "Steerability",
-          "score": 1.67,
-          "ci": 1.34
+          "score": 4.13,
+          "ci": 1.48
         },
         {
-          "name": "Bash Recovery",
-          "score": 4.12,
-          "ci": 1.93
+          "name": "Bash Reliability",
+          "score": 7.02,
+          "ci": 3.63
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.29,
+          "score": 0.43,
           "ci": 0.2
         },
         {
@@ -1537,44 +1390,44 @@
       "sessions": 530
     },
     {
-      "rank": 32,
+      "rank": 29,
       "model": "GPT 5.6 Terra (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 0.88,
-          "ci": 1.2
+          "score": 1.22,
+          "ci": 1.35
         },
         {
           "name": "Confirmed Success",
-          "score": 3.15,
-          "ci": 2.63
+          "score": 4.08,
+          "ci": 2.74
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.65,
-          "ci": 4.2
+          "score": 3.86,
+          "ci": 4.3
         },
         {
           "name": "Steerability",
-          "score": 2.79,
-          "ci": 1.63
+          "score": 3.64,
+          "ci": 1.82
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.88,
-          "ci": 1.75
+          "name": "Bash Reliability",
+          "score": 3.36,
+          "ci": 1.86
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.22,
-          "ci": 0.19
+          "score": 0.38,
+          "ci": 0.17
         },
         {
           "name": "Cost/Task",
-          "score": 23.0,
+          "score": 24.0,
           "ci": null
         },
         {
@@ -1586,93 +1439,44 @@
       "sessions": 212
     },
     {
-      "rank": 33,
-      "model": "MiMo V2.6 Flash",
-      "vendor": "Xiaomi",
-      "license": "open",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 0.35,
-          "ci": 1.47
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 5.36,
-          "ci": 2.83
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 1.76,
-          "ci": 5.41
-        },
-        {
-          "name": "Steerability",
-          "score": 0.44,
-          "ci": 1.98
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 1.06,
-          "ci": 2.05
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 3.85,
-          "ci": 0.68
-        },
-        {
-          "name": "Cost/Task",
-          "score": 16.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 14028
-    },
-    {
-      "rank": 34,
-      "model": "Step 5 Preview",
-      "vendor": "StepFun",
+      "rank": 30,
+      "model": "Grok 4.6 (xHigh)",
+      "vendor": "SpaceXAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 0.01,
-          "ci": 1.57
+          "score": 0.88,
+          "ci": 1.09
         },
         {
           "name": "Confirmed Success",
-          "score": 2.43,
-          "ci": 3.64
+          "score": 0.3,
+          "ci": 2.35
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.0,
-          "ci": 5.52
+          "score": 0.82,
+          "ci": 3.29
         },
         {
           "name": "Steerability",
-          "score": 0.12,
-          "ci": 2.26
+          "score": 0.07,
+          "ci": 1.58
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.23,
-          "ci": 1.61
+          "name": "Bash Reliability",
+          "score": 9.29,
+          "ci": 1.27
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.5,
-          "ci": 0.03
+          "score": 0.51,
+          "ci": 0.08
         },
         {
           "name": "Cost/Task",
-          "score": 11.0,
+          "score": 28.0,
           "ci": null
         },
         {
@@ -1681,47 +1485,47 @@
           "ci": null
         }
       ],
-      "sessions": 1270
+      "sessions": null
     },
     {
-      "rank": 35,
-      "model": "Qwen3.8 Flash Next",
-      "vendor": "Alibaba",
-      "license": null,
+      "rank": 31,
+      "model": "Grok 4.5",
+      "vendor": "SpaceXAI",
+      "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 0.72,
-          "ci": 0.62
+          "score": 0.79,
+          "ci": 1.09
         },
         {
           "name": "Confirmed Success",
-          "score": 3.78,
-          "ci": 1.43
+          "score": 0.79,
+          "ci": 2.31
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.4,
-          "ci": 2.21
+          "score": 2.21,
+          "ci": 3.23
         },
         {
           "name": "Steerability",
-          "score": 0.73,
-          "ci": 0.93
+          "score": 4.97,
+          "ci": 1.53
         },
         {
-          "name": "Bash Recovery",
-          "score": 2.57,
-          "ci": 0.5
+          "name": "Bash Reliability",
+          "score": 1.2,
+          "ci": 2.25
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.68,
-          "ci": 0.1
+          "score": 0.59,
+          "ci": 0.08
         },
         {
           "name": "Cost/Task",
-          "score": 89.0,
+          "score": 41.0,
           "ci": null
         },
         {
@@ -1730,47 +1534,47 @@
           "ci": null
         }
       ],
-      "sessions": 16047
+      "sessions": 26
     },
     {
-      "rank": 36,
-      "model": "GLM 5.3 Flash",
-      "vendor": "Z.ai",
-      "license": "open",
+      "rank": 32,
+      "model": "Gemini 3.7 Flash (High)",
+      "vendor": "Google",
+      "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 0.97,
-          "ci": 0.53
+          "score": 0.69,
+          "ci": 0.88
         },
         {
           "name": "Confirmed Success",
-          "score": 3.46,
-          "ci": 1.32
+          "score": 0.65,
+          "ci": 1.94
         },
         {
           "name": "Praise vs Complaint",
-          "score": 1.8,
-          "ci": 1.75
+          "score": 3.49,
+          "ci": 2.54
         },
         {
           "name": "Steerability",
-          "score": 1.24,
-          "ci": 0.78
+          "score": 3.19,
+          "ci": 1.37
         },
         {
-          "name": "Bash Recovery",
-          "score": 5.7,
-          "ci": 0.63
+          "name": "Bash Reliability",
+          "score": 7.67,
+          "ci": 1.33
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.42,
-          "ci": 0.05
+          "score": 0.39,
+          "ci": 0.14
         },
         {
           "name": "Cost/Task",
-          "score": 82.0,
+          "score": 55.0,
           "ci": null
         },
         {
@@ -1779,42 +1583,42 @@
           "ci": null
         }
       ],
-      "sessions": 6020
+      "sessions": 75375
     },
     {
-      "rank": 37,
+      "rank": 33,
       "model": "GPT 5.6 Luna (xHigh)",
       "vendor": "OpenAI",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 1.48,
-          "ci": 0.69
+          "score": 0.81,
+          "ci": 0.74
         },
         {
           "name": "Confirmed Success",
-          "score": 4.25,
-          "ci": 1.65
+          "score": 4.81,
+          "ci": 1.68
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.93,
-          "ci": 2.22
+          "score": 4.01,
+          "ci": 2.2
         },
         {
           "name": "Steerability",
-          "score": 0.01,
-          "ci": 1.0
+          "score": 1.09,
+          "ci": 1.07
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.51,
-          "ci": 1.06
+          "name": "Bash Reliability",
+          "score": 7.36,
+          "ci": 0.96
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.28,
+          "score": 0.43,
           "ci": 0.17
         },
         {
@@ -1831,6 +1635,202 @@
       "sessions": 20120
     },
     {
+      "rank": 34,
+      "model": "Step 5 Preview",
+      "vendor": "StepFun",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 0.96,
+          "ci": 1.71
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 1.12,
+          "ci": 3.52
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 2.18,
+          "ci": 5.33
+        },
+        {
+          "name": "Steerability",
+          "score": 1.29,
+          "ci": 2.47
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 10.38,
+          "ci": 1.66
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.64,
+          "ci": 0.04
+        },
+        {
+          "name": "Cost/Task",
+          "score": 13.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 1270
+    },
+    {
+      "rank": 35,
+      "model": "GLM 5.3 Flash",
+      "vendor": "Z.ai",
+      "license": "open",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 1.55,
+          "ci": 0.67
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 3.67,
+          "ci": 1.43
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 1.76,
+          "ci": 1.93
+        },
+        {
+          "name": "Steerability",
+          "score": 4.42,
+          "ci": 1.09
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 10.04,
+          "ci": 0.9
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.58,
+          "ci": 0.05
+        },
+        {
+          "name": "Cost/Task",
+          "score": 85.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 6020
+    },
+    {
+      "rank": 36,
+      "model": "Qwen3.8 Flash Next",
+      "vendor": "Alibaba",
+      "license": null,
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 2.71,
+          "ci": 0.69
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 3.22,
+          "ci": 1.47
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 3.25,
+          "ci": 2.13
+        },
+        {
+          "name": "Steerability",
+          "score": 2.16,
+          "ci": 1.0
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 18.58,
+          "ci": 0.82
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.73,
+          "ci": 0.12
+        },
+        {
+          "name": "Cost/Task",
+          "score": 95.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 16047
+    },
+    {
+      "rank": 37,
+      "model": "Gemini 3.1 Pro Preview",
+      "vendor": "Google",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 2.78,
+          "ci": 1.22
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 10.57,
+          "ci": 2.39
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 0.29,
+          "ci": 3.17
+        },
+        {
+          "name": "Steerability",
+          "score": 3.06,
+          "ci": 1.85
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 3.09,
+          "ci": 4.63
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.16,
+          "ci": 0.74
+        },
+        {
+          "name": "Cost/Task",
+          "score": 87.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 16
+    },
+    {
       "rank": 38,
       "model": "Qwen 3.8 27B",
       "vendor": "Alibaba",
@@ -1838,37 +1838,37 @@
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 2.01,
-          "ci": 0.63
+          "score": 2.92,
+          "ci": 0.74
         },
         {
           "name": "Confirmed Success",
-          "score": 0.8,
-          "ci": 1.54
+          "score": 0.07,
+          "ci": 1.66
         },
         {
           "name": "Praise vs Complaint",
-          "score": 3.86,
-          "ci": 2.14
+          "score": 5.27,
+          "ci": 2.18
         },
         {
           "name": "Steerability",
-          "score": 0.8,
-          "ci": 0.96
+          "score": 2.88,
+          "ci": 1.16
         },
         {
-          "name": "Bash Recovery",
-          "score": 5.9,
-          "ci": 0.65
+          "name": "Bash Reliability",
+          "score": 9.73,
+          "ci": 1.3
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.29,
-          "ci": 0.17
+          "score": 0.2,
+          "ci": 0.21
         },
         {
           "name": "Cost/Task",
-          "score": 58.0,
+          "score": 60.0,
           "ci": null
         },
         {
@@ -1881,43 +1881,43 @@
     },
     {
       "rank": 39,
-      "model": "Gemini 3.7 Flash (High)",
+      "model": "Gemini 3.6 Flash (High)",
       "vendor": "Google",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 2.1,
-          "ci": 0.79
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 0.21,
-          "ci": 1.9
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 3.81,
-          "ci": 2.52
-        },
-        {
-          "name": "Steerability",
-          "score": 1.29,
-          "ci": 1.12
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 5.44,
+          "score": 4.45,
           "ci": 1.14
         },
         {
+          "name": "Confirmed Success",
+          "score": 6.19,
+          "ci": 2.6
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 8.95,
+          "ci": 2.98
+        },
+        {
+          "name": "Steerability",
+          "score": 5.76,
+          "ci": 1.86
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 0.55,
+          "ci": 2.77
+        },
+        {
           "name": "Tool Hallucination",
-          "score": 0.24,
-          "ci": 0.14
+          "score": 0.62,
+          "ci": 0.05
         },
         {
           "name": "Cost/Task",
-          "score": 54.0,
+          "score": 22.0,
           "ci": null
         },
         {
@@ -1930,43 +1930,43 @@
     },
     {
       "rank": 40,
-      "model": "Muse Spark 1.2 (xHigh)",
+      "model": "Muse Spark 1.1",
       "vendor": "Meta",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 3.65,
-          "ci": 0.71
+          "score": 5.31,
+          "ci": 0.6
         },
         {
           "name": "Confirmed Success",
-          "score": 6.68,
-          "ci": 1.93
+          "score": 4.84,
+          "ci": 1.36
         },
         {
           "name": "Praise vs Complaint",
-          "score": 12.22,
-          "ci": 2.05
+          "score": 11.63,
+          "ci": 1.5
         },
         {
           "name": "Steerability",
-          "score": 5.13,
-          "ci": 1.15
+          "score": 6.47,
+          "ci": 1.04
         },
         {
-          "name": "Bash Recovery",
-          "score": 5.79,
-          "ci": 0.93
+          "name": "Bash Reliability",
+          "score": 2.03,
+          "ci": 1.29
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.03,
-          "ci": 0.13
+          "score": 0.08,
+          "ci": 0.1
         },
         {
           "name": "Cost/Task",
-          "score": 49.0,
+          "score": 145.0,
           "ci": null
         },
         {
@@ -1979,137 +1979,39 @@
     },
     {
       "rank": 41,
-      "model": "Muse Spark 1.1",
-      "vendor": "Meta",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 5.0,
-          "ci": 0.51
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 4.24,
-          "ci": 1.23
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 12.04,
-          "ci": 1.38
-        },
-        {
-          "name": "Steerability",
-          "score": 6.34,
-          "ci": 0.83
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 2.26,
-          "ci": 1.14
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.11,
-          "ci": 0.1
-        },
-        {
-          "name": "Cost/Task",
-          "score": 144.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 125425
-    },
-    {
-      "rank": 42,
-      "model": "Hy3",
-      "vendor": "Tencent",
-      "license": "open",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 5.06,
-          "ci": 1.23
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 11.69,
-          "ci": 2.87
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 5.86,
-          "ci": 3.87
-        },
-        {
-          "name": "Steerability",
-          "score": 2.12,
-          "ci": 1.39
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 7.21,
-          "ci": 2.73
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 2.67,
-          "ci": 0.97
-        },
-        {
-          "name": "Cost/Task",
-          "score": 30.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 13053
-    },
-    {
-      "rank": 43,
       "model": "Qwen3.7 Max Alibaba · Proprietary",
       "vendor": null,
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 5.5,
-          "ci": 0.96
+          "score": 5.35,
+          "ci": 1.05
         },
         {
           "name": "Confirmed Success",
-          "score": 10.04,
-          "ci": 2.51
+          "score": 9.01,
+          "ci": 2.49
         },
         {
           "name": "Praise vs Complaint",
-          "score": 9.8,
-          "ci": 2.72
+          "score": 11.17,
+          "ci": 2.6
         },
         {
           "name": "Steerability",
-          "score": 6.12,
-          "ci": 1.46
+          "score": 6.92,
+          "ci": 1.83
         },
         {
-          "name": "Bash Recovery",
-          "score": 1.56,
-          "ci": 1.62
+          "name": "Bash Reliability",
+          "score": 5.87,
+          "ci": 2.84
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.02,
-          "ci": 0.19
+          "score": 0.07,
+          "ci": 0.21
         },
         {
           "name": "Cost/Task",
@@ -2125,44 +2027,142 @@
       "sessions": null
     },
     {
+      "rank": 42,
+      "model": "Hy3",
+      "vendor": "Tencent",
+      "license": "open",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 6.27,
+          "ci": 1.51
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 11.35,
+          "ci": 2.89
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 6.8,
+          "ci": 3.93
+        },
+        {
+          "name": "Steerability",
+          "score": 1.35,
+          "ci": 1.74
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 14.37,
+          "ci": 4.74
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 4.25,
+          "ci": 2.72
+        },
+        {
+          "name": "Cost/Task",
+          "score": 31.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 13053
+    },
+    {
+      "rank": 43,
+      "model": "Qwen3.7 Plus",
+      "vendor": "Alibaba",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 6.48,
+          "ci": 1.62
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 8.17,
+          "ci": 3.47
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 10.56,
+          "ci": 4.19
+        },
+        {
+          "name": "Steerability",
+          "score": 9.18,
+          "ci": 2.58
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 0.19,
+          "ci": 5.86
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 1.17,
+          "ci": 0.66
+        },
+        {
+          "name": "Cost/Task",
+          "score": 23.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 32128
+    },
+    {
       "rank": 44,
-      "model": "mistral-large-4",
+      "model": "Mistral Large 4",
       "vendor": "Mistral",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 6.56,
-          "ci": 2.95
+          "score": 6.5,
+          "ci": 1.71
         },
         {
           "name": "Confirmed Success",
-          "score": 1.67,
-          "ci": 6.03
+          "score": 0.7,
+          "ci": 3.32
         },
         {
           "name": "Praise vs Complaint",
-          "score": 4.41,
-          "ci": 9.75
+          "score": 2.98,
+          "ci": 4.98
         },
         {
           "name": "Steerability",
-          "score": 13.25,
-          "ci": 5.06
+          "score": 10.22,
+          "ci": 2.53
         },
         {
-          "name": "Bash Recovery",
-          "score": 1.78,
-          "ci": 3.05
+          "name": "Bash Reliability",
+          "score": 1.84,
+          "ci": 2.34
         },
         {
           "name": "Tool Hallucination",
-          "score": 18.58,
-          "ci": 3.25
+          "score": 17.65,
+          "ci": 1.66
         },
         {
           "name": "Cost/Task",
-          "score": 5.0,
+          "score": 14.0,
           "ci": null
         },
         {
@@ -2175,39 +2175,137 @@
     },
     {
       "rank": 45,
+      "model": "Muse Spark 1.2 (xHigh)",
+      "vendor": "Meta",
+      "license": "proprietary",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 6.53,
+          "ci": 0.82
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 7.87,
+          "ci": 2.03
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 11.64,
+          "ci": 2.11
+        },
+        {
+          "name": "Steerability",
+          "score": 7.85,
+          "ci": 1.37
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 4.32,
+          "ci": 1.33
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 0.16,
+          "ci": 0.12
+        },
+        {
+          "name": "Cost/Task",
+          "score": 51.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 125425
+    },
+    {
+      "rank": 46,
+      "model": "Mimo V2.5 Pro",
+      "vendor": "Xiaomi",
+      "license": "open",
+      "scores": [
+        {
+          "name": "Net Improvement",
+          "score": 6.95,
+          "ci": 1.0
+        },
+        {
+          "name": "Confirmed Success",
+          "score": 8.28,
+          "ci": 2.31
+        },
+        {
+          "name": "Praise vs Complaint",
+          "score": 12.87,
+          "ci": 2.55
+        },
+        {
+          "name": "Steerability",
+          "score": 9.57,
+          "ci": 1.79
+        },
+        {
+          "name": "Bash Reliability",
+          "score": 0.89,
+          "ci": 2.22
+        },
+        {
+          "name": "Tool Hallucination",
+          "score": 1.02,
+          "ci": 0.36
+        },
+        {
+          "name": "Cost/Task",
+          "score": 48.0,
+          "ci": null
+        },
+        {
+          "name": "Output Tokens/Task",
+          "score": null,
+          "ci": null
+        }
+      ],
+      "sessions": 43087
+    },
+    {
+      "rank": 47,
       "model": "Minimax M3",
       "vendor": "MiniMax",
       "license": null,
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 6.95,
-          "ci": 0.9
+          "score": 7.44,
+          "ci": 1.03
         },
         {
           "name": "Confirmed Success",
-          "score": 14.66,
-          "ci": 2.56
+          "score": 14.6,
+          "ci": 2.57
         },
         {
           "name": "Praise vs Complaint",
-          "score": 13.99,
-          "ci": 2.61
+          "score": 13.68,
+          "ci": 2.67
         },
         {
           "name": "Steerability",
-          "score": 6.65,
-          "ci": 1.44
+          "score": 6.17,
+          "ci": 1.69
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.58,
-          "ci": 1.21
+          "name": "Bash Reliability",
+          "score": 2.24,
+          "ci": 2.21
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.05,
-          "ci": 0.26
+          "score": 0.13,
+          "ci": 0.34
         },
         {
           "name": "Cost/Task",
@@ -2223,93 +2321,44 @@
       "sessions": 30120
     },
     {
-      "rank": 46,
-      "model": "Qwen3.7 Plus",
-      "vendor": "Alibaba",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 7.21,
-          "ci": 1.45
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 9.07,
-          "ci": 3.39
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 11.21,
-          "ci": 4.06
-        },
-        {
-          "name": "Steerability",
-          "score": 8.55,
-          "ci": 2.27
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 6.31,
-          "ci": 3.01
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.92,
-          "ci": 0.58
-        },
-        {
-          "name": "Cost/Task",
-          "score": 22.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 32128
-    },
-    {
-      "rank": 47,
-      "model": "Mimo V2.5 Pro",
-      "vendor": "Xiaomi",
+      "rank": 48,
+      "model": "Nemotron 3 Ultra",
+      "vendor": "Nvidia",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 7.78,
-          "ci": 0.9
+          "score": 7.98,
+          "ci": 4.52
         },
         {
           "name": "Confirmed Success",
-          "score": 9.03,
-          "ci": 2.31
+          "score": 17.75,
+          "ci": 7.48
         },
         {
           "name": "Praise vs Complaint",
-          "score": 12.8,
-          "ci": 2.59
+          "score": 3.99,
+          "ci": 12.88
         },
         {
           "name": "Steerability",
-          "score": 8.74,
-          "ci": 1.51
+          "score": 9.74,
+          "ci": 8.63
         },
         {
-          "name": "Bash Recovery",
-          "score": 7.51,
-          "ci": 1.56
+          "name": "Bash Reliability",
+          "score": 6.8,
+          "ci": 17.82
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.86,
-          "ci": 0.26
+          "score": 1.06,
+          "ci": 1.56
         },
         {
           "name": "Cost/Task",
-          "score": 46.0,
+          "score": 12.0,
           "ci": null
         },
         {
@@ -2318,47 +2367,47 @@
           "ci": null
         }
       ],
-      "sessions": 43087
+      "sessions": null
     },
     {
-      "rank": 48,
-      "model": "Gemini 3.6 Flash (High)",
-      "vendor": "Google",
-      "license": "proprietary",
+      "rank": 49,
+      "model": "Mistral Medium 3.5",
+      "vendor": "Mistral",
+      "license": null,
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 7.79,
-          "ci": 1.06
+          "score": 10.81,
+          "ci": 1.85
         },
         {
           "name": "Confirmed Success",
-          "score": 5.79,
-          "ci": 2.62
+          "score": 15.26,
+          "ci": 3.83
         },
         {
           "name": "Praise vs Complaint",
-          "score": 8.88,
-          "ci": 3.03
+          "score": 16.17,
+          "ci": 4.23
         },
         {
           "name": "Steerability",
-          "score": 6.55,
-          "ci": 1.67
+          "score": 9.39,
+          "ci": 2.8
         },
         {
-          "name": "Bash Recovery",
-          "score": 18.23,
-          "ci": 2.05
+          "name": "Bash Reliability",
+          "score": 9.1,
+          "ci": 7.26
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.48,
-          "ci": 0.04
+          "score": 3.27,
+          "ci": 1.41
         },
         {
           "name": "Cost/Task",
-          "score": 22.0,
+          "score": 12.0,
           "ci": null
         },
         {
@@ -2370,138 +2419,40 @@
       "sessions": 75375
     },
     {
-      "rank": 49,
-      "model": "Gemini 3.1 Pro Preview",
-      "vendor": "Google",
-      "license": "proprietary",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 7.79,
-          "ci": 1.0
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 10.09,
-          "ci": 2.25
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 1.31,
-          "ci": 3.08
-        },
-        {
-          "name": "Steerability",
-          "score": 4.04,
-          "ci": 1.43
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 23.27,
-          "ci": 1.87
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 0.26,
-          "ci": 0.78
-        },
-        {
-          "name": "Cost/Task",
-          "score": 86.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 16
-    },
-    {
       "rank": 50,
-      "model": "Inkling Small",
-      "vendor": "Thinky",
-      "license": "open",
-      "scores": [
-        {
-          "name": "Net Improvement",
-          "score": 10.32,
-          "ci": 1.44
-        },
-        {
-          "name": "Confirmed Success",
-          "score": 20.22,
-          "ci": 4.3
-        },
-        {
-          "name": "Praise vs Complaint",
-          "score": 22.49,
-          "ci": 3.48
-        },
-        {
-          "name": "Steerability",
-          "score": 13.18,
-          "ci": 2.76
-        },
-        {
-          "name": "Bash Recovery",
-          "score": 5.43,
-          "ci": 1.5
-        },
-        {
-          "name": "Tool Hallucination",
-          "score": 1.14,
-          "ci": 1.07
-        },
-        {
-          "name": "Cost/Task",
-          "score": 13.0,
-          "ci": null
-        },
-        {
-          "name": "Output Tokens/Task",
-          "score": null,
-          "ci": null
-        }
-      ],
-      "sessions": 45120
-    },
-    {
-      "rank": 51,
       "model": "Inkling",
       "vendor": "Thinky",
       "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 11.51,
-          "ci": 1.12
+          "score": 12.8,
+          "ci": 1.33
         },
         {
           "name": "Confirmed Success",
-          "score": 21.71,
-          "ci": 3.1
+          "score": 22.6,
+          "ci": 3.27
         },
         {
           "name": "Praise vs Complaint",
-          "score": 23.34,
-          "ci": 2.51
+          "score": 22.68,
+          "ci": 2.54
         },
         {
           "name": "Steerability",
-          "score": 12.2,
-          "ci": 2.03
+          "score": 13.54,
+          "ci": 2.47
         },
         {
-          "name": "Bash Recovery",
-          "score": 0.08,
-          "ci": 2.51
+          "name": "Bash Reliability",
+          "score": 3.23,
+          "ci": 4.9
         },
         {
           "name": "Tool Hallucination",
-          "score": 0.37,
-          "ci": 0.66
+          "score": 0.38,
+          "ci": 0.63
         },
         {
           "name": "Cost/Task",
@@ -2517,44 +2468,44 @@
       "sessions": 1405
     },
     {
-      "rank": 52,
-      "model": "Mistral Medium 3.5",
-      "vendor": "Mistral",
-      "license": null,
+      "rank": 51,
+      "model": "Inkling Small",
+      "vendor": "Thinky",
+      "license": "open",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 12.6,
-          "ci": 1.45
+          "score": 13.94,
+          "ci": 1.75
         },
         {
           "name": "Confirmed Success",
-          "score": 14.38,
-          "ci": 3.77
+          "score": 23.02,
+          "ci": 4.47
         },
         {
           "name": "Praise vs Complaint",
-          "score": 19.63,
-          "ci": 3.69
+          "score": 22.51,
+          "ci": 3.43
         },
         {
           "name": "Steerability",
-          "score": 6.18,
-          "ci": 2.28
+          "score": 18.7,
+          "ci": 3.29
         },
         {
-          "name": "Bash Recovery",
-          "score": 20.45,
-          "ci": 3.38
+          "name": "Bash Reliability",
+          "score": 4.9,
+          "ci": 4.44
         },
         {
           "name": "Tool Hallucination",
-          "score": 2.37,
-          "ci": 0.96
+          "score": 0.93,
+          "ci": 0.97
         },
         {
           "name": "Cost/Task",
-          "score": 11.0,
+          "score": 13.0,
           "ci": null
         },
         {
@@ -2563,47 +2514,47 @@
           "ci": null
         }
       ],
-      "sessions": 75375
+      "sessions": 45120
     },
     {
-      "rank": 53,
+      "rank": 52,
       "model": "Solar Pro 4",
       "vendor": "Upstage",
       "license": "proprietary",
       "scores": [
         {
           "name": "Net Improvement",
-          "score": 16.98,
-          "ci": 1.86
+          "score": 19.29,
+          "ci": 2.62
         },
         {
           "name": "Confirmed Success",
-          "score": 23.0,
-          "ci": 5.43
+          "score": 25.83,
+          "ci": 5.55
         },
         {
           "name": "Praise vs Complaint",
-          "score": 24.5,
-          "ci": 4.15
+          "score": 20.5,
+          "ci": 4.69
         },
         {
           "name": "Steerability",
-          "score": 10.01,
-          "ci": 2.97
+          "score": 13.27,
+          "ci": 3.45
         },
         {
-          "name": "Bash Recovery",
-          "score": 25.56,
-          "ci": 4.51
+          "name": "Bash Reliability",
+          "score": 49.91,
+          "ci": 15.38
         },
         {
           "name": "Tool Hallucination",
-          "score": 1.84,
-          "ci": 1.14
+          "score": 2.24,
+          "ci": 1.3
         },
         {
           "name": "Cost/Task",
-          "score": 9.0,
+          "score": 10.0,
           "ci": null
         },
         {

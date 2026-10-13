@@ -11,7 +11,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | kimi-k2-6:free | kenari/openrouter | 27.0 | 61.8 | 27 (document) |
 | glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | 33 (text) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 42 (agent) |
-| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 51 (agent) |
+| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 50 (agent) |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 60 (vision) |
 | deepseek-v4-pro:free | openrouter/unorouter | 36.0 | 68.8 | 62 (text) |
 | mimo-v2-5:free | kenari/openrouter | — | — | 71 (vision) |
