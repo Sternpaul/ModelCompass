@@ -85,16 +85,16 @@ _Quantitative reasoning category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-5-6-sol` | 97.300 |
-| 2 | `gpt-5-6-terra` | 97.300 |
-| 3 | `gpt-5-6-luna` | 94.700 |
-| 4 | `gpt-6-astra` | 85.500 |
-| 5 | `qwen3-7-max` | 82.500 |
-| 6 | `inkling` | 81.200 |
-| 7 | `deepseek-v4-pro-0813` | 80.700 |
-| 8 | `glm-5-2` | 80.700 |
-| 9 | `deepseek-v4-flash-0731` | 80.400 |
-| 10 | `ternary-bonsai-2-27b` | 79.500 |
+| 1 | `gpt-6-astra` | 97.300 |
+| 2 | `claude-opus-5-5` | 97.300 |
+| 3 | `gpt-6-1-sol` | 97.300 |
+| 4 | `gpt-6-sol` | 97.300 |
+| 5 | `claude-fable-5-1` | 96.800 |
+| 6 | `claude-fable` | 96 |
+| 7 | `gpt-5-6-sol` | 95.800 |
+| 8 | `claude-sonnet-5-5` | 95.200 |
+| 9 | `gpt-5-5-pro` | 94 |
+| 10 | `claude-opus-5` | 91.600 |
 
 ## Multilingual
 

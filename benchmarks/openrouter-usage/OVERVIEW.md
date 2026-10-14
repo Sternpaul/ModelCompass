@@ -14,8 +14,8 @@ _Rank by total tokens processed; requests kept alongside._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `deepseek/deepseek-v4.1-flash-20260910` | — |
-| 2 | `z-ai/glm-5.3-flash-20260826` | — |
-| 3 | `stepfun/step-5-preview-20261008` | — |
+| 2 | `stepfun/step-5-preview-20261008` | — |
+| 3 | `z-ai/glm-5.3-flash-20260826` | — |
 | 4 | `xiaomi/mimo-v2.6-flash-20260921` | — |
 | 5 | `tencent/hy4-preview-20260827` | — |
 | 6 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
