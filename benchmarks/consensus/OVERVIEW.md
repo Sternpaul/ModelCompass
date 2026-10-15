@@ -5,7 +5,7 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | Rank | Model | Top-10 Appearances | Borda Points | Benchmarks |
 |------|-------|--------------------:|-------------:|------------|
 | 1 | `gpt-6-astra` | 8 | 59 | benchlm_agentic, benchlm_knowledge, benchlm_math, benchlm_reasoning, deepswe_v1_1 |
-| 2 | `claude-opus-5` | 8 | 54 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded… |
+| 2 | `claude-opus-5` | 7 | 53 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded, deepswe_v1_1 |
 | 3 | `anthropic/claude-fable-5-1` | 7 | 51 | aa_artificial_analysis_coding_index, aa_artificial_analysis_intelligence_index, aa_hle, aa_lcr, aa_scicode… |
 | 4 | `anthropic/claude-opus-5-5` | 5 | 45 | aa_artificial_analysis_intelligence_index, aa_hle, aa_lcr, aa_scicode, aa_terminalbench_v4_0 |
 | 5 | `anthropic/claude-opus-5-5-xhigh` | 5 | 37 | aa_artificial_analysis_intelligence_index, aa_hle, aa_lcr, aa_scicode, aa_terminalbench_v4_0 |

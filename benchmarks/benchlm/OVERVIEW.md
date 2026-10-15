@@ -19,10 +19,10 @@ _Tool-use / agentic task category score._
 | 4 | `gpt-5-6-sol` | 83.700 |
 | 5 | `claude-fable` | 82.900 |
 | 6 | `qwen3-8-max` | 82.900 |
-| 7 | `atria-dawn-preview` | 82.300 |
-| 8 | `kimi-k3` | 81.900 |
-| 9 | `gpt-5-5` | 81.700 |
-| 10 | `qwen3-8-27b` | 81.700 |
+| 7 | `ling-3-1-flash` | 82.300 |
+| 8 | `atria-dawn-preview` | 82.300 |
+| 9 | `kimi-k3` | 81.900 |
+| 10 | `gpt-5-5` | 81.700 |
 
 ## Coding
 
@@ -94,7 +94,7 @@ _Quantitative reasoning category score._
 | 7 | `gpt-5-6-sol` | 95.800 |
 | 8 | `claude-sonnet-5-5` | 95.200 |
 | 9 | `gpt-5-5-pro` | 94 |
-| 10 | `claude-opus-5` | 91.600 |
+| 10 | `gemini-4-argon` | 92.800 |
 
 ## Multilingual
 
