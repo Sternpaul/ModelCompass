@@ -21,5 +21,5 @@ _Rank by total tokens processed; requests kept alongside._
 | 6 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 7 | `openai/gpt-6-luna-20260922` | — |
 | 8 | `anthropic/claude-opus-5.5-20260921` | — |
-| 9 | `deepseek/deepseek-v4-flash-20260731` | — |
-| 10 | `z-ai/glm-5.3-20260816` | — |
+| 9 | `z-ai/glm-5.3-20260816` | — |
+| 10 | `deepseek/deepseek-v4-flash-20260731` | — |
