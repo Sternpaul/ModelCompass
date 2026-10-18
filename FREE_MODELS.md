@@ -6,16 +6,16 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 
 | Model | Free on | AA Intelligence | AA Coding | Arena Rank |
 |-------|---------|-----------------|-----------|------------|
-| gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
-| gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
-| hy3:free | kenari/openrouter | 25.3 | 58.8 | 41 (agent) |
-| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 50 (agent) |
-| thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | 51 (agent) |
-| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 60 (vision) |
+| gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **31** (text) |
+| gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 55 (text) |
 | deepseek-v4-pro:free | openrouter/unorouter | 36.0 | 68.8 | 64 (text) |
-| mimo-v2-5:free | kenari/openrouter | — | — | 71 (vision) |
+| hy3:free | kenari/openrouter | 25.3 | 58.8 | 74 (text) |
+| qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | 94 (text) |
+| thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 97 (text) |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | 104 (text) |
+| mimo-v2-5:free | kenari/openrouter | — | — | 108 (text) |
 | minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | 140 (text) |
+| thinkingmachines/inkling-small:free | kilo/openrouter | 25.7 | 52.9 | 156 (text) |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | 201 (text) |
 | inclusionai/ling-3.1-flash:free | commandcode/openrouter | **41.1** | — | — |
 | glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | — |
@@ -50,5 +50,4 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | stealth/missingno | nous | — | — | — |
 | stepfun/step-5-preview:free | nous | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
-| stealth/space-bunny-alpha | nous | — | — | — |
 | inclusionai/ling-3.0-flash-sante:free | nous | — | — | — |
