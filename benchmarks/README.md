@@ -36,7 +36,6 @@ Human-preference Elo from blind pairwise battles. Higher Elo = more preferred by
 - [Code Arena](./arena/arena_code.json)
 - [Document Arena](./arena/arena_document.json)
 - [Image Arena](./arena/arena_image.json)
-- [Image Edit Arena](./arena/arena_image-edit.json)
 - [Image To Video Arena](./arena/arena_image-to-video.json)
 - [Search Arena](./arena/arena_search.json)
 - [Text Arena](./arena/arena_text.json)

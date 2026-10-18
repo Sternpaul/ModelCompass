@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T08:27:07.888996+00:00",
+    "generated_at": "2026-10-18T01:42:33.908917+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1028,21 +1028,6 @@
       }
     },
     {
-      "model": "GPT-Image-2.5 Sunburst",
-      "top_appearances": 2,
-      "borda_points": 20,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 1,
-          "score": 1524.0
-        },
-        "arena_text-to-image": {
-          "rank": 1,
-          "score": 1425.0
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5",
       "top_appearances": 2,
       "borda_points": 20,
@@ -1069,21 +1054,6 @@
         "arena_text-to-video": {
           "rank": 1,
           "score": 1516.0
-        }
-      }
-    },
-    {
-      "model": "GPT-Image-2.5 Flare",
-      "top_appearances": 2,
-      "borda_points": 18,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 2,
-          "score": 1481.0
-        },
-        "arena_text-to-image": {
-          "rank": 2,
-          "score": 1398.0
         }
       }
     },
@@ -1133,21 +1103,6 @@
       }
     },
     {
-      "model": "GPT-Image-2 (Medium)",
-      "top_appearances": 2,
-      "borda_points": 16,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 3,
-          "score": 1462.0
-        },
-        "arena_text-to-image": {
-          "rank": 3,
-          "score": 1383.0
-        }
-      }
-    },
-    {
       "model": "Claude Opus 5 (High)",
       "top_appearances": 2,
       "borda_points": 15,
@@ -1174,21 +1129,6 @@
         "aa_tau_banking": {
           "rank": 2,
           "score": 0.507216494845361
-        }
-      }
-    },
-    {
-      "model": "Grok Imagine Image 2.0",
-      "top_appearances": 2,
-      "borda_points": 14,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 4,
-          "score": 1439.0
-        },
-        "arena_text-to-image": {
-          "rank": 4,
-          "score": 1334.0
         }
       }
     },
@@ -1234,21 +1174,6 @@
         "arena_search": {
           "rank": 7,
           "score": 1234.0
-        }
-      }
-    },
-    {
-      "model": "MAI-Image-2.6",
-      "top_appearances": 2,
-      "borda_points": 12,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 5,
-          "score": 1428.0
-        },
-        "arena_text-to-image": {
-          "rank": 5,
-          "score": 1332.0
         }
       }
     },
@@ -1328,21 +1253,6 @@
       }
     },
     {
-      "model": "Gemini Nano Banana 2.1",
-      "top_appearances": 2,
-      "borda_points": 10,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 6,
-          "score": 1428.0
-        },
-        "arena_text-to-image": {
-          "rank": 6,
-          "score": 1328.0
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5-6-sol-high",
       "top_appearances": 2,
       "borda_points": 10,
@@ -1410,21 +1320,6 @@
         "price_performance": {
           "rank": 3,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Grok Imagine Image 2.0 (20260801)",
-      "top_appearances": 2,
-      "borda_points": 7,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 7,
-          "score": 1425.0
-        },
-        "arena_text-to-image": {
-          "rank": 8,
-          "score": 1294.0
         }
       }
     },
@@ -1500,21 +1395,6 @@
         "aa_terminalbench_v2_1": {
           "rank": 9,
           "score": 0.887640449438202
-        }
-      }
-    },
-    {
-      "model": "Muse Image",
-      "top_appearances": 2,
-      "borda_points": 5,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 8,
-          "score": 1403.0
-        },
-        "arena_text-to-image": {
-          "rank": 9,
-          "score": 1274.0
         }
       }
     },
@@ -1601,6 +1481,17 @@
         "arena_agent": {
           "rank": 1,
           "score": null
+        }
+      }
+    },
+    {
+      "model": "GPT-Image-2.5 Sunburst",
+      "top_appearances": 1,
+      "borda_points": 10,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 1,
+          "score": 1425.0
         }
       }
     },
@@ -1704,6 +1595,17 @@
       }
     },
     {
+      "model": "GPT-Image-2.5 Flare",
+      "top_appearances": 1,
+      "borda_points": 9,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 2,
+          "score": 1398.0
+        }
+      }
+    },
+    {
       "model": "Muse Wonder (Max)",
       "top_appearances": 1,
       "borda_points": 9,
@@ -1799,6 +1701,17 @@
         "arena_search": {
           "rank": 3,
           "score": 1251.0
+        }
+      }
+    },
+    {
+      "model": "GPT-Image-2 (Medium)",
+      "top_appearances": 1,
+      "borda_points": 8,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 3,
+          "score": 1383.0
         }
       }
     },
@@ -1946,6 +1859,17 @@
       }
     },
     {
+      "model": "Grok Imagine Image 2.0",
+      "top_appearances": 1,
+      "borda_points": 7,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 4,
+          "score": 1334.0
+        }
+      }
+    },
+    {
       "model": "Grok Imagine Video 1.5",
       "top_appearances": 1,
       "borda_points": 7,
@@ -2089,6 +2013,17 @@
       }
     },
     {
+      "model": "MAI-Image-2.6",
+      "top_appearances": 1,
+      "borda_points": 6,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 5,
+          "score": 1332.0
+        }
+      }
+    },
+    {
       "model": "xai/grok-4-3",
       "top_appearances": 1,
       "borda_points": 6,
@@ -2217,6 +2152,17 @@
         "arena_agent": {
           "rank": 6,
           "score": null
+        }
+      }
+    },
+    {
+      "model": "Gemini Nano Banana 2.1",
+      "top_appearances": 1,
+      "borda_points": 5,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 6,
+          "score": 1328.0
         }
       }
     },
@@ -2507,7 +2453,7 @@
       }
     },
     {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "model": "anthropic/claude-opus-5.5-20260921",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -2558,6 +2504,17 @@
         "arena_image-to-video": {
           "rank": 8,
           "score": 1456.0
+        }
+      }
+    },
+    {
+      "model": "Grok Imagine Image 2.0 (20260801)",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 8,
+          "score": 1294.0
         }
       }
     },
@@ -2716,7 +2673,7 @@
       }
     },
     {
-      "model": "anthropic/claude-opus-5.5-20260921",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -2749,17 +2706,6 @@
       }
     },
     {
-      "model": "MAI-Image-2.5",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 9,
-          "score": 1401.0
-        }
-      }
-    },
-    {
       "model": "FLUX 3 Video (20260811)",
       "top_appearances": 1,
       "borda_points": 2,
@@ -2767,6 +2713,17 @@
         "arena_image-to-video": {
           "rank": 9,
           "score": 1449.0
+        }
+      }
+    },
+    {
+      "model": "Muse Image",
+      "top_appearances": 1,
+      "borda_points": 2,
+      "benchmarks": {
+        "arena_text-to-image": {
+          "rank": 9,
+          "score": 1274.0
         }
       }
     },
@@ -2965,17 +2922,6 @@
         "price_performance": {
           "rank": 9,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Seedream 5.0 Pro",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "arena_image-edit": {
-          "rank": 10,
-          "score": 1394.0
         }
       }
     },

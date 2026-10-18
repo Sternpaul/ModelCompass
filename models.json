@@ -1,24 +1,54 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T08:27:07.625615+00:00",
-    "model_count": 3974,
+    "generated_at": "2026-10-18T01:42:33.643075+00:00",
+    "model_count": 3984,
     "sources": {
       "openrouter": "ok",
-      "models.dev": "ok (8988 models from 232 providers)",
-      "openrouter_usage": "ok (574 models with live usage)",
+      "models.dev": "ok (9048 models from 232 providers)",
+      "openrouter_usage": "ok (576 models with live usage)",
       "deepswe": "ok (70 configs, generated_at=2026-09-22)",
       "artificial_analysis": "ok (704 models)",
-      "arena_ai": "ok (14 leaderboards; 5 live-discovered via scrape, 9 from curated fallback)",
+      "arena_ai": "ok (13 leaderboards; 5 live-discovered via scrape, 8 from curated fallback)",
       "benchlm": "ok (954 models)"
     },
     "coverage": {
       "aa": 468,
-      "arena": 587,
+      "arena": 564,
       "benchlm": 303
     },
     "note": "Each model carries raw benchmark data under benchmarks.<source>. No scores are blended across sources."
   },
   "models": [
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4.1-flash-1017",
+      "source": "openrouter",
+      "created_unix": 1792225624,
+      "context": 1048576,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": true,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.15,
+        "completion": 0.6,
+        "cache_read": 0.003
+      },
+      "benchmarks": {}
+    },
     {
       "id": "elorian/glimpse",
       "name": "Elorian: Glimpse",
@@ -228,8 +258,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 140.791,
-          "ttft": 0.439
+          "median_tps": 126.124,
+          "ttft": 0.452
         }
       }
     },
@@ -294,13 +324,13 @@
       "benchmarks": {}
     },
     {
-      "id": "~unbiased/pareto-latest",
-      "name": "Pareto Latest",
-      "provider": "~unbiased",
-      "family": "~unbiased/pareto-latest",
+      "id": "unbiased/pareto-26.10",
+      "name": "Pareto 26.10",
+      "provider": "unbiased",
+      "family": "unbiased/pareto-26.10",
       "source": "openrouter",
-      "created_unix": 1791933050,
-      "context": 262144,
+      "created_unix": 1792073620,
+      "context": 1048576,
       "modality": "text+image->text",
       "is_vision": true,
       "is_audio_input": false,
@@ -309,7 +339,7 @@
       "is_audio_output": false,
       "supports_reasoning": false,
       "supports_tools": true,
-      "supports_json": true,
+      "supports_json": false,
       "supports_caching": true,
       "knowledge_cutoff": null,
       "hugging_face_id": null,
@@ -317,9 +347,39 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 2.5,
-        "completion": 7.5,
-        "cache_read": 0.25
+        "prompt": 0.8,
+        "completion": 3.2,
+        "cache_read": 0.03
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "~unbiased/pareto-latest",
+      "name": "Pareto Latest",
+      "provider": "~unbiased",
+      "family": "~unbiased/pareto-latest",
+      "source": "openrouter",
+      "created_unix": 1791933050,
+      "context": 1048576,
+      "modality": "text+image->text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": true,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 0.8,
+        "completion": 3.2,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -896,8 +956,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 184.343,
-          "ttft": 34.633
+          "median_tps": 173.534,
+          "ttft": 34.668
         }
       }
     },
@@ -1633,8 +1693,8 @@
             "completion": 0.4,
             "blended": 0.175
           },
-          "median_tps": 77.228,
-          "ttft": 1.145
+          "median_tps": 97.853,
+          "ttft": 1.009
         }
       }
     },
@@ -1698,7 +1758,7 @@
             "blended": 0.0
           },
           "median_tps": 177.243,
-          "ttft": 0.215
+          "ttft": 0.221
         },
         "benchlm": {
           "slug": "command-a-plus",
@@ -1973,8 +2033,8 @@
             "completion": 0.5,
             "blended": 0.2
           },
-          "median_tps": 115.542,
-          "ttft": 2.839
+          "median_tps": 114.903,
+          "ttft": 3.142
         },
         "benchlm": {
           "slug": "gpt-6-luna-medium",
@@ -2542,7 +2602,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 39.52,
-            "upper": 68.21,
+            "upper": 68.22,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -2722,9 +2782,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.15444,
-        "completion": 0.46332,
-        "cache_read": 0.004914
+        "prompt": 0.12,
+        "completion": 8.0,
+        "cache_read": 0.12
       },
       "benchmarks": {}
     },
@@ -2752,9 +2812,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0219,
-        "completion": 0.6246,
-        "cache_read": 0.0022
+        "prompt": 0.08,
+        "completion": 0.5,
+        "cache_read": 0.008
       },
       "benchmarks": {}
     },
@@ -3052,9 +3112,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.15,
-        "completion": 0.6,
-        "cache_read": 0.003
+        "prompt": 0.072,
+        "completion": 0.144,
+        "cache_read": 0.0016
       },
       "benchmarks": {}
     },
@@ -3237,8 +3297,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 56.851,
-          "ttft": 2.087
+          "median_tps": 57.381,
+          "ttft": 2.016
         }
       }
     },
@@ -3626,9 +3686,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0341,
-        "completion": 0.4182,
-        "cache_read": 0.0109
+        "prompt": 0.048,
+        "completion": 0.2,
+        "cache_read": 0.006
       },
       "benchmarks": {}
     },
@@ -3686,9 +3746,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0341,
-        "completion": 0.4182,
-        "cache_read": 0.0109
+        "prompt": 0.048,
+        "completion": 0.2,
+        "cache_read": 0.006
       },
       "benchmarks": {}
     },
@@ -3962,9 +4022,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.069,
-        "completion": 3.939,
-        "cache_read": 0.069
+        "prompt": 0.0632,
+        "completion": 4.4,
+        "cache_read": 0.0588
       },
       "benchmarks": {}
     },
@@ -4023,7 +4083,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.079,
-        "completion": 4.8,
+        "completion": 3.2,
         "cache_read": 0.078
       },
       "benchmarks": {}
@@ -4507,8 +4567,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 119.521,
-          "ttft": 1.089
+          "median_tps": 120.789,
+          "ttft": 1.078
         }
       }
     },
@@ -4596,9 +4656,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0119,
-        "completion": 0.2971,
-        "cache_read": 0.0119
+        "prompt": 0.0114,
+        "completion": 1.28,
+        "cache_read": 0.0114
       },
       "benchmarks": {}
     },
@@ -4626,9 +4686,9 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0119,
-        "completion": 0.2971,
-        "cache_read": 0.0119
+        "prompt": 0.1,
+        "completion": 0.3,
+        "cache_read": 0.03
       },
       "benchmarks": {}
     },
@@ -4691,8 +4751,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 196.725,
-          "ttft": 2.117
+          "median_tps": 189.513,
+          "ttft": 2.066
         },
         "benchlm": {
           "slug": "inkling-small",
@@ -4703,13 +4763,13 @@
           "reasoningType": "Hybrid",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 53.48,
+          "displayScore": 53.5,
           "provisionalDisplayScore": 64,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 45.04,
-            "upper": 61.92
+            "lower": 45.05,
+            "upper": 61.94
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -5375,8 +5435,8 @@
             "completion": 4.05,
             "blended": 1.762
           },
-          "median_tps": 213.797,
-          "ttft": 2.331
+          "median_tps": 199.713,
+          "ttft": 2.29
         }
       }
     },
@@ -7476,8 +7536,8 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.27,
-        "completion": 14.2307,
-        "cache_read": 0.0513
+        "completion": 14.0,
+        "cache_read": 0.27
       },
       "benchmarks": {}
     },
@@ -10571,8 +10631,8 @@
             "completion": 0.2,
             "blended": 0.088
           },
-          "median_tps": 218.483,
-          "ttft": 0.42
+          "median_tps": 221.015,
+          "ttft": 0.425
         },
         "arena": {
           "text": {
@@ -13048,8 +13108,8 @@
             "completion": 0.59,
             "blended": 0.223
           },
-          "median_tps": 216.604,
-          "ttft": 0.501
+          "median_tps": 223.718,
+          "ttft": 0.503
         }
       }
     },
@@ -13142,8 +13202,8 @@
             "completion": 0.215,
             "blended": 0.097
           },
-          "median_tps": 264.694,
-          "ttft": 0.36
+          "median_tps": 227.152,
+          "ttft": 0.37
         }
       }
     },
@@ -13385,7 +13445,7 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.1,
+        "prompt": 0.09,
         "completion": 0.3,
         "cache_read": null
       },
@@ -14628,8 +14688,8 @@
             "completion": 8.0,
             "blended": 3.5
           },
-          "median_tps": 142.08,
-          "ttft": 5.69
+          "median_tps": 150.354,
+          "ttft": 5.796
         }
       }
     },
@@ -15240,8 +15300,8 @@
             "completion": 10.0,
             "blended": 4.375
           },
-          "median_tps": 55.778,
-          "ttft": 0.359
+          "median_tps": 57.608,
+          "ttft": 0.37
         }
       }
     },
@@ -15304,8 +15364,8 @@
             "completion": 0.8,
             "blended": 0.35
           },
-          "median_tps": 86.464,
-          "ttft": 0.865
+          "median_tps": 84.201,
+          "ttft": 0.869
         }
       }
     },
@@ -15334,7 +15394,7 @@
       "free": false,
       "price_per_million": {
         "prompt": 0.08,
-        "completion": 0.45,
+        "completion": 0.35,
         "cache_read": 0.04
       },
       "benchmarks": {}
@@ -16097,8 +16157,8 @@
             "completion": 0.5,
             "blended": 0.219
           },
-          "median_tps": 44.139,
-          "ttft": 1.02
+          "median_tps": 43.144,
+          "ttft": 1.089
         }
       }
     },
@@ -17992,7 +18052,7 @@
             "completion": 0.555,
             "blended": 0.241
           },
-          "median_tps": 87.726,
+          "median_tps": 86.422,
           "ttft": 1.867
         },
         "arena": {
@@ -18043,7 +18103,7 @@
                 "ci": null
               }
             ],
-            "sessions": 13053
+            "sessions": 8033
           },
           "text": {
             "rank": 74,
@@ -18995,8 +19055,8 @@
             "completion": 3.0,
             "blended": 1.125
           },
-          "median_tps": 43.292,
-          "ttft": 1.35
+          "median_tps": 42.56,
+          "ttft": 1.403
         },
         "arena": {
           "agent": {
@@ -19416,13 +19476,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 69.65,
+          "displayScore": 69.66,
           "provisionalDisplayScore": 81,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 65.59,
-            "upper": 73.71
+            "lower": 65.6,
+            "upper": 73.73
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -19805,8 +19865,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 154.748,
-          "ttft": 1.1
+          "median_tps": 151.953,
+          "ttft": 1.084
         }
       }
     },
@@ -20218,7 +20278,7 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 146.283,
+          "median_tps": 145.866,
           "ttft": 1.007
         },
         "arena": {
@@ -20302,8 +20362,8 @@
             "completion": 0.25,
             "blended": 0.19
           },
-          "median_tps": 104.992,
-          "ttft": 0.544
+          "median_tps": 113.329,
+          "ttft": 0.537
         }
       }
     },
@@ -20396,8 +20456,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 36.944,
-          "ttft": 1.985
+          "median_tps": 36.131,
+          "ttft": 1.972
         }
       }
     },
@@ -20627,7 +20687,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 29.45,
+            "lower": 29.46,
             "upper": 48.9,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -20689,7 +20749,7 @@
             "verifiedRankingEligible": true,
             "overallRank": 144,
             "categoryRanks": {
-              "knowledge": 117,
+              "knowledge": 116,
               "instructionFollowing": 95
             },
             "categoryRankingEligible": {
@@ -20836,8 +20896,8 @@
             "completion": 3.96,
             "blended": 1.98
           },
-          "median_tps": 94.724,
-          "ttft": 1.368
+          "median_tps": 92.907,
+          "ttft": 1.303
         }
       }
     },
@@ -20900,8 +20960,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 201.164,
-          "ttft": 0.824
+          "median_tps": 343.666,
+          "ttft": 0.668
         },
         "arena": {
           "agent": {
@@ -21530,8 +21590,8 @@
             "completion": 2.7,
             "blended": 1.425
           },
-          "median_tps": 91.21,
-          "ttft": 1.405
+          "median_tps": 87.992,
+          "ttft": 1.379
         },
         "arena": {
           "agent": {
@@ -21966,8 +22026,8 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 48.67,
-            "upper": 68.12,
+            "lower": 48.68,
+            "upper": 68.13,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -22434,12 +22494,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 56.08,
+          "displayScore": 56.09,
           "provisionalDisplayScore": 62,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 41.73,
+            "lower": 41.74,
             "upper": 70.43,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "preference-only",
@@ -22501,7 +22561,7 @@
             "verifiedRankingEligible": true,
             "overallRank": 63,
             "categoryRanks": {
-              "agentic": 70,
+              "agentic": 71,
               "multimodalGrounded": 33,
               "knowledge": 85
             },
@@ -22872,17 +22932,17 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 48.84,
+          "displayScore": 48.85,
           "provisionalDisplayScore": 53,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 36.7,
-            "upper": 60.98
+            "lower": 36.71,
+            "upper": 61
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
-          "overallRank": 104,
+          "overallRank": 103,
           "url": "https://benchlm.ai/models/glm-4-7",
           "markdownUrl": "https://benchlm.ai/md/models/glm-4-7.md",
           "id": 48,
@@ -22928,7 +22988,7 @@
           "ranking": {
             "rankingEligible": true,
             "verifiedRankingEligible": false,
-            "overallRank": 104,
+            "overallRank": 103,
             "categoryRanks": {
               "agentic": 91,
               "coding": 72,
@@ -23436,13 +23496,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 40.01,
+          "displayScore": 40.02,
           "provisionalDisplayScore": 54,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 30.29,
-            "upper": 49.73,
+            "upper": 49.74,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -23912,8 +23972,8 @@
             "completion": 0.9,
             "blended": 0.45
           },
-          "median_tps": 241.82,
-          "ttft": 0.397
+          "median_tps": 240.619,
+          "ttft": 0.405
         }
       }
     },
@@ -24274,13 +24334,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 54.09,
+          "displayScore": 54.1,
           "provisionalDisplayScore": 64,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 39.74,
-            "upper": 68.44,
+            "lower": 39.75,
+            "upper": 68.45,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -25045,13 +25105,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 68.95,
+          "displayScore": 68.96,
           "provisionalDisplayScore": 67,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 54.6,
-            "upper": 83.3,
+            "lower": 54.61,
+            "upper": 83.31,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "preference-only",
             "patternCalibrationFamilies": 4,
@@ -25300,7 +25360,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 26.73,
-            "upper": 46.17,
+            "upper": 46.18,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -27874,8 +27934,8 @@
             "completion": 0.4,
             "blended": 0.224
           },
-          "median_tps": 52.036,
-          "ttft": 0.775
+          "median_tps": 51.867,
+          "ttft": 0.736
         },
         "arena": {
           "document": {
@@ -28291,12 +28351,12 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 51.76,
+          "displayScore": 51.77,
           "provisionalDisplayScore": 66,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 41.99,
+            "lower": 42,
             "upper": 61.54
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
@@ -29164,15 +29224,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 3,
-            "model": "GPT-Image-2 (Medium)",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1462.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 3,
             "model": "GPT-Image-2 (Medium)",
@@ -29788,15 +29839,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 55,
-            "model": "GPT-Image-1",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1139.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 49,
             "model": "GPT-Image-1",
@@ -29959,15 +30001,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 56,
-            "model": "GPT-Image-1 mini",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1124.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 54,
             "model": "GPT-Image-1 mini",
@@ -30010,15 +30043,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 17,
-            "model": "GPT-Image-1.5 (High Fidelity)",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1370.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 17,
             "model": "GPT-Image-1.5 (High Fidelity)",
@@ -31245,8 +31269,8 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 39.87,
-            "upper": 59.32,
+            "lower": 39.88,
+            "upper": 59.33,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -31816,13 +31840,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 53.18,
+          "displayScore": 53.19,
           "provisionalDisplayScore": 67,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 43.46,
-            "upper": 62.9,
+            "upper": 62.91,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -32023,7 +32047,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 25.21,
-            "upper": 44.65,
+            "upper": 44.66,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -32280,7 +32304,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 44.17,
-            "upper": 63.39
+            "upper": 63.4
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -32600,12 +32624,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 48.6,
+          "displayScore": 48.59,
           "provisionalDisplayScore": 62,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 34.25,
+            "lower": 34.24,
             "upper": 62.94,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
@@ -32671,7 +32695,7 @@
               "agentic": 95,
               "coding": 78,
               "multimodalGrounded": 38,
-              "knowledge": 91,
+              "knowledge": 90,
               "instructionFollowing": 55,
               "math": 8
             },
@@ -32845,8 +32869,8 @@
             "completion": 0.5,
             "blended": 0.237
           },
-          "median_tps": 76.536,
-          "ttft": 2.408
+          "median_tps": 70.92,
+          "ttft": 2.308
         },
         "benchlm": {
           "slug": "glm-5-3-flash",
@@ -32857,13 +32881,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 58.51,
+          "displayScore": 58.52,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 48.78,
-            "upper": 68.23,
+            "lower": 48.79,
+            "upper": 68.24,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -33151,8 +33175,8 @@
             "completion": 4.0,
             "blended": 1.712
           },
-          "median_tps": 51.743,
-          "ttft": 1.19
+          "median_tps": 50.167,
+          "ttft": 1.154
         },
         "benchlm": {
           "slug": "kimi-k2-7-code",
@@ -33163,13 +33187,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 49.51,
+          "displayScore": 49.52,
           "provisionalDisplayScore": 64,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 42.29,
-            "upper": 56.72
+            "lower": 42.3,
+            "upper": 56.74
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -34181,13 +34205,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "131K",
           "contextWindowTokens": 131000,
-          "displayScore": 41.18,
+          "displayScore": 41.19,
           "provisionalDisplayScore": 61,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 26.83,
-            "upper": 55.53,
+            "lower": 26.84,
+            "upper": 55.54,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -34434,7 +34458,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 29.41,
-            "upper": 48.85,
+            "upper": 48.86,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -34590,8 +34614,8 @@
             "completion": 0.87,
             "blended": 0.544
           },
-          "median_tps": 50.244,
-          "ttft": 2.906
+          "median_tps": 45.634,
+          "ttft": 3.14
         },
         "benchlm": {
           "slug": "mimo-v2-6-pro",
@@ -34602,13 +34626,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 73.55,
+          "displayScore": 73.57,
           "provisionalDisplayScore": 73,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 63.83,
-            "upper": 83.27,
+            "lower": 63.85,
+            "upper": 83.29,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -34816,13 +34840,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 62.57,
+          "displayScore": 62.58,
           "provisionalDisplayScore": 76,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 52.81,
-            "upper": 72.33
+            "lower": 52.82,
+            "upper": 72.34
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -35137,13 +35161,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 42.11,
+          "displayScore": 42.12,
           "provisionalDisplayScore": 64,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 32.39,
-            "upper": 51.83,
+            "upper": 51.84,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -35339,13 +35363,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 52.95,
+          "displayScore": 52.97,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 35.96,
-            "upper": 69.95
+            "lower": 35.98,
+            "upper": 69.97
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -35635,8 +35659,8 @@
             "completion": 0.15,
             "blended": 0.06
           },
-          "median_tps": 8.212,
-          "ttft": 0.781
+          "median_tps": 7.955,
+          "ttft": 0.756
         }
       }
     },
@@ -35678,13 +35702,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 69.45,
+          "displayScore": 69.44,
           "provisionalDisplayScore": 78,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 59.73,
-            "upper": 79.18,
+            "lower": 59.71,
+            "upper": 79.16,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -35899,13 +35923,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 48.4,
+          "displayScore": 48.41,
           "provisionalDisplayScore": 59,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 38.68,
-            "upper": 58.12,
+            "upper": 58.13,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -36272,8 +36296,8 @@
             "completion": 3.2,
             "blended": 1.1
           },
-          "median_tps": 134.8,
-          "ttft": 0.985
+          "median_tps": 133.437,
+          "ttft": 1.03
         },
         "benchlm": {
           "slug": "qwen3-5-122b-a10b",
@@ -36284,12 +36308,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 41.73,
+          "displayScore": 41.74,
           "provisionalDisplayScore": 61,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 32.01,
+            "lower": 32.02,
             "upper": 51.46,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -36477,13 +36501,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 42.81,
+          "displayScore": 42.82,
           "provisionalDisplayScore": 61,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 33.09,
-            "upper": 52.53,
+            "lower": 33.1,
+            "upper": 52.54,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -36745,13 +36769,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 60.49,
+          "displayScore": 60.5,
           "provisionalDisplayScore": 65,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 52.55,
-            "upper": 68.43
+            "lower": 52.56,
+            "upper": 68.45
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -37031,8 +37055,8 @@
             "completion": 0.28,
             "blended": 0.175
           },
-          "median_tps": 60.377,
-          "ttft": 3.291
+          "median_tps": 51.074,
+          "ttft": 3.557
         },
         "benchlm": {
           "slug": "mimo-v2-6-flash",
@@ -37043,13 +37067,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 64.5,
+          "displayScore": 64.51,
           "provisionalDisplayScore": 70,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 54.78,
-            "upper": 74.22,
+            "lower": 54.79,
+            "upper": 74.23,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -37317,13 +37341,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 65.83,
+          "displayScore": 65.84,
           "provisionalDisplayScore": 72,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 59.69,
-            "upper": 71.98
+            "lower": 59.7,
+            "upper": 71.99
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -37527,13 +37551,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 46.92,
+          "displayScore": 46.93,
           "provisionalDisplayScore": 50,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 32.57,
-            "upper": 61.27,
+            "lower": 32.58,
+            "upper": 61.28,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -37700,13 +37724,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 48.16,
+          "displayScore": 48.17,
           "provisionalDisplayScore": 60,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 36.78,
-            "upper": 59.54
+            "lower": 36.79,
+            "upper": 59.55
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -37992,8 +38016,8 @@
             "completion": 2.25,
             "blended": 0.844
           },
-          "median_tps": 143.562,
-          "ttft": 1.06
+          "median_tps": 141.066,
+          "ttft": 1.082
         },
         "benchlm": {
           "slug": "qwen3-6-35b-a3b",
@@ -38004,13 +38028,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 43.52,
+          "displayScore": 43.51,
           "provisionalDisplayScore": 55,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 29.17,
-            "upper": 57.87,
+            "lower": 29.16,
+            "upper": 57.86,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -38234,8 +38258,8 @@
             "completion": 0.2,
             "blended": 0.151
           },
-          "median_tps": 69.707,
-          "ttft": 1.003
+          "median_tps": 74.275,
+          "ttft": 0.979
         }
       }
     },
@@ -38321,7 +38345,7 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 45.8,
+          "displayScore": 45.81,
           "provisionalDisplayScore": 55,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
@@ -38495,13 +38519,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 63.18,
+          "displayScore": 63.19,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 48.83,
-            "upper": 77.53,
+            "lower": 48.84,
+            "upper": 77.54,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -38904,8 +38928,8 @@
             "completion": 4.4,
             "blended": 2.15
           },
-          "median_tps": 76.284,
-          "ttft": 2.707
+          "median_tps": 84.948,
+          "ttft": 2.588
         },
         "benchlm": {
           "slug": "glm-5-3",
@@ -38916,13 +38940,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 67.87,
+          "displayScore": 67.88,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 63.42,
-            "upper": 72.33
+            "lower": 63.43,
+            "upper": 72.34
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -39274,25 +39298,25 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 185.76,
-          "ttft": 0.92
+          "median_tps": 220.734,
+          "ttft": 0.697
         },
         "benchlm": {
           "slug": "deepseek-v4-1-flash",
           "canonicalModelKey": "deepseek-v4-1-flash",
-          "model": "DeepSeek V4.1 Flash",
+          "model": "DeepSeek V4.1 Flash 1017",
           "creator": "DeepSeek",
           "sourceType": "Open Weight",
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 65.59,
-          "provisionalDisplayScore": 72,
+          "displayScore": 65.61,
+          "provisionalDisplayScore": 73,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 60.57,
-            "upper": 70.61
+            "lower": 60.59,
+            "upper": 70.63
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -39300,14 +39324,14 @@
           "url": "https://benchlm.ai/models/deepseek-v4-1-flash",
           "markdownUrl": "https://benchlm.ai/md/models/deepseek-v4-1-flash.md",
           "id": 425,
-          "releaseDate": "2026-09-10",
+          "releaseDate": "2026-10-17",
           "market": null,
           "isRegional": false,
           "family": {
             "familyKey": "deepseek-v4-1-flash",
             "familyName": "DeepSeek V4.1 Flash",
             "variantType": "flash-reasoning",
-            "snapshotLabel": null,
+            "snapshotLabel": "1017",
             "baseFamilyModelKey": "deepseek-v4-1-flash",
             "relatedModelKeys": [
               "deepseek-v4-flash-max",
@@ -39317,16 +39341,16 @@
             "supersedesModelKey": "deepseek-v4-flash-max"
           },
           "scores": {
-            "displayScore": 72,
-            "overallScore": 72,
+            "displayScore": 73,
+            "overallScore": 73,
             "rawOverallScore": 72,
-            "verifiedDisplayScore": 75,
+            "verifiedDisplayScore": 76,
             "displayCategoryScores": {
               "agentic": null,
               "coding": 60,
               "reasoning": 83.4,
               "multimodalGrounded": 77.9,
-              "knowledge": 63.6,
+              "knowledge": 69.7,
               "multilingual": null,
               "instructionFollowing": null,
               "math": 70.1
@@ -39336,7 +39360,7 @@
               "coding": null,
               "reasoning": 83.4,
               "multimodalGrounded": 77.9,
-              "knowledge": 63.6,
+              "knowledge": 69.7,
               "multilingual": null,
               "instructionFollowing": null,
               "math": 70.1
@@ -39349,7 +39373,7 @@
             "categoryRanks": {
               "agentic": 24,
               "coding": 18,
-              "knowledge": 33
+              "knowledge": 31
             },
             "categoryRankingEligible": {
               "agentic": true,
@@ -39373,12 +39397,12 @@
             "agentic": {
               "terminalBench21": 90.6,
               "terminalBench3": 30,
-              "terminalBench4": 31.2,
+              "terminalBench4": 42.3,
               "cyberGym": 88.1,
               "exploitGym": 15.3,
               "hleWithTools": 63.9,
-              "automationBench": 54.8,
-              "agentsLastExam": 31.8,
+              "automationBench": 60.5,
+              "agentsLastExam": 35.4,
               "gdpvalAaNormalized": 55,
               "aaAutomationBench": 68.9,
               "valsTerminalBench21": 74.5,
@@ -39396,9 +39420,9 @@
               "codeforces": 3471,
               "terminalBench21": 90.6,
               "terminalBench3": 30,
-              "deepSwe": 74.2,
-              "programBench": 20.3,
-              "nl2Repo": 65.4,
+              "deepSwe": 77,
+              "programBench": 29.1,
+              "nl2Repo": 68.2,
               "aaSciCode": 51.9,
               "openHarmonyBench": 60.3,
               "bug-hunt-bench": 21.7
@@ -39412,15 +39436,15 @@
               "jevBench15": 6.645505039231519
             },
             "multimodalGrounded": {
-              "chartographyWithTools": 78.9,
-              "babyVisionPython": 89.6,
-              "zeroBenchPython": 49,
+              "chartographyWithTools": 83,
+              "babyVisionPython": 92.5,
+              "zeroBenchPython": 51,
               "aaMmmuPro": 77
             },
             "knowledge": {
               "gpqa": 90.9,
               "gpqaDiamond": 90.9,
-              "hle": 36.8,
+              "hle": 42.6,
               "artificialAnalysis": 39.46,
               "aaHle": 39.2,
               "aaOmniscienceIndex": -5.3,
@@ -39517,8 +39541,8 @@
             "completion": 1.6,
             "blended": 0.7
           },
-          "median_tps": 55.932,
-          "ttft": 1.688
+          "median_tps": 55.984,
+          "ttft": 1.758
         },
         "arena": {
           "agent": {
@@ -39607,13 +39631,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 53.75,
+          "displayScore": 53.76,
           "provisionalDisplayScore": 71,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 42.67,
-            "upper": 64.82
+            "lower": 42.68,
+            "upper": 64.84
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -39874,13 +39898,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "203K",
           "contextWindowTokens": 203000,
-          "displayScore": 56.29,
+          "displayScore": 56.31,
           "provisionalDisplayScore": 64,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 45.57,
-            "upper": 67.02
+            "lower": 45.58,
+            "upper": 67.03
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -40228,8 +40252,8 @@
             "completion": 0.6,
             "blended": 0.262
           },
-          "median_tps": 190.282,
-          "ttft": 0.553
+          "median_tps": 185.934,
+          "ttft": 0.574
         },
         "benchlm": {
           "slug": "mistral-small-4-reasoning",
@@ -40543,12 +40567,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 48.84,
+          "displayScore": 48.85,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 34.49,
+            "lower": 34.5,
             "upper": 63.19,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
@@ -40560,7 +40584,7 @@
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
-          "overallRank": 103,
+          "overallRank": 104,
           "url": "https://benchlm.ai/models/qwen3-5-plus",
           "markdownUrl": "https://benchlm.ai/md/models/qwen3-5-plus.md",
           "id": 227,
@@ -40609,7 +40633,7 @@
           "ranking": {
             "rankingEligible": false,
             "verifiedRankingEligible": false,
-            "overallRank": 103,
+            "overallRank": 104,
             "categoryRanks": {},
             "categoryRankingEligible": {
               "agentic": false,
@@ -40722,8 +40746,8 @@
             "completion": 4.25,
             "blended": 2.0
           },
-          "median_tps": 280.932,
-          "ttft": 31.674
+          "median_tps": 250.806,
+          "ttft": 28.51
         },
         "arena": {
           "agent": {
@@ -41078,7 +41102,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 9.88,
-            "upper": 47.5
+            "upper": 47.51
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -41308,7 +41332,7 @@
             "blended": 1.125
           },
           "median_tps": 45.884,
-          "ttft": 1.4
+          "ttft": 1.386
         },
         "benchlm": {
           "slug": "qwen3-8-27b",
@@ -41319,13 +41343,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 59.6,
+          "displayScore": 59.61,
           "provisionalDisplayScore": 73,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 53.67,
-            "upper": 65.52
+            "lower": 53.68,
+            "upper": 65.54
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -42003,13 +42027,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 43.64,
+          "displayScore": 43.65,
           "provisionalDisplayScore": 62,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 29.3,
-            "upper": 57.99,
+            "upper": 58,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -42199,7 +42223,7 @@
             "completion": 3.6,
             "blended": 1.35
           },
-          "median_tps": 54.859,
+          "median_tps": 55.025,
           "ttft": 1.589
         },
         "arena": {
@@ -42313,7 +42337,7 @@
             "completion": 0.4,
             "blended": 0.198
           },
-          "median_tps": 83.742,
+          "median_tps": 80.233,
           "ttft": 0.622
         },
         "arena": {
@@ -42345,13 +42369,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 45.64,
+          "displayScore": 45.65,
           "provisionalDisplayScore": 59,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 30.94,
-            "upper": 60.35
+            "upper": 60.36
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -42860,15 +42884,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 25,
-            "model": "Qwen-Image-2.0-Pro (2026-06-22)",
-            "vendor": "Alibaba",
-            "license": "proprietary",
-            "score": 1303.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 21,
             "model": "Qwen-Image-2.0-Pro (2026-06-22)",
@@ -44829,13 +44844,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 36.49,
+          "displayScore": 36.5,
           "provisionalDisplayScore": 54,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 20.08,
-            "upper": 52.9
+            "upper": 52.91
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -45530,8 +45545,8 @@
             "completion": 2.95,
             "blended": 1.3
           },
-          "median_tps": 65.799,
-          "ttft": 1.727
+          "median_tps": 62.739,
+          "ttft": 1.777
         },
         "benchlm": {
           "slug": "longcat-2-0",
@@ -45927,8 +45942,8 @@
             "completion": 0.7,
             "blended": 0.325
           },
-          "median_tps": 1966.361,
-          "ttft": 0.416
+          "median_tps": 1926.603,
+          "ttft": 0.428
         },
         "benchlm": {
           "slug": "celeris-1",
@@ -46092,15 +46107,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 12,
-            "model": "Gemini 3 Pro Image (nano-banana-pro, 2K)",
-            "vendor": "Google",
-            "license": "proprietary",
-            "score": 1390.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 16,
             "model": "Gemini 3 Pro Image (nano-banana-pro, 2K)",
@@ -46854,13 +46860,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 49.13,
+          "displayScore": 49.14,
           "provisionalDisplayScore": 58,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 34.56,
-            "upper": 63.69
+            "lower": 34.57,
+            "upper": 63.71
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -48221,8 +48227,8 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 26.84,
-            "upper": 55.31
+            "lower": 26.85,
+            "upper": 55.32
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -49755,12 +49761,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 39.36,
+          "displayScore": 39.37,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 29.64,
+            "lower": 29.65,
             "upper": 49.09,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -50537,6 +50543,36 @@
       "price_per_million": {
         "prompt": 208800.0,
         "completion": 309600.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017:thinking",
+      "name": "DeepSeek V4.1 Flash 1017 Thinking",
+      "provider": "deepseek",
+      "family": "deepseek/deepseek-v4.1-flash-1017",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 600000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -52172,8 +52208,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 450000.0,
-        "completion": 1250000.0,
+        "prompt": 500000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {
@@ -55135,7 +55171,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 17.86,
-            "upper": 37.3,
+            "upper": 37.31,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -55664,8 +55700,8 @@
             "completion": 0.2,
             "blended": 0.2
           },
-          "median_tps": 81.405,
-          "ttft": 0.527
+          "median_tps": 79.167,
+          "ttft": 0.501
         },
         "benchlm": {
           "slug": "ministral-3-14b",
@@ -55681,7 +55717,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 15.21,
+            "lower": 15.22,
             "upper": 34.66,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -57154,8 +57190,8 @@
             "completion": 4.8,
             "blended": 1.5
           },
-          "median_tps": 72.728,
-          "ttft": 1.209
+          "median_tps": 81.876,
+          "ttft": 1.218
         }
       }
     },
@@ -57620,7 +57656,7 @@
       "family": "qwen/qwen3.8-27b-uncensored",
       "source": "models.dev",
       "created_unix": null,
-      "context": 1010000,
+      "context": 1048576,
       "modality": "image/text",
       "is_vision": true,
       "is_audio_input": false,
@@ -57680,7 +57716,7 @@
       "family": "qwen/qwen3.8-27b-uncensored",
       "source": "models.dev",
       "created_unix": null,
-      "context": 1010000,
+      "context": 1048576,
       "modality": "image/text",
       "is_vision": true,
       "is_audio_input": false,
@@ -57762,8 +57798,8 @@
             "completion": 0.8,
             "blended": 0.275
           },
-          "median_tps": 266.152,
-          "ttft": 0.97
+          "median_tps": 252.442,
+          "ttft": 1.001
         }
       }
     },
@@ -59258,8 +59294,8 @@
       "synthetic": false,
       "free": false,
       "price_per_million": {
-        "prompt": 0.0,
-        "completion": 0.0,
+        "prompt": null,
+        "completion": null,
         "cache_read": null
       },
       "benchmarks": {}
@@ -59374,12 +59410,12 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 41.15,
+          "displayScore": 41.16,
           "provisionalDisplayScore": 47,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 31.43,
+            "lower": 31.44,
             "upper": 50.88,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -59599,13 +59635,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 54.04,
+          "displayScore": 54.05,
           "provisionalDisplayScore": 60,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 41.41,
-            "upper": 66.67
+            "upper": 66.68
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -59816,12 +59852,12 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 47.95,
+          "displayScore": 47.96,
           "provisionalDisplayScore": 50,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 38.23,
+            "lower": 38.24,
             "upper": 57.68,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -60049,13 +60085,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 86.54,
+          "displayScore": 86.56,
           "provisionalDisplayScore": 82,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 81.72,
-            "upper": 91.36
+            "lower": 81.74,
+            "upper": 91.38
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -60361,13 +60397,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 83.17,
+          "displayScore": 83.18,
           "provisionalDisplayScore": 80,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 79.89,
-            "upper": 86.45
+            "lower": 79.9,
+            "upper": 86.46
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -60737,13 +60773,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": null,
           "contextWindowTokens": 0,
-          "displayScore": 79.61,
+          "displayScore": 79.63,
           "provisionalDisplayScore": 88,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 76.81,
-            "upper": 82.41
+            "lower": 76.83,
+            "upper": 82.43
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -61142,13 +61178,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M+",
           "contextWindowTokens": 1000000,
-          "displayScore": 81.25,
+          "displayScore": 81.27,
           "provisionalDisplayScore": 83,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 78.33,
-            "upper": 84.16
+            "lower": 78.35,
+            "upper": 84.18
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -61440,13 +61476,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 69.99,
+          "displayScore": 70.01,
           "provisionalDisplayScore": 77,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 66.12,
-            "upper": 73.86
+            "lower": 66.14,
+            "upper": 73.88
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -61867,13 +61903,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 64.83,
+          "displayScore": 64.84,
           "provisionalDisplayScore": 76,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 59.85,
-            "upper": 69.81
+            "lower": 59.86,
+            "upper": 69.82
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -62125,13 +62161,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 62.38,
+          "displayScore": 62.39,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 50.17,
-            "upper": 74.6
+            "lower": 50.18,
+            "upper": 74.61
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -62411,13 +62447,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 70.03,
+          "displayScore": 70.04,
           "provisionalDisplayScore": 72,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 65.92,
-            "upper": 74.14
+            "lower": 65.93,
+            "upper": 74.16
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -62579,13 +62615,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 55.88,
+          "displayScore": 55.89,
           "provisionalDisplayScore": 63,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 43.59,
-            "upper": 68.18
+            "lower": 43.6,
+            "upper": 68.19
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -62914,13 +62950,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 82.17,
+          "displayScore": 82.18,
           "provisionalDisplayScore": 83,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 76.51,
-            "upper": 87.82
+            "lower": 76.53,
+            "upper": 87.84
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -63127,13 +63163,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 66.72,
+          "displayScore": 66.74,
           "provisionalDisplayScore": 63,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 57,
-            "upper": 76.45,
+            "lower": 57.02,
+            "upper": 76.46,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -63814,8 +63850,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 80.81,
-          "ttft": 0.268
+          "median_tps": 85.492,
+          "ttft": 0.249
         },
         "benchlm": {
           "slug": "north-mini-code-1-0",
@@ -64225,8 +64261,8 @@
             "completion": 0.0,
             "blended": 0.0
           },
-          "median_tps": 129.172,
-          "ttft": 0.204
+          "median_tps": 132.298,
+          "ttft": 0.203
         }
       }
     },
@@ -64523,7 +64559,7 @@
     },
     {
       "id": "deepseek-flash",
-      "name": "DeepSeek V4.1 Flash",
+      "name": "DeepSeek V4.1 Flash 1017",
       "provider": "deepseek",
       "family": "deepseek-flash",
       "source": "models.dev",
@@ -64730,8 +64766,8 @@
             "completion": 2.7,
             "blended": 1.125
           },
-          "median_tps": 143.163,
-          "ttft": 0.931
+          "median_tps": 127.279,
+          "ttft": 0.907
         }
       }
     },
@@ -64765,15 +64801,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 18,
-            "model": "Qwen-Image-2.1",
-            "vendor": "Alibaba",
-            "license": null,
-            "score": 1369.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 19,
             "model": "Qwen-Image-2.1",
@@ -65055,8 +65082,8 @@
             "completion": 20.0,
             "blended": 8.0
           },
-          "median_tps": 84.434,
-          "ttft": 2.561
+          "median_tps": 78.73,
+          "ttft": 4.217
         }
       }
     },
@@ -65119,8 +65146,8 @@
             "completion": 50.0,
             "blended": 20.0
           },
-          "median_tps": 62.193,
-          "ttft": 1.482
+          "median_tps": 59.173,
+          "ttft": 1.903
         }
       }
     },
@@ -65247,8 +65274,8 @@
             "completion": 0.5,
             "blended": 0.2
           },
-          "median_tps": 177.274,
-          "ttft": 6.952
+          "median_tps": 172.073,
+          "ttft": 6.532
         }
       }
     },
@@ -65311,7 +65338,7 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 109.265,
+          "median_tps": 105.546,
           "ttft": 0.731
         }
       }
@@ -65555,8 +65582,8 @@
             "completion": 2.1,
             "blended": 1.05
           },
-          "median_tps": 178.528,
-          "ttft": 0.739
+          "median_tps": 227.528,
+          "ttft": 0.557
         }
       }
     },
@@ -65619,8 +65646,8 @@
             "completion": 0.575,
             "blended": 0.313
           },
-          "median_tps": 385.175,
-          "ttft": 0.536
+          "median_tps": 387.742,
+          "ttft": 0.552
         }
       }
     },
@@ -65683,7 +65710,7 @@
             "completion": 0.2,
             "blended": 0.095
           },
-          "median_tps": 290.776,
+          "median_tps": 297.391,
           "ttft": 0.429
         }
       }
@@ -65867,8 +65894,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 114.543,
-          "ttft": 0.733
+          "median_tps": 111.57,
+          "ttft": 0.731
         },
         "arena": {
           "agent": {
@@ -68825,13 +68852,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 54.89,
+          "displayScore": 54.9,
           "provisionalDisplayScore": 65,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 45.48,
-            "upper": 64.3
+            "lower": 45.49,
+            "upper": 64.31
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -69900,13 +69927,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 52.97,
+          "displayScore": 52.98,
           "provisionalDisplayScore": 65,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 43.25,
-            "upper": 62.69,
+            "upper": 62.7,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -71049,8 +71076,8 @@
             "completion": 0.25,
             "blended": 0.107
           },
-          "median_tps": 134.808,
-          "ttft": 0.31
+          "median_tps": 135.217,
+          "ttft": 0.281
         },
         "arena": {
           "text": {
@@ -71077,7 +71104,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 23.37,
+            "lower": 23.36,
             "upper": 42.81,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -75460,8 +75487,8 @@
             "completion": 0.9,
             "blended": 0.45
           },
-          "median_tps": 218.514,
-          "ttft": 1.14
+          "median_tps": 217.334,
+          "ttft": 1.165
         },
         "benchlm": {
           "slug": "ling-3-1-flash",
@@ -75472,13 +75499,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 68.02,
+          "displayScore": 68.03,
           "provisionalDisplayScore": 74,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 53.67,
-            "upper": 82.37,
+            "lower": 53.68,
+            "upper": 82.38,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -76742,13 +76769,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 68.59,
+          "displayScore": 68.6,
           "provisionalDisplayScore": 77,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 54.24,
-            "upper": 82.94,
+            "lower": 54.25,
+            "upper": 82.95,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -76965,7 +76992,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 45.58,
-            "upper": 65.02,
+            "upper": 65.03,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -77201,7 +77228,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 36.02,
+            "lower": 36.03,
             "upper": 64.72,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
@@ -78001,7 +78028,7 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 37.59,
+          "displayScore": 37.6,
           "provisionalDisplayScore": 53,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
@@ -78216,13 +78243,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 29.26,
+          "displayScore": 29.27,
           "provisionalDisplayScore": 46,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 14.91,
-            "upper": 43.61,
+            "lower": 14.92,
+            "upper": 43.62,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -78406,8 +78433,8 @@
             "completion": 0.5,
             "blended": 0.2
           },
-          "median_tps": 128.839,
-          "ttft": 0.935
+          "median_tps": 124.753,
+          "ttft": 0.719
         },
         "arena": {
           "agent": {
@@ -80970,8 +80997,8 @@
             "completion": 6.0,
             "blended": 3.0
           },
-          "median_tps": 77.369,
-          "ttft": 3.59
+          "median_tps": 75.026,
+          "ttft": 3.407
         }
       }
     },
@@ -82026,6 +82053,36 @@
       "benchmarks": {}
     },
     {
+      "id": "inference.net/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek V4.1 Flash 1017 (Inference.net)",
+      "provider": "inference.net",
+      "family": "inference.net/deepseek-v4.1-flash-1017",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 300000.0,
+        "completion": 1000000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "azure-anthropic/claude-opus-5-5",
       "name": "Claude Opus 5.5 (Azure Anthropic)",
       "provider": "azure-anthropic",
@@ -82426,8 +82483,8 @@
             "completion": 4.18,
             "blended": 2.065
           },
-          "median_tps": 46.258,
-          "ttft": 1.278
+          "median_tps": 58.067,
+          "ttft": 0.874
         }
       }
     },
@@ -82520,8 +82577,8 @@
             "completion": 7.5,
             "blended": 3.0
           },
-          "median_tps": 167.694,
-          "ttft": 0.672
+          "median_tps": 166.611,
+          "ttft": 0.64
         }
       }
     },
@@ -84449,13 +84506,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "500K",
           "contextWindowTokens": 500000,
-          "displayScore": 63.27,
+          "displayScore": 63.28,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 57.91,
-            "upper": 68.62
+            "lower": 57.92,
+            "upper": 68.63
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -85459,13 +85516,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 71.15,
+          "displayScore": 71.16,
           "provisionalDisplayScore": 71,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 56.8,
-            "upper": 85.5,
+            "lower": 56.81,
+            "upper": 85.51,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -85720,13 +85777,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 53.04,
+          "displayScore": 53.05,
           "provisionalDisplayScore": 60,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 44.41,
-            "upper": 61.67
+            "upper": 61.68
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -85981,13 +86038,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 66.82,
+          "displayScore": 66.84,
           "provisionalDisplayScore": 77,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 61.2,
-            "upper": 72.44
+            "lower": 61.22,
+            "upper": 72.46
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -86274,12 +86331,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "2M",
           "contextWindowTokens": 2000000,
-          "displayScore": 57.42,
+          "displayScore": 57.43,
           "provisionalDisplayScore": 49,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 47.7,
+            "lower": 47.71,
             "upper": 67.15,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -86822,8 +86879,8 @@
             "completion": 0.75,
             "blended": 0.375
           },
-          "median_tps": 925.306,
-          "ttft": 2.775
+          "median_tps": 849.605,
+          "ttft": 2.776
         },
         "benchlm": {
           "slug": "mercury-2-5",
@@ -87274,13 +87331,13 @@
           "reasoningType": "Hybrid",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 52.59,
+          "displayScore": 52.6,
           "provisionalDisplayScore": 67,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 42.26,
-            "upper": 62.93
+            "lower": 42.27,
+            "upper": 62.94
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -87780,13 +87837,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 69.23,
+          "displayScore": 69.25,
           "provisionalDisplayScore": 77,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 63.61,
-            "upper": 74.85
+            "lower": 63.63,
+            "upper": 74.87
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -88203,13 +88260,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 53.06,
+          "displayScore": 53.07,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 42.95,
-            "upper": 63.17
+            "lower": 42.96,
+            "upper": 63.18
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -88538,13 +88595,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "500K",
           "contextWindowTokens": 500000,
-          "displayScore": 67.01,
+          "displayScore": 67.02,
           "provisionalDisplayScore": 71,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 63.71,
-            "upper": 70.3
+            "lower": 63.72,
+            "upper": 70.31
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -88947,13 +89004,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 62.77,
+          "displayScore": 62.78,
           "provisionalDisplayScore": 73,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 55.06,
-            "upper": 70.48
+            "lower": 55.07,
+            "upper": 70.49
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -89209,8 +89266,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 139.804,
-          "ttft": 19.146
+          "median_tps": 138.325,
+          "ttft": 19.306
         },
         "arena": {
           "agent": {
@@ -89717,8 +89774,8 @@
             "completion": 2.5,
             "blended": 0.85
           },
-          "median_tps": 409.953,
-          "ttft": 5.359
+          "median_tps": 393.945,
+          "ttft": 5.267
         },
         "benchlm": {
           "slug": "gemini-3-5-flash-lite",
@@ -89735,7 +89792,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 36.97,
-            "upper": 62.27
+            "upper": 62.28
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -89967,13 +90024,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 61.25,
+          "displayScore": 61.27,
           "provisionalDisplayScore": 73,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 46.9,
-            "upper": 75.6,
+            "lower": 46.92,
+            "upper": 75.62,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -90197,13 +90254,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 61.87,
+          "displayScore": 61.88,
           "provisionalDisplayScore": 70,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 53.65,
-            "upper": 70.1
+            "lower": 53.66,
+            "upper": 70.11
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -90262,7 +90319,7 @@
               "coding": 43,
               "reasoning": 19,
               "multimodalGrounded": 7,
-              "knowledge": 31,
+              "knowledge": 32,
               "instructionFollowing": 37
             },
             "categoryRankingEligible": {
@@ -90684,13 +90741,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 62.65,
+          "displayScore": 62.66,
           "provisionalDisplayScore": 72,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 48.3,
-            "upper": 77,
+            "lower": 48.31,
+            "upper": 77.01,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -90853,13 +90910,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 80.94,
+          "displayScore": 80.97,
           "provisionalDisplayScore": 77,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 78.12,
-            "upper": 83.77
+            "lower": 78.14,
+            "upper": 83.79
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -91212,13 +91269,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 83.87,
+          "displayScore": 83.88,
           "provisionalDisplayScore": 85,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 79.4,
-            "upper": 88.34
+            "lower": 79.41,
+            "upper": 88.35
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -91507,17 +91564,17 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 66.64,
+          "displayScore": 66.66,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 62.48,
-            "upper": 70.81
+            "lower": 62.49,
+            "upper": 70.82
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
-          "overallRank": 32,
+          "overallRank": 31,
           "url": "https://benchlm.ai/models/gpt-6-luna",
           "markdownUrl": "https://benchlm.ai/md/models/gpt-6-luna.md",
           "id": 517,
@@ -91566,7 +91623,7 @@
           "ranking": {
             "rankingEligible": false,
             "verifiedRankingEligible": false,
-            "overallRank": 32,
+            "overallRank": 31,
             "categoryRanks": {
               "agentic": 37,
               "coding": 37,
@@ -91744,13 +91801,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 78.46,
+          "displayScore": 78.48,
           "provisionalDisplayScore": 76,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 75.26,
-            "upper": 81.67
+            "lower": 75.27,
+            "upper": 81.68
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -92271,8 +92328,8 @@
             "completion": 0.15,
             "blended": 0.15
           },
-          "median_tps": 96.764,
-          "ttft": 0.454
+          "median_tps": 100.159,
+          "ttft": 0.445
         },
         "benchlm": {
           "slug": "ministral-3-8b",
@@ -92615,7 +92672,7 @@
             "blended": 0.1
           },
           "median_tps": 218.573,
-          "ttft": 0.449
+          "ttft": 0.423
         },
         "benchlm": {
           "slug": "ministral-3-3b",
@@ -95740,13 +95797,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 48.38,
+          "displayScore": 48.39,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 37.01,
-            "upper": 59.76
+            "lower": 37.02,
+            "upper": 59.77
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -96141,7 +96198,7 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 39.55,
+          "displayScore": 39.56,
           "provisionalDisplayScore": 51,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
@@ -96536,7 +96593,7 @@
           "reasoningType": "Reasoning",
           "contextWindow": "400K",
           "contextWindowTokens": 400000,
-          "displayScore": 37.36,
+          "displayScore": 37.37,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
@@ -97234,7 +97291,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 39.47,
-            "upper": 51.28
+            "upper": 51.29
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -98006,13 +98063,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 45.43,
+          "displayScore": 45.44,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 39.19,
-            "upper": 51.67
+            "lower": 39.2,
+            "upper": 51.68
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -99118,8 +99175,8 @@
             "completion": 0.22,
             "blended": 0.111
           },
-          "median_tps": 258.642,
-          "ttft": 0.988
+          "median_tps": 273.288,
+          "ttft": 1.0
         },
         "benchlm": {
           "slug": "ling-3-0-flash-fin",
@@ -100088,12 +100145,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "2M",
           "contextWindowTokens": 2000000,
-          "displayScore": 45.82,
+          "displayScore": 45.83,
           "provisionalDisplayScore": 63,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 36.1,
+            "lower": 36.11,
             "upper": 55.55,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -100353,12 +100410,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "2M",
           "contextWindowTokens": 2000000,
-          "displayScore": 43.47,
+          "displayScore": 43.48,
           "provisionalDisplayScore": 61,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 33.75,
+            "lower": 33.76,
             "upper": 53.2,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -102632,13 +102689,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 46.59,
+          "displayScore": 46.58,
           "provisionalDisplayScore": 57,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 32.24,
-            "upper": 60.94,
+            "upper": 60.93,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -103464,13 +103521,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 39.88,
+          "displayScore": 39.89,
           "provisionalDisplayScore": 56,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 30.16,
-            "upper": 49.6,
+            "upper": 49.61,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -105137,7 +105194,7 @@
             "blended": 0.14
           },
           "median_tps": 17.998,
-          "ttft": 0.582
+          "ttft": 0.631
         }
       }
     },
@@ -105171,15 +105228,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 2,
-            "model": "GPT-Image-2.5 Flare",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1481.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 2,
             "model": "GPT-Image-2.5 Flare",
@@ -105331,13 +105379,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 38.37,
+          "displayScore": 38.38,
           "provisionalDisplayScore": 65,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 24.02,
-            "upper": 52.72,
+            "lower": 24.03,
+            "upper": 52.73,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -106078,15 +106126,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 1,
-            "model": "GPT-Image-2.5 Sunburst",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1524.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 1,
             "model": "GPT-Image-2.5 Sunburst",
@@ -106184,7 +106223,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 13.29,
-            "upper": 36.85
+            "upper": 36.86
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -106872,7 +106911,7 @@
             "completion": 0.3,
             "blended": 0.131
           },
-          "median_tps": 47.418,
+          "median_tps": 47.274,
           "ttft": 0.324
         }
       }
@@ -107600,8 +107639,8 @@
             "completion": 0.2,
             "blended": 0.125
           },
-          "median_tps": 129.379,
-          "ttft": 2.51
+          "median_tps": 138.464,
+          "ttft": 2.469
         }
       }
     },
@@ -108100,8 +108139,8 @@
             "completion": 1.2,
             "blended": 0.412
           },
-          "median_tps": 162.726,
-          "ttft": 0.426
+          "median_tps": 159.818,
+          "ttft": 0.471
         }
       }
     },
@@ -109738,15 +109777,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 7,
-            "model": "Grok Imagine Image 2.0 (20260801)",
-            "vendor": "SpaceXAI",
-            "license": "proprietary",
-            "score": 1425.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 8,
             "model": "Grok Imagine Image 2.0 (20260801)",
@@ -111917,13 +111947,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 33.31,
+          "displayScore": 33.32,
           "provisionalDisplayScore": 50,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 20,
-            "upper": 46.63
+            "upper": 46.64
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -112389,8 +112419,8 @@
             "completion": 1.15,
             "blended": 0.381
           },
-          "median_tps": 135.847,
-          "ttft": 0.554
+          "median_tps": 125.128,
+          "ttft": 0.563
         }
       }
     },
@@ -113494,8 +113524,8 @@
             "completion": 0.47,
             "blended": 0.23
           },
-          "median_tps": 48.189,
-          "ttft": 1.251
+          "median_tps": 52.88,
+          "ttft": 1.225
         },
         "arena": {
           "agent": {
@@ -115152,12 +115182,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 40.99,
+          "displayScore": 41,
           "provisionalDisplayScore": 56,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 31.27,
+            "lower": 31.28,
             "upper": 50.72,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -115865,7 +115895,7 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 27.72,
+          "displayScore": 27.73,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
@@ -116195,7 +116225,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 30.32,
+            "lower": 30.33,
             "upper": 49.77,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -119154,13 +119184,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "400K",
           "contextWindowTokens": 400000,
-          "displayScore": 53.4,
+          "displayScore": 53.41,
           "provisionalDisplayScore": 61,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 42.62,
-            "upper": 64.17
+            "lower": 42.63,
+            "upper": 64.19
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -119455,13 +119485,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 49.94,
+          "displayScore": 49.95,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 40.75,
-            "upper": 59.14
+            "upper": 59.15
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -119637,13 +119667,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "400K",
           "contextWindowTokens": 400000,
-          "displayScore": 46.85,
+          "displayScore": 46.86,
           "provisionalDisplayScore": 50,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 36.21,
-            "upper": 57.5
+            "lower": 36.22,
+            "upper": 57.51
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -119904,13 +119934,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 69.27,
+          "displayScore": 69.29,
           "provisionalDisplayScore": 74,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 62.95,
-            "upper": 75.59
+            "lower": 62.97,
+            "upper": 75.61
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -120221,8 +120251,8 @@
             "completion": 14.0,
             "blended": 4.813
           },
-          "median_tps": 103.66,
-          "ttft": 56.39
+          "median_tps": 107.789,
+          "ttft": 44.852
         },
         "benchlm": {
           "slug": "gpt-5-3-codex",
@@ -120233,13 +120263,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "400K",
           "contextWindowTokens": 400000,
-          "displayScore": 60.47,
+          "displayScore": 60.48,
           "provisionalDisplayScore": 75,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 53.1,
-            "upper": 67.84
+            "lower": 53.11,
+            "upper": 67.85
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -120293,7 +120323,7 @@
             "categoryRanks": {
               "agentic": 41,
               "coding": 35,
-              "knowledge": 32,
+              "knowledge": 33,
               "instructionFollowing": 18
             },
             "categoryRankingEligible": {
@@ -120699,7 +120729,7 @@
             "blended": 0.088
           },
           "median_tps": 248.955,
-          "ttft": 0.364
+          "ttft": 0.331
         }
       }
     },
@@ -120792,8 +120822,8 @@
             "completion": 0.9,
             "blended": 0.45
           },
-          "median_tps": 142.091,
-          "ttft": 0.828
+          "median_tps": 146.006,
+          "ttft": 0.802
         }
       }
     },
@@ -120870,8 +120900,8 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 56.92,
-            "upper": 76.37,
+            "lower": 56.93,
+            "upper": 76.38,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -120882,7 +120912,7 @@
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
-          "overallRank": 31,
+          "overallRank": 32,
           "url": "https://benchlm.ai/models/gpt-5-2-pro",
           "markdownUrl": "https://benchlm.ai/md/models/gpt-5-2-pro.md",
           "id": 177,
@@ -120931,7 +120961,7 @@
           "ranking": {
             "rankingEligible": false,
             "verifiedRankingEligible": false,
-            "overallRank": 31,
+            "overallRank": 32,
             "categoryRanks": {},
             "categoryRankingEligible": {
               "agentic": false,
@@ -121280,13 +121310,13 @@
           "reasoningType": "Hybrid",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 61.5,
+          "displayScore": 61.51,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 54.43,
-            "upper": 68.58
+            "lower": 54.44,
+            "upper": 68.59
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -121634,6 +121664,36 @@
       "benchmarks": {}
     },
     {
+      "id": "deepseek-v4.1-flash:1017",
+      "name": "DeepSeek V4.1 Flash 1017",
+      "provider": "ollama-cloud",
+      "family": "deepseek-v4.1-flash:1017",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2025-05",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 600000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "nemotron-3-nano:30b",
       "name": "nemotron-3-nano:30b",
       "provider": "ollama-cloud",
@@ -121895,13 +121955,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 52.22,
+          "displayScore": 52.21,
           "provisionalDisplayScore": 53,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 37.87,
-            "upper": 66.57,
+            "lower": 37.86,
+            "upper": 66.56,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "preference-only",
             "patternCalibrationFamilies": 4,
@@ -121962,8 +122022,8 @@
             "verifiedRankingEligible": false,
             "overallRank": 91,
             "categoryRanks": {
-              "coding": 90,
-              "knowledge": 90,
+              "coding": 91,
+              "knowledge": 91,
               "instructionFollowing": 97
             },
             "categoryRankingEligible": {
@@ -122429,15 +122489,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 22,
-            "model": "Grok Imagine Image",
-            "vendor": "SpaceXAI",
-            "license": "proprietary",
-            "score": 1329.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 25,
             "model": "Grok Imagine Image",
@@ -122779,13 +122830,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 49.38,
+          "displayScore": 49.39,
           "provisionalDisplayScore": 59,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 35.03,
-            "upper": 63.73,
+            "lower": 35.04,
+            "upper": 63.74,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -125990,6 +126041,36 @@
       "benchmarks": {}
     },
     {
+      "id": "bfl/flux-3-image-klein",
+      "name": "FLUX 3 Image Klein",
+      "provider": "bfl",
+      "family": "bfl/flux-3-image-klein",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 0,
+      "modality": "image/text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": true,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": false,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": null,
+        "completion": null,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "bfl/flux-2-flex",
       "name": "FLUX.2 [flex]",
       "provider": "bfl",
@@ -126588,8 +126669,8 @@
             "completion": 0.92,
             "blended": 0.417
           },
-          "median_tps": 48.941,
-          "ttft": 0.607
+          "median_tps": 46.81,
+          "ttft": 0.661
         }
       }
     },
@@ -126652,8 +126733,8 @@
             "completion": 0.66,
             "blended": 0.3
           },
-          "median_tps": 119.413,
-          "ttft": 0.802
+          "median_tps": 120.319,
+          "ttft": 0.663
         }
       }
     },
@@ -126836,8 +126917,8 @@
             "completion": 1.0,
             "blended": 0.482
           },
-          "median_tps": 61.152,
-          "ttft": 0.764
+          "median_tps": 68.929,
+          "ttft": 0.789
         }
       }
     },
@@ -127865,15 +127946,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 30,
-            "model": "Seedream 5.0 Lite",
-            "vendor": "Bytedance",
-            "license": "proprietary",
-            "score": 1294.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 40,
             "model": "Seedream 5.0 Lite",
@@ -127916,15 +127988,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 28,
-            "model": "Seedream 4.5",
-            "vendor": "Bytedance",
-            "license": "proprietary",
-            "score": 1302.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 36,
             "model": "Seedream 4.5",
@@ -128027,15 +128090,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 46,
-            "model": "Seedream 4.0 (fal)",
-            "vendor": "Bytedance",
-            "license": "proprietary",
-            "score": 1210.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 51,
             "model": "Seedream 4.0 (High Res, fal)",
@@ -128288,15 +128342,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 10,
-            "model": "Seedream 5.0 Pro",
-            "vendor": "Bytedance",
-            "license": "proprietary",
-            "score": 1394.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 12,
             "model": "Seedream 5.0 Pro",
@@ -128377,13 +128422,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "131K",
           "contextWindowTokens": 131000,
-          "displayScore": 38,
+          "displayScore": 37.9,
           "provisionalDisplayScore": 44,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 23.65,
-            "upper": 52.35,
+            "lower": 23.55,
+            "upper": 52.25,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -128447,7 +128492,7 @@
             "overallRank": 148,
             "categoryRanks": {
               "agentic": 92,
-              "knowledge": 116,
+              "knowledge": 117,
               "instructionFollowing": 64
             },
             "categoryRankingEligible": {
@@ -129699,8 +129744,8 @@
             "completion": 0.16,
             "blended": 0.07
           },
-          "median_tps": 177.355,
-          "ttft": 0.35
+          "median_tps": 180.476,
+          "ttft": 0.323
         }
       }
     },
@@ -129763,7 +129808,7 @@
             "completion": 0.6,
             "blended": 0.3
           },
-          "median_tps": 206.523,
+          "median_tps": 206.094,
           "ttft": 1.097
         }
       }
@@ -131928,15 +131973,6 @@
       },
       "benchmarks": {
         "arena": {
-          "image-edit": {
-            "rank": 5,
-            "model": "MAI-Image-2.6",
-            "vendor": "Microsoft AI",
-            "license": "proprietary",
-            "score": 1428.0,
-            "ci": null,
-            "votes": null
-          },
           "text-to-image": {
             "rank": 5,
             "model": "MAI-Image-2.6",
@@ -133519,12 +133555,12 @@
           "reasoningType": "Reasoning",
           "contextWindow": "256K",
           "contextWindowTokens": 256000,
-          "displayScore": 52.47,
+          "displayScore": 52.46,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 42.75,
+            "lower": 42.74,
             "upper": 62.19,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -133768,13 +133804,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 69.86,
+          "displayScore": 69.87,
           "provisionalDisplayScore": 79,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 65.74,
-            "upper": 73.97
+            "lower": 65.75,
+            "upper": 73.99
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -135294,8 +135330,8 @@
             "completion": 0.17,
             "blended": 0.074
           },
-          "median_tps": 242.177,
-          "ttft": 0.978
+          "median_tps": 223.772,
+          "ttft": 0.952
         }
       }
     },
@@ -135914,8 +135950,8 @@
             "completion": 15.0,
             "blended": 6.0
           },
-          "median_tps": 42.976,
-          "ttft": 2.963
+          "median_tps": 41.583,
+          "ttft": 2.905
         }
       }
     },
@@ -137434,13 +137470,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 54.83,
+          "displayScore": 54.84,
           "provisionalDisplayScore": 62,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 44.15,
-            "upper": 65.51
+            "upper": 65.52
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -138888,8 +138924,8 @@
             "completion": 12.0,
             "blended": 4.5
           },
-          "median_tps": 114.665,
-          "ttft": 1.82
+          "median_tps": 112.72,
+          "ttft": 1.68
         },
         "benchlm": {
           "slug": "gpt-5-6-terra",
@@ -138900,13 +138936,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 70.19,
+          "displayScore": 70.21,
           "provisionalDisplayScore": 75,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 66.49,
-            "upper": 73.89
+            "lower": 66.51,
+            "upper": 73.91
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -139362,13 +139398,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 75.3,
+          "displayScore": 75.32,
           "provisionalDisplayScore": 79,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 72.6,
-            "upper": 78.01
+            "lower": 72.61,
+            "upper": 78.03
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -139685,13 +139721,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 73.35,
+          "displayScore": 73.37,
           "provisionalDisplayScore": 78,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 59,
-            "upper": 87.7,
+            "lower": 59.02,
+            "upper": 87.72,
             "scope": "source-pattern",
             "sourcePattern": "objective-only",
             "patternCalibrationFamilies": 12,
@@ -139834,13 +139870,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 64.69,
+          "displayScore": 64.7,
           "provisionalDisplayScore": 71,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 54.97,
-            "upper": 74.42,
+            "lower": 54.98,
+            "upper": 74.43,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -139899,7 +139935,7 @@
             "verifiedRankingEligible": false,
             "overallRank": 37,
             "categoryRanks": {
-              "agentic": 71,
+              "agentic": 70,
               "coding": 67,
               "multimodalGrounded": 17,
               "knowledge": 26
@@ -140115,13 +140151,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 54.27,
+          "displayScore": 54.28,
           "provisionalDisplayScore": 69,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 39.09,
-            "upper": 69.44
+            "lower": 39.1,
+            "upper": 69.46
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -140365,13 +140401,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 66.69,
+          "displayScore": 66.7,
           "provisionalDisplayScore": 70,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 62.21,
-            "upper": 71.17
+            "lower": 62.22,
+            "upper": 71.18
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -140585,13 +140621,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 46.95,
+          "displayScore": 46.96,
           "provisionalDisplayScore": 57,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 37.23,
-            "upper": 56.67,
+            "lower": 37.24,
+            "upper": 56.69,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -140886,13 +140922,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "400K",
           "contextWindowTokens": 400000,
-          "displayScore": 59.85,
+          "displayScore": 59.86,
           "provisionalDisplayScore": 58,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 52.73,
-            "upper": 66.97
+            "lower": 52.74,
+            "upper": 66.98
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -141154,13 +141190,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "200K",
           "contextWindowTokens": 200000,
-          "displayScore": 57.2,
+          "displayScore": 57.21,
           "provisionalDisplayScore": 72,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 46.44,
-            "upper": 67.97
+            "upper": 67.98
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -141348,8 +141384,8 @@
             "completion": 10.0,
             "blended": 4.0
           },
-          "median_tps": 58.238,
-          "ttft": 2.61
+          "median_tps": 56.992,
+          "ttft": 1.989
         },
         "benchlm": {
           "slug": "gpt-6-1-sol",
@@ -141360,13 +141396,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "1.05M",
           "contextWindowTokens": 1050000,
-          "displayScore": 84.06,
+          "displayScore": 84.07,
           "provisionalDisplayScore": 82,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 80.09,
-            "upper": 88.02
+            "lower": 80.1,
+            "upper": 88.04
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -142484,7 +142520,7 @@
             "overallRank": 123,
             "categoryRanks": {
               "agentic": 84,
-              "coding": 91,
+              "coding": 90,
               "knowledge": 105,
               "instructionFollowing": 67
             },
@@ -144709,8 +144745,8 @@
             "completion": 0.195,
             "blended": 0.086
           },
-          "median_tps": 170.303,
-          "ttft": 0.708
+          "median_tps": 169.784,
+          "ttft": 0.731
         }
       }
     },
@@ -145819,19 +145855,7 @@
         "completion": 0.0,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "image-edit": {
-            "rank": 39,
-            "model": "Qwen-Image-Edit (2511)",
-            "vendor": "Alibaba",
-            "license": "open",
-            "score": 1234.0,
-            "ci": null,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "qwen/qwen-image",
@@ -146209,7 +146233,7 @@
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 23.75,
+            "lower": 23.76,
             "upper": 43.2,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
@@ -147999,13 +148023,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 49.99,
+          "displayScore": 50,
           "provisionalDisplayScore": 63,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 40.27,
-            "upper": 59.71,
+            "upper": 59.72,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -148830,13 +148854,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 54.16,
+          "displayScore": 54.2,
           "provisionalDisplayScore": 0,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 39.81,
-            "upper": 68.51,
+            "lower": 39.85,
+            "upper": 68.55,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -149679,6 +149703,36 @@
       "price_per_million": {
         "prompt": 980000.0,
         "completion": 3080000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepinfra/nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super 120B A12B (Deep Infra)",
+      "provider": "deepinfra",
+      "family": "deepinfra/nemotron-3-super-120b-a12b",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 85000.0,
+        "completion": 400000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -153972,8 +154026,8 @@
             "completion": 1.2,
             "blended": 0.525
           },
-          "median_tps": 115.233,
-          "ttft": 0.931
+          "median_tps": 109.984,
+          "ttft": 0.923
         }
       }
     },
@@ -154554,8 +154608,8 @@
             "completion": 0.14,
             "blended": 0.061
           },
-          "median_tps": 287.281,
-          "ttft": 0.547
+          "median_tps": 264.551,
+          "ttft": 0.54
         }
       }
     },
@@ -157172,13 +157226,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "2M",
           "contextWindowTokens": 2000000,
-          "displayScore": 61.17,
+          "displayScore": 61.18,
           "provisionalDisplayScore": 68,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 50.32,
-            "upper": 72.02
+            "lower": 50.33,
+            "upper": 72.03
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -157614,13 +157668,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "1M",
           "contextWindowTokens": 1000000,
-          "displayScore": 42.14,
+          "displayScore": 42.15,
           "provisionalDisplayScore": 57,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 26.21,
-            "upper": 58.08
+            "upper": 58.09
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -159597,6 +159651,36 @@
       "price_per_million": {
         "prompt": 330000.0,
         "completion": 2750000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "deepseek-v4.1-flash-1017@eu",
+      "name": "deepseek-v4.1-flash-1017@eu",
+      "provider": "requesty",
+      "family": "deepseek-v4.1-flash-1017@eu",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": false,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 500000.0,
+        "completion": 1500000.0,
         "cache_read": null
       },
       "benchmarks": {}
@@ -165292,8 +165376,8 @@
             "completion": 1.5,
             "blended": 0.75
           },
-          "median_tps": 79.007,
-          "ttft": 0.781
+          "median_tps": 77.505,
+          "ttft": 0.789
         }
       }
     },
@@ -171568,6 +171652,36 @@
       "benchmarks": {}
     },
     {
+      "id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "name": "Muse Spark Open",
+      "provider": "meta-models",
+      "family": "meta-models/Muse-Spark-Open-816B-A42B",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 1048576,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": "2026-01-04",
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 1250000.0,
+        "completion": 4250000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "essentialai/Rnj-1-Instruct",
       "name": "Rnj-1 Instruct",
       "provider": "essentialai",
@@ -171782,6 +171896,36 @@
       }
     },
     {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "name": "Nemotron 3.5 Super VL 120B A12B",
+      "provider": "nvidia",
+      "family": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 262144,
+      "modality": "image/text/video",
+      "is_vision": true,
+      "is_audio_input": false,
+      "is_video_input": true,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": true,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": 150000.0,
+        "completion": 500000.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
       "id": "grok-3",
       "name": "xAI Grok 3",
       "provider": "helicone",
@@ -171849,13 +171993,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "10M",
           "contextWindowTokens": 10000000,
-          "displayScore": 28.19,
+          "displayScore": 28.2,
           "provisionalDisplayScore": 48,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 12.92,
-            "upper": 43.46
+            "upper": 43.47
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -172365,7 +172509,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 34.47,
-            "upper": 53.91,
+            "upper": 53.92,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -173022,36 +173166,6 @@
       }
     },
     {
-      "id": "mistral-7b-instruct-v0.3",
-      "name": "mistral-7b-instruct-v0.3",
-      "provider": "cortecs",
-      "family": "mistral-7b-instruct-v0.3",
-      "source": "models.dev",
-      "created_unix": null,
-      "context": 127000,
-      "modality": "text",
-      "is_vision": false,
-      "is_audio_input": false,
-      "is_video_input": false,
-      "is_image_output": false,
-      "is_audio_output": false,
-      "supports_reasoning": false,
-      "supports_tools": true,
-      "supports_json": false,
-      "supports_caching": false,
-      "knowledge_cutoff": null,
-      "hugging_face_id": null,
-      "open_weight": false,
-      "synthetic": false,
-      "free": false,
-      "price_per_million": {
-        "prompt": 111000.0,
-        "completion": 111000.0,
-        "cache_read": null
-      },
-      "benchmarks": {}
-    },
-    {
       "id": "mixtral-8x7B-instruct-v0.1",
       "name": "Mixtral 8x7B Instruct v0.1",
       "provider": "cortecs",
@@ -173571,19 +173685,7 @@
         "completion": null,
         "cache_read": null
       },
-      "benchmarks": {
-        "arena": {
-          "image-edit": {
-            "rank": 13,
-            "model": "ChatGPT Image Latest (High Fidelity, 20251216)",
-            "vendor": "OpenAI",
-            "license": "proprietary",
-            "score": 1389.0,
-            "ci": null,
-            "votes": null
-          }
-        }
-      }
+      "benchmarks": {}
     },
     {
       "id": "gpt-realtime-2.1",
@@ -174654,8 +174756,8 @@
             "completion": 0.8,
             "blended": 0.388
           },
-          "median_tps": 367.686,
-          "ttft": 1.191
+          "median_tps": 368.617,
+          "ttft": 1.04
         },
         "benchlm": {
           "slug": "trinity-large-thinking",
@@ -174672,7 +174774,7 @@
           "evidenceStatus": "estimated",
           "scoreInterval90": {
             "lower": 24.78,
-            "upper": 44.22,
+            "upper": 44.23,
             "scope": "source-pattern",
             "sourcePattern": "objective-and-preference",
             "patternCalibrationFamilies": 12,
@@ -175333,13 +175435,13 @@
           "reasoningType": "Reasoning",
           "contextWindow": "262K",
           "contextWindowTokens": 262000,
-          "displayScore": 33.97,
+          "displayScore": 33.98,
           "provisionalDisplayScore": 56,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "estimated",
           "scoreInterval90": {
-            "lower": 19.62,
-            "upper": 48.32,
+            "lower": 19.63,
+            "upper": 48.33,
             "scope": "global-pool-pattern-unvalidated",
             "sourcePattern": "benchmark-only",
             "patternCalibrationFamilies": 4,
@@ -175705,7 +175807,7 @@
           "evidenceStatus": "supported",
           "scoreInterval90": {
             "lower": 13.24,
-            "upper": 43.73
+            "upper": 43.74
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,
@@ -176225,6 +176327,36 @@
       "price_per_million": {
         "prompt": 40000.0,
         "completion": 0.0,
+        "cache_read": null
+      },
+      "benchmarks": {}
+    },
+    {
+      "id": "mistral-7b-instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "provider": "digitalocean",
+      "family": "mistral-7b-instruct-v0.3",
+      "source": "models.dev",
+      "created_unix": null,
+      "context": 32768,
+      "modality": "text",
+      "is_vision": false,
+      "is_audio_input": false,
+      "is_video_input": false,
+      "is_image_output": false,
+      "is_audio_output": false,
+      "supports_reasoning": false,
+      "supports_tools": true,
+      "supports_json": false,
+      "supports_caching": false,
+      "knowledge_cutoff": null,
+      "hugging_face_id": null,
+      "open_weight": true,
+      "synthetic": false,
+      "free": false,
+      "price_per_million": {
+        "prompt": null,
+        "completion": null,
         "cache_read": null
       },
       "benchmarks": {}
@@ -178328,13 +178460,13 @@
           "reasoningType": "Non-Reasoning",
           "contextWindow": "128K",
           "contextWindowTokens": 128000,
-          "displayScore": 40.77,
+          "displayScore": 40.78,
           "provisionalDisplayScore": 54,
           "publicRankingMode": "bench-align-v5",
           "evidenceStatus": "supported",
           "scoreInterval90": {
-            "lower": 24.24,
-            "upper": 57.3
+            "lower": 24.25,
+            "upper": 57.31
           },
           "orderingMeaning": "Point-estimate order; conditional ranges do not establish rank confidence.",
           "rankingEligible": true,

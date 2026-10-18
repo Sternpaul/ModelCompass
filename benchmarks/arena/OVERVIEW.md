@@ -63,24 +63,6 @@ _Human-preference Elo._
 
 _No models yet._
 
-## Image Edit Arena
-
-_Human-preference Elo._
-
-
-| # | Model | Score |
-|---|-------|------:|
-| 1 | `GPT-Image-2.5 Sunburst` | 1524.000 |
-| 2 | `GPT-Image-2.5 Flare` | 1481.000 |
-| 3 | `GPT-Image-2 (Medium)` | 1462.000 |
-| 4 | `Grok Imagine Image 2.0` | 1439.000 |
-| 5 | `MAI-Image-2.6` | 1428.000 |
-| 6 | `Gemini Nano Banana 2.1` | 1428.000 |
-| 7 | `Grok Imagine Image 2.0 (20260801)` | 1425.000 |
-| 8 | `Muse Image` | 1403.000 |
-| 9 | `MAI-Image-2.5` | 1401.000 |
-| 10 | `Seedream 5.0 Pro` | 1394.000 |
-
 ## Image To Video Arena
 
 _Human-preference Elo._

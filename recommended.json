@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T08:27:07.867712+00:00",
+    "generated_at": "2026-10-18T01:42:33.887564+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -25,12 +25,6 @@
         "source": "https://arena.ai/leaderboard/document",
         "subdir": "arena",
         "model_count": 44,
-        "top_n": 10
-      },
-      "arena_image-edit": {
-        "source": "https://arena.ai/leaderboard/image-edit",
-        "subdir": "arena",
-        "model_count": 50,
         "top_n": 10
       },
       "arena_image-to-video": {
@@ -258,7 +252,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 574,
+        "model_count": 576,
         "top_n": 10
       },
       "price_performance": {
@@ -852,98 +846,6 @@
         "vendor": "OpenAI",
         "license": "proprietary",
         "score": 1483.0,
-        "ci": null,
-        "votes": null
-      }
-    ],
-    "arena_image-edit": [
-      {
-        "rank": 1,
-        "model": "GPT-Image-2.5 Sunburst",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1524.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 2,
-        "model": "GPT-Image-2.5 Flare",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1481.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 3,
-        "model": "GPT-Image-2 (Medium)",
-        "vendor": "OpenAI",
-        "license": "proprietary",
-        "score": 1462.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 4,
-        "model": "Grok Imagine Image 2.0",
-        "vendor": "SpaceXAI",
-        "license": "proprietary",
-        "score": 1439.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 5,
-        "model": "MAI-Image-2.6",
-        "vendor": "Microsoft AI",
-        "license": "proprietary",
-        "score": 1428.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 6,
-        "model": "Gemini Nano Banana 2.1",
-        "vendor": "Google",
-        "license": "proprietary",
-        "score": 1428.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 7,
-        "model": "Grok Imagine Image 2.0 (20260801)",
-        "vendor": "SpaceXAI",
-        "license": "proprietary",
-        "score": 1425.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 8,
-        "model": "Muse Image",
-        "vendor": "Meta",
-        "license": "proprietary",
-        "score": 1403.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 9,
-        "model": "MAI-Image-2.5",
-        "vendor": "Microsoft AI",
-        "license": "proprietary",
-        "score": 1401.0,
-        "ci": null,
-        "votes": null
-      },
-      {
-        "rank": 10,
-        "model": "Seedream 5.0 Pro",
-        "vendor": "Bytedance",
-        "license": "proprietary",
-        "score": 1394.0,
         "ci": null,
         "votes": null
       }
@@ -3293,62 +3195,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 36829063466738,
-        "requests": 799269605,
+        "tokens": 35894242708820,
+        "requests": 806712764,
         "rank": 1
       },
       {
         "model": "stepfun/step-5-preview-20261008",
-        "tokens": 17073880047343,
-        "requests": 87598005,
+        "tokens": 13928353467169,
+        "requests": 70870877,
         "rank": 2
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 12677040453764,
-        "requests": 671812511,
+        "tokens": 12599157460545,
+        "requests": 683502194,
         "rank": 3
       },
       {
         "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 10901093368113,
-        "requests": 134864317,
+        "tokens": 10337397726315,
+        "requests": 127719785,
         "rank": 4
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 7852210457983,
-        "requests": 72093204,
+        "tokens": 7549908560737,
+        "requests": 69744744,
         "rank": 5
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 6547769983379,
-        "requests": 387853922,
+        "tokens": 6382594709603,
+        "requests": 400193666,
         "rank": 6
       },
       {
-        "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 6381189995492,
-        "requests": 50648078,
+        "model": "anthropic/claude-opus-5.5-20260921",
+        "tokens": 6053617446091,
+        "requests": 48830185,
         "rank": 7
       },
       {
-        "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 5953245242507,
-        "requests": 47558626,
+        "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "tokens": 5373936164692,
+        "requests": 43078810,
         "rank": 8
       },
       {
         "model": "z-ai/glm-5.3-20260816",
-        "tokens": 5227997604649,
-        "requests": 66196465,
+        "tokens": 5341191481881,
+        "requests": 67233134,
         "rank": 9
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 4669473649955,
-        "requests": 326412366,
+        "tokens": 4711619909818,
+        "requests": 329104293,
         "rank": 10
       }
     ],
