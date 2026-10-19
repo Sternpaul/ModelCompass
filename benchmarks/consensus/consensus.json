@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T08:45:14.588131+00:00",
+    "generated_at": "2026-10-19T09:45:47.375746+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1110,17 +1110,6 @@
       }
     },
     {
-      "model": "Gemini 4 Argon (High)",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 1,
-          "score": 1524.0
-        }
-      }
-    },
-    {
       "model": "xai/grok-4-3-medium",
       "top_appearances": 1,
       "borda_points": 10,
@@ -1209,17 +1198,6 @@
       }
     },
     {
-      "model": "Muse Wonder (Max)",
-      "top_appearances": 1,
-      "borda_points": 9,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 2,
-          "score": 1509.0
-        }
-      }
-    },
-    {
       "model": "xai/grok-4-20-0309",
       "top_appearances": 1,
       "borda_points": 9,
@@ -1264,7 +1242,7 @@
       }
     },
     {
-      "model": "stepfun/step-5-preview-20261008",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1282,17 +1260,6 @@
         "price_performance": {
           "rank": 2,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Opus 5.5 (High)",
-      "top_appearances": 1,
-      "borda_points": 8,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 3,
-          "score": 1508.0
         }
       }
     },
@@ -1385,7 +1352,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "stepfun/step-5-preview-20261008",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1403,17 +1370,6 @@
         "price_performance": {
           "rank": 3,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Fable 5 (High)",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 4,
-          "score": 1504.0
         }
       }
     },
@@ -1528,17 +1484,6 @@
       }
     },
     {
-      "model": "Claude Opus 4.6 (High)",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 5,
-          "score": 1503.0
-        }
-      }
-    },
-    {
       "model": "xai/grok-4-3",
       "top_appearances": 1,
       "borda_points": 6,
@@ -1649,17 +1594,6 @@
       }
     },
     {
-      "model": "Claude Fable 5.1 (Max)",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 6,
-          "score": 1502.0
-        }
-      }
-    },
-    {
       "model": "google/gemini-3-7-flash",
       "top_appearances": 1,
       "borda_points": 5,
@@ -1766,17 +1700,6 @@
         "price_performance": {
           "rank": 6,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Opus 4.7 (High)",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 7,
-          "score": 1501.0
         }
       }
     },
@@ -1898,17 +1821,6 @@
         "price_performance": {
           "rank": 7,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Opus 4.6",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 8,
-          "score": 1497.0
         }
       }
     },
@@ -2045,7 +1957,7 @@
       }
     },
     {
-      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "model": "z-ai/glm-5.3-20260816",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -2056,24 +1968,13 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4-pro",
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "price_performance": {
           "rank": 8,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Gemini 3.8 Flash (High)",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 9,
-          "score": 1496.0
         }
       }
     },
@@ -2199,7 +2100,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-20260816",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -2210,24 +2111,13 @@
       }
     },
     {
-      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "model": "tencent/hy3-preview",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "price_performance": {
           "rank": 9,
           "score": null
-        }
-      }
-    },
-    {
-      "model": "Muse Spark 1.3 (Max)",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "arena_text": {
-          "rank": 10,
-          "score": 1494.0
         }
       }
     },
@@ -2397,7 +2287,7 @@
       }
     },
     {
-      "model": "tencent/hy3-preview",
+      "model": "step-3.5-flash",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
