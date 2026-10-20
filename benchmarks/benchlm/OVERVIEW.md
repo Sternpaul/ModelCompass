@@ -141,11 +141,11 @@ _Logical reasoning category score._
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 93.300 |
 | 2 | `gpt-6-1-sol` | 90.500 |
-| 3 | `qwen3-8-max` | 87.800 |
-| 4 | `claude-opus-5-5` | 86.100 |
-| 5 | `reflection-beam-fp8` | 85.800 |
-| 6 | `reflection-beam-nvfp4` | 85.500 |
-| 7 | `claude-fable-5-1` | 85.200 |
-| 8 | `sakana-fugu-ultra` | 84.400 |
+| 3 | `qwen3-8-max` | 87 |
+| 4 | `gemini-4-argon` | 86.900 |
+| 5 | `claude-opus-5-5` | 86.100 |
+| 6 | `claude-fable-5-1` | 85.200 |
+| 7 | `reflection-beam-fp8` | 84.900 |
+| 8 | `reflection-beam-nvfp4` | 84.700 |
 | 9 | `claude-fable` | 84.300 |
-| 10 | `step-5-preview` | 83.400 |
+| 10 | `sakana-fugu-ultra` | 83.500 |
