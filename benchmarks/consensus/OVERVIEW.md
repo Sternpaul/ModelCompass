@@ -20,7 +20,7 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 14 | `openai/gpt-5-2` | 4 | 26 | aa_aime_25, aa_artificial_analysis_math_index, aa_livecodebench, aa_mmlu_pro |
 | 15 | `anthropic/claude-sonnet-5-5` | 4 | 26 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
 | 16 | `anthropic/claude-fable-5` | 4 | 23 | aa_hle, aa_scicode, aa_tau2, aa_terminalbench_hard |
-| 17 | `Claude Fable 5 (High)` | 4 | 21 | arena_agent, arena_search, arena_text, arena_vision |
-| 18 | `openai/gpt-6-astra` | 4 | 19 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_terminalbench_v2_1, aa_terminalbench_v4_0 |
-| 19 | `google/gemini-4-argon` | 4 | 18 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
-| 20 | `gpt-5-6-sol` | 4 | 18 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
+| 17 | `openai/gpt-6-astra` | 4 | 19 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_terminalbench_v2_1, aa_terminalbench_v4_0 |
+| 18 | `google/gemini-4-argon` | 4 | 18 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
+| 19 | `gpt-5-6-sol` | 4 | 18 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
+| 20 | `anthropic/claude-opus-5-5-high` | 4 | 13 | aa_artificial_analysis_intelligence_index, aa_hle, aa_scicode, aa_terminalbench_v4_0 |
