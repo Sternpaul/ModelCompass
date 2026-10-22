@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-21T09:15:22.182261+00:00",
+    "generated_at": "2026-10-22T09:18:01.370655+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -1050,6 +1050,21 @@
       }
     },
     {
+      "model": "openai/gpt-oss-120b",
+      "top_appearances": 2,
+      "borda_points": 5,
+      "benchmarks": {
+        "aa_livecodebench": {
+          "rank": 7,
+          "score": 0.878
+        },
+        "price_performance": {
+          "rank": 10,
+          "score": null
+        }
+      }
+    },
+    {
       "model": "meta/muse-spark-1-3-xhigh",
       "top_appearances": 2,
       "borda_points": 4,
@@ -1257,7 +1272,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "deepseek/deepseek-v4.1-flash-20261017",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -1367,7 +1382,7 @@
       }
     },
     {
-      "model": "deepseek/deepseek-v4.1-flash-20261017",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
@@ -1477,7 +1492,7 @@
       }
     },
     {
-      "model": "xiaomi/mimo-v2.6-flash-20260921",
+      "model": "minimax/minimax-m3.1-flash-20261019",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -1576,7 +1591,7 @@
       }
     },
     {
-      "model": "tencent/hy4-preview-20260827",
+      "model": "xiaomi/mimo-v2.6-flash-20260921",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -1675,7 +1690,7 @@
       }
     },
     {
-      "model": "anthropic/claude-opus-5.5-20260921",
+      "model": "tencent/hy4-preview-20260827",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -1686,7 +1701,7 @@
       }
     },
     {
-      "model": "upstage/solar-pro4",
+      "model": "nvidia/nemotron-3-nano-30b-a3b",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -1715,17 +1730,6 @@
         "aa_ifbench": {
           "rank": 7,
           "score": 0.80952380952381
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-oss-120b",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "aa_livecodebench": {
-          "rank": 7,
-          "score": 0.878
         }
       }
     },
@@ -1807,7 +1811,7 @@
       }
     },
     {
-      "model": "openai/gpt-6-luna-20260922",
+      "model": "anthropic/claude-opus-5.5-20260921",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -1818,7 +1822,7 @@
       }
     },
     {
-      "model": "nvidia/nemotron-3-nano-30b-a3b",
+      "model": "qwen/qwen3-coder-30b-a3b-instruct",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -1972,7 +1976,7 @@
       }
     },
     {
-      "model": "stepfun/step-5-preview-20261008",
+      "model": "openai/gpt-6-luna-20260922",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -1983,7 +1987,7 @@
       }
     },
     {
-      "model": "qwen/qwen3-coder-30b-a3b-instruct",
+      "model": "tencent/hy3-preview",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -2126,7 +2130,7 @@
       }
     },
     {
-      "model": "tencent/hy3-preview",
+      "model": "microsoft/phi-4",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -2269,22 +2273,11 @@
       }
     },
     {
-      "model": "minimax/minimax-m3.1-flash-20261019",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "or_usage_tokens": {
-          "rank": 10,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "microsoft/phi-4",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "price_performance": {
           "rank": 10,
           "score": null
         }

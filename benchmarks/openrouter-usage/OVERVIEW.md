@@ -14,12 +14,12 @@ _Rank by total tokens processed; requests kept alongside._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `deepseek/deepseek-v4.1-flash-20260910` | — |
-| 2 | `z-ai/glm-5.3-flash-20260826` | — |
-| 3 | `deepseek/deepseek-v4.1-flash-20261017` | — |
-| 4 | `xiaomi/mimo-v2.6-flash-20260921` | — |
-| 5 | `tencent/hy4-preview-20260827` | — |
-| 6 | `anthropic/claude-opus-5.5-20260921` | — |
-| 7 | `openai/gpt-6-luna-20260922` | — |
-| 8 | `stepfun/step-5-preview-20261008` | — |
+| 2 | `deepseek/deepseek-v4.1-flash-20261017` | — |
+| 3 | `z-ai/glm-5.3-flash-20260826` | — |
+| 4 | `minimax/minimax-m3.1-flash-20261019` | — |
+| 5 | `xiaomi/mimo-v2.6-flash-20260921` | — |
+| 6 | `tencent/hy4-preview-20260827` | — |
+| 7 | `anthropic/claude-opus-5.5-20260921` | — |
+| 8 | `openai/gpt-6-luna-20260922` | — |
 | 9 | `z-ai/glm-5.3-20260816` | — |
-| 10 | `minimax/minimax-m3.1-flash-20261019` | — |
+| 10 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |

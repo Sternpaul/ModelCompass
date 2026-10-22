@@ -30,6 +30,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 12.9 | 26.8 | — |
 | cohere/north-mini-code:free | kilo/openrouter | 9.9 | 36.5 | — |
 | mistral-large:free | kenari/openrouter | 5.8 | — | — |
+| recursive/flint-v1.0:free | kilo/openrouter | — | — | — |
 | xingchen-agi/xing4.0-29b-a4b:free | kilo/openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
 | nvidia/switchyard | openrouter | — | — | — |
@@ -43,10 +44,10 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-26b-a4b-it:free | openrouter | — | — | — |
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | — |
-| mimo-v2-5:free | kenari/openrouter | — | — | — |
-| nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
-| nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
 | gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
+| nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
+| nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
+| mimo-v2-5:free | kenari/openrouter | — | — | — |
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
 | reflection/beam-1.0-501b-a23b:free | nous | — | — | — |
