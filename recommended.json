@@ -1,8 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T09:18:01.355149+00:00",
+    "generated_at": "2026-10-23T09:14:04.114952+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
+      "arena_code": {
+        "source": "https://arena.ai/leaderboard/code",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
       "arena_video-edit": {
         "source": "https://arena.ai/leaderboard/video-edit",
         "subdir": "arena",
@@ -30,7 +36,7 @@
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 695,
+        "model_count": 697,
         "top_n": 10
       },
       "aa_artificial_analysis_math_index": {
@@ -48,7 +54,7 @@
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 668,
+        "model_count": 669,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -60,7 +66,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 579,
+        "model_count": 580,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -84,7 +90,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 235,
+        "model_count": 236,
         "top_n": 10
       },
       "aa_tau2": {
@@ -114,7 +120,7 @@
       "aa_terminalbench_v4_0": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 224,
+        "model_count": 225,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -174,7 +180,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 582,
+        "model_count": 579,
         "top_n": 10
       },
       "price_performance": {
@@ -186,6 +192,7 @@
     }
   },
   "recommended": {
+    "arena_code": [],
     "arena_video-edit": [],
     "aa_aime": [
       {
@@ -1814,62 +1821,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 25720220146365,
-        "requests": 644867125,
+        "tokens": 23483921846846,
+        "requests": 611181214,
         "rank": 1
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 16473596506477,
-        "requests": 284012445,
+        "tokens": 21683202235087,
+        "requests": 366618702,
         "rank": 2
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11339330795335,
-        "requests": 664808818,
+        "model": "minimax/minimax-m3.1-flash-20261019",
+        "tokens": 13731090484210,
+        "requests": 108927112,
         "rank": 3
       },
       {
-        "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 10345512479626,
-        "requests": 84250360,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 11418801049215,
+        "requests": 466273652,
         "rank": 4
       },
       {
-        "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 8567214226627,
-        "requests": 112870840,
+        "model": "tencent/hy4-preview-20260827",
+        "tokens": 8668002480454,
+        "requests": 83285167,
         "rank": 5
       },
       {
-        "model": "tencent/hy4-preview-20260827",
-        "tokens": 8546812254290,
-        "requests": 81543933,
+        "model": "xiaomi/mimo-v2.6-flash-20260921",
+        "tokens": 7998613196869,
+        "requests": 108050966,
         "rank": 6
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 7139736319111,
-        "requests": 54960478,
+        "tokens": 7448325362846,
+        "requests": 56805922,
         "rank": 7
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 6227918003643,
-        "requests": 444006539,
+        "tokens": 6258165874818,
+        "requests": 463581053,
         "rank": 8
       },
       {
         "model": "z-ai/glm-5.3-20260816",
-        "tokens": 5210271871189,
-        "requests": 69081236,
+        "tokens": 5148850844870,
+        "requests": 68856386,
         "rank": 9
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 4492702698398,
-        "requests": 34707579,
+        "tokens": 4660947820141,
+        "requests": 35431163,
         "rank": 10
       }
     ],
@@ -1905,6 +1912,12 @@
         "value": 215.0
       },
       {
+        "model": "upstage/solar-pro4",
+        "aa_intelligence": 26.6,
+        "prompt_price_per_m": 0.15,
+        "value": 177.33
+      },
+      {
         "model": "nvidia/nemotron-3-nano-30b-a3b",
         "aa_intelligence": 8.9,
         "prompt_price_per_m": 0.06,
@@ -1927,12 +1940,6 @@
         "aa_intelligence": 5.9,
         "prompt_price_per_m": 0.07,
         "value": 84.29
-      },
-      {
-        "model": "openai/gpt-oss-120b",
-        "aa_intelligence": 10.2,
-        "prompt_price_per_m": 0.15,
-        "value": 68.0
       }
     ]
   }

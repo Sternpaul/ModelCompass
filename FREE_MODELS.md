@@ -6,8 +6,7 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 
 | Model | Free on | AA Intelligence | AA Coding | Arena Rank |
 |-------|---------|-----------------|-----------|------------|
-| minimax/minimax-m3.1-flash:free | kilo/openrouter | **42.7** | — | — |
-| inclusionai/ling-3.1-flash:free | commandcode/openrouter | 41.1 | — | — |
+| inclusionai/ling-3.1-flash:free | commandcode/openrouter | **41.1** | — | — |
 | deepseek-v4-pro:free | openrouter/unorouter | 36.0 | 68.8 | — |
 | deepseek-v4-flash:free | kenari/openrouter/unorouter | 34.3 | 69.1 | — |
 | glm-5.2:free | openrouter/unorouter | 33.7 | 68.8 | — |
@@ -21,8 +20,8 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | — |
 | upstage/solar-mini4:free | nous | 24.1 | — | — |
 | minimax-m2.7:free | openrouter/unorouter | 22.8 | 52.6 | — |
-| step-3-7-flash:free | kenari/openrouter | 19.5 | 39.6 | — |
 | step-3.7-flash:free | openrouter/unorouter | 19.5 | 39.6 | — |
+| step-3-7-flash:free | kenari/openrouter | 19.5 | 39.6 | — |
 | stepfun/step-3.7-flash:free | nous | 19.5 | 39.6 | — |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | 18.4 | 48.2 | — |
 | glm-4-7-flash:free | kenari/openrouter | 14.9 | — | — |
@@ -44,11 +43,11 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-26b-a4b-it:free | openrouter | — | — | — |
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | — |
-| gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
+| glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
+| gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
 | mimo-v2-5:free | kenari/openrouter | — | — | — |
-| glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
 | reflection/beam-1.0-501b-a23b:free | nous | — | — | — |
 | ornith/ornith-1.5-122b:free | nous | — | — | — |
