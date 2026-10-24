@@ -13,6 +13,20 @@ _Human-preference Elo._
 
 _No models yet._
 
+## Search Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
+## Text To Video Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
 ## Video Edit Arena
 
 _Human-preference Elo._

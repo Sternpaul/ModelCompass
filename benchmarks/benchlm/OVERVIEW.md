@@ -13,16 +13,16 @@ _Tool-use / agentic task category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-astra` | 86.500 |
-| 2 | `claude-opus-5` | 85.200 |
-| 3 | `claude-mythos-5` | 84.100 |
-| 4 | `gpt-5-6-sol` | 83.700 |
-| 5 | `claude-fable` | 82.900 |
-| 6 | `qwen3-8-max` | 82.900 |
-| 7 | `ling-3-1-flash` | 82.300 |
+| 1 | `gpt-6-astra` | 85.900 |
+| 2 | `claude-opus-5` | 84.600 |
+| 3 | `gpt-5-6-sol` | 83.700 |
+| 4 | `claude-mythos-5` | 83.700 |
+| 5 | `claude-fable` | 83 |
+| 6 | `qwen3-8-max` | 83 |
+| 7 | `kimi-3-1-pro` | 82.300 |
 | 8 | `atria-dawn-preview` | 82.300 |
-| 9 | `kimi-k3` | 81.900 |
-| 10 | `gpt-5-5` | 81.700 |
+| 9 | `qwen3-8-27b` | 81.800 |
+| 10 | `ling-3-1-flash` | 81.700 |
 
 ## Coding
 
@@ -51,14 +51,14 @@ _Following complex instructions._
 |---|-------|------:|
 | 1 | `grok-4-3` | 97.100 |
 | 2 | `qwen3-8-max` | 94.700 |
-| 3 | `mai-thinking-1` | 94.700 |
-| 4 | `gpt-5-2-codex` | 93.800 |
-| 5 | `minimax-m3` | 93.800 |
-| 6 | `glm-5-1` | 93.800 |
-| 7 | `mimo-v2-5-pro` | 93.800 |
-| 8 | `gpt-5-5` | 93.300 |
-| 9 | `inkling-small` | 93.300 |
-| 10 | `muse-spark` | 93.300 |
+| 3 | `flint-40b-a2-5b` | 94.700 |
+| 4 | `mai-thinking-1` | 94.700 |
+| 5 | `gpt-5-2-codex` | 93.800 |
+| 6 | `minimax-m3` | 93.800 |
+| 7 | `glm-5-1` | 93.800 |
+| 8 | `mimo-v2-5-pro` | 93.800 |
+| 9 | `gpt-5-5` | 93.300 |
+| 10 | `inkling-small` | 93.300 |
 
 ## Knowledge
 
@@ -69,14 +69,14 @@ _Factual knowledge category score._
 |---|-------|------:|
 | 1 | `claude-fable-5-1` | 95.400 |
 | 2 | `claude-opus-5` | 95.300 |
-| 3 | `claude-mythos-5` | 92.400 |
-| 4 | `muse-spark-1-1` | 90.800 |
-| 5 | `claude-opus-4-8` | 87.500 |
-| 6 | `claude-opus-5-5` | 85.400 |
-| 7 | `claude-fable` | 85 |
-| 8 | `gpt-6-astra` | 84.300 |
-| 9 | `kimi-k3` | 83.900 |
-| 10 | `gpt-6-1-sol` | 83.800 |
+| 3 | `claude-mythos-5` | 92.200 |
+| 4 | `kimi-3-1-pro` | 91 |
+| 5 | `muse-spark-1-1` | 88.600 |
+| 6 | `claude-opus-4-8` | 85.600 |
+| 7 | `claude-opus-5-5` | 85.100 |
+| 8 | `claude-fable` | 84.800 |
+| 9 | `gpt-6-astra` | 84 |
+| 10 | `gpt-6-1-sol` | 83.500 |
 
 ## Math
 
@@ -121,16 +121,16 @@ _Vision+text grounded understanding._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `kimi-k3` | 92.600 |
-| 2 | `claude-opus-5` | 92.200 |
-| 3 | `claude-opus-5-5` | 92.200 |
-| 4 | `qwen3-8-max` | 91.200 |
-| 5 | `claude-opus-4-8` | 91.200 |
-| 6 | `gpt-5-6-sol` | 89.800 |
-| 7 | `claude-mythos-5` | 89.700 |
-| 8 | `qwen3-8-omni-flash` | 89.700 |
-| 9 | `hy4-preview` | 88.300 |
-| 10 | `gemini-3-5-flash` | 87.800 |
+| 1 | `kimi-3-1-pro` | 98 |
+| 2 | `qwen3-8-max` | 92 |
+| 3 | `claude-opus-5-5` | 91.800 |
+| 4 | `claude-mythos-5` | 91.100 |
+| 5 | `claude-opus-5` | 90.900 |
+| 6 | `kimi-k3` | 90.200 |
+| 7 | `gpt-5-6-sol` | 90.100 |
+| 8 | `gpt-6-astra` | 88.200 |
+| 9 | `gpt-6-1-sol` | 88.200 |
+| 10 | `gemini-3-8-flash` | 88.200 |
 
 ## Reasoning
 

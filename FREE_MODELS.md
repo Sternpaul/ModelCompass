@@ -44,8 +44,8 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | — |
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
-| nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
 | gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
+| nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
 | mimo-v2-5:free | kenari/openrouter | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
