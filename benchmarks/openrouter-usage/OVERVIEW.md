@@ -19,7 +19,7 @@ _Rank by total tokens processed; requests kept alongside._
 | 4 | `z-ai/glm-5.3-flash-20260826` | — |
 | 5 | `tencent/hy4-preview-20260827` | — |
 | 6 | `anthropic/claude-opus-5.5-20260921` | — |
-| 7 | `xiaomi/mimo-v2.6-flash-20260921` | — |
-| 8 | `openai/gpt-6-luna-20260922` | — |
+| 7 | `openai/gpt-6-luna-20260922` | — |
+| 8 | `xiaomi/mimo-v2.6-flash-20260921` | — |
 | 9 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 10 | `z-ai/glm-5.3-20260816` | — |

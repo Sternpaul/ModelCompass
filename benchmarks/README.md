@@ -32,7 +32,10 @@ Raw benchmark evaluations from Artificial Analysis' proprietary suite (AA API v2
 Human-preference Elo from blind pairwise battles. Higher Elo = more preferred by human voters.
 
 - [Code Arena](./arena/arena_code.json)
+- [Document Arena](./arena/arena_document.json)
 - [Search Arena](./arena/arena_search.json)
+- [Text Arena](./arena/arena_text.json)
+- [Text To Image Arena](./arena/arena_text-to-image.json)
 - [Text To Video Arena](./arena/arena_text-to-video.json)
 - [Video Edit Arena](./arena/arena_video-edit.json)
 
