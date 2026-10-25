@@ -22,5 +22,5 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 16 | `kimi/kimi-k3-1-pro` | 4 | 25 | aa_artificial_analysis_intelligence_index, aa_lcr, aa_scicode, aa_terminalbench_v4_0 |
 | 17 | `anthropic/claude-fable-5` | 4 | 23 | aa_hle, aa_scicode, aa_tau2, aa_terminalbench_hard |
 | 18 | `gpt-6-1-sol` | 4 | 20 | benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
-| 19 | `gpt-5-6-sol` | 4 | 18 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
-| 20 | `openai/gpt-6-astra` | 4 | 17 | aa_artificial_analysis_intelligence_index, aa_gpqa, aa_terminalbench_v2_1, aa_terminalbench_v4_0 |
+| 19 | `Claude Fable 5 (High)` | 4 | 19 | arena_agent, arena_search, arena_text, arena_vision |
+| 20 | `gpt-5-6-sol` | 4 | 18 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
