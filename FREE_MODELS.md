@@ -6,8 +6,8 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 
 | Model | Free on | AA Intelligence | AA Coding | Arena Rank |
 |-------|---------|-----------------|-----------|------------|
-| gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **19** (vision) |
-| gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 31 (vision) |
+| gpt-5.5:free | openrouter/unorouter | 30.7 | 60.9 | **8** (document) |
+| gpt-5.4:free | openrouter/unorouter | 27.6 | **71.1** | 14 (document) |
 | hy3:free | kenari/openrouter | 25.3 | 58.8 | 44 (agent) |
 | thinkingmachines/inkling:free | openrouter | 25.0 | 52.1 | 53 (agent) |
 | thinkingmachines/inkling-small:free | openrouter | 25.7 | 52.9 | 54 (agent) |
@@ -45,8 +45,8 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | nvidia/nemotron-3-super-120b-a12b:free | kilo/openrouter | — | — | — |
 | gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
-| glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
+| glm-4.5-flash:free | openrouter/unorouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
 | meituan/longcat-2.5-preview:free | nous | — | — | — |
 | reflection/beam-1.0-501b-a23b:free | nous | — | — | — |

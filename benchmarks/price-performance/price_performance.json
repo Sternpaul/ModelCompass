@@ -47,12 +47,6 @@
       "value": 148.33
     },
     {
-      "model": "deepseek/deepseek-v4-pro",
-      "aa_intelligence": 30.4,
-      "prompt_price_per_m": 0.2088,
-      "value": 145.59
-    },
-    {
       "model": "qwen/qwen3-coder-30b-a3b-instruct",
       "aa_intelligence": 9.6,
       "prompt_price_per_m": 0.07,
@@ -161,6 +155,12 @@
       "value": 32.5
     },
     {
+      "model": "deepseek/deepseek-v4-pro",
+      "aa_intelligence": 30.4,
+      "prompt_price_per_m": 0.95526,
+      "value": 31.82
+    },
+    {
       "model": "meta/muse-spark-open",
       "aa_intelligence": 38.9,
       "prompt_price_per_m": 1.25,
@@ -183,6 +183,12 @@
       "aa_intelligence": 52.6,
       "prompt_price_per_m": 2.0,
       "value": 26.3
+    },
+    {
+      "model": "deepseek/deepseek-r1-0528",
+      "aa_intelligence": 13.1,
+      "prompt_price_per_m": 0.5,
+      "value": 26.2
     },
     {
       "model": "thinkingmachines/inkling",
@@ -395,201 +401,45 @@
       "value": 0.0
     },
     {
-      "model": "deepseek/deepseek-r1-0528-qwen3-8b",
-      "aa_intelligence": 8.1,
-      "prompt_price_per_m": 60000.0,
+      "model": "gpt-5.1",
+      "aa_intelligence": 13.3,
+      "prompt_price_per_m": 1250000.0,
       "value": 0.0
     },
     {
-      "model": "deepseek/deepseek_v3",
-      "aa_intelligence": 8.5,
-      "prompt_price_per_m": 890000.0,
+      "model": "gpt-5.6-terra",
+      "aa_intelligence": 20.8,
+      "prompt_price_per_m": 2000000.0,
       "value": 0.0
     },
     {
-      "model": "zai-org/glm-4.6v",
+      "model": "qwen3.8-2.4t-a95b",
+      "aa_intelligence": 39.9,
+      "prompt_price_per_m": 2000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.5",
+      "aa_intelligence": 23.2,
+      "prompt_price_per_m": 5000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-4.6v",
       "aa_intelligence": 8.4,
       "prompt_price_per_m": 300000.0,
       "value": 0.0
     },
     {
-      "model": "zai-org/glm-4.6",
-      "aa_intelligence": 14.9,
-      "prompt_price_per_m": 550000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-4.5-air",
+      "model": "gpt-5.4-mini",
       "aa_intelligence": 11.1,
-      "prompt_price_per_m": 130000.0,
+      "prompt_price_per_m": 750000.0,
       "value": 0.0
     },
     {
-      "model": "zai-org/glm-4.5v",
-      "aa_intelligence": 6.7,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-5.2",
-      "aa_intelligence": 22.4,
-      "prompt_price_per_m": 1400000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-4.7-flash",
-      "aa_intelligence": 10.6,
-      "prompt_price_per_m": 70000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-5",
-      "aa_intelligence": 21.8,
-      "prompt_price_per_m": 1000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-5.1",
-      "aa_intelligence": 24.2,
-      "prompt_price_per_m": 1380000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai-org/glm-4.7",
-      "aa_intelligence": 17.4,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "minimaxai/minimax-m1-80k",
-      "aa_intelligence": 11.7,
-      "prompt_price_per_m": 550000.0,
-      "value": 0.0
-    },
-    {
-      "model": "inclusionai/ling-3.0-flash-fin",
-      "aa_intelligence": 22.6,
-      "prompt_price_per_m": 75000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi/kimi-k3",
-      "aa_intelligence": 30.1,
-      "prompt_price_per_m": 3000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi/kimi-k2.5",
-      "aa_intelligence": 19.4,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi/kimi-k2.6",
-      "aa_intelligence": 23.6,
-      "prompt_price_per_m": 950000.0,
-      "value": 0.0
-    },
-    {
-      "model": "grok/grok-4.3",
-      "aa_intelligence": 14,
-      "prompt_price_per_m": 1250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen/qwen3.6-max-preview",
-      "aa_intelligence": 28.4,
-      "prompt_price_per_m": 2150000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen/qwen-turbo",
-      "aa_intelligence": 6.4,
-      "prompt_price_per_m": 43000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.5-397b-a17b",
-      "aa_intelligence": 21.4,
-      "prompt_price_per_m": 550000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.5-35b-a3b",
-      "aa_intelligence": 15.1,
-      "prompt_price_per_m": 290000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.6-27b",
-      "aa_intelligence": 19.8,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.5-27b",
-      "aa_intelligence": 19.4,
-      "prompt_price_per_m": 290000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.5-122b-a10b",
-      "aa_intelligence": 17.7,
-      "prompt_price_per_m": 290000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bailian/qwen3.8-27b",
-      "aa_intelligence": 20.2,
-      "prompt_price_per_m": 450000.0,
-      "value": 0.0
-    },
-    {
-      "model": "x-ai/grok-4.1-fast",
-      "aa_intelligence": 11.3,
-      "prompt_price_per_m": 200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "solar-mini",
-      "aa_intelligence": 6.4,
-      "prompt_price_per_m": 150000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-6-35b-a3b",
-      "aa_intelligence": 18.2,
-      "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-7-flash",
-      "aa_intelligence": 36.9,
-      "prompt_price_per_m": 937500.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-5-35b-a3b",
-      "aa_intelligence": 19.3,
-      "prompt_price_per_m": 150000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-56-luna",
-      "aa_intelligence": 15.5,
-      "prompt_price_per_m": 200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v3.2",
-      "aa_intelligence": 16,
-      "prompt_price_per_m": 330000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-6-flash",
-      "aa_intelligence": 34,
-      "prompt_price_per_m": 937500.0,
+      "model": "granite-4.2-8b",
+      "aa_intelligence": 11.1,
+      "prompt_price_per_m": 60000.0,
       "value": 0.0
     },
     {
@@ -599,393 +449,21 @@
       "value": 0.0
     },
     {
-      "model": "claude-sonnet-4-6",
-      "aa_intelligence": 23.3,
-      "prompt_price_per_m": 3000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi-k2-7-code",
-      "aa_intelligence": 25.8,
-      "prompt_price_per_m": 750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "claude-sonnet-5",
-      "aa_intelligence": 23.2,
-      "prompt_price_per_m": 2000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi-k2-6",
-      "aa_intelligence": 27,
-      "prompt_price_per_m": 750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi-k2-5",
-      "aa_intelligence": 23.5,
-      "prompt_price_per_m": 560000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-4o-2024-11-20",
-      "aa_intelligence": 7.2,
-      "prompt_price_per_m": 2500000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-54-mini",
-      "aa_intelligence": 11.1,
-      "prompt_price_per_m": 750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-6-27b",
-      "aa_intelligence": 21.4,
-      "prompt_price_per_m": 325000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kimi-k3-1-pro",
-      "aa_intelligence": 55.1,
-      "prompt_price_per_m": 3000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v4-1-flash",
-      "aa_intelligence": 24.7,
-      "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-52",
-      "aa_intelligence": 17,
-      "prompt_price_per_m": 1750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-flash-preview",
-      "aa_intelligence": 26.3,
-      "prompt_price_per_m": 700000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-55",
-      "aa_intelligence": 23.2,
-      "prompt_price_per_m": 5000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-56-terra",
-      "aa_intelligence": 20.8,
-      "prompt_price_per_m": 2000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "minimax-m3-1-flash",
-      "aa_intelligence": 42.7,
-      "prompt_price_per_m": 187500.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-5-flash",
-      "aa_intelligence": 23.8,
-      "prompt_price_per_m": 1550000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-1-pro-preview",
-      "aa_intelligence": 29.7,
-      "prompt_price_per_m": 2500000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3-5-flash-lite",
-      "aa_intelligence": 22.2,
-      "prompt_price_per_m": 375000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-54",
-      "aa_intelligence": 18.2,
-      "prompt_price_per_m": 2500000.0,
-      "value": 0.0
-    },
-    {
-      "model": "claude-opus-4-7",
-      "aa_intelligence": 30.9,
-      "prompt_price_per_m": 5000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-56-sol",
-      "aa_intelligence": 28.3,
-      "prompt_price_per_m": 4000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "grok-4-20",
-      "aa_intelligence": 25.2,
-      "prompt_price_per_m": 1420000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai-gpt-6-luna",
-      "aa_intelligence": 18.5,
+      "model": "mistral-small-2506",
+      "aa_intelligence": 7,
       "prompt_price_per_m": 100000.0,
       "value": 0.0
     },
     {
-      "model": "mercury-2-5",
-      "aa_intelligence": 12.3,
-      "prompt_price_per_m": 250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-5-397b-a17b",
-      "aa_intelligence": 18.4,
-      "prompt_price_per_m": 750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-3.1-flash-lite",
-      "aa_intelligence": 15.6,
-      "prompt_price_per_m": 250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-2.5-flash",
-      "aa_intelligence": 13.1,
-      "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-2.5-flash-lite",
-      "aa_intelligence": 8.5,
-      "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gemini-2.5-pro",
-      "aa_intelligence": 16.1,
-      "prompt_price_per_m": 1250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-ai/deepseek-v3.1-maas",
-      "aa_intelligence": 13.5,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ling-2.6-flash",
-      "aa_intelligence": 9.7,
-      "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3.8-flash-next@eu",
-      "aa_intelligence": 39.8,
-      "prompt_price_per_m": 200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mistral-medium-latest",
-      "aa_intelligence": 5.5,
-      "prompt_price_per_m": 440000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3.8-2.4T-A95B",
-      "aa_intelligence": 39.9,
-      "prompt_price_per_m": 2000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-4.1@eu",
-      "aa_intelligence": 12.7,
-      "prompt_price_per_m": 2200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ling-2.6-1t",
-      "aa_intelligence": 17,
-      "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "kat-coder-pro",
-      "aa_intelligence": 18.6,
-      "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5-nano@eu",
-      "aa_intelligence": 7.1,
-      "prompt_price_per_m": 55000.0,
-      "value": 0.0
-    },
-    {
-      "model": "step-5-preview",
-      "aa_intelligence": 43.7,
-      "prompt_price_per_m": 1000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5.4-nano",
-      "aa_intelligence": 11.7,
-      "prompt_price_per_m": 200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-4.1-mini@eu",
-      "aa_intelligence": 10.2,
-      "prompt_price_per_m": 440000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5@eu",
-      "aa_intelligence": 10.4,
-      "prompt_price_per_m": 1375000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mistral-small-2603@eu",
-      "aa_intelligence": 9,
-      "prompt_price_per_m": 165000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5-mini@eu",
-      "aa_intelligence": 9.9,
-      "prompt_price_per_m": 275000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ring-2.6-1t",
-      "aa_intelligence": 16.6,
-      "prompt_price_per_m": 300000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5.1@eu",
-      "aa_intelligence": 13.3,
-      "prompt_price_per_m": 1375000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3.5-2b",
-      "aa_intelligence": 6.2,
-      "prompt_price_per_m": 20000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek-v4-pro-0813@eu",
-      "aa_intelligence": 20.4,
-      "prompt_price_per_m": 1750000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-4.1-nano@eu",
-      "aa_intelligence": 7.8,
-      "prompt_price_per_m": 110000.0,
-      "value": 0.0
-    },
-    {
-      "model": "motif-technologies/motif-3",
-      "aa_intelligence": 32.3,
-      "prompt_price_per_m": 500000.0,
-      "value": 0.0
-    },
-    {
-      "model": "command-r-08-2024",
-      "aa_intelligence": 5,
-      "prompt_price_per_m": 150000.0,
-      "value": 0.0
-    },
-    {
-      "model": "bytedance/doubao-seed-code",
-      "aa_intelligence": 16.9,
-      "prompt_price_per_m": 170000.0,
-      "value": 0.0
-    },
-    {
-      "model": "openai/gpt-5-codex",
-      "aa_intelligence": 24.9,
-      "prompt_price_per_m": 1250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ministral-3b-2512",
-      "aa_intelligence": 4.8,
-      "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "glm-5-2",
-      "aa_intelligence": 33.7,
-      "prompt_price_per_m": 1400000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ministral-14b-2512",
-      "aa_intelligence": 6,
-      "prompt_price_per_m": 200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "devstral-medium-latest",
-      "aa_intelligence": 8.6,
-      "prompt_price_per_m": 400000.0,
-      "value": 0.0
-    },
-    {
-      "model": "ministral-8b-2512",
-      "aa_intelligence": 5.5,
-      "prompt_price_per_m": 150000.0,
+      "model": "glm-4.7",
+      "aa_intelligence": 17.4,
+      "prompt_price_per_m": 450000.0,
       "value": 0.0
     },
     {
       "model": "qwen3-30b-a3b",
       "aa_intelligence": 6.6,
-      "prompt_price_per_m": 108695.65,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-32b",
-      "aa_intelligence": 7.2,
-      "prompt_price_per_m": 289855.07,
-      "value": 0.0
-    },
-    {
-      "model": "qwen-max-2025-01-25",
-      "aa_intelligence": 8,
-      "prompt_price_per_m": 347826.09,
-      "value": 0.0
-    },
-    {
-      "model": "mimo-v2-flash",
-      "aa_intelligence": 16,
-      "prompt_price_per_m": 100000.0,
-      "value": 0.0
-    },
-    {
-      "model": "qwen3-max-preview",
-      "aa_intelligence": 12.6,
-      "prompt_price_per_m": 869565.22,
-      "value": 0.0
-    },
-    {
-      "model": "trinity-large-thinking",
-      "aa_intelligence": 10.8,
-      "prompt_price_per_m": 250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "gpt-5.1-codex",
-      "aa_intelligence": 23.7,
-      "prompt_price_per_m": 1250000.0,
+      "prompt_price_per_m": 95000.0,
       "value": 0.0
     },
     {
@@ -995,21 +473,453 @@
       "value": 0.0
     },
     {
-      "model": "mimo-v2-pro",
-      "aa_intelligence": 28.6,
-      "prompt_price_per_m": 1000000.0,
+      "model": "qwen3.5-27b",
+      "aa_intelligence": 19.4,
+      "prompt_price_per_m": 300000.0,
       "value": 0.0
     },
     {
-      "model": "deepseek-ai/DeepSeek-V3.1-Terminus",
-      "aa_intelligence": 13.9,
+      "model": "gpt-4.1-mini",
+      "aa_intelligence": 10.2,
+      "prompt_price_per_m": 400000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3-32b",
+      "aa_intelligence": 7.2,
+      "prompt_price_per_m": 360000.0,
+      "value": 0.0
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "aa_intelligence": 23.3,
+      "prompt_price_per_m": 3000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-6-luna",
+      "aa_intelligence": 18.5,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gemini-3-flash-preview",
+      "aa_intelligence": 26.3,
+      "prompt_price_per_m": 500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.1-codex-mini",
+      "aa_intelligence": 20.4,
+      "prompt_price_per_m": 250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "grok-4-3",
+      "aa_intelligence": 14,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "kimi-k2",
+      "aa_intelligence": 12.7,
+      "prompt_price_per_m": 570000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.2",
+      "aa_intelligence": 17,
+      "prompt_price_per_m": 1750000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3-14b",
+      "aa_intelligence": 6.4,
+      "prompt_price_per_m": 76000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5",
+      "aa_intelligence": 10.4,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "ling-3.0-flash-vl",
+      "aa_intelligence": 24.6,
+      "prompt_price_per_m": 60000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-4.7-flash",
+      "aa_intelligence": 10.6,
+      "prompt_price_per_m": 60000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v3.2",
+      "aa_intelligence": 16,
+      "prompt_price_per_m": 260000.0,
+      "value": 0.0
+    },
+    {
+      "model": "grok-4-1-fast-reasoning",
+      "aa_intelligence": 20.4,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.6-27b",
+      "aa_intelligence": 19.8,
+      "prompt_price_per_m": 150000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "aa_intelligence": 28.3,
+      "prompt_price_per_m": 4000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "minimax-m2.1",
+      "aa_intelligence": 20.9,
       "prompt_price_per_m": 270000.0,
       "value": 0.0
     },
     {
-      "model": "Qwen/QwQ-32B",
-      "aa_intelligence": 9.5,
+      "model": "deepseek-v4.1-flash",
+      "aa_intelligence": 24.7,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-4.5-air",
+      "aa_intelligence": 11.1,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "claude-opus-4-7",
+      "aa_intelligence": 30.9,
+      "prompt_price_per_m": 5000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-5.2-fast",
+      "aa_intelligence": 22.4,
+      "prompt_price_per_m": 2156000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-5.1",
+      "aa_intelligence": 24.2,
+      "prompt_price_per_m": 1380000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "aa_intelligence": 15.5,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "aa_intelligence": 20.2,
+      "prompt_price_per_m": 80000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.1-codex",
+      "aa_intelligence": 23.7,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-5",
+      "aa_intelligence": 21.8,
+      "prompt_price_per_m": 573000.0,
+      "value": 0.0
+    },
+    {
+      "model": "kimi-k2.6",
+      "aa_intelligence": 23.6,
+      "prompt_price_per_m": 600000.0,
+      "value": 0.0
+    },
+    {
+      "model": "devstral-2512",
+      "aa_intelligence": 8.6,
       "prompt_price_per_m": 400000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-4o",
+      "aa_intelligence": 7.2,
+      "prompt_price_per_m": 2500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.5-122b-a10b",
+      "aa_intelligence": 17.7,
+      "prompt_price_per_m": 400000.0,
+      "value": 0.0
+    },
+    {
+      "model": "claude-sonnet-5",
+      "aa_intelligence": 23.2,
+      "prompt_price_per_m": 2000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "kimi-k2.5",
+      "aa_intelligence": 19.4,
+      "prompt_price_per_m": 574000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-4.5v",
+      "aa_intelligence": 6.7,
+      "prompt_price_per_m": 600000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gemini-3.1-flash-lite",
+      "aa_intelligence": 15.6,
+      "prompt_price_per_m": 250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5-mini",
+      "aa_intelligence": 9.9,
+      "prompt_price_per_m": 250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.4-nano",
+      "aa_intelligence": 11.7,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.5-35b-a3b",
+      "aa_intelligence": 15.1,
+      "prompt_price_per_m": 250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5.4",
+      "aa_intelligence": 18.2,
+      "prompt_price_per_m": 2500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen35-397b-a17b",
+      "aa_intelligence": 21.4,
+      "prompt_price_per_m": 600000.0,
+      "value": 0.0
+    },
+    {
+      "model": "grok-4-20-non-reasoning",
+      "aa_intelligence": 14.2,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-4.1",
+      "aa_intelligence": 12.7,
+      "prompt_price_per_m": 2000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.5-9b",
+      "aa_intelligence": 13.3,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-4.6",
+      "aa_intelligence": 14.9,
+      "prompt_price_per_m": 550000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gemini-3.5-flash",
+      "aa_intelligence": 23.8,
+      "prompt_price_per_m": 1500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-5-nano",
+      "aa_intelligence": 7.1,
+      "prompt_price_per_m": 50000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v4-pro-ga-260813",
+      "aa_intelligence": 20.4,
+      "prompt_price_per_m": 1335900.0,
+      "value": 0.0
+    },
+    {
+      "model": "databricks-gemini-2-5-flash",
+      "aa_intelligence": 13.1,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "databricks-gemini-2-5-pro",
+      "aa_intelligence": 16.1,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "longcat-2.0",
+      "aa_intelligence": 19.1,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "auto/mistralai/ministral-3b-2512",
+      "aa_intelligence": 4.8,
+      "prompt_price_per_m": 104600.0,
+      "value": 0.0
+    },
+    {
+      "model": "auto/mistralai/mistral-small-2603",
+      "aa_intelligence": 9,
+      "prompt_price_per_m": 156900.0,
+      "value": 0.0
+    },
+    {
+      "model": "auto/mistralai/ministral-14b-2512",
+      "aa_intelligence": 6,
+      "prompt_price_per_m": 209200.0,
+      "value": 0.0
+    },
+    {
+      "model": "auto/mistralai/ministral-8b-2512",
+      "aa_intelligence": 5.5,
+      "prompt_price_per_m": 156900.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-14b",
+      "aa_intelligence": 7.8,
+      "prompt_price_per_m": 144000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v3-1",
+      "aa_intelligence": 13.5,
+      "prompt_price_per_m": 574000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-r1-distill-qwen-32b",
+      "aa_intelligence": 8.4,
+      "prompt_price_per_m": 287000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.6-max-preview",
+      "aa_intelligence": 28.4,
+      "prompt_price_per_m": 1320000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-r1-distill-llama-70b",
+      "aa_intelligence": 7.9,
+      "prompt_price_per_m": 287000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3-next-80b-a3b-thinking",
+      "aa_intelligence": 11.2,
+      "prompt_price_per_m": 144000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen-turbo",
+      "aa_intelligence": 6.4,
+      "prompt_price_per_m": 44000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3-vl-30b-a3b",
+      "aa_intelligence": 9.5,
+      "prompt_price_per_m": 108000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3-8b",
+      "aa_intelligence": 5.2,
+      "prompt_price_per_m": 72000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v3-2-exp",
+      "aa_intelligence": 13.9,
+      "prompt_price_per_m": 287000.0,
+      "value": 0.0
+    },
+    {
+      "model": "kimi/kimi-k3",
+      "aa_intelligence": 30.1,
+      "prompt_price_per_m": 3000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "phi-4-mini",
+      "aa_intelligence": 6.3,
+      "prompt_price_per_m": 75000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v3.2-speciale",
+      "aa_intelligence": 14.5,
+      "prompt_price_per_m": 580000.0,
+      "value": 0.0
+    },
+    {
+      "model": "phi-4-multimodal",
+      "aa_intelligence": 5.8,
+      "prompt_price_per_m": 80000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "aa_intelligence": 7.8,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "hy3-preview",
+      "aa_intelligence": 17,
+      "prompt_price_per_m": 170000.0,
+      "value": 0.0
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "aa_intelligence": 8.5,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "deepseek-v4-1-flash",
+      "aa_intelligence": 39.5,
+      "prompt_price_per_m": 650000.0,
+      "value": 0.0
+    },
+    {
+      "model": "glm-5-3",
+      "aa_intelligence": 34.3,
+      "prompt_price_per_m": 1800000.0,
+      "value": 0.0
+    },
+    {
+      "model": "Qwen/Qwen3.8-2.4T-A95B",
+      "aa_intelligence": 40.2,
+      "prompt_price_per_m": 2000000.0,
       "value": 0.0
     },
     {
@@ -1025,62 +935,8 @@
       "value": 0.0
     },
     {
-      "model": "anthropic/claude-sonnet-5-5",
-      "aa_intelligence": 35.9,
-      "prompt_price_per_m": 2000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "anthropic/claude-fable-5-1",
-      "aa_intelligence": 46.8,
-      "prompt_price_per_m": 10000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mistral/pixtral-large-latest",
-      "aa_intelligence": 7.1,
-      "prompt_price_per_m": 2000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "mistral/mistral-small-latest",
-      "aa_intelligence": 5.5,
-      "prompt_price_per_m": 150000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai/glm-5-turbo",
-      "aa_intelligence": 26.6,
-      "prompt_price_per_m": 1200000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai/glm-4.5",
-      "aa_intelligence": 12.8,
-      "prompt_price_per_m": 600000.0,
-      "value": 0.0
-    },
-    {
-      "model": "zai/glm-5",
-      "aa_intelligence": 27.9,
-      "prompt_price_per_m": 1000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "deepseek/deepseek-r1",
-      "aa_intelligence": 11.4,
-      "prompt_price_per_m": 1350000.0,
-      "value": 0.0
-    },
-    {
       "model": "anthropic/claude-opus-4-6",
       "aa_intelligence": 26.4,
-      "prompt_price_per_m": 5000000.0,
-      "value": 0.0
-    },
-    {
-      "model": "anthropic/claude-opus-4-8",
-      "aa_intelligence": 41.8,
       "prompt_price_per_m": 5000000.0,
       "value": 0.0
     },
@@ -1091,69 +947,81 @@
       "value": 0.0
     },
     {
+      "model": "anthropic/claude-fable-5-1",
+      "aa_intelligence": 46.8,
+      "prompt_price_per_m": 10000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "anthropic/claude-opus-4-8",
+      "aa_intelligence": 41.8,
+      "prompt_price_per_m": 5000000.0,
+      "value": 0.0
+    },
+    {
+      "model": "anthropic/claude-sonnet-5-5",
+      "aa_intelligence": 35.9,
+      "prompt_price_per_m": 2000000.0,
+      "value": 0.0
+    },
+    {
       "model": "anthropic/claude-opus-4-7",
       "aa_intelligence": 40.7,
       "prompt_price_per_m": 5000000.0,
       "value": 0.0
     },
     {
-      "model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
-      "aa_intelligence": 12.1,
-      "prompt_price_per_m": 224171.22,
+      "model": "zai/glm-4.5",
+      "aa_intelligence": 12.8,
+      "prompt_price_per_m": 600000.0,
       "value": 0.0
     },
     {
-      "model": "Qwen/Qwen3-VL-32B-Instruct",
-      "aa_intelligence": 8.4,
-      "prompt_price_per_m": 149447.48,
+      "model": "zai/glm-5-turbo",
+      "aa_intelligence": 26.6,
+      "prompt_price_per_m": 1200000.0,
       "value": 0.0
     },
     {
-      "model": "grok-4-1-fast-reasoning",
-      "aa_intelligence": 20.4,
-      "prompt_price_per_m": 200000.0,
+      "model": "zai/glm-5",
+      "aa_intelligence": 27.9,
+      "prompt_price_per_m": 1000000.0,
       "value": 0.0
     },
     {
-      "model": "gpt-5.1-codex-mini",
-      "aa_intelligence": 20.4,
-      "prompt_price_per_m": 250000.0,
+      "model": "qwen/qwen3-max-preview",
+      "aa_intelligence": 12.6,
+      "prompt_price_per_m": 1080000.0,
       "value": 0.0
     },
     {
-      "model": "qwen3-14b",
-      "aa_intelligence": 6.4,
-      "prompt_price_per_m": 76000.0,
+      "model": "qwen/qwen3.5-4b",
+      "aa_intelligence": 10.8,
+      "prompt_price_per_m": 40000.0,
       "value": 0.0
     },
     {
-      "model": "ling-3.0-flash-vl",
-      "aa_intelligence": 24.6,
-      "prompt_price_per_m": 60000.0,
-      "value": 0.0
-    },
-    {
-      "model": "granite-4.2-8b",
-      "aa_intelligence": 11.1,
-      "prompt_price_per_m": 60000.0,
-      "value": 0.0
-    },
-    {
-      "model": "grok-4-20-non-reasoning",
-      "aa_intelligence": 14.2,
-      "prompt_price_per_m": 1250000.0,
-      "value": 0.0
-    },
-    {
-      "model": "minimax-m2.1",
-      "aa_intelligence": 20.9,
+      "model": "deepseek/deepseek-v3",
+      "aa_intelligence": 8.5,
       "prompt_price_per_m": 270000.0,
       "value": 0.0
     },
     {
-      "model": "google/gemini-3-flash",
-      "aa_intelligence": 17.9,
-      "prompt_price_per_m": 500000.0,
+      "model": "mistral/mistral-medium-latest",
+      "aa_intelligence": 5.5,
+      "prompt_price_per_m": 400000.0,
+      "value": 0.0
+    },
+    {
+      "model": "mistral/mistral-small-latest",
+      "aa_intelligence": 5.5,
+      "prompt_price_per_m": 150000.0,
+      "value": 0.0
+    },
+    {
+      "model": "mistral/pixtral-large-latest",
+      "aa_intelligence": 7.1,
+      "prompt_price_per_m": 2000000.0,
       "value": 0.0
     },
     {
@@ -1163,33 +1031,45 @@
       "value": 0.0
     },
     {
-      "model": "deepseek/deepseek-v3-0324",
-      "aa_intelligence": 9.7,
-      "prompt_price_per_m": 280000.0,
+      "model": "google/gemini-3-flash",
+      "aa_intelligence": 17.9,
+      "prompt_price_per_m": 500000.0,
       "value": 0.0
     },
     {
-      "model": "baidu/ernie-4.5-300b-a47b-paddle",
-      "aa_intelligence": 7.5,
-      "prompt_price_per_m": 280000.0,
+      "model": "qwen/qwen3.8-flash-next",
+      "aa_intelligence": 39.8,
+      "prompt_price_per_m": 200000.0,
       "value": 0.0
     },
     {
-      "model": "ibm/granite-4-h-small",
-      "aa_intelligence": 6,
-      "prompt_price_per_m": 63600.0,
+      "model": "MiniMaxAI/MiniMax-M1-80k",
+      "aa_intelligence": 11.7,
+      "prompt_price_per_m": 550000.0,
       "value": 0.0
     },
     {
-      "model": "mistral/mistral-medium-3-5",
-      "aa_intelligence": 14.2,
-      "prompt_price_per_m": 1500000.0,
+      "model": "tencent/Hy3",
+      "aa_intelligence": 25.3,
+      "prompt_price_per_m": 140000.0,
       "value": 0.0
     },
     {
-      "model": "mistral/mistral-medium-3",
-      "aa_intelligence": 9,
-      "prompt_price_per_m": 400000.0,
+      "model": "Qwen/Qwen3-235B-A22B",
+      "aa_intelligence": 8.3,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "minimax/MiniMax-M3",
+      "aa_intelligence": 29.2,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "anthropic/claude-opus-4-5",
+      "aa_intelligence": 23.7,
+      "prompt_price_per_m": 5000000.0,
       "value": 0.0
     },
     {
@@ -1199,9 +1079,129 @@
       "value": 0.0
     },
     {
-      "model": "amazon/amazon.nova-micro-v1:0@us",
-      "aa_intelligence": 5.9,
-      "prompt_price_per_m": 35000.0,
+      "model": "xai/grok-4-1-fast-non-reasoning",
+      "aa_intelligence": 11.3,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
+      "aa_intelligence": 12.8,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+      "aa_intelligence": 6.8,
+      "prompt_price_per_m": 50000.0,
+      "value": 0.0
+    },
+    {
+      "model": "kat-coder-pro",
+      "aa_intelligence": 18.6,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "ling-2.6-flash",
+      "aa_intelligence": 9.7,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "ling-2.6-1t",
+      "aa_intelligence": 17,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen3.5-2b",
+      "aa_intelligence": 6.2,
+      "prompt_price_per_m": 20000.0,
+      "value": 0.0
+    },
+    {
+      "model": "ring-2.6-1t",
+      "aa_intelligence": 16.6,
+      "prompt_price_per_m": 300000.0,
+      "value": 0.0
+    },
+    {
+      "model": "claude-4-5-sonnet",
+      "aa_intelligence": 19.3,
+      "prompt_price_per_m": 2989000.0,
+      "value": 0.0
+    },
+    {
+      "model": "mimo-v2-flash",
+      "aa_intelligence": 16,
+      "prompt_price_per_m": 100000.0,
+      "value": 0.0
+    },
+    {
+      "model": "qwen-max-2025-01-25",
+      "aa_intelligence": 8,
+      "prompt_price_per_m": 347826.09,
+      "value": 0.0
+    },
+    {
+      "model": "inclusionai/ling-3.0-flash-fin",
+      "aa_intelligence": 22.6,
+      "prompt_price_per_m": 75000.0,
+      "value": 0.0
+    },
+    {
+      "model": "alibaba/qwen3-coder-next",
+      "aa_intelligence": 9.2,
+      "prompt_price_per_m": 500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "alibaba/qwen3-next-80b-a3b-instruct",
+      "aa_intelligence": 9.6,
+      "prompt_price_per_m": 150000.0,
+      "value": 0.0
+    },
+    {
+      "model": "meta/llama-4-maverick",
+      "aa_intelligence": 9.3,
+      "prompt_price_per_m": 240000.0,
+      "value": 0.0
+    },
+    {
+      "model": "meta/llama-4-scout",
+      "aa_intelligence": 6.5,
+      "prompt_price_per_m": 170000.0,
+      "value": 0.0
+    },
+    {
+      "model": "openai/gpt-5-codex",
+      "aa_intelligence": 24.9,
+      "prompt_price_per_m": 1250000.0,
+      "value": 0.0
+    },
+    {
+      "model": "nvidia/nemotron-nano-12b-v2-vl",
+      "aa_intelligence": 5.8,
+      "prompt_price_per_m": 200000.0,
+      "value": 0.0
+    },
+    {
+      "model": "mistral/mistral-large-3",
+      "aa_intelligence": 9.3,
+      "prompt_price_per_m": 500000.0,
+      "value": 0.0
+    },
+    {
+      "model": "mistral/mistral-large-4",
+      "aa_intelligence": 38.4,
+      "prompt_price_per_m": 1360000.0,
+      "value": 0.0
+    },
+    {
+      "model": "minimax/MiniMax-M2",
+      "aa_intelligence": 18.6,
+      "prompt_price_per_m": 300000.0,
       "value": 0.0
     }
   ]
