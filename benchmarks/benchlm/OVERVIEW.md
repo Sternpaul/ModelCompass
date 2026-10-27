@@ -124,13 +124,13 @@ _Vision+text grounded understanding._
 | 1 | `kimi-3-1-pro` | 98 |
 | 2 | `qwen3-8-max` | 92 |
 | 3 | `claude-opus-5-5` | 91.800 |
-| 4 | `claude-mythos-5` | 91.100 |
-| 5 | `claude-opus-5` | 90.900 |
-| 6 | `kimi-k3` | 90.200 |
-| 7 | `gpt-5-6-sol` | 90.100 |
-| 8 | `gpt-6-astra` | 88.200 |
-| 9 | `gpt-6-1-sol` | 88.200 |
-| 10 | `gemini-3-8-flash` | 88.200 |
+| 4 | `gpt-6-1-terra` | 91.600 |
+| 5 | `claude-mythos-5` | 91.100 |
+| 6 | `claude-opus-5` | 90.900 |
+| 7 | `kimi-k3` | 90.200 |
+| 8 | `gpt-5-6-sol` | 90.100 |
+| 9 | `gpt-6-astra` | 88.200 |
+| 10 | `gpt-6-1-sol` | 88.200 |
 
 ## Reasoning
 

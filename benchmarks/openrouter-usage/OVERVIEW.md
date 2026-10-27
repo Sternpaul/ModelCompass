@@ -17,9 +17,9 @@ _Rank by total tokens processed; requests kept alongside._
 | 2 | `deepseek/deepseek-v4.1-flash-20260910` | — |
 | 3 | `minimax/minimax-m3.1-flash-20261019` | — |
 | 4 | `z-ai/glm-5.3-flash-20260826` | — |
-| 5 | `tencent/hy4-preview-20260827` | — |
-| 6 | `openai/gpt-6-luna-20260922` | — |
+| 5 | `openai/gpt-6-luna-20260922` | — |
+| 6 | `tencent/hy4-preview-20260827` | — |
 | 7 | `anthropic/claude-opus-5.5-20260921` | — |
-| 8 | `xiaomi/mimo-v2.6-flash-20260921` | — |
-| 9 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 8 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 9 | `xiaomi/mimo-v2.6-flash-20260921` | — |
 | 10 | `z-ai/glm-5.3-20260816` | — |
