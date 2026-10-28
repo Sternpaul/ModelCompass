@@ -3,7 +3,7 @@
     "leaderboard": "aa_aime",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "aime",
-    "fetched_at": "2026-10-27T09:42:55.381877+00:00",
+    "fetched_at": "2026-10-28T10:28:17.565046+00:00",
     "model_count_with_data": 715
   },
   "models": [
@@ -68,13 +68,13 @@
       "score": 0.87
     },
     {
-      "model": "openai/o3-mini-high",
-      "name": "o3-mini (High)",
+      "model": "nvidia/llama-nemotron-super-49b-v1-5-reasoning",
+      "name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
       "score": 0.86
     },
     {
-      "model": "nvidia/llama-nemotron-super-49b-v1-5-reasoning",
-      "name": "Llama Nemotron Super 49B v1.5 (Reasoning)",
+      "model": "openai/o3-mini-high",
+      "name": "o3-mini (High)",
       "score": 0.86
     },
     {
@@ -83,8 +83,8 @@
       "score": 0.846666666666667
     },
     {
-      "model": "google/gemini-2-5-pro-05-06",
-      "name": "Gemini 2.5 Pro Preview (May' 25)",
+      "model": "lg/exaone-4-0-32b-reasoning",
+      "name": "EXAONE 4.0 32B (Reasoning)",
       "score": 0.843333333333333
     },
     {
@@ -93,8 +93,8 @@
       "score": 0.843333333333333
     },
     {
-      "model": "lg/exaone-4-0-32b-reasoning",
-      "name": "EXAONE 4.0 32B (Reasoning)",
+      "model": "google/gemini-2-5-pro-05-06",
+      "name": "Gemini 2.5 Pro Preview (May' 25)",
       "score": 0.843333333333333
     },
     {
@@ -278,23 +278,23 @@
       "score": 0.52
     },
     {
-      "model": "reka-ai/reka-flash-3",
-      "name": "Reka Flash 3",
-      "score": 0.51
-    },
-    {
       "model": "alibaba/qwen3-1.7b-instruct-reasoning",
       "name": "Qwen3 1.7B (Reasoning)",
       "score": 0.51
     },
     {
-      "model": "google/gemini-2-5-flash",
-      "name": "Gemini 2.5 Flash (Non-reasoning)",
-      "score": 0.5
+      "model": "reka-ai/reka-flash-3",
+      "name": "Reka Flash 3",
+      "score": 0.51
     },
     {
       "model": "google/gemini-2-0-flash-thinking-exp-0121",
       "name": "Gemini 2.0 Flash Thinking Experimental (Jan '25)",
+      "score": 0.5
+    },
+    {
+      "model": "google/gemini-2-5-flash",
+      "name": "Gemini 2.5 Flash (Non-reasoning)",
       "score": 0.5
     },
     {
@@ -383,13 +383,13 @@
       "score": 0.333333333333333
     },
     {
-      "model": "xai/grok-3",
-      "name": "Grok 3",
+      "model": "google/gemini-2-0-flash",
+      "name": "Gemini 2.0 Flash (Feb '25)",
       "score": 0.33
     },
     {
-      "model": "google/gemini-2-0-flash",
-      "name": "Gemini 2.0 Flash (Feb '25)",
+      "model": "xai/grok-3",
+      "name": "Grok 3",
       "score": 0.33
     },
     {
@@ -408,13 +408,13 @@
       "score": 0.323333333333333
     },
     {
-      "model": "alibaba/qwen3-32b-instruct",
-      "name": "Qwen3 32B (Non-reasoning)",
+      "model": "google/gemini-2-0-flash-lite-preview",
+      "name": "Gemini 2.0 Flash-Lite (Preview)",
       "score": 0.303333333333333
     },
     {
-      "model": "google/gemini-2-0-flash-lite-preview",
-      "name": "Gemini 2.0 Flash-Lite (Preview)",
+      "model": "alibaba/qwen3-32b-instruct",
+      "name": "Qwen3 32B (Non-reasoning)",
       "score": 0.303333333333333
     },
     {
@@ -558,13 +558,13 @@
       "score": 0.156666666666667
     },
     {
-      "model": "openai/gpt-4o",
-      "name": "GPT-4o (Nov '24)",
+      "model": "openai/gpt-4-turbo",
+      "name": "GPT-4 Turbo",
       "score": 0.15
     },
     {
-      "model": "openai/gpt-4-turbo",
-      "name": "GPT-4 Turbo",
+      "model": "openai/gpt-4o",
+      "name": "GPT-4o (Nov '24)",
       "score": 0.15
     },
     {
@@ -578,23 +578,23 @@
       "score": 0.143333333333333
     },
     {
-      "model": "nvidia/llama-nemotron-super-49b-v1-5",
-      "name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
-      "score": 0.136666666666667
-    },
-    {
       "model": "google/gemma-3n-e4b",
       "name": "Gemma 3n E4B Instruct",
       "score": 0.136666666666667
     },
     {
-      "model": "ai2/tulu3-405b",
-      "name": "Llama 3.1 Tulu3 405B",
-      "score": 0.133333333333333
+      "model": "nvidia/llama-nemotron-super-49b-v1-5",
+      "name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
+      "score": 0.136666666666667
     },
     {
       "model": "xai/grok-2-1212",
       "name": "Grok 2 (Dec '24)",
+      "score": 0.133333333333333
+    },
+    {
+      "model": "ai2/tulu3-405b",
+      "name": "Llama 3.1 Tulu3 405B",
       "score": 0.133333333333333
     },
     {
@@ -623,13 +623,13 @@
       "score": 0.116666666666667
     },
     {
-      "model": "mistral/mistral-large-2",
-      "name": "Mistral Large 2 (Nov '24)",
+      "model": "openai/gpt-4o-2024-05-13",
+      "name": "GPT-4o (May '24)",
       "score": 0.11
     },
     {
-      "model": "openai/gpt-4o-2024-05-13",
-      "name": "GPT-4o (May '24)",
+      "model": "mistral/mistral-large-2",
+      "name": "Mistral Large 2 (Nov '24)",
       "score": 0.11
     },
     {
@@ -638,8 +638,8 @@
       "score": 0.11
     },
     {
-      "model": "aws/nova-pro",
-      "name": "Nova Pro",
+      "model": "google/gemma-3n-e4b-preview-0520",
+      "name": "Gemma 3n E4B Instruct Preview (May '25)",
       "score": 0.106666666666667
     },
     {
@@ -648,8 +648,8 @@
       "score": 0.106666666666667
     },
     {
-      "model": "google/gemma-3n-e4b-preview-0520",
-      "name": "Gemma 3n E4B Instruct Preview (May '25)",
+      "model": "aws/nova-pro",
+      "name": "Nova Pro",
       "score": 0.106666666666667
     },
     {
@@ -683,23 +683,8 @@
       "score": 0.0966666666666667
     },
     {
-      "model": "mistral/mistral-small-3-1",
-      "name": "Mistral Small 3.1",
-      "score": 0.0933333333333333
-    },
-    {
-      "model": "mistral/mistral-large-2407",
-      "name": "Mistral Large 2 (Jul '24)",
-      "score": 0.0933333333333333
-    },
-    {
       "model": "google/gemini-1-5-flash-may-2024",
       "name": "Gemini 1.5 Flash (May '24)",
-      "score": 0.0933333333333333
-    },
-    {
-      "model": "azure/phi-4-multimodal",
-      "name": "Phi-4 Multimodal Instruct",
       "score": 0.0933333333333333
     },
     {
@@ -708,18 +693,33 @@
       "score": 0.0933333333333333
     },
     {
+      "model": "mistral/mistral-large-2407",
+      "name": "Mistral Large 2 (Jul '24)",
+      "score": 0.0933333333333333
+    },
+    {
+      "model": "mistral/mistral-small-3-1",
+      "name": "Mistral Small 3.1",
+      "score": 0.0933333333333333
+    },
+    {
+      "model": "azure/phi-4-multimodal",
+      "name": "Phi-4 Multimodal Instruct",
+      "score": 0.0933333333333333
+    },
+    {
       "model": "google/gemma-3n-e2b",
       "name": "Gemma 3n E2B Instruct",
       "score": 0.09
     },
     {
-      "model": "mistral/mistral-small-3",
-      "name": "Mistral Small 3",
+      "model": "google/gemini-1-5-pro-may-2024",
+      "name": "Gemini 1.5 Pro (May '24)",
       "score": 0.08
     },
     {
-      "model": "google/gemini-1-5-pro-may-2024",
-      "name": "Gemini 1.5 Pro (May '24)",
+      "model": "mistral/mistral-small-3",
+      "name": "Mistral Small 3",
       "score": 0.08
     },
     {
@@ -753,13 +753,13 @@
       "score": 0.0666666666666667
     },
     {
-      "model": "mistral/mistral-small",
-      "name": "Mistral Small (Sep '24)",
+      "model": "google/gemma-3-4b",
+      "name": "Gemma 3 4B Instruct",
       "score": 0.0633333333333333
     },
     {
-      "model": "google/gemma-3-4b",
-      "name": "Gemma 3 4B Instruct",
+      "model": "mistral/mistral-small",
+      "name": "Mistral Small (Sep '24)",
       "score": 0.0633333333333333
     },
     {
@@ -778,8 +778,18 @@
       "score": 0.05
     },
     {
+      "model": "anthropic/claude-3-sonnet",
+      "name": "Claude 3 Sonnet",
+      "score": 0.0466666666666667
+    },
+    {
       "model": "nous-research/deephermes-3-mistral-24b-preview",
       "name": "DeepHermes 3 - Mistral 24B Preview (Non-reasoning)",
+      "score": 0.0466666666666667
+    },
+    {
+      "model": "ibm/granite-3-3-8b-instruct",
+      "name": "Granite 3.3 8B (Non-reasoning)",
       "score": 0.0466666666666667
     },
     {
@@ -793,16 +803,6 @@
       "score": 0.0466666666666667
     },
     {
-      "model": "anthropic/claude-3-sonnet",
-      "name": "Claude 3 Sonnet",
-      "score": 0.0466666666666667
-    },
-    {
-      "model": "ibm/granite-3-3-8b-instruct",
-      "name": "Granite 3.3 8B (Non-reasoning)",
-      "score": 0.0466666666666667
-    },
-    {
       "model": "azure/phi-3-mini",
       "name": "Phi-3 Mini Instruct 3.8B",
       "score": 0.04
@@ -813,8 +813,8 @@
       "score": 0.0366666666666667
     },
     {
-      "model": "anthropic/claude-3-5-haiku",
-      "name": "Claude 3.5 Haiku",
+      "model": "anthropic/claude-21",
+      "name": "Claude 2.1",
       "score": 0.0333333333333333
     },
     {
@@ -823,13 +823,13 @@
       "score": 0.0333333333333333
     },
     {
-      "model": "google/gemini-1-5-flash-8b",
-      "name": "Gemini 1.5 Flash-8B",
+      "model": "anthropic/claude-3-5-haiku",
+      "name": "Claude 3.5 Haiku",
       "score": 0.0333333333333333
     },
     {
-      "model": "anthropic/claude-21",
-      "name": "Claude 2.1",
+      "model": "google/gemini-1-5-flash-8b",
+      "name": "Gemini 1.5 Flash-8B",
       "score": 0.0333333333333333
     },
     {
@@ -838,13 +838,13 @@
       "score": 0.0333333333333333
     },
     {
-      "model": "azure/phi-4-mini",
-      "name": "Phi-4 Mini Instruct",
+      "model": "databricks/dbrx",
+      "name": "DBRX Instruct",
       "score": 0.03
     },
     {
-      "model": "databricks/dbrx",
-      "name": "DBRX Instruct",
+      "model": "azure/phi-4-mini",
+      "name": "Phi-4 Mini Instruct",
       "score": 0.03
     },
     {
@@ -883,13 +883,8 @@
       "score": 0.01
     },
     {
-      "model": "mistral/mistral-small-2402",
-      "name": "Mistral Small (Feb '24)",
-      "score": 0.00666666666666667
-    },
-    {
-      "model": "google/gemini-1-0-pro",
-      "name": "Gemini 1.0 Pro",
+      "model": "cohere/command-r-03-2024",
+      "name": "Command-R (Mar '24)",
       "score": 0.00666666666666667
     },
     {
@@ -898,14 +893,69 @@
       "score": 0.00666666666666667
     },
     {
-      "model": "cohere/command-r-03-2024",
-      "name": "Command-R (Mar '24)",
+      "model": "google/gemini-1-0-pro",
+      "name": "Gemini 1.0 Pro",
+      "score": 0.00666666666666667
+    },
+    {
+      "model": "mistral/mistral-small-2402",
+      "name": "Mistral Small (Feb '24)",
       "score": 0.00666666666666667
     },
     {
       "model": "mistral/devstral-small",
       "name": "Devstral Small (Jul '25)",
       "score": 0.00333333333333333
+    },
+    {
+      "model": "anthropic/claude-2",
+      "name": "Claude 2.0",
+      "score": 0.0
+    },
+    {
+      "model": "anthropic/claude-instant",
+      "name": "Claude Instant",
+      "score": 0.0
+    },
+    {
+      "model": "nous-research/deephermes-3-llama-3-1-8b-preview",
+      "name": "DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning)",
+      "score": 0.0
+    },
+    {
+      "model": "google/gemma-3-1b",
+      "name": "Gemma 3 1B Instruct",
+      "score": 0.0
+    },
+    {
+      "model": "meta/llama-2-chat-70b",
+      "name": "Llama 2 Chat 70B",
+      "score": 0.0
+    },
+    {
+      "model": "meta/llama-2-chat-7b",
+      "name": "Llama 2 Chat 7B",
+      "score": 0.0
+    },
+    {
+      "model": "meta/llama-3-instruct-70b",
+      "name": "Llama 3 Instruct 70B",
+      "score": 0.0
+    },
+    {
+      "model": "meta/llama-3-instruct-8b",
+      "name": "Llama 3 Instruct 8B",
+      "score": 0.0
+    },
+    {
+      "model": "meta/llama-3-2-instruct-1b",
+      "name": "Llama 3.2 Instruct 1B",
+      "score": 0.0
+    },
+    {
+      "model": "mistral/mistral-7b-instruct",
+      "name": "Mistral 7B Instruct",
+      "score": 0.0
     },
     {
       "model": "mistral/mistral-large",
@@ -918,63 +968,13 @@
       "score": 0.0
     },
     {
-      "model": "meta/llama-2-chat-7b",
-      "name": "Llama 2 Chat 7B",
-      "score": 0.0
-    },
-    {
-      "model": "anthropic/claude-2",
-      "name": "Claude 2.0",
-      "score": 0.0
-    },
-    {
-      "model": "meta/llama-3-instruct-70b",
-      "name": "Llama 3 Instruct 70B",
-      "score": 0.0
-    },
-    {
-      "model": "meta/llama-2-chat-70b",
-      "name": "Llama 2 Chat 70B",
-      "score": 0.0
-    },
-    {
-      "model": "openchat/openchat-35",
-      "name": "OpenChat 3.5 (1210)",
-      "score": 0.0
-    },
-    {
       "model": "mistral/mixtral-8x7b-instruct",
       "name": "Mixtral 8x7B Instruct",
       "score": 0.0
     },
     {
-      "model": "nous-research/deephermes-3-llama-3-1-8b-preview",
-      "name": "DeepHermes 3 - Llama-3.1 8B Preview (Non-reasoning)",
-      "score": 0.0
-    },
-    {
-      "model": "anthropic/claude-instant",
-      "name": "Claude Instant",
-      "score": 0.0
-    },
-    {
-      "model": "mistral/mistral-7b-instruct",
-      "name": "Mistral 7B Instruct",
-      "score": 0.0
-    },
-    {
-      "model": "google/gemma-3-1b",
-      "name": "Gemma 3 1B Instruct",
-      "score": 0.0
-    },
-    {
-      "model": "meta/llama-3-instruct-8b",
-      "name": "Llama 3 Instruct 8B",
-      "score": 0.0
-    },
-    {
-      "model": "meta/llama-3-2-instruct-1b",
-      "name": "Llama 3.2 Instruct 1B",
+      "model": "openchat/openchat-35",
+      "name": "OpenChat 3.5 (1210)",
       "score": 0.0
     }
   ]

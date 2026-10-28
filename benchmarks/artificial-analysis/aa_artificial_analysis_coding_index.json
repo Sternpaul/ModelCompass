@@ -3,7 +3,7 @@
     "leaderboard": "aa_artificial_analysis_coding_index",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "artificial_analysis_coding_index",
-    "fetched_at": "2026-10-27T09:42:55.381877+00:00",
+    "fetched_at": "2026-10-28T10:28:17.565046+00:00",
     "model_count_with_data": 715
   },
   "models": [
@@ -158,13 +158,13 @@
       "score": 74.4
     },
     {
-      "model": "anthropic/claude-opus-5-medium",
-      "name": "Claude Opus 5 (Medium)",
+      "model": "anthropic/claude-opus-4-8",
+      "name": "Claude Opus 4.8 (Max)",
       "score": 74.3
     },
     {
-      "model": "anthropic/claude-opus-4-8",
-      "name": "Claude Opus 4.8 (Max)",
+      "model": "anthropic/claude-opus-5-medium",
+      "name": "Claude Opus 5 (Medium)",
       "score": 74.3
     },
     {
@@ -218,8 +218,8 @@
       "score": 71.6
     },
     {
-      "model": "zai/glm-5-3-flash",
-      "name": "GLM-5.3-Flash",
+      "model": "anthropic/claude-sonnet-5",
+      "name": "Claude Sonnet 5 (Max)",
       "score": 71.5
     },
     {
@@ -228,8 +228,8 @@
       "score": 71.5
     },
     {
-      "model": "anthropic/claude-sonnet-5",
-      "name": "Claude Sonnet 5 (Max)",
+      "model": "zai/glm-5-3-flash",
+      "name": "GLM-5.3-Flash",
       "score": 71.5
     },
     {
@@ -288,13 +288,13 @@
       "score": 68.8
     },
     {
-      "model": "zai/glm-5-2",
-      "name": "GLM-5.2 (Max)",
+      "model": "google/gemini-3-1-pro-preview",
+      "name": "Gemini 3.1 Pro Preview",
       "score": 68.8
     },
     {
-      "model": "google/gemini-3-1-pro-preview",
-      "name": "Gemini 3.1 Pro Preview",
+      "model": "zai/glm-5-2",
+      "name": "GLM-5.2 (Max)",
       "score": 68.8
     },
     {
@@ -433,13 +433,13 @@
       "score": 58.7
     },
     {
-      "model": "meta/muse-spark",
-      "name": "Muse Spark",
+      "model": "minimax/minimax-m3",
+      "name": "MiniMax-M3",
       "score": 58.6
     },
     {
-      "model": "minimax/minimax-m3",
-      "name": "MiniMax-M3",
+      "model": "meta/muse-spark",
+      "name": "Muse Spark",
       "score": 58.6
     },
     {
@@ -473,11 +473,6 @@
       "score": 56.2
     },
     {
-      "model": "alibaba/qwen3-8-27b-medium",
-      "name": "Qwen3.8 27B (Medium)",
-      "score": 56.1
-    },
-    {
       "model": "openai/gpt-5-4-mini",
       "name": "GPT-5.4 mini (Xhigh)",
       "score": 56.1
@@ -485,6 +480,11 @@
     {
       "model": "openai/gpt-5-4-nano",
       "name": "GPT-5.4 nano (Xhigh)",
+      "score": 56.1
+    },
+    {
+      "model": "alibaba/qwen3-8-27b-medium",
+      "name": "Qwen3.8 27B (Medium)",
       "score": 56.1
     },
     {
@@ -903,13 +903,13 @@
       "score": 25.5
     },
     {
-      "model": "nvidia/nemotron-cascade-2-30b-a3b",
-      "name": "Nemotron Cascade 2 30B A3B",
+      "model": "inclusionai/ling-2-6-flash",
+      "name": "Ling 2.6 Flash",
       "score": 25.3
     },
     {
-      "model": "inclusionai/ling-2-6-flash",
-      "name": "Ling 2.6 Flash",
+      "model": "nvidia/nemotron-cascade-2-30b-a3b",
+      "name": "Nemotron Cascade 2 30B A3B",
       "score": 25.3
     },
     {
@@ -948,13 +948,13 @@
       "score": 23.2
     },
     {
-      "model": "aws/nova-2-0-lite-reasoning",
-      "name": "Nova 2.0 Lite (High)",
+      "model": "deepseek/deepseek-v3",
+      "name": "DeepSeek V3 (Dec '24)",
       "score": 23.0
     },
     {
-      "model": "deepseek/deepseek-v3",
-      "name": "DeepSeek V3 (Dec '24)",
+      "model": "aws/nova-2-0-lite-reasoning",
+      "name": "Nova 2.0 Lite (High)",
       "score": 23.0
     },
     {
@@ -983,13 +983,13 @@
       "score": 21.3
     },
     {
-      "model": "openai/gpt-oss-120b-low",
-      "name": "gpt-oss-120b (Low)",
+      "model": "deepseek/deepseek-v3-0324",
+      "name": "DeepSeek V3 0324",
       "score": 21.2
     },
     {
-      "model": "deepseek/deepseek-v3-0324",
-      "name": "DeepSeek V3 0324",
+      "model": "openai/gpt-oss-120b-low",
+      "name": "gpt-oss-120b (Low)",
       "score": 21.2
     },
     {
@@ -1058,13 +1058,13 @@
       "score": 17.4
     },
     {
-      "model": "openai/o3-mini-high",
-      "name": "o3-mini (High)",
+      "model": "meta/llama-4-maverick",
+      "name": "Llama 4 Maverick",
       "score": 16.3
     },
     {
-      "model": "meta/llama-4-maverick",
-      "name": "Llama 4 Maverick",
+      "model": "openai/o3-mini-high",
+      "name": "o3-mini (High)",
       "score": 16.3
     },
     {
@@ -1098,11 +1098,6 @@
       "score": 14.5
     },
     {
-      "model": "nvidia/nvidia-nemotron-3-nano-30b-a3b-reasoning",
-      "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
-      "score": 14.4
-    },
-    {
       "model": "celeris/celeris-1",
       "name": "Celeris-1",
       "score": 14.4
@@ -1110,6 +1105,11 @@
     {
       "model": "mistral/ministral-3-14b",
       "name": "Ministral 3 14B",
+      "score": 14.4
+    },
+    {
+      "model": "nvidia/nvidia-nemotron-3-nano-30b-a3b-reasoning",
+      "name": "NVIDIA Nemotron 3 Nano 30B A3B (Reasoning)",
       "score": 14.4
     },
     {

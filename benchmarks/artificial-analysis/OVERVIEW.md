@@ -34,13 +34,13 @@ _AIME 2025 accuracy (%)._
 | 1 | `openai/gpt-5-2` | 0.990 |
 | 2 | `openai/gpt-5-codex` | 0.987 |
 | 3 | `google/gemini-3-flash-reasoning` | 0.970 |
-| 4 | `openai/gpt-5-2-medium` | 0.967 |
-| 5 | `deepseek/deepseek-v3-2-speciale` | 0.967 |
+| 4 | `deepseek/deepseek-v3-2-speciale` | 0.967 |
+| 5 | `openai/gpt-5-2-medium` | 0.967 |
 | 6 | `xiaomi/mimo-v2-flash-reasoning` | 0.963 |
 | 7 | `google/gemini-3-pro` | 0.957 |
 | 8 | `openai/gpt-5-1-codex` | 0.957 |
 | 9 | `zai/glm-4-7` | 0.950 |
-| 10 | `kimi/kimi-k2-thinking` | 0.947 |
+| 10 | `kwaikat/kat-coder-pro-v1` | 0.947 |
 
 ## GPQA
 
@@ -55,9 +55,9 @@ _Graduate-level Google-Proof Q&A diamond accuracy (%)._
 | 4 | `openai/gpt-6-astra-high` | 0.949 |
 | 5 | `xai/grok-4-6` | 0.949 |
 | 6 | `google/gemini-3-7-flash` | 0.945 |
-| 7 | `openai/gpt-5-6-sol` | 0.941 |
-| 8 | `meta/muse-spark-1-3-xhigh` | 0.941 |
-| 9 | `google/gemini-3-1-pro-preview` | 0.941 |
+| 7 | `google/gemini-3-1-pro-preview` | 0.941 |
+| 8 | `openai/gpt-5-6-sol` | 0.941 |
+| 9 | `meta/muse-spark-1-3-xhigh` | 0.941 |
 | 10 | `openai/gpt-6-astra-medium` | 0.939 |
 
 ## HLE
@@ -112,7 +112,7 @@ _Long-context reasoning score (%)._
 | 7 | `anthropic/claude-opus-5-5-xhigh` | 0.847 |
 | 8 | `anthropic/claude-fable-5-1-medium` | 0.847 |
 | 9 | `anthropic/claude-opus-5-5-medium` | 0.843 |
-| 10 | `openai/gpt-5-5` | 0.843 |
+| 10 | `openai/gpt-5-5-high` | 0.843 |
 
 ## LiveCodeBench
 
@@ -124,8 +124,8 @@ _LiveCodeBench coding accuracy (%)._
 | 1 | `google/gemini-3-pro` | 0.917 |
 | 2 | `google/gemini-3-flash-reasoning` | 0.908 |
 | 3 | `deepseek/deepseek-v3-2-speciale` | 0.896 |
-| 4 | `openai/gpt-5-2-medium` | 0.894 |
-| 5 | `zai/glm-4-7` | 0.894 |
+| 4 | `zai/glm-4-7` | 0.894 |
+| 5 | `openai/gpt-5-2-medium` | 0.894 |
 | 6 | `openai/gpt-5-2` | 0.889 |
 | 7 | `openai/gpt-oss-120b` | 0.878 |
 | 8 | `anthropic/claude-opus-4-5-thinking` | 0.871 |
@@ -140,8 +140,8 @@ _MATH-500 competition-math accuracy (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `openai/gpt-5` | 0.994 |
-| 2 | `openai/o3` | 0.992 |
-| 3 | `xai/grok-3-mini-reasoning` | 0.992 |
+| 2 | `xai/grok-3-mini-reasoning` | 0.992 |
+| 3 | `openai/o3` | 0.992 |
 | 4 | `openai/gpt-5-medium` | 0.991 |
 | 5 | `anthropic/claude-4-sonnet-thinking` | 0.991 |
 | 6 | `xai/grok-4` | 0.990 |
@@ -164,8 +164,8 @@ _MMLU-Pro knowledge accuracy (%)._
 | 5 | `anthropic/claude-opus-4-5` | 0.889 |
 | 6 | `google/gemini-3-flash` | 0.882 |
 | 7 | `anthropic/claude-4-1-opus-thinking` | 0.880 |
-| 8 | `minimax/minimax-m2-1` | 0.875 |
-| 9 | `anthropic/claude-4-5-sonnet-thinking` | 0.875 |
+| 8 | `anthropic/claude-4-5-sonnet-thinking` | 0.875 |
+| 9 | `minimax/minimax-m2-1` | 0.875 |
 | 10 | `openai/gpt-5-2` | 0.874 |
 
 ## SciCode
@@ -197,12 +197,12 @@ _TAU-bench agent benchmark (%)._
 | 2 | `china-mobile/jt-35b-flash` | 0.991 |
 | 3 | `zai/glm-4-7-flash` | 0.988 |
 | 4 | `anthropic/claude-fable-5` | 0.985 |
-| 5 | `zai/glm-5-turbo` | 0.985 |
-| 6 | `zai/glm-5v-turbo` | 0.985 |
+| 5 | `zai/glm-5v-turbo` | 0.985 |
+| 6 | `zai/glm-5-turbo` | 0.985 |
 | 7 | `stepfun/step-3-7-flash` | 0.985 |
 | 8 | `zai/glm-5` | 0.982 |
-| 9 | `alibaba/qwen3-6-plus` | 0.977 |
-| 10 | `zai/glm-5-1` | 0.977 |
+| 9 | `zai/glm-5-1` | 0.977 |
+| 10 | `xai/grok-4-3` | 0.977 |
 
 ## TAU-Banking
 
@@ -220,7 +220,7 @@ _TAU-bench banking domain agent score (%)._
 | 7 | `alibaba/qwen3-8-max` | 0.478 |
 | 8 | `alibaba/qwen3-8-27b-medium` | 0.474 |
 | 9 | `anthropic/claude-fable-5-1` | 0.472 |
-| 10 | `meta/muse-spark-1-3-xhigh` | 0.472 |
+| 10 | `zai/glm-5-3-flash` | 0.472 |
 
 ## Terminal-Bench Hard
 
@@ -249,8 +249,8 @@ _Terminal-Bench v2.1 sys-admin tasks (%)._
 |---|-------|------:|
 | 1 | `anthropic/claude-fable-5-1` | 0.914 |
 | 2 | `anthropic/claude-fable-5-1-xhigh` | 0.910 |
-| 3 | `anthropic/claude-fable-5-1-high` | 0.899 |
-| 4 | `openai/gpt-6-astra-high` | 0.899 |
+| 3 | `openai/gpt-6-astra-high` | 0.899 |
+| 4 | `anthropic/claude-fable-5-1-high` | 0.899 |
 | 5 | `openai/gpt-6-astra-medium` | 0.895 |
 | 6 | `openai/gpt-5-6-sol-xhigh` | 0.895 |
 | 7 | `openai/gpt-6-astra-xhigh` | 0.891 |

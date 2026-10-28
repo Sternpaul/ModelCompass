@@ -3,7 +3,7 @@
     "leaderboard": "aa_terminalbench_v2_1",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "terminalbench_v2_1",
-    "fetched_at": "2026-10-27T09:42:55.381877+00:00",
+    "fetched_at": "2026-10-28T10:28:17.565046+00:00",
     "model_count_with_data": 715
   },
   "models": [
@@ -18,13 +18,13 @@
       "score": 0.910112359550562
     },
     {
-      "model": "anthropic/claude-fable-5-1-high",
-      "name": "Claude Fable 5.1 (High, Default Fallback)",
+      "model": "openai/gpt-6-astra-high",
+      "name": "GPT-6 Astra (High)",
       "score": 0.898876404494382
     },
     {
-      "model": "openai/gpt-6-astra-high",
-      "name": "GPT-6 Astra (High)",
+      "model": "anthropic/claude-fable-5-1-high",
+      "name": "Claude Fable 5.1 (High, Default Fallback)",
       "score": 0.898876404494382
     },
     {
@@ -63,8 +63,8 @@
       "score": 0.883895131086142
     },
     {
-      "model": "anthropic/claude-opus-5-xhigh",
-      "name": "Claude Opus 5 (Xhigh)",
+      "model": "openai/gpt-6-astra-low",
+      "name": "GPT-6 Astra (Low)",
       "score": 0.880149812734082
     },
     {
@@ -73,18 +73,13 @@
       "score": 0.880149812734082
     },
     {
+      "model": "anthropic/claude-opus-5-xhigh",
+      "name": "Claude Opus 5 (Xhigh)",
+      "score": 0.880149812734082
+    },
+    {
       "model": "openai/gpt-5-6-sol",
       "name": "GPT-5.6 Sol (Max)",
-      "score": 0.880149812734082
-    },
-    {
-      "model": "openai/gpt-6-astra-low",
-      "name": "GPT-6 Astra (Low)",
-      "score": 0.880149812734082
-    },
-    {
-      "model": "xai/grok-4-6-xhigh",
-      "name": "Grok 4.6 (Xhigh)",
       "score": 0.880149812734082
     },
     {
@@ -93,13 +88,18 @@
       "score": 0.880149812734082
     },
     {
-      "model": "anthropic/claude-opus-5-high",
-      "name": "Claude Opus 5 (High)",
-      "score": 0.876404494382023
+      "model": "xai/grok-4-6-xhigh",
+      "name": "Grok 4.6 (Xhigh)",
+      "score": 0.880149812734082
     },
     {
       "model": "google/gemini-3-8-flash",
       "name": "Gemini 3.8 Flash (High)",
+      "score": 0.876404494382023
+    },
+    {
+      "model": "anthropic/claude-opus-5-high",
+      "name": "Claude Opus 5 (High)",
       "score": 0.876404494382023
     },
     {
@@ -113,13 +113,13 @@
       "score": 0.861423220973783
     },
     {
-      "model": "alibaba/qwen3-8-flash-next",
-      "name": "Qwen3.8-Flash-Next",
+      "model": "openai/gpt-5-6-sol-medium",
+      "name": "GPT-5.6 Sol (Medium)",
       "score": 0.861423220973783
     },
     {
-      "model": "openai/gpt-5-6-sol-medium",
-      "name": "GPT-5.6 Sol (Medium)",
+      "model": "alibaba/qwen3-8-flash-next",
+      "name": "Qwen3.8-Flash-Next",
       "score": 0.861423220973783
     },
     {
@@ -158,11 +158,6 @@
       "score": 0.842696629213483
     },
     {
-      "model": "xai/grok-4-6-medium",
-      "name": "Grok 4.6 (Medium)",
-      "score": 0.842696629213483
-    },
-    {
       "model": "zai/glm-5-3-flash",
       "name": "GLM-5.3-Flash",
       "score": 0.842696629213483
@@ -170,6 +165,11 @@
     {
       "model": "openai/gpt-5-5",
       "name": "GPT-5.5 (Xhigh)",
+      "score": 0.842696629213483
+    },
+    {
+      "model": "xai/grok-4-6-medium",
+      "name": "Grok 4.6 (Medium)",
       "score": 0.842696629213483
     },
     {
@@ -183,13 +183,13 @@
       "score": 0.838951310861423
     },
     {
-      "model": "anthropic/claude-opus-4-7",
-      "name": "Claude Opus 4.7 (Max)",
+      "model": "google/gemini-3-8-flash-low",
+      "name": "Gemini 3.8 Flash (Low)",
       "score": 0.831460674157303
     },
     {
-      "model": "google/gemini-3-8-flash-low",
-      "name": "Gemini 3.8 Flash (Low)",
+      "model": "anthropic/claude-opus-4-7",
+      "name": "Claude Opus 4.7 (Max)",
       "score": 0.831460674157303
     },
     {
@@ -228,23 +228,23 @@
       "score": 0.805243445692884
     },
     {
-      "model": "meta/muse-spark-1-2",
-      "name": "Muse Spark 1.2 (Xhigh)",
-      "score": 0.801498127340824
-    },
-    {
       "model": "openai/gpt-5-6-terra-xhigh",
       "name": "GPT-5.6 Terra (Xhigh)",
       "score": 0.801498127340824
     },
     {
-      "model": "google/gemini-3-7-flash-low",
-      "name": "Gemini 3.7 Flash (Low)",
-      "score": 0.797752808988764
+      "model": "meta/muse-spark-1-2",
+      "name": "Muse Spark 1.2 (Xhigh)",
+      "score": 0.801498127340824
     },
     {
       "model": "alibaba/qwen3-8-27b",
       "name": "Qwen3.8 27B (Xhigh)",
+      "score": 0.797752808988764
+    },
+    {
+      "model": "google/gemini-3-7-flash-low",
+      "name": "Gemini 3.7 Flash (Low)",
       "score": 0.797752808988764
     },
     {
@@ -278,6 +278,11 @@
       "score": 0.782771535580524
     },
     {
+      "model": "zai/glm-5-2",
+      "name": "GLM-5.2 (Max)",
+      "score": 0.779026217228464
+    },
+    {
       "model": "openai/gpt-5-6-luna-xhigh",
       "name": "GPT-5.6 Luna (Xhigh)",
       "score": 0.779026217228464
@@ -285,11 +290,6 @@
     {
       "model": "meta/muse-spark-1-1",
       "name": "Muse Spark 1.1 (Xhigh)",
-      "score": 0.779026217228464
-    },
-    {
-      "model": "zai/glm-5-2",
-      "name": "GLM-5.2 (Max)",
       "score": 0.779026217228464
     },
     {
@@ -303,13 +303,13 @@
       "score": 0.767790262172285
     },
     {
-      "model": "anthropic/claude-opus-5-low",
-      "name": "Claude Opus 5 (Low)",
+      "model": "meta/muse-spark-open",
+      "name": "Muse Spark Open (Xhigh)",
       "score": 0.764044943820225
     },
     {
-      "model": "meta/muse-spark-open",
-      "name": "Muse Spark Open (Xhigh)",
+      "model": "anthropic/claude-opus-5-low",
+      "name": "Claude Opus 5 (Low)",
       "score": 0.764044943820225
     },
     {
@@ -318,13 +318,13 @@
       "score": 0.756554307116105
     },
     {
-      "model": "xai/grok-4-6-low",
-      "name": "Grok 4.6 (Low)",
+      "model": "anthropic/claude-sonnet-5-non-reasoning",
+      "name": "Claude Sonnet 5 (Non-reasoning, High)",
       "score": 0.752808988764045
     },
     {
-      "model": "anthropic/claude-sonnet-5-non-reasoning",
-      "name": "Claude Sonnet 5 (Non-reasoning, High)",
+      "model": "xai/grok-4-6-low",
+      "name": "Grok 4.6 (Low)",
       "score": 0.752808988764045
     },
     {
@@ -383,13 +383,13 @@
       "score": 0.696629213483146
     },
     {
-      "model": "openai/gpt-5-6-luna-high",
-      "name": "GPT-5.6 Luna (High)",
+      "model": "apodex/apodex-1-1",
+      "name": "Apodex 1.1",
       "score": 0.696629213483146
     },
     {
-      "model": "apodex/apodex-1-1",
-      "name": "Apodex 1.1",
+      "model": "openai/gpt-5-6-luna-high",
+      "name": "GPT-5.6 Luna (High)",
       "score": 0.696629213483146
     },
     {
@@ -403,13 +403,13 @@
       "score": 0.677902621722846
     },
     {
-      "model": "alibaba/qwen3-8-27b-low",
-      "name": "Qwen3.8 27B (Low)",
+      "model": "kimi/kimi-k2-7-code",
+      "name": "Kimi K2.7 Code",
       "score": 0.674157303370786
     },
     {
-      "model": "kimi/kimi-k2-7-code",
-      "name": "Kimi K2.7 Code",
+      "model": "alibaba/qwen3-8-27b-low",
+      "name": "Qwen3.8 27B (Low)",
       "score": 0.674157303370786
     },
     {
@@ -428,13 +428,13 @@
       "score": 0.651685393258427
     },
     {
-      "model": "alibaba/qwen3-8-27b-medium",
-      "name": "Qwen3.8 27B (Medium)",
+      "model": "xiaomi/mimo-v2-5-pro",
+      "name": "MiMo-V2.5-Pro (Reasoning)",
       "score": 0.651685393258427
     },
     {
-      "model": "xiaomi/mimo-v2-5-pro",
-      "name": "MiMo-V2.5-Pro (Reasoning)",
+      "model": "alibaba/qwen3-8-27b-medium",
+      "name": "Qwen3.8 27B (Medium)",
       "score": 0.651685393258427
     },
     {
@@ -478,13 +478,13 @@
       "score": 0.621722846441948
     },
     {
-      "model": "zai/glm-5-1",
-      "name": "GLM-5.1 (Reasoning)",
+      "model": "deepseek/deepseek-v4-flash-0420",
+      "name": "DeepSeek V4 Flash 0420 (Max)",
       "score": 0.617977528089888
     },
     {
-      "model": "deepseek/deepseek-v4-flash-0420",
-      "name": "DeepSeek V4 Flash 0420 (Max)",
+      "model": "zai/glm-5-1",
+      "name": "GLM-5.1 (Reasoning)",
       "score": 0.617977528089888
     },
     {
@@ -498,23 +498,23 @@
       "score": 0.614232209737828
     },
     {
-      "model": "alibaba/qwen3-7-plus",
-      "name": "Qwen3.7 Plus",
-      "score": 0.610486891385768
-    },
-    {
       "model": "openai/gpt-5-5-non-reasoning",
       "name": "GPT-5.5 (Non-reasoning)",
       "score": 0.610486891385768
     },
     {
-      "model": "alibaba/qwen3-6-27b",
-      "name": "Qwen3.6 27B (Reasoning)",
-      "score": 0.606741573033708
+      "model": "alibaba/qwen3-7-plus",
+      "name": "Qwen3.7 Plus",
+      "score": 0.610486891385768
     },
     {
       "model": "openai/gpt-5-4-nano",
       "name": "GPT-5.4 nano (Xhigh)",
+      "score": 0.606741573033708
+    },
+    {
+      "model": "alibaba/qwen3-6-27b",
+      "name": "Qwen3.6 27B (Reasoning)",
       "score": 0.606741573033708
     },
     {
@@ -553,13 +553,13 @@
       "score": 0.558052434456929
     },
     {
-      "model": "minimax/minimax-m2-7",
-      "name": "MiniMax-M2.7",
+      "model": "inclusionai/ling-3-0-flash",
+      "name": "Ling 3.0 Flash",
       "score": 0.554307116104869
     },
     {
-      "model": "inclusionai/ling-3-0-flash",
-      "name": "Ling 3.0 Flash",
+      "model": "minimax/minimax-m2-7",
+      "name": "MiniMax-M2.7",
       "score": 0.554307116104869
     },
     {
@@ -598,23 +598,23 @@
       "score": 0.52059925093633
     },
     {
-      "model": "zai/glm-5-2-non-reasoning",
-      "name": "GLM-5.2 (Non-reasoning)",
-      "score": 0.51685393258427
-    },
-    {
       "model": "meta/muse-glimmer",
       "name": "Muse Glimmer (High)",
       "score": 0.51685393258427
     },
     {
-      "model": "alibaba/qwen3-6-27b-non-reasoning",
-      "name": "Qwen3.6 27B (Non-reasoning)",
-      "score": 0.51310861423221
+      "model": "zai/glm-5-2-non-reasoning",
+      "name": "GLM-5.2 (Non-reasoning)",
+      "score": 0.51685393258427
     },
     {
       "model": "alibaba/qwen3-5-397b-a17b",
       "name": "Qwen3.5 397B A17B (Reasoning)",
+      "score": 0.51310861423221
+    },
+    {
+      "model": "alibaba/qwen3-6-27b-non-reasoning",
+      "name": "Qwen3.6 27B (Non-reasoning)",
       "score": 0.51310861423221
     },
     {
@@ -663,18 +663,18 @@
       "score": 0.453183520599251
     },
     {
-      "model": "alibaba/qwen3-6-35b-a3b",
-      "name": "Qwen3.6 35B A3B (Reasoning)",
-      "score": 0.449438202247191
-    },
-    {
       "model": "deepseek/deepseek-v3-1-terminus-reasoning",
       "name": "DeepSeek V3.1 Terminus (Reasoning)",
       "score": 0.449438202247191
     },
     {
-      "model": "upstage/solar-open2-250b",
-      "name": "Solar Open2 250B",
+      "model": "alibaba/qwen3-6-35b-a3b",
+      "name": "Qwen3.6 35B A3B (Reasoning)",
+      "score": 0.449438202247191
+    },
+    {
+      "model": "anthropic/claude-4-5-haiku-reasoning",
+      "name": "Claude 4.5 Haiku (Reasoning)",
       "score": 0.441947565543071
     },
     {
@@ -683,18 +683,18 @@
       "score": 0.441947565543071
     },
     {
-      "model": "anthropic/claude-4-5-haiku-reasoning",
-      "name": "Claude 4.5 Haiku (Reasoning)",
+      "model": "upstage/solar-open2-250b",
+      "name": "Solar Open2 250B",
       "score": 0.441947565543071
-    },
-    {
-      "model": "openai/gpt-5-6-luna-low",
-      "name": "GPT-5.6 Luna (Low)",
-      "score": 0.434456928838951
     },
     {
       "model": "google/gemma-4-31b",
       "name": "Gemma 4 31B (Reasoning)",
+      "score": 0.434456928838951
+    },
+    {
+      "model": "openai/gpt-5-6-luna-low",
+      "name": "GPT-5.6 Luna (Low)",
       "score": 0.434456928838951
     },
     {
@@ -788,23 +788,23 @@
       "score": 0.310861423220974
     },
     {
-      "model": "lg/k-exaone",
-      "name": "K-EXAONE (Reasoning)",
-      "score": 0.303370786516854
-    },
-    {
       "model": "mistral/devstral-2",
       "name": "Devstral 2",
       "score": 0.303370786516854
     },
     {
-      "model": "aws/nova-2-0-pro-reasoning-medium",
-      "name": "Nova 2.0 Pro Preview (Medium)",
-      "score": 0.295880149812734
+      "model": "lg/k-exaone",
+      "name": "K-EXAONE (Reasoning)",
+      "score": 0.303370786516854
     },
     {
       "model": "mistral/devstral-small-2",
       "name": "Devstral Small 2",
+      "score": 0.295880149812734
+    },
+    {
+      "model": "aws/nova-2-0-pro-reasoning-medium",
+      "name": "Nova 2.0 Pro Preview (Medium)",
       "score": 0.295880149812734
     },
     {
@@ -863,24 +863,19 @@
       "score": 0.258426966292135
     },
     {
-      "model": "nvidia/nemotron-3-5-lightning",
-      "name": "Nemotron 3.5 Lightning",
+      "model": "inclusionai/ling-2-6-flash",
+      "name": "Ling 2.6 Flash",
       "score": 0.243445692883895
     },
     {
-      "model": "inclusionai/ling-2-6-flash",
-      "name": "Ling 2.6 Flash",
+      "model": "nvidia/nemotron-3-5-lightning",
+      "name": "Nemotron 3.5 Lightning",
       "score": 0.243445692883895
     },
     {
       "model": "cohere/command-a-plus",
       "name": "Command A+",
       "score": 0.228464419475655
-    },
-    {
-      "model": "alibaba/qwen3-5-9b-non-reasoning",
-      "name": "Qwen3.5 9B (Non-reasoning)",
-      "score": 0.213483146067416
     },
     {
       "model": "lg/exaone-4-5-33b",
@@ -890,6 +885,11 @@
     {
       "model": "alibaba/qwen3-5-4b-non-reasoning",
       "name": "Qwen3.5 4B (Non-reasoning)",
+      "score": 0.213483146067416
+    },
+    {
+      "model": "alibaba/qwen3-5-9b-non-reasoning",
+      "name": "Qwen3.5 9B (Non-reasoning)",
       "score": 0.213483146067416
     },
     {
@@ -918,13 +918,13 @@
       "score": 0.191011235955056
     },
     {
-      "model": "multiversecomputing/hypernova-60b",
-      "name": "HyperNova 60B 2605 (High, Based on gpt-oss-120b)",
+      "model": "ibm/granite-4-2-8b",
+      "name": "Granite 4.2 8B",
       "score": 0.183520599250936
     },
     {
-      "model": "ibm/granite-4-2-8b",
-      "name": "Granite 4.2 8B",
+      "model": "multiversecomputing/hypernova-60b",
+      "name": "HyperNova 60B 2605 (High, Based on gpt-oss-120b)",
       "score": 0.183520599250936
     },
     {
@@ -948,23 +948,13 @@
       "score": 0.149812734082397
     },
     {
-      "model": "openai/gpt-oss-120b-low",
-      "name": "gpt-oss-120b (Low)",
-      "score": 0.138576779026217
-    },
-    {
       "model": "deepseek/deepseek-v3-0324",
       "name": "DeepSeek V3 0324",
       "score": 0.138576779026217
     },
     {
-      "model": "mistral/mistral-medium-3-1",
-      "name": "Mistral Medium 3.1",
-      "score": 0.138576779026217
-    },
-    {
-      "model": "ibm/granite-4-2-3b",
-      "name": "Granite 4.2 3B",
+      "model": "openai/gpt-oss-120b-low",
+      "name": "gpt-oss-120b (Low)",
       "score": 0.138576779026217
     },
     {
@@ -973,9 +963,14 @@
       "score": 0.138576779026217
     },
     {
-      "model": "mistral/magistral-medium-2509",
-      "name": "Magistral Medium 1.2",
-      "score": 0.123595505617978
+      "model": "ibm/granite-4-2-3b",
+      "name": "Granite 4.2 3B",
+      "score": 0.138576779026217
+    },
+    {
+      "model": "mistral/mistral-medium-3-1",
+      "name": "Mistral Medium 3.1",
+      "score": 0.138576779026217
     },
     {
       "model": "google/diffusiongemma-26b-a4b",
@@ -983,13 +978,18 @@
       "score": 0.123595505617978
     },
     {
-      "model": "alibaba/qwen3-235b-a22b-instruct-2507-reasoning",
-      "name": "Qwen3 235B A22B 2507 (Reasoning)",
-      "score": 0.119850187265918
+      "model": "mistral/magistral-medium-2509",
+      "name": "Magistral Medium 1.2",
+      "score": 0.123595505617978
     },
     {
       "model": "mistral/mistral-large-3",
       "name": "Mistral Large 3",
+      "score": 0.119850187265918
+    },
+    {
+      "model": "alibaba/qwen3-235b-a22b-instruct-2507-reasoning",
+      "name": "Qwen3 235B A22B 2507 (Reasoning)",
       "score": 0.119850187265918
     },
     {
@@ -1003,13 +1003,13 @@
       "score": 0.112359550561798
     },
     {
-      "model": "openai/gpt-4-1-mini",
-      "name": "GPT-4.1 mini",
+      "model": "anthropic/claude-3-5-haiku",
+      "name": "Claude 3.5 Haiku",
       "score": 0.101123595505618
     },
     {
-      "model": "anthropic/claude-3-5-haiku",
-      "name": "Claude 3.5 Haiku",
+      "model": "openai/gpt-4-1-mini",
+      "name": "GPT-4.1 mini",
       "score": 0.101123595505618
     },
     {
@@ -1028,11 +1028,6 @@
       "score": 0.0786516853932584
     },
     {
-      "model": "alibaba/qwen3-next-80b-a3b-reasoning",
-      "name": "Qwen3 Next 80B A3B (Reasoning)",
-      "score": 0.0674157303370786
-    },
-    {
       "model": "nvidia/nemotron-3-nano-omni-30b-a3b",
       "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
       "score": 0.0674157303370786
@@ -1043,18 +1038,23 @@
       "score": 0.0674157303370786
     },
     {
+      "model": "alibaba/qwen3-next-80b-a3b-reasoning",
+      "name": "Qwen3 Next 80B A3B (Reasoning)",
+      "score": 0.0674157303370786
+    },
+    {
       "model": "ai9star/g9v3-3b",
       "name": "G9v3-3B",
       "score": 0.0599250936329588
     },
     {
-      "model": "mistral/mistral-small-3-2",
-      "name": "Mistral Small 3.2",
+      "model": "openai/gpt-4o-mini",
+      "name": "GPT-4o mini",
       "score": 0.0561797752808989
     },
     {
-      "model": "openai/gpt-4o-mini",
-      "name": "GPT-4o mini",
+      "model": "mistral/mistral-small-3-2",
+      "name": "Mistral Small 3.2",
       "score": 0.0561797752808989
     },
     {
@@ -1073,13 +1073,8 @@
       "score": 0.048689138576779
     },
     {
-      "model": "openai/o3-mini-high",
-      "name": "o3-mini (High)",
-      "score": 0.0449438202247191
-    },
-    {
-      "model": "mistral/magistral-small-2509",
-      "name": "Magistral Small 1.2",
+      "model": "google/gemma-3-27b",
+      "name": "Gemma 3 27B Instruct",
       "score": 0.0449438202247191
     },
     {
@@ -1088,8 +1083,13 @@
       "score": 0.0449438202247191
     },
     {
-      "model": "google/gemma-3-27b",
-      "name": "Gemma 3 27B Instruct",
+      "model": "mistral/magistral-small-2509",
+      "name": "Magistral Small 1.2",
+      "score": 0.0449438202247191
+    },
+    {
+      "model": "openai/o3-mini-high",
+      "name": "o3-mini (High)",
       "score": 0.0449438202247191
     },
     {
@@ -1098,8 +1098,8 @@
       "score": 0.0411985018726592
     },
     {
-      "model": "openai/gpt-5-mini",
-      "name": "GPT-5 mini (High)",
+      "model": "nvidia/nvidia-nemotron-3-nano-4b",
+      "name": "NVIDIA Nemotron 3 Nano 4B",
       "score": 0.0374531835205993
     },
     {
@@ -1108,13 +1108,13 @@
       "score": 0.0374531835205993
     },
     {
-      "model": "meta/llama-4-scout",
-      "name": "Llama 4 Scout",
+      "model": "openai/gpt-5-mini",
+      "name": "GPT-5 mini (High)",
       "score": 0.0374531835205993
     },
     {
-      "model": "nvidia/nvidia-nemotron-3-nano-4b",
-      "name": "NVIDIA Nemotron 3 Nano 4B",
+      "model": "meta/llama-4-scout",
+      "name": "Llama 4 Scout",
       "score": 0.0374531835205993
     },
     {
@@ -1143,19 +1143,14 @@
       "score": 0.0187265917602996
     },
     {
-      "model": "alibaba/qwen3-30b-a3b-2507-reasoning",
-      "name": "Qwen3 30B A3B 2507 (Reasoning)",
-      "score": 0.0149812734082397
-    },
-    {
       "model": "meta/llama-3-1-instruct-8b",
       "name": "Llama 3.1 Instruct 8B",
       "score": 0.0149812734082397
     },
     {
-      "model": "nanbeige/nanbeige4-1-3b",
-      "name": "Nanbeige4.1-3B",
-      "score": 0.0112359550561798
+      "model": "alibaba/qwen3-30b-a3b-2507-reasoning",
+      "name": "Qwen3 30B A3B 2507 (Reasoning)",
+      "score": 0.0149812734082397
     },
     {
       "model": "ibm/granite-4-1-3b",
@@ -1168,9 +1163,19 @@
       "score": 0.0112359550561798
     },
     {
+      "model": "nanbeige/nanbeige4-1-3b",
+      "name": "Nanbeige4.1-3B",
+      "score": 0.0112359550561798
+    },
+    {
       "model": "google/gemma-3n-e4b",
       "name": "Gemma 3n E4B Instruct",
       "score": 0.00749063670411985
+    },
+    {
+      "model": "google/gemma-3-4b",
+      "name": "Gemma 3 4B Instruct",
+      "score": 0.00374531835205993
     },
     {
       "model": "google/gemma-4-e2b",
@@ -1188,18 +1193,8 @@
       "score": 0.00374531835205993
     },
     {
-      "model": "google/gemma-3-4b",
-      "name": "Gemma 3 4B Instruct",
-      "score": 0.00374531835205993
-    },
-    {
-      "model": "alibaba/qwen3-5-2b-non-reasoning",
-      "name": "Qwen3.5 2B (Non-reasoning)",
-      "score": 0.0
-    },
-    {
-      "model": "alibaba/qwen3-5-0-8b",
-      "name": "Qwen3.5 0.8B (Reasoning)",
+      "model": "google/gemma-3-12b",
+      "name": "Gemma 3 12B Instruct",
       "score": 0.0
     },
     {
@@ -1213,8 +1208,13 @@
       "score": 0.0
     },
     {
-      "model": "google/gemma-3-12b",
-      "name": "Gemma 3 12B Instruct",
+      "model": "alibaba/qwen3-5-0-8b",
+      "name": "Qwen3.5 0.8B (Reasoning)",
+      "score": 0.0
+    },
+    {
+      "model": "alibaba/qwen3-5-2b-non-reasoning",
+      "name": "Qwen3.5 2B (Non-reasoning)",
       "score": 0.0
     }
   ]
