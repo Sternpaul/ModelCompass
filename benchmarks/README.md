@@ -10,9 +10,7 @@ Raw benchmark evaluations from Artificial Analysis' proprietary suite (AA API v2
 
 - [AIME](./artificial-analysis/aa_aime.json)
 - [AIME 2025](./artificial-analysis/aa_aime_25.json)
-- [aa_artificial_analysis_coding_index](./artificial-analysis/aa_artificial_analysis_coding_index.json)
 - [aa_artificial_analysis_intelligence_index](./artificial-analysis/aa_artificial_analysis_intelligence_index.json)
-- [aa_artificial_analysis_math_index](./artificial-analysis/aa_artificial_analysis_math_index.json)
 - [GPQA](./artificial-analysis/aa_gpqa.json)
 - [HLE](./artificial-analysis/aa_hle.json)
 - [IFBench](./artificial-analysis/aa_ifbench.json)

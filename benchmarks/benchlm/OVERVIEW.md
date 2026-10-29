@@ -69,10 +69,10 @@ _Factual knowledge category score._
 |---|-------|------:|
 | 1 | `claude-fable-5-1` | 95.400 |
 | 2 | `claude-opus-5` | 95.300 |
-| 3 | `claude-mythos-5` | 92.200 |
-| 4 | `kimi-3-1-pro` | 91 |
-| 5 | `muse-spark-1-1` | 88.600 |
-| 6 | `claude-opus-4-8` | 85.600 |
+| 3 | `claude-mythos-5` | 92.100 |
+| 4 | `kimi-3-1-pro` | 90.800 |
+| 5 | `muse-spark-1-1` | 88.200 |
+| 6 | `claude-opus-4-8` | 85.200 |
 | 7 | `claude-opus-5-5` | 85 |
 | 8 | `claude-fable` | 84.800 |
 | 9 | `gpt-6-astra` | 84 |
@@ -88,13 +88,13 @@ _Quantitative reasoning category score._
 | 1 | `gpt-6-astra` | 97.300 |
 | 2 | `claude-opus-5-5` | 97.300 |
 | 3 | `gpt-6-1-sol` | 97.300 |
-| 4 | `gpt-6-sol` | 97.300 |
-| 5 | `claude-fable-5-1` | 96.800 |
-| 6 | `claude-fable` | 96 |
-| 7 | `gpt-5-6-sol` | 95.800 |
-| 8 | `claude-sonnet-5-5` | 95.200 |
-| 9 | `gpt-5-5-pro` | 94 |
-| 10 | `gemini-4-argon` | 92.800 |
+| 4 | `gpt-6-1-terra` | 97.300 |
+| 5 | `gpt-6-sol` | 97.300 |
+| 6 | `claude-fable-5-1` | 96.800 |
+| 7 | `claude-fable` | 96 |
+| 8 | `gpt-5-6-sol` | 95.800 |
+| 9 | `claude-sonnet-5-5` | 95.200 |
+| 10 | `gpt-5-5-pro` | 94 |
 
 ## Multilingual
 
