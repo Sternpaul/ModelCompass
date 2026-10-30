@@ -19,7 +19,7 @@ _Rank by total tokens processed; requests kept alongside._
 | 4 | `openai/gpt-6-luna-20260922` | — |
 | 5 | `tencent/hy4-preview-20260827` | — |
 | 6 | `anthropic/claude-opus-5.5-20260921` | — |
-| 7 | `minimax/minimax-m3.1-flash-20261019` | — |
-| 8 | `stepfun/step-5-preview-20261008` | — |
-| 9 | `z-ai/glm-5.3-20260816` | — |
-| 10 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
+| 7 | `stepfun/step-5-preview-20261008` | — |
+| 8 | `z-ai/glm-5.3-20260816` | — |
+| 9 | `minimax/minimax-m3.1-flash-20261019` | — |
+| 10 | `deepseek/deepseek-v4-flash-20260731` | — |

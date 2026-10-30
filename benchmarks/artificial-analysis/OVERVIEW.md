@@ -68,15 +68,15 @@ _Humanity's Last Exam accuracy (%)._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `anthropic/claude-opus-5-5` | 0.614 |
-| 2 | `google/gemini-4-carbon` | 0.604 |
-| 3 | `anthropic/claude-fable-5-1` | 0.591 |
-| 4 | `anthropic/claude-fable-5-1-xhigh` | 0.587 |
-| 5 | `anthropic/claude-opus-5-5-xhigh` | 0.575 |
-| 6 | `google/gemini-4-argon` | 0.571 |
-| 7 | `anthropic/claude-fable-5-1-high` | 0.559 |
-| 8 | `anthropic/claude-opus-5-5-high` | 0.556 |
-| 9 | `anthropic/claude-fable-5` | 0.555 |
-| 10 | `anthropic/claude-sonnet-5-5` | 0.550 |
+| 2 | `anthropic/claude-fable-5-1` | 0.591 |
+| 3 | `anthropic/claude-fable-5-1-xhigh` | 0.587 |
+| 4 | `anthropic/claude-opus-5-5-xhigh` | 0.575 |
+| 5 | `google/gemini-4-argon` | 0.571 |
+| 6 | `anthropic/claude-fable-5-1-high` | 0.559 |
+| 7 | `anthropic/claude-opus-5-5-high` | 0.556 |
+| 8 | `anthropic/claude-fable-5` | 0.555 |
+| 9 | `anthropic/claude-sonnet-5-5` | 0.550 |
+| 10 | `anthropic/claude-opus-5` | 0.549 |
 
 ## IFBench
 
@@ -177,14 +177,14 @@ _SciCode scientific coding accuracy (%)._
 |---|-------|------:|
 | 1 | `anthropic/claude-opus-5-5` | 0.669 |
 | 2 | `anthropic/claude-opus-5-5-xhigh` | 0.650 |
-| 3 | `google/gemini-4-carbon` | 0.642 |
-| 4 | `anthropic/claude-fable-5-1` | 0.631 |
-| 5 | `meta/muse-wonder-full` | 0.626 |
-| 6 | `google/gemini-4-argon` | 0.618 |
-| 7 | `anthropic/claude-sonnet-5-5` | 0.610 |
-| 8 | `anthropic/claude-fable-5` | 0.610 |
-| 9 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
-| 10 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 3 | `anthropic/claude-fable-5-1` | 0.631 |
+| 4 | `meta/muse-wonder-full` | 0.626 |
+| 5 | `google/gemini-4-argon` | 0.618 |
+| 6 | `anthropic/claude-sonnet-5-5` | 0.610 |
+| 7 | `anthropic/claude-fable-5` | 0.610 |
+| 8 | `anthropic/claude-fable-5-1-xhigh` | 0.609 |
+| 9 | `xiaomi/mimo-v2-6-pro` | 0.609 |
+| 10 | `kimi/kimi-k3-1-pro` | 0.608 |
 
 ## TAU2
 

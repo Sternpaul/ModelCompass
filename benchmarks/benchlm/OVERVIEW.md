@@ -70,7 +70,7 @@ _Factual knowledge category score._
 | 1 | `claude-fable-5-1` | 95.400 |
 | 2 | `claude-opus-5` | 95.300 |
 | 3 | `claude-mythos-5` | 92.100 |
-| 4 | `kimi-3-1-pro` | 90.800 |
+| 4 | `kimi-3-1-pro` | 90.700 |
 | 5 | `muse-spark-1-1` | 88.200 |
 | 6 | `claude-opus-4-8` | 85.200 |
 | 7 | `claude-opus-5-5` | 85 |
@@ -121,14 +121,14 @@ _Vision+text grounded understanding._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `kimi-3-1-pro` | 98 |
-| 2 | `qwen3-8-max` | 92 |
+| 1 | `kimi-3-1-pro` | 100 |
+| 2 | `qwen3-8-max` | 91.900 |
 | 3 | `claude-opus-5-5` | 91.800 |
 | 4 | `gpt-6-1-terra` | 91.600 |
-| 5 | `claude-mythos-5` | 91.100 |
+| 5 | `claude-mythos-5` | 91 |
 | 6 | `claude-opus-5` | 90.900 |
-| 7 | `kimi-k3` | 90.200 |
-| 8 | `gpt-5-6-sol` | 90.100 |
+| 7 | `kimi-k3` | 90 |
+| 8 | `gpt-5-6-sol` | 89.900 |
 | 9 | `gpt-6-astra` | 88.200 |
 | 10 | `gpt-6-1-sol` | 88.200 |
 
