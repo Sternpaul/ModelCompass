@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T10:47:14.040672+00:00",
+    "generated_at": "2026-10-31T10:16:45.468803+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_code": {
@@ -48,7 +48,7 @@
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 86,
+        "model_count": 89,
         "top_n": 10
       },
       "aa_gpqa": {
@@ -60,7 +60,7 @@
       "aa_hle": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 676,
+        "model_count": 677,
         "top_n": 10
       },
       "aa_ifbench": {
@@ -72,7 +72,7 @@
       "aa_lcr": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 588,
+        "model_count": 589,
         "top_n": 10
       },
       "aa_livecodebench": {
@@ -96,7 +96,7 @@
       "aa_scicode": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 243,
+        "model_count": 244,
         "top_n": 10
       },
       "aa_tau2": {
@@ -126,7 +126,7 @@
       "aa_terminalbench_v4_0": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 235,
+        "model_count": 236,
         "top_n": 10
       },
       "benchlm_agentic": {
@@ -186,19 +186,19 @@
       "movers": {
         "source": "unknown",
         "subdir": "movers",
-        "model_count": 75,
+        "model_count": 77,
         "top_n": 10
       },
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 595,
+        "model_count": 587,
         "top_n": 10
       },
       "price_performance": {
         "source": "unknown",
         "subdir": "price-performance",
-        "model_count": 33,
+        "model_count": 35,
         "top_n": 10
       }
     }
@@ -1804,62 +1804,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 42415745136748,
-        "requests": 688627788,
+        "tokens": 45531764896971,
+        "requests": 736268192,
         "rank": 1
       },
       {
-        "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 15895114549863,
-        "requests": 490184833,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 16114898531407,
+        "requests": 770651014,
         "rank": 2
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 15627141501102,
-        "requests": 759742568,
+        "model": "deepseek/deepseek-v4.1-flash-20260910",
+        "tokens": 15238575437326,
+        "requests": 483127733,
         "rank": 3
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 11511817755027,
-        "requests": 576295457,
+        "tokens": 11068675094327,
+        "requests": 571852647,
         "rank": 4
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 9176139468758,
-        "requests": 88443047,
+        "tokens": 9328184117722,
+        "requests": 90222919,
         "rank": 5
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 7843212689815,
-        "requests": 61162093,
+        "tokens": 7313097574449,
+        "requests": 59776028,
         "rank": 6
       },
       {
         "model": "stepfun/step-5-preview-20261008",
-        "tokens": 5925121605840,
-        "requests": 23021427,
+        "tokens": 6300479507707,
+        "requests": 24485997,
         "rank": 7
       },
       {
-        "model": "z-ai/glm-5.3-20260816",
-        "tokens": 4899571862451,
-        "requests": 69817330,
+        "model": "minimax/minimax-m3.1-flash-20261019",
+        "tokens": 5043048014940,
+        "requests": 54375544,
         "rank": 8
       },
       {
-        "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 4124382174437,
-        "requests": 42970273,
+        "model": "z-ai/glm-5.3-20260816",
+        "tokens": 4624467648995,
+        "requests": 68748255,
         "rank": 9
       },
       {
         "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 3993623604762,
-        "requests": 316576885,
+        "tokens": 3932024864270,
+        "requests": 322075975,
         "rank": 10
       }
     ],
@@ -1913,15 +1913,15 @@
         "value": 4.3
       },
       {
-        "model": "deepseek-v4-1-flash-1017",
-        "aa_intelligence": 32.5,
-        "prompt_price_per_m": 300000.0,
-        "value": 0.0
-      },
-      {
         "model": "gpt-6.1-terra",
         "aa_intelligence": 29.2,
         "prompt_price_per_m": 1000000.0,
+        "value": 0.0
+      },
+      {
+        "model": "gpt-6-luna",
+        "aa_intelligence": 9.4,
+        "prompt_price_per_m": 100000.0,
         "value": 0.0
       }
     ]
