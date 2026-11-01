@@ -6,26 +6,26 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 
 | Model | Free on | AA Intelligence | AA Coding | Arena Rank |
 |-------|---------|-----------------|-----------|------------|
+| hy3:free | kenari/openrouter | — | — | **46** (agent) |
+| thinkingmachines/inkling:free | openrouter | 12.5 | — | 55 (agent) |
+| thinkingmachines/inkling-small:free | openrouter | 12.9 | — | 56 (agent) |
 | deepseek-v4-pro:free | openrouter/unorouter | **23.1** | — | — |
 | nvidia/nemotron-3.5-super-vl:free | kilo/openrouter | 13.6 | — | — |
-| thinkingmachines/inkling-small:free | openrouter | 12.9 | — | — |
-| thinkingmachines/inkling:free | openrouter | 12.5 | — | — |
 | nvidia/nemotron-3.5-lightning:free | kilo/openrouter | 5.5 | — | — |
 | cohere/north-mini-code:free | kilo/openrouter | — | — | — |
-| inclusionai/ling-3.1-flash:free | commandcode/openrouter | — | — | — |
-| deepseek-v4-flash:free | kenari/openrouter/unorouter | — | — | — |
-| minimax-m2.7:free | openrouter/unorouter | — | — | — |
-| step-3.7-flash:free | openrouter/unorouter | — | — | — |
-| glm-5.2:free | openrouter/unorouter | — | — | — |
+| gpt-5.5:free | openrouter/unorouter | — | — | — |
 | gpt-5.4:free | openrouter/unorouter | — | — | — |
 | qwen3.5-397b-a17b:free | openrouter/unorouter | — | — | — |
-| gpt-5.5:free | openrouter/unorouter | — | — | — |
+| deepseek-v4-flash:free | kenari/openrouter/unorouter | — | — | — |
+| glm-5.2:free | openrouter/unorouter | — | — | — |
+| step-3.7-flash:free | openrouter/unorouter | — | — | — |
+| minimax-m2.7:free | openrouter/unorouter | — | — | — |
+| inclusionai/ling-3.1-flash:free | commandcode/openrouter | — | — | — |
 | kimi-k2-6:free | kenari/openrouter | — | — | — |
-| mistral-large:free | kenari/openrouter | — | — | — |
+| kimi-k2-7-code:free | kenari/openrouter | — | — | — |
 | glm-4-7-flash:free | kenari/openrouter | — | — | — |
 | mistral-medium-3-5:free | kenari/openrouter | — | — | — |
-| hy3:free | kenari/openrouter | — | — | — |
-| kimi-k2-7-code:free | kenari/openrouter | — | — | — |
+| mistral-large:free | kenari/openrouter | — | — | — |
 | step-3-7-flash:free | kenari/openrouter | — | — | — |
 | upstage/solar-mini4:free | nous | — | — | — |
 | stepfun/step-3.7-flash:free | nous | — | — | — |
@@ -33,8 +33,6 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | xingchen-agi/xing4.0-29b-a4b:free | kilo/openrouter | — | — | — |
 | dots-studio/dots-3-note-preview:free | kilo/openrouter | — | — | — |
 | liquid/lfm-2.5-2.6b:free | kilo/openrouter | — | — | — |
-| poolside/laguna-s-2.1:free | kilo/nous/openrouter | — | — | — |
-| poolside/laguna-xs-2.1:free | kilo/nous/openrouter | — | — | — |
 | nvidia/nemotron-3.5-content-safety:free | kilo/openrouter | — | — | — |
 | nvidia/nemotron-3-ultra-550b-a55b:free | kilo/openrouter | — | — | — |
 | nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free | kilo/openrouter | — | — | — |
@@ -42,10 +40,12 @@ A directory of every free model across providers (Nous, OpenRouter, and router a
 | google/gemma-4-31b-it:free | openrouter | — | — | — |
 | typesafe/jev-router | openrouter | — | — | — |
 | nvidia/switchyard | openrouter | — | — | — |
-| gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
 | glm-4.5-flash:free | openrouter/unorouter | — | — | — |
+| gemma-4-31b-it:free | bothub/openrouter/unorouter | — | — | — |
 | nemotron-3-ultra-550b-a55b:free | bothub/openrouter/unorouter | — | — | — |
 | mimo-v2-5:free | kenari/openrouter | — | — | — |
 | nemotron-3-super-120b-a12b:free | kenari/openrouter | — | — | — |
+| poolside/laguna-xs-2.1:free | nous | — | — | — |
+| poolside/laguna-s-2.1:free | nous | — | — | — |
 | reflection/beam-1.0-501b-a23b:free | nous | — | — | — |
 | ornith/ornith-1.5-122b:free | nous | — | — | — |
