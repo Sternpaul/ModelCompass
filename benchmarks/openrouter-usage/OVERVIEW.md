@@ -22,4 +22,4 @@ _Rank by total tokens processed; requests kept alongside._
 | 7 | `stepfun/step-5-preview-20261008` | — |
 | 8 | `minimax/minimax-m3.1-flash-20261019` | — |
 | 9 | `z-ai/glm-5.3-20260816` | — |
-| 10 | `deepseek/deepseek-v4-flash-20260731` | — |
+| 10 | `openai/gpt-5.6-luna-20260709` | — |

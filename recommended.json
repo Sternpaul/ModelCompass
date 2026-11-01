@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-31T10:16:45.468803+00:00",
+    "generated_at": "2026-11-01T02:46:42.305447+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_code": {
@@ -192,13 +192,13 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 587,
+        "model_count": 588,
         "top_n": 10
       },
       "price_performance": {
         "source": "unknown",
         "subdir": "price-performance",
-        "model_count": 35,
+        "model_count": 34,
         "top_n": 10
       }
     }
@@ -1804,62 +1804,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 45531764896971,
-        "requests": 736268192,
+        "tokens": 47845529634095,
+        "requests": 762232442,
         "rank": 1
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 16114898531407,
-        "requests": 770651014,
+        "tokens": 15740732516324,
+        "requests": 736445127,
         "rank": 2
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 15238575437326,
-        "requests": 483127733,
+        "tokens": 14654874116855,
+        "requests": 470327703,
         "rank": 3
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 11068675094327,
-        "requests": 571852647,
+        "tokens": 10410870478462,
+        "requests": 566498710,
         "rank": 4
       },
       {
         "model": "tencent/hy4-preview-20260827",
-        "tokens": 9328184117722,
-        "requests": 90222919,
+        "tokens": 9308769136468,
+        "requests": 90164790,
         "rank": 5
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 7313097574449,
-        "requests": 59776028,
+        "tokens": 6911966281255,
+        "requests": 58709342,
         "rank": 6
       },
       {
         "model": "stepfun/step-5-preview-20261008",
-        "tokens": 6300479507707,
-        "requests": 24485997,
+        "tokens": 6300216978357,
+        "requests": 24471522,
         "rank": 7
       },
       {
         "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 5043048014940,
-        "requests": 54375544,
+        "tokens": 5670759583070,
+        "requests": 62022729,
         "rank": 8
       },
       {
         "model": "z-ai/glm-5.3-20260816",
-        "tokens": 4624467648995,
-        "requests": 68748255,
+        "tokens": 4417533563783,
+        "requests": 68175478,
         "rank": 9
       },
       {
-        "model": "deepseek/deepseek-v4-flash-20260731",
-        "tokens": 3932024864270,
-        "requests": 322075975,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 4024102906721,
+        "requests": 197057915,
         "rank": 10
       }
     ],
@@ -1913,15 +1913,15 @@
         "value": 4.3
       },
       {
-        "model": "gpt-6.1-terra",
-        "aa_intelligence": 29.2,
-        "prompt_price_per_m": 1000000.0,
+        "model": "sference/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "aa_intelligence": 18.5,
+        "prompt_price_per_m": 500000.0,
         "value": 0.0
       },
       {
-        "model": "gpt-6-luna",
-        "aa_intelligence": 9.4,
-        "prompt_price_per_m": 100000.0,
+        "model": "deepinfra/stepfun-ai/Step-5-Preview",
+        "aa_intelligence": 28.5,
+        "prompt_price_per_m": 1000000.0,
         "value": 0.0
       }
     ]
