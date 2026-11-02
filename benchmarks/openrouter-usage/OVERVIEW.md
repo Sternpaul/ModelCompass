@@ -21,5 +21,5 @@ _Rank by total tokens processed; requests kept alongside._
 | 6 | `anthropic/claude-opus-5.5-20260921` | — |
 | 7 | `stepfun/step-5-preview-20261008` | — |
 | 8 | `minimax/minimax-m3.1-flash-20261019` | — |
-| 9 | `z-ai/glm-5.3-20260816` | — |
-| 10 | `openai/gpt-5.6-luna-20260709` | — |
+| 9 | `openai/gpt-5.6-luna-20260709` | — |
+| 10 | `z-ai/glm-5.3-20260816` | — |

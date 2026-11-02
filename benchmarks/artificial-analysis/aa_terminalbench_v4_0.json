@@ -3,8 +3,8 @@
     "leaderboard": "aa_terminalbench_v4_0",
     "source_url": "https://artificialanalysis.ai",
     "benchmark": "terminalbench_v4_0",
-    "fetched_at": "2026-11-01T11:09:46.383948+00:00",
-    "model_count_with_data": 719
+    "fetched_at": "2026-11-02T12:11:34.160785+00:00",
+    "model_count_with_data": 722
   },
   "models": [
     {
@@ -21,6 +21,11 @@
       "model": "anthropic/claude-sonnet-5-5",
       "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
       "score": 0.636363636363636
+    },
+    {
+      "model": "google/gemini-4-carbon-medium",
+      "name": "Gemini 4 Carbon (Medium)",
+      "score": 0.606060606060606
     },
     {
       "model": "anthropic/claude-opus-5-5",
@@ -273,9 +278,19 @@
       "score": 0.297979797979798
     },
     {
+      "model": "nanbeige/nanbeige4-3-33b",
+      "name": "Nanbeige4.3-33B",
+      "score": 0.297979797979798
+    },
+    {
       "model": "anthropic/claude-haiku-5-5-xhigh",
       "name": "Claude Haiku 5.5 (Xhigh)",
       "score": 0.292929292929293
+    },
+    {
+      "model": "deepseek/deepseek-v4-1-flash-1017-high",
+      "name": "DeepSeek V4.1 Flash 1017 (High)",
+      "score": 0.287878787878788
     },
     {
       "model": "openai/gpt-6-1-terra-non-reasoning",

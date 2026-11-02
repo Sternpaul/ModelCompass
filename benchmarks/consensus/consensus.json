@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-01T11:09:46.794041+00:00",
+    "generated_at": "2026-11-02T12:11:34.362006+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -67,7 +67,7 @@
     {
       "model": "anthropic/claude-opus-5-5",
       "top_appearances": 5,
-      "borda_points": 41,
+      "borda_points": 40,
       "benchmarks": {
         "aa_artificial_analysis_intelligence_index": {
           "rank": 2,
@@ -86,7 +86,7 @@
           "score": 0.669
         },
         "aa_terminalbench_v4_0": {
-          "rank": 4,
+          "rank": 5,
           "score": 0.595959595959596
         }
       }
@@ -121,10 +121,10 @@
     {
       "model": "anthropic/claude-opus-5-5-xhigh",
       "top_appearances": 5,
-      "borda_points": 34,
+      "borda_points": 32,
       "benchmarks": {
         "aa_artificial_analysis_intelligence_index": {
-          "rank": 3,
+          "rank": 4,
           "score": 57.0
         },
         "aa_hle": {
@@ -140,7 +140,7 @@
           "score": 0.65
         },
         "aa_terminalbench_v4_0": {
-          "rank": 5,
+          "rank": 6,
           "score": 0.595959595959596
         }
       }
@@ -173,33 +173,6 @@
       }
     },
     {
-      "model": "openai/gpt-6-astra",
-      "top_appearances": 5,
-      "borda_points": 24,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 4,
-          "score": 56.9
-        },
-        "aa_gpqa": {
-          "rank": 2,
-          "score": 0.961
-        },
-        "aa_terminalbench_v2_1": {
-          "rank": 10,
-          "score": 0.883895131086142
-        },
-        "aa_terminalbench_v4_0": {
-          "rank": 7,
-          "score": 0.590909090909091
-        },
-        "price_performance": {
-          "rank": 8,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "claude-fable",
       "top_appearances": 5,
       "borda_points": 23,
@@ -223,6 +196,33 @@
         "benchlm_reasoning": {
           "rank": 9,
           "score": 84.3
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "top_appearances": 5,
+      "borda_points": 21,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 5,
+          "score": 56.9
+        },
+        "aa_gpqa": {
+          "rank": 2,
+          "score": 0.961
+        },
+        "aa_terminalbench_v2_1": {
+          "rank": 10,
+          "score": 0.883895131086142
+        },
+        "aa_terminalbench_v4_0": {
+          "rank": 8,
+          "score": 0.590909090909091
+        },
+        "price_performance": {
+          "rank": 9,
+          "score": null
         }
       }
     },
@@ -298,10 +298,10 @@
     {
       "model": "openai/gpt-6-astra-xhigh",
       "top_appearances": 4,
-      "borda_points": 25,
+      "borda_points": 23,
       "benchmarks": {
         "aa_artificial_analysis_intelligence_index": {
-          "rank": 5,
+          "rank": 6,
           "score": 55.3
         },
         "aa_gpqa": {
@@ -313,31 +313,8 @@
           "score": 0.891385767790262
         },
         "aa_terminalbench_v4_0": {
-          "rank": 6,
+          "rank": 7,
           "score": 0.595959595959596
-        }
-      }
-    },
-    {
-      "model": "google/gemini-4-argon",
-      "top_appearances": 4,
-      "borda_points": 23,
-      "benchmarks": {
-        "aa_hle": {
-          "rank": 5,
-          "score": 0.571
-        },
-        "aa_scicode": {
-          "rank": 5,
-          "score": 0.618
-        },
-        "aa_terminalbench_v4_0": {
-          "rank": 8,
-          "score": 0.570707070707071
-        },
-        "price_performance": {
-          "rank": 3,
-          "score": null
         }
       }
     },
@@ -361,6 +338,29 @@
         "aa_terminalbench_hard": {
           "rank": 2,
           "score": 0.628787878787879
+        }
+      }
+    },
+    {
+      "model": "google/gemini-4-argon",
+      "top_appearances": 4,
+      "borda_points": 22,
+      "benchmarks": {
+        "aa_hle": {
+          "rank": 5,
+          "score": 0.571
+        },
+        "aa_scicode": {
+          "rank": 5,
+          "score": 0.618
+        },
+        "aa_terminalbench_v4_0": {
+          "rank": 9,
+          "score": 0.570707070707071
+        },
+        "price_performance": {
+          "rank": 3,
+          "score": null
         }
       }
     },
@@ -390,10 +390,10 @@
     {
       "model": "anthropic/claude-sonnet-5-5",
       "top_appearances": 4,
-      "borda_points": 18,
+      "borda_points": 17,
       "benchmarks": {
         "aa_artificial_analysis_intelligence_index": {
-          "rank": 8,
+          "rank": 9,
           "score": 54.2
         },
         "aa_hle": {
@@ -491,25 +491,6 @@
       }
     },
     {
-      "model": "openai/gpt-6-astra-high",
-      "top_appearances": 3,
-      "borda_points": 20,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 6,
-          "score": 54.8
-        },
-        "aa_gpqa": {
-          "rank": 4,
-          "score": 0.949
-        },
-        "aa_terminalbench_v2_1": {
-          "rank": 3,
-          "score": 0.898876404494382
-        }
-      }
-    },
-    {
       "model": "anthropic/claude-fable-5-1-xhigh",
       "top_appearances": 3,
       "borda_points": 20,
@@ -525,6 +506,25 @@
         "aa_terminalbench_v2_1": {
           "rank": 2,
           "score": 0.910112359550562
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-astra-high",
+      "top_appearances": 3,
+      "borda_points": 19,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 7,
+          "score": 54.8
+        },
+        "aa_gpqa": {
+          "rank": 4,
+          "score": 0.949
+        },
+        "aa_terminalbench_v2_1": {
+          "rank": 3,
+          "score": 0.898876404494382
         }
       }
     },
@@ -623,6 +623,21 @@
         "aa_livecodebench": {
           "rank": 3,
           "score": 0.896
+        }
+      }
+    },
+    {
+      "model": "google/gemini-4-carbon-medium",
+      "top_appearances": 2,
+      "borda_points": 15,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 3,
+          "score": 57.7
+        },
+        "aa_terminalbench_v4_0": {
+          "rank": 4,
+          "score": 0.606060606060606
         }
       }
     },
@@ -818,21 +833,6 @@
       }
     },
     {
-      "model": "google/gemini-3-8-flash",
-      "top_appearances": 2,
-      "borda_points": 9,
-      "benchmarks": {
-        "aa_gpqa": {
-          "rank": 3,
-          "score": 0.953
-        },
-        "price_performance": {
-          "rank": 10,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "xiaomi/mimo-v2-6-pro",
       "top_appearances": 2,
       "borda_points": 9,
@@ -850,14 +850,14 @@
     {
       "model": "meta/muse-wonder-full",
       "top_appearances": 2,
-      "borda_points": 9,
+      "borda_points": 8,
       "benchmarks": {
         "aa_scicode": {
           "rank": 4,
           "score": 0.626
         },
         "aa_terminalbench_v4_0": {
-          "rank": 9,
+          "rank": 10,
           "score": 0.570707070707071
         }
       }
@@ -938,21 +938,6 @@
       }
     },
     {
-      "model": "anthropic/claude-opus-5-5-high",
-      "top_appearances": 2,
-      "borda_points": 5,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 10,
-          "score": 51.7
-        },
-        "aa_hle": {
-          "rank": 7,
-          "score": 0.556
-        }
-      }
-    },
-    {
       "model": "anthropic/claude-opus-5",
       "top_appearances": 2,
       "borda_points": 4,
@@ -994,17 +979,6 @@
         "benchlm_reasoning": {
           "rank": 10,
           "score": 83.5
-        }
-      }
-    },
-    {
-      "model": "Claude Opus 5.5 (Max)",
-      "top_appearances": 1,
-      "borda_points": 10,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 1,
-          "score": null
         }
       }
     },
@@ -1097,17 +1071,6 @@
       }
     },
     {
-      "model": "Gemini 4 Carbon (High)",
-      "top_appearances": 1,
-      "borda_points": 9,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 2,
-          "score": null
-        }
-      }
-    },
-    {
       "model": "openai/gpt-5-codex",
       "top_appearances": 1,
       "borda_points": 9,
@@ -1185,13 +1148,13 @@
       }
     },
     {
-      "model": "Claude Sonnet 5.5 (Max)",
+      "model": "google/gemini-3-8-flash",
       "top_appearances": 1,
       "borda_points": 8,
       "benchmarks": {
-        "arena_agent": {
+        "aa_gpqa": {
           "rank": 3,
-          "score": null
+          "score": 0.953
         }
       }
     },
@@ -1279,17 +1242,6 @@
       "benchmarks": {
         "or_usage_tokens": {
           "rank": 3,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Fable 5.1 (Max)",
-      "top_appearances": 1,
-      "borda_points": 7,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 4,
           "score": null
         }
       }
@@ -1389,17 +1341,6 @@
       "benchmarks": {
         "price_performance": {
           "rank": 4,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "GPT-6 Astra (Max)",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 5,
           "score": null
         }
       }
@@ -1515,23 +1456,12 @@
       }
     },
     {
-      "model": "meta/muse-spark-open",
+      "model": "step-5-preview",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
         "price_performance": {
           "rank": 5,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "GPT-6.1 Sol (Max)",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 6,
           "score": null
         }
       }
@@ -1636,23 +1566,12 @@
       }
     },
     {
-      "model": "thinkingmachines/inkling",
+      "model": "meta/muse-spark-open",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
         "price_performance": {
           "rank": 6,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "Gemini 4 Argon (High)",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 7,
           "score": null
         }
       }
@@ -1669,17 +1588,6 @@
       }
     },
     {
-      "model": "openai/gpt-6-1-sol",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 7,
-          "score": 54.5
-        }
-      }
-    },
-    {
       "model": "google/gemini-3-1-pro-preview",
       "top_appearances": 1,
       "borda_points": 4,
@@ -1687,6 +1595,17 @@
         "aa_gpqa": {
           "rank": 7,
           "score": 0.941
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-opus-5-5-high",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "aa_hle": {
+          "rank": 7,
+          "score": 0.556
         }
       }
     },
@@ -1812,23 +1731,12 @@
       }
     },
     {
-      "model": "meta/muse-wonder",
+      "model": "thinkingmachines/inkling",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
         "price_performance": {
           "rank": 7,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "GPT-6.1 Terra (Max)",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 8,
           "score": null
         }
       }
@@ -1841,6 +1749,17 @@
         "aa_aime_25": {
           "rank": 8,
           "score": 0.956666666666667
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-1-sol",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 8,
+          "score": 54.5
         }
       }
     },
@@ -1988,12 +1907,12 @@
       }
     },
     {
-      "model": "Muse Wonder Full (Max)",
+      "model": "meta/muse-wonder",
       "top_appearances": 1,
-      "borda_points": 2,
+      "borda_points": 3,
       "benchmarks": {
-        "arena_agent": {
-          "rank": 9,
+        "price_performance": {
+          "rank": 8,
           "score": null
         }
       }
@@ -2006,17 +1925,6 @@
         "aa_aime": {
           "rank": 9,
           "score": 0.893333333333333
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-6-1-sol-xhigh",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "aa_artificial_analysis_intelligence_index": {
-          "rank": 9,
-          "score": 52.3
         }
       }
     },
@@ -2131,34 +2039,12 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-20260816",
+      "model": "openai/gpt-5.6-luna-20260709",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "or_usage_tokens": {
           "rank": 9,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "Qwen/Qwen3.8-27B",
-      "top_appearances": 1,
-      "borda_points": 2,
-      "benchmarks": {
-        "price_performance": {
-          "rank": 9,
-          "score": null
-        }
-      }
-    },
-    {
-      "model": "Claude Fable 5 (High)",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "arena_agent": {
-          "rank": 10,
           "score": null
         }
       }
@@ -2182,6 +2068,17 @@
         "aa_aime_25": {
           "rank": 10,
           "score": 0.946666666666667
+        }
+      }
+    },
+    {
+      "model": "openai/gpt-6-1-sol-xhigh",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "aa_artificial_analysis_intelligence_index": {
+          "rank": 10,
+          "score": 52.3
         }
       }
     },
@@ -2226,17 +2123,6 @@
         "aa_terminalbench_hard": {
           "rank": 10,
           "score": 0.583333333333333
-        }
-      }
-    },
-    {
-      "model": "anthropic/claude-sonnet-5-5-xhigh",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "aa_terminalbench_v4_0": {
-          "rank": 10,
-          "score": 0.570707070707071
         }
       }
     },
@@ -2296,11 +2182,22 @@
       }
     },
     {
-      "model": "openai/gpt-5.6-luna-20260709",
+      "model": "z-ai/glm-5.3-20260816",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "or_usage_tokens": {
+          "rank": 10,
+          "score": null
+        }
+      }
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "price_performance": {
           "rank": 10,
           "score": null
         }
