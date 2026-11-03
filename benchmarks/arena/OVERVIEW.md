@@ -20,6 +20,13 @@ _Human-preference Elo._
 
 _No models yet._
 
+## Image Edit Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
 ## Image To Video Arena
 
 _Human-preference Elo._
@@ -34,6 +41,13 @@ _Human-preference Elo._
 
 _No models yet._
 
+## Text Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
 ## Text To Image Arena
 
 _Human-preference Elo._
@@ -41,7 +55,21 @@ _Human-preference Elo._
 
 _No models yet._
 
+## Text To Video Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
 ## Video Edit Arena
+
+_Human-preference Elo._
+
+
+_No models yet._
+
+## Vision Arena
 
 _Human-preference Elo._
 
