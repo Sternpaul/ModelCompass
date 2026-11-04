@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T11:46:36.898188+00:00",
+    "generated_at": "2026-11-04T11:58:25.992460+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_code": {
@@ -78,7 +78,7 @@
       "aa_artificial_analysis_intelligence_index": {
         "source": "https://artificialanalysis.ai",
         "subdir": "artificial-analysis",
-        "model_count": 94,
+        "model_count": 97,
         "top_n": 10
       },
       "aa_gpqa": {
@@ -222,13 +222,13 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 586,
+        "model_count": 589,
         "top_n": 10
       },
       "price_performance": {
         "source": "unknown",
         "subdir": "price-performance",
-        "model_count": 36,
+        "model_count": 37,
         "top_n": 10
       }
     }
@@ -352,22 +352,22 @@
       {
         "model": "google/gemini-4-carbon",
         "name": "Gemini 4 Carbon (High)",
-        "score": 59.4
+        "score": 60.0
       },
       {
         "model": "anthropic/claude-opus-5-5",
         "name": "Claude Opus 5.5 (Max, Default Fallback)",
-        "score": 58.4
+        "score": 59.1
       },
       {
         "model": "google/gemini-4-carbon-medium",
         "name": "Gemini 4 Carbon (Medium)",
-        "score": 57.7
+        "score": 58.3
       },
       {
         "model": "anthropic/claude-opus-5-5-xhigh",
         "name": "Claude Opus 5.5 (Xhigh, Default Fallback)",
-        "score": 57.0
+        "score": 57.4
       },
       {
         "model": "openai/gpt-6-astra",
@@ -387,17 +387,17 @@
       {
         "model": "openai/gpt-6-1-sol",
         "name": "GPT-6.1 Sol (Max)",
-        "score": 54.5
+        "score": 54.6
       },
       {
         "model": "anthropic/claude-sonnet-5-5",
         "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
-        "score": 54.2
+        "score": 54.5
       },
       {
         "model": "google/gemini-4-carbon-low",
         "name": "Gemini 4 Carbon (Low)",
-        "score": 53.7
+        "score": 54.2
       }
     ],
     "aa_gpqa": [
@@ -1769,69 +1769,69 @@
         "board": "AA Intelligence",
         "model": "xai/grok-4-7",
         "previous": 34.3,
-        "current": 35.3,
-        "delta": -1.0
+        "current": 35.5,
+        "delta": -1.2
       }
     ],
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 50447379559804,
-        "requests": 814740392,
+        "tokens": 54751226183177,
+        "requests": 863047970,
         "rank": 1
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 15332395296941,
-        "requests": 698937029,
+        "tokens": 16422546087868,
+        "requests": 688570972,
         "rank": 2
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 15085013644173,
-        "requests": 483094198,
+        "tokens": 15614132008722,
+        "requests": 492295513,
         "rank": 3
       },
       {
-        "model": "openai/gpt-6-luna-20260922",
-        "tokens": 9308138053818,
-        "requests": 549791307,
+        "model": "tencent/hy4-preview-20260827",
+        "tokens": 9482662867556,
+        "requests": 90054540,
         "rank": 4
       },
       {
-        "model": "tencent/hy4-preview-20260827",
-        "tokens": 9250393131990,
-        "requests": 89202821,
+        "model": "openai/gpt-6-luna-20260922",
+        "tokens": 9332919589978,
+        "requests": 554039461,
         "rank": 5
       },
       {
-        "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 6673269520840,
-        "requests": 57881471,
+        "model": "stepfun/step-5-preview-20261008",
+        "tokens": 6676268174755,
+        "requests": 25918858,
         "rank": 6
       },
       {
-        "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 6461220652080,
-        "requests": 73147987,
+        "model": "anthropic/claude-opus-5.5-20260921",
+        "tokens": 6672216712301,
+        "requests": 57769639,
         "rank": 7
       },
       {
-        "model": "stepfun/step-5-preview-20261008",
-        "tokens": 6458343836783,
-        "requests": 25083605,
+        "model": "minimax/minimax-m3.1-flash-20261019",
+        "tokens": 6503479467564,
+        "requests": 74375042,
         "rank": 8
       },
       {
         "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 5347262050344,
-        "requests": 185603606,
+        "tokens": 5351197599560,
+        "requests": 177751990,
         "rank": 9
       },
       {
         "model": "openai/gpt-6.1-sol-20260929",
-        "tokens": 3930289353484,
-        "requests": 125632103,
+        "tokens": 4052823406582,
+        "requests": 133527326,
         "rank": 10
       }
     ],
@@ -1862,9 +1862,9 @@
       },
       {
         "model": "meta/muse-spark-open",
-        "aa_intelligence": 24.7,
+        "aa_intelligence": 24.9,
         "prompt_price_per_m": 1.25,
-        "value": 19.76
+        "value": 19.92
       },
       {
         "model": "thinkingmachines/inkling",
@@ -1874,26 +1874,26 @@
       },
       {
         "model": "meta/muse-wonder",
-        "aa_intelligence": 43.3,
+        "aa_intelligence": 43.6,
         "prompt_price_per_m": 4.0,
-        "value": 10.82
+        "value": 10.9
       },
       {
         "model": "openai/gpt-6-astra",
-        "aa_intelligence": 43,
+        "aa_intelligence": 43.3,
         "prompt_price_per_m": 10.0,
-        "value": 4.3
+        "value": 4.33
       },
       {
-        "model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
-        "aa_intelligence": 5.5,
-        "prompt_price_per_m": 70000.0,
+        "model": "gpt-6-luna",
+        "aa_intelligence": 9.4,
+        "prompt_price_per_m": 100000.0,
         "value": 0.0
       },
       {
-        "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
-        "aa_intelligence": 11.8,
-        "prompt_price_per_m": 500000.0,
+        "model": "gpt-6.1-terra",
+        "aa_intelligence": 29.4,
+        "prompt_price_per_m": 1000000.0,
         "value": 0.0
       }
     ]
