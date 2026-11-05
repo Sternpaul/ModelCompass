@@ -14,12 +14,12 @@ _Rank by total tokens processed; requests kept alongside._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `deepseek/deepseek-v4.1-flash-20261017` | — |
-| 2 | `z-ai/glm-5.3-flash-20260826` | — |
-| 3 | `deepseek/deepseek-v4.1-flash-20260910` | — |
-| 4 | `tencent/hy4-preview-20260827` | — |
-| 5 | `openai/gpt-6-luna-20260922` | — |
-| 6 | `stepfun/step-5-preview-20261008` | — |
-| 7 | `anthropic/claude-opus-5.5-20260921` | — |
+| 2 | `deepseek/deepseek-v4.1-flash-20260910` | — |
+| 3 | `z-ai/glm-5.3-flash-20260826` | — |
+| 4 | `openai/gpt-6-luna-20260922` | — |
+| 5 | `tencent/hy4-preview-20260827` | — |
+| 6 | `anthropic/claude-opus-5.5-20260921` | — |
+| 7 | `stepfun/step-5-preview-20261008` | — |
 | 8 | `minimax/minimax-m3.1-flash-20261019` | — |
 | 9 | `openai/gpt-5.6-luna-20260709` | — |
 | 10 | `openai/gpt-6.1-sol-20260929` | — |
