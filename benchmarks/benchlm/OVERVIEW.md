@@ -141,8 +141,8 @@ _Logical reasoning category score._
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 91.600 |
 | 2 | `gpt-6-1-sol` | 88.800 |
-| 3 | `gemini-4-argon` | 85.200 |
-| 4 | `inkling-2-small` | 85.100 |
+| 3 | `inkling-2-small` | 86.100 |
+| 4 | `gemini-4-argon` | 85.200 |
 | 5 | `claude-opus-5-5` | 84.400 |
 | 6 | `claude-fable-5-1` | 83.500 |
 | 7 | `claude-fable` | 82.600 |

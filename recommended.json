@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T11:57:40.972788+00:00",
+    "generated_at": "2026-11-07T10:57:45.797623+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_code": {
@@ -120,7 +120,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 598,
+        "model_count": 599,
         "top_n": 10
       }
     }
@@ -142,21 +142,21 @@
         "name": "GPT-6 Astra",
         "creator": "OpenAI",
         "score": 85.9,
-        "category_rank": 7
+        "category_rank": 8
       },
       {
         "model": "claude-opus-5",
         "name": "Claude Opus 5",
         "creator": "Anthropic",
         "score": 84.6,
-        "category_rank": 3
+        "category_rank": 4
       },
       {
         "model": "gpt-5-6-sol",
         "name": "GPT-5.6 Sol",
         "creator": "OpenAI",
         "score": 83.7,
-        "category_rank": 14
+        "category_rank": 13
       },
       {
         "model": "claude-mythos-5",
@@ -170,14 +170,14 @@
         "name": "Claude Fable 5",
         "creator": "Anthropic",
         "score": 83.3,
-        "category_rank": 8
+        "category_rank": 7
       },
       {
         "model": "qwen3-8-max",
         "name": "Qwen3.8 Max",
         "creator": "Alibaba",
         "score": 83.3,
-        "category_rank": 16
+        "category_rank": 15
       },
       {
         "model": "kimi-3-1-pro",
@@ -198,14 +198,14 @@
         "name": "Qwen3.8-27B",
         "creator": "Alibaba",
         "score": 82.1,
-        "category_rank": 21
+        "category_rank": 20
       },
       {
         "model": "ling-3-1-flash",
         "name": "Ling 3.1 Flash",
         "creator": "InclusionAI",
         "score": 81.7,
-        "category_rank": 19
+        "category_rank": 18
       }
     ],
     "benchlm_coding": [
@@ -386,14 +386,14 @@
         "name": "Muse Spark 1.1",
         "creator": "Meta",
         "score": 88.2,
-        "category_rank": 23
+        "category_rank": 22
       },
       {
         "model": "claude-opus-4-8",
         "name": "Claude Opus 4.8",
         "creator": "Anthropic",
         "score": 85.2,
-        "category_rank": 16
+        "category_rank": 15
       },
       {
         "model": "claude-opus-5-5",
@@ -656,18 +656,18 @@
         "category_rank": 2
       },
       {
+        "model": "inkling-2-small",
+        "name": "Inkling 2 Small",
+        "creator": "Thinking Machines Lab",
+        "score": 86.1,
+        "category_rank": null
+      },
+      {
         "model": "gemini-4-argon",
         "name": "Gemini 4 Argon",
         "creator": "Google",
         "score": 85.2,
         "category_rank": 3
-      },
-      {
-        "model": "inkling-2-small",
-        "name": "Inkling 2 Small",
-        "creator": "Thinking Machines Lab",
-        "score": 85.1,
-        "category_rank": null
       },
       {
         "model": "claude-opus-5-5",
@@ -827,62 +827,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 56486111532750,
-        "requests": 881057797,
+        "tokens": 56150913689656,
+        "requests": 888286004,
         "rank": 1
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 16525574259968,
-        "requests": 505643335,
+        "tokens": 17242058764924,
+        "requests": 522728556,
         "rank": 2
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 15028617389744,
-        "requests": 559257340,
+        "tokens": 14069479115947,
+        "requests": 485402385,
         "rank": 3
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 7331830769727,
-        "requests": 534392073,
+        "tokens": 7297137881933,
+        "requests": 548553420,
         "rank": 4
       },
       {
-        "model": "stepfun/step-5-preview-20261008",
-        "tokens": 6666169973126,
-        "requests": 25875744,
+        "model": "tencent/hy4-20261104",
+        "tokens": 7054859545805,
+        "requests": 49679816,
         "rank": 5
       },
       {
-        "model": "tencent/hy4-preview-20260827",
-        "tokens": 6583083075828,
-        "requests": 61070087,
+        "model": "stepfun/step-5-preview-20261008",
+        "tokens": 6827550544217,
+        "requests": 26497075,
         "rank": 6
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 6537784839771,
-        "requests": 55655550,
+        "tokens": 6596627524983,
+        "requests": 55926075,
         "rank": 7
       },
       {
         "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 6039477098450,
-        "requests": 69805220,
+        "tokens": 5672435132628,
+        "requests": 65008966,
         "rank": 8
       },
       {
-        "model": "openai/gpt-5.6-luna-20260709",
-        "tokens": 5013003425725,
-        "requests": 163286879,
+        "model": "tencent/hy4-preview-20260827",
+        "tokens": 5108989598450,
+        "requests": 46501168,
         "rank": 9
       },
       {
-        "model": "tencent/hy4-20261104",
-        "tokens": 4009020957603,
-        "requests": 28222834,
+        "model": "openai/gpt-5.6-luna-20260709",
+        "tokens": 4083290140898,
+        "requests": 149570512,
         "rank": 10
       }
     ]
