@@ -21,5 +21,5 @@ _Rank by total tokens processed; requests kept alongside._
 | 6 | `stepfun/step-5-preview-20261008` | — |
 | 7 | `anthropic/claude-opus-5.5-20260921` | — |
 | 8 | `minimax/minimax-m3.1-flash-20261019` | — |
-| 9 | `tencent/hy4-preview-20260827` | — |
-| 10 | `moonshotai/kimi-k3.1-pro-20261023` | — |
+| 9 | `moonshotai/kimi-k3.1-pro-20261023` | — |
+| 10 | `stealth/crouton-alpha` | — |
