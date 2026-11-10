@@ -8,6 +8,7 @@ Every benchmark lives in its own subfolder. Each subfolder contains raw `*.json`
 
 Human-preference Elo from blind pairwise battles. Higher Elo = more preferred by human voters.
 
+- [Agent Arena](./arena/arena_agent.json)
 - [Code Arena](./arena/arena_code.json)
 - [Document Arena](./arena/arena_document.json)
 - [Image Edit Arena](./arena/arena_image-edit.json)
