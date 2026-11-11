@@ -86,15 +86,15 @@ _Quantitative reasoning category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 93.800 |
-| 2 | `claude-opus-5-5` | 93.800 |
+| 2 | `claude-fable-5-2` | 93.800 |
 | 3 | `gpt-6-1-sol` | 93.800 |
-| 4 | `gpt-6-1-terra` | 93.800 |
-| 5 | `gpt-6-sol` | 93.800 |
-| 6 | `claude-fable-5-1` | 93.300 |
-| 7 | `claude-fable` | 92.500 |
-| 8 | `gpt-5-6-sol` | 92.300 |
-| 9 | `claude-sonnet-5-5` | 91.700 |
-| 10 | `gpt-5-5-pro` | 90.500 |
+| 4 | `claude-opus-5-5` | 93.300 |
+| 5 | `gemini-4-carbon` | 93.300 |
+| 6 | `gpt-6-1-terra` | 92.900 |
+| 7 | `gpt-6-sol` | 92.100 |
+| 8 | `claude-fable-5-1` | 92 |
+| 9 | `claude-fable` | 90.400 |
+| 10 | `gpt-5-6-sol` | 90.300 |
 
 ## Multilingual
 
@@ -140,12 +140,12 @@ _Logical reasoning category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 90.600 |
-| 2 | `claude-fable-5-2` | 88.100 |
-| 3 | `gpt-6-1-sol` | 88 |
-| 4 | `inkling-2-small` | 86.100 |
-| 5 | `gemini-4-argon` | 84.500 |
-| 6 | `claude-opus-5-5` | 84.400 |
-| 7 | `claude-fable-5-1` | 83.500 |
-| 8 | `claude-fable` | 82.600 |
-| 9 | `sakana-fugu-ultra` | 81.900 |
-| 10 | `kimi-3-1-pro` | 80.800 |
+| 2 | `gemini-4-carbon` | 90.500 |
+| 3 | `claude-fable-5-2` | 88.100 |
+| 4 | `gpt-6-1-sol` | 88 |
+| 5 | `inkling-2-small` | 86.100 |
+| 6 | `gemini-4-argon` | 84.500 |
+| 7 | `claude-opus-5-5` | 84.400 |
+| 8 | `claude-fable-5-1` | 83.500 |
+| 9 | `claude-fable` | 82.600 |
+| 10 | `sakana-fugu-ultra` | 81.900 |
