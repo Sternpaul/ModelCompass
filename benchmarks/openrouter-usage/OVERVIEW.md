@@ -22,4 +22,4 @@ _Rank by total tokens processed; requests kept alongside._
 | 7 | `anthropic/claude-opus-5.5-20260921` | — |
 | 8 | `stealth/crouton-alpha` | — |
 | 9 | `moonshotai/kimi-k3.1-pro-20261023` | — |
-| 10 | `minimax/minimax-m3.1-flash-20261019` | — |
+| 10 | `openai/gpt-6.1-sol-20260929` | — |
