@@ -18,8 +18,8 @@ _Rank by total tokens processed; requests kept alongside._
 | 3 | `deepseek/deepseek-v4.1-flash-20260910` | — |
 | 4 | `z-ai/glm-5.3-flash-20260826` | — |
 | 5 | `openai/gpt-6-luna-20260922` | — |
-| 6 | `stepfun/step-5-preview-20261008` | — |
-| 7 | `anthropic/claude-opus-5.5-20260921` | — |
-| 8 | `stealth/crouton-alpha` | — |
-| 9 | `moonshotai/kimi-k3.1-pro-20261023` | — |
-| 10 | `openai/gpt-6.1-sol-20260929` | — |
+| 6 | `anthropic/claude-opus-5.5-20260921` | — |
+| 7 | `stepfun/step-5-preview-20261008` | — |
+| 8 | `moonshotai/kimi-k3.1-pro-20261023` | — |
+| 9 | `openai/gpt-6.1-sol-20260929` | — |
+| 10 | `z-ai/glm-5.3-20260816` | — |

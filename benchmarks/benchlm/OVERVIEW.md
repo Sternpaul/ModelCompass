@@ -34,13 +34,13 @@ _Code generation category score._
 | 1 | `claude-fable-5-1` | 91.100 |
 | 2 | `claude-opus-5` | 89.200 |
 | 3 | `claude-fable` | 89.200 |
-| 4 | `claude-sonnet-5-5` | 87.500 |
-| 5 | `claude-fable-5-2` | 87.500 |
-| 6 | `claude-opus-5-5` | 87.500 |
-| 7 | `claude-mythos-5` | 86.900 |
-| 8 | `deepseek-v3-1-reasoning` | 81.700 |
-| 9 | `grok-3-mini` | 81.700 |
-| 10 | `gemini-3-7-flash` | 78.600 |
+| 4 | `claude-sonnet-5-5` | 88.200 |
+| 5 | `claude-fable-5-2` | 88.200 |
+| 6 | `claude-opus-5-5` | 88.200 |
+| 7 | `claude-mythos-5` | 87.600 |
+| 8 | `deepseek-v3-1-reasoning` | 82.400 |
+| 9 | `grok-3-mini` | 82.400 |
+| 10 | `gemini-3-1-pro` | 79.400 |
 
 ## Instruction Following
 
@@ -68,15 +68,15 @@ _Factual knowledge category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `claude-fable-5-1` | 95.400 |
-| 2 | `claude-opus-5` | 94 |
-| 3 | `claude-fable-5-2` | 94 |
-| 4 | `claude-mythos-5` | 91.300 |
-| 5 | `kimi-3-1-pro` | 90.200 |
-| 6 | `muse-spark-1-1` | 86.900 |
-| 7 | `claude-opus-5-5` | 85.500 |
-| 8 | `claude-fable` | 85.100 |
-| 9 | `gpt-6-astra` | 84.300 |
-| 10 | `gpt-6-1-sol` | 84.200 |
+| 2 | `claude-fable-5-2` | 94.300 |
+| 3 | `claude-opus-5` | 94 |
+| 4 | `claude-mythos-5` | 91.600 |
+| 5 | `kimi-3-1-pro` | 90.500 |
+| 6 | `muse-spark-1-1` | 87.800 |
+| 7 | `claude-opus-5-5` | 85.900 |
+| 8 | `claude-fable` | 85.300 |
+| 9 | `gpt-6-astra` | 84.700 |
+| 10 | `claude-opus-4-8` | 84.700 |
 
 ## Math
 

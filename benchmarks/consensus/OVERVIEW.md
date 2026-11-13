@@ -5,16 +5,16 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | Rank | Model | Top-10 Appearances | Borda Points | Benchmarks |
 |------|-------|--------------------:|-------------:|------------|
 | 1 | `gpt-6-astra` | 9 | 62 | benchlm_agentic, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning… |
-| 2 | `claude-opus-5` | 6 | 44 | benchlm_agentic, benchlm_coding, benchlm_knowledge, deepswe_v1_1 |
-| 3 | `claude-fable-5-2` | 5 | 36 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
+| 2 | `claude-opus-5` | 6 | 43 | benchlm_agentic, benchlm_coding, benchlm_knowledge, deepswe_v1_1 |
+| 3 | `claude-fable-5-2` | 5 | 37 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
 | 4 | `claude-fable` | 5 | 21 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
 | 5 | `claude-fable-5-1` | 4 | 26 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
 | 6 | `claude-mythos-5` | 4 | 25 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded |
 | 7 | `claude-opus-5-5` | 4 | 20 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
-| 8 | `gpt-6-1-sol` | 4 | 19 | benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
-| 9 | `gpt-5-6-sol` | 4 | 17 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
-| 10 | `qwen3-8-max` | 3 | 23 | benchlm_agentic, benchlm_instructionFollowing, benchlm_multimodalGrounded |
-| 11 | `kimi-3-1-pro` | 3 | 20 | benchlm_agentic, benchlm_knowledge, benchlm_multimodalGrounded |
+| 8 | `gpt-5-6-sol` | 4 | 17 | benchlm_agentic, benchlm_math, benchlm_multimodalGrounded, deepswe_v1_1 |
+| 9 | `qwen3-8-max` | 3 | 23 | benchlm_agentic, benchlm_instructionFollowing, benchlm_multimodalGrounded |
+| 10 | `kimi-3-1-pro` | 3 | 20 | benchlm_agentic, benchlm_knowledge, benchlm_multimodalGrounded |
+| 11 | `gpt-6-1-sol` | 3 | 18 | benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
 | 12 | `gemini-3-8-flash` | 3 | 12 | benchlm_multimodalGrounded, deepswe_v1_1 |
 | 13 | `gemini-4-carbon` | 2 | 15 | benchlm_math, benchlm_reasoning |
 | 14 | `gpt-6-1-terra` | 2 | 13 | benchlm_math, benchlm_multimodalGrounded |
