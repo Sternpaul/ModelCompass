@@ -22,4 +22,4 @@ _Rank by total tokens processed; requests kept alongside._
 | 7 | `stepfun/step-5-preview-20261008` | — |
 | 8 | `moonshotai/kimi-k3.1-pro-20261023` | — |
 | 9 | `openai/gpt-6.1-sol-20260929` | — |
-| 10 | `z-ai/glm-5.3-20260816` | — |
+| 10 | `xiaomi/mimo-v2.6-flash-20260921` | — |
