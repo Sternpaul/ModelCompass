@@ -73,10 +73,10 @@ _Factual knowledge category score._
 | 4 | `claude-mythos-5` | 91.600 |
 | 5 | `kimi-3-1-pro` | 90.500 |
 | 6 | `muse-spark-1-1` | 87.800 |
-| 7 | `claude-opus-5-5` | 85.900 |
-| 8 | `claude-fable` | 85.300 |
-| 9 | `gpt-6-astra` | 84.700 |
-| 10 | `claude-opus-4-8` | 84.700 |
+| 7 | `claude-opus-5-5` | 86.300 |
+| 8 | `claude-fable` | 85.700 |
+| 9 | `gpt-6-astra` | 85.100 |
+| 10 | `gpt-6-1-sol` | 85 |
 
 ## Math
 

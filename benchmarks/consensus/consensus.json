@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T11:51:31.713635+00:00",
+    "generated_at": "2026-11-16T12:34:21.100691+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -17,7 +17,7 @@
         },
         "benchlm_knowledge": {
           "rank": 9,
-          "score": 84.7
+          "score": 85.1
         },
         "benchlm_math": {
           "rank": 1,
@@ -102,7 +102,7 @@
         },
         "benchlm_knowledge": {
           "rank": 8,
-          "score": 85.3
+          "score": 85.7
         },
         "benchlm_math": {
           "rank": 9,
@@ -171,7 +171,7 @@
         },
         "benchlm_knowledge": {
           "rank": 7,
-          "score": 85.9
+          "score": 86.3
         },
         "benchlm_math": {
           "rank": 4,
@@ -180,6 +180,29 @@
         "benchlm_reasoning": {
           "rank": 7,
           "score": 84.4
+        }
+      }
+    },
+    {
+      "model": "gpt-6-1-sol",
+      "top_appearances": 4,
+      "borda_points": 19,
+      "benchmarks": {
+        "benchlm_knowledge": {
+          "rank": 10,
+          "score": 85
+        },
+        "benchlm_math": {
+          "rank": 3,
+          "score": 93.8
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 8,
+          "score": 88
+        },
+        "benchlm_reasoning": {
+          "rank": 4,
+          "score": 88
         }
       }
     },
@@ -241,25 +264,6 @@
         "benchlm_multimodalGrounded": {
           "rank": 1,
           "score": 95.3
-        }
-      }
-    },
-    {
-      "model": "gpt-6-1-sol",
-      "top_appearances": 3,
-      "borda_points": 18,
-      "benchmarks": {
-        "benchlm_math": {
-          "rank": 3,
-          "score": 93.8
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 8,
-          "score": 88
-        },
-        "benchlm_reasoning": {
-          "rank": 4,
-          "score": 88
         }
       }
     },
@@ -683,7 +687,7 @@
       }
     },
     {
-      "model": "moonshotai/kimi-k3.1-pro-20261023",
+      "model": "z-ai/glm-5.3-20260816",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -723,17 +727,6 @@
         "benchlm_instructionFollowing": {
           "rank": 10,
           "score": 93.3
-        }
-      }
-    },
-    {
-      "model": "claude-opus-4-8",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "benchlm_knowledge": {
-          "rank": 10,
-          "score": 84.7
         }
       }
     },
