@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T12:58:06.779899+00:00",
+    "generated_at": "2026-11-18T12:51:50.425406+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -9,27 +9,27 @@
     {
       "model": "gpt-6-astra",
       "top_appearances": 9,
-      "borda_points": 62,
+      "borda_points": 58,
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 1,
-          "score": 85.9
+          "score": 86.4
         },
         "benchlm_knowledge": {
           "rank": 9,
-          "score": 85.1
+          "score": 85.5
         },
         "benchlm_math": {
-          "rank": 1,
-          "score": 93.8
+          "rank": 4,
+          "score": 93.4
         },
         "benchlm_multimodalGrounded": {
           "rank": 7,
-          "score": 88
+          "score": 88.2
         },
         "benchlm_reasoning": {
-          "rank": 1,
-          "score": 90.6
+          "rank": 2,
+          "score": 89.3
         },
         "deepswe_v1_1": {
           "rank": 8,
@@ -40,19 +40,19 @@
     {
       "model": "claude-opus-5",
       "top_appearances": 6,
-      "borda_points": 43,
+      "borda_points": 42,
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 2,
-          "score": 84.6
+          "score": 85.1
         },
         "benchlm_coding": {
-          "rank": 2,
-          "score": 89.2
+          "rank": 3,
+          "score": 88.9
         },
         "benchlm_knowledge": {
           "rank": 3,
-          "score": 94
+          "score": 93.7
         },
         "deepswe_v1_1": {
           "rank": 7,
@@ -63,100 +63,142 @@
     {
       "model": "claude-fable-5-2",
       "top_appearances": 5,
-      "borda_points": 37,
+      "borda_points": 38,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 5,
-          "score": 88.2
+          "score": 87.9
         },
         "benchlm_knowledge": {
           "rank": 2,
-          "score": 94.3
+          "score": 94
         },
         "benchlm_math": {
-          "rank": 2,
+          "rank": 1,
           "score": 93.8
         },
         "benchlm_multimodalGrounded": {
-          "rank": 6,
-          "score": 89.6
-        },
-        "benchlm_reasoning": {
-          "rank": 3,
-          "score": 88.1
-        }
-      }
-    },
-    {
-      "model": "claude-fable",
-      "top_appearances": 5,
-      "borda_points": 21,
-      "benchmarks": {
-        "benchlm_agentic": {
           "rank": 5,
-          "score": 83.3
-        },
-        "benchlm_coding": {
-          "rank": 3,
-          "score": 89.2
-        },
-        "benchlm_knowledge": {
-          "rank": 8,
-          "score": 85.7
-        },
-        "benchlm_math": {
-          "rank": 9,
-          "score": 90.4
+          "score": 89.8
         },
         "benchlm_reasoning": {
-          "rank": 9,
-          "score": 82.6
+          "rank": 4,
+          "score": 86.7
         }
       }
     },
     {
       "model": "claude-fable-5-1",
       "top_appearances": 4,
-      "borda_points": 26,
+      "borda_points": 24,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 1,
-          "score": 91.1
+          "score": 90.8
         },
         "benchlm_knowledge": {
           "rank": 1,
-          "score": 95.4
+          "score": 95.2
         },
         "benchlm_math": {
-          "rank": 8,
-          "score": 92
+          "rank": 9,
+          "score": 90
         },
         "benchlm_reasoning": {
-          "rank": 8,
-          "score": 83.5
+          "rank": 9,
+          "score": 82.2
         }
       }
     },
     {
       "model": "claude-mythos-5",
       "top_appearances": 4,
-      "borda_points": 25,
+      "borda_points": 23,
       "benchmarks": {
         "benchlm_agentic": {
-          "rank": 4,
-          "score": 83.7
+          "rank": 6,
+          "score": 84.1
         },
         "benchlm_coding": {
           "rank": 7,
-          "score": 87.6
+          "score": 87.3
         },
         "benchlm_knowledge": {
           "rank": 4,
-          "score": 91.6
+          "score": 91.3
         },
         "benchlm_multimodalGrounded": {
           "rank": 4,
-          "score": 90.8
+          "score": 91
+        }
+      }
+    },
+    {
+      "model": "gpt-6-2-astra",
+      "top_appearances": 4,
+      "borda_points": 23,
+      "benchmarks": {
+        "benchlm_knowledge": {
+          "rank": 10,
+          "score": 84.9
+        },
+        "benchlm_math": {
+          "rank": 2,
+          "score": 93.8
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 8,
+          "score": 88.2
+        },
+        "benchlm_reasoning": {
+          "rank": 1,
+          "score": 91.3
+        }
+      }
+    },
+    {
+      "model": "claude-fable",
+      "top_appearances": 4,
+      "borda_points": 21,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 3,
+          "score": 84.2
+        },
+        "benchlm_coding": {
+          "rank": 2,
+          "score": 89
+        },
+        "benchlm_knowledge": {
+          "rank": 8,
+          "score": 85.6
+        },
+        "benchlm_math": {
+          "rank": 10,
+          "score": 88.5
+        }
+      }
+    },
+    {
+      "model": "kimi-3-1-pro",
+      "top_appearances": 4,
+      "borda_points": 20,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 8,
+          "score": 82.8
+        },
+        "benchlm_knowledge": {
+          "rank": 5,
+          "score": 90.1
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 1,
+          "score": 95.2
+        },
+        "benchlm_reasoning": {
+          "rank": 10,
+          "score": 81.5
         }
       }
     },
@@ -167,60 +209,71 @@
       "benchmarks": {
         "benchlm_coding": {
           "rank": 6,
-          "score": 88.2
+          "score": 87.9
         },
         "benchlm_knowledge": {
           "rank": 7,
-          "score": 86.3
+          "score": 86.1
         },
         "benchlm_math": {
-          "rank": 4,
-          "score": 93.3
+          "rank": 5,
+          "score": 92
         },
         "benchlm_reasoning": {
-          "rank": 7,
-          "score": 84.4
+          "rank": 6,
+          "score": 83.1
+        }
+      }
+    },
+    {
+      "model": "qwen3-8-max",
+      "top_appearances": 3,
+      "borda_points": 25,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 4,
+          "score": 84.2
+        },
+        "benchlm_instructionFollowing": {
+          "rank": 2,
+          "score": 95.5
+        },
+        "benchlm_multimodalGrounded": {
+          "rank": 2,
+          "score": 91.9
         }
       }
     },
     {
       "model": "gpt-6-1-sol",
-      "top_appearances": 4,
-      "borda_points": 19,
+      "top_appearances": 3,
+      "borda_points": 16,
       "benchmarks": {
-        "benchlm_knowledge": {
-          "rank": 10,
-          "score": 85
-        },
         "benchlm_math": {
           "rank": 3,
           "score": 93.8
         },
         "benchlm_multimodalGrounded": {
-          "rank": 8,
-          "score": 88
+          "rank": 9,
+          "score": 88.2
         },
         "benchlm_reasoning": {
-          "rank": 4,
-          "score": 88
+          "rank": 5,
+          "score": 86.5
         }
       }
     },
     {
       "model": "gpt-5-6-sol",
-      "top_appearances": 4,
-      "borda_points": 17,
+      "top_appearances": 3,
+      "borda_points": 13,
       "benchmarks": {
         "benchlm_agentic": {
-          "rank": 3,
-          "score": 83.7
-        },
-        "benchlm_math": {
-          "rank": 10,
-          "score": 90.3
+          "rank": 5,
+          "score": 84.2
         },
         "benchlm_multimodalGrounded": {
-          "rank": 5,
+          "rank": 6,
           "score": 89.7
         },
         "deepswe_v1_1": {
@@ -230,51 +283,13 @@
       }
     },
     {
-      "model": "qwen3-8-max",
-      "top_appearances": 3,
-      "borda_points": 23,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 6,
-          "score": 83.3
-        },
-        "benchlm_instructionFollowing": {
-          "rank": 2,
-          "score": 94.7
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 2,
-          "score": 91.7
-        }
-      }
-    },
-    {
-      "model": "kimi-3-1-pro",
-      "top_appearances": 3,
-      "borda_points": 20,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 7,
-          "score": 82.3
-        },
-        "benchlm_knowledge": {
-          "rank": 5,
-          "score": 90.5
-        },
-        "benchlm_multimodalGrounded": {
-          "rank": 1,
-          "score": 95.3
-        }
-      }
-    },
-    {
       "model": "gemini-3-8-flash",
       "top_appearances": 3,
-      "borda_points": 12,
+      "borda_points": 11,
       "benchmarks": {
         "benchlm_multimodalGrounded": {
-          "rank": 9,
-          "score": 88
+          "rank": 10,
+          "score": 88.2
         },
         "deepswe_v1_1": {
           "rank": 10,
@@ -285,26 +300,26 @@
     {
       "model": "gemini-4-carbon",
       "top_appearances": 2,
-      "borda_points": 15,
+      "borda_points": 13,
       "benchmarks": {
         "benchlm_math": {
-          "rank": 5,
-          "score": 93.3
+          "rank": 6,
+          "score": 91.6
         },
         "benchlm_reasoning": {
-          "rank": 2,
-          "score": 90.5
+          "rank": 3,
+          "score": 88
         }
       }
     },
     {
       "model": "gpt-6-1-terra",
       "top_appearances": 2,
-      "borda_points": 13,
+      "borda_points": 12,
       "benchmarks": {
         "benchlm_math": {
-          "rank": 6,
-          "score": 92.9
+          "rank": 7,
+          "score": 91.4
         },
         "benchlm_multimodalGrounded": {
           "rank": 3,
@@ -357,7 +372,7 @@
       }
     },
     {
-      "model": "tencent/hy4-20261104",
+      "model": "tencent/hy4-flash-20261116",
       "top_appearances": 1,
       "borda_points": 9,
       "benchmarks": {
@@ -374,7 +389,7 @@
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 3,
-          "score": 94.7
+          "score": 95.5
         }
       }
     },
@@ -407,7 +422,7 @@
       "benchmarks": {
         "benchlm_coding": {
           "rank": 4,
-          "score": 88.2
+          "score": 87.9
         }
       }
     },
@@ -418,7 +433,7 @@
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 4,
-          "score": 94.7
+          "score": 95.5
         }
       }
     },
@@ -434,7 +449,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-flash-20260826",
+      "model": "tencent/hy4-20261104",
       "top_appearances": 1,
       "borda_points": 7,
       "benchmarks": {
@@ -445,13 +460,13 @@
       }
     },
     {
-      "model": "gpt-5-2-codex",
+      "model": "inkling-small",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 5,
-          "score": 93.8
+          "score": 94.1
         }
       }
     },
@@ -467,18 +482,7 @@
       }
     },
     {
-      "model": "inkling-2-small",
-      "top_appearances": 1,
-      "borda_points": 6,
-      "benchmarks": {
-        "benchlm_reasoning": {
-          "rank": 5,
-          "score": 86.1
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-6-luna-20260922",
+      "model": "z-ai/glm-5.3-flash-20260826",
       "top_appearances": 1,
       "borda_points": 6,
       "benchmarks": {
@@ -489,7 +493,7 @@
       }
     },
     {
-      "model": "minimax-m3",
+      "model": "gpt-5-2-codex",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -506,7 +510,7 @@
       "benchmarks": {
         "benchlm_knowledge": {
           "rank": 6,
-          "score": 87.8
+          "score": 87.3
         }
       }
     },
@@ -522,18 +526,7 @@
       }
     },
     {
-      "model": "gemini-4-argon",
-      "top_appearances": 1,
-      "borda_points": 5,
-      "benchmarks": {
-        "benchlm_reasoning": {
-          "rank": 6,
-          "score": 84.5
-        }
-      }
-    },
-    {
-      "model": "anthropic/claude-opus-5.5-20260921",
+      "model": "openai/gpt-6-luna-20260922",
       "top_appearances": 1,
       "borda_points": 5,
       "benchmarks": {
@@ -544,24 +537,24 @@
       }
     },
     {
-      "model": "glm-5-1",
+      "model": "qwen3-8-27b",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 7,
+          "score": 83.1
+        }
+      }
+    },
+    {
+      "model": "deepseek-v4-pro",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 7,
           "score": 93.8
-        }
-      }
-    },
-    {
-      "model": "gpt-6-sol",
-      "top_appearances": 1,
-      "borda_points": 4,
-      "benchmarks": {
-        "benchlm_math": {
-          "rank": 7,
-          "score": 92.1
         }
       }
     },
@@ -577,7 +570,18 @@
       }
     },
     {
-      "model": "stepfun/step-5-preview-20261008",
+      "model": "sakana-fugu-ultra",
+      "top_appearances": 1,
+      "borda_points": 4,
+      "benchmarks": {
+        "benchlm_reasoning": {
+          "rank": 7,
+          "score": 82.6
+        }
+      }
+    },
+    {
+      "model": "anthropic/claude-opus-5.5-20260921",
       "top_appearances": 1,
       "borda_points": 4,
       "benchmarks": {
@@ -588,35 +592,35 @@
       }
     },
     {
-      "model": "atria-dawn-preview",
+      "model": "grok-3-mini",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
-        "benchlm_agentic": {
+        "benchlm_coding": {
           "rank": 8,
           "score": 82.3
         }
       }
     },
     {
-      "model": "deepseek-v3-1-reasoning",
-      "top_appearances": 1,
-      "borda_points": 3,
-      "benchmarks": {
-        "benchlm_coding": {
-          "rank": 8,
-          "score": 82.4
-        }
-      }
-    },
-    {
-      "model": "mimo-v2-5-pro",
+      "model": "minimax-m3",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 8,
           "score": 93.8
+        }
+      }
+    },
+    {
+      "model": "gpt-6-sol",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "benchlm_math": {
+          "rank": 8,
+          "score": 90.2
         }
       }
     },
@@ -632,7 +636,18 @@
       }
     },
     {
-      "model": "xiaomi/mimo-v2.6-flash-20260921",
+      "model": "gemini-4-argon",
+      "top_appearances": 1,
+      "borda_points": 3,
+      "benchmarks": {
+        "benchlm_reasoning": {
+          "rank": 8,
+          "score": 82.5
+        }
+      }
+    },
+    {
+      "model": "stepfun/step-5-preview-20261008",
       "top_appearances": 1,
       "borda_points": 3,
       "benchmarks": {
@@ -643,35 +658,35 @@
       }
     },
     {
-      "model": "qwen3-8-27b",
+      "model": "atria-dawn-preview",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 9,
-          "score": 82.1
+          "score": 82.8
         }
       }
     },
     {
-      "model": "grok-3-mini",
+      "model": "gemini-3-1-pro",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 9,
-          "score": 82.4
+          "score": 79.1
         }
       }
     },
     {
-      "model": "gpt-5-5",
+      "model": "mimo-v2-5-pro",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 9,
-          "score": 93.3
+          "score": 93.8
         }
       }
     },
@@ -687,7 +702,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-20260816",
+      "model": "xiaomi/mimo-v2.6-flash-20260921",
       "top_appearances": 1,
       "borda_points": 2,
       "benchmarks": {
@@ -704,29 +719,29 @@
       "benchmarks": {
         "benchlm_agentic": {
           "rank": 10,
-          "score": 81.7
+          "score": 82.3
         }
       }
     },
     {
-      "model": "gemini-3-1-pro",
+      "model": "gemini-3-7-flash",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "benchlm_coding": {
           "rank": 10,
-          "score": 79.4
+          "score": 79.1
         }
       }
     },
     {
-      "model": "inkling-small",
+      "model": "glm-5-1",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
         "benchlm_instructionFollowing": {
           "rank": 10,
-          "score": 93.3
+          "score": 93.5
         }
       }
     },
@@ -742,29 +757,7 @@
       }
     },
     {
-      "model": "gemini-3-5-flash",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "benchlm_multimodalGrounded": {
-          "rank": 10,
-          "score": 87.3
-        }
-      }
-    },
-    {
-      "model": "sakana-fugu-ultra",
-      "top_appearances": 1,
-      "borda_points": 1,
-      "benchmarks": {
-        "benchlm_reasoning": {
-          "rank": 10,
-          "score": 81.9
-        }
-      }
-    },
-    {
-      "model": "openai/gpt-6.1-sol-20260929",
+      "model": "z-ai/glm-5.3-20260816",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {
