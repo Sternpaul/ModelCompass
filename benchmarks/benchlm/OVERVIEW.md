@@ -75,7 +75,7 @@ _Factual knowledge category score._
 | 6 | `muse-spark-1-1` | 87.300 |
 | 7 | `claude-opus-5-5` | 86.100 |
 | 8 | `claude-fable` | 85.600 |
-| 9 | `gpt-6-astra` | 85.500 |
+| 9 | `gpt-6-astra` | 85.400 |
 | 10 | `gpt-6-2-astra` | 84.900 |
 
 ## Math
@@ -94,7 +94,7 @@ _Quantitative reasoning category score._
 | 7 | `gpt-6-1-terra` | 91.400 |
 | 8 | `gpt-6-sol` | 90.200 |
 | 9 | `claude-fable-5-1` | 90 |
-| 10 | `claude-fable` | 88.500 |
+| 10 | `gemini-4-hydrogen` | 88.700 |
 
 ## Multilingual
 

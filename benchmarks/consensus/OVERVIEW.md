@@ -10,10 +10,10 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 4 | `claude-fable-5-1` | 4 | 24 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
 | 5 | `claude-mythos-5` | 4 | 23 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_multimodalGrounded |
 | 6 | `gpt-6-2-astra` | 4 | 23 | benchlm_knowledge, benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
-| 7 | `claude-fable` | 4 | 21 | benchlm_agentic, benchlm_coding, benchlm_knowledge, benchlm_math |
-| 8 | `kimi-3-1-pro` | 4 | 20 | benchlm_agentic, benchlm_knowledge, benchlm_multimodalGrounded, benchlm_reasoning |
-| 9 | `claude-opus-5-5` | 4 | 20 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
-| 10 | `qwen3-8-max` | 3 | 25 | benchlm_agentic, benchlm_instructionFollowing, benchlm_multimodalGrounded |
+| 7 | `kimi-3-1-pro` | 4 | 20 | benchlm_agentic, benchlm_knowledge, benchlm_multimodalGrounded, benchlm_reasoning |
+| 8 | `claude-opus-5-5` | 4 | 20 | benchlm_coding, benchlm_knowledge, benchlm_math, benchlm_reasoning |
+| 9 | `qwen3-8-max` | 3 | 25 | benchlm_agentic, benchlm_instructionFollowing, benchlm_multimodalGrounded |
+| 10 | `claude-fable` | 3 | 20 | benchlm_agentic, benchlm_coding, benchlm_knowledge |
 | 11 | `gpt-6-1-sol` | 3 | 16 | benchlm_math, benchlm_multimodalGrounded, benchlm_reasoning |
 | 12 | `gpt-5-6-sol` | 3 | 13 | benchlm_agentic, benchlm_multimodalGrounded, deepswe_v1_1 |
 | 13 | `gemini-3-8-flash` | 3 | 11 | benchlm_multimodalGrounded, deepswe_v1_1 |

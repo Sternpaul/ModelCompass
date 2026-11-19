@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T12:51:50.425406+00:00",
+    "generated_at": "2026-11-19T12:42:56.600583+00:00",
     "method": "borda_count",
     "description": "Placement agreement across benchmarks. No score mixing — counts how many top-10 lists each model appears in.",
     "N": 10
@@ -17,7 +17,7 @@
         },
         "benchlm_knowledge": {
           "rank": 9,
-          "score": 85.5
+          "score": 85.4
         },
         "benchlm_math": {
           "rank": 4,
@@ -157,29 +157,6 @@
       }
     },
     {
-      "model": "claude-fable",
-      "top_appearances": 4,
-      "borda_points": 21,
-      "benchmarks": {
-        "benchlm_agentic": {
-          "rank": 3,
-          "score": 84.2
-        },
-        "benchlm_coding": {
-          "rank": 2,
-          "score": 89
-        },
-        "benchlm_knowledge": {
-          "rank": 8,
-          "score": 85.6
-        },
-        "benchlm_math": {
-          "rank": 10,
-          "score": 88.5
-        }
-      }
-    },
-    {
       "model": "kimi-3-1-pro",
       "top_appearances": 4,
       "borda_points": 20,
@@ -241,6 +218,25 @@
         "benchlm_multimodalGrounded": {
           "rank": 2,
           "score": 91.9
+        }
+      }
+    },
+    {
+      "model": "claude-fable",
+      "top_appearances": 3,
+      "borda_points": 20,
+      "benchmarks": {
+        "benchlm_agentic": {
+          "rank": 3,
+          "score": 84.2
+        },
+        "benchlm_coding": {
+          "rank": 2,
+          "score": 89
+        },
+        "benchlm_knowledge": {
+          "rank": 8,
+          "score": 85.6
         }
       }
     },
@@ -746,6 +742,17 @@
       }
     },
     {
+      "model": "gemini-4-hydrogen",
+      "top_appearances": 1,
+      "borda_points": 1,
+      "benchmarks": {
+        "benchlm_math": {
+          "rank": 10,
+          "score": 88.7
+        }
+      }
+    },
+    {
       "model": "qwen3-5-27b",
       "top_appearances": 1,
       "borda_points": 1,
@@ -757,7 +764,7 @@
       }
     },
     {
-      "model": "z-ai/glm-5.3-20260816",
+      "model": "minimax/minimax-m3.1-flash-20261019",
       "top_appearances": 1,
       "borda_points": 1,
       "benchmarks": {

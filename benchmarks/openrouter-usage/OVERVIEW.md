@@ -22,4 +22,4 @@ _Rank by total tokens processed; requests kept alongside._
 | 7 | `anthropic/claude-opus-5.5-20260921` | — |
 | 8 | `stepfun/step-5-preview-20261008` | — |
 | 9 | `xiaomi/mimo-v2.6-flash-20260921` | — |
-| 10 | `z-ai/glm-5.3-20260816` | — |
+| 10 | `minimax/minimax-m3.1-flash-20261019` | — |

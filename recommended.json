@@ -1,8 +1,74 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T12:51:50.422311+00:00",
+    "generated_at": "2026-11-19T12:42:56.596191+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
+      "arena_agent": {
+        "source": "https://arena.ai/leaderboard/agent",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_code": {
+        "source": "https://arena.ai/leaderboard/code",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_document": {
+        "source": "https://arena.ai/leaderboard/document",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_image-edit": {
+        "source": "https://arena.ai/leaderboard/image-edit",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_image-to-video": {
+        "source": "https://arena.ai/leaderboard/image-to-video",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_search": {
+        "source": "https://arena.ai/leaderboard/search",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_text-to-image": {
+        "source": "https://arena.ai/leaderboard/text-to-image",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_text-to-video": {
+        "source": "https://arena.ai/leaderboard/text-to-video",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_text": {
+        "source": "https://arena.ai/leaderboard/text",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_video-edit": {
+        "source": "https://arena.ai/leaderboard/video-edit",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
+      "arena_vision": {
+        "source": "https://arena.ai/leaderboard/vision",
+        "subdir": "arena",
+        "model_count": 0,
+        "top_n": 0
+      },
       "benchlm_agentic": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
@@ -12,7 +78,7 @@
       "benchlm_coding": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 199,
+        "model_count": 202,
         "top_n": 10
       },
       "benchlm_instructionFollowing": {
@@ -24,25 +90,25 @@
       "benchlm_knowledge": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 255,
+        "model_count": 259,
         "top_n": 10
       },
       "benchlm_math": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 87,
+        "model_count": 88,
         "top_n": 10
       },
       "benchlm_multilingual": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 16,
+        "model_count": 23,
         "top_n": 10
       },
       "benchlm_multimodalGrounded": {
         "source": "https://benchlm.ai/data/models.json",
         "subdir": "benchlm",
-        "model_count": 126,
+        "model_count": 130,
         "top_n": 10
       },
       "benchlm_reasoning": {
@@ -60,19 +126,30 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 627,
+        "model_count": 623,
         "top_n": 10
       }
     }
   },
   "recommended": {
+    "arena_agent": [],
+    "arena_code": [],
+    "arena_document": [],
+    "arena_image-edit": [],
+    "arena_image-to-video": [],
+    "arena_search": [],
+    "arena_text-to-image": [],
+    "arena_text-to-video": [],
+    "arena_text": [],
+    "arena_video-edit": [],
+    "arena_vision": [],
     "benchlm_agentic": [
       {
         "model": "gpt-6-astra",
         "name": "GPT-6 Astra",
         "creator": "OpenAI",
         "score": 86.4,
-        "category_rank": 10
+        "category_rank": 11
       },
       {
         "model": "claude-opus-5",
@@ -86,7 +163,7 @@
         "name": "Claude Fable 5",
         "creator": "Anthropic",
         "score": 84.2,
-        "category_rank": 13
+        "category_rank": 14
       },
       {
         "model": "qwen3-8-max",
@@ -343,7 +420,7 @@
         "model": "gpt-6-astra",
         "name": "GPT-6 Astra",
         "creator": "OpenAI",
-        "score": 85.5,
+        "score": 85.4,
         "category_rank": 5
       },
       {
@@ -419,10 +496,10 @@
         "category_rank": null
       },
       {
-        "model": "claude-fable",
-        "name": "Claude Fable 5",
-        "creator": "Anthropic",
-        "score": 88.5,
+        "model": "gemini-4-hydrogen",
+        "name": "Gemini 4 Hydrogen",
+        "creator": "Google",
+        "score": 88.7,
         "category_rank": null
       }
     ],
@@ -757,62 +834,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 61962995820556,
-        "requests": 988615878,
+        "tokens": 62160618320546,
+        "requests": 981484303,
         "rank": 1
       },
       {
         "model": "tencent/hy4-flash-20261116",
-        "tokens": 22814277696173,
-        "requests": 188415251,
+        "tokens": 46628881102734,
+        "requests": 386946441,
         "rank": 2
       },
       {
         "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 15913369339506,
-        "requests": 499587088,
+        "tokens": 16013438073490,
+        "requests": 501515333,
         "rank": 3
       },
       {
         "model": "tencent/hy4-20261104",
-        "tokens": 14336980239671,
-        "requests": 104231160,
+        "tokens": 12966662144096,
+        "requests": 95461049,
         "rank": 4
       },
       {
         "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 11557864481215,
-        "requests": 366179619,
+        "tokens": 10873874782464,
+        "requests": 356642974,
         "rank": 5
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 8477094676906,
-        "requests": 641919683,
+        "tokens": 8712730304182,
+        "requests": 657226709,
         "rank": 6
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 7532442521658,
-        "requests": 64998805,
+        "tokens": 7634916420586,
+        "requests": 65753090,
         "rank": 7
       },
       {
         "model": "stepfun/step-5-preview-20261008",
-        "tokens": 6566706825957,
-        "requests": 25721439,
+        "tokens": 6386869272144,
+        "requests": 25136776,
         "rank": 8
       },
       {
         "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 4109753605306,
-        "requests": 58282494,
+        "tokens": 4045800005008,
+        "requests": 57617417,
         "rank": 9
       },
       {
-        "model": "z-ai/glm-5.3-20260816",
-        "tokens": 3617602516927,
-        "requests": 83371516,
+        "model": "minimax/minimax-m3.1-flash-20261019",
+        "tokens": 3671993607902,
+        "requests": 51566694,
         "rank": 10
       }
     ]
