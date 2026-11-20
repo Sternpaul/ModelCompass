@@ -13,8 +13,8 @@ _Rank by total tokens processed; requests kept alongside._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `deepseek/deepseek-v4.1-flash-20261017` | — |
-| 2 | `tencent/hy4-flash-20261116` | — |
+| 1 | `tencent/hy4-flash-20261116` | — |
+| 2 | `deepseek/deepseek-v4.1-flash-20261017` | — |
 | 3 | `deepseek/deepseek-v4.1-flash-20260910` | — |
 | 4 | `tencent/hy4-20261104` | — |
 | 5 | `z-ai/glm-5.3-flash-20260826` | — |
