@@ -4,6 +4,22 @@ Every benchmark lives in its own subfolder. Each subfolder contains raw `*.json`
 
 **No scores are mixed across benchmarks.**
 
+## [LMArena (arena.ai)](./arena/OVERVIEW.md) — [https://arena.ai](https://arena.ai)
+
+Human-preference Elo from blind pairwise battles. Higher Elo = more preferred by human voters.
+
+- [Agent Arena](./arena/arena_agent.json)
+- [Code Arena](./arena/arena_code.json)
+- [Document Arena](./arena/arena_document.json)
+- [Image Edit Arena](./arena/arena_image-edit.json)
+- [Image To Video Arena](./arena/arena_image-to-video.json)
+- [Search Arena](./arena/arena_search.json)
+- [Text Arena](./arena/arena_text.json)
+- [Text To Image Arena](./arena/arena_text-to-image.json)
+- [Text To Video Arena](./arena/arena_text-to-video.json)
+- [Video Edit Arena](./arena/arena_video-edit.json)
+- [Vision Arena](./arena/arena_vision.json)
+
 ## [BenchLM](./benchlm/OVERVIEW.md) — [https://benchlm.ai/data/models.json](https://benchlm.ai/data/models.json)
 
 Aggregated category scores (0–100) across 437 benchmarks and 388 models (MIT-licensed). Higher is better.

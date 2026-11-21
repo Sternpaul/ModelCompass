@@ -15,13 +15,13 @@ _Tool-use / agentic task category score._
 |---|-------|------:|
 | 1 | `gpt-6-astra` | 86.400 |
 | 2 | `claude-opus-5` | 85.100 |
-| 3 | `claude-fable` | 84.200 |
-| 4 | `qwen3-8-max` | 84.200 |
-| 5 | `gpt-5-6-sol` | 84.200 |
-| 6 | `claude-mythos-5` | 84.100 |
-| 7 | `qwen3-8-27b` | 83.100 |
-| 8 | `kimi-3-1-pro` | 82.800 |
-| 9 | `atria-dawn-preview` | 82.800 |
+| 3 | `gpt-5-6-sol` | 84.200 |
+| 4 | `claude-mythos-5` | 84.100 |
+| 5 | `claude-fable` | 83.800 |
+| 6 | `qwen3-8-max` | 83.800 |
+| 7 | `kimi-3-1-pro` | 82.800 |
+| 8 | `atria-dawn-preview` | 82.800 |
+| 9 | `qwen3-8-27b` | 82.600 |
 | 10 | `ling-3-1-flash` | 82.300 |
 
 ## Coding
@@ -32,15 +32,15 @@ _Code generation category score._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `claude-fable-5-1` | 90.800 |
-| 2 | `claude-fable` | 89 |
-| 3 | `claude-opus-5` | 88.900 |
-| 4 | `claude-sonnet-5-5` | 87.900 |
-| 5 | `claude-fable-5-2` | 87.900 |
-| 6 | `claude-opus-5-5` | 87.900 |
+| 2 | `claude-opus-5` | 88.900 |
+| 3 | `claude-fable` | 88.900 |
+| 4 | `claude-sonnet-5-5` | 88 |
+| 5 | `claude-fable-5-2` | 88 |
+| 6 | `claude-opus-5-5` | 88 |
 | 7 | `claude-mythos-5` | 87.300 |
-| 8 | `grok-3-mini` | 82.300 |
-| 9 | `gemini-3-1-pro` | 79.100 |
-| 10 | `gemini-3-7-flash` | 79.100 |
+| 8 | `grok-3-mini` | 82.400 |
+| 9 | `gemini-3-1-pro` | 79.200 |
+| 10 | `gemini-3-7-flash` | 79.200 |
 
 ## Instruction Following
 
@@ -70,8 +70,8 @@ _Factual knowledge category score._
 | 1 | `claude-fable-5-1` | 95.200 |
 | 2 | `claude-fable-5-2` | 94 |
 | 3 | `claude-opus-5` | 93.700 |
-| 4 | `claude-mythos-5` | 91.300 |
-| 5 | `kimi-3-1-pro` | 90.100 |
+| 4 | `claude-mythos-5` | 91.200 |
+| 5 | `kimi-3-1-pro` | 90 |
 | 6 | `muse-spark-1-1` | 87.300 |
 | 7 | `claude-opus-5-5` | 86.100 |
 | 8 | `claude-fable` | 85.600 |
@@ -89,12 +89,12 @@ _Quantitative reasoning category score._
 | 2 | `gpt-6-2-astra` | 93.800 |
 | 3 | `gpt-6-1-sol` | 93.800 |
 | 4 | `gpt-6-astra` | 93.400 |
-| 5 | `claude-opus-5-5` | 92 |
-| 6 | `gemini-4-carbon` | 91.600 |
-| 7 | `gpt-6-1-terra` | 91.400 |
-| 8 | `gpt-6-sol` | 90.200 |
-| 9 | `claude-fable-5-1` | 90 |
-| 10 | `gemini-4-hydrogen` | 88.700 |
+| 5 | `gemini-4-neon` | 92.500 |
+| 6 | `claude-opus-5-5` | 92 |
+| 7 | `gemini-4-carbon` | 91.600 |
+| 8 | `gpt-6-1-terra` | 91.400 |
+| 9 | `gpt-6-sol` | 90.200 |
+| 10 | `claude-fable-5-1` | 90 |
 
 ## Multilingual
 
@@ -122,15 +122,15 @@ _Vision+text grounded understanding._
 | # | Model | Score |
 |---|-------|------:|
 | 1 | `kimi-3-1-pro` | 95.200 |
-| 2 | `qwen3-8-max` | 91.900 |
-| 3 | `gpt-6-1-terra` | 91.600 |
-| 4 | `claude-mythos-5` | 91 |
-| 5 | `claude-fable-5-2` | 89.800 |
-| 6 | `gpt-5-6-sol` | 89.700 |
-| 7 | `gpt-6-astra` | 88.200 |
-| 8 | `gpt-6-2-astra` | 88.200 |
-| 9 | `gpt-6-1-sol` | 88.200 |
-| 10 | `gemini-3-8-flash` | 88.200 |
+| 2 | `gpt-6-1-terra` | 91.700 |
+| 3 | `qwen3-8-max` | 91.600 |
+| 4 | `claude-mythos-5` | 90.400 |
+| 5 | `gpt-5-6-sol` | 89.600 |
+| 6 | `claude-fable-5-2` | 89.300 |
+| 7 | `gpt-6-astra` | 87.800 |
+| 8 | `gpt-6-2-astra` | 87.800 |
+| 9 | `gpt-6-1-sol` | 87.800 |
+| 10 | `gemini-3-8-flash` | 87.800 |
 
 ## Reasoning
 
@@ -139,13 +139,13 @@ _Logical reasoning category score._
 
 | # | Model | Score |
 |---|-------|------:|
-| 1 | `gpt-6-2-astra` | 91.300 |
-| 2 | `gpt-6-astra` | 89.300 |
-| 3 | `gemini-4-carbon` | 88 |
-| 4 | `claude-fable-5-2` | 86.700 |
-| 5 | `gpt-6-1-sol` | 86.500 |
-| 6 | `claude-opus-5-5` | 83.100 |
-| 7 | `sakana-fugu-ultra` | 82.600 |
-| 8 | `gemini-4-argon` | 82.500 |
-| 9 | `claude-fable-5-1` | 82.200 |
-| 10 | `kimi-3-1-pro` | 81.500 |
+| 1 | `gpt-6-2-astra` | 91.400 |
+| 2 | `gpt-6-astra` | 89.400 |
+| 3 | `gemini-4-carbon` | 88.200 |
+| 4 | `claude-fable-5-2` | 86.800 |
+| 5 | `gpt-6-1-sol` | 86.600 |
+| 6 | `claude-opus-5-5` | 83.200 |
+| 7 | `sakana-fugu-ultra` | 82.800 |
+| 8 | `gemini-4-argon` | 82.600 |
+| 9 | `claude-fable-5-1` | 82.300 |
+| 10 | `kimi-3-1-pro` | 81.600 |
