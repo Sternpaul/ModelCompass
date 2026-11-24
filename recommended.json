@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-23T14:16:21.525443+00:00",
+    "generated_at": "2026-11-24T14:42:00.941103+00:00",
     "description": "Per-benchmark shortlists. No score mixing. Each list is a pure ranking from one source.",
     "benchmarks": {
       "arena_agent": {
@@ -126,7 +126,7 @@
       "or_usage_tokens": {
         "source": "https://openrouter.ai/api/frontend/v1/rankings/models",
         "subdir": "openrouter-usage",
-        "model_count": 610,
+        "model_count": 608,
         "top_n": 10
       }
     }
@@ -228,14 +228,14 @@
         "name": "Claude Opus 5",
         "creator": "Anthropic",
         "score": 88.9,
-        "category_rank": 17
+        "category_rank": 18
       },
       {
         "model": "claude-fable",
         "name": "Claude Fable 5",
         "creator": "Anthropic",
         "score": 88.9,
-        "category_rank": 14
+        "category_rank": 15
       },
       {
         "model": "claude-sonnet-5-5",
@@ -249,7 +249,7 @@
         "name": "Claude Fable 5.2",
         "creator": "Anthropic",
         "score": 88,
-        "category_rank": 2
+        "category_rank": 1
       },
       {
         "model": "claude-opus-5-5",
@@ -284,7 +284,7 @@
         "name": "Gemini 3.7 Flash",
         "creator": "Google",
         "score": 79.2,
-        "category_rank": 38
+        "category_rank": 37
       }
     ],
     "benchlm_instructionFollowing": [
@@ -581,7 +581,7 @@
         "name": "Kimi K3.1 Pro",
         "creator": "Moonshot AI",
         "score": 95.2,
-        "category_rank": 18
+        "category_rank": 19
       },
       {
         "model": "gpt-6-1-terra",
@@ -595,7 +595,7 @@
         "name": "Qwen3.8 Max",
         "creator": "Alibaba",
         "score": 91.6,
-        "category_rank": 29
+        "category_rank": 30
       },
       {
         "model": "claude-mythos-5",
@@ -609,7 +609,7 @@
         "name": "GPT-5.6 Sol",
         "creator": "OpenAI",
         "score": 89.6,
-        "category_rank": 15
+        "category_rank": 17
       },
       {
         "model": "claude-fable-5-2",
@@ -834,62 +834,62 @@
     "or_usage_tokens": [
       {
         "model": "deepseek/deepseek-v4.1-flash-20261017",
-        "tokens": 65077328443738,
-        "requests": 946943829,
+        "tokens": 66814175014185,
+        "requests": 960179476,
         "rank": 1
       },
       {
-        "model": "deepseek/deepseek-v4.1-flash-20260910",
-        "tokens": 15355177154455,
-        "requests": 488398654,
+        "model": "tencent/hy4-flash-20261116",
+        "tokens": 23493432583623,
+        "requests": 930177583,
         "rank": 2
       },
       {
-        "model": "z-ai/glm-5.3-flash-20260826",
-        "tokens": 12235294720629,
-        "requests": 464884823,
+        "model": "deepseek/deepseek-v4.1-flash-20260910",
+        "tokens": 15493371037319,
+        "requests": 494982587,
         "rank": 3
       },
       {
-        "model": "tencent/hy4-flash-20261116",
-        "tokens": 10214736573544,
-        "requests": 902530833,
+        "model": "z-ai/glm-5.3-flash-20260826",
+        "tokens": 12866743228334,
+        "requests": 491884111,
         "rank": 4
       },
       {
         "model": "openai/gpt-6-luna-20260922",
-        "tokens": 8396141035427,
-        "requests": 671230158,
+        "tokens": 8409464382469,
+        "requests": 668111317,
         "rank": 5
       },
       {
         "model": "anthropic/claude-opus-5.5-20260921",
-        "tokens": 6983475429880,
-        "requests": 64664393,
+        "tokens": 6632973180605,
+        "requests": 63141254,
         "rank": 6
       },
       {
         "model": "minimax/minimax-m3.1-flash-20261019",
-        "tokens": 4294465436527,
-        "requests": 54988227,
+        "tokens": 4446465416611,
+        "requests": 56438385,
         "rank": 7
       },
       {
         "model": "moonshotai/kimi-k3.1-pro-20261023",
-        "tokens": 4066587313874,
-        "requests": 40029763,
+        "tokens": 4067524680727,
+        "requests": 41127439,
         "rank": 8
       },
       {
         "model": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "tokens": 3979924955832,
-        "requests": 47819064,
+        "tokens": 4052686432761,
+        "requests": 48806544,
         "rank": 9
       },
       {
-        "model": "xiaomi/mimo-v2.6-flash-20260921",
-        "tokens": 3699396508004,
-        "requests": 51514275,
+        "model": "z-ai/glm-5.3-20260816",
+        "tokens": 3594716473013,
+        "requests": 84329514,
         "rank": 10
       }
     ]

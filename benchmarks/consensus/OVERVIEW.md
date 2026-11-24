@@ -23,4 +23,4 @@ Placement agreement across all benchmarks. A model's rank here is how many top-1
 | 17 | `qwen3-7-max` | 1 | 10 | benchlm_multilingual |
 | 18 | `deepseek/deepseek-v4.1-flash-20261017` | 1 | 10 | or_usage_tokens |
 | 19 | `claude-opus-4-5` | 1 | 9 | benchlm_multilingual |
-| 20 | `deepseek/deepseek-v4.1-flash-20260910` | 1 | 9 | or_usage_tokens |
+| 20 | `tencent/hy4-flash-20261116` | 1 | 9 | or_usage_tokens |
