@@ -19,7 +19,7 @@ _Rank by total tokens processed; requests kept alongside._
 | 4 | `z-ai/glm-5.3-flash-20260826` | — |
 | 5 | `openai/gpt-6-luna-20260922` | — |
 | 6 | `anthropic/claude-opus-5.5-20260921` | — |
-| 7 | `minimax/minimax-m3.1-flash-20261019` | — |
-| 8 | `moonshotai/kimi-k3.1-pro-20261023` | — |
+| 7 | `moonshotai/kimi-k3.1-pro-20261023` | — |
+| 8 | `minimax/minimax-m3.1-flash-20261019` | — |
 | 9 | `nvidia/nemotron-3-ultra-550b-a55b-20260604` | — |
 | 10 | `z-ai/glm-5.3-20260816` | — |

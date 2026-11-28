@@ -141,7 +141,7 @@ _Logical reasoning category score._
 |---|-------|------:|
 | 1 | `gpt-6-2-astra` | 91.400 |
 | 2 | `gpt-6-astra` | 89.400 |
-| 3 | `gemini-4-carbon` | 88.200 |
+| 3 | `gemini-4-carbon` | 87.400 |
 | 4 | `claude-fable-5-2` | 86.800 |
 | 5 | `gpt-6-1-sol` | 86.600 |
 | 6 | `claude-opus-5-5` | 83.200 |
